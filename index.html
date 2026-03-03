@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-214 - Mobilidade Aérea Urbana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+        }
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #0284c7;
+        }
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            margin-top: 0.5rem;
+        }
+        .tab-button {
+            padding: 0.75rem 1rem;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        .tab-button:hover {
+            color: #0284c7;
+        }
+        .tab-button.active {
+            color: #0284c7;
+            border-bottom-color: #0284c7;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .header {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #0284c7;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">IT-214</div>
+        </div>
+        <div class="nav-tabs" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            <button class="tab-button active" onclick="showPage('home')">🏠 Inicial</button>
+            <button class="tab-button" onclick="showPage('plano')">📚 Plano de Ensino</button>
+            <button class="tab-button" onclick="showPage('equipes')">👥 Equipes</button>
+            <button class="tab-button" onclick="showPage('materiais')">📖 Materiais</button>
+            <button class="tab-button" onclick="showPage('documentos')">📋 Documentos</button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Página Inicial -->
+        <div id="home" class="page active">
+            <div class="header">
+                <h1>IT-214</h1>
+                <p>Mobilidade Aérea Urbana</p>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h2 style="margin-bottom: 1rem;">Equipe Docente</h2>
+                <div class="instructors-grid">
+                    <div class="card">
+                        <h3>Prof. Dr. Marcelo Xavier Guterres</h3>
+                        <p>Professor orientador da disciplina</p>
+                    </div>
+                    <div class="card">
+                        <h3>MSc. Gabriela Oliveira de Souza</h3>
+                        <p>Instrutor da disciplina</p>
+                    </div>
+                    <div class="card">
+                        <h3>Rodrigo Mollo Furlan</h3>
+                        <p>Instrutor da disciplina</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Bem-vindo!</h2>
+                <p style="margin-top: 1rem;">Esta disciplina aborda os conceitos, tecnologias e desafios da Mobilidade Aérea Urbana (Urban Air Mobility - UAM).</p>
+            </div>
+        </div>
+
+        <!-- Plano de Ensino -->
+        <div id="plano" class="page">
+            <div class="header" style="background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);">
+                <h1>Plano de Ensino</h1>
+                <p>Estrutura e conteúdo da disciplina</p>
+            </div>
+            <div class="card">
+                <h2>Descrição do Plano</h2>
+                <p style="margin-top: 1rem;">O plano de ensino apresenta os objetivos, metodologias e cronograma da disciplina. Documentos estarão disponíveis em breve.</p>
+            </div>
+        </div>
+
+        <!-- Equipes -->
+        <div id="equipes" class="page">
+            <div class="header" style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%);">
+                <h1>Equipes</h1>
+                <p>Conheça nossa equipe docente</p>
+            </div>
+            <div class="card">
+                <h2>Professores e Instrutores</h2>
+                <div class="instructors-grid" style="margin-top: 1.5rem;">
+                    <div class="card" style="background: #f3f4f6;">
+                        <h3>Prof. Dr. Marcelo Xavier Guterres</h3>
+                        <p>Especialista em sistemas aeronáuticos</p>
+                    </div>
+                    <div class="card" style="background: #f3f4f6;">
+                        <h3>MSc. Gabriela Oliveira de Souza</h3>
+                        <p>especialista em mobilidade urbana</p>
+                    </div>
+                    <div class="card" style="background: #f3f4f6;">
+                        <h3>Rodrigo Mollo Furlan</h3>
+                        <p>Instrutor especializado</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; color: #666;">As equipes de trabalho serão definidas durante o curso.</p>
+            </div>
+        </div>
+
+        <!-- Materiais -->
+        <div id="materiais" class="page">
+            <div class="header" style="background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);">
+                <h1>Materiais de Aula</h1>
+                <p>Aulas, notas e atividades</p>
+            </div>
+            <div class="card">
+                <h2>Aulas</h2>
+                <p style="margin-top: 1rem;">Os materiais de aula serão disponibilizados conforme o cronograma da disciplina.</p>
+            </div>
+        </div>
+
+        <!-- Documentos -->
+        <div id="documentos" class="page">
+            <div class="header" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
+                <h1>Documentos e Normas</h1>
+                <p>Materiais regulatórios e normativos</p>
+            </div>
+            <div class="card">
+                <h2>Acesso a Documentos</h2>
+                <p style="margin-top: 1rem;">Categoria de documentos:</p>
+                <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                    <li>📋 Documentos Normativos</li>
+                    <li>⚖️ Regulações</li>
+                    <li>✈️ ConOps (Conceito de Operações)</li>
+                    <li>📰 Artigos Científicos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>IT-214: Mobilidade Aérea Urbana</h3>
+        <p>Instituto Tecnológico de Aeronáutica (ITA)</p>
+        <p style="margin-top: 1rem; opacity: 0.8;">© 2024-2026. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Deactivate all buttons
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Activate selected button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
