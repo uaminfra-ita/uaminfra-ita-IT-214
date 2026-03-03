@@ -7,7 +7,7 @@ export default function TeamsPage() {
     <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg shadow-md p-8 mb-8">
+        <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8">
           <h1 className="text-4xl font-bold mb-2">Equipes</h1>
           <p className="text-sky-100">Conheça nossa equipe docente e os membros das equipes de trabalho</p>
         </div>
