@@ -4,17 +4,17 @@ import { courseMaterials } from '@/data/courseData';
 
 export default function CourseMaterialsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 py-12 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg shadow-md p-8 mb-8">
+        <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg shadow-md p-8 mb-8">
           <h1 className="text-4xl font-bold mb-2">Materiais de Aula</h1>
-          <p className="text-purple-100">Acesso a aulas, notas e atividades da disciplina</p>
+          <p className="text-sky-100">Acesso a aulas, notas e atividades da disciplina</p>
         </div>
 
         {/* Class Materials Section */}
         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-3">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3">
             📚 Aulas
           </h2>
 
@@ -26,11 +26,11 @@ export default function CourseMaterialsPage() {
                   href={lecture.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border-2 border-purple-300 hover:bg-gradient-to-r hover:from-purple-100 hover:to-pink-100 transition-all cursor-pointer hover:shadow-md"
+                  className="flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md"
                 >
                   <div className="flex-shrink-0">
                     <svg
-                      className="h-8 w-8 text-purple-600"
+                      className="h-8 w-8 text-sky-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -51,7 +51,7 @@ export default function CourseMaterialsPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-purple-50 rounded-lg p-6 border-l-4 border-purple-500">
+            <div className="bg-sky-50 rounded-lg p-6 border-l-4 border-sky-600">
               <p className="text-gray-700">
                 As notas de aula e materiais didáticos serão adicionados em breve nesta seção.
               </p>
@@ -61,7 +61,7 @@ export default function CourseMaterialsPage() {
 
         {/* Activities Section */}
         <section className="bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-3">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3">
             ✏️ Atividades
           </h2>
 
@@ -70,14 +70,14 @@ export default function CourseMaterialsPage() {
               {courseMaterials.activities.map((activity, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border-l-4 border-purple-500 hover:shadow-md transition-shadow"
+                  className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg p-6 border-l-4 border-sky-600 hover:shadow-md transition-shadow"
                 >
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
                     <div>
                       <h3 className="text-lg font-bold text-gray-800">{activity.title}</h3>
                       <p className="text-gray-600 mt-2">{activity.description}</p>
                     </div>
-                    <div className="mt-3 md:mt-0 flex-shrink-0 bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold whitespace-nowrap ml-4">
+                    <div className="mt-3 md:mt-0 flex-shrink-0 bg-sky-600 text-white px-4 py-2 rounded-lg font-semibold whitespace-nowrap ml-4">
                       {activity.dueDate}
                     </div>
                   </div>
@@ -87,7 +87,7 @@ export default function CourseMaterialsPage() {
                       {activity.teams.map((team, teamIndex) => (
                         <span
                           key={teamIndex}
-                          className="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold"
+                          className="bg-sky-200 text-sky-800 px-3 py-1 rounded-full text-sm font-semibold"
                         >
                           {team}
                         </span>
@@ -98,7 +98,7 @@ export default function CourseMaterialsPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-purple-50 rounded-lg p-6 border-l-4 border-purple-500">
+            <div className="bg-sky-50 rounded-lg p-6 border-l-4 border-sky-600">
               <p className="text-gray-700">
                 As atividades para cada grupo serão divulgadas nesta seção conforme o cronograma da disciplina.
               </p>
@@ -107,19 +107,19 @@ export default function CourseMaterialsPage() {
         </section>
 
         {/* Info Box */}
-        <div className="bg-pink-50 rounded-lg shadow-md p-8 mt-8">
+        <div className="bg-sky-50 rounded-lg shadow-md p-8 mt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">💡 Dicas Importantes</h3>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-start">
-              <span className="text-pink-600 mr-3 font-bold">•</span>
+              <span className="text-sky-600 mr-3 font-bold">•</span>
               <span>Todos os materiais estão organizados por ordem de apresentação</span>
             </li>
             <li className="flex items-start">
-              <span className="text-pink-600 mr-3 font-bold">•</span>
+              <span className="text-sky-600 mr-3 font-bold">•</span>
               <span>Verifique as datas de vencimento das atividades regularmente</span>
             </li>
             <li className="flex items-start">
-              <span className="text-pink-600 mr-3 font-bold">•</span>
+              <span className="text-sky-600 mr-3 font-bold">•</span>
               <span>Entre em contato com os instrutores em caso de dúvidas</span>
             </li>
           </ul>

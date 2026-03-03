@@ -18,41 +18,41 @@ export default function DocumentsPage() {
       id: 'regulatory',
       title: 'Regulações',
       icon: '⚖️',
-      color: 'from-red-500 to-orange-500',
-      borderColor: 'border-red-500',
-      bgColor: 'bg-red-50',
-      textColor: 'text-red-600',
+      color: 'from-sky-500 to-blue-500',
+      borderColor: 'border-sky-600',
+      bgColor: 'bg-sky-50',
+      textColor: 'text-sky-600',
       items: documents.regulatory,
     },
     {
       id: 'conops',
       title: 'ConOps (Conceito de Operações)',
       icon: '✈️',
-      color: 'from-green-500 to-emerald-500',
-      borderColor: 'border-green-500',
-      bgColor: 'bg-green-50',
-      textColor: 'text-green-600',
+      color: 'from-blue-400 to-cyan-500',
+      borderColor: 'border-blue-600',
+      bgColor: 'bg-blue-50',
+      textColor: 'text-blue-600',
       items: documents.conops,
     },
     {
       id: 'articles',
       title: 'Artigos Científicos',
       icon: '📰',
-      color: 'from-yellow-500 to-amber-500',
-      borderColor: 'border-yellow-500',
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-600',
+      color: 'from-sky-400 to-blue-400',
+      borderColor: 'border-sky-500',
+      bgColor: 'bg-sky-50',
+      textColor: 'text-sky-600',
       items: documents.articles,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-50 py-12 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg shadow-md p-8 mb-8">
+        <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg shadow-md p-8 mb-8">
           <h1 className="text-4xl font-bold mb-2">Documentos e Normas</h1>
-          <p className="text-indigo-100">Acesso a materiais regulatórios, normativos e artigos científicos</p>
+          <p className="text-sky-100">Acesso a materiais regulatórios, normativos e artigos científicos</p>
         </div>
 
         {/* Document Categories */}
@@ -121,12 +121,12 @@ export default function DocumentsPage() {
         </div>
 
         {/* General Information */}
-        <section className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg shadow-md p-8 mt-12">
+        <section className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg shadow-md p-8 mt-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">📚 Sobre os Documentos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-sky-600 text-white">
                   📋
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function DocumentsPage() {
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
                   ⚖️
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function DocumentsPage() {
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
                   ✈️
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function DocumentsPage() {
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-600 text-white">
                   📰
                 </div>
               </div>

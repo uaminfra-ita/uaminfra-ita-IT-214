@@ -55,7 +55,7 @@ export default function HomePage() {
       </section>
 
       {/* Quick Info Section */}
-      <section className="bg-sky-100 py-12 px-4 md:px-8 mt-12">
+      <section className="bg-sky-50 py-12 px-4 md:px-8 mt-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6 text-center">

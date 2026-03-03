@@ -4,17 +4,17 @@ import { disciplineInfo, teams } from '@/data/courseData';
 
 export default function TeamsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 py-12 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg shadow-md p-8 mb-8">
+        <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg shadow-md p-8 mb-8">
           <h1 className="text-4xl font-bold mb-2">Equipes</h1>
-          <p className="text-green-100">Conheça nossa equipe docente e os membros das equipes de trabalho</p>
+          <p className="text-sky-100">Conheça nossa equipe docente e os membros das equipes de trabalho</p>
         </div>
 
         {/* Instructors Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-4 border-green-500 pb-3">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-4 border-sky-600 pb-3">
             Equipe Docente
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -23,12 +23,12 @@ export default function TeamsPage() {
                 key={instructor.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-40 flex items-center justify-center">
+                <div className="bg-gradient-to-r from-sky-600 to-blue-600 h-40 flex items-center justify-center">
                   <div className="text-8xl text-white opacity-30">👤</div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{instructor.name}</h3>
-                  <p className="text-green-600 font-semibold mb-3">{instructor.title}</p>
+                  <p className="text-sky-600 font-semibold mb-3">{instructor.title}</p>
                   <p className="text-gray-600 leading-relaxed">{instructor.bio}</p>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export default function TeamsPage() {
 
         {/* Teams Section */}
         <section>
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-4 border-green-500 pb-3">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-4 border-sky-600 pb-3">
             Equipes de Trabalho
           </h2>
 
@@ -66,13 +66,13 @@ export default function TeamsPage() {
                     )}
                   </div>
 
-                  <div className="bg-green-50 rounded-lg p-6">
+                  <div className="bg-sky-50 rounded-lg p-6">
                     <h4 className="font-bold text-gray-800 mb-4">Membros da Equipe:</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {team.members.map((member, index) => (
-                        <div key={index} className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                        <div key={index} className="bg-white p-4 rounded-lg border-l-4 border-sky-600">
                           <p className="font-semibold text-gray-800">{member.name}</p>
-                          <p className="text-green-600 text-sm">{member.role}</p>
+                          <p className="text-sky-600 text-sm">{member.role}</p>
                         </div>
                       ))}
                     </div>
@@ -81,7 +81,7 @@ export default function TeamsPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-green-50 rounded-lg p-12 border-2 border-dashed border-green-300 text-center">
+            <div className="bg-sky-50 rounded-lg p-12 border-2 border-dashed border-sky-300 text-center">
               <div className="text-6xl mb-4">📋</div>
               <p className="text-gray-700 text-lg">
                 As equipes de trabalho serão adicionadas em breve. Cada equipe terá seus membros listados com links para seus repositórios no GitHub.
