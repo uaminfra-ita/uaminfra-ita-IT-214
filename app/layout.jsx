@@ -1,7 +1,6 @@
-import { Metadata } from 'next';
 import './globals.css';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'IT-214 - Mobilidade Aérea Urbana',
   description:
     'Portal da Disciplina IT-214 - Mobilidade Aérea Urbana. Instituto Tecnológico de Aeronáutica (ITA).',
@@ -20,11 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
