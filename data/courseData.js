@@ -51,6 +51,7 @@ export const teams = [
 
 export const courseMaterials = {
   lectures: [
+    { title: "📖 E-book da Disciplina", url: "/files/ebook.pdf" },
     // { title: "Aula 1 - Introdução", url: "/materials/aula1.pdf" },
     // { title: "Aula 2 - Conceitos", url: "/materials/aula2.pdf" },
   ],
