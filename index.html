@@ -33,6 +33,13 @@
             font-size: 1.25rem;
             font-weight: bold;
             color: #0284c7;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-logo {
+            height: 1.5rem;
+            width: auto;
         }
         .nav-tabs {
             display: flex;
@@ -120,7 +127,10 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nav-title">IT-214</div>
+            <div class="nav-title">
+                <img src="./docs/images/ITA_logo.png" alt="ITA Logo" class="nav-logo">
+                IT-214
+            </div>
         </div>
         <div class="nav-tabs" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
             <button class="tab-button active" onclick="showPage('home')">🏠 Inicial</button>
@@ -231,6 +241,19 @@
                     </div>
                 </div>
                 <p style="margin-top: 1.5rem; color: #666;">As equipes de trabalho serão definidas durante o curso.</p>
+            </div>
+            <div class="card" style="margin-top: 2rem;">
+                <h2>Grupos de Trabalho</h2>
+                <div class="instructors-grid" style="margin-top: 1.5rem;">
+                    <div class="card" style="background: #f3f4f6;">
+                        <h3>Grupo A</h3>
+                        <p>link:</p>
+                    </div>
+                    <div class="card" style="background: #f3f4f6;">
+                        <h3>Grupo B</h3>
+                        <p><a href="https://biellgg14.github.io/IT-214/" target="_blank" style="color: #0284c7; text-decoration: none; font-weight: 500;">link: https://biellgg14.github.io/IT-214/</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 

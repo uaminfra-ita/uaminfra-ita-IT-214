@@ -25,7 +25,10 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 py-4">
             <div className="w-full md:w-auto mb-4 md:mb-0">
-              <h1 className="text-2xl font-bold text-sky-600">IT-214</h1>
+              <div className="flex items-center gap-2">
+                <img src="/images/ITA_logo.png" alt="ITA Logo" className="h-8 w-auto" />
+                <h1 className="text-2xl font-bold text-sky-600">IT-214</h1>
+              </div>
               <p className="text-sm text-gray-600">Mobilidade Aérea Urbana</p>
             </div>
             <div className="w-full md:flex-1 overflow-x-auto">

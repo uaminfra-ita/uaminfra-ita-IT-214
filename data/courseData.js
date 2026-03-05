@@ -37,16 +37,20 @@ export const teachingPlan = {
 };
 
 export const teams = [
-  // {
-  //   id: 1,
-  //   name: "Equipe 1",
-  //   description: "Descrição da equipe",
-  //   members: [
-  //     { name: "Membro 1", role: "Coordenador" },
-  //     { name: "Membro 2", role: "Desenvolvedor" },
-  //   ],
-  //   githubLink: "https://github.com/team1",
-  // },
+  {
+    id: 1,
+    name: "Grupo A",
+    description: "Grupo de Trabalho A",
+    members: [],
+    githubLink: null,
+  },
+  {
+    id: 2,
+    name: "Grupo B",
+    description: "Grupo de Trabalho B",
+    members: [],
+    githubLink: "https://biellgg14.github.io/IT-214/",
+  },
 ];
 
 export const courseMaterials = {
