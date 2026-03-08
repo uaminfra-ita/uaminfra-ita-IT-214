@@ -11,11 +11,67 @@ export default function Navigation() {
   const [activeTab, setActiveTab] = useState('home');
 
   const tabs = [
-    { id: 'home', label: 'Inicial', icon: '🏠' },
-    { id: 'teaching-plan', label: 'Plano de Ensino', icon: '📚' },
-    { id: 'teams', label: 'Equipes', icon: '👥' },
-    { id: 'materials', label: 'Materiais de Aula', icon: '📖' },
-    { id: 'documents', label: 'Documentos', icon: '📋' },
+    { 
+      id: 'home', 
+      label: 'Inicial', 
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="4" y="4" width="4" height="4" fill="currentColor" />
+          <rect x="10" y="4" width="4" height="4" fill="currentColor" />
+          <rect x="4" y="10" width="4" height="4" fill="currentColor" />
+          <rect x="10" y="10" width="4" height="4" fill="currentColor" />
+        </svg>
+      )
+    },
+    { 
+      id: 'teaching-plan', 
+      label: 'Plano de Ensino', 
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="6" y="4" width="3" height="3" fill="currentColor" />
+          <rect x="11" y="4" width="3" height="3" fill="currentColor" />
+          <rect x="16" y="4" width="3" height="3" fill="currentColor" />
+          <rect x="6" y="9" width="3" height="3" fill="currentColor" />
+          <rect x="11" y="9" width="3" height="3" fill="currentColor" />
+          <rect x="16" y="9" width="3" height="3" fill="currentColor" />
+          <rect x="6" y="14" width="3" height="3" fill="currentColor" />
+          <rect x="11" y="14" width="3" height="3" fill="currentColor" />
+          <rect x="16" y="14" width="3" height="3" fill="currentColor" />
+        </svg>
+      )
+    },
+    { 
+      id: 'teams', 
+      label: 'Equipes', 
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="3" fill="currentColor" />
+          <path d="M12 14c-3.3 0-5.55 1.67-5.55 2.5v1.5h11.1v-1.5c0-.83-2.25-2.5-5.55-2.5z" fill="currentColor" />
+        </svg>
+      )
+    },
+    { 
+      id: 'materials', 
+      label: 'Materiais de Aula', 
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 2h12c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 4v3h12V6H6zm0 5v3h12v-3H6zm0 5v3h12v-3H6z" fill="currentColor" />
+        </svg>
+      )
+    },
+    { 
+      id: 'documents', 
+      label: 'Documentos', 
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+          <line x1="5" y1="4" x2="19" y2="4" stroke="currentColor" />
+          <line x1="5" y1="8" x2="19" y2="8" stroke="currentColor" />
+          <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" />
+          <line x1="5" y1="16" x2="19" y2="16" stroke="currentColor" />
+          <rect x="3" y="2" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        </svg>
+      )
+    },
   ];
 
   return (
@@ -43,7 +99,7 @@ export default function Navigation() {
                         : 'border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50'
                     }`}
                   >
-                    <span>{tab.icon}</span>
+                    <span className="flex-shrink-0">{tab.icon}</span>
                     <span className="hidden sm:inline">{tab.label}</span>
                   </button>
                 ))}

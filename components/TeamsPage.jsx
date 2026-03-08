@@ -1,6 +1,6 @@
 'use client';
 
-import { disciplineInfo, teams } from '@/data/courseData';
+import { teams } from '@/data/courseData';
 
 export default function TeamsPage() {
   return (
@@ -9,32 +9,8 @@ export default function TeamsPage() {
         {/* Header */}
         <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8">
           <h1 className="text-4xl font-bold mb-2">Equipes</h1>
-          <p className="text-sky-100">Conheça nossa equipe docente e os membros das equipes de trabalho</p>
+          <p className="text-sky-100">Conheça os grupos de trabalho</p>
         </div>
-
-        {/* Instructors Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-4 border-sky-600 pb-3">
-            Equipe Docente
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {disciplineInfo.instructors.map((instructor) => (
-              <div
-                key={instructor.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="bg-gradient-to-r from-sky-600 to-blue-600 h-40 flex items-center justify-center">
-                  <div className="text-8xl text-white opacity-30">👤</div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{instructor.name}</h3>
-                  <p className="text-sky-600 font-semibold mb-3">{instructor.title}</p>
-                  <p className="text-gray-600 leading-relaxed">{instructor.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Teams Section */}
         <section>

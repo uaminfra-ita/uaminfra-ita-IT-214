@@ -63,7 +63,6 @@ export default function DocumentsPage() {
                 className={`bg-gradient-to-r ${category.color} text-white rounded-lg shadow-md p-6 mb-4`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-3xl">{category.icon}</span>
                   <h2 className="text-2xl font-bold">{category.title}</h2>
                 </div>
               </div>
@@ -95,6 +94,7 @@ export default function DocumentsPage() {
                         </div>
                         <div className="ml-4 flex-1">
                           <p className={`font-semibold ${category.textColor}`}>{doc.title}</p>
+                          {doc.description && <p className="text-sm text-gray-500 mt-1">{doc.description}</p>}
                           <p className="text-sm text-gray-600">Clique para download</p>
                         </div>
                         <svg
@@ -122,12 +122,12 @@ export default function DocumentsPage() {
 
         {/* General Information */}
         <section className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg shadow-md p-8 mt-12">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">📚 Sobre os Documentos</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Sobre os Documentos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-sky-600 text-white">
-                  📋
+                  ●
                 </div>
               </div>
               <div>
@@ -140,7 +140,7 @@ export default function DocumentsPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                  ⚖️
+                  ●
                 </div>
               </div>
               <div>
@@ -153,7 +153,7 @@ export default function DocumentsPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                  ✈️
+                  ●
                 </div>
               </div>
               <div>
@@ -166,7 +166,7 @@ export default function DocumentsPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-600 text-white">
-                  📰
+                  ●
                 </div>
               </div>
               <div>

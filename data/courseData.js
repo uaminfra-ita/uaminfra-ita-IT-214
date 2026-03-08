@@ -55,7 +55,7 @@ export const teams = [
 
 export const courseMaterials = {
   lectures: [
-    { title: "ebook.pdf", url: "/files/ebook.pdf" },
+    { title: "ebook v2 - 08/03/2026", url: "/files/ebook.pdf" },
     // { title: "Aula 1 - Introdução", url: "/materials/aula1.pdf" },
     // { title: "Aula 2 - Conceitos", url: "/materials/aula2.pdf" },
   ],
@@ -76,6 +76,10 @@ export const documents = {
     // { title: "ConOps ZZZ", url: "/docs/conops1.pdf" },
   ],
   articles: [
-    // { title: "Artigo AAA", url: "/docs/artigo1.pdf" },
+    { 
+      title: "A city-centric approach to estimate and evaluate global Urban Air Mobility demand", 
+      url: "/files/A City-Centric Approach to Estimate the Global Demand of Urban Air Mobility.pdf",
+      description: "Material de apoio para avaliação e seleção de cidades para UAM"
+    },
   ],
 };

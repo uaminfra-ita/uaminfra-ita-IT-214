@@ -15,7 +15,7 @@ export default function CourseMaterialsPage() {
         {/* Class Materials Section */}
         <section className="bg-white rounded-lg shadow-md p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3">
-            📚 Aulas
+            Aulas
           </h2>
 
           {courseMaterials.lectures.length > 0 ? (
@@ -62,7 +62,7 @@ export default function CourseMaterialsPage() {
         {/* Activities Section */}
         <section className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3">
-            ✏️ Atividades
+            Atividades
           </h2>
 
           {courseMaterials.activities.length > 0 ? (
@@ -108,7 +108,7 @@ export default function CourseMaterialsPage() {
 
         {/* Info Box */}
         <div className="bg-sky-50 rounded-lg shadow-md p-8 mt-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">💡 Dicas Importantes</h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Dicas Importantes</h3>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-start">
               <span className="text-sky-600 mr-3 font-bold">•</span>
