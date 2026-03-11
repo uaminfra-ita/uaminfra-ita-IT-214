@@ -81,5 +81,21 @@ export const documents = {
       url: "/files/A City-Centric Approach to Estimate the Global Demand of Urban Air Mobility.pdf",
       description: "Material de apoio para avaliação e seleção de cidades para UAM"
     },
+    {
+      title: "Urban Air Mobility History, Ecosystem",
+      url: "/files/Urban Air Mobility History, Ecosystem.pdf",
+    },
+    {
+      title: "Urban Air Mobility Communications and Networking Recent",
+      url: "/files/Urban Air Mobility Communications and Networking Recent.pdf",
+    },
+    {
+      title: "A holistic review of the current state of research on aircraft design concepts",
+      url: "/files/A holistic review of the current state of research on aircraft design concepts.pdf",
+    },
+    {
+      title: "Urban air mobility A comprehensive review and comparative",
+      url: "/files/Urban air mobility A comprehensive review and comparative.pdf",
+    },
   ],
 };
