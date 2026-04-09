@@ -3,37 +3,10 @@
 import { documents } from '@/data/courseData';
 
 export default function DocumentsPage() {
+  // Debug: verificar se documents está sendo importado
+  const articlesData = documents?.articles || [];
+  
   const docCategories = [
-    {
-      id: 'normative',
-      title: 'Documentos Normativos',
-      icon: '📋',
-      color: 'from-sky-600 to-blue-600',
-      borderColor: 'border-sky-600',
-      bgColor: 'bg-sky-50',
-      textColor: 'text-sky-600',
-      items: documents.normative,
-    },
-    {
-      id: 'regulatory',
-      title: 'Regulações',
-      icon: '⚖️',
-      color: 'from-sky-600 to-blue-600',
-      borderColor: 'border-sky-600',
-      bgColor: 'bg-sky-50',
-      textColor: 'text-sky-600',
-      items: documents.regulatory,
-    },
-    {
-      id: 'conops',
-      title: 'ConOps (Conceito de Operações)',
-      icon: '✈️',
-      color: 'from-sky-600 to-blue-600',
-      borderColor: 'border-sky-600',
-      bgColor: 'bg-sky-50',
-      textColor: 'text-sky-600',
-      items: documents.conops,
-    },
     {
       id: 'articles',
       title: 'Artigos Científicos',
@@ -42,7 +15,7 @@ export default function DocumentsPage() {
       borderColor: 'border-sky-600',
       bgColor: 'bg-sky-50',
       textColor: 'text-sky-600',
-      items: documents.articles || [],
+      items: articlesData,
     },
   ];
 
@@ -57,60 +30,67 @@ export default function DocumentsPage() {
 
         {/* Document Categories */}
         <div className="grid grid-cols-1 gap-8">
-          {docCategories.map((category) => 
-            category.items && category.items.length > 0 ? (
-              <section key={category.id}>
-                <div
-                  className={`bg-gradient-to-r ${category.color} text-white rounded-lg shadow-md p-6 mb-4`}
-                >
-                  <div className="flex items-center gap-3">
-                    <h2 className="text-2xl font-bold">{category.title}</h2>
+          {articlesData.length === 0 ? (
+            <div className="bg-yellow-100 border-2 border-yellow-400 rounded-lg p-6 text-center">
+              <p className="text-yellow-800 font-semibold">Carregando artigos...</p>
+              <p className="text-sm text-yellow-700 mt-2">Dados: {JSON.stringify(articlesData)}</p>
+            </div>
+          ) : (
+            docCategories.map((category) => 
+              category.items && category.items.length > 0 ? (
+                <section key={category.id}>
+                  <div
+                    className={`bg-gradient-to-r ${category.color} text-white rounded-lg shadow-md p-6 mb-4`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <h2 className="text-2xl font-bold">{category.title}</h2>
+                    </div>
                   </div>
-                </div>
 
-                <div className={`bg-white rounded-lg shadow-md p-8`}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {category.items.map((doc, index) => (
-                      <a
-                        key={index}
-                        href={doc.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex items-center p-4 ${category.bgColor} rounded-lg border-2 ${category.borderColor} hover:shadow-md transition-all cursor-pointer`}
-                      >
-                        <div className="flex-shrink-0">
+                  <div className={`bg-white rounded-lg shadow-md p-8`}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {category.items.map((doc, index) => (
+                        <a
+                          key={index}
+                          href={doc.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex items-center p-4 ${category.bgColor} rounded-lg border-2 ${category.borderColor} hover:shadow-md transition-all cursor-pointer`}
+                        >
+                          <div className="flex-shrink-0">
+                            <svg
+                              className={`h-8 w-8 ${category.textColor}`}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                              <path
+                                fillRule="evenodd"
+                                d="M4 5a2 2 0 012-2 1 1 0 000-2 4 4 0 00-4 4v10a4 4 0 004 4h12a4 4 0 004-4V5a4 4 0 00-4-4 1 1 0 000 2 2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                          <div className="ml-4 flex-1">
+                            <p className={`font-semibold ${category.textColor}`}>{doc.title}</p>
+                            {doc.description && <p className="text-sm text-gray-500 mt-1">{doc.description}</p>}
+                            <p className="text-sm text-gray-600">Clique para download</p>
+                          </div>
                           <svg
-                            className={`h-8 w-8 ${category.textColor}`}
+                            className={`h-5 w-5 ${category.textColor} flex-shrink-0`}
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
-                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-                            <path
-                              fillRule="evenodd"
-                              d="M4 5a2 2 0 012-2 1 1 0 000-2 4 4 0 00-4 4v10a4 4 0 004 4h12a4 4 0 004-4V5a4 4 0 00-4-4 1 1 0 000 2 2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"
-                              clipRule="evenodd"
-                            />
+                            <path d="M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 000 1.414l1.414 1.414a1 1 0 001.414 0L17 7.414V11a1 1 0 102 0V5a1 1 0 00-1-1h-6z" />
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
                           </svg>
-                        </div>
-                        <div className="ml-4 flex-1">
-                          <p className={`font-semibold ${category.textColor}`}>{doc.title}</p>
-                          {doc.description && <p className="text-sm text-gray-500 mt-1">{doc.description}</p>}
-                          <p className="text-sm text-gray-600">Clique para download</p>
-                        </div>
-                        <svg
-                          className={`h-5 w-5 ${category.textColor} flex-shrink-0`}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 000 1.414l1.414 1.414a1 1 0 001.414 0L17 7.414V11a1 1 0 102 0V5a1 1 0 00-1-1h-6z" />
-                          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                        </svg>
-                      </a>
-                    ))}
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </section>
-            ) : null
+                </section>
+              ) : null
+            )
           )}
         </div>
 
