@@ -3,8 +3,19 @@
 import { documents } from '@/data/courseData';
 
 export default function DocumentsPage() {
+  return (
+    <div>
+      <div style={{ background: 'red', color: 'white', padding: '20px', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
+        ✓ DocumentsPage RENDERIZADO!
+      </div>
+      
+      <DocumentsContent />
+    </div>
+  );
+}
+
+function DocumentsContent() {
   try {
-    // Debug: verificar se documents está sendo importado
     const articlesData = documents?.articles || [];
     
     return (
