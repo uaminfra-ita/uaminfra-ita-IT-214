@@ -401,8 +401,14 @@
             // Show selected page
             document.getElementById(pageId).classList.add('active');
             
-            // Activate selected button
-            event.target.classList.add('active');
+            // Activate selected button - find the button that triggered this
+            let button = event.target;
+            while (button && !button.classList.contains('tab-button')) {
+                button = button.parentElement;
+            }
+            if (button) {
+                button.classList.add('active');
+            }
         }
     </script>
 </body>
