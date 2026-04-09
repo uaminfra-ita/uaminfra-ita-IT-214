@@ -57,18 +57,18 @@ export default function DocumentsPage() {
 
         {/* Document Categories */}
         <div className="grid grid-cols-1 gap-8">
-          {docCategories.map((category) => (
-            <section key={category.id}>
-              <div
-                className={`bg-gradient-to-r ${category.color} text-white rounded-lg shadow-md p-6 mb-4`}
-              >
-                <div className="flex items-center gap-3">
-                  <h2 className="text-2xl font-bold">{category.title}</h2>
+          {docCategories.map((category) => 
+            category.items && category.items.length > 0 ? (
+              <section key={category.id}>
+                <div
+                  className={`bg-gradient-to-r ${category.color} text-white rounded-lg shadow-md p-6 mb-4`}
+                >
+                  <div className="flex items-center gap-3">
+                    <h2 className="text-2xl font-bold">{category.title}</h2>
+                  </div>
                 </div>
-              </div>
 
-              <div className={`bg-white rounded-lg shadow-md p-8`}>
-                {category.items.length > 0 ? (
+                <div className={`bg-white rounded-lg shadow-md p-8`}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {category.items.map((doc, index) => (
                       <a
@@ -108,16 +108,10 @@ export default function DocumentsPage() {
                       </a>
                     ))}
                   </div>
-                ) : (
-                  <div className={`${category.bgColor} rounded-lg p-8 border-l-4 ${category.borderColor} text-center`}>
-                    <p className="text-gray-700">
-                      Documentos nesta categoria serão adicionados em breve. Fique atento para atualizações!
-                    </p>
-                  </div>
-                )}
-              </div>
-            </section>
-          ))}
+                </div>
+              </section>
+            ) : null
+          )}
         </div>
 
         {/* General Information */}

@@ -21,33 +21,37 @@ export default function CourseMaterialsPage() {
           {courseMaterials.lectures.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {courseMaterials.lectures.map((lecture, index) => (
-                <a
-                  key={index}
-                  href={lecture.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md"
-                >
-                  <div className="flex-shrink-0">
-                    <svg
-                      className="h-8 w-8 text-sky-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
-                    <p className="font-semibold text-gray-800">{lecture.title}</p>
-                    <p className="text-sm text-gray-600">Clique para acessar</p>
-                  </div>
-                </a>
+                <div key={index}>
+                  <a
+                    href={lecture.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md"
+                  >
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-8 w-8 text-sky-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-gray-800">{lecture.title}</p>
+                      <p className="text-sm text-gray-600">Clique para acessar</p>
+                    </div>
+                  </a>
+                  {lecture.description && (
+                    <p className="text-sm text-gray-600 mt-2 ml-4">{lecture.description}</p>
+                  )}
+                </div>
               ))}
             </div>
           ) : (
@@ -58,6 +62,51 @@ export default function CourseMaterialsPage() {
             </div>
           )}
         </section>
+
+        {/* Materials Section */}
+        {courseMaterials.materials && courseMaterials.materials.length > 0 && (
+          <section className="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3">
+              Materiais
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {courseMaterials.materials.map((material, index) => (
+                <div key={index}>
+                  <a
+                    href={material.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md"
+                  >
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-8 w-8 text-sky-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-gray-800">{material.title}</p>
+                      <p className="text-sm text-gray-600">Clique para acessar</p>
+                    </div>
+                  </a>
+                  {material.description && (
+                    <p className="text-sm text-gray-600 mt-2 ml-4">{material.description}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Activities Section */}
         <section className="bg-white rounded-lg shadow-md p-8">

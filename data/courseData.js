@@ -55,13 +55,40 @@ export const teams = [
 
 export const courseMaterials = {
   lectures: [
-    { title: "ebook v2 - 08/03/2026", url: "/files/ebook.pdf" },
+    { title: "ebook v5 - 06/04/2026", url: "/files/ebook.pdf" },
     // { title: "Aula 1 - Introdução", url: "/materials/aula1.pdf" },
     // { title: "Aula 2 - Conceitos", url: "/materials/aula2.pdf" },
   ],
   activities: [
     // { title: "Atividade 1", description: "Descrição", dueDate: "2024-02-15", teams: ["Equipe 1"] },
     // { title: "Atividade 2", description: "Descrição", dueDate: "2024-03-01", teams: ["Equipe 1", "Equipe 2"] },
+  ],
+  materials: [
+    { 
+      title: "Método AHP.pdf", 
+      url: "/files/Método AHP.pdf",
+      description: "Material para apoio sobre o Processo Hierárquico Analítico"
+    },
+    {
+      title: "TheAnalyticHierarchyProcess.pdf",
+      url: "/files/TheAnalyticHierarchyProcess.pdf",
+    },
+    {
+      title: "data_los_angeles.xls",
+      url: "/files/data_los_angeles.xls",
+    },
+    {
+      title: "los_angeles_aula.R",
+      url: "/files/los_angeles_aula.R",
+    },
+    {
+      title: "1-s2.0-S0966692326000657-main.pdf",
+      url: "/files/1-s2.0-S0966692326000657-main.pdf",
+    },
+    {
+      title: "main.pdf",
+      url: "/files/main.pdf",
+    },
   ],
 };
 
@@ -78,8 +105,7 @@ export const documents = {
   articles: [
     { 
       title: "A city-centric approach to estimate and evaluate global Urban Air Mobility demand", 
-      url: "/files/A City-Centric Approach to Estimate the Global Demand of Urban Air Mobility.pdf",
-      description: "Material de apoio para avaliação e seleção de cidades para UAM"
+      url: "/files/1-s2.0-S0966692326000657-main.pdf",
     },
     {
       title: "Urban Air Mobility History, Ecosystem",
