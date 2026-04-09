@@ -42,7 +42,7 @@ export default function DocumentsPage() {
       borderColor: 'border-sky-600',
       bgColor: 'bg-sky-50',
       textColor: 'text-sky-600',
-      items: documents.articles,
+      items: documents.articles || [],
     },
   ];
 
