@@ -177,7 +177,7 @@ export const normativeDocuments = [
     ],
   },
   {
-    category: "DECEA / Comando da Aeronautica",
+    category: "DECEA / Comando da Aeronáutica",
     description: "Instrucoes, tabelas e anexos aplicaveis ao contexto brasileiro.",
     files: [
       {
