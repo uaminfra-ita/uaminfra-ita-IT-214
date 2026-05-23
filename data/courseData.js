@@ -140,3 +140,144 @@ export const documents = {
     },
   ],
 };
+
+export const normativeDocuments = [
+  {
+    category: "ICAO",
+    description: "Anexos, documentos e procedimentos internacionais de referência.",
+    files: [
+      {
+        title: "Annex 14 - Volume I, 9th Edition, Amendment 18",
+        fileName: "AN14_v1_9ed_amend_18.pdf",
+      },
+      {
+        title: "Annex 14 - Volume I (Consolidated)",
+        fileName: "AN14_V1_cons.pdf",
+      },
+      {
+        title: "Annex 14 - Volume II (Consolidated)",
+        fileName: "AN14_V2_cons.pdf",
+      },
+      {
+        title: "Doc 8168 - Volume II, 7th Edition, Amendment 10",
+        fileName: "8168_v2_7ed_amend_10_en.pdf",
+      },
+      {
+        title: "Doc 9137 - Part 6 (Consolidated)",
+        fileName: "Doc_9137_p6_cons_en.pdf",
+      },
+      {
+        title: "Doc 9981 - PANS Aerodromes, 3rd Edition",
+        fileName: "Doc_9981_3ed_en_PANS-AD.pdf",
+      },
+      {
+        title: "Doc 9981 - PANS Aerodromes, Amendment 5",
+        fileName: "Doc_9981_3ed_PANS-AD_amend_5_en.pdf",
+      },
+    ],
+  },
+  {
+    category: "DECEA / Comando da Aeronautica",
+    description: "Instrucoes, tabelas e anexos aplicaveis ao contexto brasileiro.",
+    files: [
+      {
+        title: "ICA 11-3/2020",
+        fileName: "ICA 11-3_2020.pdf",
+      },
+      {
+        title: "Tabelas da ICA 11-3",
+        fileName: "01 - TABELAS DA ICA 11-3.pdf",
+      },
+      {
+        title: "Anexos da ICA 11-3",
+        fileName: "02 - Anexos_ICA_11-3.pdf",
+      },
+      {
+        title: "Tabelas e Anexos da ICA 11-3",
+        fileName: "Tabelas_e_Anexos_ICA_11-3.pdf",
+      },
+      {
+        title: "ICA 11-4/2020",
+        fileName: "ICA 11-4_2020.pdf",
+      },
+      {
+        title: "ICA 11-408/2020",
+        fileName: "ICA 11-408_2020.pdf",
+      },
+      {
+        title: "Figuras da ICA 11-408",
+        fileName: "Figuras ICA 11-408.pdf",
+      },
+      {
+        title: "Tabelas da ICA 11-408",
+        fileName: "Tabelas ICA 11-408.pdf",
+      },
+      {
+        title: "ICA 63-19/2020",
+        fileName: "ICA 63-19_2020.pdf",
+      },
+      {
+        title: "Tabelas da ICA 63-19",
+        fileName: "Tabelas ICA 63-19.pdf",
+      },
+      {
+        title: "TCA 53-2",
+        fileName: "TCA 53-2.pdf",
+      },
+    ],
+  },
+  {
+    category: "ANAC",
+    description: "RBACs e instrucoes suplementares relacionados a aerodromos e heliportos.",
+    files: [
+      {
+        title: "RBAC 154 - Emenda 08",
+        fileName: "RBAC154EMD08.pdf",
+      },
+      {
+        title: "RBAC 155 - Emenda 01, Helipontos",
+        fileName: "RBAC155EMD01 _HELPN.pdf",
+      },
+      {
+        title: "IS 153.51-001A - SMS",
+        fileName: "IS153.51-001A_SMS.pdf",
+      },
+      {
+        title: "IS 154.5-001A",
+        fileName: "IS154.5-001A.pdf",
+      },
+    ],
+  },
+  {
+    category: "FAA",
+    description: "Regulamentos e ordens tecnicas dos Estados Unidos.",
+    files: [
+      {
+        title: "14 CFR Part 77.19",
+        fileName: "14 CFR Part 77.19.pdf",
+      },
+      {
+        title: "Order 6750.16E - ILS Siting Criteria",
+        fileName: "Order_6750_16E_ILS_Siting_Criteria_06-09-2014_for_Web_posting[1].pdf",
+      },
+      {
+        title: "Order 6820.10 - VOR, DVOR and VORTAC",
+        fileName: "Order_6820.10_VOR_DVOR_VORTAC.pdf",
+      },
+      {
+        title: "Order 6820.14 - DME",
+        fileName: "Order_6820.14_DME.pdf",
+      },
+      {
+        title: "Order JO 7400.2R",
+        fileName: "Order_JO7400.2R_Basic_w_Chg_1_dtd_8_7_25.pdf",
+      },
+    ],
+  },
+].map((group) => ({
+  ...group,
+  files: group.files.map((file) => ({
+    ...file,
+    url: `/normas/${file.fileName}`,
+  })),
+}));

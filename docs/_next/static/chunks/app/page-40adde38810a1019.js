@@ -1,1 +1,505 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[931],{8087:function(e,s,r){Promise.resolve().then(r.bind(r,7125))},7125:function(e,s,r){"use strict";r.d(s,{default:function(){return b}});var a=r(7437),t=r(2265);let i=[{id:1,name:"Prof. Dr. Marcelo Xavier Guterres",title:"Professor",bio:"Adicionar descri\xe7\xe3o do instrutor",image:"/images/instructor1.jpg"},{id:2,name:"MSc. Gabriela Oliveira de Souza",title:"Instrutor",bio:"Adicionar descri\xe7\xe3o do instrutor",image:"/images/instructor2.jpg"},{id:3,name:"Rodrigo Mollo Furlan",title:"Instrutor",bio:"Adicionar descri\xe7\xe3o do instrutor",image:"/images/instructor3.jpg"}],l={description:"Adicionar descri\xe7\xe3o do plano de ensino aqui...",files:[]},o=[{id:1,name:"Grupo A",description:"Grupo de Trabalho A",members:[],githubLink:null},{id:2,name:"Grupo B",description:"Grupo de Trabalho B",members:[],githubLink:"https://biellgg14.github.io/IT-214/"}],d={lectures:[{title:"ebook v5 - 06/04/2026",url:"/files/ebook.pdf"}],activities:[],materials:[{title:"M\xe9todo AHP.pdf",url:"/files/M\xe9todo AHP.pdf",description:"Material para apoio sobre o Processo Hier\xe1rquico Anal\xedtico"},{title:"TheAnalyticHierarchyProcess.pdf",url:"/files/TheAnalyticHierarchyProcess.pdf"},{title:"data_los_angeles.xls",url:"/files/data_los_angeles.xls"},{title:"los_angeles_aula.R",url:"/files/los_angeles_aula.R"},{title:"1-s2.0-S0966692326000657-main.pdf",url:"/files/1-s2.0-S0966692326000657-main.pdf"},{title:"main.pdf",url:"/files/main.pdf"}]},n={articles:[{title:"A city-centric approach to estimate and evaluate global Urban Air Mobility demand",url:"/files/A City-Centric Approach to Estimate the Global Demand of Urban Air Mobility.pdf",description:"Material de apoio para avalia\xe7\xe3o e sele\xe7\xe3o de cidades para UAM"},{title:"Urban Air Mobility Communications and Networking Recent Advances, Techniques, and Challenges",url:"/files/Urban Air Mobility Communications and Networking Recent.pdf",description:"Material de apoio para o mapeamento de infraestrutura de rede e tecnologias de comunica\xe7\xe3o essenciais para a opera\xe7\xe3o segura e eficiente da UAM"},{title:"Urban Air Mobility History, Ecosystem, Market Potential, and Challenges",url:"/files/Urban Air Mobility History, Ecosystem.pdf",description:"Material de apoio para a compreens\xe3o hist\xf3rica, estrutura\xe7\xe3o do ecossistema e an\xe1lise do potencial de mercado da UAM"},{title:"Urban air mobility: A comprehensive review and comparative analysis with autonomous and electric ground transportation for informing future research",url:"/files/Urban air mobility A comprehensive review and comparative.pdf",description:"Material de apoio para a an\xe1lise comparativa entre a UAM e modais terrestres aut\xf4nomos e el\xe9tricos para o direcionamento de pesquisas futuras"},{title:"A holistic review of the current state of research on aircraft design concepts and consideration for advanced air mobility applications",url:"/files/A holistic review of the current state of research on aircraft design concepts.pdf",description:"Material de apoio para a revis\xe3o hol\xedstica de conceitos de design, arquiteturas de propuls\xe3o e crit\xe9rios de avalia\xe7\xe3o para aeronaves de AAM"},{title:"An optimization framework for the design and operation of efficient urban air mobility systems: An application in the Ile-de-France region",url:"/files/1-s2.0-S0966692326000657-main.pdf",description:"Material de apoio para o desenvolvimento de um framework de otimiza\xe7\xe3o integrada de localiza\xe7\xe3o de vertiportos, frota e despacho operacional para sistemas de UAM"},{title:"Models, Methods, Concepts & Applications of the Analytic Hierarchy Process",url:"/files/TheAnalyticHierarchyProcess.pdf",description:"Second Edition"}]};function c(){return(0,a.jsxs)("div",{className:"min-h-screen bg-gradient-to-br from-blue-50 to-sky-50",children:[(0,a.jsx)("section",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto text-center",children:[(0,a.jsx)("h1",{className:"text-4xl md:text-5xl font-bold mb-2",children:"Mobilidade A\xe9rea Urbana"}),(0,a.jsx)("p",{className:"text-2xl text-sky-100 mb-2",children:"IT-214"}),(0,a.jsx)("div",{className:"flex flex-wrap justify-center gap-3 mt-4",children:i.map(e=>(0,a.jsx)("span",{className:"bg-sky-500 px-4 py-2 rounded-full text-sm md:text-base",children:e.name},e.id))})]})}),(0,a.jsx)("section",{className:"max-w-6xl mx-auto py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Bem-vindo \xe0 Disciplina"}),(0,a.jsx)("p",{className:"text-gray-700 leading-relaxed text-lg",children:"Adicionar mensagem de introdu\xe7\xe3o \xe0 disciplina aqui..."})]})}),(0,a.jsxs)("section",{className:"max-w-6xl mx-auto py-12 px-4 md:px-8",children:[(0,a.jsx)("h2",{className:"text-3xl font-bold text-gray-800 mb-8 text-center",children:"Equipe Docente"}),(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",children:i.map(e=>(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow",children:[(0,a.jsx)("div",{className:"bg-gradient-to-r from-sky-500 to-blue-500 h-32"}),(0,a.jsxs)("div",{className:"p-6",children:[(0,a.jsx)("h3",{className:"text-xl font-bold text-gray-800 mb-2",children:e.name}),(0,a.jsx)("p",{className:"text-sky-600 font-semibold mb-3",children:e.title}),(0,a.jsx)("p",{className:"text-gray-600",children:e.bio})]})]},e.id))})]}),(0,a.jsx)("section",{className:"bg-sky-50 py-12 px-4 md:px-8 mt-12",children:(0,a.jsx)("div",{className:"max-w-6xl mx-auto",children:(0,a.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-6",children:[(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-6 text-center",children:[(0,a.jsx)("div",{className:"text-4xl font-bold text-sky-600 mb-2",children:"IT-214"}),(0,a.jsx)("p",{className:"text-gray-600",children:"C\xf3digo da Disciplina"})]}),(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-6 text-center",children:[(0,a.jsx)("div",{className:"text-4xl font-bold text-sky-600 mb-2",children:"3"}),(0,a.jsx)("p",{className:"text-gray-600",children:"Instrutores"})]}),(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-6 text-center",children:[(0,a.jsx)("div",{className:"text-4xl font-bold text-sky-600 mb-2",children:"~"}),(0,a.jsx)("p",{className:"text-gray-600",children:"Equipes"})]})]})})})]})}function x(){return(0,a.jsx)("div",{className:"min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto",children:[(0,a.jsxs)("div",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8",children:[(0,a.jsx)("h1",{className:"text-4xl font-bold mb-2",children:"Plano de Ensino"}),(0,a.jsx)("p",{className:"text-sky-100",children:"Estrutura e conte\xfado da disciplina IT-214"})]}),(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-8 mb-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Descri\xe7\xe3o do Plano"}),(0,a.jsx)("div",{className:"prose max-w-none",children:(0,a.jsx)("p",{className:"text-gray-700 leading-relaxed text-lg whitespace-pre-wrap",children:l.description})})]}),(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Arquivos do Plano"}),l.files.length>0?(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:l.files.map((e,s)=>(0,a.jsxs)("a",{href:e.url,target:"_blank",rel:"noopener noreferrer",className:"flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-600 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer",children:[(0,a.jsx)("div",{className:"flex-shrink-0",children:(0,a.jsx)("svg",{className:"h-8 w-8 text-sky-600",fill:"currentColor",viewBox:"0 0 20 20",children:(0,a.jsx)("path",{d:"M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.3A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"})})}),(0,a.jsxs)("div",{className:"ml-4",children:[(0,a.jsx)("p",{className:"font-semibold text-gray-800",children:e.name}),(0,a.jsx)("p",{className:"text-sm text-gray-600",children:"Clique para download"})]})]},s))}):(0,a.jsx)("div",{className:"bg-sky-50 rounded-lg p-6 border-l-4 border-sky-600",children:(0,a.jsx)("p",{className:"text-gray-700",children:"Arquivos ser\xe3o adicionados em breve. Documentos em .pdf, .tex e outros formatos estar\xe3o dispon\xedveis aqui."})})]}),(0,a.jsxs)("div",{className:"bg-sky-50 rounded-lg shadow-md p-8 mt-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-4",children:"Informa\xe7\xf5es Adicionais"}),(0,a.jsxs)("ul",{className:"space-y-3 text-gray-700",children:[(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"O plano de ensino apresenta os objetivos, metodologias e cronograma da disciplina"})]}),(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"Todos os documentos est\xe3o dispon\xedveis para download em diversos formatos"})]}),(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"Consulte regularmente esta page para atualiza\xe7\xf5es do conte\xfado"})]})]})]})]})})}function m(){return(0,a.jsx)("div",{className:"min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto",children:[(0,a.jsxs)("div",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8",children:[(0,a.jsx)("h1",{className:"text-4xl font-bold mb-2",children:"Equipes"}),(0,a.jsx)("p",{className:"text-sky-100",children:"Conhe\xe7a os grupos de trabalho"})]}),(0,a.jsxs)("section",{children:[(0,a.jsx)("h2",{className:"text-3xl font-bold text-gray-800 mb-8 border-b-4 border-sky-600 pb-3",children:"Equipes de Trabalho"}),o.length>0?(0,a.jsx)("div",{className:"grid grid-cols-1 gap-6",children:o.map(e=>(0,a.jsxs)("div",{className:"bg-white rounded-lg shadow-md p-8",children:[(0,a.jsxs)("div",{className:"flex flex-col md:flex-row justify-between items-start md:items-center mb-6",children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"text-2xl font-bold text-gray-800 mb-2",children:e.name}),(0,a.jsx)("p",{className:"text-gray-600",children:e.description})]}),e.githubLink&&(0,a.jsxs)("a",{href:e.githubLink,target:"_blank",rel:"noopener noreferrer",className:"mt-4 md:mt-0 flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-800 to-black text-white rounded-lg hover:shadow-lg transition-shadow",children:[(0,a.jsx)("svg",{className:"w-5 h-5",fill:"currentColor",viewBox:"0 0 24 24",children:(0,a.jsx)("path",{d:"M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"})}),"Reposit\xf3rio GitHub"]})]}),(0,a.jsxs)("div",{className:"bg-sky-50 rounded-lg p-6",children:[(0,a.jsx)("h4",{className:"font-bold text-gray-800 mb-4",children:"Membros da Equipe:"}),(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:e.members.map((e,s)=>(0,a.jsxs)("div",{className:"bg-white p-4 rounded-lg border-l-4 border-sky-600",children:[(0,a.jsx)("p",{className:"font-semibold text-gray-800",children:e.name}),(0,a.jsx)("p",{className:"text-sky-600 text-sm",children:e.role})]},s))})]})]},e.id))}):(0,a.jsxs)("div",{className:"bg-sky-50 rounded-lg p-12 border-2 border-dashed border-sky-300 text-center",children:[(0,a.jsx)("div",{className:"text-6xl mb-4",children:"\uD83D\uDCCB"}),(0,a.jsx)("p",{className:"text-gray-700 text-lg",children:"As equipes de trabalho ser\xe3o adicionadas em breve. Cada equipe ter\xe1 seus membros listados com links para seus reposit\xf3rios no GitHub."})]})]})]})})}function h(){return(0,a.jsx)("div",{className:"min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto",children:[(0,a.jsxs)("div",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8",children:[(0,a.jsx)("h1",{className:"text-4xl font-bold mb-2",children:"Materiais de Aula"}),(0,a.jsx)("p",{className:"text-sky-100",children:"Acesso a aulas, notas e atividades da disciplina"})]}),(0,a.jsxs)("section",{className:"bg-white rounded-lg shadow-md p-8 mb-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Aulas"}),d.lectures.length>0?(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:d.lectures.map((e,s)=>(0,a.jsxs)("div",{children:[(0,a.jsxs)("a",{href:e.url,target:"_blank",rel:"noopener noreferrer",className:"flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md",children:[(0,a.jsx)("div",{className:"flex-shrink-0",children:(0,a.jsx)("svg",{className:"h-8 w-8 text-sky-600",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:(0,a.jsx)("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),(0,a.jsxs)("div",{className:"ml-4",children:[(0,a.jsx)("p",{className:"font-semibold text-gray-800",children:e.title}),(0,a.jsx)("p",{className:"text-sm text-gray-600",children:"Clique para acessar"})]})]}),e.description&&(0,a.jsx)("p",{className:"text-sm text-gray-600 mt-2 ml-4",children:e.description})]},s))}):(0,a.jsx)("div",{className:"bg-sky-50 rounded-lg p-6 border-l-4 border-sky-600",children:(0,a.jsx)("p",{className:"text-gray-700",children:"As notas de aula e materiais did\xe1ticos ser\xe3o adicionados em breve nesta se\xe7\xe3o."})})]}),d.materials&&d.materials.length>0&&(0,a.jsxs)("section",{className:"bg-white rounded-lg shadow-md p-8 mb-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Materiais"}),(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:d.materials.map((e,s)=>(0,a.jsxs)("div",{children:[(0,a.jsxs)("a",{href:e.url,target:"_blank",rel:"noopener noreferrer",className:"flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-blue-100 transition-all cursor-pointer hover:shadow-md",children:[(0,a.jsx)("div",{className:"flex-shrink-0",children:(0,a.jsx)("svg",{className:"h-8 w-8 text-sky-600",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:(0,a.jsx)("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"})})}),(0,a.jsxs)("div",{className:"ml-4",children:[(0,a.jsx)("p",{className:"font-semibold text-gray-800",children:e.title}),(0,a.jsx)("p",{className:"text-sm text-gray-600",children:"Clique para acessar"})]})]}),e.description&&(0,a.jsx)("p",{className:"text-sm text-gray-600 mt-2 ml-4",children:e.description})]},s))})]}),(0,a.jsxs)("section",{className:"bg-white rounded-lg shadow-md p-8",children:[(0,a.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3",children:"Atividades"}),d.activities.length>0?(0,a.jsx)("div",{className:"space-y-4",children:d.activities.map((e,s)=>(0,a.jsxs)("div",{className:"bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg p-6 border-l-4 border-sky-600 hover:shadow-md transition-shadow",children:[(0,a.jsxs)("div",{className:"flex flex-col md:flex-row justify-between items-start md:items-center mb-3",children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("h3",{className:"text-lg font-bold text-gray-800",children:e.title}),(0,a.jsx)("p",{className:"text-gray-600 mt-2",children:e.description})]}),(0,a.jsx)("div",{className:"mt-3 md:mt-0 flex-shrink-0 bg-sky-600 text-white px-4 py-2 rounded-lg font-semibold whitespace-nowrap ml-4",children:e.dueDate})]}),e.teams&&e.teams.length>0&&(0,a.jsx)("div",{className:"mt-4 flex flex-wrap gap-2",children:e.teams.map((e,s)=>(0,a.jsx)("span",{className:"bg-sky-200 text-sky-800 px-3 py-1 rounded-full text-sm font-semibold",children:e},s))})]},s))}):(0,a.jsx)("div",{className:"bg-sky-50 rounded-lg p-6 border-l-4 border-sky-600",children:(0,a.jsx)("p",{className:"text-gray-700",children:"As atividades para cada grupo ser\xe3o divulgadas nesta se\xe7\xe3o conforme o cronograma da disciplina."})})]}),(0,a.jsxs)("div",{className:"bg-sky-50 rounded-lg shadow-md p-8 mt-8",children:[(0,a.jsx)("h3",{className:"text-xl font-bold text-gray-800 mb-4",children:"Dicas Importantes"}),(0,a.jsxs)("ul",{className:"space-y-3 text-gray-700",children:[(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"Todos os materiais est\xe3o organizados por ordem de apresenta\xe7\xe3o"})]}),(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"Verifique as datas de vencimento das atividades regularmente"})]}),(0,a.jsxs)("li",{className:"flex items-start",children:[(0,a.jsx)("span",{className:"text-sky-600 mr-3 font-bold",children:"•"}),(0,a.jsx)("span",{children:"Entre em contato com os instrutores em caso de d\xfavidas"})]})]})]})]})})}function p(){return(0,a.jsxs)("div",{children:[(0,a.jsx)("div",{style:{background:"red",color:"white",padding:"20px",fontSize:"24px",fontWeight:"bold",textAlign:"center"},children:"✓ DocumentsPage RENDERIZADO!"}),(0,a.jsx)(g,{})]})}function g(){try{let e=(null==n?void 0:n.articles)||[];return(0,a.jsx)("div",{className:"min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto",children:[(0,a.jsxs)("div",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8",children:[(0,a.jsx)("h1",{className:"text-4xl font-bold mb-2",children:"Documentos e Normas"}),(0,a.jsx)("p",{className:"text-sky-100",children:"Acesso a materiais regulat\xf3rios, normativos e artigos cient\xedficos"})]}),(0,a.jsxs)("div",{className:"bg-blue-50 border-2 border-blue-300 rounded-lg p-6 mb-8",children:[(0,a.jsx)("p",{className:"text-blue-900 font-semibold",children:"Status do Carregamento:"}),(0,a.jsxs)("p",{className:"text-sm text-blue-800 mt-2",children:["Artigos carregados: ",e.length]}),(0,a.jsxs)("p",{className:"text-sm text-blue-800 mt-1",children:["Type: ",typeof e]})]}),e.length>0?(0,a.jsxs)("section",{children:[(0,a.jsx)("div",{className:"bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg shadow-md p-6 mb-4",children:(0,a.jsxs)("h2",{className:"text-2xl font-bold",children:["Artigos Cient\xedficos (",e.length,")"]})}),(0,a.jsx)("div",{className:"bg-white rounded-lg shadow-md p-8",children:(0,a.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:e.map((e,s)=>(0,a.jsxs)("a",{href:e.url,target:"_blank",rel:"noopener noreferrer",className:"flex items-center p-4 bg-sky-50 rounded-lg border-2 border-sky-600 hover:shadow-md transition-all cursor-pointer",children:[(0,a.jsx)("div",{className:"flex-shrink-0",children:(0,a.jsxs)("svg",{className:"h-8 w-8 text-sky-600",fill:"currentColor",viewBox:"0 0 20 20",children:[(0,a.jsx)("path",{d:"M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"}),(0,a.jsx)("path",{fillRule:"evenodd",d:"M4 5a2 2 0 012-2 1 1 0 000-2 4 4 0 00-4 4v10a4 4 0 004 4h12a4 4 0 004-4V5a4 4 0 00-4-4 1 1 0 000 2 2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z",clipRule:"evenodd"})]})}),(0,a.jsxs)("div",{className:"ml-4 flex-1",children:[(0,a.jsx)("p",{className:"font-semibold text-sky-600",children:e.title}),e.description&&(0,a.jsx)("p",{className:"text-sm text-gray-500 mt-1",children:e.description}),(0,a.jsx)("p",{className:"text-sm text-gray-600",children:"Clique para download"})]}),(0,a.jsxs)("svg",{className:"h-5 w-5 text-sky-600 flex-shrink-0",fill:"currentColor",viewBox:"0 0 20 20",children:[(0,a.jsx)("path",{d:"M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 000 1.414l1.414 1.414a1 1 0 001.414 0L17 7.414V11a1 1 0 102 0V5a1 1 0 00-1-1h-6z"}),(0,a.jsx)("path",{d:"M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"})]})]},s))})})]}):(0,a.jsxs)("div",{className:"bg-yellow-100 border-2 border-yellow-400 rounded-lg p-6 text-center",children:[(0,a.jsx)("p",{className:"text-yellow-800 font-semibold",children:"Nenhum artigo carregado"}),(0,a.jsxs)("p",{className:"text-sm text-yellow-700 mt-2",children:["Dados: ",JSON.stringify(e)]})]})]})})}catch(e){return(0,a.jsx)("div",{className:"min-h-screen bg-red-50 py-12 px-4",children:(0,a.jsx)("div",{className:"max-w-6xl mx-auto",children:(0,a.jsxs)("div",{className:"bg-red-100 border-2 border-red-400 rounded-lg p-8 text-center",children:[(0,a.jsx)("h1",{className:"text-2xl font-bold text-red-800 mb-4",children:"Erro ao carregar Documentos"}),(0,a.jsx)("p",{className:"text-red-700 font-mono whitespace-pre-wrap",children:null==e?void 0:e.message}),(0,a.jsx)("p",{className:"text-sm text-red-600 mt-4",children:null==e?void 0:e.stack})]})})})}}function b(){let[e,s]=(0,t.useState)("home"),r=[{id:"home",label:"Inicial",icon:(0,a.jsxs)("svg",{className:"w-5 h-5",fill:"currentColor",viewBox:"0 0 24 24",children:[(0,a.jsx)("rect",{x:"4",y:"4",width:"4",height:"4",fill:"currentColor"}),(0,a.jsx)("rect",{x:"10",y:"4",width:"4",height:"4",fill:"currentColor"}),(0,a.jsx)("rect",{x:"4",y:"10",width:"4",height:"4",fill:"currentColor"}),(0,a.jsx)("rect",{x:"10",y:"10",width:"4",height:"4",fill:"currentColor"})]})},{id:"teaching-plan",label:"Plano de Ensino",icon:(0,a.jsxs)("svg",{className:"w-5 h-5",fill:"currentColor",viewBox:"0 0 24 24",children:[(0,a.jsx)("rect",{x:"6",y:"4",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"11",y:"4",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"16",y:"4",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"6",y:"9",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"11",y:"9",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"16",y:"9",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"6",y:"14",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"11",y:"14",width:"3",height:"3",fill:"currentColor"}),(0,a.jsx)("rect",{x:"16",y:"14",width:"3",height:"3",fill:"currentColor"})]})},{id:"teams",label:"Equipes",icon:(0,a.jsxs)("svg",{className:"w-5 h-5",fill:"currentColor",viewBox:"0 0 24 24",children:[(0,a.jsx)("circle",{cx:"12",cy:"8",r:"3",fill:"currentColor"}),(0,a.jsx)("path",{d:"M12 14c-3.3 0-5.55 1.67-5.55 2.5v1.5h11.1v-1.5c0-.83-2.25-2.5-5.55-2.5z",fill:"currentColor"})]})},{id:"materials",label:"Materiais de Aula",icon:(0,a.jsx)("svg",{className:"w-5 h-5",fill:"currentColor",viewBox:"0 0 24 24",children:(0,a.jsx)("path",{d:"M6 2h12c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 4v3h12V6H6zm0 5v3h12v-3H6zm0 5v3h12v-3H6z",fill:"currentColor"})})},{id:"documents",label:"Documentos",icon:(0,a.jsxs)("svg",{className:"w-5 h-5",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",strokeWidth:"2",children:[(0,a.jsx)("line",{x1:"5",y1:"4",x2:"19",y2:"4",stroke:"currentColor"}),(0,a.jsx)("line",{x1:"5",y1:"8",x2:"19",y2:"8",stroke:"currentColor"}),(0,a.jsx)("line",{x1:"5",y1:"12",x2:"19",y2:"12",stroke:"currentColor"}),(0,a.jsx)("line",{x1:"5",y1:"16",x2:"19",y2:"16",stroke:"currentColor"}),(0,a.jsx)("rect",{x:"3",y:"2",width:"18",height:"18",fill:"none",stroke:"currentColor",strokeWidth:"1.5"})]})}];return(0,a.jsxs)("div",{className:"min-h-screen bg-sky-50",children:[(0,a.jsx)("nav",{className:"bg-white shadow-md sticky top-0 z-50",children:(0,a.jsx)("div",{className:"max-w-7xl mx-auto px-4 md:px-8",children:(0,a.jsxs)("div",{className:"flex flex-col md:flex-row items-start md:items-center gap-4 py-4",children:[(0,a.jsxs)("div",{className:"w-full md:w-auto mb-4 md:mb-0",children:[(0,a.jsxs)("div",{className:"flex items-center gap-2",children:[(0,a.jsx)("img",{src:"/images/ITA_logo.png",alt:"ITA Logo",className:"h-8 w-auto"}),(0,a.jsx)("h1",{className:"text-2xl font-bold text-sky-600",children:"IT-214"})]}),(0,a.jsx)("p",{className:"text-sm text-gray-600",children:"Mobilidade A\xe9rea Urbana"})]}),(0,a.jsx)("div",{className:"w-full md:flex-1 overflow-x-auto",children:(0,a.jsx)("div",{className:"flex gap-2 border-b border-gray-200",children:r.map(r=>(0,a.jsxs)("button",{onClick:()=>s(r.id),className:"px-4 py-3 font-semibold whitespace-nowrap flex items-center gap-2 border-b-4 transition-all ".concat(e===r.id?"border-sky-600 text-sky-600":"border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50"),children:[(0,a.jsx)("span",{className:"flex-shrink-0",children:r.icon}),(0,a.jsx)("span",{className:"hidden sm:inline",children:r.label})]},r.id))})})]})})}),(0,a.jsxs)("main",{children:["home"===e&&(0,a.jsx)(c,{}),"teaching-plan"===e&&(0,a.jsx)(x,{}),"teams"===e&&(0,a.jsx)(m,{}),"materials"===e&&(0,a.jsx)(h,{}),"documents"===e&&(0,a.jsx)(p,{})]}),(0,a.jsx)("footer",{className:"bg-gray-800 text-white py-8 px-4 md:px-8 mt-12",children:(0,a.jsxs)("div",{className:"max-w-6xl mx-auto text-center",children:[(0,a.jsx)("h3",{className:"text-xl font-bold mb-2",children:"IT-214: Mobilidade A\xe9rea Urbana"}),(0,a.jsx)("p",{className:"text-gray-400 mb-4",children:"Instituto Tecnol\xf3gico de Aeron\xe1utica (ITA)"}),(0,a.jsxs)("div",{className:"flex justify-center gap-4 mb-4",children:[(0,a.jsx)("a",{href:"#",className:"text-gray-400 hover:text-white transition-colors",children:"GitHub"}),(0,a.jsx)("a",{href:"#",className:"text-gray-400 hover:text-white transition-colors",children:"Email"}),(0,a.jsx)("a",{href:"#",className:"text-gray-400 hover:text-white transition-colors",children:"Contato"})]}),(0,a.jsx)("p",{className:"text-gray-500 text-sm",children:"\xa9 2024-2026 ITA. Todos os direitos reservados."})]})})]})}}},function(e){e.O(0,[971,117,744],function(){return e(e.s=8087)}),_N_E=e.O()}]);
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [931],
+  {
+    8087: function (module, exports, require) {
+      Promise.resolve().then(require.bind(require, 7125));
+    },
+    7125: function (module, exports, require) {
+      "use strict";
+      require.d(exports, {
+        default: function () {
+          return Navigation;
+        },
+      });
+
+      var React = require(2265);
+      var h = React.createElement;
+
+      var instructors = [
+        "Prof. Dr. Marcelo Xavier Guterres",
+        "MSc. Gabriela Oliveira de Souza",
+        "Rodrigo Mollo Furlan",
+      ];
+
+      var articles = [
+        {
+          title: "A city-centric approach to estimate and evaluate global Urban Air Mobility demand",
+          url: "/files/A City-Centric Approach to Estimate the Global Demand of Urban Air Mobility.pdf",
+          description: "Material de apoio para avaliacao e selecao de cidades para UAM",
+        },
+        {
+          title: "Urban Air Mobility Communications and Networking Recent Advances, Techniques, and Challenges",
+          url: "/files/Urban Air Mobility Communications and Networking Recent.pdf",
+          description: "Material de apoio para infraestrutura de rede e tecnologias de comunicacao para UAM",
+        },
+        {
+          title: "Urban Air Mobility History, Ecosystem, Market Potential, and Challenges",
+          url: "/files/Urban Air Mobility History, Ecosystem.pdf",
+          description: "Material de apoio para historico, ecossistema e potencial de mercado da UAM",
+        },
+        {
+          title: "Urban air mobility: A comprehensive review and comparative analysis with autonomous and electric ground transportation",
+          url: "/files/Urban air mobility A comprehensive review and comparative.pdf",
+          description: "Material de apoio para analise comparativa entre UAM e modais terrestres",
+        },
+        {
+          title: "A holistic review of the current state of research on aircraft design concepts",
+          url: "/files/A holistic review of the current state of research on aircraft design concepts.pdf",
+          description: "Material de apoio para conceitos de design e aplicacoes AAM",
+        },
+        {
+          title: "An optimization framework for efficient urban air mobility systems",
+          url: "/files/1-s2.0-S0966692326000657-main.pdf",
+          description: "Material de apoio para localizacao de vertiportos, frota e despacho operacional",
+        },
+        {
+          title: "Models, Methods, Concepts & Applications of the Analytic Hierarchy Process",
+          url: "/files/TheAnalyticHierarchyProcess.pdf",
+          description: "Second Edition",
+        },
+      ];
+
+      var materials = [
+        { title: "ebook v5 - 06/04/2026", url: "/files/ebook.pdf" },
+        { title: "Metodo AHP.pdf", url: "/files/Método AHP.pdf" },
+        { title: "TheAnalyticHierarchyProcess.pdf", url: "/files/TheAnalyticHierarchyProcess.pdf" },
+        { title: "data_los_angeles.xls", url: "/files/data_los_angeles.xls" },
+        { title: "los_angeles_aula.R", url: "/files/los_angeles_aula.R" },
+        { title: "1-s2.0-S0966692326000657-main.pdf", url: "/files/1-s2.0-S0966692326000657-main.pdf" },
+        { title: "main.pdf", url: "/files/main.pdf" },
+      ];
+
+      var normativeDocuments = [
+        {
+          category: "ICAO",
+          description: "Anexos, documentos e procedimentos internacionais de referencia.",
+          files: [
+            ["Annex 14 - Volume I, 9th Edition, Amendment 18", "AN14_v1_9ed_amend_18.pdf"],
+            ["Annex 14 - Volume I (Consolidated)", "AN14_V1_cons.pdf"],
+            ["Annex 14 - Volume II (Consolidated)", "AN14_V2_cons.pdf"],
+            ["Doc 8168 - Volume II, 7th Edition, Amendment 10", "8168_v2_7ed_amend_10_en.pdf"],
+            ["Doc 9137 - Part 6 (Consolidated)", "Doc_9137_p6_cons_en.pdf"],
+            ["Doc 9981 - PANS Aerodromes, 3rd Edition", "Doc_9981_3ed_en_PANS-AD.pdf"],
+            ["Doc 9981 - PANS Aerodromes, Amendment 5", "Doc_9981_3ed_PANS-AD_amend_5_en.pdf"],
+          ],
+        },
+        {
+          category: "DECEA / Comando da Aeronautica",
+          description: "Instrucoes, tabelas e anexos aplicaveis ao contexto brasileiro.",
+          files: [
+            ["ICA 11-3/2020", "ICA 11-3_2020.pdf"],
+            ["Tabelas da ICA 11-3", "01 - TABELAS DA ICA 11-3.pdf"],
+            ["Anexos da ICA 11-3", "02 - Anexos_ICA_11-3.pdf"],
+            ["Tabelas e Anexos da ICA 11-3", "Tabelas_e_Anexos_ICA_11-3.pdf"],
+            ["ICA 11-4/2020", "ICA 11-4_2020.pdf"],
+            ["ICA 11-408/2020", "ICA 11-408_2020.pdf"],
+            ["Figuras da ICA 11-408", "Figuras ICA 11-408.pdf"],
+            ["Tabelas da ICA 11-408", "Tabelas ICA 11-408.pdf"],
+            ["ICA 63-19/2020", "ICA 63-19_2020.pdf"],
+            ["Tabelas da ICA 63-19", "Tabelas ICA 63-19.pdf"],
+            ["TCA 53-2", "TCA 53-2.pdf"],
+          ],
+        },
+        {
+          category: "ANAC",
+          description: "RBACs e instrucoes suplementares relacionados a aerodromos e heliportos.",
+          files: [
+            ["RBAC 154 - Emenda 08", "RBAC154EMD08.pdf"],
+            ["RBAC 155 - Emenda 01, Helipontos", "RBAC155EMD01 _HELPN.pdf"],
+            ["IS 153.51-001A - SMS", "IS153.51-001A_SMS.pdf"],
+            ["IS 154.5-001A", "IS154.5-001A.pdf"],
+          ],
+        },
+        {
+          category: "FAA",
+          description: "Regulamentos e ordens tecnicas dos Estados Unidos.",
+          files: [
+            ["14 CFR Part 77.19", "14 CFR Part 77.19.pdf"],
+            ["Order 6750.16E - ILS Siting Criteria", "Order_6750_16E_ILS_Siting_Criteria_06-09-2014_for_Web_posting[1].pdf"],
+            ["Order 6820.10 - VOR, DVOR and VORTAC", "Order_6820.10_VOR_DVOR_VORTAC.pdf"],
+            ["Order 6820.14 - DME", "Order_6820.14_DME.pdf"],
+            ["Order JO 7400.2R", "Order_JO7400.2R_Basic_w_Chg_1_dtd_8_7_25.pdf"],
+          ],
+        },
+      ].map(function (group) {
+        return Object.assign({}, group, {
+          files: group.files.map(function (file) {
+            return { title: file[0], fileName: file[1], url: "/normas/" + file[1] };
+          }),
+        });
+      });
+
+      function FileIcon() {
+        return h(
+          "svg",
+          { className: "h-8 w-8 text-sky-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" },
+          h("path", {
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: 2,
+            d: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z",
+          })
+        );
+      }
+
+      function Hero(props) {
+        return h(
+          "div",
+          { className: "bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8 rounded-lg shadow-md mb-8" },
+          props.kicker && h("p", { className: "text-sky-100 font-semibold mb-2" }, props.kicker),
+          h("h1", { className: "text-4xl font-bold mb-2" }, props.title),
+          h("p", { className: "text-sky-100" }, props.description)
+        );
+      }
+
+      function LinkCard(props) {
+        return h(
+          "a",
+          {
+            href: props.href,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className:
+              "flex items-center p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-lg border-2 border-sky-300 hover:from-sky-100 hover:to-blue-100 transition-all hover:shadow-md",
+          },
+          h("div", { className: "flex-shrink-0" }, h(FileIcon)),
+          h(
+            "div",
+            { className: "ml-4 min-w-0" },
+            h("p", { className: "font-semibold text-gray-800 break-words" }, props.title),
+            props.detail && h("p", { className: "text-sm text-gray-600 mt-1 break-words" }, props.detail),
+            h("p", { className: "text-sm text-sky-700 font-semibold mt-1" }, "Clique para acessar")
+          )
+        );
+      }
+
+      function PageShell(props) {
+        return h(
+          "div",
+          { className: "min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 py-12 px-4 md:px-8" },
+          h("div", { className: "max-w-6xl mx-auto" }, props.children)
+        );
+      }
+
+      function HomePage() {
+        return h(
+          "div",
+          { className: "min-h-screen bg-gradient-to-br from-blue-50 to-sky-50" },
+          h(
+            "section",
+            { className: "bg-gradient-to-r from-sky-600 to-blue-600 text-white py-12 px-4 md:px-8" },
+            h(
+              "div",
+              { className: "max-w-6xl mx-auto text-center" },
+              h("h1", { className: "text-4xl md:text-5xl font-bold mb-2" }, "Mobilidade Aerea Urbana"),
+              h("p", { className: "text-2xl text-sky-100 mb-2" }, "IT-214"),
+              h(
+                "div",
+                { className: "flex flex-wrap justify-center gap-3 mt-4" },
+                instructors.map(function (name) {
+                  return h("span", { key: name, className: "bg-sky-500 px-4 py-2 rounded-full text-sm md:text-base" }, name);
+                })
+              )
+            )
+          ),
+          h(
+            "section",
+            { className: "max-w-6xl mx-auto py-12 px-4 md:px-8" },
+            h(
+              "div",
+              { className: "bg-white rounded-lg shadow-md p-8" },
+              h("h2", { className: "text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3" }, "Bem-vindo a Disciplina"),
+              h("p", { className: "text-gray-700 leading-relaxed text-lg" }, "Adicionar mensagem de introducao a disciplina aqui...")
+            )
+          )
+        );
+      }
+
+      function SimplePage(props) {
+        return h(
+          PageShell,
+          null,
+          h(Hero, { title: props.title, description: props.description }),
+          h(
+            "section",
+            { className: "bg-white rounded-lg shadow-md p-8" },
+            h("h2", { className: "text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3" }, props.title),
+            h("p", { className: "text-gray-700" }, props.emptyText)
+          )
+        );
+      }
+
+      function CourseMaterialsPage() {
+        return h(
+          PageShell,
+          null,
+          h(Hero, { title: "Materiais de Aula", description: "Acesso a aulas, notas e atividades da disciplina" }),
+          h(
+            "section",
+            { className: "bg-white rounded-lg shadow-md p-8" },
+            h("h2", { className: "text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3" }, "Materiais"),
+            h(
+              "div",
+              { className: "grid grid-cols-1 md:grid-cols-2 gap-4" },
+              materials.map(function (item) {
+                return h(LinkCard, { key: item.url, href: item.url, title: item.title });
+              })
+            )
+          )
+        );
+      }
+
+      function DocumentsPage() {
+        return h(
+          PageShell,
+          null,
+          h(Hero, { title: "Documentos", description: "Acesso a artigos cientificos e materiais complementares da disciplina" }),
+          h(
+            "section",
+            { className: "bg-white rounded-lg shadow-md p-8" },
+            h("h2", { className: "text-2xl font-bold text-gray-800 mb-6 border-b-4 border-sky-600 pb-3" }, "Artigos Cientificos"),
+            h(
+              "div",
+              { className: "grid grid-cols-1 md:grid-cols-2 gap-4" },
+              articles.map(function (item) {
+                return h(LinkCard, { key: item.url, href: item.url, title: item.title, detail: item.description });
+              })
+            )
+          )
+        );
+      }
+
+      function NormativeDocumentsPage() {
+        var state = React.useState("");
+        var query = state[0];
+        var setQuery = state[1];
+        var categoryState = React.useState("Todas");
+        var activeCategory = categoryState[0];
+        var setActiveCategory = categoryState[1];
+        var totalFiles = normativeDocuments.reduce(function (total, group) {
+          return total + group.files.length;
+        }, 0);
+        var categories = ["Todas"].concat(
+          normativeDocuments.map(function (group) {
+            return group.category;
+          })
+        );
+        var normalizedQuery = query.trim().toLowerCase();
+        var filteredGroups = normativeDocuments
+          .filter(function (group) {
+            return activeCategory === "Todas" || group.category === activeCategory;
+          })
+          .map(function (group) {
+            return Object.assign({}, group, {
+              files: group.files.filter(function (file) {
+                var text = (file.title + " " + file.fileName + " " + group.category).toLowerCase();
+                return !normalizedQuery || text.indexOf(normalizedQuery) !== -1;
+              }),
+            });
+          })
+          .filter(function (group) {
+            return group.files.length > 0;
+          });
+
+        return h(
+          PageShell,
+          null,
+          h(Hero, {
+            kicker: "Biblioteca normativa",
+            title: "Documentos Normativos",
+            description: "Normas, regulamentos e documentos tecnicos de apoio para estudos de infraestrutura aeronautica e UAM.",
+          }),
+          h(
+            "section",
+            { className: "bg-white rounded-lg shadow-md p-6 md:p-8 mb-8" },
+            h(
+              "div",
+              { className: "grid grid-cols-1 md:grid-cols-3 gap-4" },
+              h("div", { className: "bg-sky-50 border-l-4 border-sky-600 rounded-lg p-4" }, h("p", { className: "text-sm font-semibold text-gray-600" }, "Arquivos"), h("p", { className: "text-3xl font-bold text-sky-600" }, totalFiles)),
+              h("div", { className: "bg-sky-50 border-l-4 border-sky-600 rounded-lg p-4" }, h("p", { className: "text-sm font-semibold text-gray-600" }, "Categorias"), h("p", { className: "text-3xl font-bold text-sky-600" }, normativeDocuments.length)),
+              h("div", { className: "bg-sky-50 border-l-4 border-sky-600 rounded-lg p-4" }, h("p", { className: "text-sm font-semibold text-gray-600" }, "Formato"), h("p", { className: "text-3xl font-bold text-sky-600" }, "PDF"))
+            )
+          ),
+          h(
+            "section",
+            { className: "bg-white rounded-lg shadow-md p-6 md:p-8 mb-8" },
+            h(
+              "div",
+              { className: "flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between" },
+              h(
+                "label",
+                { className: "block flex-1" },
+                h("span", { className: "text-sm font-semibold text-gray-700" }, "Buscar documento"),
+                h("input", {
+                  type: "search",
+                  value: query,
+                  onChange: function (event) {
+                    return setQuery(event.target.value);
+                  },
+                  placeholder: "Ex.: ICA 11-3, Annex 14, RBAC 154",
+                  className: "mt-2 w-full rounded-lg border-2 border-sky-200 px-4 py-3 text-gray-800 outline-none transition focus:border-sky-600",
+                })
+              ),
+              h(
+                "div",
+                { className: "flex flex-wrap gap-2" },
+                categories.map(function (category) {
+                  return h(
+                    "button",
+                    {
+                      key: category,
+                      type: "button",
+                      onClick: function () {
+                        return setActiveCategory(category);
+                      },
+                      className:
+                        "px-4 py-2 rounded-lg font-semibold border-2 transition-colors " +
+                        (activeCategory === category
+                          ? "bg-sky-600 border-sky-600 text-white"
+                          : "bg-white border-sky-200 text-gray-700 hover:border-sky-600 hover:text-sky-700"),
+                    },
+                    category
+                  );
+                })
+              )
+            )
+          ),
+          filteredGroups.length
+            ? h(
+                "div",
+                { className: "space-y-8" },
+                filteredGroups.map(function (group) {
+                  return h(
+                    "section",
+                    { key: group.category, className: "bg-white rounded-lg shadow-md p-6 md:p-8" },
+                    h(
+                      "div",
+                      { className: "mb-6 border-b-4 border-sky-600 pb-3" },
+                      h(
+                        "div",
+                        { className: "flex flex-col md:flex-row md:items-end md:justify-between gap-2" },
+                        h("div", null, h("h2", { className: "text-2xl font-bold text-gray-800" }, group.category), h("p", { className: "text-gray-600 mt-1" }, group.description)),
+                        h("span", { className: "text-sm font-semibold text-sky-700 bg-sky-50 px-3 py-2 rounded-lg" }, group.files.length + " documento" + (group.files.length === 1 ? "" : "s"))
+                      )
+                    ),
+                    h(
+                      "div",
+                      { className: "grid grid-cols-1 md:grid-cols-2 gap-4" },
+                      group.files.map(function (file) {
+                        return h(LinkCard, { key: file.fileName, href: file.url, title: file.title, detail: file.fileName });
+                      })
+                    )
+                  );
+                })
+              )
+            : h(
+                "section",
+                { className: "bg-white rounded-lg shadow-md p-8 text-center" },
+                h("h2", { className: "text-2xl font-bold text-gray-800 mb-2" }, "Nenhum documento encontrado"),
+                h("p", { className: "text-gray-600" }, "Ajuste a busca ou selecione outra categoria.")
+              )
+        );
+      }
+
+      function NavIcon(props) {
+        return h(
+          "svg",
+          { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", strokeWidth: 2 },
+          h("rect", { x: props.x || 4, y: 4, width: 16, height: 16, rx: 2 }),
+          h("line", { x1: 8, y1: 10, x2: 16, y2: 10 }),
+          h("line", { x1: 8, y1: 14, x2: 16, y2: 14 })
+        );
+      }
+
+      function Navigation() {
+        var state = React.useState("home");
+        var activeTab = state[0];
+        var setActiveTab = state[1];
+        var tabs = [
+          { id: "home", label: "Inicial", component: h(HomePage), icon: h(NavIcon) },
+          { id: "teaching-plan", label: "Plano de Ensino", component: h(SimplePage, { title: "Plano de Ensino", description: "Estrutura e conteudo da disciplina IT-214", emptyText: "Arquivos serao adicionados em breve." }), icon: h(NavIcon) },
+          { id: "teams", label: "Equipes", component: h(SimplePage, { title: "Equipes", description: "Conheca os grupos de trabalho", emptyText: "As equipes de trabalho serao adicionadas em breve." }), icon: h(NavIcon) },
+          { id: "materials", label: "Materiais de Aula", component: h(CourseMaterialsPage), icon: h(NavIcon) },
+          { id: "documents", label: "Documentos", component: h(DocumentsPage), icon: h(NavIcon) },
+          { id: "normative-documents", label: "Documentos Normativos", component: h(NormativeDocumentsPage), icon: h(NavIcon) },
+        ];
+        var currentTab =
+          tabs.find(function (tab) {
+            return tab.id === activeTab;
+          }) || tabs[0];
+
+        return h(
+          "div",
+          { className: "min-h-screen bg-sky-50" },
+          h(
+            "nav",
+            { className: "bg-white shadow-md sticky top-0 z-50" },
+            h(
+              "div",
+              { className: "max-w-7xl mx-auto px-4 md:px-8" },
+              h(
+                "div",
+                { className: "flex flex-col md:flex-row items-start md:items-center gap-4 py-4" },
+                h(
+                  "div",
+                  { className: "w-full md:w-auto mb-4 md:mb-0" },
+                  h(
+                    "div",
+                    { className: "flex items-center gap-2" },
+                    h("img", { src: "/images/ITA_logo.png", alt: "ITA Logo", className: "h-8 w-auto" }),
+                    h("h1", { className: "text-2xl font-bold text-sky-600" }, "IT-214")
+                  ),
+                  h("p", { className: "text-sm text-gray-600" }, "Mobilidade Aerea Urbana")
+                ),
+                h(
+                  "div",
+                  { className: "w-full md:flex-1 overflow-x-auto" },
+                  h(
+                    "div",
+                    { className: "flex gap-2 border-b border-gray-200" },
+                    tabs.map(function (tab) {
+                      return h(
+                        "button",
+                        {
+                          key: tab.id,
+                          onClick: function () {
+                            return setActiveTab(tab.id);
+                          },
+                          className:
+                            "px-4 py-3 font-semibold whitespace-nowrap flex items-center gap-2 border-b-4 transition-all " +
+                            (activeTab === tab.id
+                              ? "border-sky-600 text-sky-600"
+                              : "border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50"),
+                        },
+                        h("span", { className: "flex-shrink-0" }, tab.icon),
+                        h("span", { className: "hidden sm:inline" }, tab.label)
+                      );
+                    })
+                  )
+                )
+              )
+            )
+          ),
+          h("main", null, currentTab.component),
+          h(
+            "footer",
+            { className: "bg-gray-800 text-white py-8 px-4 md:px-8 mt-12" },
+            h(
+              "div",
+              { className: "max-w-6xl mx-auto text-center" },
+              h("h3", { className: "text-xl font-bold mb-2" }, "IT-214: Mobilidade Aerea Urbana"),
+              h("p", { className: "text-gray-400 mb-4" }, "Instituto Tecnologico de Aeronautica (ITA)"),
+              h("p", { className: "text-gray-500 text-sm" }, "© 2024-2026 ITA. Todos os direitos reservados.")
+            )
+          )
+        );
+      }
+    },
+  },
+  function (require) {
+    require.O(0, [971, 117, 744], function () {
+      return require((require.s = 8087));
+    });
+    _N_E = require.O();
+  },
+]);

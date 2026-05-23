@@ -6,6 +6,7 @@ import TeachingPlanPage from './TeachingPlanPage';
 import TeamsPage from './TeamsPage';
 import CourseMaterialsPage from './CourseMaterialsPage';
 import DocumentsPage from './DocumentsPage';
+import NormativeDocumentsPage from './NormativeDocumentsPage';
 
 export default function Navigation() {
   const [activeTab, setActiveTab] = useState('home');
@@ -72,6 +73,20 @@ export default function Navigation() {
         </svg>
       )
     },
+    {
+      id: 'normative-documents',
+      label: 'Documentos Normativos',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+          <path d="M8 4h8" strokeLinecap="round" />
+          <path d="M9 2h6a1 1 0 011 1v2H8V3a1 1 0 011-1z" />
+          <rect x="5" y="4" width="14" height="18" rx="2" />
+          <line x1="8" y1="10" x2="16" y2="10" strokeLinecap="round" />
+          <line x1="8" y1="14" x2="16" y2="14" strokeLinecap="round" />
+          <line x1="8" y1="18" x2="13" y2="18" strokeLinecap="round" />
+        </svg>
+      )
+    },
   ];
 
   return (
@@ -116,6 +131,7 @@ export default function Navigation() {
         {activeTab === 'teams' && <TeamsPage />}
         {activeTab === 'materials' && <CourseMaterialsPage />}
         {activeTab === 'documents' && <DocumentsPage />}
+        {activeTab === 'normative-documents' && <NormativeDocumentsPage />}
       </main>
 
       {/* Footer */}
