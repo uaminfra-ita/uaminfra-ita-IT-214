@@ -197,6 +197,17 @@
                 </svg>
                 Documentos
             </button>
+            <button class="tab-button" onclick="showPage('normas')">
+                <svg class="tab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M8 4h8" stroke-linecap="round" />
+                    <path d="M9 2h6a1 1 0 011 1v2H8V3a1 1 0 011-1z" />
+                    <rect x="5" y="4" width="14" height="18" rx="2" />
+                    <line x1="8" y1="10" x2="16" y2="10" stroke-linecap="round" />
+                    <line x1="8" y1="14" x2="16" y2="14" stroke-linecap="round" />
+                    <line x1="8" y1="18" x2="13" y2="18" stroke-linecap="round" />
+                </svg>
+                Normas
+            </button>
         </div>
     </nav>
 
@@ -416,6 +427,52 @@
                     </a>
                 </p>
                 <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Second Edition</p>
+            </div>
+        </div>
+        <!-- Documentos Normativos -->
+        <div id="normas" class="page">
+            <div class="header">
+                <h1>Documentos Normativos</h1>
+                <p>Normas, regulamentos e documentos tÃ©cnicos de apoio</p>
+            </div>
+            <div class="card">
+                <h2>ICAO</h2>
+                <p style="margin-top: 1rem;"><a href="public/normas/AN14_v1_9ed_amend_18.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Annex 14 - Volume I, 9th Edition, Amendment 18</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/AN14_V1_cons.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Annex 14 - Volume I (Consolidated)</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/AN14_V2_cons.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Annex 14 - Volume II (Consolidated)</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/8168_v2_7ed_amend_10_en.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Doc 8168 - Volume II, 7th Edition, Amendment 10</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Doc_9137_p6_cons_en.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Doc 9137 - Part 6 (Consolidated)</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Doc_9981_3ed_en_PANS-AD.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Doc 9981 - PANS Aerodromes, 3rd Edition</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Doc_9981_3ed_PANS-AD_amend_5_en.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Doc 9981 - PANS Aerodromes, Amendment 5</a></p>
+            </div>
+            <div class="card" style="margin-top: 1.5rem;">
+                <h2>DECEA / Comando da AeronÃ¡utica</h2>
+                <p style="margin-top: 1rem;"><a href="public/normas/ICA 11-3_2020.pdf" target="_blank" rel="noopener noreferrer" class="material-link">ICA 11-3/2020</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/01 - TABELAS DA ICA 11-3.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Tabelas da ICA 11-3</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/02 - Anexos_ICA_11-3.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Anexos da ICA 11-3</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Tabelas_e_Anexos_ICA_11-3.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Tabelas e Anexos da ICA 11-3</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/ICA 11-4_2020.pdf" target="_blank" rel="noopener noreferrer" class="material-link">ICA 11-4/2020</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/ICA 11-408_2020.pdf" target="_blank" rel="noopener noreferrer" class="material-link">ICA 11-408/2020</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Figuras ICA 11-408.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Figuras da ICA 11-408</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Tabelas ICA 11-408.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Tabelas da ICA 11-408</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/ICA 63-19_2020.pdf" target="_blank" rel="noopener noreferrer" class="material-link">ICA 63-19/2020</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Tabelas ICA 63-19.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Tabelas da ICA 63-19</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/TCA 53-2.pdf" target="_blank" rel="noopener noreferrer" class="material-link">TCA 53-2</a></p>
+            </div>
+            <div class="card" style="margin-top: 1.5rem;">
+                <h2>ANAC</h2>
+                <p style="margin-top: 1rem;"><a href="public/normas/RBAC154EMD08.pdf" target="_blank" rel="noopener noreferrer" class="material-link">RBAC 154 - Emenda 08</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/RBAC155EMD01 _HELPN.pdf" target="_blank" rel="noopener noreferrer" class="material-link">RBAC 155 - Emenda 01, Helipontos</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/IS153.51-001A_SMS.pdf" target="_blank" rel="noopener noreferrer" class="material-link">IS 153.51-001A - SMS</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/IS154.5-001A.pdf" target="_blank" rel="noopener noreferrer" class="material-link">IS 154.5-001A</a></p>
+            </div>
+            <div class="card" style="margin-top: 1.5rem;">
+                <h2>FAA</h2>
+                <p style="margin-top: 1rem;"><a href="public/normas/14 CFR Part 77.19.pdf" target="_blank" rel="noopener noreferrer" class="material-link">14 CFR Part 77.19</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Order_6750_16E_ILS_Siting_Criteria_06-09-2014_for_Web_posting[1].pdf" target="_blank" rel="noopener noreferrer" class="material-link">Order 6750.16E - ILS Siting Criteria</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Order_6820.10_VOR_DVOR_VORTAC.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Order 6820.10 - VOR, DVOR and VORTAC</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Order_6820.14_DME.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Order 6820.14 - DME</a></p>
+                <p style="margin-top: 1rem;"><a href="public/normas/Order_JO7400.2R_Basic_w_Chg_1_dtd_8_7_25.pdf" target="_blank" rel="noopener noreferrer" class="material-link">Order JO 7400.2R</a></p>
             </div>
         </div>
     </div>
