@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "e02-nivelamento-uam",
+    "activityId": "E02",
+    "title": "Nivelamento UAM, AAM, eVTOL, UTM e ATM",
+    "subtitle": "Vocabulário, ecossistema e desafios para a mobilidade aérea urbana",
+    "date": "2026-08-11",
+    "durationMinutes": 90,
+    "slideCount": 28,
+    "objectives": [
+      "Distinguir UAM, AAM, IAM, eVTOL, UTM e ATM.",
+      "Reconhecer a UAM como um sistema de sistemas sociotécnico.",
+      "Relacionar aeronave, infraestrutura, espaço aéreo, operação e cidade.",
+      "Identificar oportunidades, restrições e perguntas de pesquisa."
+    ],
+    "sections": [
+      "Abertura",
+      "História",
+      "Vocabulário",
+      "Aeronaves e ecossistema",
+      "Infraestrutura e espaço aéreo",
+      "Desafios",
+      "Síntese"
+    ],
+    "resourceIds": [
+      "cohen-2021-uam-history",
+      "garrow-2021-uam-review",
+      "pak-2024-uam-reality"
+    ]
+  }
+]

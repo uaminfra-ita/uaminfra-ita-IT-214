@@ -13,10 +13,10 @@
     "Desenvolver e apresentar um artigo científico aderente a uma lacuna da literatura UAM."
   ],
   "staff": [
-    { "name": "Marcelo Xavier Guterres", "role": "Professor responsável", "initials": "MXG" },
-    { "name": "Marcelo Saraiva Peres", "role": "Instrutor", "initials": "MSP" },
-    { "name": "Rodrigo Mollo Furlan", "role": "Instrutor", "initials": "RMF" },
-    { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR" }
+    { "name": "Marcelo Xavier Guterres", "role": "Professor responsável", "initials": "MXG", "image": null, "linkedin": null },
+    { "name": "Marcelo Saraiva Peres", "role": "Instrutor", "initials": "MSP", "image": null, "linkedin": null },
+    { "name": "Rodrigo Mollo Furlan", "role": "Instrutor", "initials": "RMF", "image": null, "linkedin": null },
+    { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR", "image": null, "linkedin": null }
   ],
   "modules": [
     { "number": "01", "title": "Fundamentos e regulação", "description": "UAM, AAM, eVTOL, UTM/ATM, atores, CONOPS e papéis institucionais." },

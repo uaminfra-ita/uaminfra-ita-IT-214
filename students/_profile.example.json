@@ -1,9 +1,0 @@
-{
-  "headline": "Título opcional para a área pessoal",
-  "bio": "Breve apresentação acadêmica para contextualizar as atividades.",
-  "accent": "cyan",
-  "featuredFiles": ["E01_exemplo.pdf"],
-  "links": [
-    { "label": "Perfil acadêmico", "url": "https://example.com" }
-  ]
-}

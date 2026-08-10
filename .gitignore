@@ -12,7 +12,6 @@
 
 # production
 /build
-/docs
 
 # local instructor data (never commit)
 /.private/

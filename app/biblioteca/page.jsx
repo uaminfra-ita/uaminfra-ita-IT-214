@@ -11,7 +11,7 @@ export default function LibraryPage() {
 
   return (
     <>
-      <PageHero eyebrow="Conhecimento compartilhado" title="Biblioteca técnica" description="Artigos, referências regulatórias e documentos da disciplina organizados para consulta durante o semestre.">
+      <PageHero title="Biblioteca técnica" description="Artigos, referências regulatórias e documentos da disciplina organizados para consulta durante o semestre.">
         <div className="flex flex-wrap gap-2 lg:max-w-xs lg:justify-end">
           {['Artigos', 'Documentos', 'Plano'].map((item) => (
             <span className="rounded-full border border-white/15 px-3 py-2 text-xs font-bold text-slate-300" key={item}>{item}</span>

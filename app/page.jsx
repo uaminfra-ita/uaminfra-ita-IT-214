@@ -1,25 +1,18 @@
 import course from '@/data/course.json';
 import activities from '@/data/activities.json';
+import Image from 'next/image';
 import HeroGraphic from '@/components/HeroGraphic';
 import Icon from '@/components/Icon';
+import NextMilestone from '@/components/NextMilestone';
 
 export default function HomePage() {
-  const today = new Date().toISOString().slice(0, 10);
-  const nextCheckpoint = activities.find(
-    (activity) => activity.checkpoint && activity.date >= today,
-  );
-
   return (
     <>
       <section className="hero-shell overflow-hidden text-white">
         <div className="route-grid absolute inset-0 opacity-40" aria-hidden="true" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:py-28">
           <div className="animate-rise">
-            <div className="eyebrow border-white/20 bg-white/10 text-cyan-100">
-              <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_16px_#67e8f9]" />
-              Pós-graduação · {course.term}
-            </div>
-            <h1 className="mt-7 max-w-3xl text-5xl font-black leading-[.95] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-3xl text-5xl font-black leading-[.95] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
               Mobilidade aérea
               <span className="block text-cyan-300">em perspectiva.</span>
             </h1>
@@ -37,21 +30,6 @@ export default function HomePage() {
           </div>
           <HeroGraphic />
         </div>
-        <div className="relative border-t border-white/10">
-          <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-5 sm:grid-cols-4 sm:px-8">
-            {[
-              ['16', 'encontros'],
-              ['04', 'eixos formativos'],
-              ['04', 'checkpoints'],
-              ['08', 'pesquisadores'],
-            ].map(([value, label]) => (
-              <div className="px-4 py-6 first:pl-0 sm:px-8" key={label}>
-                <strong className="block text-2xl font-bold text-white">{value}</strong>
-                <span className="text-xs uppercase tracking-[.16em] text-slate-400">{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       <section id="disciplina" className="section-shell">
@@ -60,13 +38,7 @@ export default function HomePage() {
             <div className="eyebrow">Visão geral</div>
             <h2 className="section-title mt-5">Uma disciplina orientada a sistemas.</h2>
             <p className="section-copy mt-5">{course.shortDescription}</p>
-            {nextCheckpoint && (
-              <div className="mt-8 rounded-3xl bg-ink p-6 text-white shadow-lift">
-                <span className="text-xs font-bold uppercase tracking-[.18em] text-cyan-300">Próximo marco</span>
-                <h3 className="mt-3 text-xl font-bold">{nextCheckpoint.checkpoint} · {nextCheckpoint.theme}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-300">{nextCheckpoint.deliverable}</p>
-              </div>
-            )}
+            <NextMilestone activities={activities} />
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {course.modules.map((module) => (
@@ -90,13 +62,14 @@ export default function HomePage() {
             {course.staff.map((member, index) => (
               <article className="staff-card" key={member.name}>
                 <div className="flex items-center justify-between">
-                  <div className="grid h-14 w-14 place-items-center rounded-2xl bg-ink text-sm font-black tracking-wider text-cyan-300">
-                    {member.initials}
+                  <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-ink text-sm font-black tracking-wider text-cyan-300">
+                    {member.image ? <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`} alt={member.name} width={128} height={128} className="h-full w-full object-cover" /> : member.initials}
                   </div>
                   <span className="text-xs font-bold text-slate-300">0{index + 1}</span>
                 </div>
                 <h3 className="mt-8 text-lg font-bold leading-tight text-ink">{member.name}</h3>
                 <p className="mt-2 text-sm font-semibold text-cyan-700">{member.role}</p>
+                {member.linkedin && <a className="mt-4 inline-flex items-center gap-1 text-xs font-black text-slate-500 hover:text-cyan-700" href={member.linkedin} target="_blank" rel="noreferrer">LinkedIn <Icon name="external" className="h-3.5 w-3.5" /></a>}
               </article>
             ))}
           </div>

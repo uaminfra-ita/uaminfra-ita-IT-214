@@ -1,14 +1,57 @@
 {
-  "generalArticles": [],
-  "technicalDocuments": [],
-  "disciplineDocuments": [],
-  "schema": {
-    "resource": {
-      "title": "Título do recurso",
-      "description": "Descrição breve e finalidade da leitura",
-      "url": "https://endereco-oficial.example",
-      "organization": "Instituição ou periódico",
-      "tags": ["tema"]
+  "generalArticles": [
+    {
+      "id": "cohen-2021-uam-history",
+      "category": "general-article",
+      "title": "Urban Air Mobility: History, Ecosystem, Market Potential, and Challenges",
+      "authors": ["Adam P. Cohen", "Susan A. Shaheen", "Emily M. Farrar"],
+      "year": 2021,
+      "publication": "IEEE Transactions on Intelligent Transportation Systems, 22(9), 6074–6087",
+      "doi": "10.1109/TITS.2021.3082767",
+      "publisherUrl": "https://doi.org/10.1109/TITS.2021.3082767",
+      "assetPath": "/resources/articles/cohen-2021-uam-history-ecosystem.pdf",
+      "audience": "public",
+      "license": "© 2021 IEEE — redistribuição requer autorização da IEEE",
+      "summary": "Reconstrói a evolução histórica da UAM em seis fases, descreve seu ecossistema e organiza barreiras de mercado, regulação, infraestrutura, segurança, ruído, equidade e aceitação social.",
+      "tags": ["história", "ecossistema", "mercado", "desafios"],
+      "relatedActivityIds": ["E02"],
+      "sha256": "B9A07B61DB6814E9D284B33B5B5D9AB372DD6C39EBA38433E15E1201813A82F5"
+    },
+    {
+      "id": "garrow-2021-uam-review",
+      "category": "general-article",
+      "title": "Urban air mobility: A comprehensive review and comparative analysis with autonomous and electric ground transportation for informing future research",
+      "authors": ["Laurie A. Garrow", "Brian J. German", "Caroline E. Leonard"],
+      "year": 2021,
+      "publication": "Transportation Research Part C: Emerging Technologies, 132, 103377",
+      "doi": "10.1016/j.trc.2021.103377",
+      "publisherUrl": "https://doi.org/10.1016/j.trc.2021.103377",
+      "assetPath": "/resources/articles/garrow-2021-uam-comprehensive-review.pdf",
+      "audience": "public",
+      "license": "CC BY-NC-ND 4.0",
+      "summary": "Compara cerca de 800 estudos sobre UAM, veículos autônomos e veículos elétricos para identificar lacunas em demanda, infraestrutura, operações, energia e simulação integrada.",
+      "tags": ["revisão", "demanda", "operações", "infraestrutura"],
+      "relatedActivityIds": ["E02"],
+      "sha256": "858403873C95D27605504F48D9E86FC4F456459C2D9A34AFE9D63395848A7E16"
+    },
+    {
+      "id": "pak-2024-uam-reality",
+      "category": "general-article",
+      "title": "Can Urban Air Mobility become reality? Opportunities and challenges of UAM as innovative mode of transport and DLR contribution to ongoing research",
+      "authors": ["Henry Pak et al."],
+      "year": 2024,
+      "publication": "CEAS Aeronautical Journal, 16, 665–695 (2025)",
+      "doi": "10.1007/s13272-024-00733-x",
+      "publisherUrl": "https://doi.org/10.1007/s13272-024-00733-x",
+      "assetPath": "/resources/articles/pak-2024-uam-opportunities-challenges.pdf",
+      "audience": "public",
+      "license": "CC BY 4.0",
+      "summary": "Apresenta a UAM como sistema de sistemas e sintetiza pesquisas do DLR sobre mercado, aceitação, aeronaves, baterias, cabine, infraestrutura, U-space, autonomia, comunicações e custos.",
+      "tags": ["sistema de sistemas", "eVTOL", "aceitação", "DLR"],
+      "relatedActivityIds": ["E02"],
+      "sha256": "E38D4A601ECCAE3196027DDB368CF491D2F1BC04C2BDB8471E8187CB414C903D"
     }
-  }
+  ],
+  "technicalDocuments": [],
+  "disciplineDocuments": []
 }
