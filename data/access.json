@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "erica.lima",
+    "login": "erica.lima",
+    "salt": "82a27b2dfb389dcd0cc23e22487f616e",
+    "hash": "dd142d819b9f97935c1ef28fb03d5c177c2b6f22e79caac9bf1042c2f33dc8e1"
+  },
+  {
+    "slug": "luiz.fernando",
+    "login": "luiz.fernando",
+    "salt": "b0cc62763472f484d4d78b9ea87ba81d",
+    "hash": "68cd773972f919718c6b582c3c29b39c801fe13fb455b00b58b08fbfce6a3df7"
+  },
+  {
+    "slug": "gabriel.faria",
+    "login": "gabriel.faria",
+    "salt": "429bc2e176d67baa73d4b7bf6e97eda2",
+    "hash": "2690b950e06191d528365405aded3a61074aa8cc893e4b63e7d45601121f02bb"
+  },
+  {
+    "slug": "gianluca.leite",
+    "login": "gianluca.leite",
+    "salt": "b4bc0050cd7f5829462db38124a9bbfd",
+    "hash": "e4b7086cf8d3efd875d579d2a7f3ea87bff3edab31f4bf4511b68fb5434c07e1"
+  },
+  {
+    "slug": "luiz.tozi",
+    "login": "luiz.tozi",
+    "salt": "62f4a40bddb54b98c8644981de9458f2",
+    "hash": "279949de0cca5c1be19355e56d13f54cf260d073bbd23fda30f5a89180778928"
+  },
+  {
+    "slug": "joel.belo",
+    "login": "joel.belo",
+    "salt": "f92d4c462c57db0ab1b138339039d651",
+    "hash": "68a666d6cdb5283097566d05e5afb74fb501f477f73a845bd5118c2254e9fe80"
+  },
+  {
+    "slug": "laudicir.zamati",
+    "login": "laudicir.zamati",
+    "salt": "ee8fdcc476d76e34d0a1752344977f12",
+    "hash": "6690e96c8abebf73a3e7839087dd76a53f3bfd345d1dd64b3553952adc7e2d67"
+  },
+  {
+    "slug": "william.carvalho",
+    "login": "william.carvalho",
+    "salt": "fc4f07fe3c0c5e0a896f9a490c1a7875",
+    "hash": "a03245594510fb58906fbaa1ef894597d352c216857bedc72a7bdddb22c39784"
+  }
+]

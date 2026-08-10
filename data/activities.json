@@ -1,0 +1,120 @@
+[
+  {
+    "code": "E01", "meeting": 1, "date": "2026-08-04", "type": "class",
+    "theme": "Aula inicial e avaliação diagnóstica",
+    "objective": "Apresentar os objetivos da disciplina e mapear as lacunas iniciais da turma.",
+    "deliverable": "Avaliação diagnóstica realizada."
+  },
+  {
+    "code": "E02", "meeting": 2, "date": "2026-08-11", "type": "class",
+    "theme": "Nivelamento UAM, AAM, eVTOL, UTM e ATM",
+    "objective": "Construir vocabulário comum sobre sistema UAM, atores, aeronaves, vertiportos, cidade e espaço aéreo.",
+    "deliverable": "Glossário técnico inicial."
+  },
+  {
+    "code": "E03", "meeting": 3, "date": "2026-08-18", "type": "class",
+    "theme": "Regulamentação I",
+    "objective": "Separar certificação da aeronave, aprovação da infraestrutura, autorização operacional e gestão do espaço aéreo.",
+    "deliverable": "Quadro comparativo ANAC, DECEA, ICAO, FAA e EASA."
+  },
+  {
+    "code": "E04", "meeting": 4, "date": "2026-08-25", "type": "checkpoint",
+    "theme": "Regulamentação II, CONOPS e Seminário Artigo 1",
+    "objective": "Discutir requisitos para eVTOL, lacunas normativas, CONOPS e papéis institucionais.",
+    "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo.",
+    "checkpoint": "CP1"
+  },
+  {
+    "code": "E05", "meeting": 5, "date": "2026-09-01", "type": "class",
+    "theme": "Espaço aéreo e procedimentos",
+    "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação e integração com o tráfego convencional.",
+    "deliverable": "Esboço conceitual de corredores."
+  },
+  {
+    "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class",
+    "theme": "Rotas, corredores e integração",
+    "objective": "Explorar restrições urbanas, aeroportos, heliportos, zonas proibidas, conectividade e lógica de rede.",
+    "deliverable": "Mapa ou diagrama simples de rede e corredores."
+  },
+  {
+    "code": "E07", "meeting": 7, "date": "2026-09-15", "type": "class",
+    "theme": "Vertiportos I: componentes e tipologias",
+    "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e conversão de helipontos.",
+    "deliverable": "Tabela de componentes do vertiporto."
+  },
+  {
+    "code": "E08", "meeting": 8, "date": "2026-09-22", "type": "checkpoint",
+    "theme": "Vertiportos II e Seminário Artigo 2",
+    "objective": "Relacionar layout, turnaround, recarga, gates, carga, passageiros e gargalos operacionais.",
+    "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
+    "checkpoint": "CP2"
+  },
+  {
+    "code": "R01", "date": "2026-09-29", "type": "break",
+    "theme": "Semana de recuperação",
+    "objective": "Período sem aula regular, disponível para revisão e feedback assíncrono.",
+    "deliverable": "Sem entrega regular."
+  },
+  {
+    "code": "E09", "meeting": 9, "date": "2026-10-06", "type": "class",
+    "theme": "Superfícies de proteção de voo e obstáculos",
+    "objective": "Tratar rampas, gabaritos, edificações, antenas, entorno urbano e comparação normativa.",
+    "deliverable": "Exercício de leitura de superfície e obstáculo."
+  },
+  {
+    "code": "E10", "meeting": 10, "date": "2026-10-13", "type": "class",
+    "theme": "Demanda e localização de sítios",
+    "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo, acessibilidade e métodos multicritério.",
+    "deliverable": "Matriz preliminar de dados de demanda e sítio."
+  },
+  {
+    "code": "E11", "meeting": 11, "date": "2026-10-20", "type": "class",
+    "theme": "Ruído aeronáutico e aceitação social",
+    "objective": "Introduzir métricas de ruído, percepção pública, mitigação por rota e sítio e limites acústicos dos eVTOL.",
+    "deliverable": "Ficha de risco e mitigação de ruído."
+  },
+  {
+    "code": "E12", "meeting": 12, "date": "2026-10-27", "type": "checkpoint",
+    "theme": "Meteorologia, disponibilidade e Seminário Artigo 3",
+    "objective": "Relacionar vento, chuva, teto, visibilidade e temperatura à confiabilidade operacional.",
+    "deliverable": "Metodologia, dados, métricas e resultados preliminares.",
+    "checkpoint": "CP3"
+  },
+  {
+    "code": "E13", "meeting": 13, "date": "2026-11-03", "type": "class",
+    "theme": "Energia, recarga e baterias",
+    "objective": "Discutir potência, simultaneidade, rede elétrica, armazenamento, redundância e tempo de solo.",
+    "deliverable": "Estimativa simples de demanda energética."
+  },
+  {
+    "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class",
+    "theme": "Combate a incêndio, fauna e meio ambiente",
+    "objective": "Integrar risco de bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
+    "deliverable": "Matriz de riscos de incêndio, fauna e ambiente."
+  },
+  {
+    "code": "E15", "meeting": 15, "date": "2026-11-17", "type": "class",
+    "theme": "Oficina QGIS, Python, GitHub e integração de dados",
+    "objective": "Usar mapas, buffers, camadas, restrições, população e demanda em uma organização reprodutível.",
+    "deliverable": "Mapa ou notebook simples do estudo de caso."
+  },
+  {
+    "code": "E16", "meeting": 16, "date": "2026-11-24", "type": "checkpoint",
+    "theme": "Apresentação do artigo científico completo",
+    "objective": "Apresentar um artigo alinhado a uma lacuna da literatura UAM e à pesquisa individual.",
+    "deliverable": "Artigo completo com resumo, introdução, literatura, método, resultados, discussão, conclusão e referências.",
+    "checkpoint": "CP4"
+  },
+  {
+    "code": "F01", "date": "2026-12-01", "type": "break",
+    "theme": "Exames finais",
+    "objective": "Período de exames finais, sem aula regular.",
+    "deliverable": "Sem entrega regular."
+  },
+  {
+    "code": "F02", "date": "2026-12-08", "type": "break",
+    "theme": "Exames finais",
+    "objective": "Período de exames finais, sem aula regular.",
+    "deliverable": "Sem entrega regular."
+  }
+]

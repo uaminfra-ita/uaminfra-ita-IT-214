@@ -1,0 +1,14 @@
+{
+  "generalArticles": [],
+  "technicalDocuments": [],
+  "disciplineDocuments": [],
+  "schema": {
+    "resource": {
+      "title": "Título do recurso",
+      "description": "Descrição breve e finalidade da leitura",
+      "url": "https://endereco-oficial.example",
+      "organization": "Instituição ou periódico",
+      "tags": ["tema"]
+    }
+  }
+}

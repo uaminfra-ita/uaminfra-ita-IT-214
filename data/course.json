@@ -1,0 +1,27 @@
+{
+  "code": "IT-214",
+  "name": "Mobilidade Aérea Urbana",
+  "term": "2026/2",
+  "schedule": "Terças-feiras, das 09h às 12h",
+  "institution": "Instituto Tecnológico de Aeronáutica",
+  "shortDescription": "Infraestrutura, operação e regulação para sistemas de mobilidade aérea urbana.",
+  "description": "A disciplina conecta fundamentos de UAM, espaço aéreo, vertiportos, demanda, segurança, energia e regulação à produção de um artigo científico alinhado à pesquisa de cada aluno.",
+  "objectives": [
+    "Construir uma visão sistêmica da mobilidade aérea urbana e de seus atores.",
+    "Analisar requisitos técnicos, operacionais, urbanos e regulatórios de vertiportos.",
+    "Aplicar dados, métodos e ferramentas reprodutíveis a estudos de caso.",
+    "Desenvolver e apresentar um artigo científico aderente a uma lacuna da literatura UAM."
+  ],
+  "staff": [
+    { "name": "Marcelo Xavier Guterres", "role": "Professor responsável", "initials": "MXG" },
+    { "name": "Marcelo Saraiva Peres", "role": "Instrutor", "initials": "MSP" },
+    { "name": "Rodrigo Mollo Furlan", "role": "Instrutor", "initials": "RMF" },
+    { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR" }
+  ],
+  "modules": [
+    { "number": "01", "title": "Fundamentos e regulação", "description": "UAM, AAM, eVTOL, UTM/ATM, atores, CONOPS e papéis institucionais." },
+    { "number": "02", "title": "Rede e infraestrutura", "description": "Espaço aéreo, corredores, vertiportos, layout, capacidade e localização." },
+    { "number": "03", "title": "Risco e disponibilidade", "description": "Obstáculos, demanda, ruído, meteorologia, energia, incêndio e ambiente." },
+    { "number": "04", "title": "Integração e pesquisa", "description": "QGIS, Python, GitHub, integração de dados e comunicação científica." }
+  ]
+}
