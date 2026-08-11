@@ -45,6 +45,7 @@ export default function HomePage() {
               <article className="surface-card group" key={module.number}>
                 <span className="text-sm font-black tracking-[.18em] text-cyan-700">{module.number}</span>
                 <h3 className="mt-5 text-xl font-bold text-ink group-hover:text-cyan-700">{module.title}</h3>
+                <p className="mt-2 text-xs font-black uppercase tracking-[.14em] text-cyan-700">{module.meetings}</p>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{module.description}</p>
               </article>
             ))}

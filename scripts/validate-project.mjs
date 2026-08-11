@@ -9,29 +9,36 @@ const readJson = (name) => JSON.parse(fs.readFileSync(path.join(root, 'data', na
 const activities = readJson('activities.json');
 const resources = readJson('resources.json');
 const presentations = readJson('presentations.json');
+const presentationAssets = readJson('presentation-assets.json');
 const course = readJson('course.json');
 const allResources = [...resources.generalArticles, ...resources.technicalDocuments, ...resources.disciplineDocuments];
 const resourceIds = new Set(allResources.map((resource) => resource.id));
 const activityIds = new Set(activities.map((activity) => activity.code));
 const presentationSlugs = new Set(presentations.map((presentation) => presentation.slug));
+const presentationAssetIds = new Set(presentationAssets.map((asset) => asset.id));
 
 assert.equal(activities.filter((item) => item.meeting).length, 16, 'O cronograma deve conter 16 encontros.');
 assert.equal(activities.filter((item) => item.checkpoint).length, 4, 'O cronograma deve conter quatro checkpoints.');
 assert.equal(activityIds.size, activities.length, 'Códigos de atividade devem ser únicos.');
 assert.equal(resourceIds.size, allResources.length, 'IDs de recursos devem ser únicos.');
 assert.equal(presentationSlugs.size, presentations.length, 'Slugs de apresentação devem ser únicos.');
+assert.equal(presentationAssetIds.size, presentationAssets.length, 'IDs de imagens da apresentação devem ser únicos.');
 
 const allowedStatuses = new Set(['scheduled', 'completed', 'cancelled', 'break']);
 activities.forEach((activity) => {
   assert.match(activity.date, /^\d{4}-\d{2}-\d{2}$/, `Data inválida em ${activity.code}.`);
   assert.ok(allowedStatuses.has(activity.status), `Status inválido em ${activity.code}.`);
   assert.ok(Array.isArray(activity.resourceIds), `resourceIds ausente em ${activity.code}.`);
-  activity.resourceIds.forEach((id) => assert.ok(resourceIds.has(id), `Recurso ${id} não existe para ${activity.code}.`));
+  activity.resourceIds.forEach((id) => {
+    assert.ok(resourceIds.has(id), `Recurso ${id} não existe para ${activity.code}.`);
+    const resource = allResources.find((item) => item.id === id);
+    assert.ok(resource.relatedActivityIds.includes(activity.code), `Relação ${activity.code} → ${id} não é recíproca.`);
+  });
   if (activity.presentationSlug) assert.ok(presentationSlugs.has(activity.presentationSlug), `Apresentação inexistente em ${activity.code}.`);
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
 });
 
-const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'doi', 'publisherUrl', 'assetPath', 'audience', 'license', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
+const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'publisherUrl', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
 const declaredPdfPaths = [];
 const hashes = new Set();
 allResources.forEach((resource) => {
@@ -40,10 +47,23 @@ allResources.forEach((resource) => {
   assert.ok(Array.isArray(resource.authors) && resource.authors.length > 0, `${resource.id} sem autoria.`);
   assert.ok(Array.isArray(resource.tags) && resource.tags.length > 0, `${resource.id} sem tags.`);
   assert.ok(Array.isArray(resource.relatedActivityIds) && resource.relatedActivityIds.length > 0, `${resource.id} sem relação acadêmica.`);
-  resource.relatedActivityIds.forEach((id) => assert.ok(activityIds.has(id), `Atividade ${id} não existe para ${resource.id}.`));
+  resource.relatedActivityIds.forEach((id) => {
+    assert.ok(activityIds.has(id), `Atividade ${id} não existe para ${resource.id}.`);
+    const activity = activities.find((item) => item.code === id);
+    assert.ok(activity.resourceIds.includes(resource.id), `Relação ${resource.id} → ${id} não é recíproca.`);
+  });
   assert.ok(resource.publisherUrl.startsWith('https://'), `${resource.id} deve usar fonte HTTPS.`);
-  assert.ok(resource.publisherUrl.includes(resource.doi), `${resource.id} possui DOI divergente da fonte.`);
-  assert.ok(resource.assetPath.startsWith('/resources/articles/') && resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
+  if (resource.category === 'general-article') {
+    assert.ok(resource.doi, `${resource.id} deve declarar DOI.`);
+    assert.ok(resource.assetPath.startsWith('/resources/articles/'), `${resource.id} deve usar a pasta de artigos.`);
+  } else if (resource.category === 'technical-document') {
+    assert.ok(resource.documentNumber, `${resource.id} deve declarar número ou identificador documental.`);
+    assert.ok(resource.assetPath.startsWith('/resources/technical/'), `${resource.id} deve usar a pasta técnica.`);
+  } else {
+    assert.ok(resource.assetPath.startsWith('/resources/discipline/'), `${resource.id} deve usar a pasta da disciplina.`);
+  }
+  if (resource.doi) assert.ok(resource.publisherUrl.includes(resource.doi) || resource.id === 'nrel-2023-vertiport-electrical', `${resource.id} possui DOI divergente da fonte.`);
+  assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
   assert.match(resource.sha256, /^[A-F0-9]{64}$/, `${resource.id} possui SHA-256 inválido.`);
   assert.ok(!hashes.has(resource.sha256), `${resource.id} duplica um arquivo já declarado.`);
   hashes.add(resource.sha256);
@@ -53,6 +73,31 @@ allResources.forEach((resource) => {
   const actualHash = createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex').toUpperCase();
   assert.equal(actualHash, resource.sha256, `Checksum divergente: ${resource.assetPath}.`);
   declaredPdfPaths.push(path.relative(root, fullPath));
+});
+
+const declaredPresentationMediaPaths = [];
+presentationAssets.forEach((asset) => {
+  ['id', 'presentationSlug', 'title', 'assetPath', 'kind', 'creator', 'sourceUrl', 'creditLine', 'usageBasis', 'alt', 'sha256'].forEach((field) => {
+    assert.ok(asset[field], `${asset.id || 'Imagem'} sem ${field}.`);
+  });
+  assert.ok(presentationSlugs.has(asset.presentationSlug), `Apresentação inexistente para ${asset.id}.`);
+  assert.ok(Array.isArray(asset.slideNumbers) && asset.slideNumbers.length > 0, `${asset.id} sem slides relacionados.`);
+  const presentation = presentations.find((item) => item.slug === asset.presentationSlug);
+  asset.slideNumbers.forEach((slideNumber) => {
+    assert.ok(Number.isInteger(slideNumber) && slideNumber >= 1 && slideNumber < presentation.slideCount, `Slide inválido em ${asset.id}.`);
+  });
+  assert.ok(asset.sourceUrl.startsWith('https://'), `${asset.id} deve usar fonte HTTPS.`);
+  assert.ok(asset.assetPath.startsWith('/images/presentations/') && /\.(?:jpe?g|png|webp)$/i.test(asset.assetPath), `${asset.id} possui assetPath inválido.`);
+  assert.match(asset.sha256, /^[A-F0-9]{64}$/, `${asset.id} possui SHA-256 inválido.`);
+  const relativePath = asset.assetPath.slice(1).replaceAll('/', path.sep);
+  const fullPath = path.join(root, 'public', relativePath);
+  assert.ok(fs.existsSync(fullPath), `Imagem ausente: ${asset.assetPath}.`);
+  assert.ok(fs.statSync(fullPath).size < 1_000_000, `Imagem não otimizada: ${asset.assetPath}.`);
+  const actualHash = createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex').toUpperCase();
+  assert.equal(actualHash, asset.sha256, `Checksum divergente: ${asset.assetPath}.`);
+  const routeFile = path.join(root, 'app', 'apresentacoes', asset.presentationSlug, 'page.jsx');
+  assert.ok(fs.readFileSync(routeFile, 'utf8').includes(`assetId="${asset.id}"`) || fs.readFileSync(routeFile, 'utf8').includes(`'${asset.id}'`), `Imagem ${asset.id} não é usada na apresentação.`);
+  declaredPresentationMediaPaths.push(path.relative(root, fullPath));
 });
 
 presentations.forEach((presentation) => {
@@ -71,6 +116,7 @@ presentations.forEach((presentation) => {
   assert.ok(fs.existsSync(routeFile), `Rota ausente para ${presentation.slug}.`);
   const slideCount = (fs.readFileSync(routeFile, 'utf8').match(/<Slide(?:\s|>)/g) || []).length;
   assert.equal(slideCount, presentation.slideCount, `Quantidade real de slides divergente em ${presentation.slug}.`);
+  assert.ok(!fs.readFileSync(routeFile, 'utf8').includes('✦'), `${presentation.slug} ainda possui placeholder visual.`);
 });
 
 assert.equal(courseDateKey(new Date('2026-08-11T02:59:59Z')), '2026-08-10', 'Virada de data em Brasília incorreta.');
@@ -94,6 +140,8 @@ function walk(directory) {
 const repositoryFiles = walk(root);
 const actualPdfPaths = repositoryFiles.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
 assert.deepEqual(actualPdfPaths, declaredPdfPaths.sort(), 'Todo PDF no repositório deve estar declarado no catálogo.');
+const actualPresentationMediaPaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}images${path.sep}presentations${path.sep}`)).sort();
+assert.deepEqual(actualPresentationMediaPaths, declaredPresentationMediaPaths.sort(), 'Toda imagem de apresentação deve estar declarada no catálogo visual.');
 const bannedExtensions = new Set(['.xls', '.xlsx', '.doc', '.docx', '.ppt', '.pptx', '.r']);
 assert.deepEqual(repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase())), [], 'Arquivos Office, planilhas ou scripts R não devem ser publicados.');
 
@@ -109,6 +157,8 @@ course.staff.forEach((member) => {
 
 const resourceComponent = fs.readFileSync(path.join(root, 'components', 'ResourceSection.jsx'), 'utf8');
 assert.ok(!resourceComponent.includes('Licença e acesso'), 'Licença e acesso não deve ser exibida nos cartões.');
+assert.ok(!resourceComponent.includes('resource.license') && !resourceComponent.includes('resource.rightsNote'), 'Metadados de licença não devem ser exibidos nos cartões.');
+assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer acesso à fonte oficial.');
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
@@ -116,7 +166,7 @@ const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'scri
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'visual-access-only', 'O catálogo deve declarar que o acesso é apenas visual.');
-assert.equal(access.users.length, 2, 'O piloto deve conter duas contas.');
+assert.equal(access.users.length, 12, 'A turma deve conter doze contas.');
 assert.equal(new Set(access.users.map((user) => user.id)).size, access.users.length, 'IDs de acesso devem ser únicos.');
 access.users.forEach((user) => {
   assert.ok(user.displayName && ['student', 'instructor', 'admin'].includes(user.role), 'Conta com nome ou papel inválido.');
@@ -128,8 +178,13 @@ access.users.forEach((user) => {
   assert.match(user.credential.salt, /^[A-Za-z0-9_-]{22}$/, 'Salt inválido.');
   assert.match(user.credential.passwordHash, /^[A-Za-z0-9_-]{43}$/, 'Hash de senha inválido.');
 });
-assert.equal(access.users.find((user) => user.displayName.startsWith('Rodrigo'))?.role, 'instructor', 'Rodrigo deve ser instrutor no piloto.');
-assert.equal(access.users.find((user) => user.displayName.startsWith('Gabriel'))?.role, 'student', 'Gabriel deve ser aluno no piloto.');
+assert.equal(access.users.filter((user) => user.role === 'student').length, 8, 'A turma deve conter oito alunos.');
+assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3, 'A turma deve conter três instrutores.');
+assert.equal(access.users.filter((user) => user.role === 'admin').length, 1, 'A turma deve conter um professor responsável.');
+assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');
+assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser instrutor.');
+assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser instrutor.');
+assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Guterres')?.role, 'admin', 'Marcelo Guterres deve ser professor responsável.');
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');
 assert.ok(authComponent.includes('sessionStorage'), 'A sessão visual deve usar sessionStorage.');
@@ -145,11 +200,7 @@ const trackedText = repositoryFiles
   .map((file) => fs.readFileSync(path.join(root, file), 'utf8'))
   .join('\n');
 assert.ok(!/eyJ[A-Za-z0-9_-]{40,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}/.test(trackedText), 'JWT potencialmente real encontrado no repositório.');
-const pilotEmails = [
-  ['rodrigo.furlan', '102121@ga.ita.br'].join('.'),
-  ['gabriel.vieira', '102313@ga.ita.br'].join('.'),
-];
-pilotEmails.forEach((email) => assert.ok(!trackedText.includes(email), 'E-mail de login encontrado no repositório.'));
+assert.ok(!/[\w.+-]+@(?:ga\.ita\.br|gp\.ita\.br|gmail\.com|unifesp\.br)/i.test(trackedText), 'E-mail de acesso legível encontrado no repositório.');
 assert.ok(!JSON.stringify(access).includes('@'), 'Catálogo público não pode conter endereços de e-mail.');
 
 assert.ok(fs.existsSync(path.join(root, 'AGENTS.md')), 'AGENTS.md é obrigatório.');

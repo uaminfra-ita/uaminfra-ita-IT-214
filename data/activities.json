@@ -1,59 +1,59 @@
 [
   {
     "code": "E01", "meeting": 1, "date": "2026-08-04", "type": "class", "status": "completed",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["it214-2026-2-plano-ensino"], "presentationSlug": null,
     "theme": "Aula inicial e avaliação diagnóstica",
     "objective": "Apresentar os objetivos da disciplina e mapear as lacunas iniciais da turma.",
     "deliverable": "Avaliação diagnóstica realizada."
   },
   {
     "code": "E02", "meeting": 2, "date": "2026-08-11", "type": "class", "status": "scheduled",
-    "resourceIds": ["cohen-2021-uam-history", "garrow-2021-uam-review", "pak-2024-uam-reality"], "presentationSlug": "e02-nivelamento-uam",
+    "resourceIds": ["cohen-2021-uam-history", "garrow-2021-uam-review", "pak-2024-uam-reality", "faa-2023-uam-conops-2", "faa-2023-aam-implementation-plan", "nrel-2023-vertiport-electrical", "cityam-2024-geospatial-lls"], "presentationSlug": "e02-nivelamento-uam",
     "theme": "Nivelamento UAM, AAM, eVTOL, UTM e ATM",
     "objective": "Construir vocabulário comum sobre sistema UAM, atores, aeronaves, vertiportos, cidade e espaço aéreo.",
     "deliverable": "Glossário técnico inicial."
   },
   {
     "code": "E03", "meeting": 3, "date": "2026-08-18", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
-    "theme": "Regulamentação I",
-    "objective": "Separar certificação da aeronave, aprovação da infraestrutura, autorização operacional e gestão do espaço aéreo.",
+    "resourceIds": ["faa-2023-uam-conops-2", "faa-2023-aam-implementation-plan"], "presentationSlug": null,
+    "theme": "Regulamentação, CONOPS e papéis institucionais",
+    "objective": "Discutir requisitos para eVTOL, certificação, aprovação da infraestrutura, autorização operacional, gestão do espaço aéreo e papéis institucionais.",
     "deliverable": "Quadro comparativo ANAC, DECEA, ICAO, FAA e EASA."
   },
   {
     "code": "E04", "meeting": 4, "date": "2026-08-25", "type": "checkpoint", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Regulamentação II, CONOPS e Seminário Artigo 1",
-    "objective": "Discutir requisitos para eVTOL, lacunas normativas, CONOPS e papéis institucionais.",
-    "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo.",
+    "theme": "Oficina I: Overleaf, LaTeX e VS Code, e Seminário Artigo 1",
+    "objective": "Configurar o ambiente de escrita, versionamento e referências e apresentar introdução e motivação do artigo.",
+    "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo organizadas no Overleaf.",
     "checkpoint": "CP1"
   },
   {
     "code": "E05", "meeting": 5, "date": "2026-09-01", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Espaço aéreo e procedimentos",
-    "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação e integração com o tráfego convencional.",
-    "deliverable": "Esboço conceitual de corredores."
+    "theme": "Oficina II: revisão de literatura e mapeamento de referências",
+    "objective": "Praticar busca em bases, triagem, leitura crítica e organização do mapeamento bibliográfico.",
+    "deliverable": "Matriz de literatura iniciada e estratégia de busca documentada."
   },
   {
     "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
-    "theme": "Rotas, corredores e integração",
-    "objective": "Explorar restrições urbanas, aeroportos, heliportos, zonas proibidas, conectividade e lógica de rede.",
-    "deliverable": "Mapa ou diagrama simples de rede e corredores."
+    "resourceIds": ["faa-2023-uam-conops-2"], "presentationSlug": null,
+    "theme": "Espaço aéreo, rotas e corredores",
+    "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
+    "deliverable": "Esboço conceitual de corredores e diagrama simples de rede."
   },
   {
     "code": "E07", "meeting": 7, "date": "2026-09-15", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
     "theme": "Vertiportos I: componentes e tipologias",
-    "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e conversão de helipontos.",
+    "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e tipologias no solo, elevadas ou por conversão de helipontos.",
     "deliverable": "Tabela de componentes do vertiporto."
   },
   {
     "code": "E08", "meeting": 8, "date": "2026-09-22", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
     "theme": "Vertiportos II e Seminário Artigo 2",
-    "objective": "Relacionar layout, turnaround, recarga, gates, carga, passageiros e gargalos operacionais.",
+    "objective": "Relacionar layout, turnaround, recarga, gates, stands, operações de carga e passageiros e gargalos operacionais.",
     "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
     "checkpoint": "CP2"
   },
@@ -74,42 +74,42 @@
   {
     "code": "E10", "meeting": 10, "date": "2026-10-13", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Demanda e localização de sítios",
-    "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo, acessibilidade e métodos multicritério.",
-    "deliverable": "Matriz preliminar de dados de demanda e sítio."
+    "theme": "Demanda",
+    "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar demanda.",
+    "deliverable": "Matriz preliminar de dados de demanda."
   },
   {
     "code": "E11", "meeting": 11, "date": "2026-10-20", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
-    "theme": "Ruído aeronáutico e aceitação social",
-    "objective": "Introduzir métricas de ruído, percepção pública, mitigação por rota e sítio e limites acústicos dos eVTOL.",
-    "deliverable": "Ficha de risco e mitigação de ruído."
+    "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
+    "theme": "Escolha e localização de sítios",
+    "objective": "Integrar acessibilidade, inserção urbana, restrições aeronáuticas e métodos multicritério na avaliação de alternativas.",
+    "deliverable": "Matriz preliminar de avaliação de sítios."
   },
   {
     "code": "E12", "meeting": 12, "date": "2026-10-27", "type": "checkpoint", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Meteorologia, disponibilidade e Seminário Artigo 3",
-    "objective": "Relacionar vento, chuva, teto, visibilidade e temperatura à confiabilidade operacional.",
-    "deliverable": "Metodologia, dados, métricas e resultados preliminares.",
+    "theme": "Meteorologia, disponibilidade operacional e Seminário Artigo 3",
+    "objective": "Relacionar vento, rajadas, chuva, teto, visibilidade, temperatura, densidade e condições VFR/IFR à confiabilidade operacional.",
+    "deliverable": "Metodologia, dados, estudo de caso, métricas e resultados preliminares.",
     "checkpoint": "CP3"
   },
   {
     "code": "E13", "meeting": 13, "date": "2026-11-03", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Energia, recarga e baterias",
-    "objective": "Discutir potência, simultaneidade, rede elétrica, armazenamento, redundância e tempo de solo.",
-    "deliverable": "Estimativa simples de demanda energética."
+    "theme": "Ruído aeronáutico e aceitação social",
+    "objective": "Introduzir métricas de ruído, percepção pública, efeito NIMBY, mitigação por rota e sítio e limites da ideia de eVTOL silencioso.",
+    "deliverable": "Ficha de risco e mitigação de ruído."
   },
   {
     "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
-    "theme": "Combate a incêndio, fauna e meio ambiente",
-    "objective": "Integrar risco de bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
-    "deliverable": "Matriz de riscos de incêndio, fauna e ambiente."
+    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
+    "theme": "Energia, recarga, combate a incêndio, fauna e meio ambiente",
+    "objective": "Integrar subestação, armazenamento, redundância, tempo de solo, bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
+    "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente."
   },
   {
     "code": "E15", "meeting": 15, "date": "2026-11-17", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
     "theme": "Oficina QGIS, Python, GitHub e integração de dados",
     "objective": "Usar mapas, buffers, camadas, restrições, população e demanda em uma organização reprodutível.",
     "deliverable": "Mapa ou notebook simples do estudo de caso."

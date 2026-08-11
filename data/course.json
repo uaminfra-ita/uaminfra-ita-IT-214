@@ -5,7 +5,7 @@
   "schedule": "Terças-feiras, das 09h às 12h",
   "institution": "Instituto Tecnológico de Aeronáutica",
   "shortDescription": "Infraestrutura, operação e regulação para sistemas de mobilidade aérea urbana.",
-  "description": "A disciplina conecta fundamentos de UAM, espaço aéreo, vertiportos, demanda, segurança, energia e regulação à produção de um artigo científico alinhado à pesquisa de cada aluno.",
+  "description": "Organizada em 16 encontros e quatro eixos, a disciplina conecta infraestrutura, operação e regulação para UAM à produção individual de um artigo científico, com três oficinas e quatro checkpoints ao longo do semestre.",
   "objectives": [
     "Construir uma visão sistêmica da mobilidade aérea urbana e de seus atores.",
     "Analisar requisitos técnicos, operacionais, urbanos e regulatórios de vertiportos.",
@@ -19,9 +19,9 @@
     { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR", "image": "/images/team/gabriel-luiz-rufino.jpeg", "linkedin": "https://www.linkedin.com/in/gabriel-luiz-11294919b/" }
   ],
   "modules": [
-    { "number": "01", "title": "Fundamentos e regulação", "description": "UAM, AAM, eVTOL, UTM/ATM, atores, CONOPS e papéis institucionais." },
-    { "number": "02", "title": "Rede e infraestrutura", "description": "Espaço aéreo, corredores, vertiportos, layout, capacidade e localização." },
-    { "number": "03", "title": "Risco e disponibilidade", "description": "Obstáculos, demanda, ruído, meteorologia, energia, incêndio e ambiente." },
-    { "number": "04", "title": "Integração e pesquisa", "description": "QGIS, Python, GitHub, integração de dados e comunicação científica." }
+    { "number": "01", "title": "Fundamentos e regulação", "meetings": "E01–E03", "description": "UAM, AAM, eVTOL, UTM/ATM, atores, CONOPS e papéis institucionais." },
+    { "number": "02", "title": "Rede e infraestrutura", "meetings": "E06–E08", "description": "Espaço aéreo, rotas, corredores, vertiportos, layout e capacidade." },
+    { "number": "03", "title": "Risco e disponibilidade", "meetings": "E09–E14", "description": "Obstáculos, demanda, localização, meteorologia, ruído, energia, incêndio, fauna e ambiente." },
+    { "number": "04", "title": "Integração e pesquisa", "meetings": "E04, E05, E15 e E16", "description": "Overleaf, revisão de literatura, QGIS, Python, GitHub, integração de dados e comunicação científica." }
   ]
 }

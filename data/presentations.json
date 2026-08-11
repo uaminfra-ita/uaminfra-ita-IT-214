@@ -25,7 +25,11 @@
     "resourceIds": [
       "cohen-2021-uam-history",
       "garrow-2021-uam-review",
-      "pak-2024-uam-reality"
+      "pak-2024-uam-reality",
+      "faa-2023-uam-conops-2",
+      "faa-2023-aam-implementation-plan",
+      "nrel-2023-vertiport-electrical",
+      "cityam-2024-geospatial-lls"
     ],
     "references": [
       {
@@ -67,7 +71,7 @@
       {
         "shortTitle": "CITYAM (2024)",
         "citation": "Development of a geospatial decision-support tool for UAM landing and launch site location planning.",
-        "url": "https://research.aalto.fi/en/publications/development-of-a-geospatial-decision-support-tool-for-urban-air-m/",
+        "url": "https://interreg-baltic.eu/wp-content/uploads/2024/01/D1.4-Development-of-a-geospatial-decision-support-tool-for-Urban-Air-Mobility-landing-and-launch-site-location-planning.pdf",
         "purpose": "Localização e decisão multicritério"
       },
       {

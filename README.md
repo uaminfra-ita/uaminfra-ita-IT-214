@@ -12,7 +12,7 @@ Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica
 
 ## Conteúdo
 
-Curso, atividades, recursos, apresentações e acesso piloto são declarados em `data/`. Arquivos públicos ficam em `public/resources/` e só passam na validação quando possuem público explícito, licença, relação acadêmica e checksum correto.
+Curso, atividades, recursos, apresentações, ativos visuais e acesso piloto são declarados em `data/`. Arquivos públicos ficam em `public/resources/` e só passam na validação quando possuem público explícito, licença, relação acadêmica e checksum correto. A Biblioteca inclui artigos gerais, relatórios técnicos da FAA, NREL e CITYAM e o plano de ensino oficial de 2026/2.
 
 A Área do aluno é uma separação visual inteiramente executada no navegador. O GitHub Pages não oferece autenticação real: por isso, os painéis contêm somente informações não sigilosas. Senhas legíveis e e-mails de login permanecem em `.private/`, fora do Git; o bundle recebe apenas hashes e nomes do piloto.
 
@@ -40,7 +40,7 @@ npm run generate:access
 npm run test:access
 ```
 
-O primeiro comando gera senhas fortes em `.private/contas-piloto/credenciais.csv`; o segundo grava somente hashes em `data/access.json`. Consulte [a documentação de autenticação](docs/authentication.md) antes de alterar as contas.
+O primeiro comando preserva as senhas existentes e gera senhas fortes para contas novas em `.private/contas-piloto/credenciais.csv`; o segundo grava somente hashes em `data/access.json`. O lote atual contém oito alunos, três instrutores e um professor responsável. Consulte [a documentação de autenticação](docs/authentication.md) antes de alterar as contas.
 
 ## Apresentações
 
@@ -50,6 +50,8 @@ Reveal.js oferece navegação por teclado/toque, visão geral, progresso, notas 
 - `Esc` abre a visão geral;
 - `S` abre as notas;
 - o botão “Imprimir” prepara a versão para PDF.
+
+As imagens do deck são locais e possuem procedência em `data/presentation-assets.json`. O catálogo registra fonte primária, crédito, base de uso, texto alternativo, slides relacionados e checksum; arquivos não declarados quebram a validação.
 
 ## Segurança e privacidade
 

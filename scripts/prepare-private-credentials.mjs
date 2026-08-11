@@ -15,13 +15,28 @@ if (!fs.existsSync(inputPath)) throw new Error(`Arquivo-base ausente: ${path.rel
 const lines = fs.readFileSync(inputPath, 'utf8').split(/\r?\n/).filter(Boolean);
 if (lines.shift()?.trim() !== 'full_name,email,role') throw new Error('Cabeçalho esperado: full_name,email,role');
 
+const previousPasswords = new Map();
+if (fs.existsSync(outputPath)) {
+  const previousLines = fs.readFileSync(outputPath, 'utf8').split(/\r?\n/).filter(Boolean);
+  if (previousLines.shift()?.trim() === 'full_name,email,role,temporary_password') {
+    previousLines.forEach((line) => {
+      const [, email, , password] = line.split(',').map((cell) => cell.trim());
+      if (email && password) previousPasswords.set(email.toLowerCase(), password);
+    });
+  }
+}
+
 const credentials = ['full_name,email,role,temporary_password'];
+let preserved = 0;
 for (const [index, line] of lines.entries()) {
   const [fullName, rawEmail, role] = line.split(',').map((cell) => cell.trim());
   if (!fullName || !/^\S+@\S+\.\S+$/.test(rawEmail) || !allowedRoles.has(role)) throw new Error(`Registro inválido na linha ${index + 2}.`);
-  credentials.push([fullName, rawEmail.toLowerCase(), role, randomBytes(32).toString('base64url')].join(','));
+  const email = rawEmail.toLowerCase();
+  const previousPassword = previousPasswords.get(email);
+  if (previousPassword) preserved += 1;
+  credentials.push([fullName, email, role, previousPassword || randomBytes(32).toString('base64url')].join(','));
 }
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${credentials.join('\n')}\n`, { encoding: 'utf8', mode: 0o600 });
-console.log(`Credenciais de ${credentials.length - 1} conta(s) gravadas em ${path.relative(root, outputPath)} e ignoradas pelo Git.`);
+console.log(`Credenciais de ${credentials.length - 1} conta(s) gravadas em ${path.relative(root, outputPath)} e ignoradas pelo Git (${preserved} senha(s) preservada(s), ${credentials.length - 1 - preserved} nova(s)).`);

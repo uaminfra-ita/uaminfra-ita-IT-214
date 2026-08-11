@@ -11,21 +11,151 @@
       "credential": {
         "algorithm": "PBKDF2-SHA256",
         "iterations": 210000,
-        "salt": "uAI5CfZ2OvOlClxJXW1soA",
-        "passwordHash": "C649u_sLNnvShThDM1t4lNwFz8CAG-q44xWvT_bQeDU"
+        "salt": "E68SlQAm3oNJD91la_8AZw",
+        "passwordHash": "nokAVpg_Hrs8nIXmCQq3XKmV88i5iIcaBpE7p1XwGfs"
       }
     },
     {
       "id": "891f466c72b5757c",
       "displayName": "Gabriel Luiz Goulart Rufino",
-      "role": "student",
+      "role": "instructor",
       "status": "active",
       "emailHash": "iR9GbHK1dXzjhQeVYcCRpPYqjGECemlJreWYxRTiFWU",
       "credential": {
         "algorithm": "PBKDF2-SHA256",
         "iterations": 210000,
-        "salt": "hW4-48qek2ukmV0eAQ3ghw",
-        "passwordHash": "7-Tg8SS6fX_K6B8TQGdBhlkelkY63x5nwiNZ1Zm_A58"
+        "salt": "ybW3-9IfXjzgbv-mR_NuHg",
+        "passwordHash": "TyHErciPkkYS9KiOateuRgSoeoCKfGmPHZQfcKJHCQM"
+      }
+    },
+    {
+      "id": "8879678d806387b8",
+      "displayName": "Erica Generoso Lima",
+      "role": "student",
+      "status": "active",
+      "emailHash": "iHlnjYBjh7hHSQ4OLpAPvTCk6xkKDY8N9nsgxXhDcks",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "VeUJ-Q5SP1NVNGEyueNMAg",
+        "passwordHash": "DlGBxnz7urLORJsBuvV1WKMxhkGjs_zOv-iADIQxnE4"
+      }
+    },
+    {
+      "id": "b50528571ebb4260",
+      "displayName": "Luiz Fernando Silva Alves",
+      "role": "student",
+      "status": "active",
+      "emailHash": "tQUoVx67QmCgMS4GGpf5z33XERmhzI5mUVYwQZ1iBQU",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "s9GWKdurf5v-qD6XAh6wVA",
+        "passwordHash": "j6Fytm10z9emhYgmWJBzImGg7aZlXmW_UrwViki3lkY"
+      }
+    },
+    {
+      "id": "519c2e88eb501cf8",
+      "displayName": "Gabriel Almeida de Faria",
+      "role": "student",
+      "status": "active",
+      "emailHash": "UZwuiOtQHPj4zLE8K_79gYMZ7vzkqoXpiTvC0knegA0",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "bU8FEPcwDdWkpNovboWyGA",
+        "passwordHash": "Ak0WHklna0aEEkv_sU_Y_4a_8wgbOePbviqE-dvoR3A"
+      }
+    },
+    {
+      "id": "13d501c8012b28ac",
+      "displayName": "Gianluca Furtado Leite",
+      "role": "student",
+      "status": "active",
+      "emailHash": "E9UByAErKKz50ZOhoK9IzLUj1eAJMFpq0S2m0amFDEM",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "kbo0rerbRSVOFrk_90Hjug",
+        "passwordHash": "Six-_ANBy8voN0oI-GNPgoSr2IxjHzhb43M58gNlcFs"
+      }
+    },
+    {
+      "id": "7bc4868725b4dd6d",
+      "displayName": "Luiz Henrique Tozi",
+      "role": "student",
+      "status": "active",
+      "emailHash": "e8SGhyW03W06-YJ58VPEvqmzDt7xgNM0KycciAPBBuM",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "PyEOZ6MRiJPAiRxL3yuI-g",
+        "passwordHash": "nAa5Rk8ixXLDI835SZ2BfvmMvj5Et-kyPAJMAMQ6oRc"
+      }
+    },
+    {
+      "id": "18fc53299dead74f",
+      "displayName": "Joel Belo Junior",
+      "role": "student",
+      "status": "active",
+      "emailHash": "GPxTKZ3q108RfbXaS7czwGt0Um-SzPiGOAKs88VwGB4",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "nhoiI3qOkzqa5wad7Nbw_A",
+        "passwordHash": "saO7J4A-Iw7VhlRibCKtRQcBxBBi3N0njOOJC969fyU"
+      }
+    },
+    {
+      "id": "3c769715e8fd07a8",
+      "displayName": "Laudicir Zamai Junior",
+      "role": "student",
+      "status": "active",
+      "emailHash": "PHaXFej9B6hpsniB45RQpFVeFPQ4EaBmw4136t68Eyg",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "qkxE1wsdZ5LHNfXwsZ1vCQ",
+        "passwordHash": "rYCXPz9IIN0s0uaqrE73YyX5YNqNIONtB05m5uqhbCM"
+      }
+    },
+    {
+      "id": "9519106561532f33",
+      "displayName": "Willian José de Carvalho Filho",
+      "role": "student",
+      "status": "active",
+      "emailHash": "lRkQZWFTLzOwXJ67YZyBAD9Ujp3Rp44BjyUHnJLCDgc",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "TGzgRwCs5WMAJYgeE536Pg",
+        "passwordHash": "Zsl86fGXgszYDYQqDAx6T2H6haiDyazA5AQSjOhWHYI"
+      }
+    },
+    {
+      "id": "0db62276725b40ca",
+      "displayName": "Marcelo Xavier Guterres",
+      "role": "admin",
+      "status": "active",
+      "emailHash": "DbYidnJbQMobzH7msI4qRRgzSF3ClAx-cgR0DyTsvys",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "1pJbtnOz804GQPkk96MiOg",
+        "passwordHash": "6gTFAZcXUr8YvEeR3HuXQ9rgiVByjEXwMW4uZXlWJO8"
+      }
+    },
+    {
+      "id": "e68a582146d07d39",
+      "displayName": "Marcelo Saraiva Peres",
+      "role": "instructor",
+      "status": "active",
+      "emailHash": "5opYIUbQfTm2hFn9QzqDsc13j0017ZH3gF93U5gsIgE",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "8fr-05R4ccoKKtuzDoSCIg",
+        "passwordHash": "b9eDmEsmzv8qlzM7aJTsBW-0E2RxwbiTUqvEo6cHoqQ"
       }
     }
   ]
