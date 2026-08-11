@@ -65,7 +65,7 @@ export default function PresentationDeck({ title, children }) {
   return (
     <div className="presentation-shell fixed inset-0 z-[80]" ref={shellRef} aria-label={`Apresentação: ${title}`}>
       <div className="presentation-toolbar absolute left-3 right-3 top-3 z-20 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-ink/90 px-4 py-2 text-white shadow-xl backdrop-blur">
-        <a className="inline-flex items-center gap-2 text-xs font-black" href={`${basePath}/atividades/`}><Icon name="arrow" className="h-4 w-4 rotate-180" /> Voltar às atividades</a>
+        <a className="inline-flex shrink-0 items-center gap-2 text-xs font-black" href={`${basePath}/atividades/`}><Icon name="arrow" className="h-4 w-4 rotate-180" /><span className="hidden sm:inline">Voltar às atividades</span><span className="sm:hidden">Voltar</span></a>
         <span className={`hidden text-xs font-bold md:block ${error ? 'text-red-300' : 'text-slate-300'}`}>{error || (ready ? 'Setas para navegar · S para notas' : 'Preparando apresentação…')}</span>
         <div className="flex gap-2">
           <button className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-black hover:bg-white/10" type="button" onClick={() => deckRef.current?.toggleOverview()}>Visão geral</button>
