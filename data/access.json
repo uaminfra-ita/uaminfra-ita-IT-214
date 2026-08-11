@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "scope": "visual-access-only",
+  "users": [
+    {
+      "id": "3afe106eea686f66",
+      "displayName": "Rodrigo Mollo Furlan",
+      "role": "instructor",
+      "status": "active",
+      "emailHash": "Ov4Qbupob2brogR2IZguvByOZeSBNUUs4TCkxxeuD8s",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "uAI5CfZ2OvOlClxJXW1soA",
+        "passwordHash": "C649u_sLNnvShThDM1t4lNwFz8CAG-q44xWvT_bQeDU"
+      }
+    },
+    {
+      "id": "891f466c72b5757c",
+      "displayName": "Gabriel Luiz Goulart Rufino",
+      "role": "student",
+      "status": "active",
+      "emailHash": "iR9GbHK1dXzjhQeVYcCRpPYqjGECemlJreWYxRTiFWU",
+      "credential": {
+        "algorithm": "PBKDF2-SHA256",
+        "iterations": 210000,
+        "salt": "hW4-48qek2ukmV0eAQ3ghw",
+        "passwordHash": "7-Tg8SS6fX_K6B8TQGdBhlkelkY63x5nwiNZ1Zm_A58"
+      }
+    }
+  ]
+}

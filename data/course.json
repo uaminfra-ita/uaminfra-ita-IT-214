@@ -13,10 +13,10 @@
     "Desenvolver e apresentar um artigo científico aderente a uma lacuna da literatura UAM."
   ],
   "staff": [
-    { "name": "Marcelo Xavier Guterres", "role": "Professor responsável", "initials": "MXG", "image": null, "linkedin": null },
-    { "name": "Marcelo Saraiva Peres", "role": "Instrutor", "initials": "MSP", "image": null, "linkedin": null },
-    { "name": "Rodrigo Mollo Furlan", "role": "Instrutor", "initials": "RMF", "image": null, "linkedin": null },
-    { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR", "image": null, "linkedin": null }
+    { "name": "Marcelo Xavier Guterres", "role": "Professor responsável", "initials": "MXG", "image": "/images/team/marcelo-xavier-guterres.jpeg", "linkedin": "https://www.linkedin.com/in/profguterres/" },
+    { "name": "Marcelo Saraiva Peres", "role": "Instrutor", "initials": "MSP", "image": "/images/team/marcelo-saraiva-peres.jpeg", "linkedin": "https://www.linkedin.com/in/marcelo-saraiva-peres-563a8b104/" },
+    { "name": "Rodrigo Mollo Furlan", "role": "Instrutor", "initials": "RMF", "image": "/images/team/rodrigo-mollo-furlan.jpeg", "linkedin": "https://www.linkedin.com/in/rodrigo-furlan-67b264209/" },
+    { "name": "Gabriel Luiz Goulart Rufino", "role": "Instrutor", "initials": "GLR", "image": "/images/team/gabriel-luiz-rufino.jpeg", "linkedin": "https://www.linkedin.com/in/gabriel-luiz-11294919b/" }
   ],
   "modules": [
     { "number": "01", "title": "Fundamentos e regulação", "description": "UAM, AAM, eVTOL, UTM/ATM, atores, CONOPS e papéis institucionais." },

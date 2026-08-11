@@ -1,19 +1,9 @@
-# Roteiro do ambiente acadêmico privado
+# Roteiro do ambiente acadêmico
 
-## Plataforma proposta
+## MVP vigente
 
-Supabase reunirá Auth, Postgres e Storage privado. O frontend público poderá usar apenas a chave publicável, protegida por RLS; `service_role` ficará exclusivamente em funções de servidor e segredos do ambiente.
+O GitHub Pages oferece login e painéis estáticos para validar a experiência da disciplina. O painel do aluno mostra cronograma e leituras públicas; o painel docente mostra os participantes do piloto. A separação é visual e não protege dados privados.
 
-## Modelo
+## Evolução futura
 
-Entidades previstas: perfis, matrículas, papéis, atividades, recursos, atribuições, submissões, versões, revisões, aprovações, eventos de acesso e auditoria.
-
-Papéis:
-
-- aluno: somente dados, arquivos e feedback próprios;
-- docente: turma, fila de revisão e aprovação;
-- administrador: configuração e auditoria.
-
-Fluxo de submissão: `submitted → under_review → approved | revision_requested → resubmitted`. Versões são imutáveis, entregas atrasadas são aceitas e marcadas em `America/Sao_Paulo`, e aprovação é um registro separado do arquivo.
-
-Tipos iniciais: PDF, DOCX, PPTX e Markdown. MIME, assinatura, tamanho e extensão deverão concordar antes do armazenamento.
+Uploads, atividades individuais, versões, revisões, aprovações, notificações e auditoria exigirão um backend autenticado e armazenamento privado. Antes dessa fase, será necessário definir a infraestrutura, os responsáveis, as políticas de acesso e o ciclo de retenção dos arquivos.

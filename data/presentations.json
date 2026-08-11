@@ -6,7 +6,7 @@
     "subtitle": "Vocabulário, ecossistema e desafios para a mobilidade aérea urbana",
     "date": "2026-08-11",
     "durationMinutes": 90,
-    "slideCount": 28,
+    "slideCount": 18,
     "objectives": [
       "Distinguir UAM, AAM, IAM, eVTOL, UTM e ATM.",
       "Reconhecer a UAM como um sistema de sistemas sociotécnico.",
@@ -26,6 +26,56 @@
       "cohen-2021-uam-history",
       "garrow-2021-uam-review",
       "pak-2024-uam-reality"
+    ],
+    "references": [
+      {
+        "shortTitle": "Cohen et al. (2021)",
+        "citation": "Urban Air Mobility: History, Ecosystem, Market Potential, and Challenges. DOI 10.1109/TITS.2021.3082767.",
+        "url": "https://doi.org/10.1109/TITS.2021.3082767",
+        "purpose": "História, ecossistema e desafios"
+      },
+      {
+        "shortTitle": "Garrow et al. (2021)",
+        "citation": "Urban air mobility: A comprehensive review and comparative analysis. DOI 10.1016/j.trc.2021.103377.",
+        "url": "https://doi.org/10.1016/j.trc.2021.103377",
+        "purpose": "Arquiteturas, pesquisa e lacunas"
+      },
+      {
+        "shortTitle": "Pak et al. (2024)",
+        "citation": "Can Urban Air Mobility become reality? DOI 10.1007/s13272-024-00733-x.",
+        "url": "https://doi.org/10.1007/s13272-024-00733-x",
+        "purpose": "Sistema de sistemas e implementação"
+      },
+      {
+        "shortTitle": "FAA UAM ConOps 2.0 (2023)",
+        "citation": "Urban Air Mobility Concept of Operations, Version 2.0.",
+        "url": "https://www.faa.gov/sites/faa.gov/files/Urban-Air-Mobility-Concept-of-Operations-2.0.pdf",
+        "purpose": "Vocabulário, operação e integração ao espaço aéreo"
+      },
+      {
+        "shortTitle": "FAA AAM Plan (2023)",
+        "citation": "Advanced Air Mobility Implementation Plan, Version 1.0.",
+        "url": "https://www.faa.gov/sites/faa.gov/files/AAM-I28-Implementation-Plan.pdf",
+        "purpose": "Evolução operacional e responsabilidades"
+      },
+      {
+        "shortTitle": "NREL/FAA (2023)",
+        "citation": "Vertiport Electrical Infrastructure Study. DOI 10.2172/2203520.",
+        "url": "https://doi.org/10.2172/2203520",
+        "purpose": "Energia e infraestrutura de vertiportos"
+      },
+      {
+        "shortTitle": "CITYAM (2024)",
+        "citation": "Development of a geospatial decision-support tool for UAM landing and launch site location planning.",
+        "url": "https://research.aalto.fi/en/publications/development-of-a-geospatial-decision-support-tool-for-urban-air-m/",
+        "purpose": "Localização e decisão multicritério"
+      },
+      {
+        "shortTitle": "Guterres (2026)",
+        "citation": "Mobilidade Aérea Urbana. Material didático da disciplina IT-214.",
+        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/",
+        "purpose": "Nivelamento, estrutura conceitual e motivação"
+      }
     ]
   }
 ]

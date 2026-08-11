@@ -22,10 +22,6 @@ function ResourceCard({ resource }) {
       <div className="mt-5 flex flex-wrap gap-2">
         {resource.tags.map((tag) => <span className="rounded-full bg-mist px-3 py-1 text-[.68rem] font-bold text-slate-600" key={tag}>{tag}</span>)}
       </div>
-      <div className="mt-5 rounded-2xl border border-slate-100 bg-slate-50 p-4">
-        <span className="block text-[.62rem] font-black uppercase tracking-[.14em] text-slate-400">Licença e acesso</span>
-        <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{resource.license} · Leitura-base {resource.relatedActivityIds.join(', ')}</p>
-      </div>
       <div className="mt-5 grid gap-2 sm:grid-cols-3">
         <a className="button-dark !px-3 !py-2 text-xs" href={pdfUrl} target="_blank" rel="noreferrer">Ler PDF</a>
         <a className="inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={pdfUrl} download>Baixar</a>
@@ -52,7 +48,7 @@ export default function ResourceSection({ id, label, title, description, resourc
           <div className="rounded-3xl border border-dashed border-slate-300 bg-white p-8 text-center">
             <div className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-slate-100 text-slate-500"><Icon name="library" /></div>
             <h3 className="mt-4 font-bold text-ink">Catálogo em preparação</h3>
-            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-slate-500">Novos recursos serão adicionados pela equipe docente com público, referência, licença e endereço oficial definidos.</p>
+            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-slate-500">Novos recursos serão adicionados pela equipe docente com público, referência e endereço oficial definidos.</p>
           </div>
         )}
       </div>

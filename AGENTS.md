@@ -13,9 +13,11 @@ Estas instruções valem para todo o repositório.
 
 ## Segurança e dados acadêmicos
 
-- Nunca implementar autenticação por senha, hash, salt ou segredo validado no frontend.
-- Nunca versionar credenciais, tokens, chaves administrativas, diagnósticos, notas, submissões ou perfis acadêmicos privados.
-- A futura área autenticada deverá usar provedor real, armazenamento privado, RBAC/RLS, URLs temporárias e trilha de auditoria.
+- A Área do aluno usa apenas uma separação visual no frontend estático. Ela não constitui autenticação segura nem controle real de autorização.
+- Nunca versionar senhas legíveis, e-mails de login, diagnósticos, notas, submissões ou perfis acadêmicos privados. Credenciais legíveis permanecem somente em `.private/`.
+- `data/access.json` pode conter nomes, papéis, identificadores derivados, salts e hashes de senha do piloto, mas nunca e-mails ou senhas legíveis.
+- Como todo o bundle do GitHub Pages é público, somente informações não sigilosas podem aparecer nos painéis de aluno e docente.
+- O MVP atual não possui upload, armazenamento de trabalhos, revisão ou aprovação.
 - Abertura de um documento não prova leitura; registrar esses eventos separadamente.
 - Aprovação de submissão é metadado auditável e restrito a docentes; não altera nem substitui o arquivo aprovado.
 
@@ -24,6 +26,7 @@ Estas instruções valem para todo o repositório.
 - Manter `data/activities.json`, `data/resources.json` e `data/presentations.json` como fontes centrais e validar todas as relações.
 - Usar `America/Sao_Paulo` para datas acadêmicas e estados explícitos para conclusão, cancelamento e recessos.
 - Preservar exportação estática e compatibilidade com o base path `/uaminfra-ita-IT-214`.
+- Mudanças no catálogo estático de acesso exigem teste positivo e negativo com as credenciais privadas locais e conferência dos papéis.
 - Apresentações devem oferecer teclado, toque, tela cheia, visão geral, notas, impressão e movimento reduzido.
 - Fotos e links pessoais só podem ser adicionados quando fornecidos ou confirmados pela própria equipe.
 

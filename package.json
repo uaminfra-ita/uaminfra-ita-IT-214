@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "check": "node scripts/validate-project.mjs",
-    "test": "node scripts/validate-project.mjs"
+    "prepare:accounts": "node scripts/prepare-private-credentials.mjs",
+    "generate:access": "node scripts/generate-static-access.mjs",
+    "test": "node scripts/validate-project.mjs",
+    "test:access": "node scripts/test-static-access.mjs"
   },
   "dependencies": {
     "next": "^14.0.0",

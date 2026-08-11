@@ -2,18 +2,20 @@
 
 ## Estado atual
 
-A antiga validação de login no navegador foi retirada porque hashes e arquivos públicos não criavam controle de acesso. `/area-do-aluno/` permanece apenas como comunicação da migração.
+`/area-do-aluno/` possui um bloqueio visual com e-mail e senha validado no próprio navegador. PBKDF2 reduz a exposição direta das senhas, mas não transforma o GitHub Pages em ambiente privado e não impede manipulação do frontend.
+
+O MVP não possui cadastro público, recuperação de senha, upload, submissões, notas ou dados de desempenho.
 
 ## Invariantes
 
-- Nenhuma credencial ou chave administrativa no código, Git ou bundle.
-- Nenhum nome de aluno, submissão, diagnóstico ou feedback individual no portal público.
-- Arquivos públicos precisam estar declarados em `resources.json`, com público e checksum.
-- Arquivos privados futuros usarão bucket privado e URLs temporárias.
-- Políticas RLS serão testadas tanto para permissão quanto para negação.
+- Nenhuma senha legível ou e-mail de login entra no código, Git ou bundle.
+- Credenciais legíveis permanecem em `.private/`, pasta ignorada pelo Git.
+- Painéis contêm somente dados considerados públicos ou não sigilosos para a disciplina.
+- Recursos públicos precisam estar declarados em `resources.json`, com público e checksum.
+- Entregas, notas, revisões e materiais individuais reais não podem usar este bloqueio visual.
 
-Incidentes ou inclusões acidentais devem interromper a publicação, revogar credenciais afetadas e remover o conteúdo da versão corrente. Reescrita de histórico exige avaliação específica.
+Se uma senha vazar, gere novamente o lote privado e `data/access.json`. Se um conteúdo sigiloso for publicado, retire-o imediatamente da versão corrente e avalie a necessidade de reescrever o histórico.
 
 ## Dependências
 
-O `npm audit` de agosto de 2026 sinaliza advisories no Next.js 14 e no PostCSS interno. Neste projeto, o risco de runtime é reduzido porque o resultado publicado é HTML estático: não há servidor Next, Server Actions, middleware, rewrites nem otimizador de imagens em produção, e o CSS processado vem apenas do repositório. A migração para Next.js 16/React 19 deve ser tratada separadamente, com testes de compatibilidade, em vez de usar `npm audit fix --force`.
+O `npm audit` de agosto de 2026 sinaliza advisories no Next.js 14 e no PostCSS interno. O resultado publicado não executa servidor Next, Server Actions, middleware, rewrites ou otimizador de imagens. A migração para Next.js 16/React 19 permanece uma etapa separada; não usar `npm audit fix --force` sem testes de compatibilidade.

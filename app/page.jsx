@@ -62,14 +62,14 @@ export default function HomePage() {
             {course.staff.map((member, index) => (
               <article className="staff-card" key={member.name}>
                 <div className="flex items-center justify-between">
-                  <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-ink text-sm font-black tracking-wider text-cyan-300">
-                    {member.image ? <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`} alt={member.name} width={128} height={128} className="h-full w-full object-cover" /> : member.initials}
+                  <div className="grid h-20 w-20 place-items-center overflow-hidden rounded-2xl bg-ink text-sm font-black tracking-wider text-cyan-300">
+                    {member.image ? <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`} alt={`Retrato de ${member.name}`} width={160} height={160} className="h-full w-full object-cover object-center" /> : member.initials}
                   </div>
                   <span className="text-xs font-bold text-slate-300">0{index + 1}</span>
                 </div>
                 <h3 className="mt-8 text-lg font-bold leading-tight text-ink">{member.name}</h3>
                 <p className="mt-2 text-sm font-semibold text-cyan-700">{member.role}</p>
-                {member.linkedin && <a className="mt-4 inline-flex items-center gap-1 text-xs font-black text-slate-500 hover:text-cyan-700" href={member.linkedin} target="_blank" rel="noreferrer">LinkedIn <Icon name="external" className="h-3.5 w-3.5" /></a>}
+                {member.linkedin && <a className="mt-5 inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-600 transition hover:border-cyan-400 hover:text-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700" href={member.linkedin} target="_blank" rel="noreferrer" aria-label={`Abrir LinkedIn de ${member.name}`}><Icon name="linkedin" className="h-4 w-4" /> LinkedIn</a>}
               </article>
             ))}
           </div>

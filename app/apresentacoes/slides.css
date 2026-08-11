@@ -60,6 +60,10 @@
   .presentation-shell .reveal li { font-size: .92rem; }
   .slide-grid { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.25rem; }
   .presentation-shell .reveal [class*="grid-cols-"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .presentation-shell .reveal .slide-split { grid-template-columns: 1fr !important; }
+  .presentation-shell .reveal .slide-flow { flex-wrap: wrap; }
+  .presentation-shell .reveal .slide-flow > div > span { display: none; }
+  .presentation-shell .reveal .slide-flow .slide-card { min-width: 42%; }
   .presentation-shell .reveal .slide-card { padding: .85rem; }
   .presentation-shell .reveal .slide-big-number { font-size: 2.8rem; }
   .slide-source { left: 2rem; right: 2rem; }
