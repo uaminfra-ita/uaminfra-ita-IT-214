@@ -1,6 +1,6 @@
 # IT-214 — Mobilidade Aérea Urbana
 
-Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica. https://uaminfra-ita.github.io/uaminfra-ita-IT-214/area-do-aluno/
+Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica. [https://uaminfra-ita.github.io/uaminfra-ita-IT-214](https://uaminfra-ita.github.io/uaminfra-ita-IT-214/)
 ## Rotas
 
 - `/`: apresentação, objetivos, módulos e equipe docente.
