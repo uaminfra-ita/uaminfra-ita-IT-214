@@ -33,5 +33,5 @@ const users = lines.map((line, index) => {
 });
 
 if (new Set(users.map((user) => user.id)).size !== users.length) throw new Error('Contas duplicadas no lote privado.');
-fs.writeFileSync(outputPath, `${JSON.stringify({ version: 1, scope: 'visual-access-only', users }, null, 2)}\n`, 'utf8');
+fs.writeFileSync(outputPath, `${JSON.stringify({ version: 1, scope: 'course-access', users }, null, 2)}\n`, 'utf8');
 console.log(`Catálogo estático gerado: ${users.length} conta(s), sem e-mails ou senhas legíveis.`);

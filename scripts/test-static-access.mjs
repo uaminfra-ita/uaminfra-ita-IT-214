@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
-const credentialsPath = path.join(root, '.private', 'contas-piloto', 'credenciais.csv');
+const credentialsPath = path.resolve(root, process.argv[2] || path.join('.private', 'contas-piloto', 'credenciais.csv'));
 const accessPath = path.join(root, 'data', 'access.json');
 if (!fs.existsSync(credentialsPath)) throw new Error('Credenciais privadas do piloto ausentes.');
 
@@ -14,7 +14,7 @@ const privateRows = fs.readFileSync(credentialsPath, 'utf8').trim().split(/\r?\n
 });
 const access = JSON.parse(fs.readFileSync(accessPath, 'utf8'));
 
-assert.equal(access.scope, 'visual-access-only');
+assert.equal(access.scope, 'course-access');
 assert.equal(access.users.length, 12);
 assert.equal(privateRows.length, 12);
 for (const row of privateRows) {
@@ -36,4 +36,4 @@ assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Fur
 assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Guterres')?.role, 'admin');
-console.log('Login estático validado: 12 senhas corretas/incorretas e papéis da turma estão consistentes.');
+console.log('Acesso validado: 12 senhas corretas/incorretas e papéis da turma estão consistentes.');

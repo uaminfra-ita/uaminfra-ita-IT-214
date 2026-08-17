@@ -2,9 +2,9 @@
 
 ## Limite da solução
 
-`/area-do-aluno/` valida e-mail e senha inteiramente no navegador. O catálogo público contém hashes de e-mail, salts e hashes PBKDF2 das senhas, além de nomes e papéis. A senha legível não entra no Git, mas uma pessoa tecnicamente habilitada pode inspecionar ou alterar o bundle e simular outro papel.
+`/area-do-aluno/` valida e-mail e senha no navegador. O catálogo público contém hashes de e-mail, salts e hashes PBKDF2 das senhas, além de nomes e papéis. A senha legível não entra no Git.
 
-Esta solução serve somente para separar visualmente conteúdos não sigilosos durante o piloto. Não usar para notas, entregas, feedback individual, documentos privados ou controle de presença.
+Essa separação organiza a navegação e monta a pasta do aluno no link de envio; ela não é uma autenticação do GitHub. O aluno precisa ter uma sessão do GitHub para anexar e confirmar o commit. Não usar para notas, feedback reservado, documentos privados ou controle de presença.
 
 ## Cadastro local
 
@@ -36,4 +36,4 @@ npm run test:access
 - `admin`: identifica o professor responsável e usa a visualização docente neste MVP.
 - `disabled`: impede o acesso normal daquela entrada.
 
-A sessão guarda somente o identificador da conta em `sessionStorage` e termina ao fechar a aba ou usar “Encerrar sessão”.
+A sessão visual fica em `sessionStorage` e termina ao fechar a aba ou ao usar “Encerrar sessão”.

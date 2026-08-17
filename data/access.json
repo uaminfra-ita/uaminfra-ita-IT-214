@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scope": "visual-access-only",
+  "scope": "course-access",
   "users": [
     {
       "id": "3afe106eea686f66",

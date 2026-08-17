@@ -36,6 +36,15 @@ activities.forEach((activity) => {
   });
   if (activity.presentationSlug) assert.ok(presentationSlugs.has(activity.presentationSlug), `Apresentação inexistente em ${activity.code}.`);
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
+  if (activity.submission) {
+    assert.equal(activity.submission.audience, 'student', `Entrega ${activity.code} deve declarar audience student.`);
+    assert.equal(activity.submission.visibility, 'public', `Entrega ${activity.code} deve ser classificada como pública.`);
+    assert.ok(['open', 'scheduled', 'closed'].includes(activity.submission.status), `Estado de entrega inválido em ${activity.code}.`);
+    assert.ok(Number.isInteger(activity.submission.maxFiles) && activity.submission.maxFiles > 0, `Limite de arquivos inválido em ${activity.code}.`);
+    assert.ok(Number.isInteger(activity.submission.maxFileSizeMb) && activity.submission.maxFileSizeMb > 0, `Limite de tamanho inválido em ${activity.code}.`);
+    assert.ok(Array.isArray(activity.submission.acceptedExtensions) && activity.submission.acceptedExtensions.length > 0, `Extensões ausentes em ${activity.code}.`);
+    activity.submission.acceptedExtensions.forEach((extension) => assert.match(extension, /^\.[a-z0-9]+$/, `Extensão inválida em ${activity.code}.`));
+  }
 });
 
 const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'publisherUrl', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
@@ -162,10 +171,10 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
-assert.equal(access.scope, 'visual-access-only', 'O catálogo deve declarar que o acesso é apenas visual.');
+assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
 assert.equal(access.users.length, 12, 'A turma deve conter doze contas.');
 assert.equal(new Set(access.users.map((user) => user.id)).size, access.users.length, 'IDs de acesso devem ser únicos.');
 access.users.forEach((user) => {
@@ -187,7 +196,7 @@ assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva P
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Guterres')?.role, 'admin', 'Marcelo Guterres deve ser professor responsável.');
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');
-assert.ok(authComponent.includes('sessionStorage'), 'A sessão visual deve usar sessionStorage.');
+assert.ok(authComponent.includes('sessionStorage'), 'A sessão deve usar sessionStorage.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');
 assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
