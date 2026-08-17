@@ -149,5 +149,24 @@
       "relatedActivityIds": ["E01"],
       "sha256": "0B8CC22C876790701AB93D692B526166ADC5C967F7E2543DBDDB7C95EF223508"
     }
+  ],
+  "workspaceTemplates": [
+    {
+      "id": "it214-2026-latex-article-template",
+      "category": "latex-template",
+      "title": "Modelo LaTeX do artigo IT-214",
+      "authors": ["Equipe docente IT-214"],
+      "year": 2026,
+      "publication": "Portal IT-214 — Mobilidade Aérea Urbana",
+      "publisherUrl": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
+      "assetPath": "/templates/latex/artigo-it214.tex",
+      "audience": "public",
+      "license": "Material didático institucional",
+      "rightsNote": "Modelo original e reutilizável criado para os artigos da disciplina IT-214.",
+      "summary": "Estrutura mínima de artigo em LaTeX com resumo, introdução, revisão, método, resultados, conclusão e referências.",
+      "tags": ["LaTeX", "artigo científico", "template", "GitHub"],
+      "relatedActivityIds": ["E04"],
+      "sha256": "64A154C3E909D83C3EDC08E50BA85EA5F15EBE56E1E0A4FA9FDE1A29EC010DCA"
+    }
   ]
 }

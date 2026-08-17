@@ -1,0 +1,45 @@
+name: Compilar projetos LaTeX
+
+on:
+  push:
+    branches: [student-submissions]
+    paths:
+      - 'projetos/**'
+      - 'scripts/compile-latex-projects.sh'
+  pull_request:
+    branches: [student-submissions]
+    paths:
+      - 'projetos/**'
+      - 'scripts/compile-latex-projects.sh'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar LaTeX
+        run: sudo apt-get update && sudo apt-get install -y latexmk texlive-lang-portuguese texlive-latex-base texlive-latex-extra texlive-latex-recommended
+
+      - name: Compilar projetos sem shell escape
+        id: latex
+        continue-on-error: true
+        run: bash scripts/compile-latex-projects.sh
+
+      - name: Publicar PDFs e logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: projetos-latex-${{ github.run_number }}
+          path: latex-build/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Propagar falha de compilação
+        if: steps.latex.outcome == 'failure'
+        run: exit 1

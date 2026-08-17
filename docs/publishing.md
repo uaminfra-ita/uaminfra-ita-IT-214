@@ -12,6 +12,8 @@ npm run build
 
 Para simular o GitHub Pages, execute o build com `GITHUB_PAGES=true`. Nenhuma variável de ambiente externa é necessária.
 
+O workflow de LaTeX precisa existir também na branch `student-submissions`, pois os eventos de push e os pull requests de trabalhos usam essa branch. Mantenha `contents: read`, sem segredos e sem permissão de escrita. Recomenda-se proteger `student-submissions` para que alterações em projetos e no workflow passem por pull request.
+
 O workflow usa Node 22 e publica `out/` pelo mecanismo oficial do GitHub Pages. Em **Settings → Pages**, mantenha **Source: GitHub Actions**.
 
-Após o push, confira os jobs `build` e `deploy`, teste as rotas públicas e valide login com as duas contas piloto. Commit, push e deploy exigem autorização explícita.
+Após o push, confira os jobs `build` e `deploy`, execute manualmente uma compilação LaTeX de teste, teste as rotas públicas e valide login com contas de aluno e docente. Commit, push, alteração de proteção de branch e deploy exigem autorização explícita.

@@ -4,7 +4,12 @@
     "resourceIds": ["it214-2026-2-plano-ensino"], "presentationSlug": null,
     "theme": "Aula inicial e avaliação diagnóstica",
     "objective": "Apresentar os objetivos da disciplina e mapear as lacunas iniciais da turma.",
-    "deliverable": "Avaliação diagnóstica realizada."
+    "deliverable": "Avaliação diagnóstica realizada.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "closed", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E02", "meeting": 2, "date": "2026-08-11", "type": "class", "status": "scheduled",
@@ -19,7 +24,7 @@
       "dueAt": null,
       "maxFiles": 5,
       "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".docx", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
     }
   },
   {
@@ -35,37 +40,57 @@
       "dueAt": null,
       "maxFiles": 5,
       "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".docx", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
     }
   },
   {
     "code": "E04", "meeting": 4, "date": "2026-08-25", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["it214-2026-latex-article-template"], "presentationSlug": null,
     "theme": "Oficina I: Overleaf, LaTeX e VS Code, e Seminário Artigo 1",
     "objective": "Configurar o ambiente de escrita, versionamento e referências e apresentar introdução e motivação do artigo.",
     "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo organizadas no Overleaf.",
-    "checkpoint": "CP1"
+    "checkpoint": "CP1",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E05", "meeting": 5, "date": "2026-09-01", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
     "theme": "Oficina II: revisão de literatura e mapeamento de referências",
     "objective": "Praticar busca em bases, triagem, leitura crítica e organização do mapeamento bibliográfico.",
-    "deliverable": "Matriz de literatura iniciada e estratégia de busca documentada."
+    "deliverable": "Matriz de literatura iniciada e estratégia de busca documentada.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class", "status": "scheduled",
     "resourceIds": ["faa-2023-uam-conops-2"], "presentationSlug": null,
     "theme": "Espaço aéreo, rotas e corredores",
     "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
-    "deliverable": "Esboço conceitual de corredores e diagrama simples de rede."
+    "deliverable": "Esboço conceitual de corredores e diagrama simples de rede.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E07", "meeting": 7, "date": "2026-09-15", "type": "class", "status": "scheduled",
     "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
     "theme": "Vertiportos I: componentes e tipologias",
     "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e tipologias no solo, elevadas ou por conversão de helipontos.",
-    "deliverable": "Tabela de componentes do vertiporto."
+    "deliverable": "Tabela de componentes do vertiporto.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E08", "meeting": 8, "date": "2026-09-22", "type": "checkpoint", "status": "scheduled",
@@ -73,7 +98,12 @@
     "theme": "Vertiportos II e Seminário Artigo 2",
     "objective": "Relacionar layout, turnaround, recarga, gates, stands, operações de carga e passageiros e gargalos operacionais.",
     "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
-    "checkpoint": "CP2"
+    "checkpoint": "CP2",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "R01", "date": "2026-09-29", "type": "break", "status": "break",
@@ -87,21 +117,36 @@
     "resourceIds": [], "presentationSlug": null,
     "theme": "Superfícies de proteção de voo e obstáculos",
     "objective": "Tratar rampas, gabaritos, edificações, antenas, entorno urbano e comparação normativa.",
-    "deliverable": "Exercício de leitura de superfície e obstáculo."
+    "deliverable": "Exercício de leitura de superfície e obstáculo.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E10", "meeting": 10, "date": "2026-10-13", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
     "theme": "Demanda",
     "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar demanda.",
-    "deliverable": "Matriz preliminar de dados de demanda."
+    "deliverable": "Matriz preliminar de dados de demanda.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E11", "meeting": 11, "date": "2026-10-20", "type": "class", "status": "scheduled",
     "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
     "theme": "Escolha e localização de sítios",
     "objective": "Integrar acessibilidade, inserção urbana, restrições aeronáuticas e métodos multicritério na avaliação de alternativas.",
-    "deliverable": "Matriz preliminar de avaliação de sítios."
+    "deliverable": "Matriz preliminar de avaliação de sítios.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E12", "meeting": 12, "date": "2026-10-27", "type": "checkpoint", "status": "scheduled",
@@ -109,28 +154,48 @@
     "theme": "Meteorologia, disponibilidade operacional e Seminário Artigo 3",
     "objective": "Relacionar vento, rajadas, chuva, teto, visibilidade, temperatura, densidade e condições VFR/IFR à confiabilidade operacional.",
     "deliverable": "Metodologia, dados, estudo de caso, métricas e resultados preliminares.",
-    "checkpoint": "CP3"
+    "checkpoint": "CP3",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E13", "meeting": 13, "date": "2026-11-03", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
     "theme": "Ruído aeronáutico e aceitação social",
     "objective": "Introduzir métricas de ruído, percepção pública, efeito NIMBY, mitigação por rota e sítio e limites da ideia de eVTOL silencioso.",
-    "deliverable": "Ficha de risco e mitigação de ruído."
+    "deliverable": "Ficha de risco e mitigação de ruído.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
     "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
     "theme": "Energia, recarga, combate a incêndio, fauna e meio ambiente",
     "objective": "Integrar subestação, armazenamento, redundância, tempo de solo, bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
-    "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente."
+    "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E15", "meeting": 15, "date": "2026-11-17", "type": "class", "status": "scheduled",
     "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
     "theme": "Oficina QGIS, Python, GitHub e integração de dados",
     "objective": "Usar mapas, buffers, camadas, restrições, população e demanda em uma organização reprodutível.",
-    "deliverable": "Mapa ou notebook simples do estudo de caso."
+    "deliverable": "Mapa ou notebook simples do estudo de caso.",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "E16", "meeting": 16, "date": "2026-11-24", "type": "checkpoint", "status": "scheduled",
@@ -138,7 +203,12 @@
     "theme": "Apresentação do artigo científico completo",
     "objective": "Apresentar um artigo alinhado a uma lacuna da literatura UAM e à pesquisa individual.",
     "deliverable": "Artigo completo com resumo, introdução, literatura, método, resultados, discussão, conclusão e referências.",
-    "checkpoint": "CP4"
+    "checkpoint": "CP4",
+    "submission": {
+      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+    }
   },
   {
     "code": "F01", "date": "2026-12-01", "type": "break", "status": "break",

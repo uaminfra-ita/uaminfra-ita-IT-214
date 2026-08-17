@@ -2,7 +2,7 @@
 
 ## Estado atual
 
-`/area-do-aluno/` valida e-mail e senha no navegador para organizar a experiência. O botão de envio abre o GitHub, que exige a autenticação própria da conta que fará o commit. A interface e as entregas continuam públicas por decisão da disciplina.
+`/area-do-aluno/` valida e-mail e senha no navegador para organizar a experiência. O botão de envio abre o GitHub, que exige a autenticação própria da conta que fará o commit. A interface, as entregas, as dúvidas e os projetos LaTeX continuam públicos por decisão da disciplina.
 
 O MVP não possui cadastro público, troca automática de senha, notas ou dados de desempenho.
 
@@ -13,8 +13,11 @@ O MVP não possui cadastro público, troca automática de senha, notas ou dados 
 - Painéis e entregas contêm somente dados considerados públicos ou não sigilosos para a disciplina.
 - Recursos públicos precisam estar declarados em `resources.json`, com público e checksum.
 - Notas, revisões privadas e materiais sigilosos não podem usar este fluxo.
+- Solicitações de troca de senha nunca contêm a senha atual, a senha nova ou o e-mail do aluno.
+- A compilação LaTeX roda sem shell escape e com `contents: read`; o resultado é um artefato temporário, não um commit automático.
+- O painel pode ler apenas metadados e caminhos públicos da branch; essa leitura não comprova autoria, entrega no prazo ou aprovação docente.
 
-O filtro individual do Pages melhora a navegação, mas não torna os arquivos secretos: qualquer pessoa pode consultar a branch pública ou os commits pelo GitHub.
+O filtro individual do Pages melhora a navegação, mas não torna os arquivos secretos: qualquer pessoa pode consultar a branch pública, as issues, os artefatos permitidos e os commits pelo GitHub. O identificador em `sessionStorage` também pode ser alterado pelo usuário.
 
 Se uma senha vazar, gere novamente o lote privado e `data/access.json`. Se um conteúdo sigiloso for publicado, retire-o imediatamente da versão corrente e avalie a necessidade de reescrever o histórico.
 

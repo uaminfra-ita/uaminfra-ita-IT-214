@@ -11,13 +11,14 @@ const resources = readJson('resources.json');
 const presentations = readJson('presentations.json');
 const presentationAssets = readJson('presentation-assets.json');
 const course = readJson('course.json');
-const allResources = [...resources.generalArticles, ...resources.technicalDocuments, ...resources.disciplineDocuments];
+const allResources = Object.values(resources).flatMap((group) => group);
 const resourceIds = new Set(allResources.map((resource) => resource.id));
 const activityIds = new Set(activities.map((activity) => activity.code));
 const presentationSlugs = new Set(presentations.map((presentation) => presentation.slug));
 const presentationAssetIds = new Set(presentationAssets.map((asset) => asset.id));
 
 assert.equal(activities.filter((item) => item.meeting).length, 16, 'O cronograma deve conter 16 encontros.');
+assert.equal(activities.filter((item) => item.meeting && item.submission).length, 16, 'Todo encontro deve declarar o estado de entrega.');
 assert.equal(activities.filter((item) => item.checkpoint).length, 4, 'O cronograma deve conter quatro checkpoints.');
 assert.equal(activityIds.size, activities.length, 'Códigos de atividade devem ser únicos.');
 assert.equal(resourceIds.size, allResources.length, 'IDs de recursos devem ser únicos.');
@@ -48,7 +49,7 @@ activities.forEach((activity) => {
 });
 
 const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'publisherUrl', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
-const declaredPdfPaths = [];
+const declaredPublicResourcePaths = [];
 const hashes = new Set();
 allResources.forEach((resource) => {
   requiredResourceFields.forEach((field) => assert.ok(resource[field] !== undefined && resource[field] !== '', `${resource.id || 'Recurso'} sem ${field}.`));
@@ -68,20 +69,25 @@ allResources.forEach((resource) => {
   } else if (resource.category === 'technical-document') {
     assert.ok(resource.documentNumber, `${resource.id} deve declarar número ou identificador documental.`);
     assert.ok(resource.assetPath.startsWith('/resources/technical/'), `${resource.id} deve usar a pasta técnica.`);
-  } else {
+  } else if (resource.category === 'discipline-document') {
     assert.ok(resource.assetPath.startsWith('/resources/discipline/'), `${resource.id} deve usar a pasta da disciplina.`);
+  } else if (resource.category === 'latex-template') {
+    assert.ok(resource.assetPath.startsWith('/templates/latex/'), `${resource.id} deve usar a pasta pública de modelos LaTeX.`);
+  } else {
+    assert.fail(`Categoria de recurso desconhecida em ${resource.id}.`);
   }
   if (resource.doi) assert.ok(resource.publisherUrl.includes(resource.doi) || resource.id === 'nrel-2023-vertiport-electrical', `${resource.id} possui DOI divergente da fonte.`);
-  assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
+  if (resource.category === 'latex-template') assert.ok(resource.assetPath.endsWith('.tex'), `${resource.id} deve apontar para um arquivo .tex.`);
+  else assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
   assert.match(resource.sha256, /^[A-F0-9]{64}$/, `${resource.id} possui SHA-256 inválido.`);
   assert.ok(!hashes.has(resource.sha256), `${resource.id} duplica um arquivo já declarado.`);
   hashes.add(resource.sha256);
   const relativePath = resource.assetPath.slice(1).replaceAll('/', path.sep);
   const fullPath = path.join(root, 'public', relativePath);
-  assert.ok(fs.existsSync(fullPath), `PDF ausente: ${resource.assetPath}.`);
+  assert.ok(fs.existsSync(fullPath), `Recurso público ausente: ${resource.assetPath}.`);
   const actualHash = createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex').toUpperCase();
   assert.equal(actualHash, resource.sha256, `Checksum divergente: ${resource.assetPath}.`);
-  declaredPdfPaths.push(path.relative(root, fullPath));
+  declaredPublicResourcePaths.push(path.relative(root, fullPath));
 });
 
 const declaredPresentationMediaPaths = [];
@@ -148,7 +154,11 @@ function walk(directory) {
 
 const repositoryFiles = walk(root);
 const actualPdfPaths = repositoryFiles.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
-assert.deepEqual(actualPdfPaths, declaredPdfPaths.sort(), 'Todo PDF no repositório deve estar declarado no catálogo.');
+const declaredPdfPaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
+assert.deepEqual(actualPdfPaths, declaredPdfPaths, 'Todo PDF no repositório deve estar declarado no catálogo.');
+const actualLatexTemplatePaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}templates${path.sep}latex${path.sep}`) && path.extname(file).toLowerCase() === '.tex').sort();
+const declaredLatexTemplatePaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.tex').sort();
+assert.deepEqual(actualLatexTemplatePaths, declaredLatexTemplatePaths, 'Todo modelo LaTeX público deve estar declarado no catálogo.');
 const actualPresentationMediaPaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}images${path.sep}presentations${path.sep}`)).sort();
 assert.deepEqual(actualPresentationMediaPaths, declaredPresentationMediaPaths.sort(), 'Toda imagem de apresentação deve estar declarada no catálogo visual.');
 const bannedExtensions = new Set(['.xls', '.xlsx', '.doc', '.docx', '.ppt', '.pptx', '.r']);
@@ -171,7 +181,7 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/githubCourse.mjs', 'lib/usePublicRepositoryTree.js', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
@@ -203,6 +213,11 @@ assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
 assert.ok(!workflow.toLowerCase().includes('supabase'), 'Deploy estático não deve depender de Supabase.');
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 assert.ok(!Object.keys(packageJson.dependencies).some((dependency) => dependency.includes('supabase')), 'Dependências Supabase devem permanecer removidas.');
+assert.equal(packageJson.scripts['reset:password'], 'node scripts/reset-private-password.mjs', 'Comando seguro de redefinição de senha ausente.');
+const latexWorkflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'latex.yml'), 'utf8');
+assert.ok(latexWorkflow.includes('contents: read'), 'Compilação LaTeX deve usar somente leitura do repositório.');
+assert.ok(latexWorkflow.includes('student-submissions'), 'Compilação LaTeX deve acompanhar a branch de trabalhos.');
+assert.ok(fs.readFileSync(path.join(root, 'scripts', 'compile-latex-projects.sh'), 'utf8').includes('-no-shell-escape'), 'Compilação LaTeX deve desativar shell escape.');
 
 const trackedText = repositoryFiles
   .filter((file) => ['.js', '.jsx', '.mjs', '.json', '.md', '.toml', '.yml', '.yaml', '.sql'].includes(path.extname(file).toLowerCase()))

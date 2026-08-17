@@ -1,0 +1,30 @@
+name: Dúvida da disciplina
+description: Registre uma pergunta pública sobre uma atividade ou conteúdo da IT-214.
+title: "[Dúvida] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Esta conversa é pública. Não escreva senhas, e-mails, notas, feedback privado ou informações pessoais.
+  - type: input
+    id: atividade
+    attributes:
+      label: Atividade
+      description: Informe o código da atividade, por exemplo E03, ou escreva “Geral”.
+      placeholder: E03
+    validations:
+      required: true
+  - type: textarea
+    id: duvida
+    attributes:
+      label: Pergunta
+      description: Explique a dúvida e o que você já tentou compreender ou executar.
+    validations:
+      required: true
+  - type: checkboxes
+    id: publicacao
+    attributes:
+      label: Confirmação
+      options:
+        - label: Confirmo que esta issue não contém dados sigilosos ou pessoais.
+          required: true
