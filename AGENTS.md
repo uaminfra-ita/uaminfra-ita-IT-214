@@ -6,7 +6,7 @@ Estas instruções valem para todo o repositório.
 
 - Nunca inferir o público de um documento. Antes de adicioná-lo, registrar `audience` como `public`, `course`, `student`, `group` ou `instructors`.
 - “Geral para a disciplina” não significa “público na internet”. Somente conteúdo marcado explicitamente como `public` pode entrar em `public/` ou no GitHub Pages.
-- Conteúdo de aluno, grupo ou docentes nunca pode ser colocado no Git público. Se não houver armazenamento privado, não publicar.
+- Entregas classificadas explicitamente como `public` podem ser gravadas na branch pública `student-submissions`, em pastas identificadas por IDs opacos. Materiais sigilosos continuam proibidos no Git público.
 - Todo recurso deve possuir identificador estável, autoria, fonte, licença, resumo, relações acadêmicas e checksum quando for arquivo local.
 - Evitar duplicatas: reutilizar o mesmo `resourceId` em atividades, apresentações e atribuições.
 - Não copiar figuras ou trechos protegidos quando uma visualização original e citada atender ao objetivo didático.
@@ -14,10 +14,10 @@ Estas instruções valem para todo o repositório.
 ## Segurança e dados acadêmicos
 
 - A Área do aluno usa apenas uma separação visual no frontend estático. Ela não constitui autenticação segura nem controle real de autorização.
-- Nunca versionar senhas legíveis, e-mails de login, diagnósticos, notas, submissões ou perfis acadêmicos privados. Credenciais legíveis permanecem somente em `.private/`.
+- Nunca versionar senhas legíveis, e-mails de login, diagnósticos, notas, feedback privado ou perfis acadêmicos privados. Credenciais legíveis permanecem somente em `.private/`.
 - `data/access.json` pode conter nomes, papéis, identificadores derivados, salts e hashes de senha do piloto, mas nunca e-mails ou senhas legíveis.
 - Como todo o bundle do GitHub Pages é público, somente informações não sigilosas podem aparecer nos painéis de aluno e docente.
-- O MVP atual não possui upload, armazenamento de trabalhos, revisão ou aprovação.
+- O MVP direciona trabalhos públicos para o editor do GitHub na branch `student-submissions`. Revisão, notas e aprovação não fazem parte desse fluxo.
 - Abertura de um documento não prova leitura; registrar esses eventos separadamente.
 - Aprovação de submissão é metadado auditável e restrito a docentes; não altera nem substitui o arquivo aprovado.
 

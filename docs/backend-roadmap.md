@@ -2,8 +2,10 @@
 
 ## MVP vigente
 
-O GitHub Pages oferece login e painéis estáticos para validar a experiência da disciplina. O painel do aluno mostra cronograma e leituras públicas; o painel docente mostra os participantes do piloto. A separação é visual e não protege dados privados.
+O GitHub Pages oferece a interface da disciplina e direciona o envio ao editor nativo do GitHub. As contas do catálogo organizam a experiência; o GitHub controla a autenticação necessária para editar a branch pública `student-submissions`.
 
 ## Evolução futura
 
-Uploads, atividades individuais, versões, revisões, aprovações, notificações e auditoria exigirão um backend autenticado e armazenamento privado. Antes dessa fase, será necessário definir a infraestrutura, os responsáveis, as políticas de acesso e o ciclo de retenção dos arquivos.
+O fluxo atual resolve a orientação do login e do upload no próprio GitHub. Perguntas, revisão, aprovação, notificações e edição colaborativa poderão ser adicionadas depois, conforme a rotina real da turma demonstrar necessidade.
+
+A integração é reversível: o botão pode voltar a ser um link simples para a raiz da branch sem alterar o restante do portal.
