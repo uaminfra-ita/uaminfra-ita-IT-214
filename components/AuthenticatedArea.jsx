@@ -8,6 +8,7 @@ import course from '@/data/course.json';
 import { nextScheduledActivity } from '@/lib/courseDates.mjs';
 import Icon from './Icon';
 import SubmissionWorkspace, { StaffSubmissionOverview } from './SubmissionWorkspace';
+import StudentServices from './StudentServices';
 
 const SESSION_KEY = 'it214-pilot-session';
 const staffRoles = new Set(['instructor', 'admin']);
@@ -115,6 +116,7 @@ function StudentDashboard({ profile, membership, onLogout }) {
     <div className="mx-auto max-w-6xl space-y-6">
       <DashboardHeader name={profile.full_name} role={membership.role} onLogout={onLogout} />
       <SubmissionWorkspace studentId={profile.id} />
+      <StudentServices studentId={profile.id} />
       <div className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
         <section className="surface-card"><span className="eyebrow">Próximo encontro</span>{nextActivity ? <><h3 className="mt-5 text-2xl font-black text-ink">{nextActivity.theme}</h3><p className="mt-3 text-sm font-bold text-cyan-800">{formatDate(nextActivity.date)} · 09h–12h</p><p className="mt-4 text-sm leading-6 text-slate-600">{nextActivity.objective}</p>{nextActivity.presentationSlug && <a className="button-dark mt-6" href={`${basePath}/apresentacoes/${nextActivity.presentationSlug}/`}><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação</a>}</> : <><h3 className="mt-5 text-2xl font-black text-ink">Sem encontros futuros</h3><p className="mt-3 text-sm leading-6 text-slate-600">O cronograma regular deste período foi concluído.</p></>}</section>
         <section className="surface-card"><span className="eyebrow">Materiais individuais</span><h3 className="mt-5 text-xl font-black text-ink">Nenhuma indicação individual</h3><p className="mt-3 text-sm leading-6 text-slate-600">Materiais específicos e não sigilosos destinados a você aparecerão aqui em uma etapa futura.</p></section>
@@ -132,10 +134,10 @@ function StaffDashboard({ profile, membership, roster, onLogout }) {
   return (
     <div className="mx-auto max-w-6xl space-y-6">
       <DashboardHeader name={profile.full_name} role={membership.role} onLogout={onLogout} />
-      <StaffSubmissionOverview />
+      <StaffSubmissionOverview students={students} />
       <div className="grid gap-4 sm:grid-cols-3"><div className="surface-card"><span className="text-4xl font-black text-cyan-700">{students.length}</span><p className="mt-2 text-sm font-bold text-slate-600">alunos cadastrados</p></div><div className="surface-card"><span className="text-4xl font-black text-cyan-700">{staff.length}</span><p className="mt-2 text-sm font-bold text-slate-600">docentes cadastrados</p></div><div className="surface-card"><span className="text-xl font-black text-ink">{nextActivity?.code || '—'}</span><p className="mt-2 text-sm font-bold text-slate-600">{nextActivity ? `${nextActivity.theme} · ${formatDate(nextActivity.date)}` : 'Sem encontros futuros'}</p></div></div>
       <section className="surface-card"><span className="eyebrow">Turma 2026/2</span><h3 className="mt-4 text-2xl font-black text-ink">Usuários cadastrados</h3><div className="mt-6 overflow-x-auto"><table className="w-full min-w-[560px] text-left text-sm"><thead><tr className="border-b border-slate-200 text-xs uppercase tracking-wider text-slate-400"><th className="pb-3">Nome</th><th className="pb-3">Papel</th><th className="pb-3">Estado</th></tr></thead><tbody>{roster.map((item) => <tr className="border-b border-slate-100 last:border-0" key={item.user_id}><td className="py-4 font-black text-ink">{item.full_name}</td><td className="py-4 text-slate-600">{roleLabels[item.role]}</td><td className="py-4"><span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-black text-emerald-800">Ativo</span></td></tr>)}</tbody></table></div></section>
-      <StatusMessage title="Escopo atual"><p>O envio e a consulta de atividades estão ativos. Revisão, aprovação, perguntas e acompanhamento detalhado serão adicionados somente quando forem necessários para a disciplina.</p></StatusMessage>
+      <StatusMessage title="Escopo atual"><p>Entregas, dúvidas públicas, projetos LaTeX e acompanhamento por commits estão ativos. Revisão acadêmica, aprovação e feedback reservado permanecem fora do portal estático.</p></StatusMessage>
     </div>
   );
 }

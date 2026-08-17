@@ -10,6 +10,7 @@
     "check": "node scripts/validate-project.mjs",
     "prepare:accounts": "node scripts/prepare-private-credentials.mjs",
     "generate:access": "node scripts/generate-static-access.mjs",
+    "reset:password": "node scripts/reset-private-password.mjs",
     "test": "node scripts/validate-project.mjs",
     "test:access": "node scripts/test-static-access.mjs"
   },

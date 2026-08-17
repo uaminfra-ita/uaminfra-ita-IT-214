@@ -14,6 +14,9 @@ export default function Icon({ name, className = 'h-5 w-5' }) {
     check: <path d="m5 12 4 4L19 6" />,
     logout: <path d="M10 5H5v14h5m4-4 4-3-4-3m4 3H9" />,
     presentation: <path d="M4 4h16v11H4V4Zm8 11v5m-4 0h8" />,
+    question: <><circle cx="12" cy="12" r="9" /><path d="M9.8 9a2.4 2.4 0 1 1 3.4 2.2c-.8.4-1.2.9-1.2 1.8m0 3.5v.1" /></>,
+    key: <path d="M14.5 8.5a4 4 0 1 1-1.2 2.9L21 3.7M18 6.7l2 2M15.5 9.2l2 2" />,
+    code: <path d="m9 7-5 5 5 5m6-10 5 5-5 5m-2-12-2 14" />,
     linkedin: <><path d="M6.5 9.5V19M6.5 6.25v.05M10.5 19v-9.5M10.5 13.5c.8-2.7 6.8-3 6.8 1V19" /><rect x="3" y="3" width="18" height="18" rx="3" /></>,
   };
 
