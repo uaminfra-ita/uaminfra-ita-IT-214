@@ -1,7 +1,6 @@
 # IT-214 — Mobilidade Aérea Urbana
 
-Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica. O projeto usa Next.js 14, React 18, Tailwind CSS e Reveal.js, com exportação estática para GitHub Pages.
-
+Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica. https://uaminfra-ita.github.io/uaminfra-ita-IT-214/area-do-aluno/
 ## Rotas
 
 - `/`: apresentação, objetivos, módulos e equipe docente.
