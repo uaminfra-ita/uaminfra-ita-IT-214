@@ -12,7 +12,8 @@
     "generate:access": "node scripts/generate-static-access.mjs",
     "reset:password": "node scripts/reset-private-password.mjs",
     "test": "node scripts/validate-project.mjs",
-    "test:access": "node scripts/test-static-access.mjs"
+    "test:access": "node scripts/test-static-access.mjs",
+    "audit:out": "node scripts/audit-public-output.mjs"
   },
   "dependencies": {
     "next": "^14.0.0",

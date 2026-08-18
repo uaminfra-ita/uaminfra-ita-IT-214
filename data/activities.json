@@ -29,7 +29,7 @@
   },
   {
     "code": "E03", "meeting": 3, "date": "2026-08-18", "type": "class", "status": "scheduled",
-    "resourceIds": ["faa-2023-uam-conops-2", "faa-2023-aam-implementation-plan"], "presentationSlug": null,
+    "resourceIds": ["faa-2023-uam-conops-2", "decea-2024-conops-uam-nacional", "faa-2023-aam-implementation-plan", "anac-2023-aam-panorama", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": "e03-regulamentacao-conops",
     "theme": "Regulamentação, CONOPS e papéis institucionais",
     "objective": "Discutir requisitos para eVTOL, certificação, aprovação da infraestrutura, autorização operacional, gestão do espaço aéreo e papéis institucionais.",
     "deliverable": "Quadro comparativo ANAC, DECEA, ICAO, FAA e EASA.",
@@ -70,7 +70,7 @@
   },
   {
     "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class", "status": "scheduled",
-    "resourceIds": ["faa-2023-uam-conops-2"], "presentationSlug": null,
+    "resourceIds": ["faa-2023-uam-conops-2", "decea-2024-conops-uam-nacional"], "presentationSlug": null,
     "theme": "Espaço aéreo, rotas e corredores",
     "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
     "deliverable": "Esboço conceitual de corredores e diagrama simples de rede.",
@@ -82,7 +82,7 @@
   },
   {
     "code": "E07", "meeting": 7, "date": "2026-09-15", "type": "class", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
+    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
     "theme": "Vertiportos I: componentes e tipologias",
     "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e tipologias no solo, elevadas ou por conversão de helipontos.",
     "deliverable": "Tabela de componentes do vertiporto.",
@@ -94,7 +94,7 @@
   },
   {
     "code": "E08", "meeting": 8, "date": "2026-09-22", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
+    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
     "theme": "Vertiportos II e Seminário Artigo 2",
     "objective": "Relacionar layout, turnaround, recarga, gates, stands, operações de carga e passageiros e gargalos operacionais.",
     "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
@@ -114,7 +114,7 @@
   },
   {
     "code": "E09", "meeting": 9, "date": "2026-10-06", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
     "theme": "Superfícies de proteção de voo e obstáculos",
     "objective": "Tratar rampas, gabaritos, edificações, antenas, entorno urbano e comparação normativa.",
     "deliverable": "Exercício de leitura de superfície e obstáculo.",
@@ -175,7 +175,7 @@
   },
   {
     "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical"], "presentationSlug": null,
+    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
     "theme": "Energia, recarga, combate a incêndio, fauna e meio ambiente",
     "objective": "Integrar subestação, armazenamento, redundância, tempo de solo, bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
     "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente.",

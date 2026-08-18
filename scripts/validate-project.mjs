@@ -85,7 +85,11 @@ allResources.forEach((resource) => {
   const relativePath = resource.assetPath.slice(1).replaceAll('/', path.sep);
   const fullPath = path.join(root, 'public', relativePath);
   assert.ok(fs.existsSync(fullPath), `Recurso público ausente: ${resource.assetPath}.`);
-  const actualHash = createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex').toUpperCase();
+  const fileContents = fs.readFileSync(fullPath);
+  const canonicalContents = resource.category === 'latex-template'
+    ? Buffer.from(fileContents.toString('utf8').replaceAll('\r\n', '\n'))
+    : fileContents;
+  const actualHash = createHash('sha256').update(canonicalContents).digest('hex').toUpperCase();
   assert.equal(actualHash, resource.sha256, `Checksum divergente: ${resource.assetPath}.`);
   declaredPublicResourcePaths.push(path.relative(root, fullPath));
 });
@@ -121,7 +125,7 @@ presentations.forEach((presentation) => {
   assert.equal(presentation.slideCount, 18, `${presentation.slug} deve declarar 18 slides.`);
   assert.ok(Array.isArray(presentation.objectives) && presentation.objectives.length === 4, `${presentation.slug} precisa de quatro objetivos.`);
   presentation.resourceIds.forEach((id) => assert.ok(resourceIds.has(id), `Fonte ${id} não existe em ${presentation.slug}.`));
-  assert.ok(Array.isArray(presentation.references) && presentation.references.length === 8, `${presentation.slug} precisa declarar oito referências.`);
+  assert.ok(Array.isArray(presentation.references) && presentation.references.length >= presentation.resourceIds.length, `${presentation.slug} precisa declarar ao menos uma referência para cada recurso-base.`);
   assert.equal(new Set(presentation.references.map((reference) => reference.url)).size, presentation.references.length, `Referências duplicadas em ${presentation.slug}.`);
   presentation.references.forEach((reference) => {
     ['shortTitle', 'citation', 'url', 'purpose'].forEach((field) => assert.ok(reference[field], `Referência de ${presentation.slug} sem ${field}.`));
@@ -153,6 +157,7 @@ function walk(directory) {
 }
 
 const repositoryFiles = walk(root);
+assert.equal(repositoryFiles.some((file) => path.basename(file).toLowerCase() === 'sigma_c_piii.pdf'), false, 'SIGMA_c_PIII.pdf é uma referência privada e não pode sair de .private/.');
 const actualPdfPaths = repositoryFiles.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
 const declaredPdfPaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
 assert.deepEqual(actualPdfPaths, declaredPdfPaths, 'Todo PDF no repositório deve estar declarado no catálogo.');
@@ -214,6 +219,8 @@ assert.ok(!workflow.toLowerCase().includes('supabase'), 'Deploy estático não d
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 assert.ok(!Object.keys(packageJson.dependencies).some((dependency) => dependency.includes('supabase')), 'Dependências Supabase devem permanecer removidas.');
 assert.equal(packageJson.scripts['reset:password'], 'node scripts/reset-private-password.mjs', 'Comando seguro de redefinição de senha ausente.');
+assert.equal(packageJson.scripts['audit:out'], 'node scripts/audit-public-output.mjs', 'Auditoria do artefato público ausente.');
+assert.ok(workflow.includes('npm run audit:out'), 'Deploy deve auditar o artefato antes da publicação.');
 const latexWorkflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'latex.yml'), 'utf8');
 assert.ok(latexWorkflow.includes('contents: read'), 'Compilação LaTeX deve usar somente leitura do repositório.');
 assert.ok(latexWorkflow.includes('student-submissions'), 'Compilação LaTeX deve acompanhar a branch de trabalhos.');
