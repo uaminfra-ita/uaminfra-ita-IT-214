@@ -16,6 +16,8 @@ Os PDFs públicos ficam em `public/resources/articles/`. Apresentações usam Re
 
 O login visual valida a credencial no navegador. Ao clicar no envio, o frontend monta um link para `entregas/<studentId>/<activityCode>` na branch pública `student-submissions`; o próprio GitHub controla o upload e o commit. Instrutores e professor consultam a branch diretamente.
 
+Na visão docente, `StaffSubmissionOverview` cruza o `displayName` do catálogo estático com o ID técnico e a árvore pública de arquivos. Busca, filtros e links nominais melhoram a operação sem substituir os IDs opacos nos caminhos. Para uso local fora do portal, `npm run index:submissions` gera um índice HTML/CSV em `.private/submissions/`, classificado para `instructors`.
+
 O painel consulta uma única vez a árvore pública da branch pela API REST do GitHub e deriva contagens de entregas e arquivos LaTeX. A consulta não usa token e possui fallback para os links diretos do repositório.
 
 Projetos LaTeX usam `projetos/<studentId>/main.tex`. O aluno pode editar no github.dev; commits e pull requests acionam `.github/workflows/latex.yml`, que compila sem shell escape e publica PDF e logs como artefatos temporários. O workflow tem somente `contents: read` e não grava resultados na branch.
