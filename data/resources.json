@@ -75,6 +75,24 @@
       "sha256": "0CB79759E37D106FFC296BCE04E75EAD1441A7086577CCED7B5487317F62D8AB"
     },
     {
+      "id": "nasa-2021-provider-services-uam",
+      "category": "technical-document",
+      "title": "Provider of Services to UAM: An Overview and Initial Use Case Discussion",
+      "authors": ["Joseph Rios"],
+      "year": 2021,
+      "publication": "NASA Ames Research Center — Advanced Air Mobility Ecosystem Working Groups",
+      "documentNumber": "NASA NTRS 20210017616",
+      "publisherUrl": "https://ntrs.nasa.gov/citations/20210017616",
+      "assetPath": "/resources/technical/nasa-2021-provider-services-uam.pdf",
+      "audience": "public",
+      "license": "Obra do governo federal dos Estados Unidos — uso público permitido",
+      "rightsNote": "O NASA Technical Reports Server classifica a distribuição como pública e permite uso público; o arquivo preserva o rodapé histórico de uso interno da apresentação original.",
+      "summary": "Apresenta o Provider of Services for UAM (PSU), a gestão federada do espaço aéreo, seus fluxos operacionais, definições, padrões e hipóteses para integração entre operadores, provedores e FAA.",
+      "tags": ["PSU", "NASA", "gestão federada", "espaço aéreo"],
+      "relatedActivityIds": ["E02", "E03", "E06"],
+      "sha256": "FF8F081C9E2338BB29E96EC80A705CA79066393098F5AED5F2296DB7B7A645EC"
+    },
+    {
       "id": "faa-2023-aam-implementation-plan",
       "category": "technical-document",
       "title": "Advanced Air Mobility Implementation Plan",

@@ -190,7 +190,7 @@ const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'comp
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
-assert.equal(access.users.length, 12, 'A turma deve conter doze contas.');
+assert.equal(access.users.length, 13, 'A turma deve conter treze contas.');
 assert.equal(new Set(access.users.map((user) => user.id)).size, access.users.length, 'IDs de acesso devem ser únicos.');
 access.users.forEach((user) => {
   assert.ok(user.displayName && ['student', 'instructor', 'admin'].includes(user.role), 'Conta com nome ou papel inválido.');
@@ -202,7 +202,7 @@ access.users.forEach((user) => {
   assert.match(user.credential.salt, /^[A-Za-z0-9_-]{22}$/, 'Salt inválido.');
   assert.match(user.credential.passwordHash, /^[A-Za-z0-9_-]{43}$/, 'Hash de senha inválido.');
 });
-assert.equal(access.users.filter((user) => user.role === 'student').length, 8, 'A turma deve conter oito alunos.');
+assert.equal(access.users.filter((user) => user.role === 'student').length, 9, 'A turma deve conter nove alunos.');
 assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3, 'A turma deve conter três instrutores.');
 assert.equal(access.users.filter((user) => user.role === 'admin').length, 1, 'A turma deve conter um professor responsável.');
 assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');

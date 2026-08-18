@@ -29,7 +29,7 @@ npm run test:access
 - `credenciais.csv` permanece em `.private/contas-piloto/` e deve ser distribuído por canal separado.
 - `data/access.json` é versionado e contém somente dados adequados ao ambiente público.
 - `prepare:accounts` preserva a senha de contas cujo e-mail já exista no arquivo de credenciais e gera uma senha aleatória de alta entropia somente para contas novas. Depois de alterar o lote, sempre reexecute `generate:access`.
-- A turma 2026/2 possui 12 contas: oito alunos, três instrutores e um professor responsável.
+- A turma 2026/2 possui 13 contas: nove alunos, três instrutores e um professor responsável.
 
 ## Papéis
 

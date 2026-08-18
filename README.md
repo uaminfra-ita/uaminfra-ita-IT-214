@@ -42,7 +42,7 @@ npm run generate:access
 npm run test:access
 ```
 
-O primeiro comando preserva as senhas existentes e gera senhas fortes para contas novas em `.private/contas-piloto/credenciais.csv`; o segundo grava somente hashes em `data/access.json`. O lote atual contém oito alunos, três instrutores e um professor responsável. Consulte [a documentação de autenticação](docs/authentication.md) antes de alterar as contas.
+O primeiro comando preserva as senhas existentes e gera senhas fortes para contas novas em `.private/contas-piloto/credenciais.csv`; o segundo grava somente hashes em `data/access.json`. O lote atual contém nove alunos, três instrutores e um professor responsável. Consulte [a documentação de autenticação](docs/authentication.md) antes de alterar as contas.
 
 ## Apresentações
 

@@ -15,8 +15,8 @@ const privateRows = fs.readFileSync(credentialsPath, 'utf8').trim().split(/\r?\n
 const access = JSON.parse(fs.readFileSync(accessPath, 'utf8'));
 
 assert.equal(access.scope, 'course-access');
-assert.equal(access.users.length, 12);
-assert.equal(privateRows.length, 12);
+assert.equal(access.users.length, 13);
+assert.equal(privateRows.length, 13);
 for (const row of privateRows) {
   const emailHash = createHash('sha256').update(row.email).digest('base64url');
   const user = access.users.find((candidate) => candidate.emailHash === emailHash);
@@ -29,11 +29,11 @@ for (const row of privateRows) {
   assert.notEqual(invalid, user.credential.passwordHash, `Senha incorreta aceita para ${row.displayName}.`);
 }
 
-assert.equal(access.users.filter((user) => user.role === 'student').length, 8);
+assert.equal(access.users.filter((user) => user.role === 'student').length, 9);
 assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3);
 assert.equal(access.users.filter((user) => user.role === 'admin').length, 1);
 assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor');
 assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Guterres')?.role, 'admin');
-console.log('Acesso validado: 12 senhas corretas/incorretas e papéis da turma estão consistentes.');
+console.log('Acesso validado: 13 senhas corretas/incorretas e papéis da turma estão consistentes.');

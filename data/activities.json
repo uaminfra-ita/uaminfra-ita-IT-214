@@ -13,7 +13,7 @@
   },
   {
     "code": "E02", "meeting": 2, "date": "2026-08-11", "type": "class", "status": "scheduled",
-    "resourceIds": ["cohen-2021-uam-history", "garrow-2021-uam-review", "pak-2024-uam-reality", "faa-2023-uam-conops-2", "faa-2023-aam-implementation-plan", "nrel-2023-vertiport-electrical", "cityam-2024-geospatial-lls"], "presentationSlug": "e02-nivelamento-uam",
+    "resourceIds": ["cohen-2021-uam-history", "garrow-2021-uam-review", "pak-2024-uam-reality", "faa-2023-uam-conops-2", "nasa-2021-provider-services-uam", "faa-2023-aam-implementation-plan", "nrel-2023-vertiport-electrical", "cityam-2024-geospatial-lls"], "presentationSlug": "e02-nivelamento-uam",
     "theme": "Nivelamento UAM, AAM, eVTOL, UTM e ATM",
     "objective": "Construir vocabulário comum sobre sistema UAM, atores, aeronaves, vertiportos, cidade e espaço aéreo.",
     "deliverable": "Glossário técnico inicial.",
@@ -29,7 +29,7 @@
   },
   {
     "code": "E03", "meeting": 3, "date": "2026-08-18", "type": "class", "status": "scheduled",
-    "resourceIds": ["faa-2023-uam-conops-2", "decea-2024-conops-uam-nacional", "faa-2023-aam-implementation-plan", "anac-2023-aam-panorama", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": "e03-regulamentacao-conops",
+    "resourceIds": ["faa-2023-uam-conops-2", "nasa-2021-provider-services-uam", "decea-2024-conops-uam-nacional", "faa-2023-aam-implementation-plan", "anac-2023-aam-panorama", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": "e03-regulamentacao-conops",
     "theme": "Regulamentação, CONOPS e papéis institucionais",
     "objective": "Discutir requisitos para eVTOL, certificação, aprovação da infraestrutura, autorização operacional, gestão do espaço aéreo e papéis institucionais.",
     "deliverable": "Quadro comparativo ANAC, DECEA, ICAO, FAA e EASA.",
@@ -70,7 +70,7 @@
   },
   {
     "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class", "status": "scheduled",
-    "resourceIds": ["faa-2023-uam-conops-2", "decea-2024-conops-uam-nacional"], "presentationSlug": null,
+    "resourceIds": ["faa-2023-uam-conops-2", "nasa-2021-provider-services-uam", "decea-2024-conops-uam-nacional"], "presentationSlug": null,
     "theme": "Espaço aéreo, rotas e corredores",
     "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
     "deliverable": "Esboço conceitual de corredores e diagrama simples de rede.",
