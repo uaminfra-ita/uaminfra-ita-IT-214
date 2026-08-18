@@ -81,5 +81,74 @@
         "purpose": "Nivelamento, estrutura conceitual e motivação"
       }
     ]
+  },
+  {
+    "slug": "e03-regulamentacao-conops",
+    "activityId": "E03",
+    "title": "CONOPS UAM: do conceito à operação no Brasil",
+    "subtitle": "Regulamentação, espaço aéreo e papéis institucionais",
+    "date": "2026-08-18",
+    "durationMinutes": 90,
+    "slideCount": 16,
+    "objectives": [
+      "Explicar a função de um CONOPS e seus limites.",
+      "Comparar as concepções operacionais UAM da FAA e do DECEA.",
+      "Distinguir os papéis institucionais de ANAC, DECEA, OACI, FAA e EASA.",
+      "Relacionar maturidade operacional, serviços digitais e requisitos de espaço aéreo."
+    ],
+    "sections": [
+      "Abertura",
+      "Documentos e escopo",
+      "Atores e ambiente operacional",
+      "Operação e capacidade",
+      "Evolução e lacunas",
+      "Síntese"
+    ],
+    "resourceIds": [
+      "faa-2023-uam-conops-2",
+      "decea-2024-conops-uam-nacional",
+      "faa-2023-aam-implementation-plan",
+      "anac-2023-aam-panorama",
+      "easa-2022-vertiport-design-pts",
+      "faa-2024-eb-105a-vertiport-design"
+    ],
+    "references": [
+      {
+        "shortTitle": "FAA UAM ConOps 2.0 (2023)",
+        "citation": "Urban Air Mobility Concept of Operations, Version 2.0.",
+        "url": "https://www.faa.gov/sites/faa.gov/files/Urban-Air-Mobility-Concept-of-Operations-2.0.pdf",
+        "purpose": "Concepção operacional, corredores, atores e serviços cooperativos"
+      },
+      {
+        "shortTitle": "DECEA PCA 351-7 (2024)",
+        "citation": "Concepção Operacional UAM Nacional.",
+        "url": "https://publicacoes.decea.mil.br/publicacao/PCA-351-7",
+        "purpose": "Integração UAM ao SISCEAB, PSU, espaço aéreo e níveis UML"
+      },
+      {
+        "shortTitle": "FAA AAM Plan (2023)",
+        "citation": "Advanced Air Mobility Implementation Plan, Version 1.0.",
+        "url": "https://www.faa.gov/sites/faa.gov/files/AAM-I28-Implementation-Plan.pdf",
+        "purpose": "Passagem da concepção para ações de implementação"
+      },
+      {
+        "shortTitle": "ANAC AAM Panorama (2023)",
+        "citation": "Advanced Air Mobility — Panorama e Perspectivas 2023.",
+        "url": "https://www.gov.br/anac/pt-br/centrais-de-conteudo/publicacoes/publicacoes-arquivos/aam-panorama-2023.pdf",
+        "purpose": "Certificação, regulação e coordenação institucional brasileira"
+      },
+      {
+        "shortTitle": "EASA PTS-VPT-DSN (2022)",
+        "citation": "Prototype Technical Specifications for the Design of VFR Vertiports.",
+        "url": "https://www.easa.europa.eu/en/document-library/general-publications/prototype-technical-design-specifications-vertiports",
+        "purpose": "Interface entre operação e projeto de vertiportos"
+      },
+      {
+        "shortTitle": "FAA EB 105A (2024)",
+        "citation": "Vertiport Design, Supplemental Guidance to AC 150/5390-2D.",
+        "url": "https://www.faa.gov/airports/engineering/engineering_briefs",
+        "purpose": "Limites do CONOPS e requisitos complementares de infraestrutura"
+      }
+    ]
   }
 ]

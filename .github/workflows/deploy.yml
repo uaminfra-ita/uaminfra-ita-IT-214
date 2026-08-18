@@ -44,6 +44,9 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
 
+      - name: Audit public artifact
+        run: npm run audit:out
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
