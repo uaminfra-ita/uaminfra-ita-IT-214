@@ -11,6 +11,8 @@ O MVP não possui cadastro público, troca automática de senha, notas ou dados 
 - Nenhuma senha legível ou e-mail de login entra no código, Git ou bundle.
 - Credenciais legíveis permanecem em `.private/`, pasta ignorada pelo Git.
 - Painéis e entregas contêm somente dados considerados públicos ou não sigilosos para a disciplina.
+- Pastas públicas de entregas e projetos usam IDs opacos; nomes não fazem parte desses caminhos.
+- O índice nominal de submissões tem público `instructors`, é gerado somente em `.private/` e nunca deve ser versionado.
 - Recursos públicos precisam estar declarados em `resources.json`, com público e checksum.
 - Notas, revisões privadas e materiais sigilosos não podem usar este fluxo.
 - Solicitações de troca de senha nunca contêm a senha atual, a senha nova ou o e-mail do aluno.

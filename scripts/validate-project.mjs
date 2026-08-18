@@ -186,7 +186,7 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/githubCourse.mjs', 'lib/usePublicRepositoryTree.js', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/githubCourse.mjs', 'lib/usePublicRepositoryTree.js', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
@@ -212,6 +212,9 @@ assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Gu
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');
 assert.ok(authComponent.includes('sessionStorage'), 'A sessão deve usar sessionStorage.');
+const submissionComponent = fs.readFileSync(path.join(root, 'components', 'SubmissionWorkspace.jsx'), 'utf8');
+assert.ok(submissionComponent.includes('Localizar aluno'), 'Painel docente deve permitir busca nominal.');
+assert.ok(submissionComponent.includes('entregas/${student.user_id}'), 'Painel docente deve preservar IDs técnicos nas pastas públicas.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');
 assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
@@ -219,6 +222,10 @@ assert.ok(!workflow.toLowerCase().includes('supabase'), 'Deploy estático não d
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 assert.ok(!Object.keys(packageJson.dependencies).some((dependency) => dependency.includes('supabase')), 'Dependências Supabase devem permanecer removidas.');
 assert.equal(packageJson.scripts['reset:password'], 'node scripts/reset-private-password.mjs', 'Comando seguro de redefinição de senha ausente.');
+assert.equal(packageJson.scripts['index:submissions'], 'node scripts/generate-private-submission-index.mjs', 'Comando de índice privado de submissões ausente.');
+const privateIndexScript = fs.readFileSync(path.join(root, 'scripts', 'generate-private-submission-index.mjs'), 'utf8');
+assert.ok(privateIndexScript.includes("path.join('.private', 'submissions')"), 'Índice nominal deve ser gravado em .private por padrão.');
+assert.ok(privateIndexScript.includes('content="instructors"'), 'Índice nominal deve declarar público instructors.');
 assert.equal(packageJson.scripts['audit:out'], 'node scripts/audit-public-output.mjs', 'Auditoria do artefato público ausente.');
 assert.ok(workflow.includes('npm run audit:out'), 'Deploy deve auditar o artefato antes da publicação.');
 const latexWorkflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'latex.yml'), 'utf8');
