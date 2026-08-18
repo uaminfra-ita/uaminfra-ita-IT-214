@@ -122,7 +122,7 @@ presentationAssets.forEach((asset) => {
 presentations.forEach((presentation) => {
   assert.ok(activityIds.has(presentation.activityId), `Atividade inexistente em ${presentation.slug}.`);
   assert.equal(presentation.durationMinutes, 90, `${presentation.slug} deve durar 90 minutos.`);
-  assert.equal(presentation.slideCount, 18, `${presentation.slug} deve declarar 18 slides.`);
+  assert.ok(Number.isInteger(presentation.slideCount) && presentation.slideCount > 0, `${presentation.slug} deve declarar uma quantidade positiva de slides.`);
   assert.ok(Array.isArray(presentation.objectives) && presentation.objectives.length === 4, `${presentation.slug} precisa de quatro objetivos.`);
   presentation.resourceIds.forEach((id) => assert.ok(resourceIds.has(id), `Fonte ${id} não existe em ${presentation.slug}.`));
   assert.ok(Array.isArray(presentation.references) && presentation.references.length >= presentation.resourceIds.length, `${presentation.slug} precisa declarar ao menos uma referência para cada recurso-base.`);

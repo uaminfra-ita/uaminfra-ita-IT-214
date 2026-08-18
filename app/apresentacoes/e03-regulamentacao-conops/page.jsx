@@ -1,7 +1,11 @@
+import Image from 'next/image';
 import PresentationDeck from '@/components/PresentationDeck';
 import presentations from '@/data/presentations.json';
+import presentationAssets from '@/data/presentation-assets.json';
 
 const presentation = presentations.find((item) => item.slug === 'e03-regulamentacao-conops');
+const assets = new Map(presentationAssets.map((asset) => [asset.id, asset]));
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const metadata = {
   title: presentation.title,
@@ -17,6 +21,26 @@ function Slide({ kicker, title, source, notes, children, className = '' }) {
       {source && <p className="slide-source">{source}</p>}
       {notes && <aside className="notes">{notes}</aside>}
     </section>
+  );
+}
+
+function MediaFigure({ assetId, className = '', frameClassName = '', fit = 'contain' }) {
+  const asset = assets.get(assetId);
+  if (!asset) return null;
+
+  return (
+    <figure className={`slide-media ${className}`}>
+      <div className={`slide-media-frame ${frameClassName}`}>
+        <Image
+          src={`${basePath}${asset.assetPath}`}
+          alt={asset.alt}
+          fill
+          sizes="(max-width: 800px) 94vw, 42vw"
+          className={fit === 'cover' ? 'object-cover' : 'object-contain'}
+        />
+      </div>
+      <figcaption>{asset.creditLine}</figcaption>
+    </figure>
   );
 }
 
@@ -49,7 +73,7 @@ export default function E03PresentationPage() {
         <CoverNetwork />
       </Slide>
 
-      <Slide kicker="Pergunta central" title="O que transforma um voo possível em uma operação regular?" source="Síntese didática baseada em FAA UAM ConOps 2.0 (2023) e DECEA PCA 351-7 (2024)." notes="Tempo sugerido: 5 minutos. Peça exemplos para cada bloco. Registre verbalmente as dependências entre eles; a resposta será retomada no slide 17.">
+      <Slide kicker="Pergunta central" title="O que transforma um voo possível em uma operação regular?" source="Síntese didática baseada em FAA UAM ConOps 2.0 (2023) e DECEA PCA 351-7 (2024)." notes="Tempo sugerido: 5 minutos. Peça exemplos para cada bloco. Registre verbalmente as dependências entre eles; a resposta será retomada no fechamento da aula.">
         <p className="slide-question mt-7">Uma aeronave certificada, sozinha, não constitui um sistema de mobilidade aérea.</p>
         <div className="conops-question-grid mt-8">
           {[
@@ -71,13 +95,21 @@ export default function E03PresentationPage() {
         </div>
       </Slide>
 
-      <Slide kicker="Corpus da aula" title="Dois CONOPS no centro; quatro documentos fecham as interfaces" source="FAA (2023, 2024); DECEA (2024); ANAC (2023); EASA (2022)." notes="Tempo sugerido: 4 minutos. Explique a hierarquia: FAA e DECEA sustentam a narrativa; os demais documentos respondem onde a concepção precisa encontrar certificação, implementação e infraestrutura.">
+      <Slide kicker="Corpus da aula" title="FAA e DECEA estruturam a operação; quatro referências detalham implementação, certificação e vertiportos" source="FAA (2023, 2024); DECEA (2024); ANAC (2023); EASA (2022)." notes="Tempo sugerido: 4 minutos. Explique a hierarquia: FAA e DECEA sustentam a narrativa; os demais documentos respondem onde a concepção precisa encontrar certificação, implementação e infraestrutura.">
         <div className="conops-doc-map mt-7">
-          <div className="conops-doc-core"><span>CONOPS FORMAL</span><strong>FAA UAM ConOps 2.0</strong><small>NAS · corredores · rede federada</small></div>
-          <div className="conops-doc-core"><span>CONOPS FORMAL</span><strong>DECEA PCA 351-7</strong><small>SISCEAB · volumes UAM · níveis UML</small></div>
           {[
-            ['FAA AAM Plan', 'implementação'], ['ANAC Panorama', 'certificação'], ['EASA PTS', 'projeto'], ['FAA EB 105A', 'infraestrutura'],
-          ].map(([name, role]) => <div className="conops-doc-context" key={name}><strong>{name}</strong><small>{role}</small></div>)}
+            ['faa-2023-uam-conops-cover', 'CONOPS FORMAL', 'FAA UAM ConOps 2.0', 'NAS · corredores · rede federada', true],
+            ['decea-2024-pca-351-7-cover', 'CONOPS FORMAL', 'DECEA PCA 351-7', 'SISCEAB · volumes UAM · níveis UML', true],
+            ['faa-2023-aam-implementation-plan-cover', 'PLANO', 'FAA AAM Plan', 'implementação'],
+            ['anac-2023-aam-panorama-cover', 'PANORAMA', 'ANAC Panorama', 'certificação'],
+            ['easa-2022-pts-vpt-dsn-cover', 'ESPECIFICAÇÃO', 'EASA PTS', 'projeto'],
+            ['faa-2024-eb-105a-page', 'ORIENTAÇÃO', 'FAA EB 105A', 'infraestrutura'],
+          ].map(([assetId, label, name, role, core]) => (
+            <div className={core ? 'conops-doc-core' : 'conops-doc-context'} key={assetId}>
+              <MediaFigure assetId={assetId} frameClassName="conops-doc-cover" />
+              <div className="conops-doc-copy"><span>{label}</span><strong>{name}</strong><small>{role}</small></div>
+            </div>
+          ))}
         </div>
       </Slide>
 
@@ -129,12 +161,17 @@ export default function E03PresentationPage() {
 
       <Slide kicker="Arquitetura de serviços" title="O PSU converte informação distribuída em coordenação operacional" source="FAA UAM ConOps 2.0, seções 4.3 e 5; DECEA PCA 351-7, arts. 61–74." notes="Tempo sugerido: 6 minutos. Mostre que o PSU apoia o operador; não é sinônimo de ATC. Compare a rede federada FAA com a exigência brasileira de sincronização com um sistema central.">
         <div className="conops-service-map mt-7">
-          <div className="service-node authority">FAA / DECEA<br /><small>autoridade e supervisão</small></div>
-          <div className="service-node data">SDSP<br /><small>dados suplementares</small></div>
-          <div className="service-node central">PSU<br /><small>serviços UAM</small></div>
-          <div className="service-node operator">Operador / PIC<br /><small>intenção e execução</small></div>
-          <div className="service-node vertiport">Vertiporto<br /><small>capacidade e condição</small></div>
-          <svg viewBox="0 0 900 310" aria-hidden="true"><path d="M450 145 L450 40 M410 160 L170 85 M490 160 L730 85 M410 195 L180 260 M490 195 L720 260" /></svg>
+          <div className="service-hub"><span>NÚCLEO COOPERATIVO</span><strong>PSU</strong><small>descoberta, validação e coordenação de informações operacionais</small></div>
+          <div className="service-connectors" aria-hidden="true"><span /><span /><span /><span /><span /></div>
+          <div className="service-interfaces">
+            {[
+              ['governança ↕ estado', 'FAA / DECEA', 'regras, restrições e supervisão'],
+              ['dados ↕ qualidade', 'SDSP', 'MET, navegação e dados geoespaciais'],
+              ['intenção ↕ conformidade', 'Operador / PIC', 'planejamento, execução e resposta'],
+              ['coordenação ↕ tráfego', 'ATS', 'espaço aéreo controlado e contingências'],
+              ['capacidade ↕ sequência', 'Vertiporto', 'condição, disponibilidade e fluxo'],
+            ].map(([exchange, actor, role]) => <div className="service-node" key={actor}><span>{exchange}</span><strong>{actor}</strong><small>{role}</small></div>)}
+          </div>
         </div>
       </Slide>
 
@@ -150,8 +187,8 @@ export default function E03PresentationPage() {
 
       <Slide kicker="Estrutura do espaço aéreo" title="Corredor exclusivo ou volume compartilhado?" source="FAA UAM ConOps 2.0, seção 4.4; DECEA PCA 351-7, arts. 50–52 e 78–101." notes="Tempo sugerido: 6 minutos. Compare sem escolher um vencedor. O desenho depende de densidade, usuários existentes, performance e capacidade de coordenação.">
         <div className="conops-models mt-7">
-          <div><span>FAA</span><strong>UAM Corridor</strong><svg viewBox="0 0 360 150" role="img" aria-label="Corredor definido conectando dois pontos"><path d="M35 105 C115 20 245 20 325 105" /><circle cx="35" cy="105" r="13" /><circle cx="325" cy="105" r="13" /></svg><p>estrutura definida, pontos de entrada e saída, critérios de participação e práticas cooperativas.</p></div>
-          <div><span>DECEA</span><strong>Volume UAM</strong><svg viewBox="0 0 360 150" role="img" aria-label="Volume de espaço aéreo compartilhado"><path d="M55 105 L110 35 H285 L325 105 Z" /><path d="M95 85 H290 M130 60 H300" /><circle cx="160" cy="74" r="9" /><circle cx="235" cy="50" r="9" /></svg><p>volume georreferenciado, acesso por capacidade e performance, compartilhamento quando possível.</p></div>
+          <div><span>FAA</span><strong>UAM Corridor</strong><MediaFigure assetId="faa-2023-uam-corridor-concept" frameClassName="conops-model-figure" /><p>estrutura definida, pontos de entrada e saída, critérios de participação e práticas cooperativas.</p></div>
+          <div><span>DECEA</span><strong>Volume UAM</strong><MediaFigure assetId="decea-2024-uam-volume-example" frameClassName="conops-model-figure" /><p>volume georreferenciado, acesso por capacidade e performance, compartilhamento quando possível.</p></div>
         </div>
       </Slide>
 
@@ -200,28 +237,18 @@ export default function E03PresentationPage() {
         </div>
       </Slide>
 
-      <Slide kicker="Fronteiras e lacunas" title="O CONOPS organiza a operação; outras decisões fecham o sistema" source="ANAC (2023); EASA PTS-VPT-DSN (2022); FAA EB 105A (2024); FAA e DECEA CONOPS." notes="Tempo sugerido: 6 minutos. Use os três níveis para mostrar por que um documento operacional não responde sozinho onde construir, como certificar ou como integrar o sítio à cidade.">
+      <Slide kicker="Fronteiras, lacunas e fontes" title="O CONOPS organiza a operação; outras decisões fecham o sistema" source="Referências completas preservadas no catálogo da apresentação e na Biblioteca do portal." notes="Tempo sugerido: 7 minutos. Use os três níveis para mostrar por que um documento operacional não responde sozinho onde construir, como certificar ou como integrar o sítio à cidade. Encerre retomando a pergunta do slide 2 e indicando as seis fontes oficiais.">
         <div className="conops-boundaries mt-7">
           <div><span>ESTRATÉGICO</span><strong>Vale habilitar?</strong><p>política · demanda · aceitação · marco regulatório</p></div>
           <div><span>TÁTICO</span><strong>Como implementar?</strong><p>certificação · espaço aéreo · sítio · geometria · energia</p></div>
           <div><span>OPERACIONAL</span><strong>Como operar?</strong><p>intenção · separação · capacidade · contingência · dados</p></div>
         </div>
-        <div className="conops-gap-line mt-8"><strong>CONOPS</strong><span>conecta os níveis</span><strong>ANAC</strong><span>certifica e fiscaliza</span><strong>EASA / FAA</strong><span>detalham vertiportos</span></div>
-      </Slide>
-
-      <Slide kicker="Síntese e entregável E03" title="Complete a matriz: autoridade, objeto, instrumento e evidência" source="Atividade didática IT-214 E03, baseada nas fontes oficiais da aula." notes="Tempo sugerido: 10 minutos. Organize cinco grupos, um por instituição. Cada grupo preenche uma linha e apresenta em um minuto. Feche retomando a pergunta do slide 2.">
-        <div className="conops-exercise mt-7">
-          <div className="exercise-head"><span>Instituição</span><span>O que regula?</span><span>Com qual instrumento?</span><span>Que evidência exige?</span></div>
-          {['ANAC', 'DECEA', 'OACI', 'FAA', 'EASA'].map((actor) => <div className="exercise-row" key={actor}><strong>{actor}</strong><span>________________</span><span>________________</span><span>________________</span></div>)}
+        <div className="conops-final-references mt-6">
+          <strong>Bibliografia oficial</strong>
+          <div>
+            {presentation.references.map((reference) => <a href={reference.url} target="_blank" rel="noreferrer" key={reference.url}><span>{reference.shortTitle}</span><small>{reference.citation}</small></a>)}
+          </div>
         </div>
-        <p className="slide-closing mt-6">Operação regular = aeronave habilitada + espaço aéreo aplicável + serviços coordenados + infraestrutura adequada + evidência.</p>
-      </Slide>
-
-      <Slide kicker="Para consulta" title="Referências oficiais utilizadas nesta aula" notes="Tempo sugerido: 1 minuto. Indique que os seis documentos estão na Biblioteca do portal. Encerre apontando a próxima etapa: transformar as relações institucionais em perguntas verificáveis para o projeto.">
-        <div className="reference-list mt-6">
-          {presentation.references.map((reference) => <div key={reference.url}><strong>{reference.shortTitle}</strong><p>{reference.citation}</p><span>{reference.purpose}</span></div>)}
-        </div>
-        <p className="slide-closing mt-6">Próximo passo: converter a concepção operacional em requisitos, testes e decisões de implementação.</p>
       </Slide>
     </PresentationDeck>
   );
