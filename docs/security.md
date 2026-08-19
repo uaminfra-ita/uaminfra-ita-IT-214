@@ -2,26 +2,25 @@
 
 ## Estado atual
 
-`/area-do-aluno/` valida e-mail e senha no navegador para organizar a experiência. O botão de envio abre o GitHub, que exige a autenticação própria da conta que fará o commit. A interface, as entregas, as dúvidas e os projetos LaTeX continuam públicos por decisão da disciplina.
+`/area-do-aluno/` valida e-mail e senha no navegador para organizar a experiência. Essa validação não é autenticação forte. Os arquivos acadêmicos ficam no Google Drive, cuja autenticação e permissões constituem o controle real de acesso.
 
-O MVP não possui cadastro público, troca automática de senha, notas ou dados de desempenho.
+O MVP não possui cadastro público, troca automática de senha, notas ou dados de desempenho. O GitHub permanece responsável somente pelo código e pela publicação do Pages.
 
 ## Invariantes
 
 - Nenhuma senha legível ou e-mail de login entra no código, Git ou bundle.
 - Credenciais legíveis permanecem em `.private/`, pasta ignorada pelo Git.
-- Painéis e entregas contêm somente dados considerados públicos ou não sigilosos para a disciplina.
-- Pastas públicas de entregas e projetos usam IDs opacos; nomes não fazem parte desses caminhos.
-- O índice nominal de submissões tem público `instructors`, é gerado somente em `.private/` e nunca deve ser versionado.
-- Recursos públicos precisam estar declarados em `resources.json`, com público e checksum.
-- Notas, revisões privadas e materiais sigilosos não podem usar este fluxo.
-- Solicitações de troca de senha nunca contêm a senha atual, a senha nova ou o e-mail do aluno.
-- A compilação LaTeX roda sem shell escape e com `contents: read`; o resultado é um artefato temporário, não um commit automático.
-- O painel pode ler apenas metadados e caminhos públicos da branch; essa leitura não comprova autoria, entrega no prazo ou aprovação docente.
+- `data/drive-submissions.json` contém IDs de pastas e declara `audience: public`, pois é incluído no bundle; os IDs não substituem permissões do Drive.
+- Cada pasta individual deve ser compartilhada somente com o aluno correspondente e a equipe docente.
+- A pasta raiz da disciplina não deve conceder edição para toda a turma.
+- O índice nominal de submissões tem público `instructors`, é gerado em `.private/` e nunca deve ser versionado.
+- Dúvidas e solicitações de senha nunca contêm senha atual, senha nova, e-mail, nota ou feedback reservado.
+- O portal não consulta o conteúdo do Drive e não afirma automaticamente que uma atividade foi entregue, lida ou aprovada.
+- Recursos publicados pelo Pages continuam exigindo `audience: public`, licença, relações acadêmicas e checksum.
 
-O filtro individual do Pages melhora a navegação, mas não torna os arquivos secretos: qualquer pessoa pode consultar a branch pública, as issues, os artefatos permitidos e os commits pelo GitHub. O identificador em `sessionStorage` também pode ser alterado pelo usuário.
+O identificador em `sessionStorage` pode ser alterado por quem controla o navegador. Isso pode trocar o link exibido, mas não deve conceder acesso ao arquivo: o Drive precisa negar qualquer conta não autorizada.
 
-Se uma senha vazar, gere novamente o lote privado e `data/access.json`. Se um conteúdo sigiloso for publicado, retire-o imediatamente da versão corrente e avalie a necessidade de reescrever o histórico.
+Se uma senha vazar, redefina-a pelo fluxo privado e recrie `data/access.json`. Se uma pasta for compartilhada incorretamente, corrija imediatamente as permissões no Drive e revise os arquivos acessíveis.
 
 ## Dependências
 

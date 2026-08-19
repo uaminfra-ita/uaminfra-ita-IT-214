@@ -45,4 +45,4 @@ try {
 
 console.log(`Senha temporária redefinida para ${changedName} (${userId}).`);
 console.log(`Nova senha: ${temporaryPassword}`);
-console.log('Entregue-a somente por canal privado e nunca a publique em issue, commit ou mensagem pública.');
+console.log('Entregue-a somente por canal privado e nunca a publique no Git, no Drive ou em mensagem pública.');

@@ -8,7 +8,7 @@ Antes de publicar um recurso, a equipe deve confirmar:
 4. finalidade didática e atividades relacionadas;
 5. existência de versão anterior para evitar duplicidade.
 
-Somente `audience: public` admite `assetPath` no GitHub Pages. Material da turma ou individual deverá aguardar armazenamento autenticado. Alterações de arquivo exigem atualização do SHA-256 e revisão da licença.
+Somente `audience: public` admite `assetPath` no GitHub Pages. Material da turma ou individual deve permanecer no Google Drive com compartilhamento restrito; o Pages pode publicar apenas o identificador não sigiloso necessário para montar o link. Alterações de arquivo público exigem atualização do SHA-256 e revisão da licença.
 
 Figuras de slides devem ser originais sempre que possível. Ideias derivadas recebem referência próxima e cada deck termina com bibliografia. Fotografias ou ilustrações externas só entram no portal quando obtidas da fonte primária e declaradas em `data/presentation-assets.json`, com crédito, finalidade de uso, URL de origem, texto alternativo e SHA-256. Os slides nunca carregam imagens remotas em tempo de execução.
 

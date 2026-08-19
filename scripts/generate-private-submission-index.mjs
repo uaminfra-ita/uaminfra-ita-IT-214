@@ -7,19 +7,19 @@ const argumentValue = (name, fallback) => {
   return index >= 0 ? process.argv[index + 1] : fallback;
 };
 const sourcePath = path.resolve(root, argumentValue('--source', path.join('data', 'access.json')));
+const driveSourcePath = path.resolve(root, argumentValue('--drive-source', path.join('data', 'drive-submissions.json')));
 const outputDirectory = path.resolve(root, argumentValue('--output-dir', path.join('.private', 'submissions')));
-const repositoryUrl = 'https://github.com/uaminfra-ita/uaminfra-ita-IT-214';
-const branch = 'student-submissions';
 
 if (!fs.existsSync(sourcePath)) throw new Error(`Catálogo de acesso ausente: ${path.relative(root, sourcePath)}.`);
+if (!fs.existsSync(driveSourcePath)) throw new Error(`Configuração do Drive ausente: ${path.relative(root, driveSourcePath)}.`);
 const access = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
+const driveWorkspaces = JSON.parse(fs.readFileSync(driveSourcePath, 'utf8'));
 const students = access.users
   .filter((user) => user.role === 'student' && user.status === 'active')
   .sort((a, b) => a.displayName.localeCompare(b.displayName, 'pt-BR'));
 
-function repositoryPathUrl(repositoryPath) {
-  const encodedPath = repositoryPath.split('/').map((segment) => encodeURIComponent(segment)).join('/');
-  return `${repositoryUrl}/tree/${branch}/${encodedPath}`;
+function driveFolderUrl(folderId) {
+  return `https://drive.google.com/drive/folders/${folderId}`;
 }
 
 function csvCell(value) {
@@ -35,22 +35,27 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;');
 }
 
-const rows = students.map((student) => ({
-  name: student.displayName,
-  id: student.id,
-  deliveriesUrl: repositoryPathUrl(`entregas/${student.id}`),
-  projectUrl: repositoryPathUrl(`projetos/${student.id}`),
-}));
+const rows = students.map((student) => {
+  const destination = driveWorkspaces.destinations[student.id];
+  if (!destination) throw new Error(`Destino do Drive ausente para ${student.displayName}.`);
+  return {
+    name: student.displayName,
+    id: student.id,
+    deliveriesUrl: driveFolderUrl(destination.activitiesFolderId),
+    projectUrl: driveFolderUrl(destination.latexFolderId),
+    supportUrl: driveFolderUrl(destination.supportFolderId),
+  };
+});
 const csv = [
-  ['nome', 'identificador_tecnico', 'entregas', 'projeto_latex'].map(csvCell).join(','),
-  ...rows.map((row) => [row.name, row.id, row.deliveriesUrl, row.projectUrl].map(csvCell).join(',')),
+  ['nome', 'identificador_tecnico', 'atividades_drive', 'projeto_latex_drive', 'duvidas_solicitacoes_drive'].map(csvCell).join(','),
+  ...rows.map((row) => [row.name, row.id, row.deliveriesUrl, row.projectUrl, row.supportUrl].map(csvCell).join(',')),
 ].join('\n');
 const generatedAt = new Intl.DateTimeFormat('pt-BR', {
   dateStyle: 'short',
   timeStyle: 'medium',
   timeZone: 'America/Sao_Paulo',
 }).format(new Date());
-const tableRows = rows.map((row) => `<tr><td>${escapeHtml(row.name)}</td><td><code>${escapeHtml(row.id)}</code></td><td><a href="${row.deliveriesUrl}">Abrir entregas</a></td><td><a href="${row.projectUrl}">Abrir projeto</a></td></tr>`).join('\n');
+const tableRows = rows.map((row) => `<tr><td>${escapeHtml(row.name)}</td><td><code>${escapeHtml(row.id)}</code></td><td><a href="${row.deliveriesUrl}">Abrir atividades</a></td><td><a href="${row.projectUrl}">Abrir projeto</a></td><td><a href="${row.supportUrl}">Abrir suporte</a></td></tr>`).join('\n');
 const html = `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -73,7 +78,7 @@ const html = `<!doctype html>
     <p><strong>Público:</strong> instructors · <strong>Gerado:</strong> ${escapeHtml(generatedAt)}</p>
     <p>Mapa local entre nomes e IDs técnicos. Este arquivo deve permanecer em <code>.private/</code> e nunca ser publicado.</p>
     <table>
-      <thead><tr><th>Aluno</th><th>ID técnico</th><th>Atividades</th><th>LaTeX</th></tr></thead>
+      <thead><tr><th>Aluno</th><th>ID técnico</th><th>Atividades</th><th>LaTeX</th><th>Dúvidas e solicitações</th></tr></thead>
       <tbody>${tableRows}</tbody>
     </table>
   </main>

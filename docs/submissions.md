@@ -2,43 +2,36 @@
 
 ## Estado atual
 
-A Área do Aluno orienta o aluno a anexar atividades diretamente no GitHub. A E02 está aberta e a E03 aparece como programada. O botão abre a branch pública `student-submissions` deste mesmo repositório, na pasta indicada para a conta e para a atividade.
+A Área do Aluno abre uma pasta individual no Google Drive. Cada aluno possui três destinos: `Atividades`, `Projeto LaTeX` e `Dúvidas e solicitações`. O vínculo entre o identificador opaco da conta e as pastas fica em `data/drive-submissions.json`.
 
-Cada entrega fica em `entregas/<studentId>/<atividade>/`. O identificador vem da sessão visual do navegador e não constitui autorização segura. O GitHub registra o autor real do commit e aplica as permissões da branch. Instrutores e professor consultam os arquivos e o histórico público da turma pelo painel.
+O login do GitHub Pages é apenas uma separação visual. O controle real dos arquivos é feito pelas permissões do Drive; cada pasta individual deve ser compartilhada somente com o aluno correspondente e com a equipe docente. A pasta raiz da disciplina não deve ser liberada para toda a turma.
 
-O painel docente resolve a dificuldade de leitura dos IDs sem renomear as pastas públicas. A central permite pesquisar pelo nome, filtrar alunos por andamento, escolher uma atividade para conferência e abrir links nominais que apontam para o ID técnico correto.
+## Experiência do aluno
 
-## Experiência desejada
+1. O aluno entra na Área do Aluno e seleciona uma atividade aberta.
+2. O portal abre diretamente a pasta `Atividades` vinculada à sua conta.
+3. O arquivo pode estar em qualquer formato e deve começar com o código da atividade, por exemplo `E02 - glossario.pdf`.
+4. Novas versões podem substituir o arquivo anterior ou receber um sufixo de versão.
+5. Fontes LaTeX, bibliografia, figuras e PDF compilado ficam em `Projeto LaTeX`.
 
-1. O aluno escolhe uma atividade aberta.
-2. Confere prazo, quantidade, tamanho e formatos indicados no portal.
-3. Abre o upload do GitHub na pasta correspondente.
-4. Anexa os arquivos e confirma “Commit changes” ou propõe uma alteração por pull request.
-5. Cada novo commit funciona como uma versão da entrega.
+O portal não lê nem conta arquivos do Drive. A ausência de uma contagem na página não significa ausência de entrega.
 
-## Regras do fluxo
+## Dúvidas e solicitações de acesso
 
-- o aluno precisa estar autenticado no GitHub para concluir o commit;
-- a pasta usada é `entregas/<studentId>/<activityCode>/`;
-- os formatos e limites mostrados no portal são uma orientação; o professor deve conferir o commit e os arquivos recebidos;
-- a branch pública deve conter somente trabalhos que possam ser vistos por qualquer pessoa;
-- cada commit preserva as versões anteriores e permite comparar alterações.
-- nomes reais não entram nos caminhos de entrega ou projeto; o vínculo nominal é apresentado somente pela interface docente e pelo índice local;
-- o painel consulta a árvore pública da branch sem token e pode ficar temporariamente indisponível por limite ou falha da API do GitHub;
-- o caminho montado no navegador pode ser alterado pelo usuário; a autoria e a revisão do commit continuam sendo os controles efetivos.
+O painel prepara o texto da dúvida ou do pedido de nova senha e abre a pasta `Dúvidas e solicitações`. O aluno cria um Google Doc e cola o conteúdo. Nunca devem ser informadas a senha atual, a senha nova, notas ou outros dados sigilosos.
 
-As entregas são públicas. O portal não deve ser usado para notas, feedback reservado, documentos pessoais ou outros conteúdos sigilosos.
+## Conferência docente
 
-## Índice privado para docentes
+O painel docente permite pesquisar pelo nome, escolher o código da atividade e abrir as três pastas de cada aluno. A conferência é manual porque um site estático não possui credencial segura para consultar o conteúdo privado do Drive.
 
-Quando a equipe precisar consultar o GitHub fora do painel, gere um mapa local de nomes, IDs e links:
+Para gerar um índice local classificado como `instructors`, execute:
 
 ```bash
 npm run index:submissions
 ```
 
-O comando cria `submission-index.html` e `submission-index.csv` dentro de `.private/submissions/`. O público desses arquivos é `instructors`; eles não devem ser anexados ao portal, ao GitHub Pages ou a commits. O índice não contém e-mail, senha, nota ou avaliação, e pode ser recriado a partir do catálogo vigente.
+O comando cria `submission-index.html` e `submission-index.csv` em `.private/submissions/`. Esses arquivos nunca devem ser publicados ou versionados.
 
 ## Reversão
 
-Se o formato de envio precisar mudar, os links centralizados em `lib/githubCourse.mjs` podem voltar a apontar para a raiz da branch. Não há segredo ou armazenamento externo para desligar.
+Os destinos ficam centralizados em `data/drive-submissions.json` e `lib/driveCourse.mjs`. Uma troca de armazenamento deve alterar essa camada e preservar os IDs de acesso das contas.

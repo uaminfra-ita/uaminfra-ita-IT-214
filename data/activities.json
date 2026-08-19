@@ -6,9 +6,9 @@
     "objective": "Apresentar os objetivos da disciplina e mapear as lacunas iniciais da turma.",
     "deliverable": "Avaliação diagnóstica realizada.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "closed", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "closed", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -19,12 +19,12 @@
     "deliverable": "Glossário técnico inicial.",
     "submission": {
       "audience": "student",
-      "visibility": "public",
+      "visibility": "drive-restricted",
       "status": "open",
       "dueAt": null,
       "maxFiles": 5,
       "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -35,12 +35,12 @@
     "deliverable": "Quadro comparativo ANAC, DECEA, ICAO, FAA e EASA.",
     "submission": {
       "audience": "student",
-      "visibility": "public",
+      "visibility": "drive-restricted",
       "status": "scheduled",
       "dueAt": null,
       "maxFiles": 5,
       "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -51,9 +51,9 @@
     "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo organizadas no Overleaf.",
     "checkpoint": "CP1",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -63,9 +63,9 @@
     "objective": "Praticar busca em bases, triagem, leitura crítica e organização do mapeamento bibliográfico.",
     "deliverable": "Matriz de literatura iniciada e estratégia de busca documentada.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -75,9 +75,9 @@
     "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
     "deliverable": "Esboço conceitual de corredores e diagrama simples de rede.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -87,9 +87,9 @@
     "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e tipologias no solo, elevadas ou por conversão de helipontos.",
     "deliverable": "Tabela de componentes do vertiporto.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -100,9 +100,9 @@
     "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
     "checkpoint": "CP2",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -119,9 +119,9 @@
     "objective": "Tratar rampas, gabaritos, edificações, antenas, entorno urbano e comparação normativa.",
     "deliverable": "Exercício de leitura de superfície e obstáculo.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -131,9 +131,9 @@
     "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar demanda.",
     "deliverable": "Matriz preliminar de dados de demanda.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -143,9 +143,9 @@
     "objective": "Integrar acessibilidade, inserção urbana, restrições aeronáuticas e métodos multicritério na avaliação de alternativas.",
     "deliverable": "Matriz preliminar de avaliação de sítios.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -156,9 +156,9 @@
     "deliverable": "Metodologia, dados, estudo de caso, métricas e resultados preliminares.",
     "checkpoint": "CP3",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -168,9 +168,9 @@
     "objective": "Introduzir métricas de ruído, percepção pública, efeito NIMBY, mitigação por rota e sítio e limites da ideia de eVTOL silencioso.",
     "deliverable": "Ficha de risco e mitigação de ruído.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -180,9 +180,9 @@
     "objective": "Integrar subestação, armazenamento, redundância, tempo de solo, bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
     "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -192,9 +192,9 @@
     "objective": "Usar mapas, buffers, camadas, restrições, população e demanda em uma organização reprodutível.",
     "deliverable": "Mapa ou notebook simples do estudo de caso.",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
@@ -205,9 +205,9 @@
     "deliverable": "Artigo completo com resumo, introdução, literatura, método, resultados, discussão, conclusão e referências.",
     "checkpoint": "CP4",
     "submission": {
-      "audience": "student", "visibility": "public", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".tex", ".bib", ".zip", ".png", ".jpg", ".jpeg"]
+      "acceptedExtensions": ["*"]
     }
   },
   {
