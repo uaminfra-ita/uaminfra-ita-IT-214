@@ -68,19 +68,6 @@
       }
     },
     {
-      "id": "13d501c8012b28ac",
-      "displayName": "Gianluca Furtado Leite",
-      "role": "student",
-      "status": "active",
-      "emailHash": "E9UByAErKKz50ZOhoK9IzLUj1eAJMFpq0S2m0amFDEM",
-      "credential": {
-        "algorithm": "PBKDF2-SHA256",
-        "iterations": 210000,
-        "salt": "N1bgkJqkFzIvojV894qGsQ",
-        "passwordHash": "Y5BU5MdfdRkberDfA2nRNo_rAd7vA1WGQ-PW3S6-UpU"
-      }
-    },
-    {
       "id": "36d818268421ace7",
       "displayName": "Luiz Henrique Tozi",
       "role": "student",

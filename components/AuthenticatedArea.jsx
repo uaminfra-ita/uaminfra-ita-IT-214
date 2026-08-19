@@ -95,7 +95,7 @@ function LoginPanel({ onAuthenticate }) {
           <input className="mt-2 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="student-password" type="password" autoComplete="current-password" required value={password} onChange={(event) => setPassword(event.target.value)} />
           {error && <p className="mt-4 rounded-2xl bg-red-50 p-4 text-sm font-semibold text-red-800" role="alert">{error}</p>}
           <button className="button-dark mt-7 w-full justify-center disabled:cursor-wait disabled:opacity-60" type="submit" disabled={submitting}>{submitting ? 'Entrando…' : 'Entrar'}</button>
-          <p className="mt-5 text-xs leading-5 text-slate-500">As atividades enviadas por este portal são públicas. Não anexe informações sigilosas.</p>
+          <p className="mt-5 text-xs leading-5 text-slate-500">Os arquivos ficam no Google Drive e obedecem às permissões definidas pela equipe docente.</p>
         </form>
       </div>
     </section>
@@ -137,7 +137,7 @@ function StaffDashboard({ profile, membership, roster, onLogout }) {
       <StaffSubmissionOverview students={students} />
       <div className="grid gap-4 sm:grid-cols-3"><div className="surface-card"><span className="text-4xl font-black text-cyan-700">{students.length}</span><p className="mt-2 text-sm font-bold text-slate-600">alunos cadastrados</p></div><div className="surface-card"><span className="text-4xl font-black text-cyan-700">{staff.length}</span><p className="mt-2 text-sm font-bold text-slate-600">docentes cadastrados</p></div><div className="surface-card"><span className="text-xl font-black text-ink">{nextActivity?.code || '—'}</span><p className="mt-2 text-sm font-bold text-slate-600">{nextActivity ? `${nextActivity.theme} · ${formatDate(nextActivity.date)}` : 'Sem encontros futuros'}</p></div></div>
       <section className="surface-card"><span className="eyebrow">Turma 2026/2</span><h3 className="mt-4 text-2xl font-black text-ink">Usuários cadastrados</h3><div className="mt-6 overflow-x-auto"><table className="w-full min-w-[560px] text-left text-sm"><thead><tr className="border-b border-slate-200 text-xs uppercase tracking-wider text-slate-400"><th className="pb-3">Nome</th><th className="pb-3">Papel</th><th className="pb-3">Estado</th></tr></thead><tbody>{roster.map((item) => <tr className="border-b border-slate-100 last:border-0" key={item.user_id}><td className="py-4 font-black text-ink">{item.full_name}</td><td className="py-4 text-slate-600">{roleLabels[item.role]}</td><td className="py-4"><span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-black text-emerald-800">Ativo</span></td></tr>)}</tbody></table></div></section>
-      <StatusMessage title="Escopo atual"><p>Entregas, dúvidas públicas, projetos LaTeX e acompanhamento por commits estão ativos. Revisão acadêmica, aprovação e feedback reservado permanecem fora do portal estático.</p></StatusMessage>
+      <StatusMessage title="Escopo atual"><p>Entregas, dúvidas, solicitações de acesso e projetos LaTeX são organizados em pastas individuais do Google Drive. Revisão acadêmica, notas e aprovação permanecem fora do portal estático.</p></StatusMessage>
     </div>
   );
 }

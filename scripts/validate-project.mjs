@@ -11,6 +11,7 @@ const resources = readJson('resources.json');
 const presentations = readJson('presentations.json');
 const presentationAssets = readJson('presentation-assets.json');
 const course = readJson('course.json');
+const driveWorkspaces = readJson('drive-submissions.json');
 const allResources = Object.values(resources).flatMap((group) => group);
 const resourceIds = new Set(allResources.map((resource) => resource.id));
 const activityIds = new Set(activities.map((activity) => activity.code));
@@ -39,12 +40,12 @@ activities.forEach((activity) => {
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
   if (activity.submission) {
     assert.equal(activity.submission.audience, 'student', `Entrega ${activity.code} deve declarar audience student.`);
-    assert.equal(activity.submission.visibility, 'public', `Entrega ${activity.code} deve ser classificada como pública.`);
+    assert.equal(activity.submission.visibility, 'drive-restricted', `Entrega ${activity.code} deve declarar armazenamento restrito no Drive.`);
     assert.ok(['open', 'scheduled', 'closed'].includes(activity.submission.status), `Estado de entrega inválido em ${activity.code}.`);
     assert.ok(Number.isInteger(activity.submission.maxFiles) && activity.submission.maxFiles > 0, `Limite de arquivos inválido em ${activity.code}.`);
     assert.ok(Number.isInteger(activity.submission.maxFileSizeMb) && activity.submission.maxFileSizeMb > 0, `Limite de tamanho inválido em ${activity.code}.`);
     assert.ok(Array.isArray(activity.submission.acceptedExtensions) && activity.submission.acceptedExtensions.length > 0, `Extensões ausentes em ${activity.code}.`);
-    activity.submission.acceptedExtensions.forEach((extension) => assert.match(extension, /^\.[a-z0-9]+$/, `Extensão inválida em ${activity.code}.`));
+    activity.submission.acceptedExtensions.forEach((extension) => assert.ok(extension === '*' || /^\.[a-z0-9]+$/.test(extension), `Extensão inválida em ${activity.code}.`));
   }
 });
 
@@ -186,11 +187,11 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/githubCourse.mjs', 'lib/usePublicRepositoryTree.js', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'data/drive-submissions.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/driveCourse.mjs', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
-assert.equal(access.users.length, 13, 'A turma deve conter treze contas.');
+assert.equal(access.users.length, 12, 'A turma deve conter doze contas.');
 assert.equal(new Set(access.users.map((user) => user.id)).size, access.users.length, 'IDs de acesso devem ser únicos.');
 access.users.forEach((user) => {
   assert.ok(user.displayName && ['student', 'instructor', 'admin'].includes(user.role), 'Conta com nome ou papel inválido.');
@@ -202,9 +203,17 @@ access.users.forEach((user) => {
   assert.match(user.credential.salt, /^[A-Za-z0-9_-]{22}$/, 'Salt inválido.');
   assert.match(user.credential.passwordHash, /^[A-Za-z0-9_-]{43}$/, 'Hash de senha inválido.');
 });
-assert.equal(access.users.filter((user) => user.role === 'student').length, 9, 'A turma deve conter nove alunos.');
+assert.equal(access.users.filter((user) => user.role === 'student').length, 8, 'A turma deve conter oito alunos.');
 assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3, 'A turma deve conter três instrutores.');
 assert.equal(access.users.filter((user) => user.role === 'admin').length, 1, 'A turma deve conter um professor responsável.');
+const studentIds = access.users.filter((user) => user.role === 'student' && user.status === 'active').map((user) => user.id).sort();
+assert.equal(driveWorkspaces.resourceId, 'it214-2026-2-drive-workspaces', 'Configuração do Drive sem identificador estável.');
+assert.equal(driveWorkspaces.audience, 'public', 'Links usados no Pages precisam declarar audience public.');
+['author', 'source', 'license', 'summary', 'relations'].forEach((field) => assert.ok(driveWorkspaces[field], `Configuração do Drive sem ${field}.`));
+assert.deepEqual(Object.keys(driveWorkspaces.destinations).sort(), studentIds, 'Cada aluno ativo deve possuir exatamente um destino no Drive.');
+Object.values(driveWorkspaces.destinations).forEach((destination) => {
+  ['rootFolderId', 'activitiesFolderId', 'latexFolderId', 'supportFolderId'].forEach((field) => assert.match(destination[field], /^[A-Za-z0-9_-]{20,}$/, `ID de pasta inválido em ${field}.`));
+});
 assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser instrutor.');
@@ -214,7 +223,9 @@ assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senh
 assert.ok(authComponent.includes('sessionStorage'), 'A sessão deve usar sessionStorage.');
 const submissionComponent = fs.readFileSync(path.join(root, 'components', 'SubmissionWorkspace.jsx'), 'utf8');
 assert.ok(submissionComponent.includes('Localizar aluno'), 'Painel docente deve permitir busca nominal.');
-assert.ok(submissionComponent.includes('entregas/${student.user_id}'), 'Painel docente deve preservar IDs técnicos nas pastas públicas.');
+assert.ok(submissionComponent.includes('Abrir minha pasta de atividades'), 'Aluno deve acessar sua pasta individual de atividades.');
+assert.ok(submissionComponent.includes('driveDestinationFor(student.user_id)'), 'Painel docente deve resolver o ID técnico para o destino no Drive.');
+assert.ok(!submissionComponent.includes('repositoryUploadUrl'), 'Envio de atividades não deve continuar apontando para o GitHub.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');
 assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
