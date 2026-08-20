@@ -4,7 +4,7 @@
 
 O GitHub Pages oferece a interface da disciplina e direciona cada conta às pastas individuais do Google Drive. O Drive controla autenticação, compartilhamento e armazenamento; o portal não mantém token de escrita no frontend.
 
-O fluxo atual cobre atividades em qualquer formato, organização do projeto LaTeX, dúvidas e pedidos de nova senha. A conferência docente é manual porque o Pages não possui credencial para ler pastas privadas.
+O fluxo atual cobre atividades em qualquer formato e organização do projeto LaTeX pelo Drive. Dúvidas e pedidos de nova senha abrem mensagens prontas para o contato público da disciplina; o frontend não envia mensagens sozinho nem armazena credenciais de e-mail.
 
 ## Evolução futura
 

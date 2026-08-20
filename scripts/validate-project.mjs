@@ -10,13 +10,16 @@ const activities = readJson('activities.json');
 const resources = readJson('resources.json');
 const presentations = readJson('presentations.json');
 const presentationAssets = readJson('presentation-assets.json');
+const brandAssets = readJson('brand-assets.json');
 const course = readJson('course.json');
 const driveWorkspaces = readJson('drive-submissions.json');
+const courseContact = readJson('course-contact.json');
 const allResources = Object.values(resources).flatMap((group) => group);
 const resourceIds = new Set(allResources.map((resource) => resource.id));
 const activityIds = new Set(activities.map((activity) => activity.code));
 const presentationSlugs = new Set(presentations.map((presentation) => presentation.slug));
 const presentationAssetIds = new Set(presentationAssets.map((asset) => asset.id));
+const brandAssetIds = new Set(brandAssets.map((asset) => asset.id));
 
 assert.equal(activities.filter((item) => item.meeting).length, 16, 'O cronograma deve conter 16 encontros.');
 assert.equal(activities.filter((item) => item.meeting && item.submission).length, 16, 'Todo encontro deve declarar o estado de entrega.');
@@ -25,6 +28,7 @@ assert.equal(activityIds.size, activities.length, 'Códigos de atividade devem s
 assert.equal(resourceIds.size, allResources.length, 'IDs de recursos devem ser únicos.');
 assert.equal(presentationSlugs.size, presentations.length, 'Slugs de apresentação devem ser únicos.');
 assert.equal(presentationAssetIds.size, presentationAssets.length, 'IDs de imagens da apresentação devem ser únicos.');
+assert.equal(brandAssetIds.size, brandAssets.length, 'IDs de identidade visual devem ser únicos.');
 
 const allowedStatuses = new Set(['scheduled', 'completed', 'cancelled', 'break']);
 activities.forEach((activity) => {
@@ -120,6 +124,23 @@ presentationAssets.forEach((asset) => {
   declaredPresentationMediaPaths.push(path.relative(root, fullPath));
 });
 
+brandAssets.forEach((asset) => {
+  ['id', 'title', 'assetPath', 'audience', 'author', 'source', 'license', 'summary', 'relations', 'sha256'].forEach((field) => {
+    assert.ok(asset[field], `${asset.id || 'Identidade visual'} sem ${field}.`);
+  });
+  assert.equal(asset.audience, 'public', `${asset.id} precisa declarar audience public.`);
+  assert.ok(Array.isArray(asset.relations) && asset.relations.length > 0, `${asset.id} sem relações acadêmicas.`);
+  assert.ok(asset.assetPath.startsWith('/images/brand/') && /\.png$/i.test(asset.assetPath), `${asset.id} possui assetPath inválido.`);
+  assert.match(asset.sha256, /^[A-F0-9]{64}$/, `${asset.id} possui SHA-256 inválido.`);
+  const fullPath = path.join(root, 'public', asset.assetPath.slice(1).replaceAll('/', path.sep));
+  assert.ok(fs.existsSync(fullPath), `Imagem de identidade visual ausente: ${asset.assetPath}.`);
+  const actualHash = createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex').toUpperCase();
+  assert.equal(actualHash, asset.sha256, `Checksum divergente: ${asset.assetPath}.`);
+});
+
+const rootLayout = fs.readFileSync(path.join(root, 'app', 'layout.jsx'), 'utf8');
+brandAssets.forEach((asset) => assert.ok(rootLayout.includes(asset.assetPath), `${asset.id} não é usado no layout do portal.`));
+
 presentations.forEach((presentation) => {
   assert.ok(activityIds.has(presentation.activityId), `Atividade inexistente em ${presentation.slug}.`);
   assert.equal(presentation.durationMinutes, 90, `${presentation.slug} deve durar 90 minutos.`);
@@ -187,7 +208,7 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'data/drive-submissions.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/driveCourse.mjs', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'data/drive-submissions.json', 'data/course-contact.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/driveCourse.mjs', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
@@ -212,8 +233,13 @@ assert.equal(driveWorkspaces.audience, 'public', 'Links usados no Pages precisam
 ['author', 'source', 'license', 'summary', 'relations'].forEach((field) => assert.ok(driveWorkspaces[field], `Configuração do Drive sem ${field}.`));
 assert.deepEqual(Object.keys(driveWorkspaces.destinations).sort(), studentIds, 'Cada aluno ativo deve possuir exatamente um destino no Drive.');
 Object.values(driveWorkspaces.destinations).forEach((destination) => {
-  ['rootFolderId', 'activitiesFolderId', 'latexFolderId', 'supportFolderId'].forEach((field) => assert.match(destination[field], /^[A-Za-z0-9_-]{20,}$/, `ID de pasta inválido em ${field}.`));
+  ['rootFolderId', 'activitiesFolderId', 'latexFolderId'].forEach((field) => assert.match(destination[field], /^[A-Za-z0-9_-]{20,}$/, `ID de pasta inválido em ${field}.`));
+  assert.ok(!Object.hasOwn(destination, 'supportFolderId'), 'Pastas de suporte não devem continuar no fluxo ativo do Drive.');
 });
+assert.equal(courseContact.resourceId, 'it214-2026-2-public-contact', 'Contato público sem identificador estável.');
+assert.equal(courseContact.audience, 'public', 'Contato exibido no Pages precisa declarar audience public.');
+['author', 'source', 'license', 'summary', 'relations', 'email'].forEach((field) => assert.ok(courseContact[field], `Contato público sem ${field}.`));
+assert.equal(courseContact.email, 'uam.infra@gmail.com', 'Destinatário público divergente da autorização da equipe.');
 assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser instrutor.');
@@ -226,6 +252,11 @@ assert.ok(submissionComponent.includes('Localizar aluno'), 'Painel docente deve 
 assert.ok(submissionComponent.includes('Abrir minha pasta de atividades'), 'Aluno deve acessar sua pasta individual de atividades.');
 assert.ok(submissionComponent.includes('driveDestinationFor(student.user_id)'), 'Painel docente deve resolver o ID técnico para o destino no Drive.');
 assert.ok(!submissionComponent.includes('repositoryUploadUrl'), 'Envio de atividades não deve continuar apontando para o GitHub.');
+assert.ok(!submissionComponent.includes('supportFolderId'), 'Painel docente não deve continuar apontando dúvidas para o Drive.');
+const studentServicesComponent = fs.readFileSync(path.join(root, 'components', 'StudentServices.jsx'), 'utf8');
+assert.ok(studentServicesComponent.includes("import courseContact from '@/data/course-contact.json'"), 'Serviços do aluno devem usar o contato público central.');
+assert.ok(studentServicesComponent.includes('mailto:'), 'Dúvidas e pedidos de senha devem abrir uma mensagem de e-mail.');
+assert.ok(!studentServicesComponent.includes('supportFolderId'), 'Serviços do aluno não devem continuar apontando suporte para o Drive.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');
 assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
@@ -249,7 +280,8 @@ const trackedText = repositoryFiles
   .map((file) => fs.readFileSync(path.join(root, file), 'utf8'))
   .join('\n');
 assert.ok(!/eyJ[A-Za-z0-9_-]{40,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}/.test(trackedText), 'JWT potencialmente real encontrado no repositório.');
-assert.ok(!/[\w.+-]+@(?:ga\.ita\.br|gp\.ita\.br|gmail\.com|unifesp\.br)/i.test(trackedText), 'E-mail de acesso legível encontrado no repositório.');
+const trackedTextWithoutAuthorizedContact = trackedText.replaceAll(courseContact.email, 'PUBLIC_CONTACT');
+assert.ok(!/[\w.+-]+@(?:ga\.ita\.br|gp\.ita\.br|gmail\.com|unifesp\.br)/i.test(trackedTextWithoutAuthorizedContact), 'E-mail de acesso legível encontrado no repositório fora do contato público autorizado.');
 assert.ok(!JSON.stringify(access).includes('@'), 'Catálogo público não pode conter endereços de e-mail.');
 
 assert.ok(fs.existsSync(path.join(root, 'AGENTS.md')), 'AGENTS.md é obrigatório.');

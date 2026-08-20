@@ -43,19 +43,18 @@ const rows = students.map((student) => {
     id: student.id,
     deliveriesUrl: driveFolderUrl(destination.activitiesFolderId),
     projectUrl: driveFolderUrl(destination.latexFolderId),
-    supportUrl: driveFolderUrl(destination.supportFolderId),
   };
 });
 const csv = [
-  ['nome', 'identificador_tecnico', 'atividades_drive', 'projeto_latex_drive', 'duvidas_solicitacoes_drive'].map(csvCell).join(','),
-  ...rows.map((row) => [row.name, row.id, row.deliveriesUrl, row.projectUrl, row.supportUrl].map(csvCell).join(',')),
+  ['nome', 'identificador_tecnico', 'atividades_drive', 'projeto_latex_drive'].map(csvCell).join(','),
+  ...rows.map((row) => [row.name, row.id, row.deliveriesUrl, row.projectUrl].map(csvCell).join(',')),
 ].join('\n');
 const generatedAt = new Intl.DateTimeFormat('pt-BR', {
   dateStyle: 'short',
   timeStyle: 'medium',
   timeZone: 'America/Sao_Paulo',
 }).format(new Date());
-const tableRows = rows.map((row) => `<tr><td>${escapeHtml(row.name)}</td><td><code>${escapeHtml(row.id)}</code></td><td><a href="${row.deliveriesUrl}">Abrir atividades</a></td><td><a href="${row.projectUrl}">Abrir projeto</a></td><td><a href="${row.supportUrl}">Abrir suporte</a></td></tr>`).join('\n');
+const tableRows = rows.map((row) => `<tr><td>${escapeHtml(row.name)}</td><td><code>${escapeHtml(row.id)}</code></td><td><a href="${row.deliveriesUrl}">Abrir atividades</a></td><td><a href="${row.projectUrl}">Abrir projeto</a></td></tr>`).join('\n');
 const html = `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -78,7 +77,7 @@ const html = `<!doctype html>
     <p><strong>Público:</strong> instructors · <strong>Gerado:</strong> ${escapeHtml(generatedAt)}</p>
     <p>Mapa local entre nomes e IDs técnicos. Este arquivo deve permanecer em <code>.private/</code> e nunca ser publicado.</p>
     <table>
-      <thead><tr><th>Aluno</th><th>ID técnico</th><th>Atividades</th><th>LaTeX</th><th>Dúvidas e solicitações</th></tr></thead>
+      <thead><tr><th>Aluno</th><th>ID técnico</th><th>Atividades</th><th>LaTeX</th></tr></thead>
       <tbody>${tableRows}</tbody>
     </table>
   </main>

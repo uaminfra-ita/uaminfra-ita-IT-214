@@ -1,0 +1,14 @@
+[
+  {
+    "id": "it214-uam-browser-icon",
+    "title": "Ícone UAM da disciplina IT-214",
+    "assetPath": "/images/brand/it214-uam-drone.png",
+    "audience": "public",
+    "author": "Autoria original não informada; arquivo fornecido pela equipe IT-214",
+    "source": "Arquivo fornecido diretamente pela equipe IT-214 em 2026-08-19",
+    "license": "Uso no portal IT-214 autorizado pela equipe que forneceu o arquivo; reutilização externa não declarada",
+    "summary": "Ilustração de uma aeronave de mobilidade aérea urbana usada como ícone da aba do portal.",
+    "relations": ["course:IT-214", "interface:browser-icon"],
+    "sha256": "C52487562430C118E91C5D24D61B5B40DC2DA72E96A142F90BC095F161321F87"
+  }
+]

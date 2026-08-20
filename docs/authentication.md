@@ -42,7 +42,7 @@ A sessão visual fica em `sessionStorage` e termina ao fechar a aba ou ao usar �
 
 ## Redefinição de senha
 
-O Pages não recebe nem grava uma senha nova. O aluno registra na pasta individual “Dúvidas e solicitações” um pedido sem informar senha, e-mail ou dado pessoal. Um instrutor confere o pedido no Drive e executa localmente:
+O Pages não recebe nem grava uma senha nova. O aluno usa o botão de solicitação para abrir uma mensagem destinada ao contato público da disciplina, sem informar senha atual ou nova. Um instrutor confere o pedido no e-mail e executa localmente:
 
 ```bash
 npm run reset:password -- --user-id <identificador-opaco>

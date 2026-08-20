@@ -109,7 +109,7 @@ export function StaffSubmissionOverview({ students }) {
   return (
     <section className="surface-card">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div><span className="eyebrow">Central de acompanhamento</span><h3 className="mt-4 text-2xl font-black text-ink">Pastas individuais da turma</h3><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Pesquise pelo nome e abra diretamente as atividades, o projeto LaTeX ou as solicitações do aluno. A conferência dos arquivos é feita no Drive.</p></div>
+        <div><span className="eyebrow">Central de acompanhamento</span><h3 className="mt-4 text-2xl font-black text-ink">Pastas individuais da turma</h3><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Pesquise pelo nome e abra diretamente as atividades ou o projeto LaTeX do aluno. Dúvidas e pedidos de nova senha chegam pelo e-mail da disciplina.</p></div>
         <a className="button-dark" href={courseDriveUrl()} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir Drive da disciplina</a>
       </div>
 
@@ -125,11 +125,11 @@ export function StaffSubmissionOverview({ students }) {
       </div>
 
       <div className="mt-6 overflow-x-auto">
-        <table className="w-full min-w-[920px] text-left text-sm">
-          <thead><tr className="border-b border-slate-200 text-xs uppercase tracking-wider text-slate-400"><th className="pb-3">Aluno</th><th className="pb-3">Identificador</th><th className="pb-3">Atividade selecionada</th><th className="pb-3">Projeto</th><th className="pb-3">Suporte</th><th className="pb-3">Pasta geral</th></tr></thead>
+        <table className="w-full min-w-[780px] text-left text-sm">
+          <thead><tr className="border-b border-slate-200 text-xs uppercase tracking-wider text-slate-400"><th className="pb-3">Aluno</th><th className="pb-3">Identificador</th><th className="pb-3">Atividade selecionada</th><th className="pb-3">Projeto</th><th className="pb-3">Pasta geral</th></tr></thead>
           <tbody>{visibleStudents.map((student) => {
             const destination = student.destination;
-            return <tr className="border-b border-slate-100 align-top last:border-0" key={student.user_id}><td className="py-4 pr-5 font-black text-ink">{student.full_name}</td><td className="py-4 pr-5"><code className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{student.user_id}</code><button className="ml-2 text-xs font-black text-cyan-800" type="button" onClick={() => copyStudentId(student.user_id)}>{copiedId === student.user_id ? 'Copiado' : 'Copiar'}</button></td><td className="py-4 pr-5">{destination ? <a className="font-black text-cyan-800" href={driveFolderUrl(destination.activitiesFolderId)} target="_blank" rel="noreferrer">Abrir atividades · procurar {selectedActivity?.code}</a> : <span className="text-amber-700">Não configurada</span>}</td><td className="py-4 pr-5">{destination && <a className="font-black text-cyan-800" href={driveFolderUrl(destination.latexFolderId)} target="_blank" rel="noreferrer">Projeto LaTeX</a>}</td><td className="py-4 pr-5">{destination && <a className="font-black text-cyan-800" href={driveFolderUrl(destination.supportFolderId)} target="_blank" rel="noreferrer">Dúvidas e solicitações</a>}</td><td className="py-4">{destination && <a className="font-black text-cyan-800" href={driveFolderUrl(destination.rootFolderId)} target="_blank" rel="noreferrer">Abrir pasta</a>}</td></tr>;
+            return <tr className="border-b border-slate-100 align-top last:border-0" key={student.user_id}><td className="py-4 pr-5 font-black text-ink">{student.full_name}</td><td className="py-4 pr-5"><code className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{student.user_id}</code><button className="ml-2 text-xs font-black text-cyan-800" type="button" onClick={() => copyStudentId(student.user_id)}>{copiedId === student.user_id ? 'Copiado' : 'Copiar'}</button></td><td className="py-4 pr-5">{destination ? <a className="font-black text-cyan-800" href={driveFolderUrl(destination.activitiesFolderId)} target="_blank" rel="noreferrer">Abrir atividades · procurar {selectedActivity?.code}</a> : <span className="text-amber-700">Não configurada</span>}</td><td className="py-4 pr-5">{destination && <a className="font-black text-cyan-800" href={driveFolderUrl(destination.latexFolderId)} target="_blank" rel="noreferrer">Projeto LaTeX</a>}</td><td className="py-4">{destination && <a className="font-black text-cyan-800" href={driveFolderUrl(destination.rootFolderId)} target="_blank" rel="noreferrer">Abrir pasta</a>}</td></tr>;
           })}</tbody>
         </table>
       </div>

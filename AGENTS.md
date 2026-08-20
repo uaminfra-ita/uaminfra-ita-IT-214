@@ -14,7 +14,7 @@ Estas instruções valem para todo o repositório.
 ## Segurança e dados acadêmicos
 
 - A Área do aluno usa apenas uma separação visual no frontend estático. Ela não constitui autenticação segura nem controle real de autorização.
-- Nunca versionar senhas legíveis, e-mails de login, diagnósticos, notas, feedback privado ou perfis acadêmicos privados. Credenciais legíveis permanecem somente em `.private/`.
+- Nunca versionar senhas legíveis, e-mails de login, diagnósticos, notas, feedback privado ou perfis acadêmicos privados. Credenciais legíveis permanecem somente em `.private/`. A única exceção de e-mail é `uam.infra@gmail.com`, classificado e autorizado explicitamente pela equipe como contato público da disciplina em `data/course-contact.json`; essa exceção não autoriza publicar qualquer senha, token ou outro endereço.
 - `data/access.json` pode conter nomes, papéis, identificadores derivados, salts e hashes de senha do piloto, mas nunca e-mails ou senhas legíveis.
 - Como todo o bundle do GitHub Pages é público, somente informações não sigilosas podem aparecer nos painéis de aluno e docente.
 - O MVP direciona trabalhos públicos para o editor do GitHub na branch `student-submissions`. Revisão, notas e aprovação não fazem parte desse fluxo.
