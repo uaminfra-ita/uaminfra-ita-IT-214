@@ -255,7 +255,8 @@ assert.ok(!submissionComponent.includes('repositoryUploadUrl'), 'Envio de ativid
 assert.ok(!submissionComponent.includes('supportFolderId'), 'Painel docente não deve continuar apontando dúvidas para o Drive.');
 const studentServicesComponent = fs.readFileSync(path.join(root, 'components', 'StudentServices.jsx'), 'utf8');
 assert.ok(studentServicesComponent.includes("import courseContact from '@/data/course-contact.json'"), 'Serviços do aluno devem usar o contato público central.');
-assert.ok(studentServicesComponent.includes('mailto:'), 'Dúvidas e pedidos de senha devem abrir uma mensagem de e-mail.');
+assert.ok(studentServicesComponent.includes('https://mail.google.com/mail/'), 'Dúvidas e pedidos de senha devem abrir a composição do Gmail Web.');
+assert.ok(!studentServicesComponent.includes('mailto:'), 'O fluxo principal não deve depender de aplicativo de e-mail instalado.');
 assert.ok(!studentServicesComponent.includes('supportFolderId'), 'Serviços do aluno não devem continuar apontando suporte para o Drive.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');

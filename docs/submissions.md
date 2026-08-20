@@ -18,7 +18,7 @@ O portal não lê nem conta arquivos do Drive. A ausência de uma contagem na p�
 
 ## Dúvidas e solicitações de acesso
 
-O painel prepara o texto da dúvida ou do pedido de nova senha e abre o aplicativo de e-mail com a mensagem destinada a `uam.infra@gmail.com`. O aluno revisa e confirma o envio. Nunca devem ser informadas a senha atual, a senha nova, notas ou outros dados sigilosos.
+O painel prepara o texto da dúvida ou do pedido de nova senha e abre a composição do Gmail no navegador com a mensagem destinada a `uam.infra@gmail.com`. O aluno revisa e confirma o envio. Nunca devem ser informadas a senha atual, a senha nova, notas ou outros dados sigilosos.
 
 ## Conferência docente
 

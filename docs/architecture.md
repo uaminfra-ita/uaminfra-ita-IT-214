@@ -25,4 +25,4 @@ Projetos LaTeX ficam na pasta individual `Projeto LaTeX`. O aluno baixa o modelo
 
 ## Dúvidas e senhas
 
-O painel monta links `mailto:` com destinatário, assunto, nome, identificador e mensagem já preenchidos. O envio somente ocorre quando o aluno confirma no aplicativo de e-mail. A redefinição da senha continua local em `.private/` pelo comando `reset:password`, e a nova senha é entregue por canal privado.
+O painel monta links de composição do Gmail Web com destinatário, assunto, nome, identificador e mensagem já preenchidos. O envio somente ocorre quando o aluno confirma no Gmail. A redefinição da senha continua local em `.private/` pelo comando `reset:password`, e a nova senha é entregue por canal privado.

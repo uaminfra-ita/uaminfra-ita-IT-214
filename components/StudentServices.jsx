@@ -8,8 +8,15 @@ import Icon from './Icon';
 
 const questionActivities = activities.filter((activity) => activity.type !== 'break');
 
-function mailtoUrl(subject, body) {
-  return `mailto:${courseContact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+function gmailComposeUrl(subject, body) {
+  const parameters = new URLSearchParams({
+    view: 'cm',
+    fs: '1',
+    to: courseContact.email,
+    su: subject,
+    body,
+  });
+  return `https://mail.google.com/mail/?${parameters.toString()}`;
 }
 
 function QuestionWorkspace({ studentId, studentName }) {
@@ -25,31 +32,31 @@ function QuestionWorkspace({ studentId, studentName }) {
     '',
     cleanQuestion,
   ].join('\n'), [activity?.theme, activityCode, cleanQuestion, studentId, studentName]);
-  const emailUrl = mailtoUrl(`IT-214 — Dúvida ${activityCode} — ${studentName}`, formattedQuestion);
+  const emailUrl = gmailComposeUrl(`IT-214 — Dúvida ${activityCode} — ${studentName}`, formattedQuestion);
 
   return (
     <section className="surface-card">
       <div className="flex items-start gap-4"><div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-cyan-50 text-cyan-800"><Icon name="question" className="h-5 w-5" /></div><div><span className="eyebrow">Dúvidas</span><h3 className="mt-4 text-xl font-black text-ink">Perguntar à equipe</h3></div></div>
-      <p className="mt-4 text-sm leading-6 text-slate-600">Escreva sua dúvida e abra uma mensagem já preenchida para o e-mail da disciplina. Revise o texto e clique em enviar no seu aplicativo de e-mail.</p>
+      <p className="mt-4 text-sm leading-6 text-slate-600">Escreva sua dúvida e abra uma mensagem já preenchida no Gmail pelo navegador. Revise o texto e clique em enviar.</p>
       <label className="mt-5 block text-sm font-black text-slate-700" htmlFor="question-activity">Atividade relacionada</label>
       <select className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="question-activity" value={activityCode} onChange={(event) => setActivityCode(event.target.value)}><option value="Geral">Geral · Dúvida não vinculada a uma atividade</option>{questionActivities.map((item) => <option value={item.code} key={item.code}>{item.code} · {item.theme}</option>)}</select>
       <label className="mt-4 block text-sm font-black text-slate-700" htmlFor="student-question">Sua dúvida</label>
       <textarea className="mt-2 min-h-32 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="student-question" maxLength={1200} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Explique onde surgiu a dúvida e o que você já tentou." />
-      {cleanQuestion ? <a className="button-dark mt-5" href={emailUrl}><Icon name="mail" className="h-4 w-4" /> Enviar dúvida por e-mail</a> : <p className="mt-4 text-xs font-bold text-slate-500">O botão será liberado depois que você escrever a pergunta.</p>}
-      <p className="mt-4 text-xs leading-5 text-slate-500">O portal prepara a mensagem, mas o envio só acontece depois que você confirmar no aplicativo de e-mail. Se ele não abrir, escreva diretamente para <a className="font-black text-cyan-800 underline" href={`mailto:${courseContact.email}`}>{courseContact.email}</a>.</p>
+      {cleanQuestion ? <a className="button-dark mt-5" href={emailUrl} target="_blank" rel="noreferrer"><Icon name="mail" className="h-4 w-4" /> Abrir dúvida no Gmail</a> : <p className="mt-4 text-xs font-bold text-slate-500">O botão será liberado depois que você escrever a pergunta.</p>}
+      <p className="mt-4 text-xs leading-5 text-slate-500">O portal prepara a mensagem, mas o envio só acontece depois que você confirmar no Gmail. Em outro webmail, envie diretamente para <strong className="font-black text-cyan-800">{courseContact.email}</strong>.</p>
     </section>
   );
 }
 
 function AccountWorkspace({ studentId, studentName }) {
   const requestText = `SOLICITAÇÃO DE NOVA SENHA\nAluno: ${studentName}\nIdentificador da conta: ${studentId}\n\nSolicito a redefinição da senha temporária. A nova senha deve ser entregue por canal privado.`;
-  const emailUrl = mailtoUrl(`IT-214 — Solicitação de nova senha — ${studentName}`, requestText);
+  const emailUrl = gmailComposeUrl(`IT-214 — Solicitação de nova senha — ${studentName}`, requestText);
   return (
     <section className="surface-card">
       <div className="flex items-start gap-4"><div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-amber-50 text-amber-800"><Icon name="key" className="h-5 w-5" /></div><div><span className="eyebrow">Conta</span><h3 className="mt-4 text-xl font-black text-ink">Trocar senha temporária</h3></div></div>
-      <p className="mt-4 text-sm leading-6 text-slate-600">O botão abre uma solicitação pronta para o e-mail da disciplina. Revise a mensagem e confirme o envio.</p>
+      <p className="mt-4 text-sm leading-6 text-slate-600">O botão abre no Gmail uma solicitação pronta para o e-mail da disciplina. Revise a mensagem e confirme o envio.</p>
       <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>Nunca escreva sua senha atual nem a nova senha.</strong> A equipe gera a credencial e a entrega por um canal privado.</div>
-      <a className="button-dark mt-5" href={emailUrl}><Icon name="mail" className="h-4 w-4" /> Solicitar nova senha por e-mail</a>
+      <a className="button-dark mt-5" href={emailUrl} target="_blank" rel="noreferrer"><Icon name="mail" className="h-4 w-4" /> Solicitar nova senha no Gmail</a>
     </section>
   );
 }

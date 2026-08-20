@@ -14,7 +14,7 @@ O MVP não possui cadastro público, troca automática de senha, notas ou dados 
 - Cada pasta individual deve ser compartilhada somente com o aluno correspondente e a equipe docente.
 - A pasta raiz da disciplina não deve conceder edição para toda a turma.
 - O índice nominal de submissões tem público `instructors`, é gerado em `.private/` e nunca deve ser versionado.
-- Dúvidas e solicitações de senha são preparadas como mensagens `mailto:` para o contato público e nunca contêm senha atual, senha nova, e-mail pessoal do aluno, nota ou feedback reservado.
+- Dúvidas e solicitações de senha são preparadas como composições do Gmail Web para o contato público e nunca contêm senha atual, senha nova, e-mail pessoal do aluno, nota ou feedback reservado.
 - O portal não consulta o conteúdo do Drive e não afirma automaticamente que uma atividade foi entregue, lida ou aprovada.
 - Recursos publicados pelo Pages continuam exigindo `audience: public`, licença, relações acadêmicas e checksum.
 
