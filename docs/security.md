@@ -4,7 +4,7 @@
 
 `/area-do-aluno/` valida e-mail e senha no navegador para organizar a experiência. Essa validação não é autenticação forte. Os arquivos acadêmicos ficam no Google Drive, cuja autenticação e permissões constituem o controle real de acesso.
 
-O MVP não possui cadastro público, troca automática de senha, notas ou dados de desempenho. O GitHub permanece responsável somente pelo código e pela publicação do Pages. O endereço `uam.infra@gmail.com` foi classificado explicitamente pela equipe como contato público da disciplina.
+O MVP não possui cadastro público, troca automática de senha, notas ou dados de desempenho. O GitHub permanece responsável pelo código e pela publicação do Pages; o Google Apps Script envia notificações sem devolver credenciais ao navegador. O endereço `uam.infra@gmail.com` foi classificado explicitamente pela equipe como contato público da disciplina.
 
 ## Invariantes
 
@@ -14,11 +14,15 @@ O MVP não possui cadastro público, troca automática de senha, notas ou dados 
 - Cada pasta individual deve ser compartilhada somente com o aluno correspondente e a equipe docente.
 - A pasta raiz da disciplina não deve conceder edição para toda a turma.
 - O índice nominal de submissões tem público `instructors`, é gerado em `.private/` e nunca deve ser versionado.
-- Dúvidas e solicitações de senha são preparadas como composições do Gmail Web para o contato público e nunca contêm senha atual, senha nova, e-mail pessoal do aluno, nota ou feedback reservado.
+- Dúvidas e solicitações de senha são encaminhadas pela automação da disciplina e nunca contêm senha atual, senha nova, e-mail pessoal do aluno, nota ou feedback reservado.
+- A URL pública do Apps Script não é uma credencial. Tokens e autorizações permanecem sob custódia do Google e nunca entram no GitHub Pages.
+- A automação sanitiza campos, usa um campo-armadilha, limita envios por identificador e globalmente e respeita a cota diária do Gmail. Esses controles reduzem abuso, mas não transformam o login estático em autenticação forte.
 - O portal não consulta o conteúdo do Drive e não afirma automaticamente que uma atividade foi entregue, lida ou aprovada.
 - Recursos publicados pelo Pages continuam exigindo `audience: public`, licença, relações acadêmicas e checksum.
 
 O identificador em `sessionStorage` pode ser alterado por quem controla o navegador. Isso pode trocar o link exibido, mas não deve conceder acesso ao arquivo: o Drive precisa negar qualquer conta não autorizada.
+
+Da mesma forma, nome e identificador recebidos pelo Apps Script podem ser falsificados. Uma solicitação de nova senha é apenas uma notificação: o docente precisa verificar a identidade do aluno antes de redefinir ou entregar qualquer credencial.
 
 Se uma senha vazar, redefina-a pelo fluxo privado e recrie `data/access.json`. Se uma pasta for compartilhada incorretamente, corrija imediatamente as permissões no Drive e revise os arquivos acessíveis.
 

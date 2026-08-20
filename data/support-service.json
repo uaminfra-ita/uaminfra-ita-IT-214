@@ -1,0 +1,31 @@
+{
+  "resourceId": "it214-2026-2-support-service",
+  "audience": "public",
+  "author": "Equipe docente IT-214",
+  "source": "Automação própria da disciplina para atendimento pelo portal",
+  "license": "Uso institucional na disciplina IT-214",
+  "summary": "Configuração pública do serviço que encaminha dúvidas e pedidos de nova senha ao e-mail da disciplina.",
+  "relations": {
+    "courseCode": "IT-214",
+    "term": "2026/2",
+    "contactResourceId": "it214-2026-2-public-contact",
+    "services": ["student-questions", "password-reset-requests"]
+  },
+  "provider": "google-apps-script",
+  "status": "active",
+  "endpoint": "https://script.google.com/macros/s/AKfycbyl1qnYT-7sJyT6HlMyLcM5ri7QDlDOGpYhxynj3USHbB7nDh_yJVb_vks_SqsGFQAm/exec",
+  "artifacts": [
+    {
+      "path": "integrations/google-apps-script/Code.gs",
+      "sha256": "CBFD372CA1EB0906173BCA43130459CBF320EB3FE94F12703F79648333F4909D"
+    },
+    {
+      "path": "integrations/google-apps-script/appsscript.json",
+      "sha256": "8E0E475352F95AE68B897B57BFE0C69E34ABFFD1351ECF8F14F757E501F88550"
+    },
+    {
+      "path": "integrations/google-apps-script/README.md",
+      "sha256": "5D64D2C7AA85F9240BC564C3387389767C6162EF358C9469035193948B6A1656"
+    }
+  ]
+}

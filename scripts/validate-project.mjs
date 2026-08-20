@@ -14,6 +14,7 @@ const brandAssets = readJson('brand-assets.json');
 const course = readJson('course.json');
 const driveWorkspaces = readJson('drive-submissions.json');
 const courseContact = readJson('course-contact.json');
+const supportService = readJson('support-service.json');
 const allResources = Object.values(resources).flatMap((group) => group);
 const resourceIds = new Set(allResources.map((resource) => resource.id));
 const activityIds = new Set(activities.map((activity) => activity.code));
@@ -208,7 +209,7 @@ assert.ok(resourceComponent.includes('Fonte oficial'), 'Cartões devem oferecer 
 const activitiesPage = fs.readFileSync(path.join(root, 'app', 'atividades', 'page.jsx'), 'utf8');
 assert.ok(!activitiesPage.includes('16 encontros'), 'O quadro quantitativo de encontros deve permanecer removido.');
 
-const authFiles = ['data/access.json', 'data/drive-submissions.json', 'data/course-contact.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'lib/driveCourse.mjs', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
+const authFiles = ['data/access.json', 'data/drive-submissions.json', 'data/course-contact.json', 'data/support-service.json', 'components/AuthenticatedArea.jsx', 'components/SubmissionWorkspace.jsx', 'components/StudentServices.jsx', 'integrations/google-apps-script/Code.gs', 'integrations/google-apps-script/appsscript.json', 'integrations/google-apps-script/README.md', 'lib/driveCourse.mjs', 'scripts/prepare-private-credentials.mjs', 'scripts/generate-static-access.mjs', 'scripts/generate-private-submission-index.mjs', 'scripts/reset-private-password.mjs', 'scripts/test-static-access.mjs'];
 authFiles.forEach((file) => assert.ok(fs.existsSync(path.join(root, file)), `Artefato de acesso ausente: ${file}.`));
 const access = readJson('access.json');
 assert.equal(access.scope, 'course-access', 'O catálogo deve declarar o acesso da disciplina.');
@@ -240,6 +241,22 @@ assert.equal(courseContact.resourceId, 'it214-2026-2-public-contact', 'Contato p
 assert.equal(courseContact.audience, 'public', 'Contato exibido no Pages precisa declarar audience public.');
 ['author', 'source', 'license', 'summary', 'relations', 'email'].forEach((field) => assert.ok(courseContact[field], `Contato público sem ${field}.`));
 assert.equal(courseContact.email, 'uam.infra@gmail.com', 'Destinatário público divergente da autorização da equipe.');
+assert.equal(supportService.resourceId, 'it214-2026-2-support-service', 'Serviço de atendimento sem identificador estável.');
+assert.equal(supportService.audience, 'public', 'A configuração incluída no Pages deve declarar audience public.');
+['author', 'source', 'license', 'summary', 'relations', 'provider', 'status', 'endpoint', 'artifacts'].forEach((field) => assert.ok(Object.hasOwn(supportService, field), `Serviço de atendimento sem ${field}.`));
+assert.equal(supportService.provider, 'google-apps-script', 'Provedor inesperado para o atendimento automático.');
+assert.ok(['configuration-required', 'active'].includes(supportService.status), 'Estado inválido para o atendimento automático.');
+if (supportService.status === 'active') assert.match(supportService.endpoint, /^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/, 'Endpoint ativo do Apps Script inválido.');
+else assert.equal(supportService.endpoint, '', 'Endpoint deve permanecer vazio enquanto a automação não estiver ativa.');
+assert.equal(supportService.artifacts.length, 3, 'Todos os artefatos locais do atendimento devem ser declarados.');
+supportService.artifacts.forEach((artifact) => {
+  assert.match(artifact.path, /^integrations\/google-apps-script\/(?:Code\.gs|appsscript\.json|README\.md)$/, `Artefato inesperado: ${artifact.path}.`);
+  assert.match(artifact.sha256, /^[A-F0-9]{64}$/, `Checksum inválido em ${artifact.path}.`);
+  const artifactPath = path.join(root, artifact.path);
+  assert.ok(fs.existsSync(artifactPath), `Artefato de atendimento ausente: ${artifact.path}.`);
+  const actualHash = createHash('sha256').update(fs.readFileSync(artifactPath)).digest('hex').toUpperCase();
+  assert.equal(actualHash, artifact.sha256, `Checksum divergente: ${artifact.path}.`);
+});
 assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser instrutor.');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser instrutor.');
@@ -255,17 +272,27 @@ assert.ok(!submissionComponent.includes('repositoryUploadUrl'), 'Envio de ativid
 assert.ok(!submissionComponent.includes('supportFolderId'), 'Painel docente não deve continuar apontando dúvidas para o Drive.');
 const studentServicesComponent = fs.readFileSync(path.join(root, 'components', 'StudentServices.jsx'), 'utf8');
 assert.ok(studentServicesComponent.includes("import courseContact from '@/data/course-contact.json'"), 'Serviços do aluno devem usar o contato público central.');
-assert.ok(studentServicesComponent.includes('https://mail.google.com/mail/'), 'Dúvidas e pedidos de senha devem abrir a composição do Gmail Web.');
+assert.ok(studentServicesComponent.includes("import supportService from '@/data/support-service.json'"), 'Serviços do aluno devem usar a configuração central da automação.');
+assert.ok(studentServicesComponent.includes('method="post"') && studentServicesComponent.includes('it214-support-response'), 'Dúvidas e pedidos de senha devem ser enviados pelo formulário interno.');
+assert.ok(!studentServicesComponent.includes('https://mail.google.com/mail/'), 'O fluxo principal não deve abrir a composição do Gmail.');
 assert.ok(!studentServicesComponent.includes('mailto:'), 'O fluxo principal não deve depender de aplicativo de e-mail instalado.');
 assert.ok(!studentServicesComponent.includes('supportFolderId'), 'Serviços do aluno não devem continuar apontando suporte para o Drive.');
+const supportAutomation = fs.readFileSync(path.join(root, 'integrations', 'google-apps-script', 'Code.gs'), 'utf8');
+assert.ok(supportAutomation.includes('MailApp.sendEmail') && supportAutomation.includes('MailApp.getRemainingDailyQuota'), 'Automação deve enviar pelo MailApp e respeitar a cota diária.');
+assert.ok(supportAutomation.includes('maximumRequestsPerStudentPerHour') && supportAutomation.includes('maximumRequestsPerHour'), 'Automação deve limitar solicitações repetidas.');
+assert.ok(!/parameters\.(?:password|currentPassword|newPassword)/.test(supportAutomation), 'Automação não pode receber senhas.');
+const supportManifest = JSON.parse(fs.readFileSync(path.join(root, 'integrations', 'google-apps-script', 'appsscript.json'), 'utf8'));
+assert.deepEqual(supportManifest.oauthScopes, ['https://www.googleapis.com/auth/script.send_mail'], 'Apps Script deve solicitar somente o escopo de envio de e-mail.');
 
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy.yml'), 'utf8');
 assert.ok(workflow.includes("node-version: '22'"), 'Deploy deve usar Node 22.');
 assert.ok(!workflow.toLowerCase().includes('supabase'), 'Deploy estático não deve depender de Supabase.');
+assert.ok(workflow.includes('npm run test:support'), 'Deploy deve testar a automação de atendimento.');
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 assert.ok(!Object.keys(packageJson.dependencies).some((dependency) => dependency.includes('supabase')), 'Dependências Supabase devem permanecer removidas.');
 assert.equal(packageJson.scripts['reset:password'], 'node scripts/reset-private-password.mjs', 'Comando seguro de redefinição de senha ausente.');
 assert.equal(packageJson.scripts['index:submissions'], 'node scripts/generate-private-submission-index.mjs', 'Comando de índice privado de submissões ausente.');
+assert.equal(packageJson.scripts['test:support'], 'node scripts/test-support-automation.mjs', 'Teste da automação de atendimento ausente.');
 const privateIndexScript = fs.readFileSync(path.join(root, 'scripts', 'generate-private-submission-index.mjs'), 'utf8');
 assert.ok(privateIndexScript.includes("path.join('.private', 'submissions')"), 'Índice nominal deve ser gravado em .private por padrão.');
 assert.ok(privateIndexScript.includes('content="instructors"'), 'Índice nominal deve declarar público instructors.');
@@ -277,7 +304,7 @@ assert.ok(latexWorkflow.includes('student-submissions'), 'Compilação LaTeX dev
 assert.ok(fs.readFileSync(path.join(root, 'scripts', 'compile-latex-projects.sh'), 'utf8').includes('-no-shell-escape'), 'Compilação LaTeX deve desativar shell escape.');
 
 const trackedText = repositoryFiles
-  .filter((file) => ['.js', '.jsx', '.mjs', '.json', '.md', '.toml', '.yml', '.yaml', '.sql'].includes(path.extname(file).toLowerCase()))
+  .filter((file) => ['.js', '.jsx', '.mjs', '.gs', '.json', '.md', '.toml', '.yml', '.yaml', '.sql'].includes(path.extname(file).toLowerCase()))
   .map((file) => fs.readFileSync(path.join(root, file), 'utf8'))
   .join('\n');
 assert.ok(!/eyJ[A-Za-z0-9_-]{40,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}/.test(trackedText), 'JWT potencialmente real encontrado no repositório.');

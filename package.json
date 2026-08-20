@@ -14,6 +14,7 @@
     "reset:password": "node scripts/reset-private-password.mjs",
     "test": "node scripts/validate-project.mjs",
     "test:access": "node scripts/test-static-access.mjs",
+    "test:support": "node scripts/test-support-automation.mjs",
     "audit:out": "node scripts/audit-public-output.mjs"
   },
   "dependencies": {

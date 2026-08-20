@@ -1,22 +1,104 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import activities from '@/data/activities.json';
 import courseContact from '@/data/course-contact.json';
+import supportService from '@/data/support-service.json';
 import { driveDestinationFor, driveFolderUrl } from '@/lib/driveCourse.mjs';
 import Icon from './Icon';
 
 const questionActivities = activities.filter((activity) => activity.type !== 'break');
+const SUPPORT_CHANNEL = 'it214-support-response';
+const supportEndpoint = supportService.endpoint.trim();
+const supportReady = /^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(supportEndpoint);
 
-function gmailComposeUrl(subject, body) {
-  const parameters = new URLSearchParams({
-    view: 'cm',
-    fs: '1',
-    to: courseContact.email,
-    su: subject,
-    body,
-  });
-  return `https://mail.google.com/mail/?${parameters.toString()}`;
+function requestId() {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') return crypto.randomUUID();
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function isGoogleScriptOrigin(origin) {
+  try {
+    const { hostname, protocol } = new URL(origin);
+    return protocol === 'https:' && (hostname === 'script.google.com' || hostname.endsWith('.googleusercontent.com'));
+  } catch {
+    return false;
+  }
+}
+
+function useSupportSubmission(kind, studentId) {
+  const iframeName = useMemo(() => `it214-support-${kind}-${studentId}`, [kind, studentId]);
+  const requestIdInput = useRef(null);
+  const parentOriginInput = useRef(null);
+  const pendingRequest = useRef('');
+  const timeout = useRef(null);
+  const [result, setResult] = useState({ state: 'idle', message: '' });
+
+  useEffect(() => {
+    function receiveResult(event) {
+      const response = event.data;
+      if (!isGoogleScriptOrigin(event.origin) || response?.channel !== SUPPORT_CHANNEL || response.requestId !== pendingRequest.current) return;
+      window.clearTimeout(timeout.current);
+      pendingRequest.current = '';
+      setResult({
+        state: response.ok ? 'success' : 'error',
+        message: response.ok ? 'Solicitação enviada para a equipe da disciplina.' : (response.message || 'Não foi possível enviar agora. Tente novamente em alguns minutos.'),
+      });
+    }
+
+    window.addEventListener('message', receiveResult);
+    return () => {
+      window.removeEventListener('message', receiveResult);
+      window.clearTimeout(timeout.current);
+    };
+  }, []);
+
+  function submit(event) {
+    if (!supportReady) {
+      event.preventDefault();
+      setResult({ state: 'error', message: 'O envio automático ainda precisa ser ativado pela equipe docente.' });
+      return;
+    }
+
+    const nextRequestId = requestId();
+    pendingRequest.current = nextRequestId;
+    requestIdInput.current.value = nextRequestId;
+    parentOriginInput.current.value = window.location.origin;
+    setResult({ state: 'sending', message: 'Enviando para a equipe…' });
+    window.clearTimeout(timeout.current);
+    timeout.current = window.setTimeout(() => {
+      pendingRequest.current = '';
+      setResult({ state: 'error', message: 'O portal não recebeu a confirmação do envio. Aguarde antes de tentar novamente e, se necessário, procure a equipe.' });
+    }, 20000);
+  }
+
+  return { iframeName, parentOriginInput, requestIdInput, result, submit };
+}
+
+function SubmissionStatus({ result }) {
+  if (result.state === 'idle') return null;
+  const classes = result.state === 'success'
+    ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
+    : result.state === 'error'
+      ? 'border-red-200 bg-red-50 text-red-900'
+      : 'border-cyan-200 bg-cyan-50 text-cyan-900';
+  return <p className={`mt-4 rounded-2xl border p-4 text-sm font-bold ${classes}`} role={result.state === 'error' ? 'alert' : 'status'}>{result.message}</p>;
+}
+
+function HiddenSubmissionFields({ kind, studentId, studentName, requestIdInput, parentOriginInput }) {
+  return (
+    <>
+      <input type="hidden" name="requestType" value={kind} />
+      <input type="hidden" name="studentId" value={studentId} />
+      <input type="hidden" name="studentName" value={studentName} />
+      <input type="hidden" name="requestId" ref={requestIdInput} />
+      <input type="hidden" name="parentOrigin" ref={parentOriginInput} />
+      <label className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        Não preencha este campo
+        <input name="website" type="text" tabIndex="-1" autoComplete="off" />
+      </label>
+    </>
+  );
 }
 
 function QuestionWorkspace({ studentId, studentName }) {
@@ -24,39 +106,47 @@ function QuestionWorkspace({ studentId, studentName }) {
   const [question, setQuestion] = useState('');
   const cleanQuestion = question.trim();
   const activity = questionActivities.find((item) => item.code === activityCode);
-  const formattedQuestion = useMemo(() => [
-    `DÚVIDA — ${activityCode}`,
-    `Atividade: ${activity?.theme || 'Dúvida geral'}`,
-    `Aluno: ${studentName}`,
-    `Identificador da conta: ${studentId}`,
-    '',
-    cleanQuestion,
-  ].join('\n'), [activity?.theme, activityCode, cleanQuestion, studentId, studentName]);
-  const emailUrl = gmailComposeUrl(`IT-214 — Dúvida ${activityCode} — ${studentName}`, formattedQuestion);
+  const submission = useSupportSubmission('question', studentId);
+
+  useEffect(() => {
+    if (submission.result.state === 'success') setQuestion('');
+  }, [submission.result.state]);
 
   return (
     <section className="surface-card">
       <div className="flex items-start gap-4"><div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-cyan-50 text-cyan-800"><Icon name="question" className="h-5 w-5" /></div><div><span className="eyebrow">Dúvidas</span><h3 className="mt-4 text-xl font-black text-ink">Perguntar à equipe</h3></div></div>
-      <p className="mt-4 text-sm leading-6 text-slate-600">Escreva sua dúvida e abra uma mensagem já preenchida no Gmail pelo navegador. Revise o texto e clique em enviar.</p>
-      <label className="mt-5 block text-sm font-black text-slate-700" htmlFor="question-activity">Atividade relacionada</label>
-      <select className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="question-activity" value={activityCode} onChange={(event) => setActivityCode(event.target.value)}><option value="Geral">Geral · Dúvida não vinculada a uma atividade</option>{questionActivities.map((item) => <option value={item.code} key={item.code}>{item.code} · {item.theme}</option>)}</select>
-      <label className="mt-4 block text-sm font-black text-slate-700" htmlFor="student-question">Sua dúvida</label>
-      <textarea className="mt-2 min-h-32 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="student-question" maxLength={1200} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Explique onde surgiu a dúvida e o que você já tentou." />
-      {cleanQuestion ? <a className="button-dark mt-5" href={emailUrl} target="_blank" rel="noreferrer"><Icon name="mail" className="h-4 w-4" /> Abrir dúvida no Gmail</a> : <p className="mt-4 text-xs font-bold text-slate-500">O botão será liberado depois que você escrever a pergunta.</p>}
-      <p className="mt-4 text-xs leading-5 text-slate-500">O portal prepara a mensagem, mas o envio só acontece depois que você confirmar no Gmail. Em outro webmail, envie diretamente para <strong className="font-black text-cyan-800">{courseContact.email}</strong>.</p>
+      <p className="mt-4 text-sm leading-6 text-slate-600">Escreva sua dúvida e envie diretamente pelo portal. A mensagem chega ao e-mail da disciplina sem abrir outro aplicativo.</p>
+      <form action={supportReady ? supportEndpoint : undefined} method="post" target={submission.iframeName} onSubmit={submission.submit}>
+        <HiddenSubmissionFields kind="question" studentId={studentId} studentName={studentName} requestIdInput={submission.requestIdInput} parentOriginInput={submission.parentOriginInput} />
+        <input type="hidden" name="activityTitle" value={activity?.theme || 'Dúvida geral'} />
+        <label className="mt-5 block text-sm font-black text-slate-700" htmlFor="question-activity">Atividade relacionada</label>
+        <select className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="question-activity" name="activityCode" value={activityCode} onChange={(event) => setActivityCode(event.target.value)}><option value="Geral">Geral · Dúvida não vinculada a uma atividade</option>{questionActivities.map((item) => <option value={item.code} key={item.code}>{item.code} · {item.theme}</option>)}</select>
+        <label className="mt-4 block text-sm font-black text-slate-700" htmlFor="student-question">Sua dúvida</label>
+        <textarea className="mt-2 min-h-32 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100" id="student-question" name="message" maxLength={1200} required value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Explique onde surgiu a dúvida e o que você já tentou." />
+        <button className="button-dark mt-5 disabled:cursor-not-allowed disabled:opacity-50" type="submit" disabled={!cleanQuestion || submission.result.state === 'sending' || !supportReady}><Icon name="mail" className="h-4 w-4" /> {submission.result.state === 'sending' ? 'Enviando…' : 'Enviar dúvida'}</button>
+      </form>
+      <SubmissionStatus result={submission.result} />
+      {!supportReady && <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs font-bold leading-5 text-amber-900">Envio automático aguardando a publicação da automação. Enquanto isso, use o contato <strong>{courseContact.email}</strong>.</p>}
+      <p className="mt-4 text-xs leading-5 text-slate-500">Não inclua senhas, notas, diagnósticos ou informações pessoais na mensagem.</p>
+      <iframe className="hidden" name={submission.iframeName} title="Confirmação do envio da dúvida" />
     </section>
   );
 }
 
 function AccountWorkspace({ studentId, studentName }) {
-  const requestText = `SOLICITAÇÃO DE NOVA SENHA\nAluno: ${studentName}\nIdentificador da conta: ${studentId}\n\nSolicito a redefinição da senha temporária. A nova senha deve ser entregue por canal privado.`;
-  const emailUrl = gmailComposeUrl(`IT-214 — Solicitação de nova senha — ${studentName}`, requestText);
+  const submission = useSupportSubmission('password-reset', studentId);
   return (
     <section className="surface-card">
       <div className="flex items-start gap-4"><div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-amber-50 text-amber-800"><Icon name="key" className="h-5 w-5" /></div><div><span className="eyebrow">Conta</span><h3 className="mt-4 text-xl font-black text-ink">Trocar senha temporária</h3></div></div>
-      <p className="mt-4 text-sm leading-6 text-slate-600">O botão abre no Gmail uma solicitação pronta para o e-mail da disciplina. Revise a mensagem e confirme o envio.</p>
-      <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>Nunca escreva sua senha atual nem a nova senha.</strong> A equipe gera a credencial e a entrega por um canal privado.</div>
-      <a className="button-dark mt-5" href={emailUrl} target="_blank" rel="noreferrer"><Icon name="mail" className="h-4 w-4" /> Solicitar nova senha no Gmail</a>
+      <p className="mt-4 text-sm leading-6 text-slate-600">Envie o pedido diretamente pelo portal. A equipe confere sua identidade e entrega a nova credencial por um canal privado.</p>
+      <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>Nunca escreva sua senha atual nem a nova senha.</strong> O pedido contém apenas seu nome e o identificador da conta.</div>
+      <form action={supportReady ? supportEndpoint : undefined} method="post" target={submission.iframeName} onSubmit={submission.submit}>
+        <HiddenSubmissionFields kind="password-reset" studentId={studentId} studentName={studentName} requestIdInput={submission.requestIdInput} parentOriginInput={submission.parentOriginInput} />
+        <button className="button-dark mt-5 disabled:cursor-not-allowed disabled:opacity-50" type="submit" disabled={submission.result.state === 'sending' || !supportReady}><Icon name="mail" className="h-4 w-4" /> {submission.result.state === 'sending' ? 'Enviando…' : 'Solicitar nova senha'}</button>
+      </form>
+      <SubmissionStatus result={submission.result} />
+      {!supportReady && <p className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs font-bold leading-5 text-amber-900">Envio automático aguardando a publicação da automação. Enquanto isso, use o contato <strong>{courseContact.email}</strong>.</p>}
+      <iframe className="hidden" name={submission.iframeName} title="Confirmação do pedido de senha" />
     </section>
   );
 }
