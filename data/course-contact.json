@@ -1,0 +1,14 @@
+{
+  "resourceId": "it214-2026-2-public-contact",
+  "audience": "public",
+  "author": "Equipe docente IT-214",
+  "source": "Endereço fornecido e autorizado pela equipe da disciplina em 2026-08-19",
+  "license": "Uso institucional como canal público de atendimento da disciplina IT-214",
+  "summary": "Destinatário público para dúvidas acadêmicas e solicitações de redefinição de senha.",
+  "relations": {
+    "courseCode": "IT-214",
+    "term": "2026/2",
+    "services": ["student-questions", "password-reset-requests"]
+  },
+  "email": "uam.infra@gmail.com"
+}

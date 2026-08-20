@@ -2,7 +2,7 @@
 
 ## Estado atual
 
-A Área do Aluno abre uma pasta individual no Google Drive. Cada aluno possui três destinos: `Atividades`, `Projeto LaTeX` e `Dúvidas e solicitações`. O vínculo entre o identificador opaco da conta e as pastas fica em `data/drive-submissions.json`.
+A Área do Aluno abre uma pasta individual no Google Drive. Cada aluno possui dois destinos ativos: `Atividades` e `Projeto LaTeX`. O vínculo entre o identificador opaco da conta e as pastas fica em `data/drive-submissions.json`.
 
 O login do GitHub Pages é apenas uma separação visual. O controle real dos arquivos é feito pelas permissões do Drive; cada pasta individual deve ser compartilhada somente com o aluno correspondente e com a equipe docente. A pasta raiz da disciplina não deve ser liberada para toda a turma.
 
@@ -18,11 +18,11 @@ O portal não lê nem conta arquivos do Drive. A ausência de uma contagem na p�
 
 ## Dúvidas e solicitações de acesso
 
-O painel prepara o texto da dúvida ou do pedido de nova senha e abre a pasta `Dúvidas e solicitações`. O aluno cria um Google Doc e cola o conteúdo. Nunca devem ser informadas a senha atual, a senha nova, notas ou outros dados sigilosos.
+O painel prepara o texto da dúvida ou do pedido de nova senha e abre o aplicativo de e-mail com a mensagem destinada a `uam.infra@gmail.com`. O aluno revisa e confirma o envio. Nunca devem ser informadas a senha atual, a senha nova, notas ou outros dados sigilosos.
 
 ## Conferência docente
 
-O painel docente permite pesquisar pelo nome, escolher o código da atividade e abrir as três pastas de cada aluno. A conferência é manual porque um site estático não possui credencial segura para consultar o conteúdo privado do Drive.
+O painel docente permite pesquisar pelo nome, escolher o código da atividade e abrir as pastas de atividades e LaTeX de cada aluno. A conferência é manual porque um site estático não possui credencial segura para consultar o conteúdo privado do Drive.
 
 Para gerar um índice local classificado como `instructors`, execute:
 

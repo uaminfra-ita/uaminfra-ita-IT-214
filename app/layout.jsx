@@ -2,6 +2,8 @@ import './globals.css';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata = {
   title: {
     default: 'IT-214 · Mobilidade Aérea Urbana',
@@ -11,6 +13,9 @@ export const metadata = {
     'Portal acadêmico da disciplina IT-214 — Mobilidade Aérea Urbana, do Instituto Tecnológico de Aeronáutica.',
   keywords: ['ITA', 'IT-214', 'UAM', 'Mobilidade Aérea Urbana', 'Vertiportos'],
   authors: [{ name: 'Equipe IT-214' }],
+  icons: {
+    icon: `${basePath}/images/brand/it214-uam-drone.png`,
+  },
 };
 
 export default function RootLayout({ children }) {
