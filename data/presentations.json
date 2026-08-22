@@ -150,5 +150,80 @@
         "purpose": "Limites do CONOPS e requisitos complementares de infraestrutura"
       }
     ]
+  },
+  {
+    "slug": "e04-pesquisa-escrita-latex",
+    "activityId": "E04",
+    "title": "Da pergunta ao PDF: pesquisa e escrita em LaTeX",
+    "subtitle": "LeapSpace, Overleaf, VS Code e Drive em um fluxo único de trabalho",
+    "date": "2026-08-25",
+    "durationMinutes": 90,
+    "slideCount": 18,
+    "objectives": [
+      "Transformar um tema amplo em uma pergunta de pesquisa investigável.",
+      "Explorar e verificar evidências científicas com apoio do LeapSpace.",
+      "Iniciar e compilar o artigo da disciplina no Overleaf ou no VS Code.",
+      "Organizar a introdução do CP1 e registrar a entrega no Drive da disciplina."
+    ],
+    "sections": [
+      "Destino da aula",
+      "Pergunta e evidência",
+      "Estrutura da introdução",
+      "Overleaf e VS Code",
+      "Oficina e CP1"
+    ],
+    "resourceIds": [
+      "it214-2026-latex-article-template"
+    ],
+    "references": [
+      {
+        "shortTitle": "Modelo LaTeX IT-214 (2026)",
+        "citation": "Equipe docente IT-214. Modelo LaTeX do artigo IT-214.",
+        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
+        "purpose": "Estrutura inicial do artigo e atividade prática"
+      },
+      {
+        "shortTitle": "LeapSpace (2026)",
+        "citation": "Elsevier. LeapSpace Reference Guide. February 2026.",
+        "url": "https://supportcontent.elsevier.com/Support%20Hub/LeapSpace/2_26_Leapspace_Reference%20Guide_eBook.pdf",
+        "purpose": "Busca, síntese referenciada e verificação de evidências"
+      },
+      {
+        "shortTitle": "Acesso ao LeapSpace",
+        "citation": "Elsevier Support Center. Accessing LeapSpace. 2026.",
+        "url": "https://www.elsevier.support/leapspace/answer/accessing-leapspace",
+        "purpose": "Acesso institucional e resolução de problemas de entrada"
+      },
+      {
+        "shortTitle": "CAPES e LeapSpace (2026)",
+        "citation": "CAPES. CAPES amplia acesso a ferramenta de apoio à pesquisa baseada em inteligência artificial.",
+        "url": "https://www.gov.br/capes/pt-br/assuntos/noticias/capes-amplia-acesso-a-ferramenta-de-apoio-a-pesquisa-baseada-em-inteligencia-artificial",
+        "purpose": "Disponibilidade da plataforma para a comunidade acadêmica brasileira"
+      },
+      {
+        "shortTitle": "Primeiro projeto no Overleaf",
+        "citation": "Overleaf. Your first project. User Documentation.",
+        "url": "https://docs.overleaf.com/getting-started/your-first-project",
+        "purpose": "Criação, edição e recompilação do primeiro projeto"
+      },
+      {
+        "shortTitle": "LaTeX em 30 minutos",
+        "citation": "Overleaf. Learn LaTeX in 30 minutes.",
+        "url": "https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes",
+        "purpose": "Guia rápido de sintaxe e estrutura de documentos"
+      },
+      {
+        "shortTitle": "LaTeX Workshop",
+        "citation": "Yu, J. LaTeX Workshop. Visual Studio Marketplace.",
+        "url": "https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop",
+        "purpose": "Compilação, visualização, citações e diagnóstico no VS Code"
+      },
+      {
+        "shortTitle": "TeX Live",
+        "citation": "TeX Users Group. TeX Live — a comprehensive distribution of TeX.",
+        "url": "https://tug.org/texlive/",
+        "purpose": "Distribuição local necessária para compilar LaTeX no VS Code"
+      }
+    ]
   }
 ]
