@@ -56,13 +56,13 @@ function AccountWorkspace({ studentId, studentName }) {
 
 function LatexWorkspace({ latexUrl }) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  const templateUrl = `${basePath}/templates/latex/artigo-it214.tex`;
+  const templateUrl = `${basePath}/templates/latex/elsarticle-template-num.tex`;
 
   return (
     <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lift lg:col-span-2">
       <div className="grid lg:grid-cols-[.72fr_1.28fr]">
         <div className="bg-ink p-7 text-white sm:p-9"><span className="text-xs font-black uppercase tracking-[.17em] text-cyan-300">Projeto LaTeX</span><h3 className="mt-5 text-2xl font-black">Projeto organizado no Drive</h3><p className="mt-3 text-sm leading-6 text-slate-300">Guarde o fonte, as figuras, a bibliografia e o PDF compilado na pasta individual. A equipe acompanha o mesmo conjunto de arquivos pelo painel docente.</p><ol className="mt-6 space-y-3 text-sm leading-6 text-slate-200"><li><strong className="text-white">1.</strong> Baixe o modelo e salve como <code>main.tex</code>.</li><li><strong className="text-white">2.</strong> Edite no ambiente LaTeX de sua preferência.</li><li><strong className="text-white">3.</strong> Envie o projeto e o PDF compilado para o Drive.</li></ol></div>
-        <div className="p-7 sm:p-9"><span className="eyebrow">Seu workspace</span><h3 className="mt-4 text-xl font-black text-ink">Pasta “Projeto LaTeX”</h3><p className="mt-4 text-sm leading-6 text-slate-600">Mantenha <code>main.tex</code>, arquivos <code>.bib</code>, figuras e o PDF na mesma pasta. Substitua os arquivos quando publicar uma nova versão.</p><div className="mt-7 flex flex-wrap gap-3"><a className="button-dark" href={templateUrl} download="main.tex"><Icon name="file" className="h-4 w-4" /> Baixar modelo</a><a className="button-primary" href={latexUrl} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir projeto no Drive</a></div><p className="mt-5 text-xs leading-5 text-slate-500">O Drive armazena os arquivos, mas não compila LaTeX automaticamente. Envie também o PDF atualizado para facilitar a conferência.</p></div>
+        <div className="p-7 sm:p-9"><span className="eyebrow">Seu workspace</span><h3 className="mt-4 text-xl font-black text-ink">Pasta “Projeto LaTeX”</h3><p className="mt-4 text-sm leading-6 text-slate-600">Mantenha <code>main.tex</code>, arquivos <code>.bib</code>, figuras e o PDF na mesma pasta. Substitua os arquivos quando publicar uma nova versão.</p><div className="mt-7 flex flex-wrap gap-3"><a className="button-dark" href={templateUrl} download="main.tex"><Icon name="file" className="h-4 w-4" /> Baixar modelo Elsevier</a><a className="button-primary" href={latexUrl} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir projeto no Drive</a></div><p className="mt-5 text-xs leading-5 text-slate-500">O Drive armazena os arquivos, mas não compila LaTeX automaticamente. Envie também o PDF atualizado para facilitar a conferência.</p></div>
       </div>
     </section>
   );

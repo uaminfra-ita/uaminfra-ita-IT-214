@@ -177,10 +177,10 @@
     ],
     "references": [
       {
-        "shortTitle": "Modelo LaTeX IT-214 (2026)",
-        "citation": "Equipe docente IT-214. Modelo LaTeX do artigo IT-214.",
-        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
-        "purpose": "Estrutura inicial do artigo e atividade prática"
+        "shortTitle": "Elsarticle numérico (2024)",
+        "citation": "Elsevier Ltd. Elsarticle Bundle: elsarticle-template-num.tex.",
+        "url": "https://ctan.org/pkg/elsarticle",
+        "purpose": "Modelo oficial Elsevier, estrutura inicial do artigo e atividade prática"
       },
       {
         "shortTitle": "LeapSpace (2026)",

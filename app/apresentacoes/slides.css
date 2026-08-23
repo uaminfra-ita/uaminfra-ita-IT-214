@@ -491,7 +491,13 @@
 .e04-pdf-pane strong { display: block; margin-top: .7rem; font-family: Georgia, serif; font-size: 1rem; text-align: center; }
 .e04-pdf-pane i { display: block; margin-top: 2rem; font-family: Georgia, serif; font-size: .8rem; font-style: normal; font-weight: 800; }
 .e04-pdf-pane p { margin-top: .65rem !important; color: #475569; font-family: Georgia, serif; font-size: .55rem !important; line-height: 1.55 !important; }
-.e04-paper-preview { height: 27.7rem; background: #e2e8f0; }
+.e04-elsevier-sheet { display: flex; min-height: 27.7rem; flex-direction: column; border-top: .75rem solid #f97316; background: #fff; padding: 1.4rem; color: #111827; box-shadow: 0 20px 50px -35px #071426; font-family: Georgia, serif; text-align: left; }
+.e04-elsevier-sheet span { color: #f97316; font: 950 .66rem/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: .13em; }
+.e04-elsevier-sheet small { margin-top: .55rem; color: #64748b; font-size: .58rem; text-align: right; }
+.e04-elsevier-sheet strong { margin: 2.2rem 0 .55rem; font-size: 1.25rem; text-align: center; }
+.e04-elsevier-sheet em { color: #475569; font-size: .66rem; text-align: center; }
+.e04-elsevier-sheet b { margin-top: 1.8rem; font-size: .76rem; }
+.e04-elsevier-sheet p { margin-top: .45rem !important; color: #475569; font-size: .57rem !important; line-height: 1.5 !important; }
 .e04-equation { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: .9rem !important; color: #64748b; font-size: 1.05rem !important; font-weight: 900; }
 .e04-equation code { border-radius: .4rem; background: #071426; padding: .25rem .55rem; color: #67e8f9; }
 .e04-equation strong { color: #f97316; }
@@ -585,7 +591,7 @@
   .e04-prompt p { font-size: 1.25rem !important; }
   .e04-prompt > div { grid-template-columns: 1fr 1fr; }
   .e04-proof-image,
-  .e04-paper-preview,
+  .e04-elsevier-sheet,
   .e04-template-paper,
   .e04-overleaf-screen,
   .e04-vscode-screen { height: 17rem; }

@@ -244,19 +244,19 @@
     {
       "id": "it214-2026-latex-article-template",
       "category": "latex-template",
-      "title": "Modelo LaTeX do artigo IT-214",
-      "authors": ["Equipe docente IT-214"],
-      "year": 2026,
-      "publication": "Portal IT-214 — Mobilidade Aérea Urbana",
-      "publisherUrl": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
-      "assetPath": "/templates/latex/artigo-it214.tex",
+      "title": "Modelo LaTeX Elsarticle com referências numéricas",
+      "authors": ["Elsevier Ltd"],
+      "year": 2024,
+      "publication": "Elsarticle Bundle",
+      "publisherUrl": "https://ctan.org/pkg/elsarticle",
+      "assetPath": "/templates/latex/elsarticle-template-num.tex",
       "audience": "public",
-      "license": "Material didático institucional",
-      "rightsNote": "Modelo original e reutilizável criado para os artigos da disciplina IT-214.",
-      "summary": "Estrutura mínima de artigo em LaTeX com resumo, introdução, revisão, método, resultados, conclusão e referências.",
-      "tags": ["LaTeX", "artigo científico", "template", "GitHub"],
+      "license": "LaTeX Project Public License 1.3 ou posterior",
+      "rightsNote": "Arquivo oficial do Elsarticle Bundle, redistribuído sem alterações substantivas conforme a LPPL 1.3 ou posterior.",
+      "summary": "Modelo oficial da classe Elsarticle em modo preprint, com frontmatter e referências bibliográficas numéricas.",
+      "tags": ["LaTeX", "Elsevier", "elsarticle", "artigo científico", "template"],
       "relatedActivityIds": ["E04"],
-      "sha256": "64A154C3E909D83C3EDC08E50BA85EA5F15EBE56E1E0A4FA9FDE1A29EC010DCA"
+      "sha256": "ED0B4DEF8B2DF7E1F25E241FDF31B2AD6E5165E3B04FE7770FFB0F84B075FC10"
     }
   ]
 }

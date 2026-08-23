@@ -81,22 +81,23 @@ function WorkflowOrbit() {
 function MiniEditor() {
   return (
     <div className="e04-editor" aria-label="Exemplo visual de um editor LaTeX com código e prévia">
-      <div className="e04-windowbar"><span /><span /><span /><strong>artigo-it214.tex</strong></div>
+      <div className="e04-windowbar"><span /><span /><span /><strong>elsarticle-template-num.tex</strong></div>
       <div className="e04-editor-body">
         <div className="e04-code-pane">
-          <span><b>01</b>{'\\documentclass{article}'}</span>
-          <span><b>02</b>{'\\title{Infraestrutura UAM}'}</span>
-          <span><b>03</b>{'\\begin{document}'}</span>
-          <span className="active"><b>04</b>{'\\section{Introdução}'}</span>
-          <span><b>05</b>O crescimento da UAM...</span>
-          <span><b>06</b>{'\\cite{autor2025}'}</span>
-          <span><b>07</b>{'\\end{document}'}</span>
+          <span><b>01</b>{'\\documentclass[preprint,12pt]{elsarticle}'}</span>
+          <span><b>02</b>{'\\journal{Nome do periódico}'}</span>
+          <span><b>03</b>{'\\begin{frontmatter}'}</span>
+          <span className="active"><b>04</b>{'\\title{Infraestrutura UAM}'}</span>
+          <span><b>05</b>{'\\begin{abstract}'}</span>
+          <span><b>06</b>{'\\section{Introduction}'}</span>
+          <span><b>07</b>{'\\bibliographystyle{elsarticle-num}'}</span>
         </div>
         <div className="e04-pdf-pane">
-          <span>PDF</span>
+          <span>ELSEVIER · PREPRINT</span>
           <strong>Infraestrutura UAM</strong>
-          <i>Introdução</i>
+          <i>Abstract</i>
           <p>O crescimento da mobilidade aérea urbana exige...</p>
+          <i>1. Introduction</i>
           <p>Questões de capacidade, energia e inserção urbana...</p>
         </div>
       </div>
@@ -105,7 +106,7 @@ function MiniEditor() {
 }
 
 export default function E04PresentationPage() {
-  const templateUrl = `${basePath}/templates/latex/artigo-it214.tex`;
+  const templateUrl = `${basePath}/templates/latex/elsarticle-template-num.tex`;
   const studentAreaUrl = `${basePath}/area-do-aluno/`;
 
   return (
@@ -199,25 +200,27 @@ export default function E04PresentationPage() {
         </div>
       </Slide>
 
-      <Slide kicker="Como o LaTeX pensa" title="Você escreve estrutura; o compilador constrói a página" source="Overleaf, Learn LaTeX in 30 minutes; modelo LaTeX IT-214 (2026)." notes="Tempo sugerido: 5 minutos. Mostre a relação entre comandos e aparência. Explique que o arquivo .tex é texto simples e o PDF é um produto gerado, por isso não se corrige o PDF diretamente.">
+      <Slide kicker="Como o LaTeX pensa" title="Você escreve estrutura; o compilador constrói a página" source="Overleaf, Learn LaTeX in 30 minutes; Elsevier, Elsarticle Bundle (2024)." notes="Tempo sugerido: 5 minutos. Mostre a relação entre comandos e aparência no modelo oficial da Elsevier. Explique que o arquivo .tex é texto simples e o PDF é um produto gerado, por isso não se corrige o PDF diretamente.">
         <div className="e04-latex-split">
           <MiniEditor />
-          <MediaFigure assetId="it214-2026-latex-template-preview" frameClassName="e04-paper-preview" />
+          <div className="e04-elsevier-sheet" aria-label="Representação didática da primeira página do modelo Elsarticle">
+            <span>ELSEVIER · PREPRINT</span><small>Journal Name</small><strong>Article title</strong><em>Author name · Affiliation</em><b>Abstract</b><p>Research context, objective, method and main results.</p><b>1. Introduction</b><p>Scientific motivation, evidence and research gap.</p>
+          </div>
         </div>
         <p className="e04-equation"><code>.tex</code><span>+</span><code>compilador</code><span>=</span><strong>PDF</strong></p>
       </Slide>
 
-      <Slide kicker="Modelo da disciplina" title="Não comece com uma página vazia" source="Equipe docente IT-214, Modelo LaTeX do artigo IT-214 (2026)." notes="Tempo sugerido: 4 minutos. Baixe o arquivo e mostre as seções existentes. Oriente os alunos a preservar a estrutura e preencher primeiro a introdução; resumo e resultados ainda são rascunhos futuros.">
+      <Slide kicker="Modelo oficial Elsevier" title="Comece com o Elsarticle padrão e referências numéricas" source="Elsevier, Elsarticle Bundle, elsarticle-template-num.tex (2024), licença LPPL 1.3 ou posterior." notes="Tempo sugerido: 4 minutos. Baixe o arquivo oficial e mostre documentclass, frontmatter, abstract e bibliografia numérica. Oriente os alunos a preencher primeiro título, autoria e introdução, preservando a estrutura do modelo.">
         <div className="e04-template-layout">
           <MediaFigure assetId="it214-2026-latex-template-preview" frameClassName="e04-template-paper" />
           <div>
-            <p>O modelo já traz preâmbulo, idioma, margens, resumo, seções e referências. Hoje, o foco está em <strong>Introdução</strong>.</p>
-            <ActionLink href={templateUrl} tone="dark">Baixar artigo-it214.tex</ActionLink>
+            <p>O arquivo oficial usa a classe <code>elsarticle</code>, o bloco <code>frontmatter</code> e o estilo bibliográfico <code>elsarticle-num</code>. Hoje, o foco está em <strong>Introduction</strong>.</p>
+            <ActionLink href={templateUrl} tone="dark">Baixar elsarticle-template-num.tex</ActionLink>
           </div>
         </div>
       </Slide>
 
-      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o modelo e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project, Upload Project ou Blank Project. Para esta aula, o caminho mais direto é criar um projeto e enviar o arquivo artigo-it214.tex.">
+      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o modelo e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project, Upload Project ou Blank Project. Para esta aula, o caminho mais direto é criar um projeto e enviar o arquivo elsarticle-template-num.tex; a classe elsarticle já está disponível no ambiente LaTeX.">
         <div className="e04-overleaf-layout">
           <MediaFigure assetId="overleaf-2026-first-project-docs" frameClassName="e04-overleaf-screen" fit="cover" />
           <ol>
@@ -257,10 +260,10 @@ export default function E04PresentationPage() {
         <div className="e04-folder-layout">
           <div className="e04-tree" aria-label="Estrutura recomendada de arquivos do artigo">
             <strong>📁 artigo-it214-nome</strong>
-            <span>├── 📄 artigo-it214.tex</span>
+            <span>├── 📄 main.tex</span>
             <span>├── 📄 referencias.bib</span>
             <span>├── 📁 figuras</span>
-            <span>└── 📄 artigo-it214.pdf</span>
+            <span>└── 📄 main.pdf</span>
           </div>
           <div className="e04-delivery"><span>ÁREA DO ALUNO</span><p>Abra sua pasta individual, escolha a atividade E04 e envie a fonte, referências, figuras e PDF.</p><ActionLink href={studentAreaUrl} tone="dark">Abrir minha pasta</ActionLink></div>
         </div>

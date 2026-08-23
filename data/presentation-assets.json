@@ -362,17 +362,17 @@
   {
     "id": "it214-2026-latex-template-preview",
     "presentationSlug": "e04-pesquisa-escrita-latex",
-    "slideNumbers": [10, 11],
-    "title": "Prévia compilada do modelo LaTeX do artigo IT-214",
+    "slideNumbers": [11],
+    "title": "Prévia compilada do modelo LaTeX Elsarticle",
     "assetPath": "/images/presentations/e04/artigo-it214-preview.png",
     "kind": "document-preview",
     "audience": "public",
-    "creator": "Equipe docente IT-214",
-    "sourceUrl": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
-    "creditLine": "Modelo original da equipe docente IT-214 (2026)",
-    "usageBasis": "Prévia gerada a partir de material didático original e público da disciplina.",
-    "alt": "Primeira página compilada do modelo de artigo IT-214 com título, autor, resumo e seções acadêmicas.",
-    "sha256": "DC58840D83729DC05CCFBE0D08C30D632ABFA22ADE591B57ADE6EACB3583B752"
+    "creator": "Elsevier Ltd",
+    "sourceUrl": "https://ctan.org/pkg/elsarticle",
+    "creditLine": "Elsevier, Elsarticle Bundle, documento de teste elstest-1p (LPPL).",
+    "usageBasis": "Prévia gerada do PDF de teste oficial fornecido no Elsarticle Bundle sob a LPPL 1.3 ou posterior.",
+    "alt": "Primeira página compilada no padrão Elsarticle, com título, autores, afiliações, resumo, palavras-chave e início da introdução.",
+    "sha256": "57D09B25791DC331228C04DC8190C934457AF94BE5A8A73807EDBD574D2C4795"
   },
   {
     "id": "overleaf-2026-first-project-docs",
