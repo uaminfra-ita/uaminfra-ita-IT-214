@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper]{article}
+
+% Codificacao, idioma e tipografia
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Pagina, tabelas, figuras e equacoes
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+% Citacoes e links
+\usepackage[authoryear,round]{natbib}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\graphicspath{{figuras/}}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\title{Título do artigo}
+\author{Nome do aluno\\Instituição}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Apresente, em um único parágrafo, o contexto, a lacuna, o objetivo, o método,
+o principal resultado e a conclusão. Durante as primeiras entregas, mantenha
+este texto como um rascunho e revise-o após concluir as demais seções.
+\end{abstract}
+
+\noindent\textbf{Palavras-chave:} mobilidade aérea urbana; palavra 2;
+palavra 3; palavra 4; palavra 5.
+
+\input{capitulos/01-introducao}
+\input{capitulos/02-revisao-literatura}
+\input{capitulos/03-metodo}
+\input{capitulos/04-resultados-discussao}
+\input{capitulos/05-conclusao}
+
+\bibliographystyle{plainnat}
+\bibliography{referencias/referencias}
+
+\end{document}

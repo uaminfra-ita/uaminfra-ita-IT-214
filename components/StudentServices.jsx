@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import activities from '@/data/activities.json';
 import courseContact from '@/data/course-contact.json';
+import resources from '@/data/resources.json';
 import { driveDestinationFor, driveFolderUrl } from '@/lib/driveCourse.mjs';
 import Icon from './Icon';
 
@@ -54,15 +55,30 @@ function AccountWorkspace({ studentId, studentName }) {
   );
 }
 
-function LatexWorkspace({ latexUrl }) {
+function ArticleWorkspace({ latexUrl }) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  const templateUrl = `${basePath}/templates/latex/elsarticle-template-num.tex`;
+  const templateLabels = {
+    'it214-2026-organized-latex-project': 'Projeto LaTeX IT-214',
+    'it214-2026-latex-article-template': 'Elsarticle .tex',
+    'elsevier-2024-elsarticle-template-bundle': 'Pacote Elsevier',
+    'it214-word-paper-reference-template': 'Modelo Word',
+  };
+  const templateOrder = [
+    'it214-2026-organized-latex-project',
+    'it214-2026-latex-article-template',
+    'elsevier-2024-elsarticle-template-bundle',
+    'it214-word-paper-reference-template',
+  ];
+  const templates = templateOrder.map((id) => resources.workspaceTemplates.find((template) => template.id === id)).filter(Boolean).map((template) => ({
+    ...template,
+    url: `${basePath}${template.assetPath}`,
+  }));
 
   return (
     <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lift lg:col-span-2">
       <div className="grid lg:grid-cols-[.72fr_1.28fr]">
-        <div className="bg-ink p-7 text-white sm:p-9"><span className="text-xs font-black uppercase tracking-[.17em] text-cyan-300">Projeto LaTeX</span><h3 className="mt-5 text-2xl font-black">Projeto organizado no Drive</h3><p className="mt-3 text-sm leading-6 text-slate-300">Guarde o fonte, as figuras, a bibliografia e o PDF compilado na pasta individual. A equipe acompanha o mesmo conjunto de arquivos pelo painel docente.</p><ol className="mt-6 space-y-3 text-sm leading-6 text-slate-200"><li><strong className="text-white">1.</strong> Baixe o modelo e salve como <code>main.tex</code>.</li><li><strong className="text-white">2.</strong> Edite no ambiente LaTeX de sua preferência.</li><li><strong className="text-white">3.</strong> Envie o projeto e o PDF compilado para o Drive.</li></ol></div>
-        <div className="p-7 sm:p-9"><span className="eyebrow">Seu workspace</span><h3 className="mt-4 text-xl font-black text-ink">Pasta “Projeto LaTeX”</h3><p className="mt-4 text-sm leading-6 text-slate-600">Mantenha <code>main.tex</code>, arquivos <code>.bib</code>, figuras e o PDF na mesma pasta. Substitua os arquivos quando publicar uma nova versão.</p><div className="mt-7 flex flex-wrap gap-3"><a className="button-dark" href={templateUrl} download="main.tex"><Icon name="file" className="h-4 w-4" /> Baixar modelo Elsevier</a><a className="button-primary" href={latexUrl} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir projeto no Drive</a></div><p className="mt-5 text-xs leading-5 text-slate-500">O Drive armazena os arquivos, mas não compila LaTeX automaticamente. Envie também o PDF atualizado para facilitar a conferência.</p></div>
+        <div className="bg-ink p-7 text-white sm:p-9"><span className="text-xs font-black uppercase tracking-[.17em] text-cyan-300">Modelos do artigo</span><h3 className="mt-5 text-2xl font-black">Escolha seu ponto de partida</h3><p className="mt-3 text-sm leading-6 text-slate-300">O conteúdo acadêmico esperado é o mesmo. Escolha a ferramenta adequada ao seu fluxo e mantenha fontes, figuras, referências e PDF na pasta individual.</p><ol className="mt-6 space-y-3 text-sm leading-6 text-slate-200"><li><strong className="text-white">1.</strong> Baixe um dos modelos.</li><li><strong className="text-white">2.</strong> Edite no Overleaf, VS Code ou Word.</li><li><strong className="text-white">3.</strong> Envie o arquivo editável e o PDF para o Drive.</li></ol></div>
+        <div className="p-7 sm:p-9"><span className="eyebrow">Seu workspace</span><h3 className="mt-4 text-xl font-black text-ink">Pasta “Projeto LaTeX”</h3><p className="mt-4 text-sm leading-6 text-slate-600">O projeto IT-214 separa <code>capitulos/</code>, <code>referencias/</code> e <code>figuras/</code>. Para um início rápido, use o arquivo Elsarticle numérico; o pacote completo da Elsevier e o modelo Word continuam disponíveis como alternativas.</p><div className="mt-7 flex flex-wrap gap-3">{templates.map((template, index) => <a className={index === 0 ? 'button-dark' : 'button-primary'} href={template.url} download key={template.id}><Icon name="file" className="h-4 w-4" /> {templateLabels[template.id]}</a>)}<a className="button-primary" href={latexUrl} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir projeto no Drive</a></div><p className="mt-5 text-xs leading-5 text-slate-500">O Drive armazena os arquivos, mas não compila LaTeX automaticamente. Envie também o PDF atualizado para facilitar a conferência.</p></div>
       </div>
     </section>
   );
@@ -72,5 +88,5 @@ export default function StudentServices({ studentId, studentName }) {
   const destination = driveDestinationFor(studentId);
   if (!destination) return null;
   const latexUrl = driveFolderUrl(destination.latexFolderId);
-  return <div className="grid gap-6 lg:grid-cols-2"><QuestionWorkspace studentId={studentId} studentName={studentName} /><AccountWorkspace studentId={studentId} studentName={studentName} /><LatexWorkspace latexUrl={latexUrl} /></div>;
+  return <div className="grid gap-6 lg:grid-cols-2"><QuestionWorkspace studentId={studentId} studentName={studentName} /><AccountWorkspace studentId={studentId} studentName={studentName} /><ArticleWorkspace latexUrl={latexUrl} /></div>;
 }

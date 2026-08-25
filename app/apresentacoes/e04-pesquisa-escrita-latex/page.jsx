@@ -106,7 +106,11 @@ function MiniEditor() {
 }
 
 export default function E04PresentationPage() {
-  const templateUrl = `${basePath}/templates/latex/elsarticle-template-num.tex`;
+  const organizedTemplateUrl = `${basePath}/templates/latex/artigo-it214.zip`;
+  const numericTemplateUrl = `${basePath}/templates/latex/elsarticle-template-num.tex`;
+  const elsevierBundleUrl = `${basePath}/templates/latex/elsevier-elsarticle-3.4.zip`;
+  const wordTemplateUrl = `${basePath}/templates/word/modelo-entregas-artigo-it212.docx`;
+  const templatesLibraryUrl = `${basePath}/biblioteca/#modelos`;
   const studentAreaUrl = `${basePath}/area-do-aluno/`;
 
   return (
@@ -210,22 +214,22 @@ export default function E04PresentationPage() {
         <p className="e04-equation"><code>.tex</code><span>+</span><code>compilador</code><span>=</span><strong>PDF</strong></p>
       </Slide>
 
-      <Slide kicker="Modelo oficial Elsevier" title="Comece com o Elsarticle padrão e referências numéricas" source="Elsevier, Elsarticle Bundle, elsarticle-template-num.tex (2024), licença LPPL 1.3 ou posterior." notes="Tempo sugerido: 4 minutos. Baixe o arquivo oficial e mostre documentclass, frontmatter, abstract e bibliografia numérica. Oriente os alunos a preencher primeiro título, autoria e introdução, preservando a estrutura do modelo.">
+      <Slide kicker="Modelos do artigo" title="Escolha uma estrutura pronta e concentre-se no conteúdo" source="Equipe docente IT-214; Elsevier, Elsarticle Bundle 3.4; modelo Word de referência fornecido à equipe docente." notes="Tempo sugerido: 4 minutos. Recomende o projeto organizado da IT-214 para a oficina, apresente o arquivo Elsarticle numérico para início rápido, mostre o pacote oficial completo e explique que o DOCX permite seguir a mesma estrutura no Word.">
         <div className="e04-template-layout">
           <MediaFigure assetId="it214-2026-latex-template-preview" frameClassName="e04-template-paper" />
           <div>
-            <p>O arquivo oficial usa a classe <code>elsarticle</code>, o bloco <code>frontmatter</code> e o estilo bibliográfico <code>elsarticle-num</code>. Hoje, o foco está em <strong>Introduction</strong>.</p>
-            <ActionLink href={templateUrl} tone="dark">Baixar elsarticle-template-num.tex</ActionLink>
+            <p>O projeto IT-214 separa <strong>capítulos</strong>, <strong>referências</strong> e <strong>figuras</strong>. O Elsarticle numérico atualizado, o pacote oficial completo e a alternativa Word também permanecem disponíveis.</p>
+            <div className="e04-inline-links"><ActionLink href={organizedTemplateUrl} tone="dark">Projeto IT-214</ActionLink><ActionLink href={numericTemplateUrl}>Elsarticle .tex</ActionLink><ActionLink href={elsevierBundleUrl}>Pacote Elsevier</ActionLink><ActionLink href={wordTemplateUrl}>Word</ActionLink></div>
           </div>
         </div>
       </Slide>
 
-      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o modelo e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project, Upload Project ou Blank Project. Para esta aula, o caminho mais direto é criar um projeto e enviar o arquivo elsarticle-template-num.tex; a classe elsarticle já está disponível no ambiente LaTeX.">
+      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o ZIP e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project e Upload Project. Para esta aula, o caminho mais direto é enviar artigo-it214.zip; o Overleaf preserva as pastas e reconhece main.tex como arquivo principal.">
         <div className="e04-overleaf-layout">
           <MediaFigure assetId="overleaf-2026-first-project-docs" frameClassName="e04-overleaf-screen" fit="cover" />
           <ol>
             <li><span>01</span><strong>Novo projeto</strong></li>
-            <li><span>02</span><strong>Envie o .tex</strong></li>
+            <li><span>02</span><strong>Envie o ZIP</strong></li>
             <li><span>03</span><strong>Recompile</strong></li>
           </ol>
         </div>
@@ -261,7 +265,8 @@ export default function E04PresentationPage() {
           <div className="e04-tree" aria-label="Estrutura recomendada de arquivos do artigo">
             <strong>📁 artigo-it214-nome</strong>
             <span>├── 📄 main.tex</span>
-            <span>├── 📄 referencias.bib</span>
+            <span>├── 📁 capitulos</span>
+            <span>├── 📁 referencias</span>
             <span>├── 📁 figuras</span>
             <span>└── 📄 main.pdf</span>
           </div>
@@ -284,7 +289,7 @@ export default function E04PresentationPage() {
         </div>
         <div className="e04-final-links">
           <ActionLink href="https://www.sciencedirect.com/leapspace" tone="dark">Pesquisar</ActionLink>
-          <ActionLink href={templateUrl}>Baixar modelo</ActionLink>
+          <ActionLink href={templatesLibraryUrl}>Escolher modelo</ActionLink>
           <ActionLink href="https://www.overleaf.com/project">Escrever</ActionLink>
           <ActionLink href={studentAreaUrl}>Entregar</ActionLink>
         </div>
