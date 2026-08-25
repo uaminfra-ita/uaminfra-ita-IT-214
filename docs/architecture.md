@@ -13,7 +13,7 @@ O portal usa Next.js 14 com App Router, React 18 e Tailwind. `output: export` pr
 - `data/course-contact.json`: contato público autorizado para dúvidas e pedidos de nova senha.
 - `data/brand-assets.json`: identidade visual pública e checksum do ícone do navegador.
 
-Os PDFs públicos ficam em `public/resources/`. Apresentações usam Reveal.js, mas o conteúdo e os gráficos permanecem componentes React/SVG do próprio projeto.
+Os PDFs públicos ficam em `public/resources/`, e os modelos públicos em `public/templates/`. Apresentações usam Reveal.js, mas o conteúdo e os gráficos permanecem componentes React/SVG do próprio projeto.
 
 ## Fluxo de entregas
 
@@ -21,7 +21,7 @@ O login visual valida a credencial no navegador e seleciona o destino pelo ID op
 
 Na visão docente, `StaffSubmissionOverview` cruza os nomes do catálogo estático com os destinos do Drive. O painel oferece busca nominal e links diretos para atividades e LaTeX. Ele não usa token nem consulta arquivos privados; portanto, a conferência é manual.
 
-Projetos LaTeX ficam na pasta individual `Projeto LaTeX`. O aluno baixa o modelo público, edita no ambiente de sua preferência e envia fontes, figuras, bibliografia e PDF compilado. A compilação automática no navegador não faz parte deste MVP.
+O portal oferece três pontos de partida públicos: o projeto LaTeX organizado da IT-214, o pacote oficial `elsarticle` da Elsevier e um modelo editável em Word fornecido como referência por Mauro Caetano. O aluno edita o formato escolhido e envia fontes, figuras, bibliografia e PDF final para a pasta individual `Projeto LaTeX`. A compilação automática no navegador não faz parte deste MVP.
 
 ## Dúvidas e senhas
 

@@ -81,7 +81,7 @@ function WorkflowOrbit() {
 function MiniEditor() {
   return (
     <div className="e04-editor" aria-label="Exemplo visual de um editor LaTeX com código e prévia">
-      <div className="e04-windowbar"><span /><span /><span /><strong>artigo-it214.tex</strong></div>
+      <div className="e04-windowbar"><span /><span /><span /><strong>main.tex</strong></div>
       <div className="e04-editor-body">
         <div className="e04-code-pane">
           <span><b>01</b>{'\\documentclass{article}'}</span>
@@ -105,7 +105,10 @@ function MiniEditor() {
 }
 
 export default function E04PresentationPage() {
-  const templateUrl = `${basePath}/templates/latex/artigo-it214.tex`;
+  const templateUrl = `${basePath}/templates/latex/artigo-it214.zip`;
+  const elsevierTemplateUrl = `${basePath}/templates/latex/elsevier-elsarticle-3.4.zip`;
+  const wordTemplateUrl = `${basePath}/templates/word/modelo-entregas-artigo-it212.docx`;
+  const templatesLibraryUrl = `${basePath}/biblioteca/#modelos`;
   const studentAreaUrl = `${basePath}/area-do-aluno/`;
 
   return (
@@ -207,22 +210,22 @@ export default function E04PresentationPage() {
         <p className="e04-equation"><code>.tex</code><span>+</span><code>compilador</code><span>=</span><strong>PDF</strong></p>
       </Slide>
 
-      <Slide kicker="Modelo da disciplina" title="Não comece com uma página vazia" source="Equipe docente IT-214, Modelo LaTeX do artigo IT-214 (2026)." notes="Tempo sugerido: 4 minutos. Baixe o arquivo e mostre as seções existentes. Oriente os alunos a preservar a estrutura e preencher primeiro a introdução; resumo e resultados ainda são rascunhos futuros.">
+      <Slide kicker="Modelos do artigo" title="Escolha uma estrutura pronta e concentre-se no conteúdo" source="Equipe docente IT-214; Elsevier, Elsarticle Bundle 3.4; Caetano, M., Paper Deliverables and Templates." notes="Tempo sugerido: 4 minutos. Apresente as três alternativas. Recomende o projeto IT-214 para a oficina, mostre a opção oficial da Elsevier e explique que o DOCX permite seguir a mesma estrutura no Word.">
         <div className="e04-template-layout">
           <MediaFigure assetId="it214-2026-latex-template-preview" frameClassName="e04-template-paper" />
           <div>
-            <p>O modelo já traz preâmbulo, idioma, margens, resumo, seções e referências. Hoje, o foco está em <strong>Introdução</strong>.</p>
-            <ActionLink href={templateUrl} tone="dark">Baixar artigo-it214.tex</ActionLink>
+            <p>O projeto IT-214 já separa <strong>capítulos</strong>, <strong>referências</strong> e <strong>figuras</strong>. Também estão disponíveis o pacote oficial da Elsevier e uma alternativa editável em Word.</p>
+            <div className="e04-inline-links"><ActionLink href={templateUrl} tone="dark">Projeto IT-214</ActionLink><ActionLink href={elsevierTemplateUrl}>Elsevier</ActionLink><ActionLink href={wordTemplateUrl}>Word</ActionLink></div>
           </div>
         </div>
       </Slide>
 
-      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o modelo e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project, Upload Project ou Blank Project. Para esta aula, o caminho mais direto é criar um projeto e enviar o arquivo artigo-it214.tex.">
+      <Slide kicker="Caminho A · Overleaf" title="Crie o projeto, envie o ZIP e recompile" source="Overleaf User Documentation, Your first project (2026)." notes="Tempo sugerido: 6 minutos. Demonstre New Project e Upload Project. Para esta aula, o caminho mais direto é enviar artigo-it214.zip; o Overleaf preserva as pastas e reconhece main.tex como arquivo principal.">
         <div className="e04-overleaf-layout">
           <MediaFigure assetId="overleaf-2026-first-project-docs" frameClassName="e04-overleaf-screen" fit="cover" />
           <ol>
             <li><span>01</span><strong>Novo projeto</strong></li>
-            <li><span>02</span><strong>Envie o .tex</strong></li>
+            <li><span>02</span><strong>Envie o ZIP</strong></li>
             <li><span>03</span><strong>Recompile</strong></li>
           </ol>
         </div>
@@ -257,10 +260,11 @@ export default function E04PresentationPage() {
         <div className="e04-folder-layout">
           <div className="e04-tree" aria-label="Estrutura recomendada de arquivos do artigo">
             <strong>📁 artigo-it214-nome</strong>
-            <span>├── 📄 artigo-it214.tex</span>
-            <span>├── 📄 referencias.bib</span>
+            <span>├── 📄 main.tex</span>
+            <span>├── 📁 capitulos</span>
+            <span>├── 📁 referencias</span>
             <span>├── 📁 figuras</span>
-            <span>└── 📄 artigo-it214.pdf</span>
+            <span>└── 📄 main.pdf</span>
           </div>
           <div className="e04-delivery"><span>ÁREA DO ALUNO</span><p>Abra sua pasta individual, escolha a atividade E04 e envie a fonte, referências, figuras e PDF.</p><ActionLink href={studentAreaUrl} tone="dark">Abrir minha pasta</ActionLink></div>
         </div>
@@ -281,7 +285,7 @@ export default function E04PresentationPage() {
         </div>
         <div className="e04-final-links">
           <ActionLink href="https://www.sciencedirect.com/leapspace" tone="dark">Pesquisar</ActionLink>
-          <ActionLink href={templateUrl}>Baixar modelo</ActionLink>
+          <ActionLink href={templatesLibraryUrl}>Escolher modelo</ActionLink>
           <ActionLink href="https://www.overleaf.com/project">Escrever</ActionLink>
           <ActionLink href={studentAreaUrl}>Entregar</ActionLink>
         </div>

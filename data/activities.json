@@ -45,7 +45,7 @@
   },
   {
     "code": "E04", "meeting": 4, "date": "2026-08-25", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": ["it214-2026-latex-article-template"], "presentationSlug": "e04-pesquisa-escrita-latex",
+    "resourceIds": ["it214-2026-latex-article-template", "elsevier-2024-elsarticle-template-bundle", "it212-2026-word-paper-template"], "presentationSlug": "e04-pesquisa-escrita-latex",
     "theme": "Oficina I: Overleaf, LaTeX e VS Code, e Seminário Artigo 1",
     "objective": "Configurar o ambiente de escrita, versionamento e referências e apresentar introdução e motivação do artigo.",
     "deliverable": "Introdução, motivação, lacuna UAM, aderência à pesquisa e pergunta do artigo organizadas no Overleaf.",

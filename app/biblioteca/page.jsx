@@ -13,7 +13,7 @@ export default function LibraryPage() {
     <>
       <PageHero title="Biblioteca técnica" description="Artigos, referências regulatórias e documentos da disciplina organizados para consulta durante o semestre.">
         <div className="flex flex-wrap gap-2 lg:max-w-xs lg:justify-end">
-          {['Artigos', 'Documentos', 'Plano'].map((item) => (
+          {['Artigos', 'Documentos', 'Modelos', 'Plano'].map((item) => (
             <span className="rounded-full border border-white/15 px-3 py-2 text-xs font-bold text-slate-300" key={item}>{item}</span>
           ))}
         </div>
@@ -23,11 +23,12 @@ export default function LibraryPage() {
         <ResourceSection id="artigos" label="01" title="Artigos gerais" description="Leituras de base para compreender o ecossistema, as tecnologias e os desafios da UAM." resources={resources.generalArticles} />
         <ResourceSection id="documentos" label="02" title="Documentos técnicos e regulatórios" description="Normas, circulares, guias e documentos oficiais selecionados para cada tema." resources={resources.technicalDocuments} />
         <ResourceSection id="disciplina" label="03" title="Documentos da disciplina" description="Modelos, orientações e arquivos comuns disponibilizados pela equipe docente." resources={resources.disciplineDocuments} />
+        <ResourceSection id="modelos" label="04" title="Modelos para o artigo" description="Escolha o projeto LaTeX organizado da disciplina, o pacote oficial da Elsevier ou a alternativa editável em Word." resources={resources.workspaceTemplates} />
 
         <section id="plano" className="scroll-mt-28 border-t border-slate-200 pt-12">
           <div className="grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
             <div>
-              <span className="text-xs font-black uppercase tracking-[.18em] text-cyan-700">04 · Plano da disciplina</span>
+              <span className="text-xs font-black uppercase tracking-[.18em] text-cyan-700">05 · Plano da disciplina</span>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-ink">Percurso formativo {course.term}</h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">{course.description}</p>
               <div className="mt-7 rounded-2xl bg-mist p-5">

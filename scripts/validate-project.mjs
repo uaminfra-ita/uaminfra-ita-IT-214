@@ -78,11 +78,14 @@ allResources.forEach((resource) => {
     assert.ok(resource.assetPath.startsWith('/resources/discipline/'), `${resource.id} deve usar a pasta da disciplina.`);
   } else if (resource.category === 'latex-template') {
     assert.ok(resource.assetPath.startsWith('/templates/latex/'), `${resource.id} deve usar a pasta pública de modelos LaTeX.`);
+  } else if (resource.category === 'document-template') {
+    assert.ok(resource.assetPath.startsWith('/templates/word/'), `${resource.id} deve usar a pasta pública de modelos Word.`);
   } else {
     assert.fail(`Categoria de recurso desconhecida em ${resource.id}.`);
   }
   if (resource.doi) assert.ok(resource.publisherUrl.includes(resource.doi) || resource.id === 'nrel-2023-vertiport-electrical', `${resource.id} possui DOI divergente da fonte.`);
-  if (resource.category === 'latex-template') assert.ok(resource.assetPath.endsWith('.tex'), `${resource.id} deve apontar para um arquivo .tex.`);
+  if (resource.category === 'latex-template') assert.ok(resource.assetPath.endsWith('.zip'), `${resource.id} deve apontar para um arquivo .zip.`);
+  else if (resource.category === 'document-template') assert.ok(resource.assetPath.endsWith('.docx'), `${resource.id} deve apontar para um arquivo .docx.`);
   else assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
   assert.match(resource.sha256, /^[A-F0-9]{64}$/, `${resource.id} possui SHA-256 inválido.`);
   assert.ok(!hashes.has(resource.sha256), `${resource.id} duplica um arquivo já declarado.`);
@@ -91,10 +94,7 @@ allResources.forEach((resource) => {
   const fullPath = path.join(root, 'public', relativePath);
   assert.ok(fs.existsSync(fullPath), `Recurso público ausente: ${resource.assetPath}.`);
   const fileContents = fs.readFileSync(fullPath);
-  const canonicalContents = resource.category === 'latex-template'
-    ? Buffer.from(fileContents.toString('utf8').replaceAll('\r\n', '\n'))
-    : fileContents;
-  const actualHash = createHash('sha256').update(canonicalContents).digest('hex').toUpperCase();
+  const actualHash = createHash('sha256').update(fileContents).digest('hex').toUpperCase();
   assert.equal(actualHash, resource.sha256, `Checksum divergente: ${resource.assetPath}.`);
   declaredPublicResourcePaths.push(path.relative(root, fullPath));
 });
@@ -184,12 +184,13 @@ const actualPdfPaths = repositoryFiles.filter((file) => path.extname(file).toLow
 const declaredPdfPaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
 assert.deepEqual(actualPdfPaths, declaredPdfPaths, 'Todo PDF no repositório deve estar declarado no catálogo.');
 const actualLatexTemplatePaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}templates${path.sep}latex${path.sep}`) && path.extname(file).toLowerCase() === '.tex').sort();
-const declaredLatexTemplatePaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.tex').sort();
-assert.deepEqual(actualLatexTemplatePaths, declaredLatexTemplatePaths, 'Todo modelo LaTeX público deve estar declarado no catálogo.');
+const latexProjectSourceRoot = path.join('public', 'templates', 'latex', 'artigo-it214') + path.sep;
+assert.ok(actualLatexTemplatePaths.length > 0 && actualLatexTemplatePaths.every((file) => file.startsWith(latexProjectSourceRoot)), 'Fontes LaTeX avulsos devem pertencer ao projeto público catalogado da IT-214.');
 const actualPresentationMediaPaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}images${path.sep}presentations${path.sep}`)).sort();
 assert.deepEqual(actualPresentationMediaPaths, declaredPresentationMediaPaths.sort(), 'Toda imagem de apresentação deve estar declarada no catálogo visual.');
 const bannedExtensions = new Set(['.xls', '.xlsx', '.doc', '.docx', '.ppt', '.pptx', '.r']);
-assert.deepEqual(repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase())), [], 'Arquivos Office, planilhas ou scripts R não devem ser publicados.');
+const undeclaredSensitiveFiles = repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase()) && !declaredPublicResourcePaths.includes(file));
+assert.deepEqual(undeclaredSensitiveFiles, [], 'Arquivos Office, planilhas ou scripts R só podem existir quando declarados como recursos públicos.');
 
 const retiredPaths = ['data/students.json', 'components/StudentPortal.jsx', 'lib/studentWorkspace.mjs', 'lib/supabaseClient.js', 'scripts/generate-credentials.mjs', 'scripts/check-deploy-env.mjs', 'scripts/test-supabase-rls.mjs', 'supabase', 'students'];
 retiredPaths.forEach((retiredPath) => assert.ok(!fs.existsSync(path.join(root, retiredPath)), `Artefato descontinuado ainda existe: ${retiredPath}.`));

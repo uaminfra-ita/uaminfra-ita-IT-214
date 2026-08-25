@@ -5,7 +5,9 @@ function assetUrl(path) {
 }
 
 function ResourceCard({ resource }) {
-  const pdfUrl = assetUrl(resource.assetPath);
+  const fileUrl = assetUrl(resource.assetPath);
+  const extension = resource.assetPath.split('.').pop().toUpperCase();
+  const isPdf = extension === 'PDF';
   const identifier = resource.doi ? `DOI ${resource.doi}` : resource.documentNumber;
 
   return (
@@ -24,9 +26,9 @@ function ResourceCard({ resource }) {
       <div className="mt-5 flex flex-wrap gap-2">
         {resource.tags.map((tag) => <span className="rounded-full bg-mist px-3 py-1 text-[.68rem] font-bold text-slate-600" key={tag}>{tag}</span>)}
       </div>
-      <div className="mt-5 grid gap-2 sm:grid-cols-3">
-        <a className="button-dark !px-3 !py-2 text-xs" href={pdfUrl} target="_blank" rel="noreferrer">Ler PDF</a>
-        <a className="inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={pdfUrl} download>Baixar</a>
+      <div className={`mt-5 grid gap-2 ${isPdf ? 'sm:grid-cols-3' : 'sm:grid-cols-2'}`}>
+        {isPdf && <a className="button-dark !px-3 !py-2 text-xs" href={fileUrl} target="_blank" rel="noreferrer">Ler PDF</a>}
+        <a className={`${isPdf ? '' : 'button-dark'} inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-black transition hover:border-cyan-400`} href={fileUrl} download>{`Baixar ${extension}`}</a>
         <a className="inline-flex items-center justify-center gap-1 rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={resource.publisherUrl} target="_blank" rel="noreferrer" aria-label={`Abrir fonte oficial de ${resource.title}`}>Fonte oficial <Icon name="external" className="h-3.5 w-3.5" /></a>
       </div>
     </article>

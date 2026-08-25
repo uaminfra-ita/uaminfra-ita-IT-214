@@ -4,7 +4,7 @@ Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica
 ## Rotas
 
 - `/`: apresentação, objetivos, módulos e equipe docente.
-- `/biblioteca`: artigos públicos, referências e plano da disciplina.
+- `/biblioteca`: artigos públicos, referências, modelos e plano da disciplina.
 - `/atividades`: cronograma dos 16 encontros, entregáveis e checkpoints.
 - `/apresentacoes/e02-nivelamento-uam`: apresentação da aula de 11/08/2026.
 - `/apresentacoes/e03-regulamentacao-conops`: apresentação da aula de 18/08/2026.
@@ -12,7 +12,7 @@ Portal acadêmico da disciplina IT-214 do Instituto Tecnológico de Aeronáutica
 
 ## Conteúdo
 
-Curso, atividades, recursos, apresentações, ativos visuais e acesso piloto são declarados em `data/`. Arquivos públicos ficam em `public/resources/` e só passam na validação quando possuem público explícito, licença, relação acadêmica e checksum correto. A Biblioteca inclui artigos gerais, documentos técnicos da ANAC, DECEA, FAA, EASA, NREL e CITYAM e o plano de ensino oficial de 2026/2.
+Curso, atividades, recursos, apresentações, ativos visuais e acesso piloto são declarados em `data/`. Arquivos públicos ficam em `public/resources/` e `public/templates/` e só passam na validação quando possuem público explícito, licença, relação acadêmica e checksum correto. A Biblioteca inclui artigos gerais, documentos técnicos da ANAC, DECEA, FAA, EASA, NREL e CITYAM, o plano de ensino oficial de 2026/2 e três modelos para o artigo.
 
 A Área do aluno usa o GitHub Pages como interface e o Google Drive para atividades, projetos LaTeX, dúvidas e solicitações de acesso. O botão de envio abre a pasta individual correta; senhas legíveis e e-mails de login permanecem em `.private/`, fora do Git, e o catálogo versionado recebe apenas hashes e nomes do piloto.
 

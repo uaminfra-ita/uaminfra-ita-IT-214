@@ -173,14 +173,28 @@
       "Oficina e CP1"
     ],
     "resourceIds": [
-      "it214-2026-latex-article-template"
+      "it214-2026-latex-article-template",
+      "elsevier-2024-elsarticle-template-bundle",
+      "it212-2026-word-paper-template"
     ],
     "references": [
       {
         "shortTitle": "Modelo LaTeX IT-214 (2026)",
-        "citation": "Equipe docente IT-214. Modelo LaTeX do artigo IT-214.",
-        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.tex",
-        "purpose": "Estrutura inicial do artigo e atividade prática"
+        "citation": "Equipe docente IT-214. Projeto LaTeX organizado do artigo IT-214.",
+        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/latex/artigo-it214.zip",
+        "purpose": "Estrutura inicial organizada do artigo e atividade prática"
+      },
+      {
+        "shortTitle": "Elsarticle 3.4 (2024)",
+        "citation": "Elsevier Ltd. Elsarticle Bundle, versão 3.4.",
+        "url": "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions",
+        "purpose": "Modelo oficial alternativo para manuscritos Elsevier"
+      },
+      {
+        "shortTitle": "Modelo Word IT-212 (2026)",
+        "citation": "Caetano, M. Paper Deliverables and Templates.",
+        "url": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/templates/word/modelo-entregas-artigo-it212.docx",
+        "purpose": "Alternativa editável em Word para estruturar o artigo"
       },
       {
         "shortTitle": "LeapSpace (2026)",

@@ -25,15 +25,16 @@ assert.equal(
   'O artefato público contém o documento privado SIGMA_c_PIII.pdf.',
 );
 
-const actualPdfPaths = outputFiles
-  .filter((file) => path.extname(file).toLowerCase() === '.pdf')
+const cataloguedExtensions = new Set(['.pdf', '.zip', '.docx']);
+const actualResourcePaths = outputFiles
+  .filter((file) => cataloguedExtensions.has(path.extname(file).toLowerCase()))
   .sort();
-const declaredPdfPaths = allResources
-  .filter((resource) => resource.assetPath.toLowerCase().endsWith('.pdf'))
+const declaredResourcePaths = allResources
+  .filter((resource) => cataloguedExtensions.has(path.extname(resource.assetPath).toLowerCase()))
   .map((resource) => resource.assetPath.slice(1).replaceAll('/', path.sep))
   .sort();
 
-assert.deepEqual(actualPdfPaths, declaredPdfPaths, 'Os PDFs exportados devem corresponder exatamente ao catálogo público.');
+assert.deepEqual(actualResourcePaths, declaredResourcePaths, 'Os documentos exportados devem corresponder exatamente ao catálogo público.');
 
 const searchableExtensions = new Set(['.html', '.js', '.json', '.txt', '.xml']);
 const leakedReference = outputFiles
@@ -41,4 +42,4 @@ const leakedReference = outputFiles
   .find((file) => fs.readFileSync(path.join(outputDirectory, file), 'utf8').toLowerCase().includes('sigma_c_piii'));
 assert.equal(leakedReference, undefined, `Referência ao SIGMA encontrada no artefato público: ${leakedReference}`);
 
-console.log(`Auditoria pública concluída: ${outputFiles.length} arquivos e ${actualPdfPaths.length} PDFs declarados.`);
+console.log(`Auditoria pública concluída: ${outputFiles.length} arquivos e ${actualResourcePaths.length} documentos declarados.`);
