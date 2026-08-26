@@ -4,7 +4,7 @@
   "author": "Equipe docente IT-214",
   "source": "https://drive.google.com/drive/folders/1gvR3IVO4j9iGXw9Zt7oxQluUcDS5k7EJ",
   "license": "Uso acadêmico; o acesso aos arquivos é controlado pelas permissões do Google Drive.",
-  "summary": "Destinos individuais para atividades e projeto LaTeX da turma 2026/2.",
+  "summary": "Destinos individuais para atividades, projeto LaTeX e orientações acadêmicas restritas da turma 2026/2.",
   "relations": {
     "courseCode": "IT-214",
     "term": "2026/2",
@@ -15,12 +15,18 @@
     "8879678d806387b8": {
       "rootFolderId": "1EOIDZ2LFuFCCGwA8hCeAW5oPdVZNBg7W",
       "activitiesFolderId": "1F4-pICrQ7VuM0Hb-ShB-fb6_9AiZO2FK",
-      "latexFolderId": "1ov0T1XpyKZirMO9iLJBKku8OvWkOrnbK"
+      "latexFolderId": "1ov0T1XpyKZirMO9iLJBKku8OvWkOrnbK",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "1uKvIh8bTcgYIPIc28H4yrtACI7xyefTgspTbtasqDPs"
     },
     "b50528571ebb4260": {
       "rootFolderId": "1VgTikaEgaXFBbC7neO6oW2Tk5PhoUpzY",
       "activitiesFolderId": "1rBHY9JS4PMNa9tzK39w6YiWoFk8gq159",
-      "latexFolderId": "1CMpluGX763a8FlPf_0GbD8Tm56wnOdKR"
+      "latexFolderId": "1CMpluGX763a8FlPf_0GbD8Tm56wnOdKR",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "19OzLoqiDO1Wtk5RrLAfTEjmMLZn5PcUC45Uu5-jAxes"
     },
     "519c2e88eb501cf8": {
       "rootFolderId": "1S_pOB1MR0jcXdXXt0Iy-m5tnUuRIC29m",
@@ -30,22 +36,34 @@
     "36d818268421ace7": {
       "rootFolderId": "1YU8L1EnC_gylpRropZ0cNPHPVnzQR2lx",
       "activitiesFolderId": "1lwtS5ZDjHcMN4ofwRyZ2tQP5BCjL_JZj",
-      "latexFolderId": "1M-2XH8ZW1UPEVzSbc2NT1MVR8qyaYFkw"
+      "latexFolderId": "1M-2XH8ZW1UPEVzSbc2NT1MVR8qyaYFkw",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "193B6Hv04ahP6B4W4fbpGGuvApNmKw5FGeOoiGSuWPVA"
     },
     "18fc53299dead74f": {
       "rootFolderId": "1c-4Bns2xheXmsoaUE--kUZOCUVf9Z80m",
       "activitiesFolderId": "1awbsyEB3lV52FtueIZgXanxe1hvu7OBM",
-      "latexFolderId": "11z43T46K-m85xv6p3Pc89Oynpbr2XBZM"
+      "latexFolderId": "11z43T46K-m85xv6p3Pc89Oynpbr2XBZM",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "1B6m-DRMgSfcjXJTlholhRdOuM_4-QbzhkgJdcQ-v7Hw"
     },
     "3c769715e8fd07a8": {
       "rootFolderId": "1KwomKpegDdrVoUhzl-vH0zPoT9_CQafr",
       "activitiesFolderId": "15hOq3noiqD-6WX1NpLqZP9gb-KB5kEB1",
-      "latexFolderId": "1tHNcbcYejWWk3B6YZs16LXFytPV_11Vg"
+      "latexFolderId": "1tHNcbcYejWWk3B6YZs16LXFytPV_11Vg",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "1KXNQ2EHiPcFpH9X8AyjIGtYYpwCyal1MhzU2gFODkTs"
     },
     "9519106561532f33": {
       "rootFolderId": "1nRt3hLBEaB1nUOHCCBsfxD7ag3eesnK3",
       "activitiesFolderId": "1j2SmWjjCdqW_F2Aig31z5WnmbVAyZA5K",
-      "latexFolderId": "15Y4jfuCfoVuTljrCHl7y9ouOLFy71hyS"
+      "latexFolderId": "15Y4jfuCfoVuTljrCHl7y9ouOLFy71hyS",
+      "guidanceAudience": "student",
+      "guidanceStatus": "initial-suggestion",
+      "guidanceDocumentId": "1uGUtncc-Pstxg2yI0-dn33jyn5ywIwuQ07Ilal-uiLM"
     },
     "93149eca1ca18a77": {
       "rootFolderId": "1gU_GvnO4eBZlryUwsXNcHa9JzDyfJ-RK",

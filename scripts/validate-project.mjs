@@ -235,6 +235,11 @@ assert.deepEqual(Object.keys(driveWorkspaces.destinations).sort(), studentIds, '
 Object.values(driveWorkspaces.destinations).forEach((destination) => {
   ['rootFolderId', 'activitiesFolderId', 'latexFolderId'].forEach((field) => assert.match(destination[field], /^[A-Za-z0-9_-]{20,}$/, `ID de pasta inválido em ${field}.`));
   assert.ok(!Object.hasOwn(destination, 'supportFolderId'), 'Pastas de suporte não devem continuar no fluxo ativo do Drive.');
+  if (Object.hasOwn(destination, 'guidanceDocumentId')) {
+    assert.equal(destination.guidanceAudience, 'student', 'Orientação individual deve declarar audience student.');
+    assert.equal(destination.guidanceStatus, 'initial-suggestion', 'Orientação individual deve declarar caráter de sugestão inicial.');
+    assert.match(destination.guidanceDocumentId, /^[A-Za-z0-9_-]{20,}$/, 'ID de documento de orientação inválido.');
+  }
 });
 assert.equal(courseContact.resourceId, 'it214-2026-2-public-contact', 'Contato público sem identificador estável.');
 assert.equal(courseContact.audience, 'public', 'Contato exibido no Pages precisa declarar audience public.');
@@ -247,6 +252,8 @@ assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Gu
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');
 assert.ok(authComponent.includes('sessionStorage'), 'A sessão deve usar sessionStorage.');
+assert.ok(authComponent.includes('não é uma verdade absoluta nem um recorte obrigatório'), 'Orientação individual deve explicitar seu caráter consultivo.');
+assert.ok(authComponent.includes('studentGuidanceFor'), 'Painel do aluno deve resolver orientações individuais por ID opaco.');
 const submissionComponent = fs.readFileSync(path.join(root, 'components', 'SubmissionWorkspace.jsx'), 'utf8');
 assert.ok(submissionComponent.includes('Localizar aluno'), 'Painel docente deve permitir busca nominal.');
 assert.ok(submissionComponent.includes('Abrir minha pasta de atividades'), 'Aluno deve acessar sua pasta individual de atividades.');
