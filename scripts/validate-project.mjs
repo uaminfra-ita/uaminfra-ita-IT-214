@@ -78,11 +78,14 @@ allResources.forEach((resource) => {
     assert.ok(resource.assetPath.startsWith('/resources/discipline/'), `${resource.id} deve usar a pasta da disciplina.`);
   } else if (resource.category === 'latex-template') {
     assert.ok(resource.assetPath.startsWith('/templates/latex/'), `${resource.id} deve usar a pasta pública de modelos LaTeX.`);
+  } else if (resource.category === 'document-template') {
+    assert.ok(resource.assetPath.startsWith('/templates/word/'), `${resource.id} deve usar a pasta pública de modelos Word.`);
   } else {
     assert.fail(`Categoria de recurso desconhecida em ${resource.id}.`);
   }
   if (resource.doi) assert.ok(resource.publisherUrl.includes(resource.doi) || resource.id === 'nrel-2023-vertiport-electrical', `${resource.id} possui DOI divergente da fonte.`);
-  if (resource.category === 'latex-template') assert.ok(resource.assetPath.endsWith('.tex'), `${resource.id} deve apontar para um arquivo .tex.`);
+  if (resource.category === 'latex-template') assert.ok(/\.(?:tex|zip)$/.test(resource.assetPath), `${resource.id} deve apontar para um arquivo .tex ou .zip.`);
+  else if (resource.category === 'document-template') assert.ok(resource.assetPath.endsWith('.docx'), `${resource.id} deve apontar para um arquivo .docx.`);
   else assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
   assert.match(resource.sha256, /^[A-F0-9]{64}$/, `${resource.id} possui SHA-256 inválido.`);
   assert.ok(!hashes.has(resource.sha256), `${resource.id} duplica um arquivo já declarado.`);
@@ -91,10 +94,7 @@ allResources.forEach((resource) => {
   const fullPath = path.join(root, 'public', relativePath);
   assert.ok(fs.existsSync(fullPath), `Recurso público ausente: ${resource.assetPath}.`);
   const fileContents = fs.readFileSync(fullPath);
-  const canonicalContents = resource.category === 'latex-template'
-    ? Buffer.from(fileContents.toString('utf8').replaceAll('\r\n', '\n'))
-    : fileContents;
-  const actualHash = createHash('sha256').update(canonicalContents).digest('hex').toUpperCase();
+  const actualHash = createHash('sha256').update(fileContents).digest('hex').toUpperCase();
   assert.equal(actualHash, resource.sha256, `Checksum divergente: ${resource.assetPath}.`);
   declaredPublicResourcePaths.push(path.relative(root, fullPath));
 });
@@ -184,12 +184,14 @@ const actualPdfPaths = repositoryFiles.filter((file) => path.extname(file).toLow
 const declaredPdfPaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.pdf').sort();
 assert.deepEqual(actualPdfPaths, declaredPdfPaths, 'Todo PDF no repositório deve estar declarado no catálogo.');
 const actualLatexTemplatePaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}templates${path.sep}latex${path.sep}`) && path.extname(file).toLowerCase() === '.tex').sort();
-const declaredLatexTemplatePaths = declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.tex').sort();
-assert.deepEqual(actualLatexTemplatePaths, declaredLatexTemplatePaths, 'Todo modelo LaTeX público deve estar declarado no catálogo.');
+const declaredLatexTemplatePaths = new Set(declaredPublicResourcePaths.filter((file) => path.extname(file).toLowerCase() === '.tex'));
+const latexProjectSourceRoot = path.join('public', 'templates', 'latex', 'artigo-it214') + path.sep;
+assert.ok(actualLatexTemplatePaths.length > 0 && actualLatexTemplatePaths.every((file) => declaredLatexTemplatePaths.has(file) || file.startsWith(latexProjectSourceRoot)), 'Toda fonte LaTeX deve ser um recurso catalogado ou pertencer ao projeto público organizado da IT-214.');
 const actualPresentationMediaPaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}images${path.sep}presentations${path.sep}`)).sort();
 assert.deepEqual(actualPresentationMediaPaths, declaredPresentationMediaPaths.sort(), 'Toda imagem de apresentação deve estar declarada no catálogo visual.');
 const bannedExtensions = new Set(['.xls', '.xlsx', '.doc', '.docx', '.ppt', '.pptx', '.r']);
-assert.deepEqual(repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase())), [], 'Arquivos Office, planilhas ou scripts R não devem ser publicados.');
+const undeclaredSensitiveFiles = repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase()) && !declaredPublicResourcePaths.includes(file));
+assert.deepEqual(undeclaredSensitiveFiles, [], 'Arquivos Office, planilhas ou scripts R só podem existir quando declarados como recursos públicos.');
 
 const retiredPaths = ['data/students.json', 'components/StudentPortal.jsx', 'lib/studentWorkspace.mjs', 'lib/supabaseClient.js', 'scripts/generate-credentials.mjs', 'scripts/check-deploy-env.mjs', 'scripts/test-supabase-rls.mjs', 'supabase', 'students'];
 retiredPaths.forEach((retiredPath) => assert.ok(!fs.existsSync(path.join(root, retiredPath)), `Artefato descontinuado ainda existe: ${retiredPath}.`));
@@ -235,6 +237,11 @@ assert.deepEqual(Object.keys(driveWorkspaces.destinations).sort(), studentIds, '
 Object.values(driveWorkspaces.destinations).forEach((destination) => {
   ['rootFolderId', 'activitiesFolderId', 'latexFolderId'].forEach((field) => assert.match(destination[field], /^[A-Za-z0-9_-]{20,}$/, `ID de pasta inválido em ${field}.`));
   assert.ok(!Object.hasOwn(destination, 'supportFolderId'), 'Pastas de suporte não devem continuar no fluxo ativo do Drive.');
+  if (Object.hasOwn(destination, 'guidanceDocumentId')) {
+    assert.equal(destination.guidanceAudience, 'student', 'Orientação individual deve declarar audience student.');
+    assert.equal(destination.guidanceStatus, 'initial-suggestion', 'Orientação individual deve declarar caráter de sugestão inicial.');
+    assert.match(destination.guidanceDocumentId, /^[A-Za-z0-9_-]{20,}$/, 'ID de documento de orientação inválido.');
+  }
 });
 assert.equal(courseContact.resourceId, 'it214-2026-2-public-contact', 'Contato público sem identificador estável.');
 assert.equal(courseContact.audience, 'public', 'Contato exibido no Pages precisa declarar audience public.');
@@ -247,6 +254,8 @@ assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Gu
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');
 assert.ok(authComponent.includes('sessionStorage'), 'A sessão deve usar sessionStorage.');
+assert.ok(authComponent.includes('não é uma verdade absoluta nem um recorte obrigatório'), 'Orientação individual deve explicitar seu caráter consultivo.');
+assert.ok(authComponent.includes('studentGuidanceFor'), 'Painel do aluno deve resolver orientações individuais por ID opaco.');
 const submissionComponent = fs.readFileSync(path.join(root, 'components', 'SubmissionWorkspace.jsx'), 'utf8');
 assert.ok(submissionComponent.includes('Localizar aluno'), 'Painel docente deve permitir busca nominal.');
 assert.ok(submissionComponent.includes('Abrir minha pasta de atividades'), 'Aluno deve acessar sua pasta individual de atividades.');

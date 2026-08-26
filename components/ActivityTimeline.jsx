@@ -2,7 +2,10 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Icon from './Icon';
+import resources from '@/data/resources.json';
 import { courseDateKey, isActivityPast, nextScheduledActivity } from '@/lib/courseDates.mjs';
+
+const templateIds = new Set(resources.workspaceTemplates.map((resource) => resource.id));
 
 const filters = [
   { id: 'all', label: 'Tudo' },
@@ -53,6 +56,7 @@ export default function ActivityTimeline({ activities }) {
             const isPast = today ? isActivityPast(activity, today) : activity.status === 'completed';
             const isNext = nextActivity?.code === activity.code;
             const isCancelled = activity.status === 'cancelled';
+            const hasTemplates = activity.resourceIds.some((id) => templateIds.has(id));
             return (
               <article className={`relative grid gap-5 pl-[72px] sm:grid-cols-[80px_1fr] sm:pl-0 ${isCancelled ? 'opacity-65' : ''}`} key={activity.code}>
                 <time className="hidden pt-6 text-right text-xs font-black uppercase tracking-[.12em] text-slate-500 sm:block" dateTime={activity.date}>{formatDate(activity.date)}</time>
@@ -74,7 +78,7 @@ export default function ActivityTimeline({ activities }) {
                   {(activity.presentationSlug || activity.resourceIds.length > 0) && (
                     <div className="mt-5 flex flex-wrap gap-3">
                       {activity.presentationSlug && <a className="button-dark" href={`${basePath}/apresentacoes/${activity.presentationSlug}/`}><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação</a>}
-                      {activity.resourceIds.length > 0 && <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-700 hover:border-cyan-400" href={`${basePath}/biblioteca/#artigos`}><Icon name="library" className="h-4 w-4" /> {activity.resourceIds.length} leituras-base</a>}
+                      {activity.resourceIds.length > 0 && <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-700 hover:border-cyan-400" href={`${basePath}/biblioteca/#${hasTemplates ? 'modelos' : 'artigos'}`}><Icon name="library" className="h-4 w-4" /> {activity.resourceIds.length} {hasTemplates ? 'modelos' : 'leituras-base'}</a>}
                     </div>
                   )}
                 </div>

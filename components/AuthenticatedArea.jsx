@@ -6,6 +6,7 @@ import activities from '@/data/activities.json';
 import resources from '@/data/resources.json';
 import course from '@/data/course.json';
 import { nextScheduledActivity } from '@/lib/courseDates.mjs';
+import { studentGuidanceFor } from '@/lib/driveCourse.mjs';
 import Icon from './Icon';
 import SubmissionWorkspace, { StaffSubmissionOverview } from './SubmissionWorkspace';
 import StudentServices from './StudentServices';
@@ -106,6 +107,22 @@ function DashboardHeader({ name, role, onLogout }) {
   return <div className="flex flex-col gap-5 rounded-3xl bg-ink p-7 text-white sm:flex-row sm:items-center sm:justify-between"><div><span className="text-xs font-black uppercase tracking-[.17em] text-cyan-300">{role === 'student' ? 'Painel do aluno' : 'Painel docente'}</span><h2 className="mt-2 text-3xl font-black">Olá, {name}.</h2></div><button className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-black transition hover:bg-white/10" type="button" onClick={onLogout}><Icon name="logout" className="h-4 w-4" /> Encerrar sessão</button></div>;
 }
 
+function IndividualGuidance({ studentId }) {
+  const guidance = studentGuidanceFor(studentId);
+  if (!guidance) return <section className="surface-card"><span className="eyebrow">Materiais individuais</span><h3 className="mt-5 text-xl font-black text-ink">Nenhuma indicação individual</h3><p className="mt-3 text-sm leading-6 text-slate-600">Quando a equipe preparar uma orientação acadêmica para seu tema, o acesso aparecerá aqui.</p></section>;
+
+  return (
+    <section className="surface-card border-cyan-200 bg-cyan-50/40">
+      <span className="eyebrow">Orientação inicial</span>
+      <h3 className="mt-5 text-xl font-black text-ink">O que sugerimos para seu artigo</h3>
+      <p className="mt-3 text-sm leading-6 text-slate-700">Este material reúne o que a equipe docente e os monitores sugerem com base apenas no tema que você propôs. Ele expressa a visão acadêmica da equipe neste momento: não é uma verdade absoluta nem um recorte obrigatório.</p>
+      <p className="mt-3 text-sm leading-6 text-slate-600">A orientação será revista conforme sua pergunta, seu método, suas evidências e sua própria escrita evoluírem. As decisões intelectuais e a autoria do artigo continuam sendo suas.</p>
+      <a className="button-dark mt-6" href={guidance.documentUrl} target="_blank" rel="noreferrer"><Icon name="external" className="h-4 w-4" /> Abrir orientação no Drive</a>
+      <p className="mt-4 text-xs leading-5 text-slate-500">O documento usa as permissões da sua pasta individual no Google Drive.</p>
+    </section>
+  );
+}
+
 function StudentDashboard({ profile, membership, onLogout }) {
   const nextActivity = nextScheduledActivity(activities);
   const upcoming = nextActivity ? activities.filter((item) => item.status === 'scheduled' && item.date >= nextActivity.date).slice(0, 4) : [];
@@ -119,7 +136,7 @@ function StudentDashboard({ profile, membership, onLogout }) {
       <StudentServices studentId={profile.id} studentName={profile.full_name} />
       <div className="grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
         <section className="surface-card"><span className="eyebrow">Próximo encontro</span>{nextActivity ? <><h3 className="mt-5 text-2xl font-black text-ink">{nextActivity.theme}</h3><p className="mt-3 text-sm font-bold text-cyan-800">{formatDate(nextActivity.date)} · 09h–12h</p><p className="mt-4 text-sm leading-6 text-slate-600">{nextActivity.objective}</p>{nextActivity.presentationSlug && <a className="button-dark mt-6" href={`${basePath}/apresentacoes/${nextActivity.presentationSlug}/`}><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação</a>}</> : <><h3 className="mt-5 text-2xl font-black text-ink">Sem encontros futuros</h3><p className="mt-3 text-sm leading-6 text-slate-600">O cronograma regular deste período foi concluído.</p></>}</section>
-        <section className="surface-card"><span className="eyebrow">Materiais individuais</span><h3 className="mt-5 text-xl font-black text-ink">Nenhuma indicação individual</h3><p className="mt-3 text-sm leading-6 text-slate-600">Materiais específicos e não sigilosos destinados a você aparecerão aqui em uma etapa futura.</p></section>
+        <IndividualGuidance studentId={profile.id} />
       </div>
       <section className="surface-card"><span className="eyebrow">Próximas aulas</span><h3 className="mt-4 text-2xl font-black text-ink">Sequência da disciplina</h3><div className="mt-6 grid gap-3 sm:grid-cols-2">{upcoming.map((item) => <div className="rounded-2xl border border-slate-200 p-4" key={item.code}><div className="flex items-center justify-between gap-3"><strong className="text-ink">{item.code} · {item.theme}</strong><span className="text-xs font-black text-cyan-800">{formatDate(item.date)}</span></div><p className="mt-2 text-xs leading-5 text-slate-500">{item.deliverable}</p></div>)}</div></section>
       <section className="surface-card"><span className="eyebrow">Leituras gerais</span><div className="mt-6 grid gap-4 lg:grid-cols-3">{readings.map((resource) => <a className="rounded-2xl border border-slate-200 p-4 transition hover:border-cyan-400" href={`${basePath}${resource.assetPath}`} target="_blank" rel="noreferrer" key={resource.id}><strong className="block text-sm leading-5 text-ink">{resource.title}</strong><span className="mt-3 inline-flex items-center gap-1 text-xs font-black text-cyan-800">Abrir PDF <Icon name="external" className="h-3.5 w-3.5" /></span></a>)}</div></section>
