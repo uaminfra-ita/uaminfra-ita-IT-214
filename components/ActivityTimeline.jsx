@@ -18,6 +18,12 @@ function formatDate(value) {
   return new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', timeZone: 'UTC' }).format(new Date(`${value}T12:00:00Z`));
 }
 
+function formatDeadline(value) {
+  return new Intl.DateTimeFormat('pt-BR', {
+    day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo',
+  }).format(new Date(value));
+}
+
 function statusLabel(activity) {
   if (activity.status === 'cancelled') return 'Cancelado';
   if (activity.status === 'completed') return 'Concluído';
@@ -57,8 +63,10 @@ export default function ActivityTimeline({ activities }) {
             const isNext = nextActivity?.code === activity.code;
             const isCancelled = activity.status === 'cancelled';
             const hasTemplates = activity.resourceIds.some((id) => templateIds.has(id));
+            const resourceSection = activity.resourceSection || (hasTemplates ? 'modelos' : 'artigos');
+            const resourceLabel = activity.resourceSection === 'disciplina' ? 'materiais da aula' : hasTemplates ? 'modelos' : 'leituras-base';
             return (
-              <article className={`relative grid gap-5 pl-[72px] sm:grid-cols-[80px_1fr] sm:pl-0 ${isCancelled ? 'opacity-65' : ''}`} key={activity.code}>
+              <article className={`relative grid scroll-mt-28 gap-5 pl-[72px] sm:grid-cols-[80px_1fr] sm:pl-0 ${isCancelled ? 'opacity-65' : ''}`} id={activity.code} key={activity.code}>
                 <time className="hidden pt-6 text-right text-xs font-black uppercase tracking-[.12em] text-slate-500 sm:block" dateTime={activity.date}>{formatDate(activity.date)}</time>
                 <div className="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_55px_-42px_rgba(7,20,38,.5)] sm:ml-8 sm:p-8">
                   <span className={`absolute -left-[58px] top-6 grid h-9 w-9 place-items-center rounded-full border-4 border-slate-50 text-xs font-black sm:-left-[51px] ${isCancelled ? 'bg-red-100 text-red-700' : isPast ? 'bg-slate-300 text-slate-600' : isNext ? 'bg-cyan-300 text-ink shadow-[0_0_0_7px_rgba(45,212,191,.15)]' : 'bg-ink text-white'}`}>
@@ -73,12 +81,12 @@ export default function ActivityTimeline({ activities }) {
                   <p className="mt-3 text-sm leading-7 text-slate-600">{activity.objective}</p>
                   <div className="mt-5 flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
                     <Icon name={activity.type === 'break' ? 'calendar' : 'check'} className="mt-0.5 h-5 w-5 shrink-0 text-cyan-700" />
-                    <div><span className="block text-[.65rem] font-black uppercase tracking-[.16em] text-slate-400">Entregável</span><p className="mt-1 text-sm font-semibold leading-6 text-slate-700">{activity.deliverable}</p></div>
+                    <div><span className="block text-[.65rem] font-black uppercase tracking-[.16em] text-slate-400">Entregável</span><p className="mt-1 text-sm font-semibold leading-6 text-slate-700">{activity.deliverable}</p>{activity.submission?.dueAt && <p className="mt-2 text-xs font-black uppercase tracking-[.08em] text-cyan-800">Entrega até {formatDeadline(activity.submission.dueAt)}</p>}</div>
                   </div>
                   {(activity.presentationSlug || activity.resourceIds.length > 0) && (
                     <div className="mt-5 flex flex-wrap gap-3">
                       {activity.presentationSlug && <a className="button-dark" href={`${basePath}/apresentacoes/${activity.presentationSlug}/`}><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação</a>}
-                      {activity.resourceIds.length > 0 && <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-700 hover:border-cyan-400" href={`${basePath}/biblioteca/#${hasTemplates ? 'modelos' : 'artigos'}`}><Icon name="library" className="h-4 w-4" /> {activity.resourceIds.length} {hasTemplates ? 'modelos' : 'leituras-base'}</a>}
+                      {activity.resourceIds.length > 0 && <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-700 hover:border-cyan-400" href={`${basePath}/biblioteca/#${resourceSection}`}><Icon name="library" className="h-4 w-4" /> {activity.resourceIds.length} {resourceLabel}</a>}
                     </div>
                   )}
                 </div>

@@ -8,6 +8,7 @@ function ResourceCard({ resource }) {
   const fileUrl = assetUrl(resource.assetPath);
   const extension = resource.assetPath.split('.').pop().toUpperCase();
   const isPdf = extension === 'PDF';
+  const isMacroSpreadsheet = extension === 'XLSM';
   const identifier = resource.doi ? `DOI ${resource.doi}` : resource.documentNumber;
 
   return (
@@ -23,6 +24,7 @@ function ResourceCard({ resource }) {
       <p className="mt-1 text-xs leading-5 text-slate-500">{resource.publication}</p>
       {identifier && <p className="mt-2 text-[.68rem] font-bold uppercase tracking-[.08em] text-slate-400">{identifier}</p>}
       <p className="mt-4 flex-1 text-sm leading-6 text-slate-600">{resource.summary}</p>
+      {isMacroSpreadsheet && <p className="mt-3 rounded-2xl bg-amber-50 p-3 text-xs font-semibold leading-5 text-amber-900">Planilha habilitada para macros. Preserve o formato XLSM e habilite o conteúdo somente após confirmar que o arquivo veio deste portal.</p>}
       <div className="mt-5 flex flex-wrap gap-2">
         {resource.tags.map((tag) => <span className="rounded-full bg-mist px-3 py-1 text-[.68rem] font-bold text-slate-600" key={tag}>{tag}</span>)}
       </div>

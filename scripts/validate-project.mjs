@@ -41,6 +41,7 @@ activities.forEach((activity) => {
     assert.ok(resource.relatedActivityIds.includes(activity.code), `Relação ${activity.code} → ${id} não é recíproca.`);
   });
   if (activity.presentationSlug) assert.ok(presentationSlugs.has(activity.presentationSlug), `Apresentação inexistente em ${activity.code}.`);
+  if (activity.resourceSection) assert.ok(['artigos', 'documentos', 'disciplina', 'modelos'].includes(activity.resourceSection), `Seção de biblioteca inválida em ${activity.code}.`);
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
   if (activity.submission) {
     assert.equal(activity.submission.audience, 'student', `Entrega ${activity.code} deve declarar audience student.`);
@@ -50,8 +51,17 @@ activities.forEach((activity) => {
     assert.ok(Number.isInteger(activity.submission.maxFileSizeMb) && activity.submission.maxFileSizeMb > 0, `Limite de tamanho inválido em ${activity.code}.`);
     assert.ok(Array.isArray(activity.submission.acceptedExtensions) && activity.submission.acceptedExtensions.length > 0, `Extensões ausentes em ${activity.code}.`);
     activity.submission.acceptedExtensions.forEach((extension) => assert.ok(extension === '*' || /^\.[a-z0-9]+$/.test(extension), `Extensão inválida em ${activity.code}.`));
+    if (activity.submission.dueAt) assert.ok(!Number.isNaN(Date.parse(activity.submission.dueAt)), `Prazo inválido em ${activity.code}.`);
+    if (activity.submission.requiredOutputs) assert.ok(Array.isArray(activity.submission.requiredOutputs) && activity.submission.requiredOutputs.length > 0, `Produtos obrigatórios inválidos em ${activity.code}.`);
   }
 });
+
+const methodiActivity = activities.find((activity) => activity.code === 'E05');
+assert.equal(methodiActivity.status, 'completed', 'A aula E05 deve permanecer registrada como concluída.');
+assert.equal(methodiActivity.presentationSlug, 'e05-methodi-ordinatio-uam', 'A aula E05 deve apontar para seu documento de aula.');
+assert.equal(methodiActivity.submission.status, 'open', 'A atividade Methodi deve permanecer aberta para entrega.');
+assert.equal(methodiActivity.submission.dueAt, '2026-09-15T23:59:00-03:00', 'Prazo da atividade Methodi divergente.');
+assert.deepEqual(methodiActivity.submission.acceptedExtensions, ['.pdf', '.docx', '.xlsm'], 'Formatos da atividade Methodi divergentes.');
 
 const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'publisherUrl', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
 const declaredPublicResourcePaths = [];
@@ -80,12 +90,15 @@ allResources.forEach((resource) => {
     assert.ok(resource.assetPath.startsWith('/templates/latex/'), `${resource.id} deve usar a pasta pública de modelos LaTeX.`);
   } else if (resource.category === 'document-template') {
     assert.ok(resource.assetPath.startsWith('/templates/word/'), `${resource.id} deve usar a pasta pública de modelos Word.`);
+  } else if (resource.category === 'spreadsheet-template') {
+    assert.ok(resource.assetPath.startsWith('/templates/spreadsheets/'), `${resource.id} deve usar a pasta pública de planilhas.`);
   } else {
     assert.fail(`Categoria de recurso desconhecida em ${resource.id}.`);
   }
   if (resource.doi) assert.ok(resource.publisherUrl.includes(resource.doi) || resource.id === 'nrel-2023-vertiport-electrical', `${resource.id} possui DOI divergente da fonte.`);
   if (resource.category === 'latex-template') assert.ok(/\.(?:tex|zip)$/.test(resource.assetPath), `${resource.id} deve apontar para um arquivo .tex ou .zip.`);
   else if (resource.category === 'document-template') assert.ok(resource.assetPath.endsWith('.docx'), `${resource.id} deve apontar para um arquivo .docx.`);
+  else if (resource.category === 'spreadsheet-template') assert.ok(resource.assetPath.endsWith('.xlsm'), `${resource.id} deve apontar para um arquivo .xlsm.`);
   else assert.ok(resource.assetPath.endsWith('.pdf'), `${resource.id} possui assetPath inválido.`);
   assert.match(resource.sha256, /^[A-F0-9]{64}$/, `${resource.id} possui SHA-256 inválido.`);
   assert.ok(!hashes.has(resource.sha256), `${resource.id} duplica um arquivo já declarado.`);
@@ -189,7 +202,7 @@ const latexProjectSourceRoot = path.join('public', 'templates', 'latex', 'artigo
 assert.ok(actualLatexTemplatePaths.length > 0 && actualLatexTemplatePaths.every((file) => declaredLatexTemplatePaths.has(file) || file.startsWith(latexProjectSourceRoot)), 'Toda fonte LaTeX deve ser um recurso catalogado ou pertencer ao projeto público organizado da IT-214.');
 const actualPresentationMediaPaths = repositoryFiles.filter((file) => file.startsWith(`public${path.sep}images${path.sep}presentations${path.sep}`)).sort();
 assert.deepEqual(actualPresentationMediaPaths, declaredPresentationMediaPaths.sort(), 'Toda imagem de apresentação deve estar declarada no catálogo visual.');
-const bannedExtensions = new Set(['.xls', '.xlsx', '.doc', '.docx', '.ppt', '.pptx', '.r']);
+const bannedExtensions = new Set(['.xls', '.xlsx', '.xlsm', '.doc', '.docx', '.ppt', '.pptx', '.r']);
 const undeclaredSensitiveFiles = repositoryFiles.filter((file) => bannedExtensions.has(path.extname(file).toLowerCase()) && !declaredPublicResourcePaths.includes(file));
 assert.deepEqual(undeclaredSensitiveFiles, [], 'Arquivos Office, planilhas ou scripts R só podem existir quando declarados como recursos públicos.');
 

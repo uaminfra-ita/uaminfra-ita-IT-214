@@ -57,15 +57,21 @@
     }
   },
   {
-    "code": "E05", "meeting": 5, "date": "2026-09-01", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
-    "theme": "Oficina II: revisão de literatura e mapeamento de referências",
-    "objective": "Praticar busca em bases, triagem, leitura crítica e organização do mapeamento bibliográfico.",
-    "deliverable": "Matriz de literatura iniciada e estratégia de busca documentada.",
+    "code": "E05", "meeting": 5, "date": "2026-09-01", "type": "class", "status": "completed",
+    "resourceIds": ["pagani-2026-methodi-ordinatio-aula", "methodi-ordinatio-rankin-v8-5", "it214-2026-atividade-methodi-uam"],
+    "resourceSection": "disciplina", "presentationSlug": "e05-methodi-ordinatio-uam",
+    "theme": "Methodi Ordinatio 2.0: portfólio bibliográfico em UAM",
+    "objective": "Aplicar de forma rastreável as nove etapas da Methodi Ordinatio 2.0 para buscar, filtrar, ordenar e analisar criticamente estudos científicos do tema individual de UAM.",
+    "deliverable": "Relatório acadêmico de 4 a 6 páginas e planilha RankIn preenchida, com portfólio preferencial de 10 a 20 artigos e análise crítica de pelo menos os 10 primeiros.",
     "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
-      "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": ["*"]
+      "audience": "student", "visibility": "drive-restricted", "status": "open", "dueAt": "2026-09-15T23:59:00-03:00",
+      "maxFiles": 5, "maxFileSizeMb": 30,
+      "acceptedExtensions": [".pdf", ".docx", ".xlsm"],
+      "requiredOutputs": [
+        "Relatório acadêmico de 4 a 6 páginas, sem contar os anexos, em PDF ou Word.",
+        "Planilha RankIn com buscas, filtragem, variáveis bibliométricas, parâmetros e ranking.",
+        "Portfólio final preferencial de 10 a 20 artigos e análise crítica de pelo menos os 10 primeiros."
+      ]
     }
   },
   {
