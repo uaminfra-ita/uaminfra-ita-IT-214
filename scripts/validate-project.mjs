@@ -41,6 +41,12 @@ activities.forEach((activity) => {
     assert.ok(resource.relatedActivityIds.includes(activity.code), `Relação ${activity.code} → ${id} não é recíproca.`);
   });
   if (activity.presentationSlug) assert.ok(presentationSlugs.has(activity.presentationSlug), `Apresentação inexistente em ${activity.code}.`);
+  if (activity.presentationResourceId) {
+    assert.ok(resourceIds.has(activity.presentationResourceId), `Apresentação em arquivo inexistente em ${activity.code}.`);
+    assert.ok(activity.resourceIds.includes(activity.presentationResourceId), `Apresentação em arquivo de ${activity.code} deve integrar seus recursos.`);
+    const presentationResource = allResources.find((resource) => resource.id === activity.presentationResourceId);
+    assert.ok(presentationResource.assetPath.endsWith('.pdf'), `Apresentação em arquivo de ${activity.code} deve ser PDF.`);
+  }
   if (activity.resourceSection) assert.ok(['artigos', 'documentos', 'disciplina', 'modelos'].includes(activity.resourceSection), `Seção de biblioteca inválida em ${activity.code}.`);
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
   if (activity.submission) {
@@ -58,7 +64,8 @@ activities.forEach((activity) => {
 
 const methodiActivity = activities.find((activity) => activity.code === 'E05');
 assert.equal(methodiActivity.status, 'completed', 'A aula E05 deve permanecer registrada como concluída.');
-assert.equal(methodiActivity.presentationSlug, 'e05-methodi-ordinatio-uam', 'A aula E05 deve apontar para seu documento de aula.');
+assert.equal(methodiActivity.presentationSlug, null, 'A aula E05 não deve recriar a apresentação original no portal.');
+assert.equal(methodiActivity.presentationResourceId, 'pagani-2026-methodi-ordinatio-aula', 'A aula E05 deve apontar diretamente para o PDF original.');
 assert.equal(methodiActivity.submission.status, 'open', 'A atividade Methodi deve permanecer aberta para entrega.');
 assert.equal(methodiActivity.submission.dueAt, '2026-09-15T23:59:00-03:00', 'Prazo da atividade Methodi divergente.');
 assert.deepEqual(methodiActivity.submission.acceptedExtensions, ['.pdf', '.docx', '.xlsm'], 'Formatos da atividade Methodi divergentes.');

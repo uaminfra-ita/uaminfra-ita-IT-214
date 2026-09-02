@@ -5,6 +5,8 @@ import Icon from './Icon';
 import resources from '@/data/resources.json';
 import { courseDateKey, isActivityPast, nextScheduledActivity } from '@/lib/courseDates.mjs';
 
+const allResources = Object.values(resources).flat();
+const resourcesById = new Map(allResources.map((resource) => [resource.id, resource]));
 const templateIds = new Set(resources.workspaceTemplates.map((resource) => resource.id));
 
 const filters = [
@@ -65,6 +67,7 @@ export default function ActivityTimeline({ activities }) {
             const hasTemplates = activity.resourceIds.some((id) => templateIds.has(id));
             const resourceSection = activity.resourceSection || (hasTemplates ? 'modelos' : 'artigos');
             const resourceLabel = activity.resourceSection === 'disciplina' ? 'materiais da aula' : hasTemplates ? 'modelos' : 'leituras-base';
+            const presentationResource = activity.presentationResourceId ? resourcesById.get(activity.presentationResourceId) : null;
             return (
               <article className={`relative grid scroll-mt-28 gap-5 pl-[72px] sm:grid-cols-[80px_1fr] sm:pl-0 ${isCancelled ? 'opacity-65' : ''}`} id={activity.code} key={activity.code}>
                 <time className="hidden pt-6 text-right text-xs font-black uppercase tracking-[.12em] text-slate-500 sm:block" dateTime={activity.date}>{formatDate(activity.date)}</time>
@@ -83,9 +86,10 @@ export default function ActivityTimeline({ activities }) {
                     <Icon name={activity.type === 'break' ? 'calendar' : 'check'} className="mt-0.5 h-5 w-5 shrink-0 text-cyan-700" />
                     <div><span className="block text-[.65rem] font-black uppercase tracking-[.16em] text-slate-400">Entregável</span><p className="mt-1 text-sm font-semibold leading-6 text-slate-700">{activity.deliverable}</p>{activity.submission?.dueAt && <p className="mt-2 text-xs font-black uppercase tracking-[.08em] text-cyan-800">Entrega até {formatDeadline(activity.submission.dueAt)}</p>}</div>
                   </div>
-                  {(activity.presentationSlug || activity.resourceIds.length > 0) && (
+                  {(activity.presentationSlug || presentationResource || activity.resourceIds.length > 0) && (
                     <div className="mt-5 flex flex-wrap gap-3">
                       {activity.presentationSlug && <a className="button-dark" href={`${basePath}/apresentacoes/${activity.presentationSlug}/`}><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação</a>}
+                      {presentationResource && <a className="button-dark" href={`${basePath}${presentationResource.assetPath}`} target="_blank" rel="noreferrer"><Icon name="presentation" className="h-4 w-4" /> Abrir apresentação em PDF</a>}
                       {activity.resourceIds.length > 0 && <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-700 hover:border-cyan-400" href={`${basePath}/biblioteca/#${resourceSection}`}><Icon name="library" className="h-4 w-4" /> {activity.resourceIds.length} {resourceLabel}</a>}
                     </div>
                   )}
