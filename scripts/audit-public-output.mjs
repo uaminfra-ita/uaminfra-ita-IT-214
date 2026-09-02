@@ -25,7 +25,7 @@ assert.equal(
   'O artefato público contém o documento privado SIGMA_c_PIII.pdf.',
 );
 
-const cataloguedExtensions = new Set(['.pdf', '.zip', '.docx']);
+const cataloguedExtensions = new Set(['.pdf', '.zip', '.docx', '.xlsm']);
 const actualResourcePaths = outputFiles
   .filter((file) => cataloguedExtensions.has(path.extname(file).toLowerCase()))
   .sort();

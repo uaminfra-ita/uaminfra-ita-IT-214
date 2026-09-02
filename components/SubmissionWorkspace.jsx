@@ -2,11 +2,15 @@
 
 import { useMemo, useState } from 'react';
 import activities from '@/data/activities.json';
+import resourceCatalog from '@/data/resources.json';
 import { courseDriveUrl, driveDestinationFor, driveFolderUrl } from '@/lib/driveCourse.mjs';
 import Icon from './Icon';
 
 const submissionActivities = activities.filter((activity) => activity.submission);
-const openSubmissionActivities = submissionActivities.filter((activity) => activity.submission.status === 'open');
+const openSubmissionActivities = submissionActivities
+  .filter((activity) => activity.submission.status === 'open')
+  .sort((first, second) => (first.submission.dueAt ? Date.parse(first.submission.dueAt) : Number.POSITIVE_INFINITY) - (second.submission.dueAt ? Date.parse(second.submission.dueAt) : Number.POSITIVE_INFINITY));
+const resourcesById = new Map(Object.values(resourceCatalog).flat().map((resource) => [resource.id, resource]));
 
 function statusLabel(status) {
   return { open: 'Recebendo entregas', scheduled: 'Em breve', closed: 'Encerrada' }[status] || status;
@@ -19,6 +23,11 @@ function formatDueDate(dueAt) {
     timeStyle: 'short',
     timeZone: 'America/Sao_Paulo',
   }).format(new Date(dueAt));
+}
+
+function formatExtensions(extensions) {
+  if (extensions.includes('*')) return 'Qualquer formato';
+  return extensions.map((extension) => extension.slice(1).toUpperCase()).join(' · ');
 }
 
 function normalizeSearch(value) {
@@ -46,6 +55,8 @@ export default function SubmissionWorkspace({ studentId }) {
   const isOpen = activity.submission.status === 'open';
   const activitiesUrl = driveFolderUrl(destination.activitiesFolderId);
   const suggestedName = `${activity.code} - nome-do-arquivo`;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const activityResources = activity.resourceIds.map((id) => resourcesById.get(id)).filter(Boolean);
 
   return (
     <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lift">
@@ -66,9 +77,11 @@ export default function SubmissionWorkspace({ studentId }) {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"><div><span className="eyebrow">{activity.code}</span><h3 className="mt-4 text-2xl font-black text-ink">{activity.deliverable}</h3></div><span className={`w-fit rounded-full px-3 py-1.5 text-xs font-black ${isOpen ? 'bg-emerald-50 text-emerald-800' : 'bg-slate-100 text-slate-600'}`}>{statusLabel(activity.submission.status)}</span></div>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
             <div className="rounded-2xl bg-slate-50 p-4"><span className="text-xs font-black uppercase tracking-wider text-slate-400">Prazo</span><p className="mt-2 text-sm font-bold text-ink">{formatDueDate(activity.submission.dueAt)}</p></div>
-            <div className="rounded-2xl bg-slate-50 p-4"><span className="text-xs font-black uppercase tracking-wider text-slate-400">Formato</span><p className="mt-2 text-sm font-bold text-ink">Qualquer formato</p></div>
+            <div className="rounded-2xl bg-slate-50 p-4"><span className="text-xs font-black uppercase tracking-wider text-slate-400">Formato</span><p className="mt-2 text-sm font-bold text-ink">{formatExtensions(activity.submission.acceptedExtensions)}</p><p className="mt-1 text-xs text-slate-500">Até {activity.submission.maxFiles} arquivos de {activity.submission.maxFileSizeMb} MB</p></div>
             <div className="rounded-2xl bg-slate-50 p-4"><span className="text-xs font-black uppercase tracking-wider text-slate-400">Nome do arquivo</span><p className="mt-2 break-words text-sm font-bold text-ink">{suggestedName}</p></div>
           </div>
+          {activity.submission.requiredOutputs?.length > 0 && <div className="mt-6 rounded-2xl border border-slate-200 p-5"><span className="text-xs font-black uppercase tracking-wider text-slate-400">O que precisa ser entregue</span><ol className="mt-3 space-y-2 text-sm leading-6 text-slate-700">{activity.submission.requiredOutputs.map((output, index) => <li className="flex gap-3" key={output}><strong className="text-cyan-800">{index + 1}.</strong><span>{output}</span></li>)}</ol></div>}
+          {activityResources.length > 0 && <div className="mt-6"><span className="text-xs font-black uppercase tracking-wider text-slate-400">Materiais desta atividade</span><div className="mt-3 flex flex-wrap gap-2">{activityResources.map((resource) => <a className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={`${basePath}${resource.assetPath}`} target="_blank" rel="noreferrer" key={resource.id}><Icon name="file" className="h-4 w-4" /> {resource.title}</a>)}</div></div>}
           {isOpen ? (
             <div className="mt-7 rounded-3xl border border-cyan-200 bg-cyan-50 p-6">
               <Icon name="upload" className="h-8 w-8 text-cyan-800" />
