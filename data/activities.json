@@ -77,7 +77,7 @@
   },
   {
     "code": "E06", "meeting": 6, "date": "2026-09-08", "type": "class", "status": "scheduled",
-    "resourceIds": ["faa-2023-uam-conops-2", "nasa-2021-provider-services-uam", "decea-2024-conops-uam-nacional"], "presentationSlug": null,
+    "resourceIds": ["faa-2023-uam-conops-2", "nasa-2021-provider-services-uam", "decea-2024-conops-uam-nacional"], "presentationSlug": "e06-espaco-aereo",
     "theme": "Espaço aéreo, rotas e corredores",
     "objective": "Tratar REH/REA, VFR/IFR, UTM/ATM, camadas, separação, restrições urbanas, conectividade e integração com o tráfego convencional.",
     "deliverable": "Esboço conceitual de corredores e diagrama simples de rede.",

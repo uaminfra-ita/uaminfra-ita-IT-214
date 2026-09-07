@@ -246,5 +246,54 @@
         "purpose": "Distribuição local necessária para compilar LaTeX no VS Code"
       }
     ]
+  },
+  {
+    "slug": "e06-espaco-aereo",
+    "audience": "public",
+    "rightsNote": "Equipe autorizou explicitamente a disponibilização pública dos slides da E06, incluindo a síntese derivada dos Produtos 1 e 2 do SIGMA-Sky; arquivos originais não incluídos.",
+    "activityId": "E06",
+    "title": "Espaço aéreo: da REH à UAM",
+    "subtitle": "Rotas, corredores, camadas, coordenação e cenários de integração na RMSP",
+    "date": "2026-09-08",
+    "durationMinutes": 180,
+    "slideCount": 24,
+    "objectives": [
+      "Reconhecer REH, REA, CTR/ATZ, ATM, UAM e UTM como partes de um sistema existente.",
+      "Distinguir rota, corredor, camada e volume cooperativo no desenho do espaço aéreo.",
+      "Comparar compartilhamento de REH e corredores UAM dedicados usando cenários do SIGMA-Sky.",
+      "Esboçar uma rede origem-destino com hipóteses de capacidade, separação e contingência."
+    ],
+    "sections": [
+      "Pergunta e referência RMSP",
+      "Camadas e corredores",
+      "Rede e demanda",
+      "Gestão do tráfego",
+      "Cenários e oficina"
+    ],
+    "resourceIds": [
+      "faa-2023-uam-conops-2",
+      "nasa-2021-provider-services-uam",
+      "decea-2024-conops-uam-nacional"
+    ],
+    "references": [
+      {
+        "shortTitle": "FAA UAM ConOps 2.0 (2023)",
+        "citation": "Federal Aviation Administration. Urban Air Mobility Concept of Operations, Version 2.0.",
+        "url": "https://www.faa.gov/sites/faa.gov/files/Urban-Air-Mobility-Concept-of-Operations-2.0.pdf",
+        "purpose": "Áreas cooperativas, corredores, serviços e evolução operacional"
+      },
+      {
+        "shortTitle": "DECEA PCA 351-7 (2024)",
+        "citation": "Departamento de Controle do Espaço Aéreo. Concepção Operacional UAM Nacional.",
+        "url": "https://publicacoes.decea.mil.br/publicacao/PCA-351-7",
+        "purpose": "SISCEAB, ambientes ATM/UAM/UTM, volumes e níveis UML"
+      },
+      {
+        "shortTitle": "NASA Provider Services for UAM (2021)",
+        "citation": "National Aeronautics and Space Administration. Provider of Services to UAM: An Overview and Initial Use Case Discussion.",
+        "url": "https://ntrs.nasa.gov/citations/20210017616",
+        "purpose": "Serviços cooperativos, informação e gestão de operações"
+      }
+    ]
   }
 ]
