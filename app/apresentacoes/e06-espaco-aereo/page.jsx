@@ -1,218 +1,170 @@
+import Image from 'next/image';
 import PresentationDeck from '@/components/PresentationDeck';
 import presentations from '@/data/presentations.json';
-
+import assets from '@/data/presentation-assets.json';
+import './e06.css';
 const presentation = presentations.find((item) => item.slug === 'e06-espaco-aereo');
-
-export const metadata = {
-  title: presentation.title,
-  description: presentation.subtitle,
-};
-
-function Slide({ kicker, title, source, notes, children, className = '' }) {
-  return (
-    <section className={className}>
-      {kicker && <div className="slide-kicker">{kicker}</div>}
-      {title && <h2 className="slide-title">{title}</h2>}
-      {children}
-      {source && <p className="slide-source">{source}</p>}
-      {notes && <aside className="notes">{notes}</aside>}
-    </section>
-  );
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+export const metadata = { title: presentation.title, description: presentation.subtitle };
+function Media({ assetId }) {
+  const asset = assets.find((item) => item.id === assetId);
+  return <figure className="air-media"><a href={basePath + asset.assetPath} target="_blank" rel="noreferrer" aria-label={`Abrir figura em tamanho original: ${asset.title}`}><Image src={basePath + asset.assetPath} alt={asset.alt} fill sizes="65vw" style={{ objectFit: 'contain' }} /></a><figcaption>{asset.creditLine} · clique para ampliar</figcaption></figure>;
 }
-
-function AirspaceStack() {
-  return (
-    <svg className="airspace-stack" viewBox="0 0 900 330" role="img" aria-label="Camadas conceituais ATM, UAM e UTM, com interfaces de coordenação">
-      <defs><linearGradient id="e06-atm" x1="0" x2="1"><stop stopColor="#071426" /><stop offset="1" stopColor="#0e7490" /></linearGradient><linearGradient id="e06-uam" x1="0" x2="1"><stop stopColor="#0891b2" /><stop offset="1" stopColor="#22d3ee" /></linearGradient></defs>
-      <rect x="45" y="32" width="810" height="76" rx="18" fill="url(#e06-atm)" />
-      <rect x="130" y="126" width="640" height="76" rx="18" fill="url(#e06-uam)" />
-      <rect x="230" y="220" width="440" height="76" rx="18" fill="#bae6fd" stroke="#0891b2" strokeWidth="3" />
-      <text x="450" y="69" textAnchor="middle" fill="#fff" fontSize="24" fontWeight="900">ATM · tráfego convencional</text>
-      <text x="450" y="96" textAnchor="middle" fill="#cbd5e1" fontSize="15">IFR · ATC · rotas e áreas controladas</text>
-      <text x="450" y="163" textAnchor="middle" fill="#071426" fontSize="24" fontWeight="900">UAM · operações urbanas</text>
-      <text x="450" y="190" textAnchor="middle" fill="#164e63" fontSize="15">eVTOL · vertiportos · rotas ou volumes cooperativos</text>
-      <text x="450" y="257" textAnchor="middle" fill="#071426" fontSize="24" fontWeight="900">UTM · baixa altitude</text>
-      <text x="450" y="284" textAnchor="middle" fill="#164e63" fontSize="15">UAS · serviços digitais · até cerca de 400 ft AGL</text>
-      <path d="M780 164h75" stroke="#22d3ee" strokeWidth="4" strokeDasharray="8 7" /><text x="818" y="150" textAnchor="middle" fill="#0e7490" fontSize="14" fontWeight="800">interface</text>
-    </svg>
-  );
+function Slide({ kicker, title, source, minutes, notes, children, className = '' }) {
+  return <section className={'air-slide ' + className}><header><div className="air-kicker">{kicker}<span>{minutes ? minutes + ' min' : 'consulta'}</span></div><h2>{title}</h2></header><div className="air-body">{children}</div><footer>{source}</footer><aside className="notes">{'Tempo previsto: ' + minutes + ' minutos. ' + notes}</aside></section>;
 }
-
-function RmsPReference() {
-  return (
-    <svg className="rms-p-reference" viewBox="0 0 900 390" role="img" aria-label="Esquema da referência operacional na Região Metropolitana de São Paulo">
-      <path d="M106 310 C170 210 182 115 330 80 S590 62 790 150 S760 325 565 340 S230 385 106 310Z" fill="#dbeafe" stroke="#94a3b8" strokeWidth="3" />
-      <path d="M125 268 C235 235 267 142 420 122 S650 166 776 239" fill="none" stroke="#0e7490" strokeWidth="11" strokeLinecap="round" />
-      <path d="M150 318 C245 280 325 208 434 185 S646 128 748 95" fill="none" stroke="#0891b2" strokeWidth="8" strokeDasharray="18 12" strokeLinecap="round" />
-      <path d="M315 90 C410 151 470 215 555 323" fill="none" stroke="#22d3ee" strokeWidth="7" strokeDasharray="4 13" strokeLinecap="round" />
-      <circle cx="435" cy="187" r="83" fill="#0f172a" opacity=".72" stroke="#22d3ee" strokeWidth="3" /><circle cx="435" cy="187" r="23" fill="#67e8f9" />
-      {[[177,274,'SWAB'],[297,151,'SDMT'],[622,225,'SDEL'],[435,187,'SBSP'],[716,145,'SBGR'],[228,332,'SBMT']].map(([x,y,label]) => <g key={label}><circle cx={x} cy={y} r="8" fill="#071426" stroke="#fff" strokeWidth="3" /><text x={x + 12} y={y + 5} fill="#071426" fontSize="15" fontWeight="800">{label}</text></g>)}
-      <text x="70" y="38" fill="#071426" fontSize="19" fontWeight="900">RMSP · referência para a migração</text>
-      <g transform="translate(635 354)"><line x1="0" y1="0" x2="42" y2="0" stroke="#0e7490" strokeWidth="8" /><text x="51" y="5" fill="#475569" fontSize="13">REH</text><line x1="100" y1="0" x2="142" y2="0" stroke="#0891b2" strokeWidth="6" strokeDasharray="12 7" /><text x="151" y="5" fill="#475569" fontSize="13">REA</text></g>
-    </svg>
-  );
-}
-
-function CorridorChoice() {
-  return (
-    <div className="corridor-choice">
-      <div className="choice-panel shared"><span>TRANSIÇÃO</span><strong>REH compartilhada</strong><p>eVTOL e helicópteros usam a estrutura existente, com requisitos de participação e coordenação.</p><div className="route-lines"><i /><i /><b /></div></div>
-      <div className="choice-vs">ou</div>
-      <div className="choice-panel dedicated"><span>MAIOR DENSIDADE</span><strong>Corredor UAM dedicado</strong><p>volume tridimensional com desempenho, separação e acesso definidos para a operação.</p><div className="route-lines"><i /><i /><b /></div></div>
-    </div>
-  );
-}
-
-function NetworkDiagram() {
-  const nodes = [[110, 150, 'A'], [285, 74, 'B'], [285, 232, 'C'], [510, 74, 'D'], [510, 232, 'E'], [748, 150, 'F']];
-  const links = [[0,1],[0,2],[1,3],[1,4],[2,4],[3,5],[4,5]];
-  return (
-    <svg className="network-diagram" viewBox="0 0 860 300" role="img" aria-label="Rede de vertiportos conectada por rotas e pontos de fusão">
-      {links.map(([a,b]) => <line key={`${a}-${b}`} x1={nodes[a][0]} y1={nodes[a][1]} x2={nodes[b][0]} y2={nodes[b][1]} stroke="#0891b2" strokeWidth="8" strokeLinecap="round" />)}
-      {nodes.map(([x,y,label], index) => <g key={label}><circle cx={x} cy={y} r="31" fill={index === 0 || index === 5 ? '#071426' : '#fff'} stroke="#22d3ee" strokeWidth="5" /><text x={x} y={y + 8} textAnchor="middle" fill={index === 0 || index === 5 ? '#fff' : '#071426'} fontSize="23" fontWeight="900">{label}</text><text x={x} y={y + 58} textAnchor="middle" fill="#475569" fontSize="14" fontWeight="800">{index === 0 || index === 5 ? 'vertiporto' : 'waypoint'}</text></g>)}
-      <text x="430" y="24" textAnchor="middle" fill="#071426" fontSize="18" fontWeight="900">rota é uma sequência; corredor é um volume</text>
-    </svg>
-  );
-}
-
-function TrafficLadder() {
-  return (
-    <div className="traffic-ladder">
-      {[['01', 'Planejar', 'intenção de voo, janela e recursos'], ['02', 'Balancear', 'demanda contra capacidade disponível'], ['03', 'Desconflitar', 'trajetórias 4D e horários de partida'], ['04', 'Executar', 'conformidade, vigilância e ajustes táticos']].map(([number, title, copy]) => <div key={number}><span>{number}</span><strong>{title}</strong><p>{copy}</p></div>)}
-    </div>
-  );
-}
-
-function ScenarioTable() {
-  const rows = [
-    ['C1', 'REH compartilhada', 'sem gestão', 'nominal'],
-    ['C2', 'corredores dedicados', 'sem gestão', 'nominal'],
-    ['C3', 'corredores dedicados', 'balanceamento', 'nominal'],
-    ['C4', 'corredores dedicados', 'desconflito', 'nominal'],
-    ['C5', 'corredores dedicados', 'balanceamento', 'off-nominal'],
-    ['C6', 'corredores dedicados', 'desconflito', 'off-nominal'],
-    ['C7–C10', 'REH compartilhada', 'serviços avançados', 'transição / sensibilidade'],
-  ];
-  return <div className="scenario-table"><div className="scenario-head"><span>cenário</span><span>espaço aéreo</span><span>gestão</span><span>condição</span></div>{rows.map((row) => <div className="scenario-row" key={row[0]}>{row.map((cell, index) => <span className={index === 0 ? 'font-black text-ink' : ''} key={cell}>{cell}</span>)}</div>)}</div>;
-}
-
 export default function E06PresentationPage() {
-  return (
-    <PresentationDeck title={presentation.title}>
-      <Slide className="slide-cover !text-white" notes="Tempo sugerido: 4 minutos. Apresente o problema da aula: o espaço aéreo urbano já tem usuários, regras e infraestrutura. A pergunta é como migrar uma operação conhecida para uma rede UAM com evidência e controle.">
-        <div className="slide-kicker !text-cyan-300">IT-214 · E06 · 08 de setembro de 2026</div>
-        <h1 className="mt-8 max-w-5xl !font-black !text-white">Espaço aéreo: <span className="text-cyan-300">da REH à UAM</span></h1>
-        <p className="mt-7 max-w-3xl !text-xl !leading-8 !text-slate-300">Rotas, corredores, camadas, coordenação e os primeiros cenários de integração na RMSP.</p>
-        <div className="e06-cover-line mt-12"><span>helicóptero</span><i>→</i><span>eVTOL</span><i>→</i><span>rede cooperativa</span></div>
-      </Slide>
-
-      <Slide kicker="Pergunta da aula" title="Como colocar uma nova operação em um espaço aéreo que já funciona?" source="Síntese didática a partir do SIGMA-Sky, Produto 1, seção 3, e Produto 2, capítulos 2 e 5." notes="Tempo sugerido: 6 minutos. Peça que a turma liste usuários, estruturas e restrições que já existem antes de falar em corredores novos.">
-        <p className="slide-question mt-8">A migração começa com o inventário do sistema existente.</p>
-        <div className="e06-four-cards mt-8">{[['01', 'Usuários', 'helicópteros, asa fixa, UAS e eVTOL'], ['02', 'Estruturas', 'REH, REA, CTR/ATZ, vertiportos e waypoints'], ['03', 'Serviços', 'ATM, UTM, PSU, autorização e informação'], ['04', 'Desempenho', 'separação, navegação, comunicação e contingência']].map(([n,t,c]) => <div className="slide-card" key={n}><span>{n}</span><strong>{t}</strong><p>{c}</p></div>)}</div>
-      </Slide>
-
-      <Slide kicker="O que o SIGMA-Sky acrescenta" title="Dois produtos conectam revisão da literatura a cenários simuláveis" source="SIGMA-Sky, Produto 1 (Revisão da Literatura) e Produto 2 (Definição de Cenários Operacionais para Simulação), documentos fornecidos para esta aula." notes="Tempo sugerido: 8 minutos. Mostre a passagem de conceitos para hipóteses. O Produto 1 compara propostas; o Produto 2 transforma escolhas em cenários para o BlueSky.">
-        <div className="e06-product-bridge mt-8"><div><span>PRODUTO 1</span><strong>Estado da arte</strong><p>sete eixos: espaço aéreo, tráfego, governança, regras, tecnologia, casos de uso e desempenho.</p></div><div className="bridge-arrow">→</div><div className="active"><span>PRODUTO 2</span><strong>Experimento</strong><p>RMSP, REH, CTR, vertiportos, rede de rotas, demanda OD e cenários de integração.</p></div></div>
-        <p className="slide-takeaway mt-8"><strong>Regra de ouro</strong><span>cada decisão de desenho precisa virar hipótese, parâmetro e métrica.</span></p>
-      </Slide>
-
-      <Slide kicker="Vocabulário operacional" title="ATM, UAM e UTM são ambientes relacionados, com responsabilidades diferentes" source="DECEA PCA 351-7 (2024); FAA UAM ConOps 2.0 (2023); SIGMA-Sky Produto 1, seção 3.2." notes="Tempo sugerido: 8 minutos. UAM não substitui ATM nem é sinônimo de UTM. Destaque a interface: informação e coordenação precisam atravessar os ambientes.">
-        <AirspaceStack />
-        <div className="e06-tag-row"><span>ATM · tráfego convencional</span><span>UAM · mobilidade urbana</span><span>UTM · baixa altitude</span></div>
-      </Slide>
-
-      <Slide kicker="Referência operacional" title="A RMSP não é uma folha em branco" source="SIGMA-Sky Produto 2, capítulo 2: helipontos, REH, CTR/ATZ e dados BIMTRA/Helicontrol." notes="Tempo sugerido: 7 minutos. Explique que o mapa é conceitual e não substitui publicação aeronáutica. O valor didático está em mostrar a coexistência de estruturas e fluxos.">
-        <RmsPReference />
-        <div className="e06-legend-cards"><div><strong>REH / REA</strong><span>rotas visuais existentes</span></div><div><strong>CTR / ATZ</strong><span>interfaces controladas</span></div><div><strong>Helipontos</strong><span>nós de origem e destino</span></div></div>
-      </Slide>
-
-      <Slide kicker="Camadas" title="A altitude é uma interface de desempenho, não uma solução isolada" source="SIGMA-Sky Produto 1, seção 3.2; DECEA PCA 351-7 (2024). Altitudes ilustrativas, não prescritivas." notes="Tempo sugerido: 9 minutos. Compare a lógica de camadas do DECEA com a referência de até 400 ft AGL para UTM e com a circulação IFR. Evite transformar valores de estudos em regra operacional.">
-        <div className="e06-layer-diagram mt-7"><div className="top"><b>ATM / IFR</b><span>circulação tradicional e áreas controladas</span></div><div className="middle"><b>UAM</b><span>rotas, volumes cooperativos e acesso por desempenho</span></div><div className="bottom"><b>UTM / UAS</b><span>operações de baixa altitude e serviços digitais</span></div></div>
-        <p className="slide-transition">A pergunta de projeto é: que requisito permite cruzar uma interface com segurança?</p>
-      </Slide>
-
-      <Slide kicker="Rota x corredor" title="Uma rota orienta a navegação; um corredor organiza um volume" source="FAA UAM ConOps 2.0 (2023); SIGMA-Sky Produto 1, seção 3.1." notes="Tempo sugerido: 8 minutos. Use a distinção para interpretar todos os desenhos seguintes. Rota pode ser compartilhada; corredor acrescenta limites, acesso e requisitos de desempenho.">
-        <div className="route-corridor-compare mt-8"><div><span>ROTA</span><strong>linha ou sequência de waypoints</strong><svg viewBox="0 0 360 140" aria-hidden="true"><path d="M25 105 C110 20 180 120 335 35" fill="none" stroke="#0891b2" strokeWidth="8" strokeDasharray="16 10" /></svg><p>publica referência de navegação e pode conviver com outros usuários.</p></div><div><span>CORREDOR</span><strong>volume tridimensional</strong><svg viewBox="0 0 360 140" aria-hidden="true"><path d="M25 93 L75 44 L320 44 L270 93Z" fill="#cffafe" stroke="#0891b2" strokeWidth="4" /><path d="M75 44 L75 102 L270 102 L270 93" fill="none" stroke="#0891b2" strokeWidth="4" /><path d="M270 44 L320 10 L320 44" fill="none" stroke="#0891b2" strokeWidth="4" /></svg><p>associa limites, acesso, separação e práticas cooperativas.</p></div></div>
-      </Slide>
-
-      <Slide kicker="Escolha de integração" title="Compartilhar ou segregar? A resposta depende da fase e da capacidade" source="SIGMA-Sky Produto 1, seção 3.4; Produto 2, seção 5.1; FAA UAM ConOps 2.0; DECEA PCA 351-7." notes="Tempo sugerido: 8 minutos. Apresente segregação como ferramenta de transição ou de mitigação, e integração como objetivo de escala. O Produto 2 testa as duas configurações.">
-        <CorridorChoice />
-        <p className="slide-question mt-7 !text-xl">Não há corredor que elimine governança, coordenação e conformidade.</p>
-      </Slide>
-
-      <Slide kicker="Cenário-base" title="O primeiro experimento começa com aquilo que a RMSP já conhece" source="SIGMA-Sky Produto 2, capítulos 2 e 3: dados BIMTRA/Helicontrol e simulador BlueSky." notes="Tempo sugerido: 9 minutos. Explique o valor de um cenário de referência: sem ele, não sabemos se uma alternativa melhorou ou piorou a operação.">
-        <div className="e06-baseline mt-8"><div className="baseline-step"><span>1</span><strong>Observar</strong><p>tráfego real de helicópteros e infraestrutura publicada</p></div><div className="baseline-step"><span>2</span><strong>Representar</strong><p>waypoints, REH, REA, CTR/ATZ e aeroportos</p></div><div className="baseline-step"><span>3</span><strong>Comparar</strong><p>impacto de eVTOL em segurança, capacidade e eficiência</p></div></div>
-        <div className="slide-card e06-callout mt-8"><strong>BlueSky</strong><p>é o ambiente de simulação desta etapa; o resultado depende da qualidade das hipóteses e dos parâmetros.</p></div>
-      </Slide>
-
-      <Slide kicker="Migração" title="A rede UAM cresce sobre uma rede de nós e conexões" source="SIGMA-Sky Produto 2, seção 4: rede de vertiportos, rede de rotas e matriz OD." notes="Tempo sugerido: 9 minutos. Mostre que a rede é mais do que o desenho do corredor: vertiportos, demanda, conexões aeroportuárias e capacidade formam um único problema.">
-        <NetworkDiagram />
-        <div className="e06-network-points"><span>vertiportos = nós físicos</span><span>waypoints = pontos de navegação</span><span>rotas = pares OD conectados</span><span>capacidade = recurso compartilhado</span></div>
-      </Slide>
-
-      <Slide kicker="Demanda" title="Uma rota só faz sentido quando existe uma relação origem–destino" source="SIGMA-Sky Produto 2, seção 4.3. A matriz OD é uma hipótese de simulação, não uma previsão de mercado." notes="Tempo sugerido: 8 minutos. Explique os estágios de 6 e 12 vertiportos e a combinação entre city taxi e airport shuttle. A localização da demanda muda o desenho da rede.">
-        <div className="od-visual mt-8"><div className="od-node left"><b>origens</b><span>residência · emprego · polo</span></div><div className="od-flow"><i /><strong>demanda OD</strong><i /></div><div className="od-node right"><b>destinos</b><span>centro · aeroporto · conexão</span></div></div>
-        <div className="e06-metrics mt-8"><div><span>estágio inicial</span><strong>6</strong><small>vertiportos candidatos</small></div><div><span>estágio intermediário</span><strong>12</strong><small>maior capilaridade e densidade</small></div><div><span>pergunta</span><strong>OD</strong><small>quem viaja, entre quais nós e quando?</small></div></div>
-      </Slide>
-
-      <Slide kicker="Geometria" title="O corredor precisa respeitar interfaces que já têm prioridade operacional" source="SIGMA-Sky Produto 2, seção 5.1: REH, REA, CTR/ATZ e superfícies de chegada e saída." notes="Tempo sugerido: 10 minutos. Apresente a geometria como compatibilização: altitude, largura, deslocamento lateral, cruzamentos e superfícies de proteção precisam ser verificados em conjunto.">
-        <div className="geometry-check mt-8"><div><span>01</span><strong>Sobrepor</strong><p>REH, REA, CTR/ATZ e trajetórias aeroportuárias.</p></div><div><span>02</span><strong>Encontrar</strong><p>cruzamentos, convergências e pontos de conflito.</p></div><div><span>03</span><strong>Deslocar</strong><p>altitude, eixo ou trecho para obter separação.</p></div><div><span>04</span><strong>Testar</strong><p>desempenho, capacidade e contingência.</p></div></div>
-        <p className="slide-question mt-8 !text-xl">Um corredor desenhado no mapa ainda não é um corredor operável.</p>
-      </Slide>
-
-      <Slide kicker="Serviços de tráfego" title="Coordenação aumenta em camadas, conforme aumentam demanda e incerteza" source="SIGMA-Sky Produto 1, seção 4; Produto 2, seção 5.2; FAA UAM ConOps 2.0 e NASA Provider Services for UAM." notes="Tempo sugerido: 8 minutos. Diferencie planejamento estratégico, balanceamento, desconflito e execução. A camada digital só ajuda se houver participação, dados e conformidade.">
-        <TrafficLadder />
-      </Slide>
-
-      <Slide kicker="Balanceamento" title="Quando a demanda excede a capacidade, a primeira decisão acontece no solo" source="SIGMA-Sky Produto 2, seção 5.2.2.1: capacidade por recurso e janela de tempo." notes="Tempo sugerido: 8 minutos. Dê um exemplo: um waypoint ou vertiporto saturado. Reter a aeronave antes da decolagem pode preservar capacidade e previsibilidade na rede.">
-        <div className="capacity-visual mt-8"><div><span>demanda planejada</span><strong>12 voos</strong><small>na janela de 10 minutos</small></div><b>›</b><div className="capacity-limit"><span>capacidade segura</span><strong>8 voos</strong><small>recurso compartilhado</small></div><b>›</b><div><span>ação</span><strong>4 esperas</strong><small>sequenciamento no solo</small></div></div>
-        <p className="slide-transition">Balancear não é cancelar a demanda: é compatibilizar demanda, capacidade e tempo.</p>
-      </Slide>
-
-      <Slide kicker="Desconflito" title="O plano de voo vira uma trajetória 4D que pode ser comparada" source="SIGMA-Sky Produto 1, seção 4.1; Produto 2, seção 5.2.2.1." notes="Tempo sugerido: 8 minutos. Explique a diferença entre reduzir fluxo agregado e resolver conflitos entre trajetórias. O Produto 2 testa os mecanismos separadamente para identificar seus efeitos.">
-        <div className="deconflict-visual mt-8"><svg viewBox="0 0 820 250" role="img" aria-label="Trajetórias nominais convergentes e trajetória replanejada"><path d="M50 205 C280 188 380 38 760 43" fill="none" stroke="#94a3b8" strokeWidth="7" strokeDasharray="13 10" /><path d="M50 43 C300 54 382 208 760 205" fill="none" stroke="#94a3b8" strokeWidth="7" strokeDasharray="13 10" /><path d="M50 205 C250 190 330 160 425 126 C520 92 620 80 760 43" fill="none" stroke="#0891b2" strokeWidth="9" /><circle cx="425" cy="126" r="16" fill="#fff" stroke="#ef4444" strokeWidth="6" /><text x="425" y="167" textAnchor="middle" fill="#b91c1c" fontSize="15" fontWeight="900">conflito previsto</text><text x="405" y="25" fill="#475569" fontSize="15">planos nominais</text><text x="520" y="230" fill="#0e7490" fontSize="15" fontWeight="900">trajetória replanejada</text></svg></div>
-      </Slide>
-
-      <Slide kicker="Separação" title="O mínimo de separação é uma hipótese ligada ao desempenho" source="SIGMA-Sky Produto 2, seção 5.2.2.2. Valores para análise de sensibilidade: 1 NM, 0,6 NM e 0,3 NM entre eVTOL; 1 NM em relação ao convencional." notes="Tempo sugerido: 7 minutos. Não apresente esses valores como regra brasileira. Eles servem para comparar maturidade, previsibilidade, CNS e automação na simulação.">
-        <div className="separation-scale mt-9"><div><strong>1,0 NM</strong><span>eVTOL ↔ convencional</span><small>referência de coexistência</small></div><div><strong>0,6 NM</strong><span>eVTOL ↔ eVTOL</span><small>maturidade intermediária</small></div><div className="advanced"><strong>0,3 NM</strong><span>eVTOL ↔ eVTOL</span><small>maior desempenho e previsibilidade</small></div></div>
-        <p className="slide-question mt-8 !text-xl">Menor separação exige mais evidência, não apenas mais confiança.</p>
-      </Slide>
-
-      <Slide kicker="Off-nominal" title="A rede precisa continuar segura quando o plano falha" source="SIGMA-Sky Produto 2, seção 5.3; FAA UAM ConOps 2.0 (2023)." notes="Tempo sugerido: 8 minutos. Mostre que contingência faz parte do conceito operacional. Bloqueio espacial e incerteza de execução testam resiliência de rotas e serviços.">
-        <div className="offnominal-grid mt-8"><div className="offnominal-card"><span>EVENTO A</span><strong>Área bloqueada</strong><p>meteorologia, emergência ou restrição temporária.</p><div className="mini-route"><i /><b /><i /></div><small>resposta: replanejar ou esperar</small></div><div className="offnominal-card"><span>EVENTO B</span><strong>Incerteza operacional</strong><p>partida, tempo de voo, vento ou trajetória.</p><div className="uncertainty-bars"><i /><i /><i /><i /><i /></div><small>resposta: atualizar previsão e sequência</small></div></div>
-      </Slide>
-
-      <Slide kicker="Matriz de experimentos" title="O Produto 2 transforma escolhas em cenários comparáveis" source="SIGMA-Sky Produto 2, tabelas 5.1 e 5.2. C7–C10 são cenários complementares de transição e sensibilidade." notes="Tempo sugerido: 10 minutos. Leia a matriz por dimensões: espaço aéreo, gestão de tráfego e condição operacional. O objetivo é comparar causas, não produzir um ranking sem contexto.">
-        <ScenarioTable />
-      </Slide>
-
-      <Slide kicker="Leitura crítica dos CONOPS" title="Os documentos convergem em princípios, mas divergem na forma de chegar lá" source="SIGMA-Sky Produto 1, seções 3 e 4; FAA, DECEA, Eurocontrol, Boeing, NASA, Japão e Coreia." notes="Tempo sugerido: 8 minutos. Organize a discussão em três contrastes: integração versus segregação; rotas fixas versus volumes dinâmicos; ATC centralizado versus serviços cooperativos.">
-        <div className="conops-contrast mt-8"><div><span>CONVERGÊNCIA</span><strong>desempenho e informação compartilhada</strong><p>Todos precisam de identificação, comunicação, navegação, vigilância e regras claras.</p></div><div><span>ESCOLHA</span><strong>estrutura de transição</strong><p>REH, rotas, corredores e volumes podem combinar-se conforme densidade e maturidade.</p></div><div><span>CRITÉRIO</span><strong>evidência operacional</strong><p>O desenho só avança quando segurança, capacidade e resiliência são demonstradas.</p></div></div>
-      </Slide>
-
-      <Slide kicker="Oficina E06" title="Desenhe uma hipótese de corredor para a RMSP" source="Entregável da E06: esboço conceitual de corredores e diagrama simples de rede." notes="Tempo sugerido: 5 minutos para briefing. Reserve 20 minutos para o trabalho em grupo e 7 minutos para compartilhamento. Forme grupos de 3–4 pessoas.">
-        <div className="workshop-brief mt-8"><div><span>ENTRADA</span><strong>um par origem–destino</strong><p>Escolha dois nós entre vertiportos, aeroportos ou polos urbanos.</p></div><div><span>DECISÃO</span><strong>REH ou corredor?</strong><p>Declare a estrutura, camada e interface com tráfego existente.</p></div><div><span>SAÍDA</span><strong>um desenho + três hipóteses</strong><p>Capacidade, separação e contingência precisam aparecer.</p></div></div>
-        <p className="slide-question mt-8 !text-xl">Pergunta-guia: o que precisa ser verdade para esse corredor operar?</p>
-      </Slide>
-
-      <Slide kicker="Critério de revisão" title="Um bom esboço explicita decisões e incertezas" source="Checklist didático baseado no SIGMA-Sky Produto 2 e nos CONOPS usados na aula." notes="Tempo sugerido: 7 minutos. Use este slide durante a revisão dos grupos. Peça que marquem o que é dado conhecido, hipótese e questão em aberto.">
-        <div className="review-checklist mt-8">{[['01', 'Traçado', 'onde passa e por quê?'], ['02', 'Interfaces', 'com quais REH, REA, CTR/ATZ ou aeroportos cruza?'], ['03', 'Acesso', 'quem pode entrar e com qual desempenho?'], ['04', 'Capacidade', 'qual recurso pode saturar?'], ['05', 'Contingência', 'o que acontece com bloqueio ou atraso?']].map(([n,t,c]) => <div key={n}><span>{n}</span><strong>{t}</strong><p>{c}</p></div>)}</div>
-      </Slide>
-
-      <Slide kicker="Debrief" title="Compare os desenhos pela pergunta que eles permitem responder" source="Discussão em sala: 7 minutos para apresentações rápidas e perguntas cruzadas." notes="Tempo sugerido: 7 minutos. Cada grupo tem um minuto para mostrar seu desenho e uma hipótese. A turma deve fazer uma pergunta sobre capacidade ou contingência.">
-        <div className="debrief-grid mt-9"><div><span>SEGURANÇA</span><strong>quais conflitos aparecem?</strong><p>eVTOL × eVTOL, helicóptero e asa fixa VFR.</p></div><div><span>EFICIÊNCIA</span><strong>qual desvio foi criado?</strong><p>distância, espera, conexão e tempo de solo.</p></div><div><span>ESCALA</span><strong>o que muda com 12 nós?</strong><p>densidade, capacidade e necessidade de serviço.</p></div></div>
-        <p className="slide-closing mt-9">O desenho é uma pergunta de pesquisa em forma espacial.</p>
-      </Slide>
-
-      <Slide kicker="Síntese" title="A migração para UAM é uma sequência de decisões verificáveis" source="Síntese: SIGMA-Sky Produtos 1 e 2; FAA UAM ConOps 2.0; DECEA PCA 351-7; NASA Provider Services for UAM." notes="Tempo sugerido: 3 minutos. Retome a sequência em voz alta: inventariar, modelar, escolher, coordenar e testar. Conecte o entregável da E06 às próximas aulas de vertiportos e superfícies de proteção.">
-        <ol className="migration-line mt-10"><li><span>1</span><strong>Inventariar</strong><small>usuários e estruturas existentes</small></li><li><span>2</span><strong>Modelar</strong><small>nós, rotas, demanda e desempenho</small></li><li><span>3</span><strong>Integrar</strong><small>camadas, interfaces e serviços</small></li><li><span>4</span><strong>Testar</strong><small>nominal, capacidade e contingência</small></li></ol>
-        <p className="slide-question mt-10 !text-2xl">O próximo voo só é possível quando a rede inteira consegue explicá-lo.</p>
-      </Slide>
-
-      <Slide kicker="Para consulta" title="Referências centrais da aula" notes="Deixe este slide disponível para consulta. Os PDFs públicos do FAA, NASA e DECEA estão na Biblioteca do portal. Os Produtos 1 e 2 do SIGMA-Sky foram usados como material de preparação fornecido pela equipe.">
-        <div className="reference-list mt-7">{presentation.references.map((reference) => <div key={reference.url}><strong>{reference.shortTitle}</strong><p>{reference.citation}</p></div>)}</div>
-        <p className="slide-closing mt-6">Entregável E06: esboço conceitual de corredores + diagrama simples de rede.</p>
-      </Slide>
-    </PresentationDeck>
-  );
+  return <PresentationDeck title={presentation.title} width={1600} height={900} className="air-deck">
+<Slide kicker="Abertura" title="Espaço aéreo: da REH à UAM" minutes={3} source="SIGMA-Sky, Produto 2, cap. 2 e 5." notes="Comece pelo mapa: a região já recebe helicópteros e aviões. Pergunte onde o aluno colocaria um novo voo. A resposta inicial será retomada depois de examinar espaço, regras, demanda e contingência." className="air-title-slide">
+<div className="air-cover"><div><p className="air-lead">Como integrar eVTOL ao espaço aéreo da RMSP sem desorganizar os fluxos existentes?</p><p>Ler a operação atual → comparar CONOPS → testar alternativas → desenhar uma rede.</p><div className="air-cover-meta">IT-214 • 08/09/2026 • 3 horas<br />RMSP · SIGMA-Sky · FAA · DECEA</div></div><Media assetId="sigma-helipontos" /></div>
+</Slide>
+<Slide kicker="Roteiro • 180 minutos" title="Uma aula organizada em quatro decisões" minutes={3} source="Planejamento didático E06." notes="Explique que haverá um intervalo de dez minutos e vinte minutos de oficina. Os tempos são do encontro inteiro, não apenas exposição. Apresente o entregável: rede comentada, hipóteses e uma contingência.">
+<div className="air-bands"><article><h3>Onde cabe?</h3><p>Reconhecer helipontos, REH/REA, CTR e interfaces com aeroportos.</p></article>
+<article><h3>Como integrar?</h3><p>Comparar volumes UAM, corredores cooperativos e o aproveitamento da infraestrutura existente.</p></article>
+<article><h3>Como coordenar?</h3><p>Relacionar intenção de voo, demanda-capacidade, separação e resposta a perturbações.</p></article>
+<article><h3>Como testar?</h3><p>Construir uma hipótese de rede e dizer qual evidência a faria ser aceita ou rejeitada.</p></article></div>
+</Slide>
+<Slide kicker="Fontes • o papel de cada documento" title="O SIGMA-Sky transforma conceitos em um experimento" minutes={5} source="SIGMA-Sky P1, cap. 2–9; P2, cap. 2–5; FAA 2023; DECEA 2024." notes="P1 é síntese comparativa; P2 define cenários ainda a avaliar. Não apresentar a rede proposta como rede aprovada nem a simulação como resultado já obtido. Datas: versão inicial P1 22/12/2025, P2 15/04/2026; os arquivos fornecidos podem incorporar revisões posteriores.">
+<div className="air-bands"><article><h3>Produto 1 • revisão</h3><p>Compara organização do espaço, tráfego, governança, regras, tecnologia, cenários e desempenho.</p></article>
+<article><h3>CONOPS • concepção operacional</h3><p>FAA e DECEA explicitam atores, acesso, serviços e evolução. A concepção orienta desenvolvimento e validação.</p></article>
+<article><h3>Produto 2 • RMSP</h3><p>Define rede de referência, vertiportos candidatos, demanda, desempenho e cenários para simulação no BlueSky.</p></article>
+<article><h3>Nesta aula • interpretação</h3><p>Separaremos condições observadas, propostas dos CONOPS e hipóteses de pesquisa.</p></article></div>
+</Slide>
+<Slide kicker="01 • Situação atual" title="Helipontos revelam uma rede já concentrada" minutes={6} source="SIGMA-Sky P2, fig. 2.1, p. 15; Carvalho et al. (2026), conforme relatório." notes="Leia primeiro a legenda: pontos são helipontos; preenchimento representa população. Observe a concentração central. Não deduza demanda eVTOL apenas da quantidade de helipontos ou população. Pergunte quais dados faltam: operação, destino, renda, acesso, restrições e disponibilidade do sítio.">
+<div className="air-evidence"><Media assetId="sigma-helipontos" /><div className="air-reading"><article><h3>Leia a figura</h3><p>Os pontos amarelos mostram infraestrutura existente; a distribuição espacial é desigual.</p></article>
+<article><h3>Implicação operacional</h3><p>Uma nova rede tende a encontrar tráfego, obstáculos e limitações justamente onde existem mais nós.</p></article>
+<article><h3>Limite da evidência</h3><p>Heliponto existente é candidato a estudo: conversão em vertiporto exige verificação própria.</p></article></div></div>
+</Slide>
+<Slide kicker="01 • Rotas visuais" title="REH e REA organizam fluxos com necessidades distintas" minutes={6} source="SIGMA-Sky P2, §§2.2 e 4.2, fig. 4.3; concepção de rede do estudo." notes="Leia as cores da legenda. REH é rota especial de helicópteros; REA é rota especial de aeronaves em voo visual. Esta imagem mostra as REH e conexões propostas, não toda a rede REA. Explique referências visuais e procedimentos locais. Não use a figura como carta de navegação. Pergunte por que a reta mais curta não define a rota utilizável.">
+<div className="air-evidence"><Media assetId="sigma-rede6" /><div className="air-reading"><article><h3>Estrutura existente</h3><p>REH organiza circulação de helicópteros; REA atende aeronaves em voo visual. Ambas precisam ser consideradas.</p></article>
+<article><h3>Leia o traçado</h3><p>Azul e rosa representam REH; laranja mostra rotas/conexões da rede proposta. São camadas diferentes.</p></article>
+<article><h3>Decisão de projeto</h3><p>A conexão mais curta pode cruzar um fluxo ou volume incompatível. Distância é apenas um critério.</p></article></div></div>
+</Slide>
+<Slide kicker="01 • Aeroportos e áreas controladas" title="Boa parte da infraestrutura encontra a CTR de Congonhas" minutes={7} source="SIGMA-Sky P2, §2.3, fig. 2.3, p. 16." notes="Identifique áreas sombreadas, aeroportos e concentração de pontos. Diferencie CTR de ATZ: proteção/organização do tráfego não é uma coleção de discos arbitrários. A representação histórica do estudo serve para discutir interfaces. Limites e procedimentos de voo dependem das publicações vigentes. Pergunta: quais coordenações seriam necessárias entre um vertiporto e a CTR?">
+<div className="air-evidence"><Media assetId="sigma-ctr" /><div className="air-reading"><article><h3>Leia a figura</h3><p>As zonas dos aeroportos se sobrepõem à região que concentra helipontos e deslocamentos potenciais.</p></article>
+<article><h3>CTR e ATZ</h3><p>CTR: espaço aéreo controlado associado ao aeródromo. ATZ: volume destinado à proteção do tráfego de aeródromo.</p></article>
+<article><h3>Consequência</h3><p>A rede UAM precisa compatibilizar acesso, chegada, saída e coordenação com o tráfego já organizado.</p></article></div></div>
+</Slide>
+<Slide kicker="01 • Regras, condições e serviços" title="VFR, IFR e classe do espaço respondem a perguntas diferentes" minutes={8} source="DECEA PCA 351-7, arts. 75–88; SIGMA-Sky P1, cap. 6." notes="Não simplifique IFR como mau tempo e VFR como ausência de controle. IFR pode ocorrer em condições visuais; VFR pode operar em espaço controlado. Serviços e responsabilidade por separação dependem da classe e do tipo de operação. Pergunte: um eVTOL elétrico ganha uma regra de voo própria? Não pela propulsão.">
+<div className="air-table-wrap"><table><thead><tr><th>Dimensão</th><th>O que define</th><th>Exemplo para a integração</th></tr></thead><tbody><tr><td>VFR / IFR</td><td>Regras de condução do voo</td><td>Escolher operação compatível com aeronave, piloto, procedimentos e ambiente.</td></tr><tr><td>VMC / IMC</td><td>Condições meteorológicas</td><td>Teto e visibilidade afetam disponibilidade; IFR não é sinônimo de IMC.</td></tr><tr><td>Classe do espaço aéreo</td><td>Acesso e serviços aplicáveis</td><td>A forma de prover separação varia; não basta dizer “há ATC”.</td></tr><tr><td>CNS</td><td>Comunicação, navegação e vigilância</td><td>Equipagem e desempenho precisam sustentar a operação prevista.</td></tr></tbody></table></div>
+</Slide>
+<Slide kicker="01 • Referência vertical" title="3.000 ft MSL não significa 3.000 ft acima da cidade" minutes={5} source="SIGMA-Sky P2, §5.1.2.2: valores de modelagem; exemplo didático de conversão." notes="Use terreno hipotético de 2500 ft MSL: voo em 3000 ft MSL resulta em 500 ft AGL naquele ponto. Se o terreno sobe, AGL cai. Não é autorização de altura sobre obstáculos. No relatório, a aproximação de 500 ft AGL é local, não constante em toda a RMSP. Relacione com prédios, terreno e trajetórias aeroportuárias.">
+<div className="air-altitude"><div><div className="air-level">Aeronave <b>3.000 ft MSL</b></div><div className="air-height">↕ <b>500 ft AGL</b><span>altura acima do terreno local</span></div><div className="air-ground">Terreno <b>2.500 ft MSL</b></div><div className="air-sea">Nível médio do mar • referência MSL</div></div><div className="air-reading"><article><h3>MSL • nível médio do mar</h3><p>Referência usada para comparar altitudes numa mesma base.</p></article>
+<article><h3>AGL • acima do terreno</h3><p>Depende da elevação local. O mesmo nível MSL produz alturas AGL diferentes.</p></article>
+<article><h3>Exemplo, não parâmetro operacional</h3><p>3.000 ft MSL − 2.500 ft de terreno = 500 ft AGL. Obstáculos exigem avaliação adicional.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • CONOPS brasileiro" title="ATM, UAM e UTM têm interfaces — não fronteiras estanques" minutes={6} source="DECEA PCA 351-7, fig. 1 e arts. 26–28, 75–84." notes="Leia a figura original e a associação dos ambientes. No contexto desta concepção, 400 ft AGL descreve UTM; o próprio texto prevê interseção UTM/UAM. Explique que aeronaves UAM cruzam interfaces nas chegadas e partidas. Informação compartilhada é necessária. Não generalizar um limite global para qualquer operação de drones.">
+<div className="air-evidence"><Media assetId="decea-ambientes" /><div className="air-reading"><article><h3>Estruturas preservadas</h3><p>FIR, CTA, CTR e ATZ continuam compondo o sistema. A UAM precisa integrar-se ao SISCEAB.</p></article>
+<article><h3>Interseção prevista</h3><p>O texto adota até 400 ft AGL para o ambiente UTM e reconhece interseção com UAM.</p></article>
+<article><h3>Condição de integração</h3><p>Compartilhar informações e estabelecer requisitos de acesso e desempenho para cada volume.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • FAA" title="O corredor é um ambiente cooperativo de operação" minutes={6} source="FAA UAM ConOps 2.0 (2023), §4.4; figura conceitual." notes="Leia as duas direções e a ligação entre vertiportos. Corredor não é simplesmente um tubo exclusivo para propulsão elétrica. Participantes precisam cumprir desempenho e práticas cooperativas. A FAA apresenta visão futura, não um procedimento operacional já universalmente implantado. Pergunte quem informa o voo a outros operadores.">
+<div className="air-evidence"><Media assetId="faa-2023-uam-corridor-concept" /><div className="air-reading"><article><h3>Volume + participação</h3><p>A geometria organiza o espaço; práticas cooperativas e requisitos organizam quem pode utilizá-lo.</p></article>
+<article><h3>Intenção compartilhada</h3><p>Rotas, tempos e restrições precisam estar disponíveis aos serviços e operadores envolvidos.</p></article>
+<article><h3>Evolução gradual</h3><p>Operações iniciais usam o ambiente existente; a concepção explora coordenação para maior densidade.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • DECEA × FAA" title="Duas ênfases que não devem virar uma receita única" minutes={5} source="DECEA PCA 351-7, arts. 78–84; FAA UAM ConOps 2.0, §4.4; SIGMA-Sky P1, §§3.1–3.4." notes="DECEA privilegia volumes por desempenho e permite aproveitamento de rotas existentes, com rotas exclusivas em certas situações. FAA enfatiza áreas cooperativas e corredores. Não dizer que compartilhamento é sempre fase inicial e segregação sempre fase madura: são escolhas a testar. Leia a diferença antes de aplicar à RMSP.">
+<div className="air-comparison"><article><h3>DECEA • volumes UAM</h3><p>Evita tomar corredores exclusivos como solução geral para áreas congestionadas.</p><p>Admite reaproveitar rotas e ingresso de outras aeronaves tripuladas que atendam aos requisitos.</p></article>
+<article><h3>FAA • áreas cooperativas</h3><p>Estrutura corredores como um tipo de área com operação cooperativa.</p><p>Associa o funcionamento a participação, informação e desempenho; a geometria sozinha é insuficiente.</p></article>
+<article><h3>Pergunta para a RMSP</h3><p>Qual combinação de geometria e serviços melhora o desempenho?</p><p>O SIGMA-Sky compara alternativas, em vez de pressupor uma vencedora.</p></article></div>
+</Slide>
+<Slide kicker="02 • Rede inicial" title="Seis vertiportos candidatos conectados a aeroportos" minutes={6} source="SIGMA-Sky P2, §§4.1–4.2, fig. 4.3, p. 42." notes="A rede inicial tem seis vertiportos candidatos e inclui conexões a SBSP, SBGR e SBMT; não confundir seis candidatos com número total de nós desenhados. Explique grafo: waypoints e ligações representam navegação, vertiportos representam origem/destino e processamento em solo. A figura é resultado de uma hipótese de localização, não autorização de construção.">
+<div className="air-evidence"><Media assetId="sigma-rede6" /><div className="air-reading"><article><h3>Nós de natureza diferente</h3><p>Vertiportos processam viagens; waypoints organizam trajetórias; aeroportos conectam outros serviços.</p></article>
+<article><h3>Conexão condicionada</h3><p>A rede deriva das REH e de ligações aos nós. O caminho depende de conectividade e restrições.</p></article>
+<article><h3>O que investigar</h3><p>Onde os fluxos se encontram? Qual ponto pode acumular demanda de vários pares origem–destino?</p></article></div></div>
+</Slide>
+<Slide kicker="02 • Expansão" title="Doze vertiportos mudam a distribuição dos fluxos" minutes={5} source="SIGMA-Sky P2, §§4.1–4.3, fig. 4.4, p. 43." notes="Compare com o slide anterior. Expansão de seis para doze candidatos não implica duplicar automaticamente demanda ou capacidade. O Produto 2 redistribui demanda no estágio intermediário. Mais pares OD podem compartilhar os mesmos trechos. Peça que localizem visualmente uma convergência.">
+<div className="air-evidence"><Media assetId="sigma-rede12" /><div className="air-reading"><article><h3>Mais capilaridade</h3><p>Novos nós ampliam opções de origem e destino e alteram os caminhos pela rede.</p></article>
+<article><h3>Capacidade localizada</h3><p>A rede pode crescer e continuar limitada por um trecho, cruzamento ou vertiporto.</p></article>
+<article><h3>Teste necessário</h3><p>Comparar carga por recurso e por horário, além do número total de voos.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • Demanda como hipótese" title="A matriz OD alimenta o experimento; não comprova um mercado" minutes={5} source="SIGMA-Sky P2, §4.3: Pesquisa OD, transporte aeroportuário e fator de conversão." notes="Destaque o fator 0,5% como premissa do procedimento, nunca participação de mercado medida. Demanda de passageiros não é igual a número de aeronaves: ocupação, reposicionamento e perfil horário interferem. Peça uma análise de sensibilidade: reduzir conversão pela metade ou concentrar partidas em pico.">
+<div className="air-bands"><article><h3>City taxi</h3><p>Deslocamentos urbanos são agregados aos candidatos, ponderados por distância e localização.</p></article>
+<article><h3>Conexão aeroportuária</h3><p>Viagens de acesso aos aeroportos entram como componente próprio da matriz.</p></article>
+<article><h3>Premissa explícita</h3><p>O estudo emprega conversão de 0,5% nas estimativas iniciais. É hipótese a variar na simulação.</p></article>
+<article><h3>Da viagem ao voo</h3><p>Ocupação, horário e reposicionamento precisam ser definidos para transformar passageiros em tráfego.</p></article></div>
+</Slide>
+<Slide kicker="02 • Alternativa A" title="Compartilhar REH aproveita estrutura, mas mantém interações" minutes={5} source="SIGMA-Sky P2, §5.1.2.1, fig. 5.5, p. 51." notes="Leia a rede compartilhada. A vantagem é reaproveitamento espacial; não inferir capacidade disponível. C1 é nominal sem os novos mecanismos estratégicos da simulação, não sem regras ou controle na operação real. Pergunte o que acontece com helicóptero mais lento no trecho compartilhado.">
+<div className="air-evidence"><Media assetId="sigma-compartilhada" /><div className="air-reading"><article><h3>O que muda</h3><p>Novas operações eVTOL utilizam a estrutura de REH também usada por helicópteros.</p></article>
+<article><h3>O que precisa ser tratado</h3><p>Diferenças de velocidade, ocupação dos trechos, entrada e saída, informação de tráfego e prioridades.</p></article>
+<article><h3>Comparação correta</h3><p>Avaliar a mesma demanda e desempenho sob diferentes serviços, mantendo as demais premissas controladas.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • Alternativa B" title="Corredores dedicados acrescentam volumes à rede existente" minutes={5} source="SIGMA-Sky P2, §5.1.2.2, fig. 5.7, p. 53." notes="Use o painel 2D para a legenda e 3D para sobreposições. Explique que cores correspondem à figura original e a altitude varia ao longo das redes. Corredor dedicado não elimina pontos de interface. A comparação espacial é preliminar.">
+<div className="air-dual"><div><Media assetId="sigma-dedicada2d" /><Media assetId="sigma-dedicada3d" /></div><div className="air-reading"><article><h3>Em planta</h3><p>Cruzar traçados não basta para concluir conflito: falta a dimensão vertical.</p></article>
+<article><h3>Em perfil</h3><p>Volumetria revela aproximações e sobreposições com REH e REA.</p></article>
+<article><h3>Próxima decisão</h3><p>Ajustar trechos e verificar também os fluxos aeroportuários.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • Refinamento" title="O estudo desloca trechos para compatibilizar volumes" minutes={5} source="SIGMA-Sky P2, §5.1.2.2, fig. 5.8, p. 54." notes="A proposta inicial utiliza referência de 4000 ft MSL; trechos com interferência são deslocados lateralmente e para 3000 ft MSL. As separações e larguras são parâmetros da modelagem. Não apresentar como projeto homologado. A pergunta é como validar margens incluindo desvio da trajetória e incerteza de posição.">
+<div className="air-dual"><div><Media assetId="sigma-refinada2d" /><Media assetId="sigma-refinada3d" /></div><div className="air-reading"><article><h3>Ajuste localizado</h3><p>Deslocamento lateral e alteração de altitude tratam incompatibilidades em trechos específicos.</p></article>
+<article><h3>Referências do modelo</h3><p>O relatório usa 4.000 ft MSL e, em trechos refinados, 3.000 ft MSL.</p></article>
+<article><h3>Ainda falta demonstrar</h3><p>Conformidade de trajetória, margens, desvios e efeitos de contingências na operação.</p></article></div></div>
+</Slide>
+<Slide kicker="02 • Interface aeroportuária" title="Adicionar chegadas e saídas muda a leitura do espaço" minutes={6} source="SIGMA-Sky P2, fig. 5.11, p. 59; §5.1.2.2." notes="As superfícies nesta análise foram construídas a partir de trajetórias observadas, percentis e suavização. Não confundir com superfícies normativas de proteção de obstáculos. Mostre que o próprio Produto 2 limita a conclusão à aderência espacial preliminar. Pergunte como variações de pista e meteorologia poderiam alterar o resultado.">
+<div className="air-dual"><div><Media assetId="sigma-aeroportos2d" /><Media assetId="sigma-aeroportos3d" /></div><div className="air-reading"><article><h3>Camada adicional</h3><p>Os fluxos de chegada e saída de aeroportos ocupam volumes além das redes REH/REA.</p></article>
+<article><h3>Natureza da figura</h3><p>Envelopes construídos a partir de trajetórias do estudo; não são uma carta operacional.</p></article>
+<article><h3>Limite da conclusão</h3><p>Compatibilidade geométrica preliminar ainda exige simulação e avaliação operacional.</p></article></div></div>
+</Slide>
+<Slide kicker="Intervalo • 10 minutos" title="Já sabemos onde cabe. Agora: quem coordena?" minutes={10} source="Retomada: SIGMA-Sky P2, §5.2." notes="Faça dez minutos de pausa. Na volta peça a um aluno uma síntese: geometria organiza volumes, mas não agenda os voos. Use a imagem para retomar os pontos em que trajetórias diferentes se encontram.">
+<div className="air-evidence"><Media assetId="sigma-rede12" /><div className="air-reading"><article><h3>Para retomar</h3><p>Se dois voos reservarem o mesmo recurso no mesmo horário, quem identifica o problema?</p></article>
+<article><h3>Três perguntas</h3><p>Qual informação é compartilhada? Quem propõe a mudança? Quem executa e monitora?</p></article>
+<article><h3>Próximo bloco</h3><p>Planejamento estratégico, gestão de capacidade e tratamento de desvios.</p></article></div></div>
+</Slide>
+<Slide kicker="03 • Serviços e responsabilidades" title="O plano de voo precisa circular entre atores" minutes={7} source="NASA Provider of Services to UAM (2021); DECEA PCA 351-7, arts. 73–74; SIGMA-Sky P1, cap. 5." notes="Defina intenção operacional: onde e quando pretende voar. PSU apoia intercâmbio e coordenação; não substitui automaticamente ATC, operador ou piloto. Separe plano, aceitação/coordenação e execução. Conecte com disponibilidade do vertiporto. Exemplo: destino sem capacidade demanda ajuste antes da partida.">
+<div className="air-bands"><article><h3>Operador e piloto</h3><p>Propõem a operação, cumprem os requisitos e executam o voo dentro das responsabilidades aplicáveis.</p></article>
+<article><h3>PSU • serviços UAM</h3><p>Apoia intercâmbio de intenção, restrições, coordenação e monitoramento, conforme a concepção adotada.</p></article>
+<article><h3>Vertiporto</h3><p>Informa disponibilidade de infraestrutura e recursos que condicionam chegada e saída.</p></article>
+<article><h3>ATM / ATC</h3><p>Mantém as responsabilidades aplicáveis e coordena as interfaces com o tráfego convencional.</p></article></div>
+</Slide>
+<Slide kicker="03 • Demanda-capacidade" title="Atrasar no solo pode evitar saturação de um recurso" minutes={7} source="SIGMA-Sky P2, §5.2.2.1; números abaixo são exemplo didático." notes="Exemplo deliberadamente agregado: capacidade de oito entradas em dez minutos, doze pretendidas, quatro devem mudar de janela. Explique que isso não verifica separação entre todos os pares. Questione fila, prioridade e atrasos acumulados. O estudo pretende calibrar recursos e capacidades a partir de hotspots da simulação.">
+<div className="air-example"><div className="air-equation"><div><b>12</b><span>entradas pretendidas</span></div><div><b>8</b><span>capacidade por janela</span></div><div><b>4</b><span>partidas reprogramadas</span></div></div><p className="air-example-label">Exemplo didático • um recurso • janela de 10 minutos</p><div className="air-three"><article><h3>Recurso</h3><p>Um waypoint, setor ou vertiporto tem limite por intervalo de tempo.</p></article>
+<article><h3>Decisão estratégica</h3><p>Redistribuir partidas para que a ocupação planejada caiba na capacidade.</p></article>
+<article><h3>O que medir</h3><p>Atraso no solo, vazão, fila, equidade e conflitos remanescentes.</p></article></div></div>
+</Slide>
+<Slide kicker="03 • Trajetórias 4D" title="Desconflitar exige comparar lugar e tempo" minutes={7} source="SIGMA-Sky P2, §§5.2.1–5.2.2; exemplo didático." notes="Dois voos atravessam X às 10:05: pode haver conflito segundo o volume de proteção adotado. Deslocar partida B para 10:02 altera passagem para 10:07 neste exemplo. Dois minutos não são mínimo operacional: ilustram mudança temporal. Recalcular o restante da rede para não transferir o conflito. Vento/partida incerta mudam previsão.">
+<div className="air-example"><table><thead><tr><th>Plano</th><th>Partida</th><th>Passagem em X</th><th>Decisão</th></tr></thead><tbody><tr><td>Voo A</td><td>10:00</td><td>10:05</td><td>Manter</td></tr><tr><td>Voo B • original</td><td>10:00</td><td>10:05</td><td>Reavaliar ocupação simultânea</td></tr><tr><td>Voo B • ajustado</td><td>10:02</td><td>10:07</td><td>Verificar novamente toda a trajetória</td></tr></tbody></table><p className="air-example-label">Tempos ilustrativos • não representam mínimo de separação</p><div className="air-three"><article><h3>Antes</h3><p>A e B planejam ocupar o mesmo ponto X às 10:05.</p></article>
+<article><h3>Replanejar</h3><p>Ajustar a partida de B desloca sua passagem por X; verificar todos os demais recursos.</p></article>
+<article><h3>Durante o voo</h3><p>Desvios de horário e trajetória exigem atualização e mecanismos de resposta.</p></article></div></div>
+</Slide>
+<Slide kicker="03 • Separação e desempenho" title="0,3 NM é um parâmetro de pesquisa, não uma autorização" minutes={5} source="SIGMA-Sky P2, §5.2.2.2, pp. 66–67." notes="RNP caracteriza desempenho de navegação com monitoramento e alerta; não define isoladamente mínimo de separação. O relatório usa 1/0,6/0,3 NM como sensibilidade e 1 NM entre eVTOL e convencional. Não converter essa lista diretamente em classes de maturidade. Citar que segurança exige distribuição do erro, CNS, vigilância e resposta, não apenas média.">
+<div className="air-table-wrap"><table><thead><tr><th>Parâmetro testado</th><th>Valores no Produto 2</th><th>Como interpretar</th></tr></thead><tbody><tr><td>eVTOL × eVTOL</td><td>1,0 / 0,6 / 0,3 NM</td><td>Variação de sensibilidade entre aeronaves da nova operação.</td></tr><tr><td>eVTOL × convencional</td><td>1,0 NM</td><td>Premissa adotada para a interação com o tráfego convencional.</td></tr><tr><td>Navegação / RNP</td><td>Desempenho e conformidade</td><td>Precisão de navegação, sozinha, não determina separação segura.</td></tr><tr><td>Evidência necessária</td><td>CNS + incerteza + resposta</td><td>Avaliar perdas de separação e robustez em diferentes condições.</td></tr></tbody></table></div>
+</Slide>
+<Slide kicker="03 • Contingência" title="Uma rota bloqueada redistribui problemas pela rede" minutes={6} source="SIGMA-Sky P2, §5.3, figs. 5.15–5.16." notes="Trabalhe dois eventos: bloqueio temporário e incerteza em horário/tempo de voo. Pergunte quais aeronaves já partiram, que destino tem capacidade e como replanejar. Energia limita alternativas mas não quantificar sem desempenho. Frise que a simulação inclui incertezas e bloqueios, não apenas um dia perfeito.">
+<div className="air-bands"><article><h3>Bloqueio de área</h3><p>Uma restrição temporária pode inviabilizar o caminho planejado e concentrar fluxo numa alternativa.</p></article>
+<article><h3>Incerteza de execução</h3><p>Atraso de partida, vento e variação do tempo de voo alteram a ocupação prevista dos recursos.</p></article>
+<article><h3>Resposta coordenada</h3><p>Atualizar intenções, reavaliar capacidade, reter partidas e tratar aeronaves já em voo.</p></article>
+<article><h3>Critério de robustez</h3><p>Medir conflitos, atraso, cancelamentos e recuperação da rede sob perturbação.</p></article></div>
+</Slide>
+<Slide kicker="03 • Experimento" title="Geometria, serviço e condição são variáveis distintas" minutes={5} source="SIGMA-Sky P2, tabelas 5.1 e 5.2, p. 70." notes="C1-C6 principais; C7-C10 complementares por recomendação DECEA. Sem gestão significa sem mecanismo estratégico adicional modelado, não ausência de controle real. C7-C10 não representam diretamente VFR atual: dependem de equipagem, compartilhamento de intenção e conformidade dos participantes.">
+<div className="air-scenarios"><table><thead><tr><th>Cenário</th><th>Estrutura</th><th>Serviço estratégico</th><th>Condição</th></tr></thead><tbody><tr><td>C1</td><td>REH</td><td>Sem mecanismo adicional</td><td>Nominal</td></tr><tr><td>C2</td><td>Dedicada</td><td>Sem mecanismo adicional</td><td>Nominal</td></tr><tr><td>C3 / C4</td><td>Dedicada</td><td>DCB / desconflito</td><td>Nominal</td></tr><tr><td>C5 / C6</td><td>Dedicada</td><td>DCB / desconflito</td><td>Off-nominal</td></tr><tr><td>C7 / C8</td><td>REH</td><td>DCB / desconflito</td><td>Nominal</td></tr><tr><td>C9 / C10</td><td>REH</td><td>DCB / desconflito</td><td>Off-nominal</td></tr></tbody></table><div className="air-three"><article><h3>Comparar</h3><p>C1 × C2 isola a geometria; C2 × C3/C4 avalia os serviços.</p></article>
+<article><h3>Perturbar</h3><p>C3/C4 × C5/C6 avalia a resposta off-nominal.</p></article>
+<article><h3>Transição</h3><p>C7–C10 estendem serviços ao compartilhamento de REH; exigem cooperação digital.</p></article></div></div>
+</Slide>
+<Slide kicker="03 • Avaliação" title="Uma solução só melhora se o critério estiver declarado" minutes={5} source="SIGMA-Sky P1, cap. 9; P2, cenários para avaliação futura." notes="Não afirmar resultados que o Produto 2 não apresenta. Segurança por perda de separação é proxy, não prova de certificação. Capacidade com atraso crescente pode não ser operacionalmente útil. Pedir que a turma identifique trade-off: mais vazão por espera em solo maior, ou menos conflitos à custa de desvios longos.">
+<div className="air-table-wrap"><table><thead><tr><th>Critério</th><th>Indicador possível</th><th>Pergunta de comparação</th></tr></thead><tbody><tr><td>Segurança</td><td>Conflitos / perdas de separação</td><td>Em qual demanda e com qual incerteza aparecem?</td></tr><tr><td>Eficiência</td><td>Atraso, distância e tempo de voo</td><td>Onde o custo da coordenação foi absorvido?</td></tr><tr><td>Capacidade</td><td>Voos processados por intervalo</td><td>Qual recurso limita a vazão e como cresce a fila?</td></tr><tr><td>Resiliência</td><td>Recuperação e voos afetados</td><td>O que acontece quando uma rota fica indisponível?</td></tr></tbody></table></div>
+</Slide>
+<Slide kicker="04 • Oficina • 20 minutos" title="Desenhe uma rede e defenda suas hipóteses" minutes={20} source="Atividade E06; caso didático baseado nas alternativas do SIGMA-Sky." notes="Distribua 3 min para escolher OD; 7 min traçado e interfaces; 5 min serviço/capacidade; 5 min contingência e hipóteses. Grupos de 3–4. Não exigir coordenadas, mínimos reais ou projeto executivo. Use a figura como referência conceitual histórica. Produto: uma folha com diagrama, legenda, três hipóteses e uma perturbação.">
+<div className="air-evidence"><Media assetId="sigma-compartilhada" /><div className="air-reading"><article><h3>1 • Traçado e interfaces</h3><p>Escolha um par OD. Marque nós, trechos compartilhados e uma interface com aeroporto ou outra rota.</p></article>
+<article><h3>2 • Serviço e hipóteses</h3><p>Defina acesso, recurso limitante e mecanismo estratégico. Separe dado conhecido de hipótese.</p></article>
+<article><h3>3 • Contingência</h3><p>Bloqueie um trecho. Mostre o que muda para quem está no solo e para quem já decolou.</p></article></div></div>
+</Slide>
+<Slide kicker="04 • Discussão • 8 minutos" title="Apresente uma decisão e uma forma de testá-la" minutes={8} source="Discussão orientada e entregável E06." notes="Reserve cerca de 2 min por grupo se forem quatro. Peça desenho, uma decisão e evidência necessária. Faça pergunta cruzada sobre tráfego convencional ou bloqueio. Evite julgar pela beleza do mapa. Resposta esperada conecta geometria a responsabilidade, capacidade e teste.">
+<div className="air-bands"><article><h3>O desenho deve mostrar</h3><p>Origem e destino, conexões, legenda e uma interface crítica com tráfego existente.</p></article>
+<article><h3>A justificativa deve explicar</h3><p>Por que compartilhar ou dedicar espaço, e qual restrição orientou a escolha.</p></article>
+<article><h3>O teste deve especificar</h3><p>Qual variável será alterada e qual indicador poderá contrariar a hipótese.</p></article>
+<article><h3>Entrega</h3><p>Esboço conceitual de corredores + diagrama de rede + três hipóteses + resposta a um bloqueio.</p></article></div>
+</Slide>
+<Slide kicker="Síntese" title="A transição é de uma rede existente para uma operação coordenada" minutes={3} source="Síntese didática: SIGMA-Sky Produtos 1 e 2; FAA; DECEA; NASA." notes="Retome a pergunta da capa. Resposta: reconhecer a rede existente, declarar geometria e acesso, coordenar tempos e testar perturbações. Próxima aula de vertiportos: o nó em solo limita rede. Não prometer que corredor elimina conflitos nem que automação resolve governança.">
+<div className="air-bands"><article><h3>A base já existe</h3><p>Helipontos, REH/REA, aeroportos e seus fluxos condicionam as novas operações.</p></article>
+<article><h3>O CONOPS organiza responsabilidades</h3><p>Volume, acesso, informação, serviços e desempenho precisam formar um conjunto coerente.</p></article>
+<article><h3>A simulação compara hipóteses</h3><p>Compartilhar ou dedicar espaço altera interações; serviços e incerteza alteram o resultado.</p></article>
+<article><h3>Próxima aula</h3><p>O vertiporto como recurso da rede: chegada, processamento em solo, partida e capacidade.</p></article></div>
+</Slide>
+<Slide kicker="Referências • consulta" title="Documentos e figuras usados na aula" minutes={0} source="Paginação do SIGMA-Sky: número impresso; página do PDF registrada no catálogo de figuras." notes="Referências completas disponíveis nos metadados. Os relatórios fornecidos são fontes locais; não inventar URL pública. As figuras extraídas têm identificação, atribuição e checksum. Indicar consultas por seção.">
+<div className="air-references"><article><h3>SIGMA-Sky • Produto 1</h3><p>Relatório de Revisão da Literatura. Meta 2 / Etapa 7. Equipe ITA; versão inicial 22/12/2025. Cap. 3–9.</p></article>
+<article><h3>SIGMA-Sky • Produto 2</h3><p>Definição de Cenários Operacionais para Simulação. Meta 2 / Etapa 7. Equipe ITA; versão inicial 15/04/2026. Cap. 2, 4 e 5.</p></article>
+<article><h3>DECEA • PCA 351-7 (2024)</h3><p>Concepção Operacional UAM Nacional. Arts. 26–28, 73–88 e figura 1.</p></article>
+<article><h3>FAA • UAM ConOps 2.0 (2023)</h3><p>Urban Air Mobility Concept of Operations. Ambiente cooperativo e corredores, seção 4.4.</p></article>
+<article><h3>NASA • PSU (2021)</h3><p>Provider of Services to UAM: An Overview and Initial Use Case Discussion. NTRS 20210017616.</p></article></div>
+</Slide>
+</PresentationDeck>;
 }
