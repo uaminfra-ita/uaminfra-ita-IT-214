@@ -256,7 +256,7 @@
     "subtitle": "Rotas, corredores, camadas, coordenação e cenários de integração na RMSP",
     "date": "2026-09-08",
     "durationMinutes": 180,
-    "slideCount": 24,
+    "slideCount": 30,
     "objectives": [
       "Reconhecer REH, REA, CTR/ATZ, ATM, UAM e UTM como partes de um sistema existente.",
       "Distinguir rota, corredor, camada e volume cooperativo no desenho do espaço aéreo.",
@@ -293,6 +293,196 @@
         "citation": "National Aeronautics and Space Administration. Provider of Services to UAM: An Overview and Initial Use Case Discussion.",
         "url": "https://ntrs.nasa.gov/citations/20210017616",
         "purpose": "Serviços cooperativos, informação e gestão de operações"
+      }
+    ],
+    "authors": [
+      "Equipe docente IT-214 — preparação assistida por IA"
+    ],
+    "license": "Material didático institucional; figuras de terceiros conforme catálogo visual",
+    "sourceDocuments": [
+      {
+        "id": "sigmasky-produto1",
+        "title": "Relatório de Revisão da Literatura",
+        "authors": [
+          "Mayara Condé Rocha Murça",
+          "Marcelo Xavier Guterres",
+          "Daniel Alberto Pamplona",
+          "Lucas Orbolato Carvalho",
+          "Igor Galhano Gomes"
+        ],
+        "source": "Produto01.pdf fornecido diretamente pelo usuário",
+        "versionDate": "2025-12-22",
+        "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
+        "sha256": "6B342619F28A81425E63EC6D1592A95B7699520C84C937844498ECB9E4FC9E4F",
+        "distribution": "Referência local; PDF integral não redistribuído."
+      },
+      {
+        "id": "sigmasky-produto2",
+        "title": "Definição de Cenários Operacionais para Simulação",
+        "authors": [
+          "Mayara Condé Rocha Murça",
+          "Daniel Alberto Pamplona",
+          "Lucas Orbolato Carvalho",
+          "Jaqueline Fonseca Rodrigues",
+          "Igor Galhano Gomes"
+        ],
+        "source": "Projeto02.pdf fornecido diretamente pelo usuário",
+        "versionDate": "2026-04-15",
+        "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
+        "sha256": "80B3881482C49A907044310E7A8FD8F2E99BCD6DA1B9628E3D5E9D249B97C8B0",
+        "distribution": "Referência local; PDF integral não redistribuído."
+      }
+    ],
+    "agenda": [
+      {
+        "slide": 1,
+        "title": "Espaço aéreo: da REH à UAM",
+        "minutes": 3
+      },
+      {
+        "slide": 2,
+        "title": "Uma aula organizada em quatro decisões",
+        "minutes": 3
+      },
+      {
+        "slide": 3,
+        "title": "O SIGMA-Sky transforma conceitos em um experimento",
+        "minutes": 5
+      },
+      {
+        "slide": 4,
+        "title": "Helipontos revelam uma rede já concentrada",
+        "minutes": 6
+      },
+      {
+        "slide": 5,
+        "title": "REH e REA organizam fluxos com necessidades distintas",
+        "minutes": 6
+      },
+      {
+        "slide": 6,
+        "title": "Boa parte da infraestrutura encontra a CTR de Congonhas",
+        "minutes": 7
+      },
+      {
+        "slide": 7,
+        "title": "VFR, IFR e classe do espaço respondem a perguntas diferentes",
+        "minutes": 8
+      },
+      {
+        "slide": 8,
+        "title": "3.000 ft MSL não significa 3.000 ft acima da cidade",
+        "minutes": 5
+      },
+      {
+        "slide": 9,
+        "title": "ATM, UAM e UTM têm interfaces — não fronteiras estanques",
+        "minutes": 6
+      },
+      {
+        "slide": 10,
+        "title": "O corredor é um ambiente cooperativo de operação",
+        "minutes": 6
+      },
+      {
+        "slide": 11,
+        "title": "Duas ênfases que não devem virar uma receita única",
+        "minutes": 5
+      },
+      {
+        "slide": 12,
+        "title": "Seis vertiportos candidatos conectados a aeroportos",
+        "minutes": 6
+      },
+      {
+        "slide": 13,
+        "title": "Doze vertiportos mudam a distribuição dos fluxos",
+        "minutes": 5
+      },
+      {
+        "slide": 14,
+        "title": "A matriz OD alimenta o experimento; não comprova um mercado",
+        "minutes": 5
+      },
+      {
+        "slide": 15,
+        "title": "Compartilhar REH aproveita estrutura, mas mantém interações",
+        "minutes": 5
+      },
+      {
+        "slide": 16,
+        "title": "Corredores dedicados acrescentam volumes à rede existente",
+        "minutes": 5
+      },
+      {
+        "slide": 17,
+        "title": "O estudo desloca trechos para compatibilizar volumes",
+        "minutes": 5
+      },
+      {
+        "slide": 18,
+        "title": "Adicionar chegadas e saídas muda a leitura do espaço",
+        "minutes": 6
+      },
+      {
+        "slide": 19,
+        "title": "Já sabemos onde cabe. Agora: quem coordena?",
+        "minutes": 10
+      },
+      {
+        "slide": 20,
+        "title": "O plano de voo precisa circular entre atores",
+        "minutes": 7
+      },
+      {
+        "slide": 21,
+        "title": "Atrasar no solo pode evitar saturação de um recurso",
+        "minutes": 7
+      },
+      {
+        "slide": 22,
+        "title": "Desconflitar exige comparar lugar e tempo",
+        "minutes": 7
+      },
+      {
+        "slide": 23,
+        "title": "0,3 NM é um parâmetro de pesquisa, não uma autorização",
+        "minutes": 5
+      },
+      {
+        "slide": 24,
+        "title": "Uma rota bloqueada redistribui problemas pela rede",
+        "minutes": 6
+      },
+      {
+        "slide": 25,
+        "title": "Geometria, serviço e condição são variáveis distintas",
+        "minutes": 5
+      },
+      {
+        "slide": 26,
+        "title": "Uma solução só melhora se o critério estiver declarado",
+        "minutes": 5
+      },
+      {
+        "slide": 27,
+        "title": "Desenhe uma rede e defenda suas hipóteses",
+        "minutes": 20
+      },
+      {
+        "slide": 28,
+        "title": "Apresente uma decisão e uma forma de testá-la",
+        "minutes": 8
+      },
+      {
+        "slide": 29,
+        "title": "A transição é de uma rede existente para uma operação coordenada",
+        "minutes": 3
+      },
+      {
+        "slide": 30,
+        "title": "Documentos e figuras usados na aula",
+        "minutes": 0
       }
     ]
   }

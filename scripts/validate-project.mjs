@@ -121,7 +121,7 @@ allResources.forEach((resource) => {
 
 const declaredPresentationMediaPaths = [];
 presentationAssets.forEach((asset) => {
-  ['id', 'presentationSlug', 'title', 'assetPath', 'kind', 'creator', 'sourceUrl', 'creditLine', 'usageBasis', 'alt', 'sha256'].forEach((field) => {
+  ['id', 'presentationSlug', 'title', 'assetPath', 'kind', 'creator', 'creditLine', 'usageBasis', 'alt', 'sha256'].forEach((field) => {
     assert.ok(asset[field], `${asset.id || 'Imagem'} sem ${field}.`);
   });
   assert.ok(presentationSlugs.has(asset.presentationSlug), `Apresentação inexistente para ${asset.id}.`);
@@ -130,7 +130,18 @@ presentationAssets.forEach((asset) => {
   asset.slideNumbers.forEach((slideNumber) => {
     assert.ok(Number.isInteger(slideNumber) && slideNumber >= 1 && slideNumber < presentation.slideCount, `Slide inválido em ${asset.id}.`);
   });
-  assert.ok(asset.sourceUrl.startsWith('https://'), `${asset.id} deve usar fonte HTTPS.`);
+  if (asset.sourceDocumentId) {
+    const source = presentation.sourceDocuments?.find((item) => item.id === asset.sourceDocumentId);
+    assert.ok(source?.source && source?.authors?.length, `${asset.id} deve apontar para documento identificado e com autoria.`);
+    assert.match(source.sha256, /^[A-F0-9]{64}$/, `${asset.id} deve identificar o checksum do documento-fonte.`);
+    assert.ok(Number.isInteger(asset.sourcePage) && asset.sourcePage > 0, `${asset.id} deve informar a página do PDF.`);
+    assert.equal(asset.audience, 'public', `${asset.id} precisa declarar público.`);
+  } else assert.ok(asset.sourceUrl?.startsWith('https://'), `${asset.id} deve usar fonte HTTPS.`);
+  for (const use of asset.additionalUses || []) {
+    const target = presentations.find((item) => item.slug === use.presentationSlug);
+    assert.ok(target && use.slideNumbers.every((number) => number >= 1 && number <= target.slideCount), `${asset.id} possui relação de reutilização inválida.`);
+    assert.ok(fs.readFileSync(path.join(root, 'app', 'apresentacoes', use.presentationSlug, 'page.jsx'), 'utf8').includes(`assetId="${asset.id}"`), `${asset.id} não aparece na apresentação relacionada.`);
+  }
   assert.ok(asset.assetPath.startsWith('/images/presentations/') && /\.(?:jpe?g|png|webp)$/i.test(asset.assetPath), `${asset.id} possui assetPath inválido.`);
   assert.match(asset.sha256, /^[A-F0-9]{64}$/, `${asset.id} possui SHA-256 inválido.`);
   const relativePath = asset.assetPath.slice(1).replaceAll('/', path.sep);
@@ -164,6 +175,10 @@ brandAssets.forEach((asset) => assert.ok(rootLayout.includes(asset.assetPath), `
 presentations.forEach((presentation) => {
   assert.ok(activityIds.has(presentation.activityId), `Atividade inexistente em ${presentation.slug}.`);
   assert.ok([90, 180].includes(presentation.durationMinutes), `${presentation.slug} deve durar 90 ou 180 minutos.`);
+  if (presentation.agenda) {
+    assert.equal(presentation.agenda.length, presentation.slideCount, `${presentation.slug}: agenda incompleta.`);
+    assert.equal(presentation.agenda.reduce((total, item) => total + item.minutes, 0), presentation.durationMinutes, `${presentation.slug}: duração da agenda divergente.`);
+  }
   assert.ok(Number.isInteger(presentation.slideCount) && presentation.slideCount > 0, `${presentation.slug} deve declarar uma quantidade positiva de slides.`);
   assert.ok(Array.isArray(presentation.objectives) && presentation.objectives.length === 4, `${presentation.slug} precisa de quatro objetivos.`);
   presentation.resourceIds.forEach((id) => assert.ok(resourceIds.has(id), `Fonte ${id} não existe em ${presentation.slug}.`));
