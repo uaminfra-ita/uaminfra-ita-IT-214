@@ -37,8 +37,8 @@
       "credential": {
         "algorithm": "PBKDF2-SHA256",
         "iterations": 210000,
-        "salt": "xUU4-f9vWcWXf_WMT-yfBw",
-        "passwordHash": "WuxWTfSSNNWpGKZ6u9KhB3Mf0UJrrw9kOhJn851829E"
+        "salt": "OoaDQ2dVCFAfs16G6OkXug",
+        "passwordHash": "iglI6z4Bsvj5QGs3PqmJOwionP29pEwZqclgMfifwJw"
       }
     },
     {
