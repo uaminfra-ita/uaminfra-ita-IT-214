@@ -31,8 +31,9 @@ function ResourceCard({ resource }) {
       <div className={`mt-5 grid gap-2 ${isPdf ? 'sm:grid-cols-3' : 'sm:grid-cols-2'}`}>
         {isPdf && <a className="button-dark !px-3 !py-2 text-xs" href={fileUrl} target="_blank" rel="noreferrer">Ler PDF</a>}
         <a className={`${isPdf ? '' : 'button-dark'} inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-black transition hover:border-cyan-400`} href={fileUrl} download>{`Baixar ${extension}`}</a>
-        <a className="inline-flex items-center justify-center gap-1 rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={resource.publisherUrl} target="_blank" rel="noreferrer" aria-label={`Abrir fonte oficial de ${resource.title}`}>Fonte oficial <Icon name="external" className="h-3.5 w-3.5" /></a>
+        {resource.publisherUrl && <a className="inline-flex items-center justify-center gap-1 rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-700 transition hover:border-cyan-400" href={resource.publisherUrl} target="_blank" rel="noreferrer" aria-label={`Abrir fonte oficial de ${resource.title}`}>Fonte oficial <Icon name="external" className="h-3.5 w-3.5" /></a>}
       </div>
+      {!resource.publisherUrl && <p className="mt-3 text-xs leading-5 text-slate-500">{resource.source}</p>}
     </article>
   );
 }

@@ -250,49 +250,116 @@
   {
     "slug": "e06-espaco-aereo",
     "audience": "public",
-    "rightsNote": "Equipe autorizou explicitamente a disponibilização pública dos slides da E06, incluindo a síntese derivada dos Produtos 1 e 2 do SIGMA-Sky; arquivos originais não incluídos.",
+    "rightsNote": "Apresentação e materiais de referência classificados como public por solicitação explícita da equipe, incluindo downloads dos documentos utilizados.",
     "activityId": "E06",
-    "title": "Espaço aéreo: da REH à UAM",
-    "subtitle": "Rotas, corredores, camadas, coordenação e cenários de integração na RMSP",
+    "title": "Espaço aéreo: estrutura, operação e integração",
+    "subtitle": "Estrutura ATS, regras de voo, literatura e concepções para integração UAM",
     "date": "2026-09-08",
     "durationMinutes": 180,
-    "slideCount": 30,
+    "slideCount": 33,
     "objectives": [
-      "Reconhecer REH, REA, CTR/ATZ, ATM, UAM e UTM como partes de um sistema existente.",
-      "Distinguir rota, corredor, camada e volume cooperativo no desenho do espaço aéreo.",
-      "Comparar compartilhamento de REH e corredores UAM dedicados usando cenários do SIGMA-Sky.",
-      "Esboçar uma rede origem-destino com hipóteses de capacidade, separação e contingência."
+      "Distinguir FIR, CTA/TMA, CTR/ATZ, classes ATS e regras de voo.",
+      "Relacionar serviços de tráfego aéreo, capacidade e responsabilidades na operação atual.",
+      "Comparar propostas de integração UAM em CONOPS e artigos científicos.",
+      "Avaliar uma ligação UAM considerando interfaces, coordenação e contingências."
     ],
     "sections": [
-      "Pergunta e referência RMSP",
-      "Camadas e corredores",
-      "Rede e demanda",
-      "Gestão do tráfego",
-      "Cenários e oficina"
+      "Estrutura e serviços atuais",
+      "Alternativas de integração e CONOPS",
+      "Literatura: coordenação, capacidade e acesso",
+      "Aplicação e avaliação",
+      "Oficina e bibliografia"
     ],
     "resourceIds": [
+      "decea-2024-ica10012",
+      "decea-2025-ica10037",
       "faa-2023-uam-conops-2",
+      "decea-2024-conops-uam-nacional",
+      "corus-2023-conops4",
+      "lee-2022-dcb-vertiports",
+      "seuken-2022-market-design",
+      "nasa-2022-digital-flight",
       "nasa-2021-provider-services-uam",
-      "decea-2024-conops-uam-nacional"
+      "sigmasky-produto1",
+      "sigmasky-produto2"
     ],
     "references": [
       {
-        "shortTitle": "FAA UAM ConOps 2.0 (2023)",
-        "citation": "Federal Aviation Administration. Urban Air Mobility Concept of Operations, Version 2.0.",
+        "resourceId": "decea-2024-ica10012",
+        "shortTitle": "ICA 100-12 / edição 2024",
+        "citation": "Departamento de Controle do Espaço Aéreo. Regras do Ar — ICA 100-12. DECEA, 2024.",
+        "url": "https://publicacoes.decea.mil.br/publicacao/ICA-100-12",
+        "purpose": "Base normativa para regras de voo, responsabilidades e condições de operação. Edição em vigor em 28/11/2024, com vigência específica para os arts. 96 e 97."
+      },
+      {
+        "resourceId": "decea-2025-ica10037",
+        "shortTitle": "ICA 100-37 / edição 2024, compilada com alteração de 2025",
+        "citation": "Departamento de Controle do Espaço Aéreo. Serviços de Tráfego Aéreo — ICA 100-37. DECEA, 2025.",
+        "url": "https://publicacoes.decea.mil.br/publicacao/ICA-100-37",
+        "purpose": "Organização e classificação dos espaços ATS, controle, informação de voo e alerta. Arquivo compilado com a alteração em vigor em 27/11/2025."
+      },
+      {
+        "resourceId": "faa-2023-uam-conops-2",
+        "shortTitle": "UAM ConOps v2.0",
+        "citation": "Federal Aviation Administration — Office of NextGen. Urban Air Mobility Concept of Operations, Version 2.0. Federal Aviation Administration, 2023.",
         "url": "https://www.faa.gov/sites/faa.gov/files/Urban-Air-Mobility-Concept-of-Operations-2.0.pdf",
-        "purpose": "Áreas cooperativas, corredores, serviços e evolução operacional"
+        "purpose": "Descreve operações UAM maduras, seus atores, serviços, responsabilidades e a integração progressiva com o National Airspace System e serviços xTM."
       },
       {
-        "shortTitle": "DECEA PCA 351-7 (2024)",
-        "citation": "Departamento de Controle do Espaço Aéreo. Concepção Operacional UAM Nacional.",
+        "resourceId": "decea-2024-conops-uam-nacional",
+        "shortTitle": "PCA 351-7",
+        "citation": "Departamento de Controle do Espaço Aéreo — DECEA. Concepção Operacional UAM Nacional. Comando da Aeronáutica — Departamento de Controle do Espaço Aéreo, 2024.",
         "url": "https://publicacoes.decea.mil.br/publicacao/PCA-351-7",
-        "purpose": "SISCEAB, ambientes ATM/UAM/UTM, volumes e níveis UML"
+        "purpose": "Estabelece a concepção operacional brasileira para integrar eVTOL ao SISCEAB, com volumes de espaço aéreo UAM, provedores de serviço, requisitos de performance e níveis progressivos de maturidade."
       },
       {
-        "shortTitle": "NASA Provider Services for UAM (2021)",
-        "citation": "National Aeronautics and Space Administration. Provider of Services to UAM: An Overview and Initial Use Case Discussion.",
+        "resourceId": "corus-2023-conops4",
+        "shortTitle": "D4.2 / edição 01.00.02 / 20/07/2023",
+        "citation": "Consórcio CORUS-XUAM / EUROCONTROL. U-space ConOps and Architecture — Edition 4. SESAR 3 Joint Undertaking, 2023.",
+        "url": "https://www.sesarju.eu/sites/default/files/documents/reports/U-space%20CONOPS%204th%20edition.pdf",
+        "purpose": "Concepção europeia com extensão à UAM: volumes, planos 4D, autorização, previsão de conflitos e monitoramento de conformidade."
+      },
+      {
+        "resourceId": "lee-2022-dcb-vertiports",
+        "shortTitle": "Hanbong Lee (2022)",
+        "citation": "Hanbong Lee; Kushal A. Moolchandani; Heather Arneson. Demand Capacity Balancing at Vertiports for Initial Strategic Conflict Management of Urban Air Mobility Operations. 2022 IEEE/AIAA 41st Digital Avionics Systems Conference (DASC), 2022.",
+        "url": "https://doi.org/10.1109/DASC55683.2022.9925753",
+        "purpose": "Avalia, por simulação, reprogramação de partidas para compatibilizar demanda e capacidade em vertiportos, incluindo atrasos, políticas de operadores e incerteza de execução."
+      },
+      {
+        "resourceId": "seuken-2022-market-design",
+        "shortTitle": "Sven Seuken (2022)",
+        "citation": "Sven Seuken; Paul Friedrich; Ludwig Dierks. Market Design for Drone Traffic Management. Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 12294–12300, 2022.",
+        "url": "https://doi.org/10.1609/aaai.v36i11.21493",
+        "purpose": "Discute o desenho de regras de alocação de espaço aéreo para drones, considerando eficiência, equidade, simplicidade, incentivos e escalabilidade; base conceitual para discutir acesso na UAM."
+      },
+      {
+        "resourceId": "nasa-2022-digital-flight",
+        "shortTitle": "NASA/TM–20220013225",
+        "citation": "David Wing; Andrew Lacher; Wes Ryan; William Cotton; Ruth Stilwell; John Maris; Paul Vajda. Digital Flight: A New Cooperative Operating Mode to Complement VFR and IFR. NASA, 2022.",
+        "url": "https://ntrs.nasa.gov/citations/20220013225",
+        "purpose": "Propõe um modo de operação digital complementar a VFR/IFR, baseado em cooperação, automação e responsabilidade do operador. Trata-se de proposta de pesquisa."
+      },
+      {
+        "resourceId": "nasa-2021-provider-services-uam",
+        "shortTitle": "NASA NTRS 20210017616",
+        "citation": "Joseph Rios. Provider of Services to UAM: An Overview and Initial Use Case Discussion. NASA Ames Research Center — Advanced Air Mobility Ecosystem Working Groups, 2021.",
         "url": "https://ntrs.nasa.gov/citations/20210017616",
-        "purpose": "Serviços cooperativos, informação e gestão de operações"
+        "purpose": "Apresenta o Provider of Services for UAM (PSU), a gestão federada do espaço aéreo, seus fluxos operacionais, definições, padrões e hipóteses para integração entre operadores, provedores e FAA."
+      },
+      {
+        "resourceId": "sigmasky-produto1",
+        "shortTitle": "Produto 1 / versão inicial 22/12/2025",
+        "citation": "Mayara Condé Rocha Murça; Marcelo Xavier Guterres; Daniel Alberto Pamplona; Lucas Orbolato Carvalho; Igor Galhano Gomes. Relatório de Revisão da Literatura — SIGMA-Sky. SIGMA-Sky — Meta 2 / Etapa 7 — ITA, 2025.",
+        "source": "Documento fornecido diretamente pela equipe docente.",
+        "purpose": "Revisão de concepções operacionais e documentos técnicos utilizada para localizar fontes primárias da aula."
+      },
+      {
+        "resourceId": "sigmasky-produto2",
+        "shortTitle": "Produto 2 / versão inicial 15/04/2026",
+        "citation": "Mayara Condé Rocha Murça; Daniel Alberto Pamplona; Lucas Orbolato Carvalho; Jaqueline Fonseca Rodrigues; Igor Galhano Gomes. Definição de Cenários Operacionais para Simulação — SIGMA-Sky. SIGMA-Sky — Meta 2 / Etapa 7 — ITA, 2026.",
+        "source": "Documento fornecido diretamente pela equipe docente.",
+        "purpose": "Cenários de integração UAM na RMSP utilizados como estudo de caso de compartilhamento e corredores dedicados."
       }
     ],
     "authors": [
@@ -314,7 +381,8 @@
         "versionDate": "2025-12-22",
         "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
         "sha256": "6B342619F28A81425E63EC6D1592A95B7699520C84C937844498ECB9E4FC9E4F",
-        "distribution": "Referência local; PDF integral não redistribuído."
+        "distribution": "PDF integral disponível na biblioteca por solicitação explícita da equipe.",
+        "resourceId": "sigmasky-produto1"
       },
       {
         "id": "sigmasky-produto2",
@@ -330,158 +398,174 @@
         "versionDate": "2026-04-15",
         "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
         "sha256": "80B3881482C49A907044310E7A8FD8F2E99BCD6DA1B9628E3D5E9D249B97C8B0",
-        "distribution": "Referência local; PDF integral não redistribuído."
+        "distribution": "PDF integral disponível na biblioteca por solicitação explícita da equipe.",
+        "resourceId": "sigmasky-produto2"
       }
     ],
     "agenda": [
       {
         "slide": 1,
-        "title": "Espaço aéreo: da REH à UAM",
+        "title": "Espaço aéreo: estrutura, operação e integração",
         "minutes": 3
       },
       {
         "slide": 2,
-        "title": "Uma aula organizada em quatro decisões",
+        "title": "Quatro perguntas para ler qualquer proposta",
         "minutes": 3
       },
       {
         "slide": 3,
-        "title": "O SIGMA-Sky transforma conceitos em um experimento",
-        "minutes": 5
+        "title": "FIR, TMA e CTR descrevem funções diferentes",
+        "minutes": 6
       },
       {
         "slide": 4,
-        "title": "Helipontos revelam uma rede já concentrada",
+        "title": "A classe define quem recebe qual serviço",
         "minutes": 6
       },
       {
         "slide": 5,
-        "title": "REH e REA organizam fluxos com necessidades distintas",
-        "minutes": 6
-      },
-      {
-        "slide": 6,
-        "title": "Boa parte da infraestrutura encontra a CTR de Congonhas",
-        "minutes": 7
-      },
-      {
-        "slide": 7,
-        "title": "VFR, IFR e classe do espaço respondem a perguntas diferentes",
-        "minutes": 8
-      },
-      {
-        "slide": 8,
-        "title": "3.000 ft MSL não significa 3.000 ft acima da cidade",
+        "title": "Regra de voo e condição meteorológica são dimensões distintas",
         "minutes": 5
       },
       {
+        "slide": 6,
+        "title": "ATC é uma parte dos serviços de tráfego aéreo",
+        "minutes": 5
+      },
+      {
+        "slide": 7,
+        "title": "Altitude e altura mudam a leitura de uma rota",
+        "minutes": 5
+      },
+      {
+        "slide": 8,
+        "title": "Uma carta precisa ser lida junto das regras e restrições",
+        "minutes": 4
+      },
+      {
         "slide": 9,
-        "title": "ATM, UAM e UTM têm interfaces — não fronteiras estanques",
-        "minutes": 6
+        "title": "A cidade já compartilha o espaço com aeroportos",
+        "minutes": 4
       },
       {
         "slide": 10,
-        "title": "O corredor é um ambiente cooperativo de operação",
-        "minutes": 6
+        "title": "REH e REA orientam a circulação visual",
+        "minutes": 4
       },
       {
         "slide": 11,
-        "title": "Duas ênfases que não devem virar uma receita única",
+        "title": "A dificuldade cresce nos encontros e nas interfaces",
         "minutes": 5
       },
       {
         "slide": 12,
-        "title": "Seis vertiportos candidatos conectados a aeroportos",
+        "title": "Rotas livres, camadas e corredores fazem escolhas diferentes",
         "minutes": 6
       },
       {
         "slide": 13,
-        "title": "Doze vertiportos mudam a distribuição dos fluxos",
+        "title": "Corredores UAM articulam uma operação cooperativa",
         "minutes": 5
       },
       {
         "slide": 14,
-        "title": "A matriz OD alimenta o experimento; não comprova um mercado",
+        "title": "Volumes UAM devem se integrar ao SISCEAB",
         "minutes": 5
       },
       {
         "slide": 15,
-        "title": "Compartilhar REH aproveita estrutura, mas mantém interações",
-        "minutes": 5
+        "title": "O plano de voo pode ser uma sequência de volumes 4D",
+        "minutes": 6
       },
       {
         "slide": 16,
-        "title": "Corredores dedicados acrescentam volumes à rede existente",
+        "title": "Os CONOPS aproximam serviços, mas diferem na organização",
         "minutes": 5
       },
       {
         "slide": 17,
-        "title": "O estudo desloca trechos para compatibilizar volumes",
-        "minutes": 5
+        "title": "Do desenho do espaço à coordenação dos voos",
+        "minutes": 10
       },
       {
         "slide": 18,
-        "title": "Adicionar chegadas e saídas muda a leitura do espaço",
-        "minutes": 6
+        "title": "Digital Flight propõe ampliar a cooperação entre operações",
+        "minutes": 4
       },
       {
         "slide": 19,
-        "title": "Já sabemos onde cabe. Agora: quem coordena?",
-        "minutes": 10
+        "title": "Planejamento, separação e prevenção de colisão se complementam",
+        "minutes": 6
       },
       {
         "slide": 20,
         "title": "O plano de voo precisa circular entre atores",
-        "minutes": 7
+        "minutes": 4
       },
       {
         "slide": 21,
-        "title": "Atrasar no solo pode evitar saturação de um recurso",
+        "title": "Capacidade média disponível pode esconder picos locais",
         "minutes": 7
       },
       {
         "slide": 22,
-        "title": "Desconflitar exige comparar lugar e tempo",
-        "minutes": 7
-      },
-      {
-        "slide": 23,
-        "title": "0,3 NM é um parâmetro de pesquisa, não uma autorização",
+        "title": "Atrasar no solo pode evitar saturação de um recurso",
         "minutes": 5
       },
       {
+        "slide": 23,
+        "title": "Desconflitar exige comparar lugar e tempo",
+        "minutes": 6
+      },
+      {
         "slide": 24,
-        "title": "Uma rota bloqueada redistribui problemas pela rede",
+        "title": "Quem reserva primeiro deve ficar com todo o espaço?",
         "minutes": 6
       },
       {
         "slide": 25,
-        "title": "Geometria, serviço e condição são variáveis distintas",
+        "title": "Mais precisão de navegação não resolve tudo",
         "minutes": 5
       },
       {
         "slide": 26,
-        "title": "Uma solução só melhora se o critério estiver declarado",
+        "title": "Uma rota bloqueada redistribui problemas pela rede",
         "minutes": 5
       },
       {
         "slide": 27,
-        "title": "Desenhe uma rede e defenda suas hipóteses",
-        "minutes": 20
+        "title": "Compartilhar rotas ou dedicar corredores?",
+        "minutes": 5
       },
       {
         "slide": 28,
-        "title": "Apresente uma decisão e uma forma de testá-la",
-        "minutes": 8
+        "title": "A compatibilidade precisa ser examinada em três dimensões",
+        "minutes": 5
       },
       {
         "slide": 29,
-        "title": "A transição é de uma rede existente para uma operação coordenada",
-        "minutes": 3
+        "title": "Uma solução só melhora se o critério estiver declarado",
+        "minutes": 5
       },
       {
         "slide": 30,
-        "title": "Documentos e figuras usados na aula",
+        "title": "Projete uma ligação e explique como ela funcionaria",
+        "minutes": 20
+      },
+      {
+        "slide": 31,
+        "title": "Uma boa proposta conecta espaço, regras e evidência",
+        "minutes": 10
+      },
+      {
+        "slide": 32,
+        "title": "Normas e conceitos operacionais",
+        "minutes": 0
+      },
+      {
+        "slide": 33,
+        "title": "Pesquisas e estudo de caso",
         "minutes": 0
       }
     ]
