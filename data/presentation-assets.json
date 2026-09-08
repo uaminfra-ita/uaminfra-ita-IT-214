@@ -364,7 +364,7 @@
         "presentationSlug": "e06-espaco-aereo",
         "slideNumbers": [
           1,
-          13
+          11
         ]
       }
     ]
@@ -475,7 +475,7 @@
     "id": "sigma-ctr",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      9
+      7
     ],
     "title": "Zonas de controle na RMSP",
     "assetPath": "/images/presentations/e06/sigma-ctr.png",
@@ -500,7 +500,7 @@
     "id": "sigma-rede6",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      10
+      8
     ],
     "title": "Rede de seis vertiportos candidatos",
     "assetPath": "/images/presentations/e06/sigma-rede6.png",
@@ -525,7 +525,7 @@
     "id": "sigma-compartilhada",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      27
+      12
     ],
     "title": "Compartilhamento de REH",
     "assetPath": "/images/presentations/e06/sigma-compartilhada.png",
@@ -550,7 +550,7 @@
     "id": "sigma-dedicada2d",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      27
+      12
     ],
     "title": "Corredores dedicados em planta",
     "assetPath": "/images/presentations/e06/sigma-dedicada2d.png",
@@ -572,60 +572,10 @@
     "sha256": "34BDC567B8141F30042DCC71404D6730C5125792800AF1C67BA2A53F2D72081F"
   },
   {
-    "id": "sigma-aeroportos2d",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      28
-    ],
-    "title": "Rede e fluxos aeroportuários em planta",
-    "assetPath": "/images/presentations/e06/sigma-aeroportos2d.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 67,
-    "sourceFigure": "5.11(a)",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.11(a) • p. 59",
-    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Rede e fluxos aeroportuários em planta",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Sobreposição da rede UAM, REH, REA e envelopes de chegada e saída.",
-    "sha256": "A297CCD3DB596C1845BE39E00288AFE7C9222C4EB5605AE80EAB25098A912CE7"
-  },
-  {
-    "id": "sigma-aeroportos3d",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      28
-    ],
-    "title": "Rede e fluxos aeroportuários em três dimensões",
-    "assetPath": "/images/presentations/e06/sigma-aeroportos3d.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 67,
-    "sourceFigure": "5.11(b)",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.11(b) • p. 59",
-    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Rede e fluxos aeroportuários em três dimensões",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Volumes de chegada e saída dos aeroportos junto à rede de corredores.",
-    "sha256": "FA6E3464271B583D9E03B56CB0D8122734DC4A943ECE5D27AA6D18DE8A13E5F6"
-  },
-  {
     "id": "decea-ambientes",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      14
+      15
     ],
     "title": "Estrutura do espaço aéreo incluindo UTM e UAM",
     "assetPath": "/images/presentations/e06/decea-ambientes.png",
@@ -645,71 +595,5 @@
     ],
     "alt": "Figura do DECEA com estruturas do espaço aéreo e ambientes ATM, UAM e UTM.",
     "sha256": "02AD51B1562303FF035A4EA6F4FD4986F964510B90A159A8EA8A7AF401540E63"
-  },
-  {
-    "id": "corus-2023-volumes4d",
-    "presentationSlug": "e06-espaco-aereo",
-    "title": "CORUS-XUAM — volumes de trajetória 4D",
-    "assetPath": "/images/presentations/e06/corus-2023-volumes4d.png",
-    "kind": "figure",
-    "creator": "Consórcio CORUS-XUAM / EUROCONTROL",
-    "sourceUrl": "https://www.sesarju.eu/sites/default/files/documents/reports/U-space%20CONOPS%204th%20edition.pdf",
-    "resourceId": "corus-2023-conops4",
-    "sourcePage": 62,
-    "sourceFigure": "10",
-    "creditLine": "Consórcio CORUS-XUAM / EUROCONTROL (2023), figura 10.",
-    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
-    "license": "© 2023 CORUS-XUAM consortium; todos os direitos reservados; divulgação pública PU.",
-    "audience": "public",
-    "summary": "Área de permanência e sequência de volumes de deslocamento, conforme figura 10 do CORUS-XUAM.",
-    "alt": "Área de permanência e sequência de volumes de deslocamento, conforme figura 10 do CORUS-XUAM.",
-    "slideNumbers": [
-      15
-    ],
-    "sha256": "D15A9E79734FC5DAE3D70B93E8AED3325FF5955DAF67E470F4306900699F1ACA"
-  },
-  {
-    "id": "lee-2022-demanda-original",
-    "presentationSlug": "e06-espaco-aereo",
-    "title": "Demanda original nos vertiportos",
-    "assetPath": "/images/presentations/e06/lee-2022-demanda-original.png",
-    "kind": "figure",
-    "creator": "Lee, Moolchandani e Arneson",
-    "sourceUrl": "https://ntrs.nasa.gov/api/citations/20220009867/downloads/20220009867_HLee_DASC2022_manuscript_final.pdf",
-    "resourceId": "lee-2022-dcb-vertiports",
-    "sourcePage": 5,
-    "sourceFigure": "6(a)",
-    "creditLine": "Lee, Moolchandani e Arneson (2022), figura 6(a).",
-    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
-    "license": "NASA NTRS: Public Use Permitted; manuscrito disponibilizado pelos autores.",
-    "audience": "public",
-    "summary": "Mapa de calor da demanda original: linhas são cinco vertiportos; colunas são janelas de doze minutos.",
-    "alt": "Mapa de calor da demanda original: linhas são cinco vertiportos; colunas são janelas de doze minutos.",
-    "slideNumbers": [
-      21
-    ],
-    "sha256": "D08582C2B4EBC35C113D83A2991FB32035CA8CE87582B45101D944100E3F3A47"
-  },
-  {
-    "id": "lee-2022-demanda-ajustada",
-    "presentationSlug": "e06-espaco-aereo",
-    "title": "Demanda após reprogramação",
-    "assetPath": "/images/presentations/e06/lee-2022-demanda-ajustada.png",
-    "kind": "figure",
-    "creator": "Lee, Moolchandani e Arneson",
-    "sourceUrl": "https://ntrs.nasa.gov/api/citations/20220009867/downloads/20220009867_HLee_DASC2022_manuscript_final.pdf",
-    "resourceId": "lee-2022-dcb-vertiports",
-    "sourcePage": 5,
-    "sourceFigure": "6(b)",
-    "creditLine": "Lee, Moolchandani e Arneson (2022), figura 6(b).",
-    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
-    "license": "NASA NTRS: Public Use Permitted; manuscrito disponibilizado pelos autores.",
-    "audience": "public",
-    "summary": "Mapa de calor após DCB: a demanda planejada não excede quatro operações por vertiporto e janela.",
-    "alt": "Mapa de calor após DCB: a demanda planejada não excede quatro operações por vertiporto e janela.",
-    "slideNumbers": [
-      21
-    ],
-    "sha256": "B1C5FABCE6563EBE2EB2A398600D90055338F8DAA55E4A3AC0B765E89A3825F9"
   }
 ]
