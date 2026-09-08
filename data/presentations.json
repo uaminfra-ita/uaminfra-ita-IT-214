@@ -252,23 +252,23 @@
     "audience": "public",
     "rightsNote": "Apresentação e materiais de referência classificados como public por solicitação explícita da equipe, incluindo downloads dos documentos utilizados.",
     "activityId": "E06",
-    "title": "Espaço aéreo: estrutura, operação e integração",
-    "subtitle": "Estrutura ATS, regras de voo, literatura e concepções para integração UAM",
+    "title": "Espaço aéreo e Mobilidade Aérea Urbana",
+    "subtitle": "Introdução à organização do espaço aéreo e ao uso de corredores dedicados",
     "date": "2026-09-08",
     "durationMinutes": 180,
-    "slideCount": 33,
+    "slideCount": 22,
     "objectives": [
-      "Distinguir FIR, CTA/TMA, CTR/ATZ, classes ATS e regras de voo.",
-      "Relacionar serviços de tráfego aéreo, capacidade e responsabilidades na operação atual.",
-      "Comparar propostas de integração UAM em CONOPS e artigos científicos.",
-      "Avaliar uma ligação UAM considerando interfaces, coordenação e contingências."
+      "Reconhecer que o espaço aéreo possui volumes, regras, serviços e usuários.",
+      "Compreender como a Mobilidade Aérea Urbana se integra ao sistema existente.",
+      "Explicar o conceito de corredor dedicado à UAM.",
+      "Comparar vantagens e desvantagens de usar ou não corredores dedicados."
     ],
     "sections": [
-      "Estrutura e serviços atuais",
-      "Alternativas de integração e CONOPS",
-      "Literatura: coordenação, capacidade e acesso",
-      "Aplicação e avaliação",
-      "Oficina e bibliografia"
+      "Conceitos básicos de espaço aéreo",
+      "Introdução à Mobilidade Aérea Urbana",
+      "Corredores dedicados e CONOPS",
+      "Tabela comparativa",
+      "Síntese e materiais"
     ],
     "resourceIds": [
       "decea-2024-ica10012",
@@ -405,168 +405,113 @@
     "agenda": [
       {
         "slide": 1,
-        "title": "Espaço aéreo: estrutura, operação e integração",
-        "minutes": 3
+        "title": "Espaço aéreo e Mobilidade Aérea Urbana",
+        "minutes": 5
       },
       {
         "slide": 2,
-        "title": "Quatro perguntas para ler qualquer proposta",
-        "minutes": 3
+        "title": "Três ideias para orientar a aula",
+        "minutes": 5
       },
       {
         "slide": 3,
-        "title": "FIR, TMA e CTR descrevem funções diferentes",
+        "title": "Espaço aéreo é mais do que uma área no mapa",
         "minutes": 6
       },
       {
         "slide": 4,
-        "title": "A classe define quem recebe qual serviço",
-        "minutes": 6
+        "title": "Alguns volumes que aparecem perto das cidades",
+        "minutes": 8
       },
       {
         "slide": 5,
-        "title": "Regra de voo e condição meteorológica são dimensões distintas",
-        "minutes": 5
+        "title": "Controlado não significa céu vazio",
+        "minutes": 8
       },
       {
         "slide": 6,
-        "title": "ATC é uma parte dos serviços de tráfego aéreo",
-        "minutes": 5
+        "title": "VFR e IFR dizem como o voo é conduzido",
+        "minutes": 8
       },
       {
         "slide": 7,
-        "title": "Altitude e altura mudam a leitura de uma rota",
-        "minutes": 5
+        "title": "São Paulo já tem operações e estruturas em uso",
+        "minutes": 8
       },
       {
         "slide": 8,
-        "title": "Uma carta precisa ser lida junto das regras e restrições",
-        "minutes": 4
+        "title": "REH e REA ajudam a organizar voos visuais",
+        "minutes": 8
       },
       {
         "slide": 9,
-        "title": "A cidade já compartilha o espaço com aeroportos",
-        "minutes": 4
+        "title": "O que a UAM acrescenta ao sistema?",
+        "minutes": 8
       },
       {
         "slide": 10,
-        "title": "REH e REA orientam a circulação visual",
-        "minutes": 4
+        "title": "Quatro perguntas bastam para começar",
+        "minutes": 8
       },
       {
         "slide": 11,
-        "title": "A dificuldade cresce nos encontros e nas interfaces",
-        "minutes": 5
+        "title": "O que é um corredor dedicado à UAM?",
+        "minutes": 8
       },
       {
         "slide": 12,
-        "title": "Rotas livres, camadas e corredores fazem escolhas diferentes",
-        "minutes": 6
+        "title": "Usar corredor dedicado ou compartilhar o espaço?",
+        "minutes": 8
       },
       {
         "slide": 13,
-        "title": "Corredores UAM articulam uma operação cooperativa",
-        "minutes": 5
+        "title": "Pausa de 10 minutos",
+        "minutes": 10
       },
       {
         "slide": 14,
-        "title": "Volumes UAM devem se integrar ao SISCEAB",
-        "minutes": 5
+        "title": "CONOPS descreve como uma operação pode funcionar",
+        "minutes": 8
       },
       {
         "slide": 15,
-        "title": "O plano de voo pode ser uma sequência de volumes 4D",
-        "minutes": 6
+        "title": "O DECEA propõe integrar a UAM ao sistema existente",
+        "minutes": 8
       },
       {
         "slide": 16,
-        "title": "Os CONOPS aproximam serviços, mas diferem na organização",
-        "minutes": 5
-      },
-      {
-        "slide": 17,
-        "title": "Do desenho do espaço à coordenação dos voos",
-        "minutes": 10
-      },
-      {
-        "slide": 18,
-        "title": "Digital Flight propõe ampliar a cooperação entre operações",
-        "minutes": 4
-      },
-      {
-        "slide": 19,
-        "title": "Planejamento, separação e prevenção de colisão se complementam",
-        "minutes": 6
-      },
-      {
-        "slide": 20,
-        "title": "O plano de voo precisa circular entre atores",
-        "minutes": 4
-      },
-      {
-        "slide": 21,
-        "title": "Capacidade média disponível pode esconder picos locais",
+        "title": "FAA e CORUS estudam integração gradual",
         "minutes": 7
       },
       {
+        "slide": 17,
+        "title": "Vantagens e desvantagens aparecem em pares",
+        "minutes": 7
+      },
+      {
+        "slide": 18,
+        "title": "Complete uma tabela comparativa",
+        "minutes": 7
+      },
+      {
+        "slide": 19,
+        "title": "Tabela para preencher",
+        "minutes": 25
+      },
+      {
+        "slide": 20,
+        "title": "Compare sem procurar uma solução única",
+        "minutes": 12
+      },
+      {
+        "slide": 21,
+        "title": "Cinco ideias para levar da aula",
+        "minutes": 5
+      },
+      {
         "slide": 22,
-        "title": "Atrasar no solo pode evitar saturação de um recurso",
-        "minutes": 5
-      },
-      {
-        "slide": 23,
-        "title": "Desconflitar exige comparar lugar e tempo",
-        "minutes": 6
-      },
-      {
-        "slide": 24,
-        "title": "Quem reserva primeiro deve ficar com todo o espaço?",
-        "minutes": 6
-      },
-      {
-        "slide": 25,
-        "title": "Mais precisão de navegação não resolve tudo",
-        "minutes": 5
-      },
-      {
-        "slide": 26,
-        "title": "Uma rota bloqueada redistribui problemas pela rede",
-        "minutes": 5
-      },
-      {
-        "slide": 27,
-        "title": "Compartilhar rotas ou dedicar corredores?",
-        "minutes": 5
-      },
-      {
-        "slide": 28,
-        "title": "A compatibilidade precisa ser examinada em três dimensões",
-        "minutes": 5
-      },
-      {
-        "slide": 29,
-        "title": "Uma solução só melhora se o critério estiver declarado",
-        "minutes": 5
-      },
-      {
-        "slide": 30,
-        "title": "Projete uma ligação e explique como ela funcionaria",
-        "minutes": 20
-      },
-      {
-        "slide": 31,
-        "title": "Uma boa proposta conecta espaço, regras e evidência",
-        "minutes": 10
-      },
-      {
-        "slide": 32,
-        "title": "Normas e conceitos operacionais",
-        "minutes": 0
-      },
-      {
-        "slide": 33,
-        "title": "Pesquisas e estudo de caso",
-        "minutes": 0
+        "title": "Leituras para consulta e download",
+        "minutes": 3
       }
     ]
   }
