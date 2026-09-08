@@ -70,7 +70,7 @@ assert.equal(methodiActivity.submission.status, 'open', 'A atividade Methodi dev
 assert.equal(methodiActivity.submission.dueAt, '2026-09-15T23:59:00-03:00', 'Prazo da atividade Methodi divergente.');
 assert.deepEqual(methodiActivity.submission.acceptedExtensions, ['.pdf', '.docx', '.xlsm'], 'Formatos da atividade Methodi divergentes.');
 
-const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'publisherUrl', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
+const requiredResourceFields = ['id', 'category', 'title', 'authors', 'year', 'publication', 'assetPath', 'audience', 'license', 'rightsNote', 'summary', 'tags', 'relatedActivityIds', 'sha256'];
 const declaredPublicResourcePaths = [];
 const hashes = new Set();
 allResources.forEach((resource) => {
@@ -84,7 +84,8 @@ allResources.forEach((resource) => {
     const activity = activities.find((item) => item.code === id);
     assert.ok(activity.resourceIds.includes(resource.id), `Relação ${resource.id} → ${id} não é recíproca.`);
   });
-  assert.ok(resource.publisherUrl.startsWith('https://'), `${resource.id} deve usar fonte HTTPS.`);
+  if (resource.publisherUrl) assert.ok(resource.publisherUrl.startsWith('https://'), `${resource.id} deve usar fonte HTTPS.`);
+  else assert.ok(resource.source && resource.category === 'technical-document', `${resource.id} deve identificar a origem local do documento técnico.`);
   if (resource.category === 'general-article') {
     assert.ok(resource.doi, `${resource.id} deve declarar DOI.`);
     assert.ok(resource.assetPath.startsWith('/resources/articles/'), `${resource.id} deve usar a pasta de artigos.`);
@@ -183,10 +184,11 @@ presentations.forEach((presentation) => {
   assert.ok(Array.isArray(presentation.objectives) && presentation.objectives.length === 4, `${presentation.slug} precisa de quatro objetivos.`);
   presentation.resourceIds.forEach((id) => assert.ok(resourceIds.has(id), `Fonte ${id} não existe em ${presentation.slug}.`));
   assert.ok(Array.isArray(presentation.references) && presentation.references.length >= presentation.resourceIds.length, `${presentation.slug} precisa declarar ao menos uma referência para cada recurso-base.`);
-  assert.equal(new Set(presentation.references.map((reference) => reference.url)).size, presentation.references.length, `Referências duplicadas em ${presentation.slug}.`);
+  assert.equal(new Set(presentation.references.map((reference) => reference.resourceId || reference.url)).size, presentation.references.length, `Referências duplicadas em ${presentation.slug}.`);
   presentation.references.forEach((reference) => {
-    ['shortTitle', 'citation', 'url', 'purpose'].forEach((field) => assert.ok(reference[field], `Referência de ${presentation.slug} sem ${field}.`));
-    assert.ok(reference.url.startsWith('https://'), `Referência insegura em ${presentation.slug}.`);
+    ['shortTitle', 'citation', 'purpose'].forEach((field) => assert.ok(reference[field], `Referência de ${presentation.slug} sem ${field}.`));
+    if (reference.url) assert.ok(reference.url.startsWith('https://'), `Referência insegura em ${presentation.slug}.`);
+    else assert.ok(reference.source && resourceIds.has(reference.resourceId), `Referência local não identificada em ${presentation.slug}.`);
   });
   const routeFile = path.join(root, 'app', 'apresentacoes', presentation.slug, 'page.jsx');
   assert.ok(fs.existsSync(routeFile), `Rota ausente para ${presentation.slug}.`);

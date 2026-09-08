@@ -20,6 +20,10 @@ export default function LibraryPage() {
       </PageHero>
 
       <div className="section-shell">
+        <a className="surface-card mb-10 block border-l-4 border-cyan-600" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/biblioteca/espaco-aereo/`}>
+          <strong className="text-xl text-ink">E06 • Espaço aéreo</strong>
+          <p className="mt-2 text-slate-600">Todos os documentos usados na aula, com leitura, download e créditos das figuras.</p>
+        </a>
         <ResourceSection id="artigos" label="01" title="Artigos gerais" description="Leituras de base para compreender o ecossistema, as tecnologias e os desafios da UAM." resources={resources.generalArticles} />
         <ResourceSection id="documentos" label="02" title="Documentos técnicos e regulatórios" description="Normas, circulares, guias e documentos oficiais selecionados para cada tema." resources={resources.technicalDocuments} />
         <ResourceSection id="disciplina" label="03" title="Documentos da disciplina" description="Modelos, orientações e arquivos comuns disponibilizados pela equipe docente." resources={resources.disciplineDocuments} />

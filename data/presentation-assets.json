@@ -363,7 +363,8 @@
       {
         "presentationSlug": "e06-espaco-aereo",
         "slideNumbers": [
-          10
+          1,
+          13
         ]
       }
     ]
@@ -471,36 +472,10 @@
     "sha256": "F1A4D3E3B9A48BC99B61D57BFE71AB438A5E28A2FBD22E2F4AAB30C4EF685324"
   },
   {
-    "id": "sigma-helipontos",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      1,
-      4
-    ],
-    "title": "Helipontos e população na RMSP",
-    "assetPath": "/images/presentations/e06/sigma-helipontos.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA; Carvalho et al. (2026), conforme Produto 2",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 23,
-    "sourceFigure": "2.1",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 2.1 • p. 15",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Helipontos e população na RMSP",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Mapa da RMSP com helipontos em amarelo e população por zona.",
-    "sha256": "A6BC75412F87A978D23725435A4BEE834A6390CB75189E0A787665914BB52405"
-  },
-  {
     "id": "sigma-ctr",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      6
+      9
     ],
     "title": "Zonas de controle na RMSP",
     "assetPath": "/images/presentations/e06/sigma-ctr.png",
@@ -511,7 +486,7 @@
     "sourcePage": 24,
     "sourceFigure": "2.3",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 2.3 • p. 16",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Zonas de controle na RMSP",
     "relations": [
@@ -525,8 +500,7 @@
     "id": "sigma-rede6",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      5,
-      12
+      10
     ],
     "title": "Rede de seis vertiportos candidatos",
     "assetPath": "/images/presentations/e06/sigma-rede6.png",
@@ -537,7 +511,7 @@
     "sourcePage": 50,
     "sourceFigure": "4.3",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 4.3 • p. 42",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Rede de seis vertiportos candidatos",
     "relations": [
@@ -548,36 +522,9 @@
     "sha256": "1E9CB7077CC2BF35043B3EB1820A5D17A2E781ED808FF05419DC4DB4981F1C4C"
   },
   {
-    "id": "sigma-rede12",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      13,
-      19
-    ],
-    "title": "Rede de doze vertiportos candidatos",
-    "assetPath": "/images/presentations/e06/sigma-rede12.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 51,
-    "sourceFigure": "4.4",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 4.4 • p. 43",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Rede de doze vertiportos candidatos",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Mapa da expansão da rede com novos nós e rotas conectadas.",
-    "sha256": "29DA535A2246BB4A653BC4287B62320F1174C48C5B5F85DBA3155F0613272258"
-  },
-  {
     "id": "sigma-compartilhada",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      15,
       27
     ],
     "title": "Compartilhamento de REH",
@@ -589,7 +536,7 @@
     "sourcePage": 59,
     "sourceFigure": "5.5(a)",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.5(a) • p. 51",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Compartilhamento de REH",
     "relations": [
@@ -603,7 +550,7 @@
     "id": "sigma-dedicada2d",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      16
+      27
     ],
     "title": "Corredores dedicados em planta",
     "assetPath": "/images/presentations/e06/sigma-dedicada2d.png",
@@ -614,7 +561,7 @@
     "sourcePage": 61,
     "sourceFigure": "5.7(a)",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.7(a) • p. 53",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Corredores dedicados em planta",
     "relations": [
@@ -625,85 +572,10 @@
     "sha256": "34BDC567B8141F30042DCC71404D6730C5125792800AF1C67BA2A53F2D72081F"
   },
   {
-    "id": "sigma-dedicada3d",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      16
-    ],
-    "title": "Corredores dedicados em três dimensões",
-    "assetPath": "/images/presentations/e06/sigma-dedicada3d.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 61,
-    "sourceFigure": "5.7(b)",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.7(b) • p. 53",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Corredores dedicados em três dimensões",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Perspectiva volumétrica de corredores UAM, REH e REA.",
-    "sha256": "ED7133C62B4AD261B30CD8FCD687F3FD8E61828966EAE483F6B3198A5DEE22C0"
-  },
-  {
-    "id": "sigma-refinada2d",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      17
-    ],
-    "title": "Refinamento da rede em planta",
-    "assetPath": "/images/presentations/e06/sigma-refinada2d.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 62,
-    "sourceFigure": "5.8(a)",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.8(a) • p. 54",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Refinamento da rede em planta",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Traçado da rede UAM após ajustes locais de posição e altitude.",
-    "sha256": "3278C485EA7A45CBB42E76EF4BE1A8061AFB69546A3FC8D9E7BE21CBB6307483"
-  },
-  {
-    "id": "sigma-refinada3d",
-    "presentationSlug": "e06-espaco-aereo",
-    "slideNumbers": [
-      17
-    ],
-    "title": "Refinamento tridimensional",
-    "assetPath": "/images/presentations/e06/sigma-refinada3d.png",
-    "kind": "map",
-    "audience": "public",
-    "creator": "Equipe SIGMA-Sky / ITA",
-    "sourceDocumentId": "sigmasky-produto2",
-    "sourcePage": 62,
-    "sourceFigure": "5.8(b)",
-    "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.8(b) • p. 54",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
-    "license": "Uso didático autorizado; licença aberta não declarada.",
-    "summary": "Refinamento tridimensional",
-    "relations": [
-      "activity:E06",
-      "source:sigmasky-produto2"
-    ],
-    "alt": "Volumes de corredores UAM após deslocamento de trechos.",
-    "sha256": "86F39FD101125B2A2F44A6A6F5537758A4A50C35D74A834B51A403B6622288E7"
-  },
-  {
     "id": "sigma-aeroportos2d",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      18
+      28
     ],
     "title": "Rede e fluxos aeroportuários em planta",
     "assetPath": "/images/presentations/e06/sigma-aeroportos2d.png",
@@ -714,7 +586,7 @@
     "sourcePage": 67,
     "sourceFigure": "5.11(a)",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.11(a) • p. 59",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Rede e fluxos aeroportuários em planta",
     "relations": [
@@ -728,7 +600,7 @@
     "id": "sigma-aeroportos3d",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      18
+      28
     ],
     "title": "Rede e fluxos aeroportuários em três dimensões",
     "assetPath": "/images/presentations/e06/sigma-aeroportos3d.png",
@@ -739,7 +611,7 @@
     "sourcePage": 67,
     "sourceFigure": "5.11(b)",
     "creditLine": "SIGMA-Sky • Produto 2 • fig. 5.11(b) • p. 59",
-    "usageBasis": "Figura extraída do documento fornecido pela equipe. Uso didático nos slides públicos autorizado pelo usuário; arquivo integral não redistribuído.",
+    "usageBasis": "Figura do documento fornecido pela equipe. Uso didático público e disponibilização do documento-fonte solicitados explicitamente pelo usuário.",
     "license": "Uso didático autorizado; licença aberta não declarada.",
     "summary": "Rede e fluxos aeroportuários em três dimensões",
     "relations": [
@@ -753,7 +625,7 @@
     "id": "decea-ambientes",
     "presentationSlug": "e06-espaco-aereo",
     "slideNumbers": [
-      9
+      14
     ],
     "title": "Estrutura do espaço aéreo incluindo UTM e UAM",
     "assetPath": "/images/presentations/e06/decea-ambientes.png",
@@ -773,5 +645,71 @@
     ],
     "alt": "Figura do DECEA com estruturas do espaço aéreo e ambientes ATM, UAM e UTM.",
     "sha256": "02AD51B1562303FF035A4EA6F4FD4986F964510B90A159A8EA8A7AF401540E63"
+  },
+  {
+    "id": "corus-2023-volumes4d",
+    "presentationSlug": "e06-espaco-aereo",
+    "title": "CORUS-XUAM — volumes de trajetória 4D",
+    "assetPath": "/images/presentations/e06/corus-2023-volumes4d.png",
+    "kind": "figure",
+    "creator": "Consórcio CORUS-XUAM / EUROCONTROL",
+    "sourceUrl": "https://www.sesarju.eu/sites/default/files/documents/reports/U-space%20CONOPS%204th%20edition.pdf",
+    "resourceId": "corus-2023-conops4",
+    "sourcePage": 62,
+    "sourceFigure": "10",
+    "creditLine": "Consórcio CORUS-XUAM / EUROCONTROL (2023), figura 10.",
+    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
+    "license": "© 2023 CORUS-XUAM consortium; todos os direitos reservados; divulgação pública PU.",
+    "audience": "public",
+    "summary": "Área de permanência e sequência de volumes de deslocamento, conforme figura 10 do CORUS-XUAM.",
+    "alt": "Área de permanência e sequência de volumes de deslocamento, conforme figura 10 do CORUS-XUAM.",
+    "slideNumbers": [
+      15
+    ],
+    "sha256": "D15A9E79734FC5DAE3D70B93E8AED3325FF5955DAF67E470F4306900699F1ACA"
+  },
+  {
+    "id": "lee-2022-demanda-original",
+    "presentationSlug": "e06-espaco-aereo",
+    "title": "Demanda original nos vertiportos",
+    "assetPath": "/images/presentations/e06/lee-2022-demanda-original.png",
+    "kind": "figure",
+    "creator": "Lee, Moolchandani e Arneson",
+    "sourceUrl": "https://ntrs.nasa.gov/api/citations/20220009867/downloads/20220009867_HLee_DASC2022_manuscript_final.pdf",
+    "resourceId": "lee-2022-dcb-vertiports",
+    "sourcePage": 5,
+    "sourceFigure": "6(a)",
+    "creditLine": "Lee, Moolchandani e Arneson (2022), figura 6(a).",
+    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
+    "license": "NASA NTRS: Public Use Permitted; manuscrito disponibilizado pelos autores.",
+    "audience": "public",
+    "summary": "Mapa de calor da demanda original: linhas são cinco vertiportos; colunas são janelas de doze minutos.",
+    "alt": "Mapa de calor da demanda original: linhas são cinco vertiportos; colunas são janelas de doze minutos.",
+    "slideNumbers": [
+      21
+    ],
+    "sha256": "D08582C2B4EBC35C113D83A2991FB32035CA8CE87582B45101D944100E3F3A47"
+  },
+  {
+    "id": "lee-2022-demanda-ajustada",
+    "presentationSlug": "e06-espaco-aereo",
+    "title": "Demanda após reprogramação",
+    "assetPath": "/images/presentations/e06/lee-2022-demanda-ajustada.png",
+    "kind": "figure",
+    "creator": "Lee, Moolchandani e Arneson",
+    "sourceUrl": "https://ntrs.nasa.gov/api/citations/20220009867/downloads/20220009867_HLee_DASC2022_manuscript_final.pdf",
+    "resourceId": "lee-2022-dcb-vertiports",
+    "sourcePage": 5,
+    "sourceFigure": "6(b)",
+    "creditLine": "Lee, Moolchandani e Arneson (2022), figura 6(b).",
+    "usageBasis": "Figura da fonte primária reproduzida para análise didática solicitada pela equipe; crédito nas notas e na biblioteca da aula.",
+    "license": "NASA NTRS: Public Use Permitted; manuscrito disponibilizado pelos autores.",
+    "audience": "public",
+    "summary": "Mapa de calor após DCB: a demanda planejada não excede quatro operações por vertiporto e janela.",
+    "alt": "Mapa de calor após DCB: a demanda planejada não excede quatro operações por vertiporto e janela.",
+    "slideNumbers": [
+      21
+    ],
+    "sha256": "B1C5FABCE6563EBE2EB2A398600D90055338F8DAA55E4A3AC0B765E89A3825F9"
   }
 ]

@@ -53,6 +53,64 @@
       "tags": ["sistema de sistemas", "eVTOL", "aceitação", "DLR"],
       "relatedActivityIds": ["E02"],
       "sha256": "E38D4A601ECCAE3196027DDB368CF491D2F1BC04C2BDB8471E8187CB414C903D"
+    },
+    {
+      "id": "lee-2022-dcb-vertiports",
+      "category": "general-article",
+      "title": "Demand Capacity Balancing at Vertiports for Initial Strategic Conflict Management of Urban Air Mobility Operations",
+      "authors": [
+        "Hanbong Lee",
+        "Kushal A. Moolchandani",
+        "Heather Arneson"
+      ],
+      "year": 2022,
+      "publication": "2022 IEEE/AIAA 41st Digital Avionics Systems Conference (DASC)",
+      "documentNumber": null,
+      "publisherUrl": "https://doi.org/10.1109/DASC55683.2022.9925753",
+      "assetPath": "/resources/articles/lee-2022-dcb-vertiports.pdf",
+      "audience": "public",
+      "license": "NASA NTRS: Public Use Permitted; manuscrito disponibilizado pelos autores.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Avalia, por simulação, reprogramação de partidas para compatibilizar demanda e capacidade em vertiportos, incluindo atrasos, políticas de operadores e incerteza de execução.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "2CE760AE3DDB87023BEB2A64B75E17282626694D9E0489B25C319AFA8817947B",
+      "doi": "10.1109/DASC55683.2022.9925753",
+      "downloadSourceUrl": "https://ntrs.nasa.gov/api/citations/20220009867/downloads/20220009867_HLee_DASC2022_manuscript_final.pdf"
+    },
+    {
+      "id": "seuken-2022-market-design",
+      "category": "general-article",
+      "title": "Market Design for Drone Traffic Management",
+      "authors": [
+        "Sven Seuken",
+        "Paul Friedrich",
+        "Ludwig Dierks"
+      ],
+      "year": 2022,
+      "publication": "Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 12294–12300",
+      "documentNumber": null,
+      "publisherUrl": "https://doi.org/10.1609/aaai.v36i11.21493",
+      "assetPath": "/resources/articles/seuken-2022-market-design.pdf",
+      "audience": "public",
+      "license": "© 2022 AAAI; todos os direitos reservados; artigo disponibilizado publicamente pela editora.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Discute o desenho de regras de alocação de espaço aéreo para drones, considerando eficiência, equidade, simplicidade, incentivos e escalabilidade; base conceitual para discutir acesso na UAM.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "09A0053C73926F15E4ADD35942473710D9CD971AB15A62A6776A42051F6799D4",
+      "doi": "10.1609/aaai.v36i11.21493",
+      "downloadSourceUrl": "https://cdn.aaai.org/ojs/21493/21493-13-25506-1-2-20220628.pdf"
     }
   ],
   "technicalDocuments": [
@@ -218,6 +276,170 @@
       "tags": ["GIS", "localização", "decisão multicritério", "drones"],
       "relatedActivityIds": ["E02", "E11", "E15"],
       "sha256": "32F3173799671D577B6C9AE59C3F0C4B5EEF70B9FBF834CBAF3A4E6AEE430E93"
+    },
+    {
+      "id": "decea-2024-ica10012",
+      "category": "technical-document",
+      "title": "Regras do Ar — ICA 100-12",
+      "authors": [
+        "Departamento de Controle do Espaço Aéreo"
+      ],
+      "year": 2024,
+      "publication": "DECEA",
+      "documentNumber": "ICA 100-12 / edição 2024",
+      "publisherUrl": "https://publicacoes.decea.mil.br/publicacao/ICA-100-12",
+      "assetPath": "/resources/technical/decea-2024-ica10012.pdf",
+      "audience": "public",
+      "license": "Publicação técnica com atribuição; licença aberta não declarada.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Base normativa para regras de voo, responsabilidades e condições de operação. Edição em vigor em 28/11/2024, com vigência específica para os arts. 96 e 97.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "3924244609F1CD9F9D33046A74E7C81D1B4A6D48A53BC81209576F83B13F7AE2"
+    },
+    {
+      "id": "decea-2025-ica10037",
+      "category": "technical-document",
+      "title": "Serviços de Tráfego Aéreo — ICA 100-37",
+      "authors": [
+        "Departamento de Controle do Espaço Aéreo"
+      ],
+      "year": 2025,
+      "publication": "DECEA",
+      "documentNumber": "ICA 100-37 / edição 2024, compilada com alteração de 2025",
+      "publisherUrl": "https://publicacoes.decea.mil.br/publicacao/ICA-100-37",
+      "assetPath": "/resources/technical/decea-2025-ica10037.pdf",
+      "audience": "public",
+      "license": "Publicação técnica com atribuição; licença aberta não declarada.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Organização e classificação dos espaços ATS, controle, informação de voo e alerta. Arquivo compilado com a alteração em vigor em 27/11/2025.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "FCD5B0C817174669B9E1FB0771FA572F6E48F462204A2295198324EC42C04E00"
+    },
+    {
+      "id": "corus-2023-conops4",
+      "category": "technical-document",
+      "title": "U-space ConOps and Architecture — Edition 4",
+      "authors": [
+        "Consórcio CORUS-XUAM / EUROCONTROL"
+      ],
+      "year": 2023,
+      "publication": "SESAR 3 Joint Undertaking",
+      "documentNumber": "D4.2 / edição 01.00.02 / 20/07/2023",
+      "publisherUrl": "https://www.sesarju.eu/sites/default/files/documents/reports/U-space%20CONOPS%204th%20edition.pdf",
+      "assetPath": "/resources/technical/corus-2023-conops4.pdf",
+      "audience": "public",
+      "license": "© 2023 CORUS-XUAM consortium; todos os direitos reservados; divulgação pública PU.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Concepção europeia com extensão à UAM: volumes, planos 4D, autorização, previsão de conflitos e monitoramento de conformidade.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "35ECC5F9D6CBF35CCA4F71FB0204D35DB77669FC49D8D49359ABC04DB14F5417"
+    },
+    {
+      "id": "nasa-2022-digital-flight",
+      "category": "technical-document",
+      "title": "Digital Flight: A New Cooperative Operating Mode to Complement VFR and IFR",
+      "authors": [
+        "David Wing",
+        "Andrew Lacher",
+        "Wes Ryan",
+        "William Cotton",
+        "Ruth Stilwell",
+        "John Maris",
+        "Paul Vajda"
+      ],
+      "year": 2022,
+      "publication": "NASA",
+      "documentNumber": "NASA/TM–20220013225",
+      "publisherUrl": "https://ntrs.nasa.gov/citations/20220013225",
+      "assetPath": "/resources/technical/nasa-2022-digital-flight.pdf",
+      "audience": "public",
+      "license": "Publicação técnica com atribuição; licença aberta não declarada.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Propõe um modo de operação digital complementar a VFR/IFR, baseado em cooperação, automação e responsabilidade do operador. Trata-se de proposta de pesquisa.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "719C86BDBDAEEC0DAA549D01ACF674B9C7DE1635F77BFADDE12A085530838812"
+    },
+    {
+      "id": "sigmasky-produto1",
+      "category": "technical-document",
+      "title": "Relatório de Revisão da Literatura — SIGMA-Sky",
+      "authors": [
+        "Mayara Condé Rocha Murça",
+        "Marcelo Xavier Guterres",
+        "Daniel Alberto Pamplona",
+        "Lucas Orbolato Carvalho",
+        "Igor Galhano Gomes"
+      ],
+      "year": 2025,
+      "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
+      "documentNumber": "Produto 1 / versão inicial 22/12/2025",
+      "source": "Documento fornecido diretamente pela equipe docente.",
+      "assetPath": "/resources/technical/sigmasky-produto1.pdf",
+      "audience": "public",
+      "license": "Publicação técnica com atribuição; licença aberta não declarada.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Revisão de concepções operacionais e documentos técnicos utilizada para localizar fontes primárias da aula.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "6B342619F28A81425E63EC6D1592A95B7699520C84C937844498ECB9E4FC9E4F"
+    },
+    {
+      "id": "sigmasky-produto2",
+      "category": "technical-document",
+      "title": "Definição de Cenários Operacionais para Simulação — SIGMA-Sky",
+      "authors": [
+        "Mayara Condé Rocha Murça",
+        "Daniel Alberto Pamplona",
+        "Lucas Orbolato Carvalho",
+        "Jaqueline Fonseca Rodrigues",
+        "Igor Galhano Gomes"
+      ],
+      "year": 2026,
+      "publication": "SIGMA-Sky — Meta 2 / Etapa 7 — ITA",
+      "documentNumber": "Produto 2 / versão inicial 15/04/2026",
+      "source": "Documento fornecido diretamente pela equipe docente.",
+      "assetPath": "/resources/technical/sigmasky-produto2.pdf",
+      "audience": "public",
+      "license": "Publicação técnica com atribuição; licença aberta não declarada.",
+      "rightsNote": "Cópia disponibilizada para consulta didática conforme solicitação explícita da equipe; preserva o documento original.",
+      "summary": "Cenários de integração UAM na RMSP utilizados como estudo de caso de compartilhamento e corredores dedicados.",
+      "tags": [
+        "E06",
+        "espaço aéreo"
+      ],
+      "relatedActivityIds": [
+        "E06"
+      ],
+      "sha256": "80B3881482C49A907044310E7A8FD8F2E99BCD6DA1B9628E3D5E9D249B97C8B0"
     }
   ],
   "disciplineDocuments": [
