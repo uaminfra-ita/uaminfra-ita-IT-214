@@ -165,7 +165,7 @@
       "rightsNote": "Cópia correspondente ao arquivo oficial publicado pela FAA.",
       "summary": "Organiza objetivos, dependências, ações e responsabilidades da FAA e de parceiros para habilitar operações iniciais de AAM em escala limitada.",
       "tags": ["AAM", "implementação", "certificação", "Innovate28"],
-      "relatedActivityIds": ["E02", "E03"],
+      "relatedActivityIds": ["E02", "E03", "E07"],
       "sha256": "FA823EC1CD48E32AD41828787DCFB75ACF48CD122B634D72621F1D48D99D6715"
     },
     {
@@ -183,7 +183,7 @@
       "rightsNote": "Cópia correspondente à publicação oficial do DECEA, em vigor desde 28 de novembro de 2024.",
       "summary": "Estabelece a concepção operacional brasileira para integrar eVTOL ao SISCEAB, com volumes de espaço aéreo UAM, provedores de serviço, requisitos de performance e níveis progressivos de maturidade.",
       "tags": ["CONOPS", "DECEA", "espaço aéreo", "SISCEAB"],
-      "relatedActivityIds": ["E03", "E06"],
+      "relatedActivityIds": ["E03", "E06", "E07"],
       "sha256": "BE43FBAF0BEAA77EEF21ECEF0EAD0D3733288296EEA34A299A2CD16C49B7853F"
     },
     {
@@ -201,7 +201,7 @@
       "rightsNote": "Documento oficial disponibilizado publicamente pela ANAC para comunicação e orientação institucional.",
       "summary": "Apresenta aeronaves, casos de uso, desafios e áreas regulatórias afetadas pela AAM, com foco nas ações brasileiras de certificação de projeto e coordenação institucional.",
       "tags": ["AAM", "ANAC", "certificação", "regulação"],
-      "relatedActivityIds": ["E03"],
+      "relatedActivityIds": ["E03", "E07"],
       "sha256": "A0D678040EA008F28E38FCCEB0C72A4FCC8CC7E62A37FDF31B0B8F23ECF6A061"
     },
     {
@@ -440,6 +440,40 @@
         "E06"
       ],
       "sha256": "80B3881482C49A907044310E7A8FD8F2E99BCD6DA1B9628E3D5E9D249B97C8B0"
+    },
+    {
+      "id": "sigmacity-produto3",
+      "category": "technical-document",
+      "title": "Análise de Metodologias para Vertiportos — Produto 3",
+      "authors": [
+        "Marcelo Xavier Guterres",
+        "Flávio Mendes Neto",
+        "Daniel Alberto Pamplona",
+        "Marcelo Saraiva Peres",
+        "Arthur Vicente de Camargo",
+        "Gabriel Luiz Goulart Rufino Vieira",
+        "Rodrigo Mollo Furlan"
+      ],
+      "year": 2026,
+      "publication": "SIGMA-City — Meta 2 / Etapa 8 — ITA",
+      "documentNumber": "Produto III — versão 1.0",
+      "publisherUrl": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/resources/technical/sigmacity-produto3.pdf",
+      "assetPath": "/resources/technical/sigmacity-produto3.pdf",
+      "audience": "public",
+      "license": "Uso didático autorizado; licença aberta não declarada.",
+      "rightsNote": "Documento fornecido pela equipe e disponibilizado como base da aula E07 por solicitação explícita do usuário.",
+      "summary": "Revisa metodologias internacionais de viabilidade, projeto e integração urbana de vertiportos e propõe cinco tipologias de sítio aplicadas ao contexto brasileiro.",
+      "tags": [
+        "E07",
+        "vertiportos",
+        "tipologias",
+        "SIGMA-City",
+        "planejamento urbano"
+      ],
+      "relatedActivityIds": [
+        "E07"
+      ],
+      "sha256": "6FD35E31A64FE7006E97EA4CC9EEC2943072DC058B637331DD0A1DA62FB5163B"
     }
   ],
   "disciplineDocuments": [
