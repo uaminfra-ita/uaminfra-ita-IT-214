@@ -595,5 +595,396 @@
     ],
     "alt": "Figura do DECEA com estruturas do espaço aéreo e ambientes ATM, UAM e UTM.",
     "sha256": "02AD51B1562303FF035A4EA6F4FD4986F964510B90A159A8EA8A7AF401540E63"
+  },
+  {
+    "id": "e07-voloport-singapura",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      1
+    ],
+    "title": "VoloPort em Marina Bay, Singapura",
+    "assetPath": "/images/presentations/e07/e07-voloport-singapura.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Nikolay Kazakov",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Voloport_in_Singapore_Oct._2019.jpg",
+    "creditLine": "Foto: Nikolay Kazakov, 2019 · CC BY-SA 4.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY-SA 4.0.",
+    "license": "Licença Creative Commons BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).",
+    "summary": "Protótipo de terminal da Volocopter e da Skyports montado em Marina Bay em 2019.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Terminal modular VoloPort iluminado em Marina Bay, com o ArtScience Museum e arranha-céus ao fundo.",
+    "sha256": "0720EC3140BFA56F236BC6EA142F32C531AC705F978C74AF5A0FB36F4095889B"
+  },
+  {
+    "id": "e07-heliponto-sirio-libanes",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      3
+    ],
+    "title": "Heliponto do Hospital Sírio-Libanês",
+    "assetPath": "/images/presentations/e07/e07-heliponto-sirio-libanes.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Pedu0303",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heliponto_do_Hospital_S%C3%ADrio_Liban%C3%AAs.jpg",
+    "creditLine": "Foto: Pedu0303, 2024 · CC0 · Wikimedia Commons",
+    "usageBasis": "Obra dedicada ao domínio público (CC0); reprodução com atribuição por cortesia.",
+    "license": "CC0 1.0 — dedicação ao domínio público (https://creativecommons.org/publicdomain/zero/1.0/).",
+    "summary": "Heliponto elevado em hospital de São Paulo, usado para introduzir o conceito de heliponto.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Edifício do Hospital Sírio-Libanês, em São Paulo, com a plataforma do heliponto em balanço no topo.",
+    "sha256": "7089E697D5E021BA9512381BB86D18BCCCDB2150A5323CB95C68DC0AAAB80332"
+  },
+  {
+    "id": "e07-dlr-horizonuam-componentes",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Componentes de um vertiporto (HorizonUAM)",
+    "assetPath": "/images/presentations/e07/e07-dlr-horizonuam-componentes.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Karolin Schweiger e Lukas Preis — render do projeto HorizonUAM (DLR)",
+    "sourceUrl": "https://doi.org/10.3390/drones6070179",
+    "sourcePage": 11,
+    "sourceFigure": "6",
+    "creditLine": "Schweiger e Preis (2022), fig. 6 · HorizonUAM/DLR · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Render rotulado com os elementos de lado ar e lado terra de um vertiporto em aeroporto.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Render de vertiporto com rótulos de TLOF, FATO, área de segurança, pista de táxi, stands, área de proteção, rebocador e lados terra e ar.",
+    "sha256": "26300F7E6CD75B2B8D79A36D1D0001398A90BC9EF0E7B849C39E80288ECE9883"
+  },
+  {
+    "id": "e07-faa-dimensao-controle",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      8
+    ],
+    "title": "Dimensão de controle (D) e diâmetro de rotor (RD)",
+    "assetPath": "/images/presentations/e07/e07-faa-dimensao-controle.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 10,
+    "sourceFigure": "1-1",
+    "creditLine": "FAA (2024), EB 105A, fig. 1-1 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Definição gráfica das dimensões usadas no dimensionamento do vertiporto.",
+    "relations": [
+      "activity:E07",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Planta de um eVTOL multirrotor com o círculo do diâmetro de rotor (RD) e o círculo maior da dimensão de controle (D).",
+    "sha256": "C92654A59BC6DD0F4BEB8770087024DA61122198E31F08266171513902B8CD8E"
+  },
+  {
+    "id": "e07-joby-s4",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      8
+    ],
+    "title": "Joby S4 na Base Aérea de Edwards",
+    "assetPath": "/images/presentations/e07/e07-joby-s4.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Harlan Huntington, Força Aérea dos EUA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joby_Aviation_S4_experimental_eVTOL_aircraft_at_Edwards_AFB.jpg",
+    "creditLine": "Foto: Harlan Huntington/USAF, 2023 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, foto oficial da USAF).",
+    "summary": "Exemplo de aeronave de projeto com rotores distribuídos.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Aeronave Joby S4, com seis rotores inclináveis, estacionada em pista da Base Aérea de Edwards.",
+    "sha256": "EBA0E44595E694EBB9FE6EC0ABC11C4F0640B15DF79D32CB247E53FDCF5A7C44"
+  },
+  {
+    "id": "e07-faa-tlof-fato-sem-legenda",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      9
+    ],
+    "title": "TLOF, FATO e área de segurança (sem legenda)",
+    "assetPath": "/images/presentations/e07/e07-faa-tlof-fato-sem-legenda.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 17,
+    "sourceFigure": "2-1",
+    "creditLine": "FAA (2024), EB 105A, fig. 2-1, legenda removida · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição. Recorte sem a legenda para a pergunta à turma.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Figura usada para a turma identificar as áreas antes das definições.",
+    "relations": [
+      "activity:E07",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Planta com três quadrados concêntricos e as cotas 1 RD, 2 RD e 2,5 D, sem legenda.",
+    "sha256": "4A4668AF49FEEAD73E31630405C0ECC0D5F2BFED87DBE749EE0EE57ECFAB6740"
+  },
+  {
+    "id": "e07-faa-tlof-fato",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      10
+    ],
+    "title": "TLOF, FATO e área de segurança",
+    "assetPath": "/images/presentations/e07/e07-faa-tlof-fato.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 17,
+    "sourceFigure": "2-1",
+    "creditLine": "FAA (2024), EB 105A, fig. 2-1 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Relação e dimensões mínimas das áreas de pouso e decolagem.",
+    "relations": [
+      "activity:E07",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Planta com TLOF central de 1 RD, FATO de 2 RD e área de segurança de 2,5 D, com legenda.",
+    "sha256": "453B116EAC14822A30B22A563DC48E6317D6485996171F8FF2828BC266DBDBCE"
+  },
+  {
+    "id": "e07-faa-elevado",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      13
+    ],
+    "title": "Configuração de vertiporto elevado",
+    "assetPath": "/images/presentations/e07/e07-faa-elevado.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 44,
+    "sourceFigure": "4-7",
+    "creditLine": "FAA (2024), EB 105A, fig. 4-7 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Exemplo de vertiporto em cobertura, com rede de proteção e iluminação.",
+    "relations": [
+      "activity:E07",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Vertiporto elevado na cobertura de um edifício, com TLOF, FATO, área de segurança, rede de proteção, farol e biruta iluminada.",
+    "sha256": "17AF635B2B935E4F85A77F88BF0506B8C16E5FE69F7B5490D747159401F722DF"
+  },
+  {
+    "id": "e07-eve-prototipo",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Protótipo da Eve em voo",
+    "assetPath": "/images/presentations/e07/e07-eve-prototipo.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Lula Oficial",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Embraer_EVE.jpg",
+    "creditLine": "Foto: Lula Oficial, 2026 · CC BY-SA 4.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY-SA 4.0.",
+    "license": "Licença Creative Commons BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).",
+    "summary": "eVTOL desenvolvido no Brasil pela Eve (Embraer), em voo de demonstração em março de 2026.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Protótipo do eVTOL da Eve em voo baixo sobre a pista, com vegetação ao fundo.",
+    "sha256": "BC97FDC9AAAD5AA7C0A8BC7DA5C20DF495913C256E07E10F368E51D21B5FBEBD"
+  },
+  {
+    "id": "e07-faa-locais-vertiportos",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Locais possíveis para vertiportos e vertistops",
+    "assetPath": "/images/presentations/e07/e07-faa-locais-vertiportos.png",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/new_entrants/aam_infrastructure",
+    "creditLine": "FAA, Advanced Air Mobility Infrastructure · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Ilustração da FAA com vertiportos em aeroporto urbano, centro, hospital e aeroporto regional.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Ilustração com três cenários: aeroporto urbano, centro com torres e hospital, e aeroporto em área rural, cada um com um marcador de vertiporto.",
+    "sha256": "CBA085D1BDC5B89C2790C74DC8DE6714EBD01190A2BABC9359ECA1F908FE0A43"
+  },
+  {
+    "id": "e07-heliponto-prefeitura-sp",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      18
+    ],
+    "title": "Heliponto na cobertura da Prefeitura de São Paulo",
+    "assetPath": "/images/presentations/e07/e07-heliponto-prefeitura-sp.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Henrique Boney",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helicoptero_sobre_a_prefeitura_de_S%C3%A3o_Paulo.JPG",
+    "creditLine": "Foto: Henrique Boney, 2012 · CC BY-SA 3.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY-SA 3.0.",
+    "license": "Licença Creative Commons BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/).",
+    "summary": "Heliponto elevado em cobertura ajardinada no centro de São Paulo.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Helicóptero vermelho decola do heliponto na cobertura ajardinada da Prefeitura de São Paulo, com um edifício alto atrás.",
+    "sha256": "C03BF667AD65A152B8CB92C30A891AA1E5744D540445B2D1D28E2716477F8E20"
+  },
+  {
+    "id": "e07-downtown-manhattan-heliport",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      21
+    ],
+    "title": "Downtown Manhattan Heliport",
+    "assetPath": "/images/presentations/e07/e07-downtown-manhattan-heliport.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Jakub Hałun",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Manhattan_Heliport,_bridges_over_East_River_and_One_Manhattan_Square,_NYC,_20231002_1654_1827.jpg",
+    "creditLine": "Foto: Jakub Hałun, 2023 · CC BY 4.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY 4.0.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Heliponto em píer no East River, local do primeiro voo de eVTOL em Nova York (2023).",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Downtown Manhattan Heliport sobre píer no East River, com helicóptero e as pontes do Brooklyn e de Manhattan ao fundo.",
+    "sha256": "EB59DA223BEBEEE5CB776B9D075886E1F68AE8AED4A6B36F276179AE353E181C"
+  },
+  {
+    "id": "e07-portland-heliponto-garagem",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      22
+    ],
+    "title": "Heliponto sobre edifício-garagem em Portland",
+    "assetPath": "/images/presentations/e07/e07-portland-heliponto-garagem.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "M.O. Stevens",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portland_Downtown_Heliport_-_Oregon.JPG",
+    "creditLine": "Foto: M.O. Stevens · CC BY-SA 4.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY-SA 4.0.",
+    "license": "Licença Creative Commons BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).",
+    "summary": "Portland Downtown Heliport, na cobertura de um edifício-garagem de 1989, encerrado em 2025.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Fachada de tijolos de edifício-garagem com biruta na cobertura, onde funcionava o Portland Downtown Heliport.",
+    "sha256": "83EBDDF0DF857DCAFE47B01FEECE012DE87B0508BA0A4B4A6580C1B3B6706FAB"
+  },
+  {
+    "id": "e07-faa-aeroporto-cenarios",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      23
+    ],
+    "title": "Vertiportos em aeroportos existentes",
+    "assetPath": "/images/presentations/e07/e07-faa-aeroporto-cenarios.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 63,
+    "sourceFigure": "A-1",
+    "creditLine": "FAA (2024), EB 105A, fig. A-1 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Cenários de implantação ao lado da pista, entre pistas paralelas e além da cabeceira.",
+    "relations": [
+      "activity:E07",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Três esquemas de vertiporto em aeroporto: ao lado da pista, entre pistas paralelas e além da cabeceira.",
+    "sha256": "30605955E9DC35AB27ADA4C6642A2077801A07363CE46AA03DC9AA34628D1DB3"
+  },
+  {
+    "id": "e07-pontoise-terminal",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      24
+    ],
+    "title": "Vertiporto de teste em Pontoise-Cormeilles",
+    "assetPath": "/images/presentations/e07/e07-pontoise-terminal.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Volocopter GmbH",
+    "sourceUrl": "https://www.volocopter.com/en/newsroom/vertiport-testbed-for-eu-uam-paris",
+    "creditLine": "Foto: © Volocopter GmbH · imagem de divulgação",
+    "usageBasis": "Imagem de divulgação publicada pela empresa em sua sala de imprensa, usada com atribuição para fins didáticos. Sem licença aberta: confirmar autorização antes da publicação.",
+    "license": "© Volocopter GmbH — imagem de imprensa, todos os direitos reservados.",
+    "summary": "Terminal do Groupe ADP e da Skyports inaugurado em novembro de 2022 no aeródromo de Pontoise-Cormeilles.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Volocopter 2X pairando diante do terminal modular do Groupe ADP e da Skyports em Pontoise-Cormeilles, com público atrás de gradis.",
+    "sha256": "98C82BF70B757AB3D54894DFF5A93E27D77EEFE42E1B277798D66067B3C6AF48"
+  },
+  {
+    "id": "e07-fiumicino-vertiporto",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      24
+    ],
+    "title": "Vertiporto de teste no aeroporto de Fiumicino",
+    "assetPath": "/images/presentations/e07/e07-fiumicino-vertiporto.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Volocopter GmbH",
+    "sourceUrl": "https://www.volocopter.com/en/newsroom/italys-first-vertiport-deployed-at-fiumicino-airport",
+    "creditLine": "Foto: © Volocopter GmbH · imagem de divulgação",
+    "usageBasis": "Imagem de divulgação publicada pela empresa em sua sala de imprensa, usada com atribuição para fins didáticos. Sem licença aberta: confirmar autorização antes da publicação.",
+    "license": "© Volocopter GmbH — imagem de imprensa, todos os direitos reservados.",
+    "summary": "Vertiporto de teste montado em outubro de 2022 no aeroporto de Fiumicino, em Roma.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Volocopter 2X se aproxima da FATO do vertiporto de teste no aeroporto de Fiumicino, com cercas e público ao fundo.",
+    "sha256": "12AFAFE70D161467D9614D476B4F9FF7F72F19FF01217E5829DCD781C8C06BCC"
+  },
+  {
+    "id": "e07-faa-vertiporto-novo",
+    "presentationSlug": "e07-tipologias-vertiportos",
+    "slideNumbers": [
+      25
+    ],
+    "title": "Vertiporto projetado para eVTOL",
+    "assetPath": "/images/presentations/e07/e07-faa-vertiporto-novo.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/new_entrants/aam_infrastructure",
+    "creditLine": "FAA, Advanced Air Mobility Infrastructure · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Ilustração de vertiporto novo com terminal, área de pouso e decolagem, pátio, embarque, recarga e cerca.",
+    "relations": [
+      "activity:E07"
+    ],
+    "alt": "Ilustração isométrica de vertiporto novo com terminal, área de pouso e decolagem, pátio de estacionamento, área de embarque, estações de recarga e cerca perimetral.",
+    "sha256": "40F0B6390BFAE86A6DAAFC90E613FDA16BAF9A5FCD218839A73FEB901AADF24C"
   }
 ]

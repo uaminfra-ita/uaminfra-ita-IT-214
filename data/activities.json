@@ -89,14 +89,18 @@
   },
   {
     "code": "E07", "meeting": 7, "date": "2026-09-15", "type": "class", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
+    "resourceIds": ["sigmacity-produto3", "faa-2024-eb-105a-vertiport-design", "easa-2022-vertiport-design-pts", "anac-2023-aam-panorama", "decea-2024-conops-uam-nacional", "faa-2023-aam-implementation-plan", "nrel-2023-vertiport-electrical"], "presentationSlug": "e07-tipologias-vertiportos",
     "theme": "Vertiportos I: componentes e tipologias",
-    "objective": "Apresentar TLOF, FATO, área de segurança, pátio, acesso de passageiros e tipologias no solo, elevadas ou por conversão de helipontos.",
-    "deliverable": "Tabela de componentes do vertiporto.",
+    "objective": "Diferenciar heliponto e vertiporto, identificar os componentes de um vertiporto, dimensionar TLOF, FATO e área de segurança pela aeronave de projeto e comparar cinco tipologias de implantação com casos reais.",
+    "deliverable": "Individual: tabela comparativa das cinco tipologias com vantagem principal, desafio principal e componente crítico, em PDF de até 2 páginas.",
     "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": "2026-09-21T23:59:00-03:00",
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": ["*"]
+      "acceptedExtensions": [".pdf"],
+      "requiredOutputs": [
+        "Tabela das cinco tipologias com vantagem principal, desafio principal e componente crítico.",
+        "PDF individual de até 2 páginas, com pelo menos duas referências da aula."
+      ]
     }
   },
   {

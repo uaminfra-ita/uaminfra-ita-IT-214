@@ -514,5 +514,252 @@
         "minutes": 3
       }
     ]
+  },
+  {
+    "slug": "e07-tipologias-vertiportos",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Usa figuras de domínio público da FAA, imagens com licença Creative Commons (Wikimedia Commons; Schweiger e Preis, 2022) e duas fotos de divulgação da Volocopter sem licença aberta, que dependem de confirmação da equipe antes da publicação.",
+    "activityId": "E07",
+    "title": "Vertiportos I: componentes e tipologias",
+    "subtitle": "Componentes, dimensões mínimas e cinco tipologias de implantação",
+    "date": "2026-09-15",
+    "durationMinutes": 180,
+    "slideCount": 32,
+    "objectives": [
+      "Diferenciar aeródromo, heliponto e vertiporto e reconhecer as divergências entre as definições.",
+      "Identificar os componentes de um vertiporto e dimensionar TLOF, FATO e área de segurança pela aeronave de projeto.",
+      "Diferenciar as cinco tipologias de implantação e reconhecê-las em casos reais.",
+      "Comparar as tipologias quanto à vantagem principal, ao desafio principal e ao componente crítico."
+    ],
+    "sections": [
+      "O problema e os conceitos",
+      "Componentes e geometria",
+      "Normas e literatura",
+      "Tipologias e casos",
+      "Atividade e materiais"
+    ],
+    "resourceIds": [
+      "sigmacity-produto3",
+      "faa-2024-eb-105a-vertiport-design",
+      "easa-2022-vertiport-design-pts",
+      "anac-2023-aam-panorama",
+      "decea-2024-conops-uam-nacional",
+      "faa-2023-aam-implementation-plan",
+      "nrel-2023-vertiport-electrical"
+    ],
+    "references": [
+      {
+        "resourceId": "sigmacity-produto3",
+        "shortTitle": "SIGMA-City (2026)",
+        "citation": "SIGMA-City. Análise de metodologias para vertiportos: Produto 3 (relatório e apresentação de 13 ago. 2026). São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Problema, fluxograma de viabilidade, projeto e integração, cinco tipologias e helipontos da RMSP."
+      },
+      {
+        "resourceId": "faa-2024-eb-105a-vertiport-design",
+        "shortTitle": "FAA (2024)",
+        "citation": "Federal Aviation Administration. Engineering Brief 105A: Vertiport Design. Washington, DC: FAA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Aeronave de referência, TLOF, FATO, área de segurança, vertiporto elevado e em aeroporto."
+      },
+      {
+        "resourceId": "easa-2022-vertiport-design-pts",
+        "shortTitle": "EASA (2022)",
+        "citation": "European Union Aviation Safety Agency. Prototype Technical Specifications for the Design of VFR Vertiports (PTS-VPT-DSN). Colônia: EASA, 2022.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Dimensões mínimas europeias e critério de vertiporto elevado."
+      },
+      {
+        "resourceId": "anac-2023-aam-panorama",
+        "shortTitle": "ANAC (2023)",
+        "citation": "Agência Nacional de Aviação Civil. Advanced Air Mobility: panorama e perspectivas 2023. Brasília: ANAC, 2023.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Posição da ANAC sobre a adaptação de helipontos existentes (p. 22)."
+      },
+      {
+        "resourceId": "decea-2024-conops-uam-nacional",
+        "shortTitle": "DECEA (2024)",
+        "citation": "Departamento de Controle do Espaço Aéreo. PCA 351-7: Concepção Operacional UAM Nacional. Rio de Janeiro: DECEA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Uso do termo vertiporto para todos os casos."
+      },
+      {
+        "resourceId": "faa-2023-aam-implementation-plan",
+        "shortTitle": "FAA (2023)",
+        "citation": "Federal Aviation Administration. Advanced Air Mobility Implementation Plan. Washington, DC: FAA, 2023.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Planejamento de vertiportos novos para vários operadores e integração modal."
+      },
+      {
+        "resourceId": "nrel-2023-vertiport-electrical",
+        "shortTitle": "NREL (2023)",
+        "citation": "Solanki, B. et al. Vertiport Electrical Infrastructure Study. Golden, CO: NREL, 2023.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Recarga e infraestrutura elétrica no sítio."
+      },
+      {
+        "shortTitle": "Brasil (1986)",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l7565compilado.htm",
+        "citation": "Brasil. Lei nº 7.565, de 19 de dezembro de 1986. Código Brasileiro de Aeronáutica. Arts. 27 e 31.",
+        "purpose": "Definições legais de aeródromo, heliponto e heliporto."
+      },
+      {
+        "shortTitle": "FAA (2025)",
+        "url": "https://www.faa.gov/airports/new_entrants/aam_infrastructure",
+        "citation": "Federal Aviation Administration. Advanced Air Mobility Infrastructure. Washington, DC: FAA, 2025. Página institucional.",
+        "purpose": "Definição legal de vertiporto e ilustrações de locais e de vertiporto novo."
+      },
+      {
+        "shortTitle": "Schweiger e Preis (2022)",
+        "url": "https://doi.org/10.3390/drones6070179",
+        "citation": "Schweiger, K.; Preis, L. Urban air mobility: systematic review of scientific publications and regulations for vertiport design and operations. Drones, v. 6, n. 7, 179, 2022.",
+        "purpose": "Revisão de 49 artigos, terminologia e figura de componentes."
+      },
+      {
+        "shortTitle": "Brunelli, Ditta e Postorino (2023)",
+        "url": "https://doi.org/10.1016/j.jairtraman.2023.102460",
+        "citation": "Brunelli, M.; Ditta, C. C.; Postorino, M. N. New infrastructures for Urban Air Mobility systems: a systematic review on vertiport location and capacity. Journal of Air Transport Management, v. 112, 102460, 2023.",
+        "purpose": "Localização e capacidade de vertiportos."
+      },
+      {
+        "shortTitle": "Di Mascio, Del Serrone e Moretti (2025)",
+        "url": "https://doi.org/10.3390/eng6050093",
+        "citation": "Di Mascio, P.; Del Serrone, G.; Moretti, L. Vertiports: the infrastructure backbone of Advanced Air Mobility — a review. Eng, v. 6, n. 5, 93, 2025.",
+        "purpose": "Revisão PRISMA com 84 documentos; contraste entre vertiportos no solo e em cobertura."
+      },
+      {
+        "shortTitle": "Rohrmeier, Wei e Ison (2026)",
+        "url": "https://doi.org/10.1177/08854122251314481",
+        "citation": "Rohrmeier, K.; Wei, W.; Ison, D. Decoding the vertiport: planning for urban air mobility. Journal of Planning Literature, v. 41, n. 1, p. 24-34, 2026.",
+        "purpose": "Triagem de lotes por segurança, acesso e equidade na Baía de São Francisco."
+      },
+      {
+        "shortTitle": "Li (2023)",
+        "url": "https://doi.org/10.3390/drones7010037",
+        "citation": "Li, X. Repurposing existing infrastructure for urban air mobility: a scenario analysis in Southern California. Drones, v. 7, n. 1, 37, 2023.",
+        "purpose": "Helipontos e edifícios-garagem como oferta de sítios e restrições espaciais."
+      },
+      {
+        "shortTitle": "Zelinski (2020)",
+        "url": "https://doi.org/10.1109/DASC50938.2020.9256794",
+        "citation": "Zelinski, S. Operational analysis of vertiport surface topology. In: AIAA/IEEE Digital Avionics Systems Conference, 39., 2020.",
+        "purpose": "Topologia de superfície e capacidade (leitura para a E08)."
+      },
+      {
+        "shortTitle": "Vascik e Hansman (2019)",
+        "url": "https://doi.org/10.2514/6.2019-0526",
+        "citation": "Vascik, P. D.; Hansman, R. J. Development of vertiport capacity envelopes and analysis of their sensitivity to topological and operational factors. In: AIAA SciTech Forum, 2019.",
+        "purpose": "Envelopes de capacidade e topologia (leitura para a E08)."
+      },
+      {
+        "shortTitle": "Preis (2021)",
+        "url": "https://doi.org/10.2514/6.2021-2372",
+        "citation": "Preis, L. Quick sizing, throughput estimating and layout planning for VTOL aerodromes: a methodology for vertiport design. In: AIAA AVIATION Forum, 2021.",
+        "purpose": "Dimensionamento e arranjo de vertiportos (leitura para a E08)."
+      },
+      {
+        "shortTitle": "O'Reilly et al. (2025)",
+        "url": "https://doi.org/10.1057/s41270-024-00323-0",
+        "citation": "O'Reilly, P. E.; Rahimi, R. A.; Marques, J. L. R.; Babadopulos, M. A. F. A. L. Vertiport ventures: assessing operational feasibility for eVTOL integration in São Paulo's helipad and heliport infrastructure. Journal of Marketing Analytics, v. 13, n. 3, p. 873-884, 2025.",
+        "purpose": "Viabilidade operacional de eVTOL em helipontos de São Paulo."
+      },
+      {
+        "shortTitle": "Ribeiro et al. (2023)",
+        "url": "https://doi.org/10.1016/j.scs.2023.104797",
+        "citation": "Ribeiro, J. K.; Borille, G. M. R.; Caetano, M.; Silva, E. J. Repurposing urban air mobility infrastructure for sustainable transportation in metropolitan cities: a case study of vertiports in São Paulo, Brazil. Sustainable Cities and Society, v. 98, 104797, 2023.",
+        "purpose": "Helipontos e aeródromos de São Paulo como vertiportos de acesso a aeroportos."
+      },
+      {
+        "shortTitle": "Rodrigues et al. (2026)",
+        "url": "https://doi.org/10.1016/j.cstp.2026.101884",
+        "citation": "Rodrigues, J. F. et al. From avoided emissions to potential credits: a simulation-based case study of helicopter-to-eVTOL substitution in São Paulo. Case Studies on Transport Policy, v. 25, 101884, 2026.",
+        "purpose": "Substituição de helicópteros por eVTOL em São Paulo."
+      },
+      {
+        "shortTitle": "Freitas, Costa e Bandeira (2026)",
+        "url": "https://doi.org/10.1590/jatm.v18.1447",
+        "citation": "Freitas, J. H.; Costa, R. M.; Bandeira, M. C. G. S. P. Systematic mapping of the literature on vertiport location in urban environments. Journal of Aerospace Technology and Management, v. 18, e3826, 2026.",
+        "purpose": "Mapeamento de 31 estudos sobre localização de vertiportos."
+      },
+      {
+        "shortTitle": "Joby Aviation (2023)",
+        "url": "https://www.jobyaviation.com/news/joby-brings-electric-air-taxis-to-new-york-city-in-week-long-flight-campaign",
+        "citation": "Joby Aviation. Joby brings electric air taxis to New York City in week-long flight campaign. 13 nov. 2023.",
+        "purpose": "Primeiro voo de eVTOL em Nova York e anúncio de eletrificação do heliponto."
+      },
+      {
+        "shortTitle": "Volocopter (2022a)",
+        "url": "https://www.volocopter.com/en/newsroom/vertiport-testbed-for-eu-uam-paris",
+        "citation": "Volocopter. Vertiport testbed for European urban air mobility testing inaugurated in Paris. Nov. 2022.",
+        "purpose": "Vertiporto de teste em Pontoise-Cormeilles."
+      },
+      {
+        "shortTitle": "Volocopter (2022b)",
+        "url": "https://www.volocopter.com/en/newsroom/italys-first-vertiport-deployed-at-fiumicino-airport",
+        "citation": "Volocopter. Italy's first vertiport deployed at Fiumicino Airport. Out. 2022.",
+        "purpose": "Vertiporto de teste no aeroporto de Fiumicino."
+      },
+      {
+        "shortTitle": "Skyports (2025)",
+        "url": "https://skyports.net/worlds-first-commercial-vertiport-dxv-reaches-topping-out-construction-milestone/",
+        "citation": "Skyports. World's first commercial vertiport DXV reaches topping-out construction milestone. Nov. 2025.",
+        "purpose": "Dados do vertiporto DXV, em Dubai."
+      },
+      {
+        "shortTitle": "Aviation A2Z (2026)",
+        "url": "https://aviationa2z.com/index.php/2026/07/07/dubai-unveils-worlds-first-certified-commercial-vertiport/",
+        "citation": "Aviation A2Z. Dubai unveils world's first certified commercial vertiport for electric air taxis. 7 jul. 2026.",
+        "purpose": "Certificação do DXV."
+      },
+      {
+        "shortTitle": "AIN (2021)",
+        "url": "https://www.ainonline.com/news-article/2021-08-24/archer-teams-reef-repurpose-parking-garage-rooftops-evtol-landing-sites",
+        "citation": "Aviation International News. Archer teams with Reef to repurpose parking garage rooftops as eVTOL landing sites. 24 ago. 2021.",
+        "purpose": "Uso de coberturas de edifícios-garagem como vertiportos."
+      },
+      {
+        "shortTitle": "Band (2025)",
+        "url": "https://www.band.com.br/band-vale/noticias/aeroporto-de-sao-jose-dos-campos-sp-e-escolhido-para-receber-vertiporto-experimental-202502031044",
+        "citation": "Band Vale. Aeroporto de São José dos Campos (SP) é escolhido para receber vertiporto experimental. 3 fev. 2025.",
+        "purpose": "Vertiporto experimental no sandbox regulatório da ANAC."
+      },
+      {
+        "shortTitle": "OVALE (2026)",
+        "url": "https://sampi.net.br/ovale/noticias/2974803/vale-do-paraiba/2026/04/aeroporto-de-sjc-pode-ter-testes-de-voo-do-carro-voador-em-2027",
+        "citation": "OVALE. Aeroporto de SJC pode ter testes de voo do \"carro voador\" em 2027. Abr. 2026.",
+        "purpose": "Previsão de testes no vertiporto experimental de São José dos Campos."
+      },
+      {
+        "shortTitle": "CNN Brasil (2026)",
+        "url": "https://www.cnnbrasil.com.br/auto/sao-paulo-e-rio-terao-vetiportos-para-carros-voadores-saiba-onde/",
+        "citation": "CNN Brasil. São Paulo e Rio terão vertiportos para carros voadores; saiba onde. 14 jan. 2026.",
+        "purpose": "Campo de Marte e Jacarepaguá como polos anunciados pela UrbanV e pela Pax Aeroportos."
+      }
+    ],
+    "authors": [
+      "Equipe docente IT-214 — preparação assistida por IA"
+    ],
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito.",
+    "sourceDocuments": [
+      {
+        "id": "sigmacity-produto3",
+        "title": "Análise de Metodologias para Vertiportos",
+        "authors": [
+          "Marcelo Xavier Guterres",
+          "Flávio Mendes Neto",
+          "Daniel Alberto Pamplona",
+          "Marcelo Saraiva Peres",
+          "Arthur Vicente de Camargo",
+          "Gabriel Luiz Goulart Rufino Vieira",
+          "Rodrigo Mollo Furlan"
+        ],
+        "source": "Produto03.pdf fornecido diretamente pelo usuário",
+        "publication": "SIGMA-City — Meta 2 / Etapa 8 — ITA",
+        "versionDate": "2026-08-03",
+        "sha256": "6FD35E31A64FE7006E97EA4CC9EEC2943072DC058B637331DD0A1DA62FB5163B",
+        "distribution": "PDF integral disponível na biblioteca por solicitação explícita da equipe.",
+        "resourceId": "sigmacity-produto3"
+      }
+    ]
   }
 ]
