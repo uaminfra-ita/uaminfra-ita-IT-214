@@ -471,7 +471,8 @@
         "planejamento urbano"
       ],
       "relatedActivityIds": [
-        "E07"
+        "E07",
+        "E08"
       ],
       "sha256": "6FD35E31A64FE7006E97EA4CC9EEC2943072DC058B637331DD0A1DA62FB5163B"
     }
@@ -492,7 +493,7 @@
       "rightsNote": "Plano de ensino fornecido pela equipe docente para publicação no portal oficial da disciplina.",
       "summary": "Apresenta ementa, objetivos, quatro eixos temáticos, cronograma dos 16 encontros, oficinas, entregáveis semanais e quatro checkpoints do artigo científico.",
       "tags": ["plano de ensino", "cronograma", "ementa", "avaliação"],
-      "relatedActivityIds": ["E01"],
+      "relatedActivityIds": ["E01", "E08"],
       "sha256": "0B8CC22C876790701AB93D692B526166ADC5C967F7E2543DBDDB7C95EF223508"
     },
     {

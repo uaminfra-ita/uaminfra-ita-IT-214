@@ -761,5 +761,132 @@
         "resourceId": "sigmacity-produto3"
       }
     ]
+  },
+  {
+    "slug": "e08-operacao-vertiportos",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Usa figuras de domínio público da NASA, figuras de artigos de acesso aberto sob CC BY 4.0 e fotos do Wikimedia Commons (domínio público da USAF e CC BY-SA 3.0). Tabelas e cálculos são elaborações próprias a partir das fontes citadas.",
+    "activityId": "E08",
+    "title": "Vertiportos II: operação, capacidade e recarga",
+    "subtitle": "Pads, gates e stands, arranjos, capacidade, turnaround e recarga, e Seminário Artigo 2",
+    "date": "2026-09-22",
+    "durationMinutes": 180,
+    "slideCount": 25,
+    "objectives": [
+      "Identificar pads, gates e stands e os modos de deslocamento da aeronave entre eles.",
+      "Comparar arranjos de vertiporto e estimar a capacidade pelo número de pads e de vagas.",
+      "Relacionar turnaround, recarga e fluxo de passageiros aos gargalos operacionais.",
+      "Apresentar a revisão da literatura do artigo com matriz de artigos, lacuna consolidada e posicionamento (CP2)."
+    ],
+    "sections": [
+      "Elementos",
+      "Arranjo",
+      "Capacidade",
+      "Recarga",
+      "Passageiros e carga",
+      "Seminário Artigo 2 (CP2)"
+    ],
+    "resourceIds": [
+      "faa-2024-eb-105a-vertiport-design",
+      "easa-2022-vertiport-design-pts",
+      "nrel-2023-vertiport-electrical",
+      "sigmacity-produto3",
+      "it214-2026-2-plano-ensino"
+    ],
+    "references": [
+      {
+        "resourceId": "faa-2024-eb-105a-vertiport-design",
+        "shortTitle": "FAA (2024)",
+        "citation": "Federal Aviation Administration. Engineering Brief 105A: Vertiport Design. Washington, DC: FAA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Estacionamento, táxi, recarga e segurança contra incêndio (seções 3 e 5)."
+      },
+      {
+        "resourceId": "easa-2022-vertiport-design-pts",
+        "shortTitle": "EASA (2022)",
+        "citation": "European Union Aviation Safety Agency. Prototype Technical Specifications for the Design of VFR Vertiports (PTS-VPT-DSN). Colônia: EASA, 2022.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Critérios europeus usados nos arranjos de Gimpo e do vertiporto em dois níveis."
+      },
+      {
+        "resourceId": "nrel-2023-vertiport-electrical",
+        "shortTitle": "NREL (2023)",
+        "citation": "Solanki, B. et al. Federal Aviation Administration Vertiport Electrical Infrastructure Study. Golden, CO: NREL, 2023. NREL/TP-5R00-86245.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Potência de recarga, rede simulada de 8 vertiportos, cenários de carregadores e impacto na rede elétrica."
+      },
+      {
+        "resourceId": "sigmacity-produto3",
+        "shortTitle": "SIGMA-City (2026)",
+        "citation": "SIGMA-City. Análise de metodologias para vertiportos: Produto 3 (relatório e apresentação de 13 ago. 2026). São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Fluxograma de viabilidade, projeto e integração e helipontos da RMSP."
+      },
+      {
+        "resourceId": "it214-2026-2-plano-ensino",
+        "shortTitle": "IT-214 (2026)",
+        "citation": "Instituto Tecnológico de Aeronáutica. Plano de ensino IT-214 — Mobilidade Aérea Urbana — 2026/2. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Conteúdo mínimo e critério pedagógico do Checkpoint 2."
+      },
+      {
+        "shortTitle": "Guerreiro et al. (2020)",
+        "url": "https://doi.org/10.2514/6.2020-2903",
+        "citation": "Guerreiro, N. M.; Hagen, G. E.; Maddalon, J. M.; Butler, R. W. Capacity and throughput of urban air mobility vertiports with a first-come, first-served vertiport scheduling algorithm. In: AIAA AVIATION Forum, 2020.",
+        "purpose": "Modelo de capacidade por pads e vagas e comparação com o throughput simulado."
+      },
+      {
+        "shortTitle": "Zelinski (2020)",
+        "url": "https://doi.org/10.1109/DASC50938.2020.9256794",
+        "citation": "Zelinski, S. Operational analysis of vertiport surface topology. In: AIAA/IEEE Digital Avionics Systems Conference, 39., 2020.",
+        "purpose": "Arranjos em perímetro, central e desconectado e efeito do vento."
+      },
+      {
+        "shortTitle": "Preis e Hornung (2022)",
+        "url": "https://doi.org/10.3390/electronics11071071",
+        "citation": "Preis, L.; Hornung, M. Vertiport operations modeling, agent-based simulation and parameter value specification. Electronics, v. 11, n. 7, 1071, 2022.",
+        "purpose": "Pads, gates e stands, tempos do turnaround e limiares de atraso."
+      },
+      {
+        "shortTitle": "Ahn e Hwang (2022)",
+        "url": "https://doi.org/10.3390/app12126077",
+        "citation": "Ahn, B.; Hwang, H.-Y. Design criteria and accommodating capacity analysis of vertiports for urban air mobility and its application at Gimpo Airport in Korea. Applied Sciences, v. 12, n. 12, 6077, 2022.",
+        "purpose": "Arranjos linear, satélite e pier, capacidade de 1 pad com 4 gates e caso de Gimpo (critérios da minuta do FAA EB 105 e da EASA, 2022)."
+      },
+      {
+        "shortTitle": "Mendonca et al. (2022)",
+        "url": "https://doi.org/10.2514/6.2022-4073",
+        "citation": "Mendonca, N.; Murphy, J. R.; Patterson, M. D.; Alexander, R.; Juarez, G.; Harper, C. Advanced air mobility vertiport considerations: a list and overview. In: AIAA AVIATION Forum, 2022.",
+        "purpose": "Considerações sobre passageiros, carga, segurança e automação."
+      },
+      {
+        "shortTitle": "Preis (2023)",
+        "url": "https://doi.org/10.1007/s13272-023-00650-5",
+        "citation": "Preis, L. Estimating vertiport passenger throughput capacity for prominent eVTOL designs. CEAS Aeronautical Journal, v. 14, n. 2, p. 353-368, 2023.",
+        "purpose": "Área por passageiro por hora como indicador de capacidade."
+      },
+      {
+        "shortTitle": "Brunelli, Ditta e Postorino (2023)",
+        "url": "https://doi.org/10.1016/j.jairtraman.2023.102460",
+        "citation": "Brunelli, M.; Ditta, C. C.; Postorino, M. N. New infrastructures for Urban Air Mobility systems: a systematic review on vertiport location and capacity. Journal of Air Transport Management, v. 112, 102460, 2023.",
+        "purpose": "Fatores que afetam a capacidade: pads, gates e clima."
+      },
+      {
+        "shortTitle": "Nagrare e Lieb (2026)",
+        "url": "https://doi.org/10.3390/aerospace13010109",
+        "citation": "Nagrare, S. R.; Lieb, T. J. Throughput and capacity analysis of a vertiport with taxing and parking levels. Aerospace, v. 13, n. 1, 109, 2026.",
+        "purpose": "Vertiporto em dois níveis, efeito da recarga e ponto de ruptura."
+      },
+      {
+        "shortTitle": "Skyports (2025)",
+        "url": "https://skyports.net/worlds-first-commercial-vertiport-dxv-reaches-topping-out-construction-milestone/",
+        "citation": "Skyports. World's first commercial vertiport DXV reaches topping-out construction milestone. Nov. 2025.",
+        "purpose": "Dados do vertiporto DXV, em Dubai."
+      }
+    ],
+    "authors": [
+      "Equipe docente IT-214"
+    ],
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito."
   }
 ]

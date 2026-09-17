@@ -1,0 +1,110 @@
+/* E08: complementa os estilos da E06 e da E07 (tela de 1600 × 900). */
+.ops-deck .ops-row { flex: 1; min-height: 0; }
+.ops-deck .vt-col > .ops-journey { flex: 0 0 210px; display: flex; flex-direction: column; min-height: 0; }
+.ops-deck .ops-compact td, .ops-deck .ops-compact th { padding: 7px 16px; }
+.ops-deck .ops-subtitle { margin: 0; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-lead { margin: 0; font-size: 25px; font-weight: 750; color: #0b3450; }
+
+/* Trilha da aula e frase de ligação */
+.ops-deck .air-kicker { align-items: center; }
+.ops-deck .air-kicker .ops-trail { display: flex; gap: 6px; }
+.ops-deck .air-kicker .ops-trail span { padding: 4px 12px; border-radius: 999px; background: #e2ecf3; color: #7b8da0; font-size: 14px; font-weight: 750; }
+.ops-deck .air-kicker .ops-trail .ops-trail-done { background: #cdeef3; color: #0b3450; }
+.ops-deck .air-kicker .ops-trail .ops-trail-on { background: #0e7490; color: #fff; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-bridge { flex: 0 0 auto; margin: -6px 0 0; font-size: 22px; font-weight: 750; color: #0e7490; }
+
+/* Números de abertura */
+.ops-deck .ops-numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ops-deck .ops-numbers article { display: flex; flex-direction: column; justify-content: center; gap: 6px; background: #fff; border-top: 8px solid #0e7490; padding: 26px 30px; }
+.ops-deck .ops-numbers b { font-size: 68px; line-height: 1; font-weight: 900; color: #071426; letter-spacing: -2px; }
+.ops-deck .ops-numbers span { font-size: 22px; font-weight: 800; color: #0e7490; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-numbers p { margin-top: 12px; font-size: 20px; }
+.ops-deck .ops-numbers strong { color: #0b3450; }
+.ops-deck .ops-numbers small { margin-top: 10px; padding-top: 10px; border-top: 1px solid #d6e2eb; font-size: 17px; line-height: 1.35; color: #64748b; }
+
+/* Fluxograma: tema já visto */
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .vt-flow-col li.vt-flow-done { background: #fff; color: #64748b; outline: 3px dashed #0b3450; outline-offset: -3px; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-legend { display: flex; align-items: center; gap: 12px; margin: 0; }
+.ops-deck .ops-key { display: inline-block; width: 26px; height: 18px; }
+.ops-deck .ops-key-done { background: #fff; outline: 3px dashed #0b3450; outline-offset: -3px; }
+.ops-deck .ops-key-on { margin-left: 18px; background: #0b3450; outline: 3px solid #facc15; outline-offset: -3px; }
+
+/* Caixas de cálculo e de equações */
+.ops-deck .ops-calc { background: #fff; border-left: 8px solid #0e7490; padding: 26px 32px; display: flex; flex-direction: column; gap: 10px; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-calc p { font-size: 24px; margin: 0; }
+.ops-deck .ops-calc b { color: #071426; }
+.ops-deck .ops-eq { background: #0b2942; padding: 20px 30px; display: flex; flex-direction: column; gap: 10px; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-eq p { margin: 0; color: #fff; font-size: 26px; font-family: 'Cambria Math', Georgia, serif; }
+.ops-deck .ops-eq sub { font-size: 0.62em; }
+.ops-deck .ops-split-model { grid-template-columns: 1.3fr 1fr; }
+.ops-deck .ops-model { gap: 14px; }
+.ops-deck .ops-model > :first-child { flex: 0 0 auto; }
+.ops-deck .ops-vars { font-size: 18px; }
+.ops-deck .ops-vars th { padding: 6px 14px; font-size: 17px; }
+.ops-deck .ops-vars td { padding: 5px 14px; }
+.ops-deck .ops-vars td:first-child { width: 26%; white-space: nowrap; font-family: 'Cambria Math', Georgia, serif; }
+
+/* Três figuras lado a lado */
+.ops-deck .ops-trio { display: grid; grid-template-columns: 1.25fr 1fr 1.25fr; gap: 26px; height: 100%; }
+.ops-deck .ops-trio > div { display: flex; flex-direction: column; gap: 14px; min-height: 0; }
+.ops-deck .ops-trio .vt-media { flex: 1; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-trio p { margin: 0; font-size: 21px; }
+.ops-deck .ops-trio-square { grid-template-columns: repeat(3, 1fr); }
+.ops-deck .ops-cards-low { flex: 0 0 auto !important; }
+.ops-deck .ops-cards-low article { padding: 16px 22px; justify-content: flex-start; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-cards-low p { font-size: 19px; margin-top: 6px !important; }
+
+/* Caso de Gimpo */
+.ops-deck .ops-split-cases { grid-template-columns: 1.15fr 1fr; }
+.ops-deck .ops-pair-tight { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; min-height: 0; }
+
+/* Tabela de tempos */
+.ops-deck .ops-times td { font-size: 21px; }
+.ops-deck .ops-times td:first-child { width: 58%; }
+.ops-deck .ops-times td:nth-child(2) { color: #071426; font-weight: 750; }
+.ops-deck .ops-times td:last-child { color: #64748b; }
+
+/* Seminário */
+.ops-deck .ops-list { margin: 0; padding: 0; list-style: none; counter-reset: cp; display: grid; gap: 10px; }
+.ops-deck .ops-list li { counter-increment: cp; display: flex; align-items: center; gap: 18px; background: #fff; border-left: 6px solid #22b8cf; padding: 10px 22px; font-size: 24px; font-weight: 700; color: #0b3450; }
+.ops-deck .ops-list li::before { content: counter(cp); font-size: 26px; font-weight: 900; color: #0e7490; min-width: 22px; }
+.ops-deck .ops-quote { margin: 0; background: #0b2942; padding: 34px 40px; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-quote p { color: #fff; font-size: 32px; font-weight: 700; line-height: 1.3; }
+.ops-deck .ops-quote cite { display: block; margin-top: 14px; color: #67e8f9; font-style: normal; font-size: 19px; }
+.ops-deck .vt-next { grid-template-rows: repeat(4, 1fr); }
+
+/* Slides internos (conteúdo não publicado, só no build local) */
+.ops-deck .air-kicker .ops-kicker-right { display: flex; align-items: center; gap: 12px; }
+.ops-deck .air-kicker .ops-badge { padding: 4px 12px; border-radius: 999px; background: #fef3c7; color: #92400e; font-size: 14px; font-weight: 800; }
+.presentation-shell.air-deck.ops-deck .reveal .slides section.air-slide.ops-internal { background: #fbfaf5; }
+.ops-deck .ops-internal header { border-bottom-color: #d97706; }
+.ops-deck .air-media > .ops-frame { position: relative; display: block; flex: 1; min-height: 0; background: #fff; border: 1px solid #d6e2eb; border-radius: 8px; overflow: hidden; }
+.ops-deck .ops-split-media { grid-template-columns: 1fr 1fr; }
+.ops-deck .ops-split-media-wide { grid-template-columns: 1.35fr 1fr; }
+.ops-deck .ops-internal-ref { color: #92400e !important; }
+
+.ops-deck .ops-heat { display: flex; flex-direction: column; gap: 10px; }
+.ops-deck .ops-heat h3 { margin: 0; font-size: 21px !important; }
+.ops-deck .ops-heat-grid { display: grid; gap: 4px; flex: 1; }
+.ops-deck .ops-heat-grid > * { display: grid; place-items: center; font-style: normal; font-size: 18px; }
+.ops-deck .ops-heat-grid > b { color: #0b3450; font-size: 17px; }
+.ops-deck .ops-heat-grid > i { justify-items: start; color: #334155; font-weight: 700; }
+.ops-deck .ops-heat-grid > span { border-radius: 4px; font-weight: 750; }
+
+.ops-deck .ops-timeline { display: flex; align-items: stretch; gap: 14px; }
+.ops-deck .ops-tl-end { display: grid; place-items: center; padding: 0 18px; background: #0b2942; color: #fff; font-size: 22px; font-weight: 800; border-radius: 6px; }
+.ops-deck .ops-tl-bar { flex: 1; display: flex; gap: 4px; }
+.ops-deck .ops-tl-seg { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 110px; padding: 8px; border-radius: 6px; color: #0b3450; text-align: center; }
+.ops-deck .ops-tl-seg b { font-size: 30px; }
+.ops-deck .ops-tl-seg span { font-size: 19px; font-weight: 700; }
+.ops-deck .ops-tl-0 { background: #bae6fd; }
+.ops-deck .ops-tl-1 { background: #0e7490; color: #fff; }
+.ops-deck .ops-tl-2 { background: #e2e8f0; }
+
+.ops-deck .ops-phases { background: #fff; border-left: 8px solid #d97706; padding: 22px 28px; display: flex; flex-direction: column; gap: 12px; }
+.ops-deck .ops-phases h3 { margin: 0; }
+.ops-deck .ops-phases ol { margin: 0; padding: 0; list-style: none; counter-reset: ph; display: grid; gap: 14px; }
+.ops-deck .ops-phases li { counter-increment: ph; position: relative; padding-left: 52px; }
+.ops-deck .ops-phases li::before { content: counter(ph); position: absolute; left: 0; top: 0; width: 38px; height: 38px; border-radius: 50%; background: #d97706; color: #fff; display: grid; place-items: center; font-weight: 900; font-size: 20px; }
+.ops-deck .ops-phases strong { font-size: 22px; color: #0b3450; }
+.presentation-shell.air-deck.ops-deck .reveal .air-slide .ops-phases p { font-size: 20px; margin-top: 2px; }

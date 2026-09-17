@@ -105,15 +105,20 @@
   },
   {
     "code": "E08", "meeting": 8, "date": "2026-09-22", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
+    "resourceIds": ["faa-2024-eb-105a-vertiport-design", "easa-2022-vertiport-design-pts", "nrel-2023-vertiport-electrical", "sigmacity-produto3", "it214-2026-2-plano-ensino"], "presentationSlug": "e08-operacao-vertiportos",
     "theme": "Vertiportos II e Seminário Artigo 2",
-    "objective": "Relacionar layout, turnaround, recarga, gates, stands, operações de carga e passageiros e gargalos operacionais.",
-    "deliverable": "Revisão completa, matriz de artigos, lacuna consolidada e posicionamento do trabalho.",
+    "objective": "Relacionar pads, gates e stands, arranjo, capacidade, turnaround, recarga e fluxo de passageiros e carga aos gargalos operacionais, e apresentar a revisão completa da literatura.",
+    "deliverable": "Checkpoint 2 (individual): revisão da literatura com estratégia de busca, bases, matriz de artigos, classificação, estado da arte, lacuna consolidada e posicionamento do artigo.",
     "checkpoint": "CP2",
     "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": "2026-09-22T09:00:00-03:00",
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": ["*"]
+      "acceptedExtensions": ["*"],
+      "requiredOutputs": [
+        "Slides da apresentação do CP2 em PDF.",
+        "Matriz de artigos em planilha ou PDF.",
+        "Revisão da literatura no projeto LaTeX do artigo ou em PDF."
+      ]
     }
   },
   {
