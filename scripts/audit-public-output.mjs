@@ -42,4 +42,9 @@ const leakedReference = outputFiles
   .find((file) => fs.readFileSync(path.join(outputDirectory, file), 'utf8').toLowerCase().includes('sigma_c_piii'));
 assert.equal(leakedReference, undefined, `Referência ao SIGMA encontrada no artefato público: ${leakedReference}`);
 
+const internalMarker = outputFiles
+  .filter((file) => searchableExtensions.has(path.extname(file).toLowerCase()))
+  .find((file) => fs.readFileSync(path.join(outputDirectory, file), 'utf8').includes('data-uso-interno'));
+assert.equal(internalMarker, undefined, `Conteúdo interno não publicado encontrado no artefato público: ${internalMarker}. Gere o build com GITHUB_PAGES=true antes de publicar.`);
+
 console.log(`Auditoria pública concluída: ${outputFiles.length} arquivos e ${actualResourcePaths.length} documentos declarados.`);

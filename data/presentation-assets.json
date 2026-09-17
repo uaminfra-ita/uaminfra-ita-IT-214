@@ -986,5 +986,370 @@
     ],
     "alt": "Ilustração isométrica de vertiporto novo com terminal, área de pouso e decolagem, pátio de estacionamento, área de embarque, estações de recarga e cerca perimetral.",
     "sha256": "40F0B6390BFAE86A6DAAFC90E613FDA16BAF9A5FCD218839A73FEB901AADF24C"
+  },
+  {
+    "id": "e08-beta-duke-field",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      1
+    ],
+    "title": "ALIA, da BETA Technologies, em Duke Field",
+    "assetPath": "/images/presentations/e08/e08-beta-duke-field.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Jennifer Bryant, Força Aérea dos EUA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BETA_ALIA_arrives_at_Duke_Field,_Eglin_Air_Force_Base.jpg",
+    "creditLine": "Foto: Jennifer Bryant/USAF, 2023 · domínio público",
+    "usageBasis": "Foto oficial da Força Aérea dos EUA, sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (foto oficial da USAF, 17 U.S.C. § 105).",
+    "summary": "Entrega da aeronave elétrica ALIA para testes em Duke Field, Flórida, em 26/10/2023.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Aeronave elétrica ALIA, da BETA Technologies, no pátio de Duke Field, cercada por militares e jornalistas.",
+    "sha256": "7CEE52A2477803A784488E31FE5EB1E0465D276EA7A8D9A7E57174BC26957153"
+  },
+  {
+    "id": "e08-joby-edwards",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Joby na pista de táxi da Base Aérea de Edwards",
+    "assetPath": "/images/presentations/e08/e08-joby-edwards.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Harlan Huntington, Força Aérea dos EUA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emerging_Technologies_Integrated_Test_Force_Takes_Delivery_of_First_eVTOL_Aircraft_(2003314784).jpg",
+    "creditLine": "Foto: Harlan Huntington/USAF, 2023 · domínio público",
+    "usageBasis": "Foto oficial da Força Aérea dos EUA, sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (foto oficial da USAF, 17 U.S.C. § 105).",
+    "summary": "eVTOL da Joby estacionado em pista de táxi após ensaio em solo.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "eVTOL da Joby, com seis rotores, parado em pista de táxi ao pôr do sol, com hangares ao fundo.",
+    "sha256": "5E1B49B72BD5B1A5FE4E2BA5B64CB6A0A4C0A55495BA75571AB3994829BD9F59"
+  },
+  {
+    "id": "e08-ahn-processo",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      4
+    ],
+    "title": "Operação de uma aeronave no vertiporto",
+    "assetPath": "/images/presentations/e08/e08-ahn-processo.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "23",
+    "creditLine": "Ahn e Hwang (2022), fig. 23 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Pouso, táxi até o gate, turnaround, táxi até o pad e decolagem.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Esquema com pad marcado com H ligado por pista amarela a um gate G, com setas numeradas de 1 a 5.",
+    "sha256": "E18904BA81420E0BA664B77CCD646389A8FFCA9B816008E0A1C378EE752CF65B"
+  },
+  {
+    "id": "e08-ahn-linear",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Arranjo linear (FAA)",
+    "assetPath": "/images/presentations/e08/e08-ahn-linear.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "9",
+    "creditLine": "Ahn e Hwang (2022), fig. 9 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Três pads e a área de espera dispostos em linha.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Três pads em linha com FATO, área de segurança, área de espera ao longo e superfícies de transição nas pontas.",
+    "sha256": "B13E12DA23D2922EB8F07A3755B621F1868F0FBD7F23560BE628D32395608865"
+  },
+  {
+    "id": "e08-ahn-satelite",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Arranjo satélite (FAA)",
+    "assetPath": "/images/presentations/e08/e08-ahn-satelite.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "11",
+    "creditLine": "Ahn e Hwang (2022), fig. 11 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Gates distribuídos em torno de um pad central.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Pad central com FATO e área de segurança, cinco gates em arco e área de espera, dentro de um círculo de 142 m.",
+    "sha256": "696374A65B420B2B5F90787016DFBBD931D54804EC1E48A7863B750D12B36D40"
+  },
+  {
+    "id": "e08-ahn-pier",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Arranjo pier (FAA)",
+    "assetPath": "/images/presentations/e08/e08-ahn-pier.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "13",
+    "creditLine": "Ahn e Hwang (2022), fig. 13 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Pad em uma extremidade ligado por pista a uma fileira de gates.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Pad em um canto de retângulo de 187 m por 86 m, ligado por pista a cinco gates em fileira junto à área de espera.",
+    "sha256": "B753F53E4909A1E74CD9D2BE01ADD2BE25A9D7CF1B8FB54B60F102C0F668633B"
+  },
+  {
+    "id": "e08-zelinski-perimetro",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Arranjo em perímetro (P5)",
+    "assetPath": "/images/presentations/e08/e08-zelinski-perimetro.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Shannon Zelinski, NASA Ames Research Center",
+    "sourceUrl": "https://ntrs.nasa.gov/citations/20205004026",
+    "sourceFigure": "2",
+    "creditLine": "Zelinski (2020), NASA, fig. 2 · domínio público",
+    "usageBasis": "Figura de trabalho de autores da NASA, sem proteção de direito autoral nos EUA; reprodução com atribuição.",
+    "license": "Domínio público (obra de servidores do governo federal dos EUA, 17 U.S.C. § 105); NASA NTRS: Public Use Permitted.",
+    "summary": "Pistas de táxi principais no perímetro, ligando quatro TLOFs.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Quadrado de 489 pés com quatro TLOFs nos cantos, pistas no perímetro e vagas na borda interna em torno da área de passageiros.",
+    "sha256": "8B03FA204705B985F3C0ECE5497DC2606C8B34CF41F47C7B2BBE47CD3F11CA43"
+  },
+  {
+    "id": "e08-zelinski-central",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Arranjo central (C5)",
+    "assetPath": "/images/presentations/e08/e08-zelinski-central.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Shannon Zelinski, NASA Ames Research Center",
+    "sourceUrl": "https://ntrs.nasa.gov/citations/20205004026",
+    "sourceFigure": "3",
+    "creditLine": "Zelinski (2020), NASA, fig. 3 · domínio público",
+    "usageBasis": "Figura de trabalho de autores da NASA, sem proteção de direito autoral nos EUA; reprodução com atribuição.",
+    "license": "Domínio público (obra de servidores do governo federal dos EUA, 17 U.S.C. § 105); NASA NTRS: Public Use Permitted.",
+    "summary": "Pistas de táxi principais cruzando o centro da superfície.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Quadrado de 414 pés com quatro TLOFs nos cantos ligados por pistas em X, vagas ao longo das pistas e áreas de passageiros nas bordas.",
+    "sha256": "3AF0854CE700E6B715FB4B316CAAD7AE168DC9A9057589EF0B4748061CAB4113"
+  },
+  {
+    "id": "e08-zelinski-desconectado",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Arranjo desconectado (D5)",
+    "assetPath": "/images/presentations/e08/e08-zelinski-desconectado.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Shannon Zelinski, NASA Ames Research Center",
+    "sourceUrl": "https://ntrs.nasa.gov/citations/20205004026",
+    "sourceFigure": "5",
+    "creditLine": "Zelinski (2020), NASA, fig. 5 · domínio público",
+    "usageBasis": "Figura de trabalho de autores da NASA, sem proteção de direito autoral nos EUA; reprodução com atribuição.",
+    "license": "Domínio público (obra de servidores do governo federal dos EUA, 17 U.S.C. § 105); NASA NTRS: Public Use Permitted.",
+    "summary": "Cada TLOF ligado apenas às próprias vagas.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Quadrado de 405 pés com quatro TLOFs nos cantos, cada um ligado em leque a cinco vagas, e área de passageiros no centro.",
+    "sha256": "2126C9A35EF6FC46751306ED3E82046BDD78811F159DC4945E794B9FC93F80BE"
+  },
+  {
+    "id": "e08-zelinski-vento",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      8
+    ],
+    "title": "Configuração de um TLOF conforme o vento",
+    "assetPath": "/images/presentations/e08/e08-zelinski-vento.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Shannon Zelinski, NASA Ames Research Center",
+    "sourceUrl": "https://ntrs.nasa.gov/citations/20205004026",
+    "sourceFigure": "9",
+    "creditLine": "Zelinski (2020), NASA, fig. 9 · domínio público",
+    "usageBasis": "Figura de trabalho de autores da NASA, sem proteção de direito autoral nos EUA; reprodução com atribuição.",
+    "license": "Domínio público (obra de servidores do governo federal dos EUA, 17 U.S.C. § 105); NASA NTRS: Public Use Permitted.",
+    "summary": "Direções e velocidades de vento em que o TLOF aceita pousos, decolagens, ambos ou nenhum.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Gráfico polar com setores de só aproximação, só decolagem, uso duplo e fechado conforme direção e velocidade do vento.",
+    "sha256": "56A855B1135AC54C6F45E74CCBFD9DF57DB01510BD29378F59D2D3A2C6887F07"
+  },
+  {
+    "id": "e08-ahn-gimpo-faa",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      9
+    ],
+    "title": "Estacionamento de Gimpo pelos critérios da FAA",
+    "assetPath": "/images/presentations/e08/e08-ahn-gimpo-faa.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "17a",
+    "creditLine": "Ahn e Hwang (2022), fig. 17a · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Arranjo linear no terreno atual, com área de segurança de 55,2 m.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Polígono do estacionamento de Gimpo com dois pads, pistas amarelas, seis gates e área de espera.",
+    "sha256": "762C8CECE1E91FE2B91DC1DBE9ED92D6BD89F73C9B6F93E853A0EE1471DD64EE"
+  },
+  {
+    "id": "e08-ahn-gimpo-easa",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      9
+    ],
+    "title": "Estacionamento de Gimpo pelos critérios da EASA",
+    "assetPath": "/images/presentations/e08/e08-ahn-gimpo-easa.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Byeongseon Ahn e Ho-Yon Hwang",
+    "sourceUrl": "https://doi.org/10.3390/app12126077",
+    "sourceFigure": "18a",
+    "creditLine": "Ahn e Hwang (2022), fig. 18a · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Arranjo linear no mesmo terreno, com área de segurança de 32,2 m.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "O mesmo polígono com três pads, pistas amarelas, oito gates e área de espera ao longo da borda.",
+    "sha256": "C9FB982252ABAB468C3585629737E55DCC2CE7337E12DAAFBB6CA6A6FBA3C7CB"
+  },
+  {
+    "id": "e08-guerreiro-capacidade",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      11
+    ],
+    "title": "Capacidade por número de pads e de vagas",
+    "assetPath": "/images/presentations/e08/e08-guerreiro-capacidade.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Nelson M. Guerreiro et al., NASA Langley Research Center",
+    "sourceUrl": "https://ntrs.nasa.gov/citations/20205001421",
+    "sourceFigure": "6 (direita)",
+    "creditLine": "Guerreiro et al. (2020), NASA, fig. 6 · domínio público",
+    "usageBasis": "Figura de trabalho de autores da NASA, sem proteção de direito autoral nos EUA; reprodução com atribuição.",
+    "license": "Domínio público (obra de servidores do governo federal dos EUA, 17 U.S.C. § 105); NASA NTRS: Public Use Permitted.",
+    "summary": "Capacidade teórica por 15 minutos para 1 a 6 pads e até 50 vagas, com 15 minutos de tempo em solo.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Gráfico de barras 3D da capacidade do vertiporto em função do número de vagas e de vertipads, que cresce até se estabilizar.",
+    "sha256": "BC4CB79B26E04738F28A3882CBDE46205EE72871F3E9C98547D263C72199D502"
+  },
+  {
+    "id": "e08-nagrare-jornada",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      13
+    ],
+    "title": "Percurso de um eVTOL no vertiporto",
+    "assetPath": "/images/presentations/e08/e08-nagrare-jornada.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Samiksha Rajkumar Nagrare e Teemu Joonas Lieb (DLR)",
+    "sourceUrl": "https://doi.org/10.3390/aerospace13010109",
+    "sourceFigure": "2",
+    "creditLine": "Nagrare e Lieb (2026), fig. 2 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "Sequência de pouso, táxi, desembarque, recarga, programação, embarque, táxi e decolagem.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Sequência de ícones: pouso, táxi, desembarque, recarga e estacionamento, programação, embarque, táxi e decolagem.",
+    "sha256": "EC85A88129D63FD495842AD7E9B2D01D908C124BAE7EF1C9CF472B77F44AFFE1"
+  },
+  {
+    "id": "e08-preis-atraso",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Atraso médio conforme o tempo de aproximação e decolagem",
+    "assetPath": "/images/presentations/e08/e08-preis-atraso.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Lukas Preis e Mirko Hornung",
+    "sourceUrl": "https://doi.org/10.3390/electronics11071071",
+    "sourceFigure": "6",
+    "creditLine": "Preis e Hornung (2022), fig. 6 · CC BY 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
+    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+    "summary": "O atraso dos passageiros cresce de forma exponencial quando o tempo no pad aumenta.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Gráfico com pontos e curvas exponenciais: atraso médio próximo de zero até 1 minuto e cerca de 30 minutos com 2 minutos de aproximação e decolagem.",
+    "sha256": "D7F744D1B7FD994E4DCE938626EEC9E29B0F16B7D199ECD16859AF55DDB70D03"
+  },
+  {
+    "id": "e08-beta-recarga",
+    "presentationSlug": "e08-operacao-vertiportos",
+    "slideNumbers": [
+      16
+    ],
+    "title": "eVTOL da BETA em recarga",
+    "assetPath": "/images/presentations/e08/e08-beta-recarga.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Brian Jenkins, BETA Technologies",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BETA_Technologies_A250_Electric_Aircraft_Charging.jpg",
+    "creditLine": "Foto: Brian Jenkins/BETA Technologies, 2024 · CC BY-SA 3.0 · Wikimedia Commons",
+    "usageBasis": "Reprodução sem alterações, com atribuição, conforme a licença CC BY-SA 3.0.",
+    "license": "Licença Creative Commons BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/).",
+    "summary": "Protótipo A250 conectado a um carregador Charge Cube.",
+    "relations": [
+      "activity:E08"
+    ],
+    "alt": "Técnico conecta o cabo de um carregador em forma de cubo ao protótipo A250 da BETA, estacionado em pátio.",
+    "sha256": "6E7157D4C0FDB3E5530B2BE5667D9E0DDED047D9469E574CF22B24339594B1BB"
   }
 ]
