@@ -1,6 +1,3 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { createElement } from 'react';
 import Image from 'next/image';
 import PresentationDeck from '@/components/PresentationDeck';
 import presentations from '@/data/presentations.json';
@@ -14,28 +11,13 @@ const presentation = presentations.find((item) => item.slug === 'e08-operacao-ve
 const allResources = Object.values(resources).flat();
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const steps = ['Elementos', 'Arranjo', 'Capacidade', 'Recarga', 'Passageiros'];
-// Conteúdo de trabalhos internos da equipe (não publicados): fica em .private/, fora do Git,
-// e só entra no build local. Builds do GitHub Pages nunca o carregam.
-const internalDir = path.join(process.cwd(), '.private', 'aulas', 'e08-interno');
-const internal = loadInternal();
 export const metadata = { title: presentation.title, description: presentation.subtitle };
-
-function loadInternal() {
-  if (process.env.GITHUB_ACTIONS === 'true' || process.env.GITHUB_PAGES === 'true') return null;
-  const file = path.join(internalDir, 'conteudo.json');
-  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null;
-}
-function internalImage(name) {
-  const type = name.endsWith('.png') ? 'png' : 'jpeg';
-  return `data:image/${type};base64,${fs.readFileSync(path.join(internalDir, name)).toString('base64')}`;
-}
 
 function Trail({ current }) {
   return <span className="ops-trail">{steps.map((name, index) => <span key={name} className={index === current ? 'ops-trail-on' : index < current ? 'ops-trail-done' : ''}>{index + 1}. {name}</span>)}</span>;
 }
-function Slide({ kicker, title, step, bridge, source, notes, children, className = '', anchor, isInternal = false }) {
-  if (anchor && internal?.slides.some((item) => item.at === anchor && item.replaces)) return null;
-  return <section className={'air-slide ' + className + (isInternal ? ' ops-internal' : '')} {...(isInternal ? { 'data-uso-interno': 'true' } : {})}><header><div className="air-kicker">{kicker}<span className="ops-kicker-right">{isInternal && <span className="ops-badge">Uso interno · não publicado</span>}{step !== undefined && <Trail current={step}/>}</span></div><h2>{title}</h2></header><div className="air-body">{children}</div>{bridge && <p className="ops-bridge">→ {bridge}</p>}{source && <footer>{source}</footer>}<aside className="notes">{notes}</aside></section>;
+function Slide({ kicker, title, step, bridge, source, notes, children, className = '' }) {
+  return <section className={'air-slide ' + className}><header><div className="air-kicker">{kicker}<span className="ops-kicker-right">{step !== undefined && <Trail current={step}/>}</span></div><h2>{title}</h2></header><div className="air-body">{children}</div>{bridge && <p className="ops-bridge">→ {bridge}</p>}{source && <footer>{source}</footer>}<aside className="notes">{notes}</aside></section>;
 }
 function Media({ assetId, caption, fit = 'contain' }) {
   const asset = assets.find((item) => item.id === assetId);
@@ -51,31 +33,19 @@ function ReadingList({ ids }) {
   return <div className="air-downloads"><div>{ids.map((id) => { const resource = allResources.find((item) => item.id === id); return <a key={id} href={basePath + resource.assetPath} download><strong>{resource.title}</strong><span>{resource.authors[0]} • {resource.year}</span><b>Baixar PDF ↓</b></a>; })}</div><a className="air-library-link" href={basePath + '/biblioteca/'} target="_blank" rel="noreferrer">Abrir a Biblioteca da disciplina ↗</a></div>;
 }
 
-function InternalMedia({ name, caption, fit = 'contain' }) {
-  return <figure className={'air-media vt-media vt-fit-' + fit}><div className="ops-frame"><Image src={internalImage(name)} alt={caption} fill sizes="60vw" unoptimized style={{ objectFit: fit }} /></div><figcaption><b>{caption}</b><span>Trabalho da equipe · não publicado</span></figcaption></figure>;
-}
 function heatColor(value) {
   const t = Math.min(1, Math.max(0, (value - 40) / 50));
   const mix = (a, b) => Math.round(a + (b - a) * t);
   return { background: `rgb(${mix(230, 11)}, ${mix(244, 52)}, ${mix(248, 80)})`, color: t > 0.55 ? '#fff' : '#0b3450' };
 }
-function InternalBody({ item }) {
-  const conclusion = item.conclusion && <p className="vt-conclusion">{item.conclusion}</p>;
-  const note = item.note && <p className="vt-note">{item.note}</p>;
-  if (item.layout === 'media-points') return <div className="vt-split vt-split-wide"><InternalMedia name={item.image} caption={item.caption} fit={item.imageFit}/><div className="vt-col vt-col-gap"><Points items={item.points}/>{conclusion}</div></div>;
-  if (item.layout === 'media-table') return <div className={'vt-split ' + (item.wide ? 'ops-split-media-wide' : 'ops-split-media')}><InternalMedia name={item.image} caption={item.caption}/><div className="vt-col vt-col-gap"><Table className="ops-compact" head={item.table.head} rows={item.table.rows}/>{note}{conclusion}</div></div>;
-  if (item.layout === 'meteo') return <div className="vt-split vt-split-even"><div className="ops-heat"><h3>{item.grid.title}</h3><div className="ops-heat-grid" style={{ gridTemplateColumns: `110px repeat(${item.grid.cols.length}, 1fr)` }}><span/>{item.grid.cols.map((col) => <b key={col}>{col}</b>)}{item.grid.rows.map((row, r) => [<i key={row}>{row}</i>, ...item.grid.values[r].map((value, c) => <span key={row + c} style={heatColor(value)}>{value.toFixed(1).replace('.', ',')}</span>)])}</div></div><Points items={item.points}/></div>;
-  if (item.layout === 'table-cards') return <div className="vt-col vt-col-gap"><Table className="ops-compact" head={item.table.head} rows={item.table.rows}/><div className="vt-cards vt-cards-2 ops-cards-low">{item.cards.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></div>;
-  if (item.layout === 'timeline') {
-    const total = item.timeline.segments.reduce((sum, [, minutes]) => sum + minutes, 0);
-    return <div className="vt-col vt-col-gap"><div className="ops-timeline"><span className="ops-tl-end">{item.timeline.start}</span><div className="ops-tl-bar">{item.timeline.segments.map(([label, minutes], index) => <div key={label} className={'ops-tl-seg ops-tl-' + index} style={{ flexGrow: minutes / total }}><b>{minutes} min</b><span>{label}</span></div>)}</div><span className="ops-tl-end">{item.timeline.end}</span></div><p className="vt-note">{item.timeline.note}</p><div className="vt-split vt-split-even"><Points items={item.points}/><div className="vt-col vt-col-gap">{conclusion}</div></div></div>;
-  }
-  if (item.layout === 'phases') return <div className="vt-split vt-split-even"><Points items={item.points}/><div className="ops-phases"><h3>Resposta a emergência com baterias</h3><ol>{item.phases.map(([title, text]) => <li key={title}><strong>{title}</strong><p>{text}</p></li>)}</ol></div></div>;
-  return <div className="vt-cards vt-cards-grid">{item.cards.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>;
+function HeatGrid({ title, cols, rows, values }) {
+  return <div className="ops-heat"><h3>{title}</h3><div className="ops-heat-grid" style={{ gridTemplateColumns: `110px repeat(${cols.length}, 1fr)` }}><span/>{cols.map((col) => <b key={col}>{col}</b>)}{rows.map((row, rowIndex) => [<i key={row}>{row}</i>, ...values[rowIndex].map((value, index) => <span key={row + index} style={heatColor(value)}>{value.toFixed(1).replace('.', ',')}</span>)])}</div></div>;
 }
-function Internal({ at }) {
-  if (!internal) return null;
-  return <>{internal.slides.filter((item) => item.at === at).map((item) => createElement(Slide, { key: item.title, kicker: item.kicker, title: item.title, step: item.step, bridge: item.bridge, source: item.source, notes: item.notes, isInternal: true }, <InternalBody item={item}/>))}</>;
+function Timeline({ start, end, segments }) {
+  return <div className="ops-timeline"><span className="ops-tl-end">{start}</span><div className="ops-tl-bar">{segments.map(([label, minutes], index) => <div key={label} className={'ops-tl-seg ops-tl-' + index} style={{ flexGrow: minutes }}><b>{minutes} min</b><span>{label}</span></div>)}</div><span className="ops-tl-end">{end}</span></div>;
+}
+function Phases({ items }) {
+  return <div className="ops-phases"><h3>Resposta a emergência com baterias</h3><ol>{items.map(([title, text]) => <li key={title}><strong>{title}</strong><p>{text}</p></li>)}</ol></div>;
 }
 
 const planning = [
@@ -112,7 +82,14 @@ export default function E08PresentationPage() {
         ['Stand', 'Posição de estacionamento fora do terminal, para recarga, troca de bateria e manutenção.'],
       ]}/></div>
     </Slide>
-    <Internal at="apos-elementos"/>
+    <Slide className="ops-case" kicker="Elementos · caso do SBSJ" step={0} title="No SBSJ, o vertiporto aproveita a área de teste de motores" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. I, cap. 1, e vol. III, T2 (equipe do projeto, 2026; resultados preliminares)." notes="Caso da equipe: quando o sítio já é pavimentado e a operação é visual, o vertiporto se resume a sinalização e biruta.">
+      <div className="vt-split vt-split-wide"><Media assetId="e08-sbsj-sitio" caption="Planta do sítio no SBSJ: FATO, pista de táxi, estandes e rampa de proteção, ao lado da pista 16/34."/><Points items={[
+        ['Autorização', 'A ANAC autorizou o sandbox no SBSJ apenas para operações visuais (VFR).'],
+        ['Pavimento existente', 'A área de teste de motores já é pavimentada; a capacidade de suporte parece compatível com eVTOL, mas ainda depende da confirmação do PCR.'],
+        ['O que foi implantado', 'Sinalização horizontal da FATO, da pista de táxi e dos estandes e uma nova biruta a cerca de 110 m da FATO; a existente fica a mais de 1.000 m.'],
+        ['Fase II', 'Operações reais instrumentadas para medir desvios de trajetória, ruído, downwash e outwash.'],
+      ]}/></div>
+    </Slide>
 
     <Slide kicker="Elementos" step={0} title="Entre o pad e o gate, a aeronave taxia" bridge="O modo de táxi define a largura das pistas e a distância entre pads e gates. O próximo passo é organizar tudo no terreno." source="Fonte: Preis e Hornung (2022), tab. 3; FAA (2024), EB 105A, seção 3." notes="Slide ilustrativo. As velocidades são estimativas de especialistas, não medições de operação real. A FAA ainda não publicou critérios próprios de pista de táxi para vertiportos.">
       <div className="vt-split vt-split-even"><Media assetId="e08-joby-edwards" caption="eVTOL da Joby parado em pista de táxi na Base Aérea de Edwards." fit="cover"/><Points items={[
@@ -129,7 +106,17 @@ export default function E08PresentationPage() {
         <div><Media assetId="e08-ahn-pier" caption="Pier"/><p>Forma intermediária: separa pads e gates e permite aproximações em várias direções.</p></div>
       </div>
     </Slide>
-    <Internal at="apos-arranjos"/>
+    <Slide className="ops-case" kicker="Arranjo · caso do SBSJ" step={1} title="O arranjo do SBSJ: uma FATO, uma pista de táxi e três estandes" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T4, fig. 4.4 e tabs. 4.3 a 4.5 (equipe do projeto, 2026; resultados preliminares)." notes="Hipótese de projeto D = RD = 16 m: dimensão pública da aeronave de referência (15,24 m) acrescida de 5%, enquanto não há valores certificados. É o arranjo linear visto no slide anterior. Recarga, acesso de emergência e propagação térmica entre os estandes ainda precisam ser verificados.">
+      <div className="vt-split ops-split-media"><Media assetId="e08-sbsj-arranjo" caption="Cotas preliminares (m). Os estandes herdam o espaçamento de 18 m das marcações do pátio de teste de motores."/>
+        <div className="vt-col vt-col-gap"><Table className="ops-compact" head={['Elemento, com D = 16 m', 'FAA EB 105A', 'EASA PTS']} rows={[
+          ['TLOF', '16,00 m', '13,28 m'],
+          ['FATO', '32,00 m', '24,00 m'],
+          ['Área de segurança', '40,00 m', '32,00 m'],
+          ['Estande', '24,96 m (folga de 0,28D)', '19,20 m (1,2D); 32,00 m com área de giro'],
+          ['Rota de táxi', 'sem critério próprio', '24,00 m no solo; 32,00 m em voo baixo'],
+        ]}/>
+        <p className="vt-conclusion">32 m se repete: FATO da FAA, área de segurança da EASA, rota em voo baixo e estande com área de giro.</p></div></div>
+    </Slide>
 
     <Slide kicker="Arranjo" step={1} title="Com quatro pads, o desenho das pistas muda a área" source="Fonte: Zelinski (2020), NASA, figs. 2, 3 e 5 e seção V." notes="Os três arranjos da NASA têm quatro TLOFs e cinco vagas por TLOF, com separação de 200 pés (61 m) entre FATOs. Lados: 489 pés (149 m), 414 pés (126 m) e 405 pés (123 m).">
       <div className="vt-col"><div className="ops-trio ops-trio-square">
@@ -148,17 +135,41 @@ export default function E08PresentationPage() {
         ['Efeito no arranjo', 'Quando alguns pads ficam restritos, o arranjo desconectado cai para metade e depois para zero operações; perímetro e central continuam operando.'],
       ]}/></div>
     </Slide>
-    <Internal at="apos-vento"/>
-
-    <Slide anchor="arranjo-gimpo" kicker="Arranjo" step={1} title="Gimpo: o mesmo terreno pela FAA e pela EASA" bridge="Mais pads e gates no mesmo terreno significam mais passageiros. Como estimar esse número?" source="Fonte: Ahn e Hwang (2022), figs. 17a e 18a e tabs. 7 e 8, com critérios da minuta do FAA EB 105 e da EASA (2022)." notes="Aeronave de projeto: Hyundai S-A1, 15 × 10,7 m; D = 18,4 m (diagonal). O artigo considera 4 passageiros por aeronave e converte a capacidade de 15 minutos para uma hora. As figuras mostram o arranjo linear; a tabela, o melhor arranjo encontrado para cada norma.">
-      <div className="vt-split ops-split-cases"><div className="ops-pair-tight"><Media assetId="e08-ahn-gimpo-faa" caption="Arranjo linear, FAA: área de segurança de 55,2 m e 2 pads."/><Media assetId="e08-ahn-gimpo-easa" caption="Arranjo linear, EASA: área de segurança de 32,2 m e 3 pads."/></div>
-        <div className="vt-col vt-col-gap"><Table head={['Melhor arranjo no mesmo terreno', 'Pads', 'Gates', 'Passageiros/h']} rows={[
-          ['FAA: pier', '2', '12', '192'],
-          ['EASA: satélite', '4', '18', '256'],
-        ]}/>
-        <p className="vt-conclusion">Com a área de segurança menor da EASA, o mesmo estacionamento atendeu 33% mais passageiros por hora.</p></div></div>
+    <Slide className="ops-case" kicker="Arranjo · caso do SBSJ" step={1} title="A rosa dos ventos diz de onde chegar e para onde sair" bridge="Sem pista para seguir, é a rosa dos ventos que orienta a entrada e a saída da FATO." source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. I, fig. 2.3 e seções 2.4, 2.7 e 2.12 (equipe do projeto, 2026; resultados preliminares)." notes="Na rosa, o ângulo é a direção de onde o vento sopra e o raio é a frequência. Perguntar à turma de que lado colocariam a chegada e a saída num vertiporto nesse sítio.">
+      <div className="vt-split vt-split-wide"><Media assetId="e08-sbsj-rosa-ventos" caption="Rosa dos ventos anual com o eixo verdadeiro da pista 16/34 sobreposto; 90.724 boletins METAR de 2015 a 2025."/><div className="vt-col vt-col-gap"><Points items={[
+        ['Dois setores, não um', 'À tarde o vento vem de sul/sudeste; de madrugada, de nordeste e leste.'],
+        ['A tarde é a fase mais intensa', 'Média de 3 a 6 kt e calmaria em 1,3%; das 3h às 6h a calmaria chega a 27,2% e o vento perde direção definida.'],
+        ['Projeção no eixo da pista', 'O vento da tarde faz cerca de 35° com o rumo 135°/315°: 82% dele vira componente de proa e 57%, de través. Acima de 15 kt de través, só 0,17% do ano.'],
+      ]}/></div></div>
     </Slide>
-    <Internal at="arranjo-gimpo"/>
+
+    <Slide className="ops-case" kicker="Arranjo · caso do SBSJ" step={1} title="Além do vento, teto e visibilidade decidem quando operar" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. I, cap. 2, tab. 2.11 e seções 2.4 a 2.10 (equipe do projeto, 2026; resultados preliminares)." notes="As categorias meteorológicas foram definidas pelo estudo e não são limites certificados da aeronave. O teto baixo, e não a visibilidade, é o que mais restringe no SBSJ.">
+      <div className="vt-split vt-split-even"><HeatGrid title="Condição visual (CAVOK + VFR) por horário e estação, em %" cols={['Verão', 'Outono', 'Inverno', 'Primavera']} rows={['0h–3h', '3h–6h', '6h–9h', '9h–12h', '12h–15h', '15h–18h', '18h–21h', '21h–24h']} values={[
+        [69.8, 73.2, 75.9, 64.1],
+        [61.6, 57.3, 59.5, 55.7],
+        [53.3, 45.6, 46.1, 48.3],
+        [69.1, 59.8, 59.5, 62.5],
+        [81.9, 84.5, 81.9, 77.6],
+        [78.3, 87.3, 88.3, 79.6],
+        [73.2, 83.0, 86.5, 75.8],
+        [75.3, 79.1, 83.9, 70.3],
+      ]}/><Points items={[
+        ['Base', '90.724 boletins METAR do SBSJ, de 2015 a 2025; condição visual em 70,7% do tempo.'],
+        ['Pior horário', 'Das 6h às 9h, 46% a 53% de condição visual em todas as estações — justamente o pico de deslocamento da manhã.'],
+        ['Padrões', 'Nevoeiro em 11,3% dos boletins das 6h às 9h no inverno; trovoada em 28,3% dos boletins das 15h às 18h no verão.'],
+      ]}/></div>
+    </Slide>
+
+    <Slide className="ops-case" kicker="Arranjo · caso do SBSJ" step={1} title="Onde a aeronave toca? 6.144 pousos simulados no SBSJ" bridge="A geometria define a margem; o número de pads e gates define quantas aeronaves passam. Como estimar esse número?" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T4, tabs. 4.6 e 4.7 e fig. 4.7 (equipe do projeto, 2026; resultados preliminares)." notes="Seis procedimentos VFR, cada um com 1.024 simulações (32 estratos de estação e horário × 32 réplicas), no BlueSky com o modelo de helicóptero EC35 do BADA-H. O modelo não reproduz efeito solo, anel de vórtice nem falhas de propulsão distribuída.">
+      <div className="vt-split ops-split-media-wide"><Media assetId="e08-sbsj-dispersao" caption="Pontos finais de um dos procedimentos (Whiskey Colinas) frente à TLOF e à FATO da FAA e da EASA."/>
+        <div className="vt-col vt-col-gap"><Table className="ops-compact" head={['Resultado (6 procedimentos)', 'EASA', 'FAA']} rows={[
+          ['Trem de pouso fora da TLOF', '0,59%', '0,36%'],
+          ['Aeronave (15,24 m) fora da FATO', '0,55%', '0,36%'],
+          ['P99 do pior procedimento: 14,68 m na TLOF', 'excede 13,28 m', 'cabe em 16 m'],
+          ['P99 do pior procedimento: 25,26 m na FATO', 'excede 24 m', 'cabe em 32 m'],
+        ]}/>
+        <p className="vt-conclusion">O núcleo dos pousos ocupa 6,6% a 11,8% da TLOF da EASA, mas a cauda passa dos limites da EASA; a FAA dá mais margem.</p></div></div>
+    </Slide>
 
     <Slide kicker="Capacidade" step={2} title="Capacidade e throughput não são a mesma coisa" source="Fonte: Guerreiro et al. (2020), seção III.A e conclusão; Preis (2023)." notes="Throughput pode ser traduzido como vazão: o que de fato passou pelo vertiporto.">
       <div className="vt-split vt-split-even"><Points items={[
@@ -168,7 +179,18 @@ export default function E08PresentationPage() {
         ['Programação por ordem de chegada', 'Deixa intervalos curtos demais para usar: na simulação da NASA, o throughput ficou 16% a 22% abaixo da capacidade.'],
       ]}/><div className="vt-col vt-col-gap"><div className="ops-calc"><h3>Outro indicador: área por passageiro por hora</h3><p>VoloCity (cenário de referência): <b>188 m²</b></p><p>CityAirbus, 7,92 m de diâmetro: <b>46,3 m²</b></p><p>Archer Maker, 12,2 m de diâmetro: <b>221 m²</b></p></div><p className="vt-note">Preis (2023): aeronaves menores ocupam menos área por passageiro transportado.</p></div></div>
     </Slide>
-    <Internal at="apos-capacidade"/>
+    <Slide className="ops-case" kicker="Capacidade · caso do SBSJ" step={2} title="O porte do vertiporto se mede em movimentos por dia" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T9, tabs. 9.1, 9.4 e 9.7 (equipe do projeto, 2026; resultados preliminares)." notes="Proposta preliminar de categorização para subsidiar a ANAC. Localização em aeródromo e função de manutenção prevalecem sobre o volume de movimentos.">
+      <div className="vt-col vt-col-gap"><Table className="ops-compact" head={['Categoria proposta', 'Movimentos por dia', 'FATOs', 'Zona de alerta de outwash', 'Carga rápida']} rows={[
+        ['Vertihub', 'mais de 50', 'mais de 1', 'sim', 'desejável'],
+        ['Vertiporto urbano', '20 a 50', 'mais de 1', 'sim', 'desejável'],
+        ['Vertiporto aeroportuário', 'mais de 20', 'mais de 1', 'sim', 'desejável'],
+        ['Vertibase (manutenção)', 'variável', 'mais de 1', 'sim', 'não'],
+        ['Vertistop elevado', 'menos de 20', '1', 'sim', 'desejável'],
+        ['Vertistop no solo', 'menos de 20', '1', 'desejável', 'desejável'],
+        ['Vertistop remoto', 'menos de 10', '1', 'desejável', 'não'],
+      ]}/>
+      <div className="vt-cards vt-cards-2 ops-cards-low"><article><h3>Segunda FATO</h3><p>Com mais movimento, uma FATO ou área livre para pouso de contingência: com pouca bateria, a aeronave pode não conseguir arremeter.</p></article><article><h3>Carga rápida</h3><p>90% ou mais em menos de 30 min, partindo de 10%. É questão de demanda, não de regulação.</p></article></div></div>
+    </Slide>
 
     <Slide kicker="Capacidade" step={2} title="Um modelo simples: pads ou vagas, quem limita?" source="Fonte: Guerreiro et al. (2020), NASA, equações 1 a 3 e fig. 6." notes="O modelo ignora o arranjo físico e a recarga (tempo de recarga igual a zero na simulação). Serve para uma primeira estimativa do número de pads e de vagas. O fator 2 aparece porque cada aeronave que ocupa uma vaga gera um pouso e uma decolagem.">
       <div className="vt-split ops-split-model"><div className="vt-col ops-model"><p className="ops-lead">A capacidade é o menor valor entre o que os pads e o que as vagas conseguem atender.</p><div className="ops-eq"><p>C<sub>pads</sub> = 2 · N<sub>p</sub> · t<sub>jan</sub> / (t<sub>pouso</sub> + t<sub>dec</sub>)</p><p>C<sub>solo</sub> = N<sub>v</sub> · t<sub>jan</sub> / t<sub>solo</sub></p><p>C = mín(2 · C<sub>solo</sub>; C<sub>pads</sub>)</p></div>
@@ -198,7 +220,15 @@ export default function E08PresentationPage() {
         ['Com recarga e pads ocupados', 'Na simulação de Nagrare e Lieb, parte das aeronaves ficou mais de 30 min no vertiporto.'],
       ]}/></div></div>
     </Slide>
-    <Internal at="apos-turnaround"/>
+    <Slide className="ops-case" kicker="Capacidade · caso do SBSJ" step={2} title="No simulador, o pouso acontece 50 min antes da partida" source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T3, cenário 01 (equipe do projeto, 2026; resultados preliminares)." notes="Tempos e probabilidades são premissas do simulador, não medições; a Fase II vai calibrar com dados de campo. Cenário: conexão de voo nacional para eVTOL no SBSJ, 2 voos de 4 lugares, 1 vertipad, van que cruza a pista em uso.">
+      <div className="vt-col vt-col-gap"><Timeline start="Pouso" end="Partida" segments={[['Resfriamento da bateria', 10], ['Recarga', 30], ['Margem', 10]]}/>
+      <p className="vt-note">Sem embarque durante a recarga.</p>
+      <div className="vt-split vt-split-even"><Points items={[
+        ['Porta ao embarque', '77,8 min em média; a maior espera é a formação do grupo para o briefing (13,2 min), não uma fila.'],
+        ['Recarga de 30 para 40 min', '+12 min na jornada e atraso de 5,5 para 14,7 min: o maior efeito entre os testados.'],
+        ['Pista menos disponível', 'Com 50% em vez de 82% de chance de pista livre, as viagens com espera sobem de 18,6% para 50,4%, mas a jornada cresce só 82 s.'],
+      ]}/><div className="vt-col vt-col-gap"><p className="vt-conclusion">No solo, o tempo do eVTOL é dominado pela bateria: resfriar e recarregar.</p></div></div></div>
+    </Slide>
 
     <Slide kicker="Capacidade" step={2} title="Quanto dura cada etapa, segundo especialistas" source="Fonte: Preis e Hornung (2022), tab. 3 e apêndice D. Base: número de especialistas / número de valores da literatura." notes="Estimativas de 17 especialistas entrevistados entre outubro de 2020 e julho de 2021, combinadas com 47 valores da literatura. Ainda não há dados de operação real de vertiportos; os valores servem para modelos e devem ser citados como estimativas.">
       <Table className="vt-table-full ops-compact ops-times" head={['Etapa, na ordem do percurso', 'Valor', 'Base']} rows={[
@@ -246,32 +276,28 @@ export default function E08PresentationPage() {
       <div className="vt-cards vt-cards-3 ops-cards-low"><article><h3>Demanda</h3><p>Cerca de 1.400 passageiros por dia na rede inteira foi considerado um caso razoável.</p></article><article><h3>Rede elétrica</h3><p>A recarga causou subtensão e sobrecarga em linhas e transformadores: é preciso reforçar a rede ou instalar armazenamento.</p></article><article><h3>Custo</h3><p>A tarifa de demanda pesa na conta; painéis solares com baterias estacionárias reduziram custos.</p></article></div></div>
     </Slide>
 
-    <Slide anchor="recarga-seguranca" kicker="Recarga" step={3} title="Segurança da recarga" bridge="Com a aeronave pronta para voar, falta o outro lado do vertiporto: passageiros e carga." source="Fonte: FAA (2024), EB 105A, seções 3.1, 5.0 e 5.1." notes="O tema volta na E14 (energia, recarga e combate a incêndio).">
+    <Slide className="ops-case" kicker="Recarga · caso do SBSJ" step={3} title="Segurança da recarga e resposta a emergências" bridge="Com a aeronave pronta para voar, falta o outro lado do vertiporto: passageiros e carga." source="Fonte: FAA (2024), EB 105A, seções 3.1 e 5.1; Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T8 e T9 (equipe do projeto, 2026; resultados preliminares)." notes="O incêndio de bateria de lítio só é extinto quando a temperatura do eletrólito cai; por isso o resfriamento é a prioridade. O tema volta na E14.">
       <div className="vt-split vt-split-even"><Points items={[
-        ['Armazenamento de baterias', 'Longe de TLOF, FATO e área de segurança e fora das superfícies de aproximação e decolagem.'],
-        ['Propagação térmica', 'O risco de uma bateria em chamas atingir aeronaves vizinhas pode exigir maior afastamento entre posições.'],
-        ['Continuidade', 'Sistemas de energia de emergência e de reserva para não interromper a operação.'],
-      ]}/><Table head={['Norma citada pela FAA', 'Assunto']} rows={[
-        ['NFPA 418', 'Helipontos e vertiportos'],
-        ['NFPA 855', 'Armazenamento estacionário de energia'],
-        ['NFPA 70, art. 625', 'Sistemas de recarga de veículos elétricos'],
-        ['NFPA 110', 'Energia de emergência e de reserva'],
-        ['IEEE 519', 'Harmônicos na rede elétrica'],
+        ['Critérios da FAA', 'Baterias armazenadas longe de TLOF, FATO e área de segurança; afastamento maior entre posições pelo risco de propagação térmica; energia de emergência (NFPA 418, 855, 70 e 110).'],
+        ['Vertistop elevado', 'Avaliar se a laje e as vigas resistem a um incêndio de longa duração e dimensionar o tanque de água.'],
+        ['Lacunas', 'Ainda faltam procedimentos padronizados de carga e métodos eficazes para suprimir avalanche térmica.'],
+      ]}/><Phases items={[
+        ['Evacuação e salvamento', 'Alerta, identificação do modelo da aeronave e da severidade; cuidado com eletrocussão.'],
+        ['Contenção e supressão', 'Isolar a área e reduzir a temperatura do eletrólito para evitar avalanche térmica.'],
+        ['Descarte seguro', 'Monitorar o risco de reignição e decidir quando levar a aeronave para quarentena.'],
       ]}/></div>
     </Slide>
-    <Internal at="recarga-seguranca"/>
 
-    <Slide anchor="passageiros" kicker="Passageiros" step={4} title="Passageiros e carga no mesmo vertiporto" bridge="Elementos, arranjo, tempos em solo, recarga e passageiros definem juntos a capacidade e o projeto do vertiporto." source="Fonte: Mendonca et al. (2022), NASA, seções sobre entorno, demanda, segurança e automação; NREL (2023), p. 25; E07." notes="Mendonca et al. reuniram mais de 450 considerações de especialistas dos grupos de trabalho de AAM da NASA.">
+    <Slide className="ops-case" kicker="Passageiros · caso do SBSJ" step={4} title="Passageiros: o que o simulador do SBSJ mostrou" bridge="Elementos, arranjo, tempos em solo, recarga e passageiros definem juntos a capacidade e o projeto do vertiporto." source="Fonte: Sandbox Regulatório de Vertiportos (SBSJ), relatório técnico da Fase I, vol. III, T3, cenários 01 a 04 e recomendações (equipe do projeto, 2026; resultados preliminares)." notes="Quatro cenários: conexão de voo nacional para eVTOL, acesso terrestre a vertiporto remoto, conexão entre voos eVTOL e eVTOL alimentador de voo convencional. Cada um simula 8 passageiros e 2 voos; os resultados não são tempos mínimos regulatórios.">
       <div className="vt-cards vt-cards-grid">
-        <article><h3>Acesso terrestre</h3><p>Entradas e saídas que evitem filas e se liguem a pedestres e a outros modos.</p></article>
-        <article><h3>Tempo do passageiro</h3><p>No cenário do NREL em Atlantic City, o passageiro chega 1 a 2 h antes do voo no aeroporto e sai 5 a 25 min após o pouso.</p></article>
-        <article><h3>Terminal</h3><p>O terminal de teste de Pontoise, visto na E07, tinha 115 m².</p></article>
-        <article><h3>Carga</h3><p>Vertiportos perto de centros de distribuição, portos e aeroportos; pontos de retirada nos bairros podem ser compartilhados com passageiros.</p></article>
-        <article><h3>Segurança patrimonial</h3><p>Triagem de passageiros e de carga, prevenção de roubo e acesso restrito às áreas operacionais.</p></article>
-        <article><h3>Automação</h3><p>Reserva, emissão de bilhete, check-in e triagem, com monitoramento das falhas.</p></article>
+        <article><h3>Reinspeção</h3><p>Quem já foi inspecionado pode seguir direto se ficar em área restrita, sem contato com fluxos não inspecionados — isso depende de reconhecimento da ANAC.</p></article>
+        <article><h3>Raio-X</h3><p>Dobrar a fração de passageiros dispensados não mudou o tempo total: a fila do raio-X era 0,3% da jornada.</p></article>
+        <article><h3>Van em grupo</h3><p>A van espera todos: no eVTOL alimentador, o embarque lento na van acrescentou 7,4 min até o terminal e foi o que mais reduziu a folga.</p></article>
+        <article><h3>Conexão entre eVTOLs</h3><p>76,8 min em média; com restituição de bagagem mais lenta, +10,3 min e perda de conexão de 1,0% para 16,6%.</p></article>
+        <article><h3>Vertipad</h3><p>A recarga mais lenta elevou a ocupação do vertipad de 48,5% para 65,2%, com efeito provavelmente concentrado no segundo voo.</p></article>
+        <article><h3>Taxa × folga</h3><p>99,9% de atendimento pode esconder perda de margem: acompanhar o percentil 95, a menor folga, as filas e a ocupação.</p></article>
       </div>
     </Slide>
-    <Internal at="passageiros"/>
 
     <Slide kicker="Intervalo" title="Intervalo de 10 minutos" notes="Na volta, começam as apresentações do Seminário Artigo 2." className="air-title-slide vt-break-slide">
       <div/>
@@ -288,7 +314,7 @@ export default function E08PresentationPage() {
     </Slide>
 
     <Slide kicker="Referências" title="Referências" notes="Lista para consulta.">
-      <ul className="vt-refs">{presentation.references.map((reference) => <li key={reference.shortTitle}>{reference.citation}{reference.url && <> <a href={reference.url} target="_blank" rel="noreferrer">{reference.url.replace('https://', '')}</a></>}</li>)}{internal && <li className="ops-internal-ref">{internal.referencia}</li>}</ul>
+      <ul className="vt-refs">{presentation.references.map((reference) => <li key={reference.shortTitle}>{reference.citation}{reference.url && <> <a href={reference.url} target="_blank" rel="noreferrer">{reference.url.replace('https://', '')}</a></>}</li>)}<li>Equipe do Sandbox Regulatório de Vertiportos (SBSJ). Relatório técnico da Fase I, vols. I e III. ITA/ANAC, 2026. Relatório não publicado; resultados preliminares.</li></ul>
     </Slide>
 
     <Slide kicker="Materiais" title="Documentos para download" notes="Todos os documentos estão na Biblioteca da disciplina.">

@@ -73,15 +73,13 @@
 .ops-deck .ops-quote cite { display: block; margin-top: 14px; color: #67e8f9; font-style: normal; font-size: 19px; }
 .ops-deck .vt-next { grid-template-rows: repeat(4, 1fr); }
 
-/* Slides internos (conteúdo não publicado, só no build local) */
+/* Slides de caso do SBSJ */
 .ops-deck .air-kicker .ops-kicker-right { display: flex; align-items: center; gap: 12px; }
-.ops-deck .air-kicker .ops-badge { padding: 4px 12px; border-radius: 999px; background: #fef3c7; color: #92400e; font-size: 14px; font-weight: 800; }
-.presentation-shell.air-deck.ops-deck .reveal .slides section.air-slide.ops-internal { background: #fbfaf5; }
-.ops-deck .ops-internal header { border-bottom-color: #d97706; }
+.presentation-shell.air-deck.ops-deck .reveal .slides section.air-slide.ops-case { background: #fbfaf5; }
+.ops-deck .ops-case header { border-bottom-color: #d97706; }
 .ops-deck .air-media > .ops-frame { position: relative; display: block; flex: 1; min-height: 0; background: #fff; border: 1px solid #d6e2eb; border-radius: 8px; overflow: hidden; }
 .ops-deck .ops-split-media { grid-template-columns: 1fr 1fr; }
 .ops-deck .ops-split-media-wide { grid-template-columns: 1.35fr 1fr; }
-.ops-deck .ops-internal-ref { color: #92400e !important; }
 
 .ops-deck .ops-heat { display: flex; flex-direction: column; gap: 10px; }
 .ops-deck .ops-heat h3 { margin: 0; font-size: 21px !important; }
