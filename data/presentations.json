@@ -771,7 +771,7 @@
     "subtitle": "Pads, gates e stands, arranjos, capacidade, turnaround e recarga, e Seminário Artigo 2",
     "date": "2026-09-22",
     "durationMinutes": 180,
-    "slideCount": 25,
+    "slideCount": 31,
     "objectives": [
       "Identificar pads, gates e stands e os modos de deslocamento da aeronave entre eles.",
       "Comparar arranjos de vertiporto e estimar a capacidade pelo número de pads e de vagas.",
@@ -887,6 +887,32 @@
     "authors": [
       "Equipe docente IT-214"
     ],
-    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito."
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito.",
+    "sourceDocuments": [
+      {
+        "id": "sandbox-sbsj-vol1",
+        "title": "Sandbox Regulatório de Vertiportos (SBSJ) — relatório técnico da Fase I, vol. I",
+        "authors": [
+          "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA"
+        ],
+        "source": "Report_vol_01.pdf fornecido diretamente pelo usuário",
+        "versionDate": "2026-08-30",
+        "publication": "Sandbox Regulatório de Vertiportos — Fase I — ITA/ANAC",
+        "sha256": "598233D850EB9F82B979AA5FFFB6ED4ABFAFB93C89D11CB57705DB1D3627688D",
+        "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
+      },
+      {
+        "id": "sandbox-sbsj-vol3",
+        "title": "Sandbox Regulatório de Vertiportos (SBSJ) — relatório técnico da Fase I, vol. III",
+        "authors": [
+          "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA"
+        ],
+        "source": "Report_vol_03.pdf fornecido diretamente pelo usuário",
+        "versionDate": "2026-08-30",
+        "publication": "Sandbox Regulatório de Vertiportos — Fase I — ITA/ANAC",
+        "sha256": "15ACFE6EC22A7AC05C2D464B0331CBD17B3A30D0C4C424C327783EA7EA6DA8F1",
+        "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
+      }
+    ]
   }
 ]
