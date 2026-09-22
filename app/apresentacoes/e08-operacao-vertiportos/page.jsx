@@ -130,15 +130,6 @@ export default function E08PresentationPage() {
       ]}/></div></div>
     </Slide>
 
-    <Slide kicker="Capacidade" step={2} title="Gargalos e formação de atrasos" source="Fonte: Preis e Hornung (2022), resumo e fig. 6; Guerreiro et al. (2020); NREL (2023), p. 56." notes="O gráfico mostra o atraso médio dos passageiros quando o tempo de aproximação e decolagem varia. Perto do limite, pequenos aumentos no tempo de pad produzem grandes atrasos.">
-      <div className="vt-split vt-split-even"><Media assetId="e08-preis-atraso" caption="Atraso médio dos passageiros (min) × tempo de aproximação e decolagem (min)."/><Points items={[
-        ['Pad', 'As operações no pad foram as que mais afetaram o atraso dos passageiros.'],
-        ['Limiar', 'Nas condições simuladas, pequenos aumentos no tempo de ocupação causam grandes atrasos perto do limite.'],
-        ['Programação', 'A ordem de chegada deixa lacunas nos horários de pads e vagas.'],
-        ['Recarga', 'No estudo do NREL, com demanda muito alta, a espera dos passageiros cresce de forma exponencial.'],
-      ]}/></div>
-    </Slide>
-
     <Slide kicker="Recarga" step={3} title="Infraestrutura de recarga" source="Fonte: NREL (2023), sumário executivo e seção 1; FAA (2024), EB 105A, seção 5.0." notes="O NREL consultou seis fabricantes; parte deles não forneceu dados. A foto mostra o protótipo A250 da BETA ligado ao carregador Charge Cube.">
       <div className="vt-split vt-split-wide"><Media assetId="e08-beta-recarga" caption="Protótipo A250 da BETA Technologies em recarga." fit="cover"/><Points items={[
         ['Potência', 'Pico de recarga em corrente contínua de 300 kW a 1 MW, segundo os fabricantes consultados pelo NREL.'],
@@ -150,25 +141,6 @@ export default function E08PresentationPage() {
     <Slide kicker="Recarga" step={3} title="Estimativa do tempo de recarga" source="Fonte: cálculo com valores de Preis e Hornung (2022), tab. 3; NREL (2023), p. 56; Nagrare e Lieb (2026), seção 6.3." notes="Cálculo simplificado com potência constante. O NREL lembra que, na prática, a potência cai a partir de 80% de carga, por isso a recarga parcial é comum.">
       <div className="vt-col"><div className="vt-calc"><article><h3>Energia</h3><p>Bateria de 133 kWh, de 20% a 80%</p><p>0,6 × 133 = 79,8 kWh</p><p>Com 7,17% de perda: 79,8 ÷ 0,9283 = <b>86,0 kWh</b></p></article><article><h3>Tempo</h3><p>Potência de 311 kW</p><p>86,0 ÷ 311 = 0,277 h</p><p>= <b>16,6 min</b></p></article><article><h3>Comparação</h3><p>Troca de bateria: <b>5,8 min</b></p><p>Tempo no gate (Ahn e Hwang): <b>5 min</b></p></article></div>
       <p className="vt-conclusion">Neste exemplo, a recarga idealizada dura 16,6 min. O tempo real também depende da curva de potência, da temperatura e das esperas.</p></div>
-    </Slide>
-
-    <Slide kicker="Recarga" step={3} title="Carregadores e demanda elétrica" source="Fonte: NREL (2023), tab. 12, seções 3.2 e 3.3 e sumário executivo." notes="Rede simulada: aeroportos de Atlantic City (ACY) e Teterboro (TEB), Hard Rock Hotel & Casino (HRHC), helipontos HHI, TSS e PEG e dois centros médicos. ACY, HRHC, HHI e TEB tinham 7 aeronaves e 3 carregadores cada.">
-      <div className="vt-col"><Table className="vt-table-full" head={['Cenário do NREL', 'Carregadores', 'Pico de potência em ACY', 'Energia em ACY']} rows={[
-        ['Restrito', '3 nos sítios principais (até 900 kW por sítio)', '900 kW', '33 MWh/dia'],
-        ['Irrestrito', 'Sem limite', '13,3 MW', '34 MWh/dia'],
-      ]}/>
-      <Points items={[
-        ['Potência × energia', 'No cenário de Atlantic City (ACY), a energia diária é próxima, mas a simultaneidade das recargas altera muito o pico de potência.'],
-        ['Decisão de projeto', 'Dimensionar carregadores, conexão à rede e armazenamento em conjunto com a programação dos voos.'],
-      ]}/></div>
-    </Slide>
-
-    <Slide kicker="Recarga" step={3} title="Recarga, segurança e continuidade operacional" source="Fonte: FAA (2024), EB 105A, seções 3.1 e 5.1; NREL (2023)." notes="Tratar como decisões de projeto. O dimensionamento e os procedimentos de resposta a emergências serão aprofundados na E14, com as referências técnicas aplicáveis.">
-      <Points items={[
-        ['Implantação', 'Prever espaço para equipamentos, circulação e afastamentos entre posições, considerando o risco térmico das baterias.'],
-        ['Atendimento à emergência', 'Integrar acesso das equipes, evacuação e isolamento de áreas ao arranjo do vertiporto.'],
-        ['Continuidade', 'Considerar falha de carregador e indisponibilidade de energia na programação e nas alternativas de atendimento.'],
-      ]}/>
     </Slide>
 
     <Slide className="ops-case" kicker="Passageiros · integração da operação" step={4} title="Sincronização da aeronave e dos passageiros" source="Fonte: Mendonca et al. (2022); Preis e Hornung (2022); Sandbox SBSJ, Fase I, vol. III, T3 (equipe do projeto, 2026; simulação exploratória)." notes="A simulação do SBSJ articula disponibilidade da aeronave, recarga, transferência terrestre e conexão. Os tempos adotados são premissas do modelo, não medições nem mínimos regulatórios. O objetivo aqui é reconhecer dependências e gargalos, sem extrapolar resultados de um cenário para qualquer vertiporto.">

@@ -1262,33 +1262,10 @@
     "sha256": "EC85A88129D63FD495842AD7E9B2D01D908C124BAE7EF1C9CF472B77F44AFFE1"
   },
   {
-    "id": "e08-preis-atraso",
-    "presentationSlug": "e08-operacao-vertiportos",
-    "slideNumbers": [
-      13
-    ],
-    "title": "Atraso médio conforme o tempo de aproximação e decolagem",
-    "assetPath": "/images/presentations/e08/e08-preis-atraso.png",
-    "kind": "chart",
-    "audience": "public",
-    "creator": "Lukas Preis e Mirko Hornung",
-    "sourceUrl": "https://doi.org/10.3390/electronics11071071",
-    "sourceFigure": "6",
-    "creditLine": "Preis e Hornung (2022), fig. 6 · CC BY 4.0",
-    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY 4.0; reprodução sem alterações de conteúdo, com atribuição.",
-    "license": "Licença Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
-    "summary": "O atraso dos passageiros cresce de forma exponencial quando o tempo no pad aumenta.",
-    "relations": [
-      "activity:E08"
-    ],
-    "alt": "Gráfico com pontos e curvas exponenciais: atraso médio próximo de zero até 1 minuto e cerca de 30 minutos com 2 minutos de aproximação e decolagem.",
-    "sha256": "D7F744D1B7FD994E4DCE938626EEC9E29B0F16B7D199ECD16859AF55DDB70D03"
-  },
-  {
     "id": "e08-beta-recarga",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      14
+      13
     ],
     "title": "eVTOL da BETA em recarga",
     "assetPath": "/images/presentations/e08/e08-beta-recarga.jpg",
