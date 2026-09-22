@@ -1013,7 +1013,7 @@
     "id": "e08-joby-edwards",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      5
+      3
     ],
     "title": "Joby na pista de táxi da Base Aérea de Edwards",
     "assetPath": "/images/presentations/e08/e08-joby-edwards.jpg",
@@ -1035,7 +1035,7 @@
     "id": "e08-ahn-processo",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      4
+      2
     ],
     "title": "Operação de uma aeronave no vertiporto",
     "assetPath": "/images/presentations/e08/e08-ahn-processo.png",
@@ -1058,7 +1058,7 @@
     "id": "e08-ahn-linear",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      6
+      4
     ],
     "title": "Arranjo linear (FAA)",
     "assetPath": "/images/presentations/e08/e08-ahn-linear.png",
@@ -1081,7 +1081,7 @@
     "id": "e08-ahn-satelite",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      6
+      4
     ],
     "title": "Arranjo satélite (FAA)",
     "assetPath": "/images/presentations/e08/e08-ahn-satelite.png",
@@ -1104,7 +1104,7 @@
     "id": "e08-ahn-pier",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      6
+      4
     ],
     "title": "Arranjo pier (FAA)",
     "assetPath": "/images/presentations/e08/e08-ahn-pier.png",
@@ -1127,7 +1127,7 @@
     "id": "e08-zelinski-perimetro",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      7
+      6
     ],
     "title": "Arranjo em perímetro (P5)",
     "assetPath": "/images/presentations/e08/e08-zelinski-perimetro.png",
@@ -1150,7 +1150,7 @@
     "id": "e08-zelinski-central",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      7
+      6
     ],
     "title": "Arranjo central (C5)",
     "assetPath": "/images/presentations/e08/e08-zelinski-central.png",
@@ -1173,7 +1173,7 @@
     "id": "e08-zelinski-desconectado",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      7
+      6
     ],
     "title": "Arranjo desconectado (D5)",
     "assetPath": "/images/presentations/e08/e08-zelinski-desconectado.png",
@@ -1196,7 +1196,7 @@
     "id": "e08-zelinski-vento",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      8
+      7
     ],
     "title": "Configuração de um TLOF conforme o vento",
     "assetPath": "/images/presentations/e08/e08-zelinski-vento.png",
@@ -1219,7 +1219,7 @@
     "id": "e08-guerreiro-capacidade",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      11
+      10
     ],
     "title": "Capacidade por número de pads e de vagas",
     "assetPath": "/images/presentations/e08/e08-guerreiro-capacidade.png",
@@ -1242,7 +1242,7 @@
     "id": "e08-nagrare-jornada",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      13
+      12
     ],
     "title": "Percurso de um eVTOL no vertiporto",
     "assetPath": "/images/presentations/e08/e08-nagrare-jornada.png",
@@ -1265,7 +1265,7 @@
     "id": "e08-preis-atraso",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      15
+      13
     ],
     "title": "Atraso médio conforme o tempo de aproximação e decolagem",
     "assetPath": "/images/presentations/e08/e08-preis-atraso.png",
@@ -1288,7 +1288,7 @@
     "id": "e08-beta-recarga",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      16
+      14
     ],
     "title": "eVTOL da BETA em recarga",
     "assetPath": "/images/presentations/e08/e08-beta-recarga.jpg",
@@ -1335,7 +1335,7 @@
     "id": "e08-sbsj-arranjo",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      8
+      5
     ],
     "title": "Cotas preliminares do arranjo do SBSJ",
     "assetPath": "/images/presentations/e08/e08-sbsj-arranjo.png",
@@ -1360,7 +1360,7 @@
     "id": "e08-sbsj-rosa-ventos",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      11
+      7
     ],
     "title": "Rosa dos ventos do SBSJ com o eixo da pista 16/34",
     "assetPath": "/images/presentations/e08/e08-sbsj-rosa-ventos.png",
@@ -1385,7 +1385,7 @@
     "id": "e08-sbsj-dispersao",
     "presentationSlug": "e08-operacao-vertiportos",
     "slideNumbers": [
-      13
+      8
     ],
     "title": "Dispersão dos pontos finais de pouso no SBSJ",
     "assetPath": "/images/presentations/e08/e08-sbsj-dispersao.png",
