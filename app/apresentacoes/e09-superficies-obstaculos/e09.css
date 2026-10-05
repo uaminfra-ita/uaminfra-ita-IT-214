@@ -15,3 +15,7 @@
 
 /* Referências: lista curta, em uma coluna */
 .sup-deck .vt-refs-large li { font-size: 20px; margin-bottom: 16px; }
+
+/* Figura larga no alto e três tópicos lado a lado, sem caixas */
+.sup-deck .vt-col > .sup-strip { flex: 0 0 400px; display: flex; flex-direction: column; min-height: 0; }
+.sup-deck .sup-points-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: start; }
