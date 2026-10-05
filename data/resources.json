@@ -183,7 +183,7 @@
       "rightsNote": "Cópia correspondente à publicação oficial do DECEA, em vigor desde 28 de novembro de 2024.",
       "summary": "Estabelece a concepção operacional brasileira para integrar eVTOL ao SISCEAB, com volumes de espaço aéreo UAM, provedores de serviço, requisitos de performance e níveis progressivos de maturidade.",
       "tags": ["CONOPS", "DECEA", "espaço aéreo", "SISCEAB"],
-      "relatedActivityIds": ["E03", "E06", "E07"],
+      "relatedActivityIds": ["E03", "E06", "E07", "E09"],
       "sha256": "BE43FBAF0BEAA77EEF21ECEF0EAD0D3733288296EEA34A299A2CD16C49B7853F"
     },
     {
@@ -493,7 +493,7 @@
       "rightsNote": "Plano de ensino fornecido pela equipe docente para publicação no portal oficial da disciplina.",
       "summary": "Apresenta ementa, objetivos, quatro eixos temáticos, cronograma dos 16 encontros, oficinas, entregáveis semanais e quatro checkpoints do artigo científico.",
       "tags": ["plano de ensino", "cronograma", "ementa", "avaliação"],
-      "relatedActivityIds": ["E01", "E08"],
+      "relatedActivityIds": ["E01", "E08", "E09"],
       "sha256": "0B8CC22C876790701AB93D692B526166ADC5C967F7E2543DBDDB7C95EF223508"
     },
     {

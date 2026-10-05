@@ -914,5 +914,101 @@
         "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
       }
     ]
+  },
+  {
+    "slug": "e09-superficies-obstaculos",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Usa figuras de domínio público da FAA, figuras de atos e publicações oficiais do DECEA, uma figura da EASA reproduzida com indicação da fonte e figuras do relatório do Sandbox Regulatório de Vertiportos (SBSJ), divulgadas por autorização da equipe autora. Tabelas e cálculos são elaborações próprias a partir das fontes citadas.",
+    "activityId": "E09",
+    "title": "Superfícies de proteção de voo e obstáculos",
+    "subtitle": "Rampas de aproximação e decolagem, obstáculos, entorno urbano e aplicação no vertiporto experimental do SBSJ",
+    "date": "2026-10-06",
+    "durationMinutes": 180,
+    "slideCount": 23,
+    "objectives": [
+      "Explicar o que são as superfícies de aproximação, de decolagem e de transição e como ler o gradiente de uma rampa.",
+      "Comparar as referências da FAA, da EASA e do DECEA para a proteção de helipontos e vertiportos.",
+      "Calcular o teto de uma superfície na posição de um obstáculo e dizer se ele a penetra.",
+      "Relacionar obstáculos, entorno urbano e procedimento de chegada à escolha das superfícies de um vertiporto."
+    ],
+    "sections": [
+      "Conceito",
+      "Normas",
+      "Obstáculos e entorno",
+      "Simulação no SBSJ",
+      "Atividade individual"
+    ],
+    "resourceIds": [
+      "faa-2024-eb-105a-vertiport-design",
+      "easa-2022-vertiport-design-pts",
+      "decea-2024-conops-uam-nacional",
+      "it214-2026-2-plano-ensino"
+    ],
+    "references": [
+      {
+        "resourceId": "faa-2024-eb-105a-vertiport-design",
+        "shortTitle": "FAA (2024)",
+        "citation": "Federal Aviation Administration. Engineering Brief 105A: Vertiport Design. Washington, DC: FAA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Superfícies de aproximação, decolagem e transição (seção 2.6 e figs. 2-5 e 2-6)."
+      },
+      {
+        "resourceId": "easa-2022-vertiport-design-pts",
+        "shortTitle": "EASA (2022)",
+        "citation": "European Union Aviation Safety Agency. Prototype Technical Specifications for the Design of VFR Vertiports (PTS-VPT-DSN). Colônia: EASA, 2022.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Superfícies limitadoras de obstáculos e volume livre de obstáculos (capítulo D)."
+      },
+      {
+        "resourceId": "decea-2024-conops-uam-nacional",
+        "shortTitle": "DECEA (2024)",
+        "citation": "Departamento de Controle do Espaço Aéreo. PCA 351-7: Concepção Operacional UAM Nacional. Rio de Janeiro: DECEA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Áreas de acesso e de transição em volta do vertiporto (arts. 303 a 306)."
+      },
+      {
+        "shortTitle": "DECEA (2020)",
+        "url": "https://publicacoes.decea.mil.br/publicacao/ica-11-408",
+        "citation": "Departamento de Controle do Espaço Aéreo. ICA 11-408: Restrições aos objetos projetados no espaço aéreo que possam afetar adversamente a segurança ou a regularidade das operações aéreas. Rio de Janeiro: DECEA, 2020.",
+        "purpose": "Planos de zona de proteção de aeródromos e de helipontos (tabs. 4-3, 5-1 e 5-2 e fig. 5-1)."
+      },
+      {
+        "resourceId": "it214-2026-2-plano-ensino",
+        "shortTitle": "IT-214 (2026)",
+        "citation": "Guterres, M. X. Plano de ensino IT-214 — Mobilidade Aérea Urbana, 2026/2. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Tema, objetivo e atividade do encontro E09."
+      }
+    ],
+    "authors": [
+      "Equipe docente IT-214"
+    ],
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito.",
+    "sourceDocuments": [
+      {
+        "id": "sandbox-sbsj-vol1",
+        "title": "Sandbox Regulatório de Vertiportos (SBSJ) — relatório técnico da Fase I, vol. I",
+        "authors": [
+          "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA"
+        ],
+        "source": "Report_vol_01.pdf e figuras originais do relatório, fornecidos diretamente pelo usuário",
+        "versionDate": "2026-07-31",
+        "publication": "Sandbox Regulatório de Vertiportos — Fase I — ITA/ANAC",
+        "sha256": "598233D850EB9F82B979AA5FFFB6ED4ABFAFB93C89D11CB57705DB1D3627688D",
+        "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
+      },
+      {
+        "id": "sandbox-sbsj-vol3",
+        "title": "Sandbox Regulatório de Vertiportos (SBSJ) — relatório técnico da Fase I, vol. III",
+        "authors": [
+          "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA"
+        ],
+        "source": "Report_vol_03.pdf e figuras originais do relatório, fornecidos diretamente pelo usuário",
+        "versionDate": "2026-07-31",
+        "publication": "Sandbox Regulatório de Vertiportos — Fase I — ITA/ANAC",
+        "sha256": "15ACFE6EC22A7AC05C2D464B0331CBD17B3A30D0C4C424C327783EA7EA6DA8F1",
+        "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
+      }
+    ]
   }
 ]
