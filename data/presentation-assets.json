@@ -1562,7 +1562,7 @@
     "id": "e09-sbsj-trajetorias-faa",
     "presentationSlug": "e09-superficies-obstaculos",
     "slideNumbers": [
-      17
+      19
     ],
     "title": "Perfil vertical das trajetórias simuladas e rampa 8:1",
     "assetPath": "/images/presentations/e09/e09-sbsj-trajetorias-faa.png",
@@ -1587,7 +1587,7 @@
     "id": "e09-sbsj-violacoes",
     "presentationSlug": "e09-superficies-obstaculos",
     "slideNumbers": [
-      18
+      20
     ],
     "title": "Voos que cruzaram cada superfície, por procedimento",
     "assetPath": "/images/presentations/e09/e09-sbsj-violacoes.png",
@@ -1637,7 +1637,7 @@
     "id": "e09-sbsj-perfil-chegada",
     "presentationSlug": "e09-superficies-obstaculos",
     "slideNumbers": [
-      16
+      18
     ],
     "title": "Perfil vertical de um procedimento de chegada proposto",
     "assetPath": "/images/presentations/e09/e09-sbsj-perfil-chegada.jpg",
@@ -1712,7 +1712,7 @@
     "id": "e09-sbsj-areas-sensiveis",
     "presentationSlug": "e09-superficies-obstaculos",
     "slideNumbers": [
-      14
+      16
     ],
     "title": "Aterro sanitário e procedimentos de chegada no SBSJ",
     "assetPath": "/images/presentations/e09/e09-sbsj-areas-sensiveis.jpg",
@@ -1732,5 +1732,53 @@
     ],
     "alt": "Mapa com a pista do aeroporto, o traçado dos procedimentos visuais e a posição do aterro sanitário, com dois detalhes ampliados à esquerda.",
     "sha256": "D300A515F1B7F5DDB9F5741F8020F5A32BBA552C4B8F943650D2D1021AED60BD"
+  },
+  {
+    "id": "e09-guo-avaliacao",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      14
+    ],
+    "title": "Avaliação de obstáculos de um local candidato em Shenzhen",
+    "assetPath": "/images/presentations/e09/e09-guo-avaliacao.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Chenhao Guo, Jianxiong Nie, Xu Hang, Yanjun Wang, Yanyan Chen e Daniel Delahaye",
+    "sourceUrl": "https://doi.org/10.1016/j.commtr.2024.100118",
+    "sourcePage": 5,
+    "sourceFigure": "3",
+    "creditLine": "Guo et al. (2024), fig. 3 · CC BY-NC-ND 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY-NC-ND 4.0; reprodução sem alterações, com atribuição, para fim didático não comercial.",
+    "license": "Licença Creative Commons BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).",
+    "summary": "Processo de avaliação, resultado e detalhe de um local candidato, com as superfícies de aproximação, decolagem e transição sobre o modelo 3D dos prédios.",
+    "relations": [
+      "activity:E09"
+    ],
+    "alt": "Três painéis: círculo com seta indicando a rotação das superfícies, vista 3D da cidade com as superfícies coloridas e detalhe de prédios em vermelho que penetram a superfície.",
+    "sha256": "F9FBCFB3C256326EDDC5318E542839A5EC34BFE13303149A5F1E83CD5BADBD7F"
+  },
+  {
+    "id": "e09-guo-rede",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Demanda de UAM e locais de vertiportos em Shenzhen",
+    "assetPath": "/images/presentations/e09/e09-guo-rede.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Chenhao Guo, Jianxiong Nie, Xu Hang, Yanjun Wang, Yanyan Chen e Daniel Delahaye",
+    "sourceUrl": "https://doi.org/10.1016/j.commtr.2024.100118",
+    "sourcePage": 8,
+    "sourceFigure": "4",
+    "creditLine": "Guo et al. (2024), fig. 4 · CC BY-NC-ND 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY-NC-ND 4.0; reprodução sem alterações, com atribuição, para fim didático não comercial.",
+    "license": "Licença Creative Commons BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).",
+    "summary": "Mapa da demanda potencial de mobilidade aérea urbana e dos locais selecionados para vertiportos em Shenzhen.",
+    "relations": [
+      "activity:E09"
+    ],
+    "alt": "Mapa escuro de Shenzhen com manchas alaranjadas de demanda e pontos verdes de tamanhos diferentes nos locais selecionados.",
+    "sha256": "FCBC77B907DB13E1C2E692C06D17B4ED9E7839529B3A56772FAC648FE8F1C859"
   }
 ]

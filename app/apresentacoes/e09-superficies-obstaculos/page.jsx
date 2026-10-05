@@ -140,6 +140,19 @@ export default function E09PresentationPage() {
       <p className="vt-conclusion">A conta é a mesma em qualquer norma: teto da superfície na posição do obstáculo menos a altitude do topo.</p></div>
     </Slide>
 
+    <Slide kicker="Obstáculos · estudo em Shenzhen" step={2} title="Obstáculos na escolha do local" source="Fonte: Guo et al. (2024), seções 3.3.1 e 3.3.2, algoritmo 1 e fig. 3." notes="É a conta do slide anterior, automatizada para uma cidade inteira. Os candidatos em planta vêm de áreas livres, cobertas por hexágonos de 500 ft, e de coberturas amplas de edifícios, fora das zonas proibidas para drones. A aeronave de referência é o EH216-S, com D = 5,63 m; TLOF, FATO e área de segurança são quadrados de 1D, 2D e 3D. O modelo devolve também as direções de aproximação e saída que ficaram livres. Pergunta: que dado seria necessário para repetir isso em São Paulo ou em São José dos Campos? A altura de cada edificação.">
+      <div className="vt-col vt-col-gap"><div className="sup-strip"><Media assetId="e09-guo-avaliacao" caption="Superfícies giradas em torno do local candidato; em vermelho, os prédios que as penetram."/></div>
+      <div className="vt-points sup-points-row"><article><h3>Método</h3><p>Em cada local candidato, as superfícies de aproximação e de transição da FAA são giradas sobre o modelo 3D dos prédios da cidade.</p></article><article><h3>Critério</h3><p>O local é aceito se tiver duas direções livres de obstáculos, separadas por pelo menos 135°.</p></article><article><h3>O que sai</h3><p>A lista de locais viáveis e as direções de chegada e saída livres em cada um.</p></article></div></div>
+    </Slide>
+
+    <Slide kicker="Obstáculos · estudo em Shenzhen" step={2} title="Do filtro de obstáculos à rede" source="Fonte: Guo et al. (2024), seções 3.1, 3.2, 3.3.2 e 4.2 e fig. 4." notes="Demanda potencial: 46.537 viagens de táxi com mais de 30 min, em um dia. Com 21 vertiportos, 1.954 viagens migram para o eVTOL. O tempo de transferência pesa muito: quando sobe de 5 para 30 min, as viagens caem de 3.504 para 1.410. Demanda e escolha de sítios são os temas da E10 e da E11.">
+      <div className="vt-split ops-split-media-wide"><Media assetId="e09-guo-rede" caption="Demanda potencial e locais selecionados em Shenzhen; o tamanho do ponto indica a importância do local."/><Points items={[
+        ['Antes da otimização', 'Só entram os locais que passaram no filtro de obstáculos. Sem as áreas de pouca demanda e os pontos vizinhos, restaram 37 candidatos.'],
+        ['Resultado', 'O modelo indicou 21 vertiportos. Acima disso, cada local a mais acrescentava menos de 10 viagens.'],
+        ['Limite', 'O estudo não considera a capacidade do vertiporto, a frota nem a autonomia da aeronave.'],
+      ]}/></div>
+    </Slide>
+
     <Slide className="ops-case" kicker="Obstáculos · aplicação no SBSJ" step={2} title="Entorno urbano e áreas sensíveis" source="Fonte: ICA 11-408 (DECEA, 2020), item 3.9; Sandbox SBSJ, Fase I, vol. I, cap. 4, fig. 4.5, e vol. III, T1 (equipe do projeto, 2026). Figura de uso didático autorizado; estudo preliminar." notes="Exemplo do relatório: um vertiporto na Avenida Paulista, dentro da zona de proteção de Congonhas, teria o gabarito limitado pela aviação, mesmo que o plano diretor permitisse prédios mais altos. Pela ICA 11-408, os municípios impactados pelo plano de zona de proteção declaram ciência. O registro de urubus perto do aterro vem do ROTAER do SBSJ. Pergunta: quem acompanha um prédio novo que passa a furar a rampa de um vertiporto já em operação?">
       <div className="vt-split vt-split-even"><Media assetId="e09-sbsj-areas-sensiveis" caption="Aterro sanitário, pista do SBSJ e procedimentos visuais de chegada propostos."/><Points items={[
         ['Gabarito', 'A zona de proteção limita a altura das construções, mesmo quando o plano diretor permitiria mais. Exige coordenação entre o DECEA e a prefeitura.'],
