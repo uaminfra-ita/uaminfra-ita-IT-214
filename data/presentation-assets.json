@@ -1382,5 +1382,355 @@
     ],
     "alt": "Dois gráficos de dispersão circulares com a nuvem de pontos de pouso concentrada no centro das circunferências de TLOF e FATO.",
     "sha256": "EAFEACAF2D6A483333A4BD97D5F695C8DFB247B51E89049C607DDBD74405D36F"
+  },
+  {
+    "id": "e09-faa-superficies",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      4
+    ],
+    "title": "Superfícies de aproximação, decolagem e transição de vertiporto",
+    "assetPath": "/images/presentations/e09/e09-faa-superficies.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 28,
+    "sourceFigure": "2-5",
+    "creditLine": "FAA (2024), EB 105A, fig. 2-5 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Rampa 8:1 de aproximação e decolagem e superfícies de transição 2:1 para operação visual.",
+    "relations": [
+      "activity:E09",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Planta da FATO com a rampa de aproximação em azul, de 1.219 m de comprimento, e as superfícies de transição em amarelo.",
+    "sha256": "F7DCBB09EF86F9930E5E84EFC66BCFD0C7C2817563CA41A96AD7A1AB5BF7A48C"
+  },
+  {
+    "id": "e09-faa-curva",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Superfícies de aproximação e decolagem em curva",
+    "assetPath": "/images/presentations/e09/e09-faa-curva.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Federal Aviation Administration",
+    "sourceUrl": "https://www.faa.gov/airports/engineering/engineering_briefs/eb_105a_vertiports",
+    "sourcePage": 29,
+    "sourceFigure": "2-6",
+    "creditLine": "FAA (2024), EB 105A, fig. 2-6 · domínio público",
+    "usageBasis": "Obra do governo dos EUA sem proteção de direito autoral; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "Combinações de trecho reto e raio de curva admitidas para a trajetória de aproximação e decolagem.",
+    "relations": [
+      "activity:E09",
+      "resource:faa-2024-eb-105a-vertiport-design"
+    ],
+    "alt": "Duas trajetórias curvas em planta, com o trecho reto S, o raio R e as superfícies de transição nas laterais.",
+    "sha256": "56C4B58EE96955A2612B7F6B828668ECA91094A3ED3A5DCAC605C67D733603A1"
+  },
+  {
+    "id": "e09-easa-volume-tipo1",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Volume de referência Tipo 1 da EASA",
+    "assetPath": "/images/presentations/e09/e09-easa-volume-tipo1.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "European Union Aviation Safety Agency",
+    "sourceUrl": "https://www.easa.europa.eu/en/document-library/general-publications/prototype-technical-design-specifications-vertiports",
+    "sourcePage": 74,
+    "sourceFigure": "D-21",
+    "creditLine": "EASA (2022), PTS-VPT-DSN, fig. D-21 · © EASA",
+    "usageBasis": "Figura de especificação técnica pública da EASA, reproduzida para fins didáticos com indicação da fonte (citação, art. 46 da Lei nº 9.610/1998).",
+    "license": "© European Union Aviation Safety Agency, 2022 — todos os direitos reservados.",
+    "summary": "Volume livre de obstáculos em funil, com alturas de 3 m e 30,5 m e rampa de 12,5% a partir do topo.",
+    "relations": [
+      "activity:E09",
+      "resource:easa-2022-vertiport-design-pts"
+    ],
+    "alt": "Volume verde em forma de funil sobre a área de pouso, com cotas 2D na base, 3D e 4D no topo, 3 m, 30,5 m e 12,5%.",
+    "sha256": "E6B137A9D281520B6ED38F6CB529DF9F36C410EF2C8367F98A7EFF70E17107A2"
+  },
+  {
+    "id": "e09-ica-pbzph-vfr",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Superfícies de aproximação e decolagem de heliponto (PBZPH, VFR)",
+    "assetPath": "/images/presentations/e09/e09-ica-pbzph-vfr.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Departamento de Controle do Espaço Aéreo — DECEA",
+    "sourceUrl": "https://publicacoes.decea.mil.br/publicacao/ica-11-408",
+    "sourcePage": 114,
+    "sourceFigure": "5-1",
+    "creditLine": "DECEA (2020), ICA 11-408, fig. 5-1 · ato oficial",
+    "usageBasis": "Figura de ato normativo oficial do Comando da Aeronáutica; atos oficiais não são objeto de proteção autoral (art. 8º, IV, da Lei nº 9.610/1998). Reprodução com atribuição.",
+    "license": "Ato oficial do Governo Federal do Brasil (Lei nº 9.610/1998, art. 8º, IV).",
+    "summary": "Planta e perfil das superfícies de aproximação e decolagem do plano básico de zona de proteção de heliponto, categorias A e C.",
+    "relations": [
+      "activity:E09"
+    ],
+    "alt": "Planta e perfil de uma rampa azul que parte da área de segurança do heliponto, com abertura lateral de 10% ou 15%.",
+    "sha256": "5FEEAC84CDDF472F71BCC993208488790D4537F9578252CFAD9C7B4FD0D714F8"
+  },
+  {
+    "id": "e09-pca-area-acesso",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Área de acesso ao vertiporto na PCA 351-7",
+    "assetPath": "/images/presentations/e09/e09-pca-area-acesso.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Departamento de Controle do Espaço Aéreo — DECEA",
+    "sourceUrl": "https://publicacoes.decea.mil.br/publicacao/pca-351-7",
+    "sourcePage": 42,
+    "sourceFigure": "5",
+    "creditLine": "DECEA (2024), PCA 351-7, fig. 5 · publicação oficial",
+    "usageBasis": "Figura de publicação oficial do DECEA; reprodução para fins didáticos com atribuição.",
+    "license": "Publicação oficial do Governo Federal do Brasil; licença aberta não declarada no documento.",
+    "summary": "Exemplo de área de acesso em planta, com setores de chegada e de saída a cada 60°.",
+    "relations": [
+      "activity:E09",
+      "resource:decea-2024-conops-uam-nacional"
+    ],
+    "alt": "Círculo vermelho sobre imagem de satélite, dividido por linhas amarelas em setores de chegada e de saída de 60°.",
+    "sha256": "A192576C1FD847DBA085EFB441F7B7CB711817EF6871C3D8E11E5EEC158A868D"
+  },
+  {
+    "id": "e09-sbsj-rampa-ica",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      1,
+      9
+    ],
+    "title": "Rampa de categoria C da ICA 11-408 sobre o sítio do SBSJ",
+    "assetPath": "/images/presentations/e09/e09-sbsj-rampa-ica.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 407,
+    "sourceFigure": "12.9",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. III • fig. 12.9",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Superfície de aproximação de heliponto modelada em 3D sobre o terreno do vertiporto experimental.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Vista aérea em perspectiva com uma rampa azul translúcida saindo da área de pouso ao lado da pista do aeroporto.",
+    "sha256": "6C3DF5F27E3C5C044DF7A2C9E33FA1790B2FF45E4076974C194AB8F184668254"
+  },
+  {
+    "id": "e09-sbsj-cone-pca",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      9
+    ],
+    "title": "Cone de acesso e área de transição da PCA 351-7 no SBSJ",
+    "assetPath": "/images/presentations/e09/e09-sbsj-cone-pca.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 408,
+    "sourceFigure": "12.11",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. III • fig. 12.11",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Cone de proteção e cilindro da área de transição modelados em 3D sobre o vertiporto experimental.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Vista aérea em perspectiva com um cone e um cilindro verdes translúcidos sobre a área de pouso.",
+    "sha256": "3815369B1FEFE5B446B77A7579B6AE66DE46EC1A7EDB44CE164CE34C4C831E9B"
+  },
+  {
+    "id": "e09-sbsj-trajetorias-faa",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Perfil vertical das trajetórias simuladas e rampa 8:1",
+    "assetPath": "/images/presentations/e09/e09-sbsj-trajetorias-faa.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 416,
+    "sourceFigure": "12.16",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. III • fig. 12.16",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Altura de 1.024 voos simulados do caso de ensaio em função da distância à TLOF, comparada à rampa 8:1 da FAA.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Gráfico com feixe de trajetórias quase niveladas entre 125 e 170 m e uma reta verde inclinada que as cruza perto de 1.200 m.",
+    "sha256": "5C03F4A2D03C32CF366D702A2948E3855BEB05ACF3956CDA18D2CCFE5CBF4AAF"
+  },
+  {
+    "id": "e09-sbsj-violacoes",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      18
+    ],
+    "title": "Voos que cruzaram cada superfície, por procedimento",
+    "assetPath": "/images/presentations/e09/e09-sbsj-violacoes.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 410,
+    "sourceFigure": "12.14",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. III • fig. 12.14",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Probabilidade empírica de a trajetória simulada cruzar cada superfície, nos seis casos analisados.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Gráfico de barras agrupadas por procedimento, com barras altas para as rampas de 12,5% e barras quase nulas para as proteções laterais.",
+    "sha256": "8D5FBDA4CA4DD79EA5FF09DBB2B35C6B157D06FEC673CFB9A6AB059BD45E036F"
+  },
+  {
+    "id": "e09-sbsj-sitio",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      2
+    ],
+    "title": "Sítio do vertiporto experimental no SBSJ",
+    "assetPath": "/images/presentations/e09/e09-sbsj-sitio.jpg",
+    "kind": "photo",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol1",
+    "sourcePage": 77,
+    "sourceFigure": "3.1",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. I • fig. 3.1",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Imagem aérea da área de teste de motores do aeroporto de São José dos Campos, onde fica o vertiporto experimental.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol1"
+    ],
+    "alt": "Imagem aérea de um pátio circular pavimentado ao lado da pista do aeroporto, com duas aeronaves estacionadas abaixo.",
+    "sha256": "B9868FEA43A62251D538F50A81B0C5B92B93710FECA0273801A217051D891CB0"
+  },
+  {
+    "id": "e09-sbsj-perfil-chegada",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Perfil vertical de um procedimento de chegada proposto",
+    "assetPath": "/images/presentations/e09/e09-sbsj-perfil-chegada.jpg",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol1",
+    "sourcePage": 92,
+    "sourceFigure": "3.10",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. I • fig. 3.10",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Altitude ao longo de um procedimento visual de chegada proposto, com o terreno e a faixa de voo visual.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol1"
+    ],
+    "alt": "Gráfico de altitude por distância, com trecho nivelado, descida em degraus até o vertiporto e o terreno em verde.",
+    "sha256": "F557FEF524672EB88187BC95703F6BFA7D438223C7EAE760A0E2E8A66FC31398"
+  },
+  {
+    "id": "e09-sbsj-ols-terreno",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      12
+    ],
+    "title": "Superfícies limitadoras do SBSJ sobre o modelo de terreno",
+    "assetPath": "/images/presentations/e09/e09-sbsj-ols-terreno.jpg",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol1",
+    "sourcePage": 114,
+    "sourceFigure": "4.2",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. I • fig. 4.2",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Superfícies limitadoras de obstáculos do aeroporto comparadas ao modelo digital de terreno da região.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol1"
+    ],
+    "alt": "Vistas em perspectiva e em planta das superfícies do aeroporto sobre o relevo, com morros destacados em vermelho.",
+    "sha256": "A25AC795AB7ADBBE1B3F33DA1980AD0BA786129EE557B97A8BD0FEAA39F76165"
+  },
+  {
+    "id": "e09-sbsj-entorno",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      11
+    ],
+    "title": "Obstáculos e ocupação no entorno do SBSJ",
+    "assetPath": "/images/presentations/e09/e09-sbsj-entorno.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol1",
+    "sourcePage": 117,
+    "sourceFigure": "4.4",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. I • fig. 4.4",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Obstáculos cadastrados, torres de comunicação, linhas de transmissão, área urbanizada e limites do plano de zona de proteção do aeroporto.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol1"
+    ],
+    "alt": "Mapa com a mancha urbana em amarelo, pontos vermelhos de obstáculos, torres em azul e os contornos do plano de zona de proteção.",
+    "sha256": "2DFD95B074AFA4B1240FB910E219DEC1FBB84E2EB488331ECDCCC73518A88C9B"
+  },
+  {
+    "id": "e09-sbsj-areas-sensiveis",
+    "presentationSlug": "e09-superficies-obstaculos",
+    "slideNumbers": [
+      14
+    ],
+    "title": "Aterro sanitário e procedimentos de chegada no SBSJ",
+    "assetPath": "/images/presentations/e09/e09-sbsj-areas-sensiveis.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol1",
+    "sourcePage": 119,
+    "sourceFigure": "4.5",
+    "creditLine": "Sandbox de Vertiportos (SBSJ) • relatório da Fase I, vol. I • fig. 4.5",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Localização do aterro sanitário próximo à Rodovia dos Tamoios em relação à pista do SBSJ e aos procedimentos visuais de chegada propostos para o vertiporto.",
+    "relations": [
+      "activity:E09",
+      "source:sandbox-sbsj-vol1"
+    ],
+    "alt": "Mapa com a pista do aeroporto, o traçado dos procedimentos visuais e a posição do aterro sanitário, com dois detalhes ampliados à esquerda.",
+    "sha256": "D300A515F1B7F5DDB9F5741F8020F5A32BBA552C4B8F943650D2D1021AED60BD"
   }
 ]

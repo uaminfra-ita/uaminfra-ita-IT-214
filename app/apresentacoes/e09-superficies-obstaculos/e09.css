@@ -1,0 +1,17 @@
+/* E09: complementa os estilos da E06, da E07 e da E08 (tela de 1600 × 900). */
+.sup-deck .vt-col > .sup-fill { flex: 1; min-height: 0; }
+.sup-deck .sup-split-table { grid-template-columns: 1fr 1.15fr; }
+
+/* Quadro comparativo das referências */
+.sup-deck .sup-compare { table-layout: fixed; width: 100%; }
+.sup-deck .sup-compare th, .sup-deck .sup-compare td { padding: 12px 16px; font-size: 20px; }
+.sup-deck .sup-compare th:first-child { width: 14%; }
+.sup-deck .sup-compare td:first-child { font-weight: 750; color: #0b3450; }
+
+/* Atividade */
+.sup-deck .vt-task .air-task-callout { padding: 22px 36px; }
+.presentation-shell.air-deck.sup-deck .reveal .air-slide .vt-task .air-task-callout p { font-size: 24px !important; margin-top: 8px !important; }
+.sup-deck .vt-task > .vt-split { flex: 1; min-height: 0; }
+
+/* Referências: lista curta, em uma coluna */
+.sup-deck .vt-refs-large li { font-size: 20px; margin-bottom: 16px; }
