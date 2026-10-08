@@ -1779,6 +1779,38 @@
       "activity:E09"
     ],
     "alt": "Mapa escuro de Shenzhen com manchas alaranjadas de demanda e pontos verdes de tamanhos diferentes nos locais selecionados.",
-    "sha256": "FCBC77B907DB13E1C2E692C06D17B4ED9E7839529B3A56772FAC648FE8F1C859"
+    "sha256": "FCBC77B907DB13E1C2E692C06D17B4ED9E7839529B3A56772FAC648FE8F1C859",
+    "additionalUses": [
+      {
+        "presentationSlug": "e10-demanda",
+        "slideNumbers": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e10-guo-viagem",
+    "presentationSlug": "e10-demanda",
+    "slideNumbers": [
+      4
+    ],
+    "title": "Trechos de uma viagem de UAM",
+    "assetPath": "/images/presentations/e10/e10-guo-viagem.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Chenhao Guo, Jianxiong Nie, Xu Hang, Yanjun Wang, Yanyan Chen e Daniel Delahaye",
+    "sourceUrl": "https://doi.org/10.1016/j.commtr.2024.100118",
+    "sourcePage": 2,
+    "sourceFigure": "1",
+    "creditLine": "Guo et al. (2024), fig. 1 · CC BY-NC-ND 4.0",
+    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY-NC-ND 4.0; reprodução sem alterações, com atribuição, para fim didático não comercial.",
+    "license": "Licença Creative Commons BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).",
+    "summary": "Esquema de uma viagem de UAM: trecho em solo até o vertiporto de decolagem, voo e trecho em solo até o destino.",
+    "relations": [
+      "activity:E10"
+    ],
+    "alt": "Esquema com origem, vertiporto de decolagem, voo de eVTOL, vertiporto de pouso e destino, ligados por setas.",
+    "sha256": "08A8C74E517A28A0D863E587E900710953F1DD1C7426381EB0D74E67E1C6254C"
   }
 ]
