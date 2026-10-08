@@ -33,7 +33,7 @@
       "rightsNote": "A licença permite compartilhamento com atribuição, para uso não comercial e sem adaptações.",
       "summary": "Compara cerca de 800 estudos sobre UAM, veículos autônomos e veículos elétricos para identificar lacunas em demanda, infraestrutura, operações, energia e simulação integrada.",
       "tags": ["revisão", "demanda", "operações", "infraestrutura"],
-      "relatedActivityIds": ["E02"],
+      "relatedActivityIds": ["E02", "E10"],
       "sha256": "858403873C95D27605504F48D9E86FC4F456459C2D9A34AFE9D63395848A7E16"
     },
     {
@@ -470,10 +470,7 @@
         "SIGMA-City",
         "planejamento urbano"
       ],
-      "relatedActivityIds": [
-        "E07",
-        "E08"
-      ],
+      "relatedActivityIds": ["E07", "E08", "E10"],
       "sha256": "6FD35E31A64FE7006E97EA4CC9EEC2943072DC058B637331DD0A1DA62FB5163B"
     }
   ],
@@ -493,7 +490,7 @@
       "rightsNote": "Plano de ensino fornecido pela equipe docente para publicação no portal oficial da disciplina.",
       "summary": "Apresenta ementa, objetivos, quatro eixos temáticos, cronograma dos 16 encontros, oficinas, entregáveis semanais e quatro checkpoints do artigo científico.",
       "tags": ["plano de ensino", "cronograma", "ementa", "avaliação"],
-      "relatedActivityIds": ["E01", "E08", "E09"],
+      "relatedActivityIds": ["E01", "E08", "E09", "E10"],
       "sha256": "0B8CC22C876790701AB93D692B526166ADC5C967F7E2543DBDDB7C95EF223508"
     },
     {

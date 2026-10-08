@@ -1,0 +1,15 @@
+/* E10: complementa os estilos da E06, da E07 e da E08 (tela de 1600 × 900). */
+.dem-deck .vt-col > .dem-strip { flex: 0 0 300px; display: flex; flex-direction: column; min-height: 0; }
+.dem-deck .dem-points-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: start; }
+.dem-deck .dem-table th, .dem-deck .dem-table td { padding: 16px 18px; font-size: 23px; }
+.dem-deck .dem-table td:first-child { font-weight: 750; color: #0b3450; }
+.dem-deck .dem-table a { color: #0e7490; word-break: break-all; }
+.dem-deck .dem-steps { margin: 0; padding: 0; list-style: none; counter-reset: passo; display: grid; gap: 14px; }
+.dem-deck .dem-steps li { counter-increment: passo; display: grid; grid-template-columns: 54px 300px 1fr; align-items: baseline; gap: 8px; border-bottom: 1px solid #cbd5e1; padding-bottom: 12px; font-size: 23px; color: #334155; }
+.dem-deck .dem-steps li::before { content: counter(passo); font-size: 30px; font-weight: 900; color: #0e7490; }
+.dem-deck .dem-steps b { color: #0b3450; font-size: 24px; }
+.dem-deck .vt-task .air-task-callout { padding: 22px 36px; }
+.presentation-shell.air-deck.dem-deck .reveal .air-slide .vt-task .air-task-callout p { font-size: 24px !important; margin-top: 8px !important; }
+.dem-deck .vt-task > .vt-split { flex: 1; min-height: 0; }
+.dem-deck .vt-next { grid-template-rows: repeat(3, 1fr); }
+.dem-deck .vt-refs-large li { font-size: 19px; margin-bottom: 13px; }

@@ -142,14 +142,18 @@
   },
   {
     "code": "E10", "meeting": 10, "date": "2026-10-13", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["sigmacity-produto3", "garrow-2021-uam-review", "it214-2026-2-plano-ensino"], "presentationSlug": "e10-demanda",
     "theme": "Demanda",
-    "objective": "Discutir origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar demanda.",
-    "deliverable": "Matriz preliminar de dados de demanda.",
+    "objective": "Estudo dirigido, sem aula presencial: origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar a demanda de um sítio.",
+    "deliverable": "Atividade individual: estimativa da demanda de um sítio de vertiporto, da área de captação às partidas na hora de pico.",
     "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": "2026-10-20T23:59:00-03:00",
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": ["*"]
+      "acceptedExtensions": ["*"],
+      "requiredOutputs": [
+        "PDF individual de até 3 páginas com mapa do sítio e da área de captação, tabela de premissas com fontes, resultado e análise de sensibilidade.",
+        "Planilha de cálculo."
+      ]
     }
   },
   {
