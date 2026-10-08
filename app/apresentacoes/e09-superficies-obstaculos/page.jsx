@@ -36,7 +36,7 @@ function ReadingList({ ids }) {
 
 export default function E09PresentationPage() {
   return <PresentationDeck title={presentation.title} width={1600} height={900} className="air-deck vert-deck ops-deck sup-deck">
-    <Slide kicker="IT-214 · Mobilidade Aérea Urbana" title="Superfícies de proteção de voo e obstáculos" notes="Primeira parte: conceito e normas. Segunda parte, depois do intervalo: simulação no vertiporto experimental do SBSJ e atividade. A leitura indicada na aula passada foi a seção 2.6 e a figura 2-5 do FAA EB 105A." className="air-title-slide">
+    <Slide kicker="IT-214 · Mobilidade Aérea Urbana" title="Superfícies de proteção de voo e obstáculos" notes="Primeira parte: conceito e normas. Segunda parte, depois do intervalo: simulação no vertiporto experimental do SBSJ. A leitura indicada na aula passada foi a seção 2.6 e a figura 2-5 do FAA EB 105A." className="air-title-slide">
       <div className="vt-cover"><div><p className="air-lead">Do pátio ao espaço aéreo em volta do vertiporto.</p><p>Rampas de aproximação e decolagem, obstáculos e entorno urbano.</p><p>Aplicação no vertiporto experimental do aeroporto de São José dos Campos (SBSJ).</p><div className="air-cover-meta">E09 · 06/10/2026<br/>Equipe docente IT-214</div></div><Media assetId="e09-sbsj-rampa-ica" caption="Rampa de aproximação de heliponto aplicada ao sítio do SBSJ, em estudo." fit="cover"/></div>
     </Slide>
 
@@ -135,7 +135,7 @@ export default function E09PresentationPage() {
       <p className="vt-conclusion">Um vertiporto dentro do aeroporto herda esses limites: edificação de apoio, balizamento e antenas precisam respeitar o plano de proteção do aeroporto.</p></div></div>
     </Slide>
 
-    <Slide kicker="Obstáculos" step={2} title="Exemplo: o obstáculo fura a rampa?" source="Fonte: Sandbox SBSJ, Fase I, vol. I, cap. 4, tabs. 4.1 e 4.2, com dados do ROTAER (equipe do projeto, 2026). Terceiro caso: cálculo com a rampa do FAA EB 105A." notes="Fazer a conta no quadro. Nos dois primeiros casos a rampa começa 60 m antes da cabeceira, na cota de 647 m. A antena passa pela primeira seção inteira (3.000 m a 2%) e por 2.356 m da segunda (2,5%). O terceiro caso é hipotético e prepara a atividade.">
+    <Slide kicker="Obstáculos" step={2} title="Exemplo: o obstáculo fura a rampa?" source="Fonte: Sandbox SBSJ, Fase I, vol. I, cap. 4, tabs. 4.1 e 4.2, com dados do ROTAER (equipe do projeto, 2026). Terceiro caso: cálculo com a rampa do FAA EB 105A." notes="Fazer a conta no quadro. Nos dois primeiros casos a rampa começa 60 m antes da cabeceira, na cota de 647 m. A antena passa pela primeira seção inteira (3.000 m a 2%) e por 2.356 m da segunda (2,5%). O terceiro caso é hipotético.">
       <div className="vt-col"><div className="vt-calc"><article><h3>Prédio, pista 16</h3><p>Topo a 681,4 m, a 2.959 m da cabeceira</p><p>Teto = 647 + 0,02 × (2.959 − 60)</p><p>= 705,0 m</p><p>Folga: <b>+23,6 m</b></p></article><article><h3>Antena, pista 34</h3><p>Topo a 755,6 m, a 5.416 m da cabeceira</p><p>Teto = 647 + 60 + 0,025 × 2.356</p><p>= 765,9 m</p><p>Folga: <b>+10,3 m</b></p></article><article><h3>Rampa 8:1 de um vertiporto</h3><p>Prédio de 60 m, a 400 m da FATO</p><p>Teto = 400 ÷ 8</p><p>= 50 m acima da FATO</p><p>Fura a rampa em <b>10 m</b></p></article></div>
       <p className="vt-conclusion">A conta é a mesma em qualquer norma: teto da superfície na posição do obstáculo menos a altitude do topo.</p></div>
     </Slide>
@@ -198,20 +198,8 @@ export default function E09PresentationPage() {
       <p className="vt-conclusion">O estudo recomenda que ANAC e DECEA avaliem as superfícies por categoria e por tipo de operação do eVTOL, medindo antes o efeito do voo vertical sobre o alcance.</p></div>
     </Slide>
 
-    <Slide kicker="Atividade" title="Atividade individual (E09)" source="Fonte: FAA (2024), EB 105A, seção 2.6.1 e fig. 2-5." notes="A atividade é feita depois da aula. Gabarito: A) teto de 300 ÷ 8 = 37,5 m, folga de 7,5 m. B) teto de 800 ÷ 8 = 100 m, fura em 10 m. C) transição a partir da lateral da FATO, a 16 m do eixo: (60 − 16) ÷ 2 = 22 m, fura em 3 m. Soluções possíveis: outra direção de aproximação, trajetória curva, FATO elevada ou remoção do obstáculo.">
-      <div className="vt-task"><div className="air-task-callout"><strong>Entrega</strong><p>PDF individual de até 2 páginas, na pasta de atividades do Drive, até 12/10 às 23h59.</p></div>
-        <div className="vt-split vt-split-even"><Points items={[
-          ['O que fazer', 'Para um vertiporto com FATO de 32 m e as superfícies do FAA EB 105A, calcule o teto da superfície na posição de cada obstáculo e diga se ele fura a rampa ou a transição.'],
-          ['Para os que furam', 'Proponha uma solução e explique por que ela resolve.'],
-        ]}/><Table className="ops-compact" head={['Obstáculo', 'Posição', 'Altura acima da FATO']} rows={[
-          ['A. Edifício', 'No eixo, a 300 m da borda da FATO', '30 m'],
-          ['B. Antena', 'No eixo, a 800 m da borda da FATO', '110 m'],
-          ['C. Guindaste', 'Ao lado da FATO, a 60 m do eixo', '25 m'],
-        ]}/></div></div>
-    </Slide>
-
-    <Slide kicker="Próximos passos" title="Entregas e próximos encontros" notes="Lembrar que a atividade da E09 é individual e entregue pelo Drive.">
-      <div className="vt-next"><article><b>Até 12/10</b><p>Atividade individual da E09: leitura de superfície e obstáculo.</p></article><article><b>13/10 · E10</b><p>Demanda: origem e destino, renda, polos geradores e valor do tempo.</p></article><article><b>20/10 · E11</b><p>Escolha e localização de sítios.</p></article><article><b>27/10 · CP3</b><p>Meteorologia e disponibilidade operacional. Seminário Artigo 3: metodologia, dados, estudo de caso e resultados preliminares.</p></article></div>
+    <Slide kicker="Próximos passos" title="Próximos encontros" notes="Esta aula não tem entregável.">
+      <div className="vt-next"><article><b>13/10 · E10</b><p>Demanda: origem e destino, renda, polos geradores e valor do tempo.</p></article><article><b>20/10 · E11</b><p>Escolha e localização de sítios.</p></article><article><b>27/10 · CP3</b><p>Meteorologia e disponibilidade operacional. Seminário Artigo 3: metodologia, dados, estudo de caso e resultados preliminares.</p></article></div>
     </Slide>
 
     <Slide kicker="Referências" title="Referências" notes="Lista para consulta.">

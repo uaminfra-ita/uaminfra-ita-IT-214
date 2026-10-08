@@ -924,7 +924,7 @@
     "subtitle": "Rampas de aproximação e decolagem, obstáculos, entorno urbano e aplicação no vertiporto experimental do SBSJ",
     "date": "2026-10-06",
     "durationMinutes": 180,
-    "slideCount": 25,
+    "slideCount": 24,
     "objectives": [
       "Explicar o que são as superfícies de aproximação, de decolagem e de transição e como ler o gradiente de uma rampa.",
       "Comparar as referências da FAA, da EASA e do DECEA para a proteção de helipontos e vertiportos.",
@@ -935,8 +935,7 @@
       "Conceito",
       "Normas",
       "Obstáculos e entorno",
-      "Simulação no SBSJ",
-      "Atividade individual"
+      "Simulação no SBSJ"
     ],
     "resourceIds": [
       "faa-2024-eb-105a-vertiport-design",
@@ -983,7 +982,7 @@
         "shortTitle": "IT-214 (2026)",
         "citation": "Guterres, M. X. Plano de ensino IT-214 — Mobilidade Aérea Urbana, 2026/2. São José dos Campos: ITA, 2026.",
         "source": "Documento disponível na Biblioteca da disciplina.",
-        "purpose": "Tema, objetivo e atividade do encontro E09."
+        "purpose": "Tema e objetivo do encontro E09."
       }
     ],
     "authors": [

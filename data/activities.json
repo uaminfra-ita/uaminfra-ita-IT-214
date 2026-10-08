@@ -133,15 +133,11 @@
     "resourceIds": ["faa-2024-eb-105a-vertiport-design", "easa-2022-vertiport-design-pts", "decea-2024-conops-uam-nacional", "it214-2026-2-plano-ensino"], "presentationSlug": "e09-superficies-obstaculos",
     "theme": "Superfícies de proteção de voo e obstáculos",
     "objective": "Tratar rampas, gabaritos, edificações, antenas, entorno urbano e comparação normativa.",
-    "deliverable": "Exercício individual de leitura de superfície e obstáculo: teto da superfície na posição de três obstáculos, verificação de penetração e proposta de solução.",
+    "deliverable": "Sem entregável nesta aula.",
     "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": "2026-10-12T23:59:00-03:00",
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": [".pdf"],
-      "requiredOutputs": [
-        "Cálculo do teto da superfície na posição dos três obstáculos, com indicação dos que penetram a rampa ou a transição.",
-        "PDF individual de até 2 páginas, com a solução proposta para os obstáculos que penetram."
-      ]
+      "acceptedExtensions": ["*"]
     }
   },
   {
