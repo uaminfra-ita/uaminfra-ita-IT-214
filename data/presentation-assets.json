@@ -1779,38 +1779,99 @@
       "activity:E09"
     ],
     "alt": "Mapa escuro de Shenzhen com manchas alaranjadas de demanda e pontos verdes de tamanhos diferentes nos locais selecionados.",
-    "sha256": "FCBC77B907DB13E1C2E692C06D17B4ED9E7839529B3A56772FAC648FE8F1C859",
-    "additionalUses": [
-      {
-        "presentationSlug": "e10-demanda",
-        "slideNumbers": [
-          1
-        ]
-      }
-    ]
+    "sha256": "FCBC77B907DB13E1C2E692C06D17B4ED9E7839529B3A56772FAC648FE8F1C859"
   },
   {
-    "id": "e10-guo-viagem",
+    "id": "e10-od-rotas",
     "presentationSlug": "e10-demanda",
     "slideNumbers": [
-      4
+      1,
+      13
     ],
-    "title": "Trechos de uma viagem de UAM",
-    "assetPath": "/images/presentations/e10/e10-guo-viagem.png",
-    "kind": "diagram",
+    "title": "Principais ligações aéreas do Brasil em 2017",
+    "assetPath": "/images/presentations/e10/e10-od-rotas.png",
+    "kind": "map",
     "audience": "public",
-    "creator": "Chenhao Guo, Jianxiong Nie, Xu Hang, Yanjun Wang, Yanyan Chen e Daniel Delahaye",
-    "sourceUrl": "https://doi.org/10.1016/j.commtr.2024.100118",
-    "sourcePage": 2,
-    "sourceFigure": "1",
-    "creditLine": "Guo et al. (2024), fig. 1 · CC BY-NC-ND 4.0",
-    "usageBasis": "Figura de artigo de acesso aberto publicado sob CC BY-NC-ND 4.0; reprodução sem alterações, com atribuição, para fim didático não comercial.",
-    "license": "Licença Creative Commons BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/).",
-    "summary": "Esquema de uma viagem de UAM: trecho em solo até o vertiporto de decolagem, voo e trecho em solo até o destino.",
+    "creator": "Equipe docente IT-214",
+    "sourceUrl": "https://horus.labtrans.ufsc.br/gerencial/#MatrizOd",
+    "creditLine": "Equipe docente IT-214, com dados de SAC/MInfra e LabTrans/UFSC (2017)",
+    "usageBasis": "Figura elaborada pela equipe docente a partir da matriz origem-destino por telefonia móvel da SAC/MInfra e do LabTrans/UFSC (ano-base 2017) e da malha estadual do IBGE.",
+    "license": "Material didático da IT-214; dados de origem conforme a fonte.",
+    "summary": "As 60 ligações entre aeroportos com mais viagens na matriz origem-destino por telefonia móvel de 2017; a espessura indica o volume.",
     "relations": [
-      "activity:E10"
+      "activity:E10",
+      "resource:it214-2026-atividade-matriz-od"
     ],
-    "alt": "Esquema com origem, vertiporto de decolagem, voo de eVTOL, vertiporto de pouso e destino, ligados por setas.",
-    "sha256": "08A8C74E517A28A0D863E587E900710953F1DD1C7426381EB0D74E67E1C6254C"
+    "alt": "Mapa do Brasil com linhas entre aeroportos, mais grossas entre as capitais do Sudeste, do Sul, do Nordeste e Brasília.",
+    "sha256": "34CAA568647B1E44238EEC109DF7271A9939EA296314B07FC32B11A2B99F77DC"
+  },
+  {
+    "id": "e10-od-matriz-uf",
+    "presentationSlug": "e10-demanda",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Matriz de viagens aéreas entre estados em 2017",
+    "assetPath": "/images/presentations/e10/e10-od-matriz-uf.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe docente IT-214",
+    "sourceUrl": "https://horus.labtrans.ufsc.br/gerencial/#MatrizOd",
+    "creditLine": "Equipe docente IT-214, com dados de SAC/MInfra e LabTrans/UFSC (2017)",
+    "usageBasis": "Figura elaborada pela equipe docente a partir da matriz origem-destino por telefonia móvel da SAC/MInfra e do LabTrans/UFSC (ano-base 2017) e da malha estadual do IBGE.",
+    "license": "Material didático da IT-214; dados de origem conforme a fonte.",
+    "summary": "Viagens aéreas de 2017 por estado de origem e de destino, em escala logarítmica de cor, com os estados agrupados por região.",
+    "relations": [
+      "activity:E10",
+      "resource:it214-2026-atividade-matriz-od"
+    ],
+    "alt": "Grade de 27 por 27 quadrados em tons de verde e azul, mais escuros nas linhas e colunas de São Paulo, Rio de Janeiro, Minas Gerais e Distrito Federal.",
+    "sha256": "15149212710FB524B61465AA8AC88C2E167531E48B2E52A505E22B175FB0F501"
+  },
+  {
+    "id": "e10-od-aeroportos",
+    "presentationSlug": "e10-demanda",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Embarques por aeroporto em 2017",
+    "assetPath": "/images/presentations/e10/e10-od-aeroportos.png",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe docente IT-214",
+    "sourceUrl": "https://horus.labtrans.ufsc.br/gerencial/#MatrizOd",
+    "creditLine": "Equipe docente IT-214, com dados de SAC/MInfra e LabTrans/UFSC (2017)",
+    "usageBasis": "Figura elaborada pela equipe docente a partir da matriz origem-destino por telefonia móvel da SAC/MInfra e do LabTrans/UFSC (ano-base 2017) e da malha estadual do IBGE.",
+    "license": "Material didático da IT-214; dados de origem conforme a fonte.",
+    "summary": "Total de embarques de 2017 em cada aeroporto da matriz origem-destino; a área do círculo é proporcional ao total.",
+    "relations": [
+      "activity:E10",
+      "resource:it214-2026-atividade-matriz-od"
+    ],
+    "alt": "Mapa do Brasil com círculos nos aeroportos, maiores em São Paulo, Rio de Janeiro, Brasília e nas capitais do Nordeste.",
+    "sha256": "4EE279BD7CB60B9A98D21DF4300594589B7BA8EBE27E75D84969C6007A5A5466"
+  },
+  {
+    "id": "e10-od-raios",
+    "presentationSlug": "e10-demanda",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Aeroportos a 100, 200 e 300 km de Congonhas",
+    "assetPath": "/images/presentations/e10/e10-od-raios.png",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe docente IT-214",
+    "sourceUrl": "https://horus.labtrans.ufsc.br/gerencial/#MatrizOd",
+    "creditLine": "Equipe docente IT-214, com dados de SAC/MInfra e LabTrans/UFSC (2017)",
+    "usageBasis": "Figura elaborada pela equipe docente a partir da matriz origem-destino por telefonia móvel da SAC/MInfra e do LabTrans/UFSC (ano-base 2017) e da malha estadual do IBGE.",
+    "license": "Material didático da IT-214; dados de origem conforme a fonte.",
+    "summary": "Exemplo de leitura por distância: círculos de 100, 200 e 300 km em torno do aeroporto de Congonhas e os aeroportos da matriz na região.",
+    "relations": [
+      "activity:E10",
+      "resource:it214-2026-atividade-matriz-od"
+    ],
+    "alt": "Mapa do entorno de São Paulo com três círculos tracejados e pontos identificados pelos códigos dos aeroportos.",
+    "sha256": "FED4FCE909E56777C69F7726F8849DE0E23F3E3D329BE6864C965D306EEF808C"
   }
 ]

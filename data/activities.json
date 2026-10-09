@@ -142,17 +142,17 @@
   },
   {
     "code": "E10", "meeting": 10, "date": "2026-10-13", "type": "class", "status": "scheduled",
-    "resourceIds": ["sigmacity-produto3", "garrow-2021-uam-review", "it214-2026-2-plano-ensino"], "presentationSlug": "e10-demanda",
+    "resourceIds": ["it214-2026-atividade-matriz-od", "sigmacity-produto3", "garrow-2021-uam-review", "it214-2026-2-plano-ensino"], "presentationSlug": "e10-demanda",
     "theme": "Demanda",
     "objective": "Estudo dirigido, sem aula presencial: origem-destino, IBGE, renda, polos geradores, valor do tempo e fontes de dados para estimar a demanda de um sítio.",
-    "deliverable": "Atividade individual: estimativa da demanda de um sítio de vertiporto, da área de captação às partidas na hora de pico.",
+    "deliverable": "Atividade individual ou em dupla com a matriz origem-destino nacional por telefonia móvel: conceitos, panorama, recorte, potencial para aeroporto e análise para UAM e AAM.",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": "2026-10-20T23:59:00-03:00",
       "maxFiles": 5, "maxFileSizeMb": 20,
       "acceptedExtensions": ["*"],
       "requiredOutputs": [
-        "PDF individual de até 3 páginas com mapa do sítio e da área de captação, tabela de premissas com fontes, resultado e análise de sensibilidade.",
-        "Planilha de cálculo."
+        "PDF de 4 a 6 páginas com respostas, tabelas e figuras (E11_Sobrenome.pdf).",
+        "Script (.py, .R ou .ipynb) que reproduza os números e as figuras."
       ]
     }
   },

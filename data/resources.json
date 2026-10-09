@@ -530,6 +530,24 @@
       "sha256": "FFFFCB6D9E3DA7749BC348B1665AD0CA5F16A987194042276B89AE85FCFC898F"
     },
     {
+      "id": "it214-2026-atividade-matriz-od",
+      "category": "discipline-document",
+      "title": "Atividade E11 — Matriz OD por telefonia móvel",
+      "authors": ["Equipe docente IT-214"],
+      "year": 2026,
+      "publication": "Instituto Tecnológico de Aeronáutica — IT-214",
+      "documentNumber": "Atividade E11",
+      "publisherUrl": "https://uaminfra-ita.github.io/uaminfra-ita-IT-214/resources/discipline/atividade-e11-matriz-od.pdf",
+      "assetPath": "/resources/discipline/atividade-e11-matriz-od.pdf",
+      "audience": "public",
+      "license": "Material didático institucional",
+      "rightsNote": "Enunciado elaborado para a disciplina e encaminhado pela equipe docente para disponibilização à turma no portal IT-214.",
+      "summary": "Enunciado da atividade assíncrona com a matriz origem-destino nacional por telefonia móvel de 2017: cinco tarefas, formato de entrega e pesos.",
+      "tags": ["atividade", "demanda", "matriz origem-destino", "AAM"],
+      "relatedActivityIds": ["E10"],
+      "sha256": "065AC7714355A364DB89809F5C08175BCEA984FFBF2358D446A5F3D990E16923"
+    },
+    {
       "id": "methodi-ordinatio-rankin-v8-5",
       "category": "spreadsheet-template",
       "title": "Planilha RankIn — Methodi Ordinatio v8.5",
