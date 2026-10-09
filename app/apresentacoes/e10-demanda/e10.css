@@ -13,3 +13,47 @@
 .dem-deck .vt-task > .vt-split { flex: 1; min-height: 0; }
 .dem-deck .vt-next { grid-template-rows: repeat(3, 1fr); }
 .dem-deck .vt-refs-large li { font-size: 19px; margin-bottom: 13px; }
+
+/* Atividade da matriz OD */
+.dem-deck .dem-code { margin: 0; align-self: center; background: #0b2942; color: #e2e8f0; padding: 26px 30px; font-size: 19px; line-height: 1.5; white-space: pre; overflow: hidden; font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+.dem-deck .dem-cards-4 { grid-template-columns: 1fr 1fr; }
+.dem-deck .dem-figure { margin: 0; display: flex; flex-direction: column; gap: 10px; min-height: 0; justify-content: center; }
+.dem-deck .dem-figure figcaption { font-size: 18px; font-weight: 750; color: #0b3450; }
+.dem-deck .dem-chart { width: 100%; max-height: 500px; background: #fff; border: 1px solid #d6e2eb; border-radius: 8px; }
+.dem-deck .dem-grid { stroke: #e2e8f0; stroke-width: 1; }
+.dem-deck .dem-axis { fill: #64748b; font-size: 15px; }
+.dem-deck .dem-label { fill: #0b3450; font-size: 15px; font-weight: 750; }
+.dem-deck .dem-bar { fill: #0e7490; }
+.dem-deck .dem-line { fill: none; stroke: #0e7490; stroke-width: 3; }
+.dem-deck .dem-dot { fill: #0e7490; stroke: #fff; stroke-width: 2; }
+.dem-deck .dem-area { fill: #cdeef3; opacity: 0.6; }
+.dem-deck .dem-equal { stroke: #64748b; stroke-width: 2; stroke-dasharray: 6 5; }
+.dem-deck .dem-steps-narrow li { grid-template-columns: 54px 150px 1fr; }
+.dem-deck .vt-conclusion a { color: #0e7490; }
+
+/* Versão ilustrada */
+.dem-deck .dem-drive { flex: 0 0 auto; display: flex; align-items: baseline; gap: 22px; background: #0e7490; color: #fff; padding: 20px 30px; border-radius: 10px; text-decoration: none; }
+.dem-deck .dem-drive b { font-size: 27px; }
+.dem-deck .dem-drive span { font-size: 18px; color: #cdeef3; word-break: break-all; }
+.dem-deck .dem-flow { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 18px; }
+.dem-deck .dem-flow article { position: relative; background: #fff; border-top: 7px solid #0e7490; padding: 22px 24px 24px; }
+.dem-deck .dem-flow article:not(:last-child)::after { content: '→'; position: absolute; right: -17px; top: 50%; transform: translateY(-50%); font-size: 26px; font-weight: 900; color: #0e7490; z-index: 2; }
+.dem-deck .dem-flow i { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #0b3450; color: #fff; font-style: normal; font-weight: 900; font-size: 21px; margin-bottom: 14px; }
+.dem-deck .dem-flow h3 { margin: 0 0 8px; }
+.presentation-shell.air-deck.dem-deck .reveal .air-slide .dem-flow p { margin: 0; font-size: 21px; }
+.dem-deck .dem-hero { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 18px; }
+.dem-deck .dem-hero article { display: flex; flex-direction: column; gap: 4px; border-left: 4px solid #22b8cf; padding: 6px 0 6px 20px; }
+.dem-deck .dem-hero b { font-size: 52px; line-height: 1.05; font-weight: 900; color: #0b3450; letter-spacing: -1px; }
+.dem-deck .dem-hero span { font-size: 20px; color: #475569; }
+.dem-deck .dem-chain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; }
+.dem-deck .dem-chain article { position: relative; background: #0b2942; padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; }
+.dem-deck .dem-chain article:not(:last-child)::after { content: '→'; position: absolute; right: -29px; top: 50%; transform: translateY(-50%); font-size: 30px; font-weight: 900; color: #0e7490; }
+.dem-deck .dem-chain span { color: #67e8f9; font-size: 17px; font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+.dem-deck .dem-chain b { color: #fff; font-size: 30px; }
+.dem-deck .dem-road { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; height: 100%; align-items: stretch; }
+.dem-deck .dem-road article { background: #fff; border-top: 8px solid #0e7490; padding: 26px 24px; display: flex; flex-direction: column; gap: 12px; }
+.dem-deck .dem-road i { font-style: normal; font-size: 64px; font-weight: 900; line-height: 1; color: #cdeef3; }
+.dem-deck .dem-road h3 { margin: 0; font-size: 28px !important; }
+.presentation-shell.air-deck.dem-deck .reveal .air-slide .dem-road p { margin: 0; font-size: 21px; flex: 1; }
+.dem-deck .dem-road b { font-size: 40px; font-weight: 900; color: #0e7490; }
+.dem-deck .vt-col > .dem-fill { flex: 1; min-height: 0; }

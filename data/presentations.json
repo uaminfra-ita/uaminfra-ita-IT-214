@@ -1019,31 +1019,45 @@
   {
     "slug": "e10-demanda",
     "audience": "public",
-    "rightsNote": "Apresentação pública. Usa duas figuras de artigo de acesso aberto sob CC BY-NC-ND 4.0, sem alterações. Tabelas, roteiro e cálculos são elaborações próprias a partir das fontes citadas; o livro de Guterres (2026) é citado apenas em texto, sem reprodução de figuras.",
+    "rightsNote": "Apresentação pública. Mapas, gráficos, tabelas e exemplos são elaborações da equipe docente a partir da matriz origem-destino por telefonia móvel da SAC/MInfra e do LabTrans/UFSC (ano-base 2017) e da malha estadual do IBGE.",
     "activityId": "E10",
-    "title": "Demanda: quantas viagens o vertiporto pode atender",
-    "subtitle": "Roteiro para estimar a demanda de um sítio de vertiporto com dados de origem e destino, população e renda",
+    "title": "Demanda: a matriz origem-destino do Brasil",
+    "subtitle": "Roteiro da atividade com a matriz origem-destino nacional por telefonia móvel: conceitos, panorama, recorte, potencial para aeroporto e análise para UAM e AAM",
     "date": "2026-10-13",
     "durationMinutes": 180,
-    "slideCount": 16,
+    "slideCount": 20,
     "objectives": [
-      "Explicar por que a demanda é o primeiro passo do estudo de viabilidade de um vertiporto.",
-      "Identificar as fontes públicas de dados de origem e destino, população, renda e empregos.",
-      "Comparar o custo generalizado de uma viagem em solo com o de uma viagem de UAM.",
-      "Estimar passageiros por dia e partidas na hora de pico para um sítio, com premissas declaradas."
+      "Explicar o que é uma matriz origem-destino e como ela é estimada com dados de telefonia móvel.",
+      "Ler e manipular a matriz OD nacional de 2017, por modo, região, estado e par de origem e destino.",
+      "Medir a concentração das viagens com a curva de Lorenz e o coeficiente de Gini.",
+      "Usar a matriz para indicar potencial de novos aeroportos e de operações de AAM, reconhecendo seus limites para a UAM."
     ],
     "sections": [
       "Conceito",
       "Dados",
-      "Cálculo",
-      "Atividade individual"
+      "Tarefas",
+      "Entrega"
     ],
     "resourceIds": [
+      "it214-2026-atividade-matriz-od",
       "sigmacity-produto3",
       "garrow-2021-uam-review",
       "it214-2026-2-plano-ensino"
     ],
     "references": [
+      {
+        "resourceId": "it214-2026-atividade-matriz-od",
+        "shortTitle": "Atividade E11 (2026)",
+        "citation": "Equipe docente IT-214. Atividade E11 — Matriz OD por telefonia móvel. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Enunciado, tarefas, entrega e pesos da atividade."
+      },
+      {
+        "shortTitle": "SAC e LabTrans (2017)",
+        "url": "https://horus.labtrans.ufsc.br/gerencial/#MatrizOd",
+        "citation": "Secretaria Nacional de Aviação Civil; Laboratório de Transportes e Logística da UFSC. Matriz origem-destino por telefonia móvel, ano-base 2017. Brasília: SAC/MInfra.",
+        "purpose": "Base de dados da atividade e metodologia da matriz."
+      },
       {
         "resourceId": "sigmacity-produto3",
         "shortTitle": "SIGMA-City (2026)",
@@ -1057,18 +1071,6 @@
         "citation": "Garrow, L. A.; German, B. J.; Leonard, C. E. Urban air mobility: a comprehensive review and comparative analysis with autonomous and electric ground transportation. Transportation Research Part C, v. 132, 103377, 2021.",
         "source": "Documento disponível na Biblioteca da disciplina.",
         "purpose": "Perfil dos primeiros usuários e revisão da literatura de demanda."
-      },
-      {
-        "shortTitle": "Guo et al. (2024)",
-        "url": "https://doi.org/10.1016/j.commtr.2024.100118",
-        "citation": "Guo, C.; Nie, J.; Hang, X.; Wang, Y.; Chen, Y.; Delahaye, D. VTOL site location considering obstacle clearance during approach and departure. Communications in Transportation Research, v. 4, 100118, 2024.",
-        "purpose": "Viagens candidatas, custo generalizado e sensibilidade à tarifa e ao tempo de transferência."
-      },
-      {
-        "shortTitle": "Metrô (2017)",
-        "url": "https://transparencia.metrosp.com.br/dataset/pesquisa-origem-e-destino",
-        "citation": "Companhia do Metropolitano de São Paulo. Pesquisa Origem e Destino: banco de dados e relatórios-síntese. São Paulo: Metrô.",
-        "purpose": "Fonte da matriz origem e destino da Região Metropolitana de São Paulo."
       },
       {
         "resourceId": "it214-2026-2-plano-ensino",
