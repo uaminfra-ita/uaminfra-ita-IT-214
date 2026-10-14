@@ -381,6 +381,14 @@
   .slide-media-frame { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
 
+/* Modo de impressão do Reveal (?print-pdf), usado para gerar o PDF de cada apresentação. */
+.print-pdf body:has(.presentation-shell) > header,
+.print-pdf body:has(.presentation-shell) > footer,
+.print-pdf body:has(.presentation-shell) > .skip-link,
+.print-pdf .presentation-toolbar { display: none !important; }
+.print-pdf .presentation-shell { position: static !important; }
+.print-pdf .presentation-shell:not(.air-deck) .reveal .slides section { padding: 4.5rem 5rem 3.5rem !important; }
+
 /* E04 — pesquisa e escrita em LaTeX */
 .e04-slide {
   --e04-orange: #f97316;

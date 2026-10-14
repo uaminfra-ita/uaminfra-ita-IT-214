@@ -44,6 +44,11 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
 
+      - name: Export presentation PDFs
+        run: npm run export:pdf
+        env:
+          GITHUB_PAGES: 'true'
+
       - name: Audit public artifact
         run: npm run audit:out
 
