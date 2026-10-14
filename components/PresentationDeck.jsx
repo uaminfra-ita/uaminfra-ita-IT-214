@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Icon from './Icon';
 
 export default function PresentationDeck({ title, children, width = '100%', height = '100%', className = '' }) {
@@ -10,6 +11,9 @@ export default function PresentationDeck({ title, children, width = '100%', heig
   const [ready, setReady] = useState(false);
   const [error, setError] = useState('');
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  // O PDF é gerado no build por scripts/export-presentation-pdfs.mjs, ao lado da página da apresentação.
+  const slug = (usePathname() || '').split('/').filter(Boolean).pop() || '';
+  const pdfHref = `${basePath}/apresentacoes/${slug}/${slug}.pdf`;
 
   useEffect(() => {
     let active = true;
@@ -38,6 +42,7 @@ export default function PresentationDeck({ title, children, width = '100%', heig
           center: false,
           transition: 'fade',
           backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
           plugins: [RevealNotes],
         });
         deckRef.current = deck;
@@ -70,7 +75,7 @@ export default function PresentationDeck({ title, children, width = '100%', heig
         <div className="flex gap-2">
           <button className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-black hover:bg-white/10" type="button" onClick={() => deckRef.current?.toggleOverview()}>Visão geral</button>
           <button className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-black hover:bg-white/10" type="button" onClick={toggleFullscreen}>Tela cheia</button>
-          <a className="hidden rounded-full bg-cyan-300 px-3 py-1.5 text-xs font-black text-ink hover:bg-cyan-200 sm:inline-flex" href="?print-pdf" target="_blank">Imprimir</a>
+          <a className="inline-flex rounded-full bg-cyan-300 px-3 py-1.5 text-xs font-black text-ink hover:bg-cyan-200" href={pdfHref} download={`${slug}.pdf`} aria-label={`Baixar a apresentação em PDF: ${title}`}><span className="sm:hidden">PDF</span><span className="hidden sm:inline">Baixar PDF</span></a>
         </div>
       </div>
       <div className="reveal" ref={revealRef}>

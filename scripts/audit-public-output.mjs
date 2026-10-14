@@ -25,9 +25,18 @@ assert.equal(
   'O artefato público contém o documento privado SIGMA_c_PIII.pdf.',
 );
 
+// Cada apresentação publicada leva o próprio PDF, gerado do build por scripts/export-presentation-pdfs.mjs.
+const decksDirectory = path.join(outputDirectory, 'apresentacoes');
+const presentationPdfPaths = (fs.existsSync(decksDirectory) ? fs.readdirSync(decksDirectory, { withFileTypes: true }) : [])
+  .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(decksDirectory, entry.name, 'index.html')))
+  .map((entry) => path.join('apresentacoes', entry.name, `${entry.name}.pdf`))
+  .sort();
+const actualPresentationPdfPaths = outputFiles.filter((file) => presentationPdfPaths.includes(file)).sort();
+assert.deepEqual(actualPresentationPdfPaths, presentationPdfPaths, 'Cada apresentação publicada precisa do seu PDF; execute npm run export:pdf depois do build.');
+
 const cataloguedExtensions = new Set(['.pdf', '.zip', '.docx', '.xlsm']);
 const actualResourcePaths = outputFiles
-  .filter((file) => cataloguedExtensions.has(path.extname(file).toLowerCase()))
+  .filter((file) => cataloguedExtensions.has(path.extname(file).toLowerCase()) && !presentationPdfPaths.includes(file))
   .sort();
 const declaredResourcePaths = allResources
   .filter((resource) => cataloguedExtensions.has(path.extname(resource.assetPath).toLowerCase()))
@@ -47,4 +56,4 @@ const internalMarker = outputFiles
   .find((file) => fs.readFileSync(path.join(outputDirectory, file), 'utf8').includes('data-uso-interno'));
 assert.equal(internalMarker, undefined, `Conteúdo interno não publicado encontrado no artefato público: ${internalMarker}. Gere o build com GITHUB_PAGES=true antes de publicar.`);
 
-console.log(`Auditoria pública concluída: ${outputFiles.length} arquivos e ${actualResourcePaths.length} documentos declarados.`);
+console.log(`Auditoria pública concluída: ${outputFiles.length} arquivos, ${actualResourcePaths.length} documentos declarados e ${presentationPdfPaths.length} PDFs de apresentações.`);
