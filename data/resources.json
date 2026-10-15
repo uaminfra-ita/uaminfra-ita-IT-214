@@ -219,7 +219,7 @@
       "rightsNote": "Especificação protótipo pública, de natureza não vinculante, mantida com autoria e condições de uso declaradas pela EASA.",
       "summary": "Oferece orientação técnica para características físicas, volumes livres de obstáculos, auxílios visuais, iluminação e operação VFR de vertiportos para aeronaves VTOL tripuladas.",
       "tags": ["vertiportos", "EASA", "FATO", "obstáculos"],
-      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E14"],
+      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11", "E14"],
       "sha256": "83C14AFD20180093D985495078DEB73C4EFACB8FCA029F447BC9BA2FB6300309"
     },
     {
@@ -237,7 +237,7 @@
       "rightsNote": "Versão oficial de 27 de dezembro de 2024 disponibilizada pela FAA como orientação suplementar vigente.",
       "summary": "Define orientação provisória para planejamento e projeto de vertiportos, incluindo geometria, estacionamento, downwash/outwash, marcações, iluminação, energia e segurança do sítio.",
       "tags": ["vertiportos", "FAA", "projeto", "EB 105A"],
-      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E14"],
+      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11", "E14"],
       "sha256": "4EAA3696D9E527BC58CC391E78F45EB3C668E609344E7C520761960688208AEE"
     },
     {
@@ -490,7 +490,7 @@
       "rightsNote": "Plano de ensino fornecido pela equipe docente para publicação no portal oficial da disciplina.",
       "summary": "Apresenta ementa, objetivos, quatro eixos temáticos, cronograma dos 16 encontros, oficinas, entregáveis semanais e quatro checkpoints do artigo científico.",
       "tags": ["plano de ensino", "cronograma", "ementa", "avaliação"],
-      "relatedActivityIds": ["E01", "E08", "E09", "E10"],
+      "relatedActivityIds": ["E01", "E08", "E09", "E10", "E11"],
       "sha256": "0B8CC22C876790701AB93D692B526166ADC5C967F7E2543DBDDB7C95EF223508"
     },
     {

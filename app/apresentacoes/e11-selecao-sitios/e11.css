@@ -1,0 +1,74 @@
+/* E11: complementa os estilos da E06, da E07, da E08 e da E10 (tela de 1600 × 900). */
+.sit-deck .vt-col > .sit-fill { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.sit-deck .sit-fill .vt-media { flex: 1; }
+
+/* Números grandes em grade 2 × 2 */
+.sit-deck .sit-hero-grid { grid-auto-flow: row; grid-template-columns: 1fr 1fr; row-gap: 34px; }
+
+/* Os cinco produtos do plano */
+.sit-deck .sit-road article { border-top-color: #94a3b8; }
+.sit-deck .sit-road .sit-road-on { border-top-color: #0e7490; background: #f0fbfd; }
+.sit-deck .sit-road .sit-road-on i { color: #22b8cf; }
+.sit-deck .sit-road b { font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Botão de link externo */
+.sit-deck .sit-link { flex: 0 0 auto; display: flex; align-items: baseline; gap: 22px; background: #0e7490; color: #fff; padding: 18px 28px; border-radius: 10px; text-decoration: none; }
+.sit-deck .sit-link b { font-size: 25px; }
+.sit-deck .sit-link span { font-size: 18px; color: #cdeef3; }
+
+/* Planta do sítio mínimo, em escala */
+.sit-deck .sit-plan { width: 100%; height: 100%; max-height: 690px; }
+.sit-deck .sit-plan-ramp { fill: #eef6f8; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 6; }
+.sit-deck .sit-plan-safety { fill: #cdeef3; stroke: #22b8cf; stroke-width: 2; }
+.sit-deck .sit-plan-fato { fill: #0e7490; }
+.sit-deck .sit-plan-label { fill: #0b3450; font-size: 25px; font-weight: 750; }
+.sit-deck .sit-plan-label-in { fill: #fff; font-size: 38px; font-weight: 900; }
+.sit-deck .sit-dim line { stroke: #0b3450; stroke-width: 2; }
+.sit-deck .sit-dim text { fill: #0b3450; font-size: 27px; font-weight: 800; }
+
+/* Oito critérios */
+.sit-deck .sit-criteria { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr 1fr; gap: 22px; height: 100%; }
+.sit-deck .sit-criteria article { background: #fff; border-top: 6px solid #0e7490; padding: 22px 24px; }
+.sit-deck .sit-criteria article:last-child { border-top-color: #db2777; }
+.sit-deck .sit-criteria h3 { margin: 0 0 10px; font-size: 26px !important; }
+.presentation-shell.air-deck.sit-deck .reveal .air-slide .sit-criteria p { margin: 0; font-size: 21px; }
+
+/* Matriz do AHP */
+.sit-deck .sit-matrix { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 24px; }
+.sit-deck .sit-matrix th { background: transparent; font-size: 21px; color: #0b3450; padding: 12px 10px; text-align: center; }
+.sit-deck .sit-matrix tbody th { text-align: left; }
+.sit-deck .sit-matrix td { background: #fff; border: 2px solid #e2e8f0; padding: 20px 10px; text-align: center; font-weight: 750; color: #0b3450; font-family: 'Cambria Math', Georgia, serif; font-size: 28px; }
+.sit-deck .sit-matrix td.sit-diag { background: #f1f5f9; color: #94a3b8; }
+.sit-deck .sit-matrix td.sit-weight { position: relative; text-align: left; font-family: inherit; background: #f8fafc; }
+.sit-deck .sit-matrix td.sit-weight i { position: absolute; left: 0; top: 0; bottom: 0; background: #cdeef3; }
+.sit-deck .sit-matrix td.sit-weight b { position: relative; padding-left: 12px; }
+.presentation-shell.air-deck.sit-deck .reveal .air-slide .sit-scale { margin: 0; font-size: 20px; color: #475569; }
+.sit-deck .sit-scale b { color: #0b3450; }
+
+/* Nota do sítio */
+.sit-deck .sit-eq { flex-direction: row; align-items: center; gap: 40px; }
+.presentation-shell.air-deck.sit-deck .reveal .air-slide .sit-eq p { font-size: 40px; white-space: nowrap; }
+.sit-deck .sit-eq span { color: #cdeef3; font-size: 22px; }
+.sit-deck .sit-score tr:last-child td { background: #0b2942; color: #fff; font-weight: 900; font-size: 28px; }
+.sit-deck .sit-score td:not(:first-child), .sit-deck .sit-score th:not(:first-child) { text-align: center; }
+
+/* Ranking dos sítios */
+.sit-deck .sit-rank { max-height: 620px; }
+.sit-deck .sit-rank-pos { fill: #64748b; font-size: 15px; font-weight: 700; }
+.sit-deck .sit-rank-name { fill: #0b3450; font-size: 16px; font-weight: 650; }
+.sit-deck .sit-rank-tag { fill: #0e7490; font-weight: 900; }
+.sit-deck .sit-rank-stem { stroke: #e2e8f0; stroke-width: 2; }
+.sit-deck .sit-rank-dot { stroke: #fff; stroke-width: 2; }
+.sit-deck .sit-roxo { fill: #7c3aed; }
+.sit-deck .sit-vermelho { fill: #dc2626; }
+.sit-deck .sit-rank-value { fill: #0b3450; font-size: 15px; font-weight: 800; }
+
+/* Instrumentos municipais */
+.sit-deck .sit-law { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.sit-deck .sit-law article { background: #fff; border-top: 7px solid #0e7490; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px; }
+.sit-deck .sit-law b { font-size: 30px; color: #0b3450; }
+.presentation-shell.air-deck.sit-deck .reveal .air-slide .sit-law p { margin: 0; font-size: 23px; }
+
+/* Rótulos mais largos nas etapas numeradas */
+.sit-deck .dem-steps-narrow li { grid-template-columns: 48px 205px 1fr; }
+.sit-deck .sit-law article { min-height: 330px; }

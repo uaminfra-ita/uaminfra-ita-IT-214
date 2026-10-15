@@ -1873,5 +1873,453 @@
     ],
     "alt": "Mapa do entorno de São Paulo com três círculos tracejados e pontos identificados pelos códigos dos aeroportos.",
     "sha256": "FED4FCE909E56777C69F7726F8849DE0E23F3E3D329BE6864C965D306EEF808C"
+  },
+  {
+    "id": "e11-sitios-nota",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      1,
+      12
+    ],
+    "title": "Os 20 sítios da primeira rodada do PMAJ pela nota final",
+    "assetPath": "/images/presentations/e11/e11-sitios-nota.png",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe docente IT-214",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 39,
+    "sourceFigure": "tabela do ranking geral",
+    "creditLine": "Equipe docente IT-214, com dados do PMAJ (Produto 03) e © colaboradores do OpenStreetMap",
+    "usageBasis": "Figura elaborada pela equipe docente com as coordenadas e notas da tabela do ranking geral do PMAJ (Produto 03, seção 3.3.2) e dados do OpenStreetMap sob a ODbL.",
+    "license": "Material didático da IT-214; dados do OpenStreetMap sob a Open Database License (ODbL).",
+    "summary": "Mapa de Jacareí com os 20 sítios indicados na primeira rodada, coloridos pela nota final, com o SBSJ, o rio Paraíba do Sul, a Dutra e a Carvalho Pinto.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Mapa do município de Jacareí com vinte pontos coloridos de amarelo a roxo, concentrados no centro, entre a Via Dutra e o rio Paraíba do Sul; a pista do SBSJ aparece a nordeste.",
+    "sha256": "CBE0556C5EA81E18EFA401BF4AFF38CE9BA19DF18B385F9CB78D990FC50282D8"
+  },
+  {
+    "id": "e11-rede-4km",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Filtro de 4 km entre os sítios da primeira rodada",
+    "assetPath": "/images/presentations/e11/e11-rede-4km.png",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe docente IT-214",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 39,
+    "sourceFigure": "tabela do ranking geral e critério do cap. 4",
+    "creditLine": "Equipe docente IT-214, com dados do PMAJ (Produto 03) e © colaboradores do OpenStreetMap",
+    "usageBasis": "Figura elaborada pela equipe docente com as coordenadas e notas da tabela do ranking geral do PMAJ (Produto 03, seção 3.3.2) e dados do OpenStreetMap sob a ODbL.",
+    "license": "Material didático da IT-214; dados do OpenStreetMap sob a Open Database License (ODbL).",
+    "summary": "Aplicação do critério do PMAJ que exclui o sítio a menos de 4 km de outro de nota maior; sobram os sítios 1, 2, 6, 13, 16 e 20.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Mapa de Jacareí com seis sítios numerados em azul, cada um com um círculo tracejado de 4 km, e os demais sítios em cinza dentro desses círculos.",
+    "sha256": "C0244CBC58DE5222C36BE7FA01344CD1C80129C411A224CC7E8B9D0015BDDC5D"
+  },
+  {
+    "id": "e11-pmaj-densidade",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      2
+    ],
+    "title": "Densidade populacional de Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-densidade.png",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 41,
+    "sourceFigure": "4.3",
+    "creditLine": "PMAJ, Produto 05, fig. 4.3 (ITA e Prefeitura de Jacareí, 2025), com dados do IBGE (2010)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Densidade populacional em habitantes por hectare, em quatro faixas, com dados do IBGE de 2010.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Mapa do município de Jacareí em tons de cinza, mais escuros no centro, onde a densidade chega a 48 a 62 habitantes por hectare.",
+    "sha256": "D35C618BA4CE84A90DB0595EE3CA6E989D0CDF0E364963763C7A0750724116FD"
+  },
+  {
+    "id": "e11-pmaj-regioes",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      3
+    ],
+    "title": "Regiões administrativas de Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-regioes.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 39,
+    "sourceFigure": "4.2",
+    "creditLine": "PMAJ, Produto 05, fig. 4.2 (Prefeitura Municipal de Jacareí, 2025), sobre mapa-base do OpenStreetMap",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "As oito regiões administrativas do município definidas pela Lei Municipal nº 5.867/2014.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Mapa regional com o município de Jacareí dividido em oito regiões coloridas, Central, Norte, Sul, Leste, Oeste, Sudoeste, Noroeste e Sudeste, ao sul de São José dos Campos.",
+    "sha256": "CBD3F32D7C0FDA7F9E2627447A8D76A1EE160D3BEAA04C4FBF33C066A2E8EA93"
+  },
+  {
+    "id": "e11-mesa-manual",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Capa do Manual de Apoio à Prospecção de Sítios Aeroportuários Regionais",
+    "assetPath": "/images/presentations/e11/e11-mesa-manual.jpg",
+    "kind": "document-cover",
+    "audience": "public",
+    "creator": "Ministério da Infraestrutura — Secretaria Nacional de Aviação Civil",
+    "sourceUrl": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/transporte-aereo/minframanuallivro0607.pdf",
+    "creditLine": "SAC/MInfra (2021), Manual de Apoio à Prospecção de Sítios Aeroportuários Regionais",
+    "usageBasis": "Publicação oficial do Governo Federal do Brasil; licença aberta não declarada no documento; capa reproduzida com atribuição para finalidade didática.",
+    "license": "Publicação oficial do Governo Federal do Brasil; licença aberta não declarada.",
+    "summary": "Capa do manual que apresenta a metodologia MESA de escolha de sítios aeroportuários regionais.",
+    "relations": [
+      "activity:E11"
+    ],
+    "alt": "Capa verde-escura com o título Manual de apoio à prospecção de sítios aeroportuários regionais sobre um mapa topográfico e a foto de um pátio de aeroporto.",
+    "sha256": "6C5437F16922D004F1FA3CF174E8D2E123C778BD3B9F56AC9979214D90581CF6"
+  },
+  {
+    "id": "e11-pmaj-macrozonas",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      8
+    ],
+    "title": "Macrozonas urbanas de Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-macrozonas.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 23,
+    "sourceFigure": "2.4",
+    "creditLine": "PMAJ, Produto 03, fig. 2.4 (ITA e Prefeitura de Jacareí, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "As quatro macrozonas da área urbana usadas pelos técnicos da SEMOB para indicar os sítios.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Mapa da área urbana de Jacareí com quatro manchas coloridas, vermelha a oeste, azul e amarela a nordeste e verde ao sul, cortadas pelas rodovias.",
+    "sha256": "82F73D302C8A43E1999EE3BD38761F299072BE84E6A12A63F1CDC0346345B47A"
+  },
+  {
+    "id": "e11-pmaj-pesos",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      10
+    ],
+    "title": "Pesos dos critérios por grupo de especialistas",
+    "assetPath": "/images/presentations/e11/e11-pmaj-pesos.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 35,
+    "sourceFigure": "3.2",
+    "creditLine": "PMAJ, Produto 03, fig. 3.2 (ITA e Prefeitura de Jacareí, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Peso médio dos oito critérios, calculado pelo AHP, para os grupos ITA, Roxo e Vermelho.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Três gráficos de barras lado a lado, ITA, roxo e vermelho, com oito barras coloridas cada; a barra rosa da segurança é a mais alta nos três.",
+    "sha256": "C8DB95C879FC4E3ADAD58F2F8C2AC2E25EDB1370E977033349BDBFDE76A51351"
+  },
+  {
+    "id": "e11-pmaj-atracao",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      13
+    ],
+    "title": "Atração de viagens por zona em Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-atracao.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 40,
+    "sourceFigure": "3.5",
+    "creditLine": "PMAJ, Produto 03, fig. 3.5 (ITA e Prefeitura de Jacareí, 2025); mapa-base © OpenStreetMap e CARTO",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Zonas da matriz origem-destino de Jacareí em tons de cinza pela atração de viagens em transporte individual, com os sítios indicados.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Mapa de Jacareí com zonas em cinza, mais escuras no centro, e pontos numerados dos sítios espalhados sobre elas.",
+    "sha256": "B31AB7823DD3E9AAAEC0CDB3FABB2222EE1F6B4E1B30DE54AFB917CAEA139445"
+  },
+  {
+    "id": "e11-pmaj-empregos",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      13
+    ],
+    "title": "Empregos por zona em Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-empregos.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto03",
+    "sourcePage": 42,
+    "sourceFigure": "3.7",
+    "creditLine": "PMAJ, Produto 03, fig. 3.7 (ITA e Prefeitura de Jacareí, 2025); mapa-base © OpenStreetMap e CARTO",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Zonas de Jacareí em tons de cinza pelo número de empregos, com os sítios indicados.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto03"
+    ],
+    "alt": "Mapa de Jacareí com zonas em cinza pelo número de empregos, algumas grandes zonas cinza a leste e no centro, e os pontos dos sítios.",
+    "sha256": "EDEA29523A242B2953AF35F25EB5C6732A6E6737BC9901C27994B302DCCD58C3"
+  },
+  {
+    "id": "e11-pmaj-sbsj",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Superfície horizontal externa do SBSJ sobre Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-sbsj.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 98,
+    "sourceFigure": "8.5",
+    "creditLine": "PMAJ, Produto 05, fig. 8.5 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Superfície horizontal externa de proteção do aeródromo de São José dos Campos, a 145 m, sobre o território de Jacareí.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite com o limite de Jacareí em amarelo e um grande círculo marrom translúcido cobrindo a parte leste do município.",
+    "sha256": "34F3A5D5357FB23A4B23B9AD2C09FF721E7596DA41E09D0AF69AD1F69E8B15EA"
+  },
+  {
+    "id": "e11-pmaj-exclusao",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Áreas de exclusão para vertiportos",
+    "assetPath": "/images/presentations/e11/e11-pmaj-exclusao.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 99,
+    "sourceFigure": "8.6",
+    "creditLine": "PMAJ, Produto 05, fig. 8.6 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Mapa consolidado das áreas onde não se recomenda instalar vertiportos por restrições ambientais, de infraestrutura ou de espaço aéreo.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite de um trecho urbano quase todo coberto por manchas vermelhas de exclusão, com poucas áreas livres.",
+    "sha256": "7E5766D9155459CA45F1EF04A7A593D35C57357E7E777BDF7206C39D4E531975"
+  },
+  {
+    "id": "e11-pmaj-area-viavel",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Área viável do VP Rodoviária",
+    "assetPath": "/images/presentations/e11/e11-pmaj-area-viavel.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 100,
+    "sourceFigure": "8.7",
+    "creditLine": "PMAJ, Produto 05, fig. 8.7 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Área viável com círculo de 100 m de raio em volta do ponto central e fixos de chegada e saída.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite de um terreno descampado com um círculo azul de 100 m, oito linhas radiais e pontos verdes de fixos de chegada e saída na borda.",
+    "sha256": "CFEAF78AA116B92BAC4D066C7B0AD51C5D2321E992627DC44CD54D91E4350B06"
+  },
+  {
+    "id": "e11-pmaj-quatro-vp",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      18
+    ],
+    "title": "Quatro vertiportos em estudo em Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-quatro-vp.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 135,
+    "sourceFigure": "13.1",
+    "creditLine": "PMAJ, Produto 05, fig. 13.1 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Localização do VP Liberdade, do VP Rodoviária, do VP Villa Branca e do VP Mário Covas, com torres, vias, ferrovias, cursos d’água e APPs.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Mapa com quatro marcadores azuis de vertiporto, o rio Paraíba do Sul em azul, manchas verdes de APP e símbolos vermelhos de torres.",
+    "sha256": "31040FBA79DA1960F92F18726CE7F611B366B94E3111685E576864BC250517B9"
+  },
+  {
+    "id": "e11-pmaj-rampa-liberdade",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Superfície de aproximação e decolagem do VP Liberdade",
+    "assetPath": "/images/presentations/e11/e11-pmaj-rampa-liberdade.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 137,
+    "sourceFigure": "13.4",
+    "creditLine": "PMAJ, Produto 05, fig. 13.4 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Superfície de aproximação e decolagem com raio de 1.220 m e rampa de 12,5% em volta do VP Liberdade.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite com um círculo colorido de 1.220 m de raio, do vermelho no centro ao azul na borda, em volta do vertiporto, cortado pelo rio.",
+    "sha256": "3D22E65663F3C203B48439C4800B1B4C3027A0664A81EB092A6EBBCE3AC30AF4"
+  },
+  {
+    "id": "e11-pmaj-perfil-liberdade",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Perfil de um corredor do VP Liberdade",
+    "assetPath": "/images/presentations/e11/e11-pmaj-perfil-liberdade.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 137,
+    "sourceFigure": "13.5",
+    "creditLine": "PMAJ, Produto 05, fig. 13.5 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Comparação entre a superfície teórica de aproximação e decolagem e o relevo ao longo de um corredor.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Gráfico de altitude por distância horizontal com uma linha vermelha subindo de cerca de 575 para 720 m e uma linha verde quase plana abaixo dela.",
+    "sha256": "8DCB3209A9F2EF3A7129CC2FC9B712F54AA11FCD627FFDD6F82EA12D6D622AF9"
+  },
+  {
+    "id": "e11-pmaj-ruido-liberdade",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      20
+    ],
+    "title": "Curvas de ruído do VP Liberdade",
+    "assetPath": "/images/presentations/e11/e11-pmaj-ruido-liberdade.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 143,
+    "sourceFigure": "13.15",
+    "creditLine": "PMAJ, Produto 05, fig. 13.15 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Curvas de 75 dB, com 100 m de raio, e de 65 dB, com 300 m, em volta do VP Liberdade.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite com dois círculos, vermelho e laranja, em volta do vertiporto, sobre lotes residenciais em rosa e o rio em azul.",
+    "sha256": "D56BD3899ADD9F6B8D1ED408E4009A209562050B9E8C4C06196170DDAE7FDA06"
+  },
+  {
+    "id": "e11-pmaj-ruido-rodoviaria",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      20
+    ],
+    "title": "Curvas de ruído do VP Rodoviária",
+    "assetPath": "/images/presentations/e11/e11-pmaj-ruido-rodoviaria.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 143,
+    "sourceFigure": "13.16",
+    "creditLine": "PMAJ, Produto 05, fig. 13.16 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Curvas de 75 dB e de 65 dB em volta do VP Rodoviária.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Imagem de satélite com dois círculos, vermelho e laranja, em volta do vertiporto, sobre um terreno aberto e lotes residenciais em rosa à direita.",
+    "sha256": "98B428BD38BE11E9AE8CD0A86B551B80E1DE6F46AAABFFF30E414125B6FB1D56"
+  },
+  {
+    "id": "e11-pmaj-corredores",
+    "presentationSlug": "e11-selecao-sitios",
+    "slideNumbers": [
+      21
+    ],
+    "title": "Corredores aéreos urbanos entre os vertiportos de Jacareí",
+    "assetPath": "/images/presentations/e11/e11-pmaj-corredores.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe técnica do ITA — Plano de Mobilidade Aérea de Jacareí",
+    "sourceDocumentId": "pmaj-produto05",
+    "sourcePage": 146,
+    "sourceFigure": "14.1",
+    "creditLine": "PMAJ, Produto 05, fig. 14.1 (equipe ITA, 2025)",
+    "usageBasis": "Figura do relatório técnico do PMAJ, produzido pelo ITA para a Prefeitura de Jacareí sob coordenação do Prof. Marcelo Xavier Guterres, responsável pela disciplina. Divulgação didática autorizada pela equipe docente; o relatório não é distribuído pelo portal.",
+    "license": "Direitos do ITA e da Prefeitura de Jacareí; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Proposta de malha de corredores urbanos ligando os quatro vertiportos em estudo.",
+    "relations": [
+      "activity:E11",
+      "source:pmaj-produto05"
+    ],
+    "alt": "Mapa urbano com linhas vermelhas de corredor ligando quatro marcadores de vertiporto, entre residências em rosa, cursos d’água e pontos de escolas e postos de saúde.",
+    "sha256": "C0F469133A29451FF10535881AC3FCBF61291812D6D7D404606B7C79F74C9197"
   }
 ]
