@@ -1084,5 +1084,118 @@
       "Equipe docente IT-214"
     ],
     "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito."
+  },
+  {
+    "slug": "e11-selecao-sitios",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Usa figuras dos relatórios técnicos do Plano de Mobilidade Aérea de Jacareí (ITA e Prefeitura de Jacareí), divulgadas por autorização da equipe docente, e a capa do manual da MESA (SAC/MInfra), publicação oficial. Mapas, gráficos e exemplos de cálculo são elaborações da equipe docente com dados do PMAJ e do OpenStreetMap (ODbL). Os relatórios do PMAJ não são distribuídos pelo portal.",
+    "activityId": "E11",
+    "title": "Seleção de sítio: o caso de Jacareí",
+    "subtitle": "Critérios, AHP, ranking e restrições na escolha de sítios para vertiportos no Plano de Mobilidade Aérea de Jacareí",
+    "date": "2026-10-20",
+    "durationMinutes": 180,
+    "slideCount": 25,
+    "objectives": [
+      "Descrever as etapas da seleção de sítios vertiportuários adaptada da MESA no Plano de Mobilidade Aérea de Jacareí.",
+      "Calcular os pesos de critérios pelo AHP, verificar a consistência dos julgamentos e obter a nota de cada sítio.",
+      "Interpretar o ranking dos sítios e o filtro espacial que transforma a lista numa rede de vertiportos.",
+      "Relacionar o sítio com áreas de exclusão, superfícies de proteção, ruído, espaço aéreo e instrumentos municipais."
+    ],
+    "sections": [
+      "Contexto",
+      "Método",
+      "Primeira rodada",
+      "Análise do sítio"
+    ],
+    "resourceIds": [
+      "cityam-2024-geospatial-lls",
+      "faa-2024-eb-105a-vertiport-design",
+      "easa-2022-vertiport-design-pts",
+      "it214-2026-2-plano-ensino"
+    ],
+    "references": [
+      {
+        "shortTitle": "SAC/MInfra (2021)",
+        "url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/transporte-aereo/minframanuallivro0607.pdf",
+        "citation": "Brasil. Ministério da Infraestrutura. Secretaria Nacional de Aviação Civil. Manual de apoio à prospecção de sítios aeroportuários regionais. Brasília: MInfra, 2021. Aprovado pela Portaria nº 837, de 13 de julho de 2021.",
+        "purpose": "Metodologia MESA, base do método de seleção de sítios do PMAJ."
+      },
+      {
+        "shortTitle": "Alves et al. (2020)",
+        "url": "https://doi.org/10.1016/j.jairtraman.2020.101888",
+        "citation": "Alves, C. J. P.; Silva, E. J.; Müller, C.; Borille, G. M. R.; Guterres, M. X.; Arraut, E. M.; Peres, M. S.; Santos, R. J. Towards an objective decision-making framework for regional airport site selection. Journal of Air Transport Management, v. 89, 101888, 2020.",
+        "purpose": "Descrição científica da MESA: critérios eliminatórios, de pontuação, AHP e SIG."
+      },
+      {
+        "shortTitle": "Saaty (2008)",
+        "url": "https://doi.org/10.1504/IJSSCI.2008.017590",
+        "citation": "Saaty, T. L. Decision making with the analytic hierarchy process. International Journal of Services Sciences, v. 1, n. 1, p. 83–98, 2008.",
+        "purpose": "Escala de comparação, vetor de prioridades e razão de consistência do AHP."
+      },
+      {
+        "resourceId": "cityam-2024-geospatial-lls",
+        "shortTitle": "Mladenović et al. (2024)",
+        "citation": "Mladenović, M. N.; Niemi, L.; Saif, M. A.; Honkavaara, E. Development of a geospatial decision-support tool for Urban Air Mobility landing and launch site location planning. CITYAM WP 1.4. Aalto University; Finnish Geospatial Research Institute, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Análise multicritério por sobreposição ponderada em SIG, para comparação com o PMAJ."
+      },
+      {
+        "resourceId": "faa-2024-eb-105a-vertiport-design",
+        "shortTitle": "FAA (2024)",
+        "citation": "Federal Aviation Administration. Engineering Brief No. 105A: Vertiport Design, Supplemental Guidance to Advisory Circular 150/5390-2D. Washington, DC: FAA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Dimensões da FATO e da área de segurança e rampa de 12,5%."
+      },
+      {
+        "resourceId": "easa-2022-vertiport-design-pts",
+        "shortTitle": "EASA (2022)",
+        "citation": "European Union Aviation Safety Agency. Prototype Technical Specifications for the Design of VFR Vertiports for Operation with Manned VTOL-Capable Aircraft Certified in the Enhanced Category (PTS-VPT-DSN). Colônia: EASA, 2022.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Dimensões da FATO, da TLOF e da área de segurança na comparação com a FAA."
+      },
+      {
+        "shortTitle": "OpenStreetMap (2026)",
+        "url": "https://www.openstreetmap.org/copyright",
+        "citation": "OpenStreetMap contributors. Limites municipais, hidrografia, rodovias, ferrovias e pista do SBSJ. Dados sob a Open Database License (ODbL), consultados em outubro de 2026.",
+        "purpose": "Base dos mapas elaborados pela equipe docente."
+      },
+      {
+        "resourceId": "it214-2026-2-plano-ensino",
+        "shortTitle": "IT-214 (2026)",
+        "citation": "Guterres, M. X. Plano de ensino IT-214 — Mobilidade Aérea Urbana, 2026/2. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Tema e objetivo do encontro E11."
+      }
+    ],
+    "authors": [
+      "Equipe docente IT-214"
+    ],
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito.",
+    "sourceDocuments": [
+      {
+        "id": "pmaj-produto03",
+        "title": "Plano de Mobilidade Aérea de Jacareí — Produto 03: seleção de sítios vertiportuários, primeira rodada",
+        "authors": [
+          "Equipe técnica do ITA, coord. Marcelo Xavier Guterres"
+        ],
+        "source": "PlanMob Produto 03.pdf, fornecido diretamente pelo usuário",
+        "versionDate": "2025-01-08",
+        "publication": "Plano de Mobilidade Aérea de Jacareí — ITA e Prefeitura Municipal de Jacareí",
+        "sha256": "0F9D315FCF082F5FCFDC530B01BD584BC638FF16060064D982C2AFC667E1EAEC",
+        "distribution": "Relatório técnico não distribuído pelo portal; apenas as figuras e dados citados nesta aula são divulgados, por autorização da equipe docente."
+      },
+      {
+        "id": "pmaj-produto05",
+        "title": "Plano de Mobilidade Aérea de Jacareí — Produto 05: plano municipal de mobilidade urbana aérea",
+        "authors": [
+          "Equipe técnica do ITA, coord. Marcelo Xavier Guterres"
+        ],
+        "source": "PlanMob Produto 05_final.pdf, fornecido diretamente pelo usuário",
+        "versionDate": "2025-08-08",
+        "publication": "Plano de Mobilidade Aérea de Jacareí — ITA e Prefeitura Municipal de Jacareí",
+        "sha256": "385F425AC7D0731E3788528BD3786D16AB6921A36CF6CF85851BBCB726F66610",
+        "distribution": "Relatório técnico não distribuído pelo portal; apenas as figuras e dados citados nesta aula são divulgados, por autorização da equipe docente."
+      }
+    ]
   }
 ]

@@ -158,7 +158,7 @@
   },
   {
     "code": "E11", "meeting": 11, "date": "2026-10-20", "type": "class", "status": "scheduled",
-    "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
+    "resourceIds": ["cityam-2024-geospatial-lls", "faa-2024-eb-105a-vertiport-design", "easa-2022-vertiport-design-pts", "it214-2026-2-plano-ensino"], "presentationSlug": "e11-selecao-sitios",
     "theme": "Escolha e localização de sítios",
     "objective": "Integrar acessibilidade, inserção urbana, restrições aeronáuticas e métodos multicritério na avaliação de alternativas.",
     "deliverable": "Matriz preliminar de avaliação de sítios.",
