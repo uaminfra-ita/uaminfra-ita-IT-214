@@ -173,7 +173,7 @@
     "resourceIds": [], "presentationSlug": null,
     "theme": "Meteorologia, disponibilidade operacional e Seminário Artigo 3",
     "objective": "Relacionar vento, rajadas, chuva, teto, visibilidade, temperatura, densidade e condições VFR/IFR à confiabilidade operacional.",
-    "deliverable": "Metodologia, dados, estudo de caso, métricas e resultados preliminares.",
+    "deliverable": "Artigo 3 com metodologia e resultados preliminares.",
     "checkpoint": "CP3",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
@@ -183,6 +183,18 @@
   },
   {
     "code": "E13", "meeting": 13, "date": "2026-11-03", "type": "class", "status": "scheduled",
+    "resourceIds": [], "presentationSlug": null,
+    "theme": "Processamento de imagens obtidas por drones e aplicações práticas",
+    "objective": "Aula do Dr. Harley sobre processamento de imagens obtidas por drones e suas aplicações práticas, com o desenvolvimento de uma ferramenta para processamento simplificado dessas imagens.",
+    "deliverable": "Sem entregável nesta aula.",
+    "submission": {
+      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
+      "maxFiles": 5, "maxFileSizeMb": 20,
+      "acceptedExtensions": ["*"]
+    }
+  },
+  {
+    "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
     "theme": "Ruído aeronáutico e aceitação social",
     "objective": "Introduzir métricas de ruído, percepção pública, efeito NIMBY, mitigação por rota e sítio e limites da ideia de eVTOL silencioso.",
@@ -194,23 +206,11 @@
     }
   },
   {
-    "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
-    "resourceIds": ["nrel-2023-vertiport-electrical", "easa-2022-vertiport-design-pts", "faa-2024-eb-105a-vertiport-design"], "presentationSlug": null,
-    "theme": "Energia, recarga, combate a incêndio, fauna e meio ambiente",
-    "objective": "Integrar subestação, armazenamento, redundância, tempo de solo, bateria, resposta a emergência, risco aviário e compatibilidade ambiental.",
-    "deliverable": "Estimativa de demanda energética e matriz de riscos de incêndio, fauna e ambiente.",
-    "submission": {
-      "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
-      "maxFiles": 5, "maxFileSizeMb": 20,
-      "acceptedExtensions": ["*"]
-    }
-  },
-  {
     "code": "E15", "meeting": 15, "date": "2026-11-17", "type": "class", "status": "scheduled",
-    "resourceIds": ["cityam-2024-geospatial-lls"], "presentationSlug": null,
-    "theme": "Oficina QGIS, Python, GitHub e integração de dados",
-    "objective": "Usar mapas, buffers, camadas, restrições, população e demanda em uma organização reprodutível.",
-    "deliverable": "Mapa ou notebook simples do estudo de caso.",
+    "resourceIds": [], "presentationSlug": null,
+    "theme": "Submissão de artigos e entrega do artigo final",
+    "objective": "Aula do Prof. Rodrigo Mollo Furlan sobre submissão de artigos científicos e entrega do artigo final.",
+    "deliverable": "Artigo final completo, com resumo, introdução, literatura, método, resultados, discussão, conclusão e referências.",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
@@ -220,9 +220,9 @@
   {
     "code": "E16", "meeting": 16, "date": "2026-11-24", "type": "checkpoint", "status": "scheduled",
     "resourceIds": [], "presentationSlug": null,
-    "theme": "Apresentação do artigo científico completo",
+    "theme": "Apresentação final do artigo científico",
     "objective": "Apresentar um artigo alinhado a uma lacuna da literatura UAM e à pesquisa individual.",
-    "deliverable": "Artigo completo com resumo, introdução, literatura, método, resultados, discussão, conclusão e referências.",
+    "deliverable": "Apresentação final do artigo entregue em 17/11.",
     "checkpoint": "CP4",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,

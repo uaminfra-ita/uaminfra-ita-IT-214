@@ -72,3 +72,7 @@
 /* Rótulos mais largos nas etapas numeradas */
 .sit-deck .dem-steps-narrow li { grid-template-columns: 48px 205px 1fr; }
 .sit-deck .sit-law article { min-height: 330px; }
+
+/* Próximos encontros com seis datas */
+.sit-deck .sit-next { grid-template-rows: repeat(6, 1fr); gap: 8px; }
+.sit-deck .sit-next article { padding: 6px 30px; }

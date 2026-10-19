@@ -218,7 +218,7 @@ export default function E11PresentationPage() {
       ]}/></div></div>
     </Slide>
 
-    <Slide kicker="Análise do sítio" step={3} title="Ruído: curvas de 75 e 65 dB" source="Fonte: PMAJ, Produto 05, seção 13.5 e fig. 13.15 e 13.16 (ITA e Prefeitura de Jacareí, 2025), por analogia com o RBAC 161 da ANAC." notes="Sem norma de ruído para vertiporto, o plano usou a de helipontos: curva de 75 dB com 100 m de raio e de 65 dB com 300 m, a partir do centro do vertiporto. Pedir à turma que compare o que fica dentro das curvas: lotes residenciais em rosa, escolas e postos de saúde. Ruído volta com mais detalhe na E13, em 03/11.">
+    <Slide kicker="Análise do sítio" step={3} title="Ruído: curvas de 75 e 65 dB" source="Fonte: PMAJ, Produto 05, seção 13.5 e fig. 13.15 e 13.16 (ITA e Prefeitura de Jacareí, 2025), por analogia com o RBAC 161 da ANAC." notes="Sem norma de ruído para vertiporto, o plano usou a de helipontos: curva de 75 dB com 100 m de raio e de 65 dB com 300 m, a partir do centro do vertiporto. Pedir à turma que compare o que fica dentro das curvas: lotes residenciais em rosa, escolas e postos de saúde. Ruído volta com mais detalhe na E14, em 10/11.">
       <div className="vt-col vt-col-gap"><div className="vt-split vt-split-even ops-case-pair"><Media assetId="e11-pmaj-ruido-liberdade" caption="VP Liberdade: curvas de 75 dB (100 m) e 65 dB (300 m)."/><Media assetId="e11-pmaj-ruido-rodoviaria" caption="VP Rodoviária: as mesmas curvas."/></div>
       <p className="vt-conclusion">Mesmas curvas, vizinhanças diferentes: o que fica dentro de cada círculo?</p></div>
     </Slide>
@@ -238,7 +238,7 @@ export default function E11PresentationPage() {
     </Slide>
 
     <Slide kicker="Próximos passos" title="Próximos encontros" notes="A equipe confirma pelo grupo da disciplina qualquer mudança de calendário.">
-      <div className="vt-next"><article><b>20/10, até 23h59</b><p>Entrega da atividade da matriz origem-destino.</p></article><article><b>27/10 · CP3</b><p>Meteorologia e disponibilidade operacional; Seminário Artigo 3.</p></article><article><b>03/11</b><p>Ruído aeronáutico e aceitação social.</p></article><article><b>10/11</b><p>Energia, recarga, combate a incêndio, fauna e meio ambiente.</p></article></div>
+      <div className="vt-next sit-next"><article><b>20/10, até 23h59</b><p>Entrega da atividade da matriz origem-destino.</p></article><article><b>27/10 · CP3</b><p>Entrega do Artigo 3, com metodologia e resultados preliminares.</p></article><article><b>03/11</b><p>Aula do Dr. Harley: processamento de imagens obtidas por drones e aplicações práticas.</p></article><article><b>10/11</b><p>Ruído aeronáutico e aceitação social.</p></article><article><b>17/11</b><p>Entrega do artigo final e aula sobre submissão, com o Prof. Rodrigo.</p></article><article><b>24/11 · CP4</b><p>Apresentação final.</p></article></div>
     </Slide>
 
     <Slide kicker="Referências" title="Referências" notes="Os relatórios do PMAJ são técnicos e não estão na Biblioteca da disciplina.">
