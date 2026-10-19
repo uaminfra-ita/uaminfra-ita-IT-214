@@ -219,7 +219,7 @@
       "rightsNote": "Especificação protótipo pública, de natureza não vinculante, mantida com autoria e condições de uso declaradas pela EASA.",
       "summary": "Oferece orientação técnica para características físicas, volumes livres de obstáculos, auxílios visuais, iluminação e operação VFR de vertiportos para aeronaves VTOL tripuladas.",
       "tags": ["vertiportos", "EASA", "FATO", "obstáculos"],
-      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11", "E14"],
+      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11"],
       "sha256": "83C14AFD20180093D985495078DEB73C4EFACB8FCA029F447BC9BA2FB6300309"
     },
     {
@@ -237,7 +237,7 @@
       "rightsNote": "Versão oficial de 27 de dezembro de 2024 disponibilizada pela FAA como orientação suplementar vigente.",
       "summary": "Define orientação provisória para planejamento e projeto de vertiportos, incluindo geometria, estacionamento, downwash/outwash, marcações, iluminação, energia e segurança do sítio.",
       "tags": ["vertiportos", "FAA", "projeto", "EB 105A"],
-      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11", "E14"],
+      "relatedActivityIds": ["E03", "E07", "E08", "E09", "E11"],
       "sha256": "4EAA3696D9E527BC58CC391E78F45EB3C668E609344E7C520761960688208AEE"
     },
     {
@@ -256,7 +256,7 @@
       "rightsNote": "O relatório possui materiais de terceiros identificados internamente; a capa inclui fotografia licenciada.",
       "summary": "Dimensiona requisitos de potência, recarga, armazenamento, qualidade de energia e integração à rede para diferentes cenários operacionais de vertiportos.",
       "tags": ["vertiportos", "energia", "recarga", "rede elétrica"],
-      "relatedActivityIds": ["E02", "E07", "E08", "E14"],
+      "relatedActivityIds": ["E02", "E07", "E08"],
       "sha256": "D2932E16FD9AF5C9BA48F9489A84A605AD17B08A627A91B5A97B509562DC5B5E"
     },
     {
@@ -274,7 +274,7 @@
       "rightsNote": "Cópia correspondente ao relatório disponibilizado publicamente pelo programa Interreg Baltic Sea Region.",
       "summary": "Apresenta um processo geoespacial multicritério para selecionar locais de pouso e lançamento, combinando restrições, participação de atores e avaliação transparente de alternativas.",
       "tags": ["GIS", "localização", "decisão multicritério", "drones"],
-      "relatedActivityIds": ["E02", "E11", "E15"],
+      "relatedActivityIds": ["E02", "E11"],
       "sha256": "32F3173799671D577B6C9AE59C3F0C4B5EEF70B9FBF834CBAF3A4E6AEE430E93"
     },
     {
