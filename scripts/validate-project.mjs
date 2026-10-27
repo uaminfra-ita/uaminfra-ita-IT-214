@@ -171,7 +171,8 @@ brandAssets.forEach((asset) => {
 });
 
 const rootLayout = fs.readFileSync(path.join(root, 'app', 'layout.jsx'), 'utf8');
-brandAssets.forEach((asset) => assert.ok(rootLayout.includes(asset.assetPath), `${asset.id} não é usado no layout do portal.`));
+const presentationDeck = fs.readFileSync(path.join(root, 'components', 'PresentationDeck.jsx'), 'utf8');
+brandAssets.forEach((asset) => assert.ok(rootLayout.includes(asset.assetPath) || presentationDeck.includes(asset.assetPath), `${asset.id} não é usado no layout do portal nem nas apresentações.`));
 
 presentations.forEach((presentation) => {
   assert.ok(activityIds.has(presentation.activityId), `Atividade inexistente em ${presentation.slug}.`);

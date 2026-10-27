@@ -2321,5 +2321,293 @@
     ],
     "alt": "Mapa urbano com linhas vermelhas de corredor ligando quatro marcadores de vertiporto, entre residências em rosa, cursos d’água e pontos de escolas e postos de saúde.",
     "sha256": "C0F469133A29451FF10535881AC3FCBF61291812D6D7D404606B7C79F74C9197"
+  },
+  {
+    "id": "e12-iem-estacoes",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Página de download de METAR do Iowa Environmental Mesonet",
+    "assetPath": "/images/presentations/e12/e12-iem-estacoes.jpg",
+    "kind": "website-screenshot",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 5,
+    "creditLine": "Captura do Iowa Environmental Mesonet (21/10/2026)",
+    "usageBasis": "Captura de tela de site público, feita pelo Prof. Marcelo Saraiva Peres para a aula e reproduzida com indicação da fonte para fins didáticos.",
+    "license": "Captura de tela do site do Iowa Environmental Mesonet, para fins didáticos.",
+    "summary": "Formulário de download do IEM com a rede Brazil ASOS e o mapa das estações.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Página do Iowa Environmental Mesonet com o formulário de seleção de rede e estações e um mapa do Brasil com as estações marcadas.",
+    "sha256": "6FDDE3457D594977075D8DD0830B4848A009E6EAC94BF05C3392887882A94BCB"
+  },
+  {
+    "id": "e12-csv-sbsj-nevoeiro",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Trecho do CSV do Mesonet em um dia de nevoeiro em SBSJ",
+    "assetPath": "/images/presentations/e12/e12-csv-sbsj-nevoeiro.png",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 6,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Linhas do CSV do IEM de SBSJ em 15/07/2025, com horário em UTC e visibilidade em milhas.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Tabela de texto com as colunas valid, tmpc, dwpc, sknt, vsby, skyc1, skyl1 e wxcodes; entre 08:30 e 12:00 UTC a visibilidade fica em 0,12 mi com VV a 200 ft e FG.",
+    "sha256": "1BCBAF6D2E27CE46F9E613B4A30AA1F64860CB04C72D4F72D7D72D8433133116"
+  },
+  {
+    "id": "e12-redemet-painel",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      10
+    ],
+    "title": "Consulta de mensagens na REDEMET",
+    "assetPath": "/images/presentations/e12/e12-redemet-painel.png",
+    "kind": "website-screenshot",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 10,
+    "creditLine": "Captura da REDEMET, DECEA (21/10/2026)",
+    "usageBasis": "Captura de tela de site público, feita pelo Prof. Marcelo Saraiva Peres para a aula e reproduzida com indicação da fonte para fins didáticos.",
+    "license": "Captura de tela do site da REDEMET (DECEA), para fins didáticos.",
+    "summary": "Painel de consulta de METAR e TAF da REDEMET.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Página da REDEMET com o menu de produtos à esquerda e a área de consulta de mensagens meteorológicas.",
+    "sha256": "5F0581F8995CA98B666A0C60FAF05BC2073261CE1751863505D1E8D3C27A585B"
+  },
+  {
+    "id": "e12-tr-sbmt-mensal",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Temperatura média e média das máximas por mês no SBMT",
+    "assetPath": "/images/presentations/e12/e12-tr-sbmt-mensal.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 15,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Barras da temperatura média mensal e linha da média das máximas diárias no SBMT, 2016 a 2025.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Gráfico de barras azuis por mês com fevereiro destacado em laranja e uma linha acima com a média das máximas diárias.",
+    "sha256": "C5A8AE14E2B90BF398F4ADF8BA72DE5C8D823231964ED3523F9DA80910349D79"
+  },
+  {
+    "id": "e12-pairado-sbmt-hora",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Aumento da potência de pairado por hora do dia no SBMT",
+    "assetPath": "/images/presentations/e12/e12-pairado-sbmt-hora.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 17,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Aumento relativo da potência de pairado em relação ao nível do mar padrão, por hora local, no verão e no inverno.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Gráfico com duas curvas por hora do dia, laranja para o verão e azul para o inverno, com faixas sombreadas, ambas com máximo à tarde.",
+    "sha256": "57B210CC48CF6048E15340C4B6E14EC6EBEBAF72F476B1E6AA42B7D6F6D728C6"
+  },
+  {
+    "id": "e12-rosa-sbmt",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      20
+    ],
+    "title": "Rosa dos ventos do SBMT",
+    "assetPath": "/images/presentations/e12/e12-rosa-sbmt.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 20,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Rosa dos ventos do SBMT com o eixo da pista, 2016 a 2025.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Rosa dos ventos com pétalas azuis mais longas a leste e sudeste e uma linha laranja marcando o eixo da pista.",
+    "sha256": "FAEB0D9D1A263BA7F963F6F300177A0722FFA4BE026590CF727902881BE28CC2"
+  },
+  {
+    "id": "e12-declinacao-sbmt",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      21
+    ],
+    "title": "Declinação magnética e rumo da pista no SBMT",
+    "assetPath": "/images/presentations/e12/e12-declinacao-sbmt.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 21,
+    "creditLine": "M. S. Peres (2026), com dados do WMM 2025 e do AISWEB",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Esquema com o norte verdadeiro, o norte magnético e o rumo da pista 12 do SBMT.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Diagrama com duas setas de norte, verdadeiro e magnético, separadas por cerca de 22 graus, e o eixo da pista inclinado.",
+    "sha256": "3B94CAA57775D66EB3DFF56903E8293ACF9B256BDAB847FEF111B64D175209C3"
+  },
+  {
+    "id": "e12-vento-aerodromo-sbsp",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      23
+    ],
+    "title": "Um vento e as duas cabeceiras da pista 17R/35L de SBSP",
+    "assetPath": "/images/presentations/e12/e12-vento-aerodromo-sbsp.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 23,
+    "creditLine": "M. S. Peres (2026), com METAR de 21/10/2026",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Decomposição do vento de 170° e 9 kt nas componentes ao longo e através da pista, para as duas cabeceiras.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Diagrama da pista de Congonhas com a seta do vento e as componentes de proa, cauda e través para cada cabeceira.",
+    "sha256": "D1685DEE21CD3F2B0D164FB627DEAB0096A329E907ACBF2D672A8EE98FF57D56"
+  },
+  {
+    "id": "e12-rosas-4-aerodromos",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      26
+    ],
+    "title": "Rosas dos ventos de SBMT, SBSP, SBGR e SBSJ",
+    "assetPath": "/images/presentations/e12/e12-rosas-4-aerodromos.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 26,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Quatro rosas dos ventos, com o eixo da pista principal em laranja.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Quatro rosas dos ventos lado a lado, cada uma com uma linha laranja no eixo da pista e as porcentagens de vento de cauda por cabeceira.",
+    "sha256": "EF1A02ECA279BAE7E024C5B7EF0184CD442C6C17A7A9FD68E56C114EA5125149"
+  },
+  {
+    "id": "e12-vmc-hora-mes-sbmt",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      32
+    ],
+    "title": "Porcentagem de horas em VMC por hora e mês no SBMT",
+    "assetPath": "/images/presentations/e12/e12-vmc-hora-mes-sbmt.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 32,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Mapa de calor com a porcentagem de horas em VMC por hora local e mês, 2016 a 2025.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Mapa de calor em tons de azul com os meses nas colunas e as horas nas linhas; as células mais claras ficam no início da manhã, de junho a outubro.",
+    "sha256": "0682946A8D727E9EA18719DDF66462CF2470EB80C2D7D1A098AC7D893402B4AA"
+  },
+  {
+    "id": "e12-vmc-criterios",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      33
+    ],
+    "title": "VMC nos quatro aeródromos conforme o critério",
+    "assetPath": "/images/presentations/e12/e12-vmc-criterios.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 33,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Porcentagem das horas com boletim em VMC no SBMT, no SBSP, no SBGR e em SBSJ, pela ICA 100-12 e pelo VFR da FAA.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Gráfico de barras horizontais com dois valores por aeródromo, SBMT, SBSP, SBGR e SBSJ: barra clara para o VFR da FAA e barra escura para a ICA 100-12.",
+    "sha256": "8EDF8567E37D3DF9675806074BCF1EDBADCB71115AA3D7A6F6A0F7E659B5D701"
+  },
+  {
+    "id": "e12-neblina-noite-sbgr",
+    "presentationSlug": "e12-meteorologia",
+    "slideNumbers": [
+      36
+    ],
+    "title": "Uma noite de nevoeiro em SBGR",
+    "assetPath": "/images/presentations/e12/e12-neblina-noite-sbgr.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Marcelo Saraiva Peres",
+    "sourceDocumentId": "e12-meteorologia-pptx",
+    "sourcePage": 36,
+    "creditLine": "M. S. Peres (2026), com dados do IEM",
+    "usageBasis": "Figura da apresentação da aula preparada pelo Prof. Marcelo Saraiva Peres, publicada no portal a pedido da equipe docente.",
+    "license": "Material didático da IT-214; dados do Iowa Environmental Mesonet.",
+    "summary": "Temperatura, ponto de orvalho e visibilidade em SBGR nos dias 19 e 20/07/2024, com os períodos de BR e FG.",
+    "relations": [
+      "activity:E12",
+      "source:e12-meteorologia-pptx"
+    ],
+    "alt": "Dois gráficos por hora local: em cima, a temperatura cai até o ponto de orvalho à noite; embaixo, barras de visibilidade que caem quase a zero de madrugada, com uma faixa sombreada marcando o nevoeiro.",
+    "sha256": "E14742D31D73CFC0BF1028519CB26A2F4AA2419F8FC53501C501883885771F61"
   }
 ]

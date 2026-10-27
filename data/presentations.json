@@ -1197,5 +1197,91 @@
         "distribution": "Relatório técnico não distribuído pelo portal; apenas as figuras e dados citados nesta aula são divulgados, por autorização da equipe docente."
       }
     ]
+  },
+  {
+    "slug": "e12-meteorologia",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Conteúdo, figuras e notas são da apresentação preparada pelo Prof. Marcelo Saraiva Peres para a aula (E13_meteorologia_2026-10-27_aula_v3.pptx), reproduzidos sem alteração no formato do portal a pedido da equipe docente. As figuras usam METAR do Iowa Environmental Mesonet; duas são capturas de tela do IEM e da REDEMET.",
+    "activityId": "E12",
+    "title": "Meteorologia aeronáutica",
+    "subtitle": "Temperatura de referência, vento, VMC e IMC e neblina, com METAR",
+    "date": "2026-10-27",
+    "durationMinutes": 180,
+    "slideCount": 38,
+    "objectives": [
+      "Obter METAR de um aeródromo no Iowa Environmental Mesonet e decodificar os grupos do boletim.",
+      "Calcular a temperatura de referência pelo RBAC 154 e discutir seu uso no projeto de vertiportos.",
+      "Montar a rosa dos ventos e calcular as componentes de proa, través e cauda em relação ao eixo da pista.",
+      "Classificar os boletins em VMC e IMC pela ICA 100-12, comparar com as categorias da FAA e identificar nevoeiro."
+    ],
+    "sections": [
+      "Fontes de dados",
+      "Temperatura de referência",
+      "Vento",
+      "VMC e IMC",
+      "Neblina"
+    ],
+    "resourceIds": [
+      "faa-2024-eb-105a-vertiport-design",
+      "easa-2022-vertiport-design-pts"
+    ],
+    "references": [
+      {
+        "shortTitle": "IEM (2026)",
+        "url": "https://mesonet.agron.iastate.edu/request/download.phtml?network=BR__ASOS",
+        "citation": "Iowa Environmental Mesonet. ASOS/AWOS/METAR data download, rede Brazil ASOS (BR__ASOS). Iowa State University, acesso em 21/10/2026.",
+        "purpose": "Série de METAR dos aeródromos usada em todos os cálculos da aula."
+      },
+      {
+        "shortTitle": "REDEMET (2026)",
+        "url": "https://redemet.decea.mil.br",
+        "citation": "Departamento de Controle do Espaço Aéreo. Rede de Meteorologia do Comando da Aeronáutica (REDEMET). Produtos > Mensagens, 21/10/2026.",
+        "purpose": "Leitura oficial de METAR e TAF."
+      },
+      {
+        "shortTitle": "FAA AIM",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+        "citation": "Federal Aviation Administration. Aeronautical Information Manual, 7-1-7.",
+        "purpose": "Categorias de voo VFR, MVFR, IFR e LIFR."
+      },
+      {
+        "shortTitle": "NOAA WMM 2025",
+        "url": "https://www.ncei.noaa.gov/products/world-magnetic-model",
+        "citation": "NOAA National Centers for Environmental Information. World Magnetic Model 2025.",
+        "purpose": "Declinação magnética dos aeródromos."
+      },
+      {
+        "resourceId": "faa-2024-eb-105a-vertiport-design",
+        "shortTitle": "FAA (2024)",
+        "citation": "Federal Aviation Administration. Engineering Brief No. 105A: Vertiport Design. Washington, DC: FAA, 2024.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Pergunta para a turma sobre temperatura de projeto de vertiportos."
+      },
+      {
+        "resourceId": "easa-2022-vertiport-design-pts",
+        "shortTitle": "EASA (2022)",
+        "citation": "European Union Aviation Safety Agency. Prototype Technical Specifications for the Design of VFR Vertiports (PTS-VPT-DSN). Colônia: EASA, 2022.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Pergunta para a turma sobre temperatura de projeto de vertiportos."
+      }
+    ],
+    "authors": [
+      "Marcelo Saraiva Peres"
+    ],
+    "license": "Texto, figuras e organização: material didático da IT-214, do Prof. Marcelo Saraiva Peres. Capturas de tela: conforme o crédito de cada figura.",
+    "sourceDocuments": [
+      {
+        "id": "e12-meteorologia-pptx",
+        "title": "Meteorologia aeronáutica — apresentação da aula de 27/10/2026",
+        "authors": [
+          "Marcelo Saraiva Peres"
+        ],
+        "source": "E13_meteorologia_2026-10-27_aula_v3.pptx, fornecido diretamente pelo usuário em 2026-10-26",
+        "versionDate": "2026-10-26",
+        "publication": "IT-214 Mobilidade Aérea Urbana — ITA",
+        "sha256": "8865B667E349FA00D7C7E5538E84247266B5182CA17A514BE222A745D5E06366",
+        "distribution": "Apresentação da equipe docente; publicada no portal no formato das apresentações, com o mesmo conteúdo."
+      }
+    ]
   }
 ]

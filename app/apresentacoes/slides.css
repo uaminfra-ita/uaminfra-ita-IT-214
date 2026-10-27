@@ -43,7 +43,7 @@
 
 .slide-kicker { color: #0e7490; font-size: .7rem; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
 .slide-title { max-width: 70rem; margin-top: .75rem !important; color: #071426; font-weight: 900 !important; }
-.slide-source { position: absolute; bottom: 1.25rem; left: 5rem; right: 5rem; color: #64748b; font-size: .58rem !important; letter-spacing: .03em; }
+.slide-source { position: absolute; bottom: 1.25rem; left: 5rem; right: 11rem; color: #64748b; font-size: .58rem !important; letter-spacing: .03em; }
 .slide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; align-items: center; }
 .slide-card { border: 1px solid #dbe5ee; border-radius: 1rem; background: rgba(255,255,255,.86); padding: 1.25rem; box-shadow: 0 22px 55px -42px rgba(7,20,38,.65); }
 .slide-card strong { display: block; color: #071426; font-size: 1rem; }
@@ -629,3 +629,7 @@
   .e04-debug > div,
   .e04-delivery { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
+
+/* Símbolo do ITA no canto inferior direito de cada slide, à esquerda do número do slide. */
+.presentation-shell .reveal .slides section::after { content: ''; position: absolute; right: 150px; bottom: 16px; width: 96px; height: 37px; background: var(--ita-logo) no-repeat right center / contain; pointer-events: none; z-index: 5; }
+@media (max-width: 800px) { html:not(.print-pdf) .presentation-shell .reveal .slides section::after { display: none; } }
