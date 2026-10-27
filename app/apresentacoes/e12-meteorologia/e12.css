@@ -1,0 +1,39 @@
+/* E12: complementa os estilos da E06, da E07, da E08 e da E10 (tela de 1600 × 900). */
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-subtitle { margin: 6px 0 0; font-size: 26px; color: #0e7490; font-weight: 700; }
+.met-deck .met-cover { display: flex; flex-direction: column; justify-content: center; gap: 40px; height: 100%; max-width: 1150px; }
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-note { margin: 0; font-size: 20px; color: #475569; }
+.met-deck .met-code { margin: 0; background: #0b2942; color: #e2e8f0; padding: 18px 28px; font-size: 30px !important; font-family: 'JetBrains Mono', Menlo, Consolas, monospace; letter-spacing: 1px; }
+.met-deck .met-table th, .met-deck .met-table td { padding: 12px 16px; font-size: 21px; }
+.met-deck .vt-col > .met-fill { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.met-deck .met-fill .vt-media { flex: 1; }
+
+/* Painéis lado a lado; o destacado fica escuro */
+.met-deck .met-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; height: 100%; align-content: center; }
+.met-deck .met-panels-3 { grid-template-columns: repeat(3, 1fr); }
+.met-deck .met-panels article { background: #fff; border-top: 7px solid #0e7490; padding: 30px 34px; min-height: 320px; }
+.met-deck .met-panels h3 { margin: 0 0 16px; font-size: 28px !important; color: #0e7490; }
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-panels p { margin: 0; font-size: 24px; line-height: 1.45; }
+.met-deck .met-panels .met-panel-on { background: #0b2942; border-top-color: #22b8cf; }
+.met-deck .met-panels .met-panel-on h3 { color: #67e8f9; }
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-panels .met-panel-on p { color: #fff; }
+
+/* Comparação das fontes */
+.met-deck .met-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; height: 100%; align-content: center; }
+.met-deck .met-compare article { background: #fff; border-top: 7px solid #0e7490; padding: 28px 34px; }
+.met-deck .met-compare i { font-style: normal; font-size: 48px; font-weight: 900; color: #cdeef3; line-height: 1; }
+.met-deck .met-compare h3 { margin: 6px 0 18px; font-size: 32px !important; }
+.met-deck .met-compare dl { margin: 0; display: grid; gap: 6px; }
+.met-deck .met-compare dt { font-size: 16px; font-weight: 900; letter-spacing: 2px; color: #0e7490; margin-top: 12px; }
+.met-deck .met-compare dd { margin: 0; font-size: 23px; color: #334155; }
+
+/* Itens numerados */
+.met-deck .met-steps { align-content: center; height: 100%; gap: 22px; }
+.met-deck .met-steps li { grid-template-columns: 54px 260px 1fr; font-size: 25px; padding-bottom: 18px; }
+.met-deck .met-steps b { font-size: 26px; }
+
+/* Números grandes em coluna, ao lado do mapa */
+.met-deck .met-hero-col { grid-auto-flow: row; grid-auto-columns: auto; align-content: center; gap: 34px; }
+
+/* Contraste nos blocos escuros */
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-panels .met-panel-on h3 { color: #67e8f9 !important; }
+.presentation-shell.air-deck.met-deck .reveal .air-slide .met-code { color: #e2e8f0 !important; }

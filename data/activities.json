@@ -170,10 +170,10 @@
   },
   {
     "code": "E12", "meeting": 12, "date": "2026-10-27", "type": "checkpoint", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": [], "presentationSlug": "e12-meteorologia",
     "theme": "Meteorologia, disponibilidade operacional e Seminário Artigo 3",
     "objective": "Relacionar vento, rajadas, chuva, teto, visibilidade, temperatura, densidade e condições VFR/IFR à confiabilidade operacional.",
-    "deliverable": "Artigo 3 com metodologia e resultados preliminares.",
+    "deliverable": "Artigo 3 com metodologia e resultados preliminares. Atividade de meteorologia (temperatura de referência, vento, VMC, IMC e neblina de um aeródromo com METAR) até 03/11, às 23h59, na pasta da turma no Drive.",
     "checkpoint": "CP3",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
