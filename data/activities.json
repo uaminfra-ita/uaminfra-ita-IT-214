@@ -184,7 +184,7 @@
   {
     "code": "E13", "meeting": 13, "date": "2026-11-03", "type": "class", "status": "scheduled",
     "resourceIds": ["moraes-2026-fotogrametria-forense-parte1", "moraes-2026-processamento-imagens-drone-parte2"],
-    "resourceSection": "disciplina", "presentationSlug": null,
+    "resourceSection": "disciplina", "presentationSlug": "e13-drones-fotogrametria",
     "presentationResourceIds": ["moraes-2026-fotogrametria-forense-parte1", "moraes-2026-processamento-imagens-drone-parte2"],
     "theme": "Processamento de imagens obtidas por drones e aplicações práticas",
     "objective": "Aula convidada do Eng. Harley Angelo de Moraes, perito criminal federal e pesquisador do CENSIPAM: drones e fotogrametria forense na parte 1 e um software para montar mosaicos georreferenciados de imagens de drone na parte 2.",

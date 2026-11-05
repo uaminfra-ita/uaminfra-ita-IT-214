@@ -3059,5 +3059,3830 @@
     ],
     "alt": "Grade de nove mapas, três helipontos por três frotas, com manchas amarelas e verdes em volta de círculos tracejados.",
     "sha256": "4938611092276CAC67C7D40FFF81929F571790C4873409833D04F76A17917B64"
+  },
+  {
+    "id": "e13-p1-s001",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      1
+    ],
+    "title": "Parte 1, slide 1 — DRONES E A EVOLUÇÃO DA FOTOGRAMETRIA FORENSE",
+    "assetPath": "/images/presentations/e13/e13-p1-s001.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 1,
+    "sourceFigure": "slide 1",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 1",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 1 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 1 da parte 1 da aula convidada: DRONES E A EVOLUÇÃO DA FOTOGRAMETRIA FORENSE.",
+    "sha256": "66A50FE53D249C11DD72EC3D8ED78CC37344FF6E66B134821AF2E4E6E0C24D26"
+  },
+  {
+    "id": "e13-p1-s002",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      2
+    ],
+    "title": "Parte 1, slide 2 — O Novo Paradigma Operacional",
+    "assetPath": "/images/presentations/e13/e13-p1-s002.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 2,
+    "sourceFigure": "slide 2",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 2",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 2 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 2 da parte 1 da aula convidada: O Novo Paradigma Operacional.",
+    "sha256": "64D7AFF28ED674836CCE1A7228C9EE8AE43D7FE236B5B9F8319AA364DAA83CEA"
+  },
+  {
+    "id": "e13-p1-s003",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      3
+    ],
+    "title": "Parte 1, slide 3 — 5 Do MANC wngtra",
+    "assetPath": "/images/presentations/e13/e13-p1-s003.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 3,
+    "sourceFigure": "slide 3",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 3",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 3 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 3 da parte 1 da aula convidada: 5 Do MANC wngtra.",
+    "sha256": "4DD7F9884E8D14BE02209D42D24C01BE478090A03CB0DB6A42BEB6F49F6E5563"
+  },
+  {
+    "id": "e13-p1-s004",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      4
+    ],
+    "title": "Parte 1, slide 4 — ANOTODE 60.08:20",
+    "assetPath": "/images/presentations/e13/e13-p1-s004.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 4,
+    "sourceFigure": "slide 4",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 4",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 4 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 4 da parte 1 da aula convidada: ANOTODE 60.08:20.",
+    "sha256": "7F0FC66F5E023A786EF62586276B3F86AA2791F83F2995E28F2A76A8D998D2FB"
+  },
+  {
+    "id": "e13-p1-s005",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      5
+    ],
+    "title": "Parte 1, slide 5 — ALGTBINE",
+    "assetPath": "/images/presentations/e13/e13-p1-s005.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 5,
+    "sourceFigure": "slide 5",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 5",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 5 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 5 da parte 1 da aula convidada: ALGTBINE.",
+    "sha256": "F5BEBFD96358C78080141873F86B10A7F1D044CE8E1B9963E04C7B239D860B94"
+  },
+  {
+    "id": "e13-p1-s006",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      6
+    ],
+    "title": "Parte 1, slide 6 — As 3 Categorias de Operação",
+    "assetPath": "/images/presentations/e13/e13-p1-s006.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 6,
+    "sourceFigure": "slide 6",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 6",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 6 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 6 da parte 1 da aula convidada: As 3 Categorias de Operação.",
+    "sha256": "4425FC4D5EA5071C11E406EA7339C903A1558FB6DED6A4975E9AF036273BA302"
+  },
+  {
+    "id": "e13-p1-s007",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      7
+    ],
+    "title": "Parte 1, slide 7 — A Bolha de Segurança: Distanciamento e Espaço",
+    "assetPath": "/images/presentations/e13/e13-p1-s007.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 7,
+    "sourceFigure": "slide 7",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 7",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 7 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 7 da parte 1 da aula convidada: A Bolha de Segurança: Distanciamento e Espaço.",
+    "sha256": "2EE025AD456AC825A8A622E28F59BE8C380E6E60068023FBFC5B13555B0967B7"
+  },
+  {
+    "id": "e13-p1-s008",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      8
+    ],
+    "title": "Parte 1, slide 8 — Limites da Visão",
+    "assetPath": "/images/presentations/e13/e13-p1-s008.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 8,
+    "sourceFigure": "slide 8",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 8",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 8 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 8 da parte 1 da aula convidada: Limites da Visão.",
+    "sha256": "B321A09A6A2FD8EBEFE99948F0B352743A881CF0A90F7FBE67174B6BCED8A191"
+  },
+  {
+    "id": "e13-p1-s009",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      9
+    ],
+    "title": "Parte 1, slide 9 — Tempo Voa: Prazos de",
+    "assetPath": "/images/presentations/e13/e13-p1-s009.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 9,
+    "sourceFigure": "slide 9",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 9",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 9 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 9 da parte 1 da aula convidada: Tempo Voa: Prazos de.",
+    "sha256": "1339291EE0BD9A1071BBE689B53C2510D0AC00CCF82CF5044B8DCD5B00934835"
+  },
+  {
+    "id": "e13-p1-s010",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      10
+    ],
+    "title": "Parte 1, slide 10 — Check-In Autorizado",
+    "assetPath": "/images/presentations/e13/e13-p1-s010.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 10,
+    "sourceFigure": "slide 10",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 10",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 10 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 10 da parte 1 da aula convidada: Check-In Autorizado.",
+    "sha256": "D09A2A0F2C1F3BE9D9C7D0C6ABCA18D9B607F07B13B1C6410CEADFFA364E7243"
+  },
+  {
+    "id": "e13-p1-s011",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      11
+    ],
+    "title": "Parte 1, slide 11 — O Preço da Imprudência",
+    "assetPath": "/images/presentations/e13/e13-p1-s011.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 11,
+    "sourceFigure": "slide 11",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 11",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 11 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 11 da parte 1 da aula convidada: O Preço da Imprudência.",
+    "sha256": "CD5A492A61B8228877D551B25BFFCCF1A22564BE37741785E9FD42AFABE9244A"
+  },
+  {
+    "id": "e13-p1-s012",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      12
+    ],
+    "title": "Parte 1, slide 12 — O Acesso ao Espaço Aéreo em Missões",
+    "assetPath": "/images/presentations/e13/e13-p1-s012.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 12,
+    "sourceFigure": "slide 12",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 12",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 12 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 12 da parte 1 da aula convidada: O Acesso ao Espaço Aéreo em Missões.",
+    "sha256": "F174E734C670746EE75E79485371C7191EE36880509B4EC2FC728E52195E9911"
+  },
+  {
+    "id": "e13-p1-s013",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      13
+    ],
+    "title": "Parte 1, slide 13 — Prerrogativas Logísticas e Administrativas",
+    "assetPath": "/images/presentations/e13/e13-p1-s013.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 13,
+    "sourceFigure": "slide 13",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 13",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 13 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 13 da parte 1 da aula convidada: Prerrogativas Logísticas e Administrativas.",
+    "sha256": "58EE23624EEF3AF1DBB9BE9B132913796F9DD99DF93400094889C021313C728D"
+  },
+  {
+    "id": "e13-p1-s014",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      14
+    ],
+    "title": "Parte 1, slide 14 — A Sinfonia Multissensor O Limite do Drone: Não",
+    "assetPath": "/images/presentations/e13/e13-p1-s014.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 14,
+    "sourceFigure": "slide 14",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 14",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 14 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 14 da parte 1 da aula convidada: A Sinfonia Multissensor O Limite do Drone: Não.",
+    "sha256": "9406E352AA7EE89088182F7D9C6FD7479A5F184DC645338913C1AF6AEA496F2B"
+  },
+  {
+    "id": "e13-p1-s015",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Parte 1, slide 15 — Matriz de Sensores Forenses",
+    "assetPath": "/images/presentations/e13/e13-p1-s015.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 15,
+    "sourceFigure": "slide 15",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 15",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 15 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 15 da parte 1 da aula convidada: Matriz de Sensores Forenses.",
+    "sha256": "FB1BA25FC388963D082D4A610702B81D868AABD58D46EBB7577378C8B0D8D6B1"
+  },
+  {
+    "id": "e13-p1-s016",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Parte 1, slide 16 — Além do Espectro Visível: A Assinatura Térmica",
+    "assetPath": "/images/presentations/e13/e13-p1-s016.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 16,
+    "sourceFigure": "slide 16",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 16",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 16 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 16 da parte 1 da aula convidada: Além do Espectro Visível: A Assinatura Térmica.",
+    "sha256": "E725A87E1620626861A905588C8E07FC72E2EBBC2124A4971D253C4518AEE0A1"
+  },
+  {
+    "id": "e13-p1-s017",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Parte 1, slide 17 — Além do Espectro Visível: A Assinatura Térmica",
+    "assetPath": "/images/presentations/e13/e13-p1-s017.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 17,
+    "sourceFigure": "slide 17",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 17",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 17 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 17 da parte 1 da aula convidada: Além do Espectro Visível: A Assinatura Térmica.",
+    "sha256": "6D6D79C4A4F073C2E8BD9609FB27FF9AA5CA4228FD7C6F0B6F94E6C19466B9BE"
+  },
+  {
+    "id": "e13-p1-s018",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      18
+    ],
+    "title": "Parte 1, slide 18 — Structure from Motion (SfM)",
+    "assetPath": "/images/presentations/e13/e13-p1-s018.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 18,
+    "sourceFigure": "slide 18",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 18",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 18 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 18 da parte 1 da aula convidada: Structure from Motion (SfM).",
+    "sha256": "F477A996E9EDE5B0AFB33DFE4E9FE50E8CFFECCDF9BD286B29A4DDB8CEB18DBB"
+  },
+  {
+    "id": "e13-p1-s019",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Parte 1, slide 19 — Camera Position 2",
+    "assetPath": "/images/presentations/e13/e13-p1-s019.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 19,
+    "sourceFigure": "slide 19",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 19",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 19 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 19 da parte 1 da aula convidada: Camera Position 2.",
+    "sha256": "CD807958C9E4BEB0C004A16FC7BE8ACCE2D62F9D8164CD7AF44A4A1084AB8EAE"
+  },
+  {
+    "id": "e13-p1-s020",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      20
+    ],
+    "title": "Parte 1, slide 20",
+    "assetPath": "/images/presentations/e13/e13-p1-s020.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 20,
+    "sourceFigure": "slide 20",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 20",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 20 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 20 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "9D9EF2AC34A2264EB85781467BD75D27235294CF2D1DA4B6D79D742DA88A4F27"
+  },
+  {
+    "id": "e13-p1-s021",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      21
+    ],
+    "title": "Parte 1, slide 21 — A Equação da Fidelidade do Gêmeo Digital",
+    "assetPath": "/images/presentations/e13/e13-p1-s021.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 21,
+    "sourceFigure": "slide 21",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 21",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 21 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 21 da parte 1 da aula convidada: A Equação da Fidelidade do Gêmeo Digital.",
+    "sha256": "5E1FE4927A2CD8471B3BCCF8140683EFDE5925488394497FE06166F347E803E6"
+  },
+  {
+    "id": "e13-p1-s022",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      22
+    ],
+    "title": "Parte 1, slide 22 — Pilar I: Densidade e a Métrica do GSD",
+    "assetPath": "/images/presentations/e13/e13-p1-s022.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 22,
+    "sourceFigure": "slide 22",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 22",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 22 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 22 da parte 1 da aula convidada: Pilar I: Densidade e a Métrica do GSD.",
+    "sha256": "8AA1E00FE30E92936352B4A9E9632A72A657501068E92068B9D6077291656445"
+  },
+  {
+    "id": "e13-p1-s023",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      23
+    ],
+    "title": "Parte 1, slide 23 — OTIMIZAÇÃO DE ALTITUDE E GSD",
+    "assetPath": "/images/presentations/e13/e13-p1-s023.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 23,
+    "sourceFigure": "slide 23",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 23",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 23 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 23 da parte 1 da aula convidada: OTIMIZAÇÃO DE ALTITUDE E GSD.",
+    "sha256": "062C67F89A10EF5D7EF0BF64362503EC131603347A9CAB45D3573241CE6FE66C"
+  },
+  {
+    "id": "e13-p1-s024",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      24
+    ],
+    "title": "Parte 1, slide 24",
+    "assetPath": "/images/presentations/e13/e13-p1-s024.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 24,
+    "sourceFigure": "slide 24",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 24",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 24 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 24 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "D102D753DC5F10EEDAF52CCFD277AC1C846A7E5C1BD2F22CFE9E67409862B091"
+  },
+  {
+    "id": "e13-p1-s025",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      25
+    ],
+    "title": "Parte 1, slide 25 — Pilar I: O Risco Cinético e Motion Blur",
+    "assetPath": "/images/presentations/e13/e13-p1-s025.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 25,
+    "sourceFigure": "slide 25",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 25",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 25 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 25 da parte 1 da aula convidada: Pilar I: O Risco Cinético e Motion Blur.",
+    "sha256": "8B23A99EACA0CF90E9C3014FC7E98DE3E2D96D7F5BD21C8AE834FFC8457FADC9"
+  },
+  {
+    "id": "e13-p1-s026",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      26
+    ],
+    "title": "Parte 1, slide 26 — Pilar II: A Malha Matemática (Sobreposição)",
+    "assetPath": "/images/presentations/e13/e13-p1-s026.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 26,
+    "sourceFigure": "slide 26",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 26",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 26 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 26 da parte 1 da aula convidada: Pilar II: A Malha Matemática (Sobreposição).",
+    "sha256": "7A3E5E727E30BBAEEDA6467B41BE4634190497F948A256450B93C19BF0F153FF"
+  },
+  {
+    "id": "e13-p1-s027",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      27
+    ],
+    "title": "Parte 1, slide 27 — Falha na Superposição",
+    "assetPath": "/images/presentations/e13/e13-p1-s027.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 27,
+    "sourceFigure": "slide 27",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 27",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 27 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 27 da parte 1 da aula convidada: Falha na Superposição.",
+    "sha256": "A59C2DE14F28374D9D9A21F7763C6B10CAA725290D3D51A19E77661E235CC4BF"
+  },
+  {
+    "id": "e13-p1-s028",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      28
+    ],
+    "title": "Parte 1, slide 28 — Pilar III: Geometria de Captura e Pontos Cegos",
+    "assetPath": "/images/presentations/e13/e13-p1-s028.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 28,
+    "sourceFigure": "slide 28",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 28",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 28 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 28 da parte 1 da aula convidada: Pilar III: Geometria de Captura e Pontos Cegos.",
+    "sha256": "DC2C705192EB31D4199EBDA640244C5C6164EFE82F40059A04F9936EB385BA9F"
+  },
+  {
+    "id": "e13-p1-s029",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      29
+    ],
+    "title": "Parte 1, slide 29 — A Necessidade da Captura Oblíqua",
+    "assetPath": "/images/presentations/e13/e13-p1-s029.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 29,
+    "sourceFigure": "slide 29",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 29",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 29 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 29 da parte 1 da aula convidada: A Necessidade da Captura Oblíqua.",
+    "sha256": "329A8828821CD743BCF07D8D8769A3F1FA9DF2A8468A1DF09F9FB823AEC6704F"
+  },
+  {
+    "id": "e13-p1-s030",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      30
+    ],
+    "title": "Parte 1, slide 30",
+    "assetPath": "/images/presentations/e13/e13-p1-s030.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 30,
+    "sourceFigure": "slide 30",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 30",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 30 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 30 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1187D4C6DF83A2FCBE519F0E0191357132CC445EAC485AEADED52F4ADEB8C2E9"
+  },
+  {
+    "id": "e13-p1-s031",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      31
+    ],
+    "title": "Parte 1, slide 31",
+    "assetPath": "/images/presentations/e13/e13-p1-s031.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 31,
+    "sourceFigure": "slide 31",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 31",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 31 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 31 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "2602D4FAC3798A7936A5BC24AF9496D5935C84D246DF2C07E34EE5A223514068"
+  },
+  {
+    "id": "e13-p1-s032",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      32
+    ],
+    "title": "Parte 1, slide 32",
+    "assetPath": "/images/presentations/e13/e13-p1-s032.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 32,
+    "sourceFigure": "slide 32",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 32",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 32 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 32 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "CA2BB4CB3FD68599C89592BD15AC335274FA26B8652F124B8C796ED7F7F37EB7"
+  },
+  {
+    "id": "e13-p1-s033",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      33
+    ],
+    "title": "Parte 1, slide 33",
+    "assetPath": "/images/presentations/e13/e13-p1-s033.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 33,
+    "sourceFigure": "slide 33",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 33",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 33 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 33 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "81BE5CEE29EEE4DEF7B3A0759305487DFC6BC45412431C2B837F1EF58A003842"
+  },
+  {
+    "id": "e13-p1-s034",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      34
+    ],
+    "title": "Parte 1, slide 34 — Planejamento do Voo",
+    "assetPath": "/images/presentations/e13/e13-p1-s034.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 34,
+    "sourceFigure": "slide 34",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 34",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 34 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 34 da parte 1 da aula convidada: Planejamento do Voo.",
+    "sha256": "C53EBB2A57ACE038687C15E845D8262968BE1267B861AA8DBDE84B0D25062FE4"
+  },
+  {
+    "id": "e13-p1-s035",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      35
+    ],
+    "title": "Parte 1, slide 35",
+    "assetPath": "/images/presentations/e13/e13-p1-s035.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 35,
+    "sourceFigure": "slide 35",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 35",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 35 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 35 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "55152DF3B708806138056044ABEAEA7AC6AC791461F02FC707BB5725E36E66C7"
+  },
+  {
+    "id": "e13-p1-s036",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      36
+    ],
+    "title": "Parte 1, slide 36 — Voo automatizado",
+    "assetPath": "/images/presentations/e13/e13-p1-s036.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 36,
+    "sourceFigure": "slide 36",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 36",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 36 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 36 da parte 1 da aula convidada: Voo automatizado.",
+    "sha256": "368A5CF510B3650DD19874BFA61CC94A6C15643629AC3C7B38B0E0848C185862"
+  },
+  {
+    "id": "e13-p1-s037",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      37
+    ],
+    "title": "Parte 1, slide 37 — Voo automatizado",
+    "assetPath": "/images/presentations/e13/e13-p1-s037.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 37,
+    "sourceFigure": "slide 37",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 37",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 37 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 37 da parte 1 da aula convidada: Voo automatizado.",
+    "sha256": "D999690F4EE4681841D149AB8FE4FA116E938D2F75FB29C71CA0CF41C3B7D208"
+  },
+  {
+    "id": "e13-p1-s038",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      38
+    ],
+    "title": "Parte 1, slide 38 — Voo manual",
+    "assetPath": "/images/presentations/e13/e13-p1-s038.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 38,
+    "sourceFigure": "slide 38",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 38",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 38 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 38 da parte 1 da aula convidada: Voo manual.",
+    "sha256": "81DD1C1675881F1B62991A45100D01E31AB132DBD4CDDEF1A4ED3AA677D49BB5"
+  },
+  {
+    "id": "e13-p1-s039",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      39
+    ],
+    "title": "Parte 1, slide 39 — O suporte não precisa",
+    "assetPath": "/images/presentations/e13/e13-p1-s039.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 39,
+    "sourceFigure": "slide 39",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 39",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 39 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 39 da parte 1 da aula convidada: O suporte não precisa.",
+    "sha256": "38D0717CCEB242064CBE5A6FB5DD0B48235AE53EB72332E6B1F6C80690EDE7CF"
+  },
+  {
+    "id": "e13-p1-s040",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      40
+    ],
+    "title": "Parte 1, slide 40",
+    "assetPath": "/images/presentations/e13/e13-p1-s040.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 40,
+    "sourceFigure": "slide 40",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 40",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 40 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 40 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "20093979FEF294958CE8CC550D80E15B36A15196EDF295CD3F8C2B10FA56E311"
+  },
+  {
+    "id": "e13-p1-s041",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      41
+    ],
+    "title": "Parte 1, slide 41",
+    "assetPath": "/images/presentations/e13/e13-p1-s041.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 41,
+    "sourceFigure": "slide 41",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 41",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 41 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 41 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1CB76EA0621FE524506E19059755FB2187A709A3966D4AAC185FBEE12014E050"
+  },
+  {
+    "id": "e13-p1-s042",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      42
+    ],
+    "title": "Parte 1, slide 42",
+    "assetPath": "/images/presentations/e13/e13-p1-s042.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 42,
+    "sourceFigure": "slide 42",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 42",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 42 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 42 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "E27D3FC31C7D35C1A39E1220526DC04D61457E96DB62B11E87D23E92D151A720"
+  },
+  {
+    "id": "e13-p1-s043",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      43
+    ],
+    "title": "Parte 1, slide 43",
+    "assetPath": "/images/presentations/e13/e13-p1-s043.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 43,
+    "sourceFigure": "slide 43",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 43",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 43 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 43 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "F6F2EC79A7F632CC281060BB01C3E66C1B217213A35BCC40E331377A3C5D68B2"
+  },
+  {
+    "id": "e13-p1-s044",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      44
+    ],
+    "title": "Parte 1, slide 44",
+    "assetPath": "/images/presentations/e13/e13-p1-s044.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 44,
+    "sourceFigure": "slide 44",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 44",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 44 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 44 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "F3A1D5B779972F61742ECACB7844F08A61B3140CFA33958EE58CDBA61794AF24"
+  },
+  {
+    "id": "e13-p1-s045",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      45
+    ],
+    "title": "Parte 1, slide 45",
+    "assetPath": "/images/presentations/e13/e13-p1-s045.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 45,
+    "sourceFigure": "slide 45",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 45",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 45 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 45 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "21E43E3A3D7C780D640F351BA688F328DCE9ABFEE12E42BD9E27C88AA6887593"
+  },
+  {
+    "id": "e13-p1-s046",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      46
+    ],
+    "title": "Parte 1, slide 46",
+    "assetPath": "/images/presentations/e13/e13-p1-s046.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 46,
+    "sourceFigure": "slide 46",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 46",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 46 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 46 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "34025E736C956FFC19638A05ABE69CF65CD74E03DD08FB1CFA9D4581FB28F4D4"
+  },
+  {
+    "id": "e13-p1-s047",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      47
+    ],
+    "title": "Parte 1, slide 47",
+    "assetPath": "/images/presentations/e13/e13-p1-s047.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 47,
+    "sourceFigure": "slide 47",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 47",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 47 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 47 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "FDF6D848214294A77F6CF2CF38F1B5E1CBE9C5E90599A54DD44227A4AFAC1522"
+  },
+  {
+    "id": "e13-p1-s048",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      48
+    ],
+    "title": "Parte 1, slide 48",
+    "assetPath": "/images/presentations/e13/e13-p1-s048.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 48,
+    "sourceFigure": "slide 48",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 48",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 48 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 48 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "8DA2FD819E0365730718F1966251FD05707F6BF1346E8C4C69F46D8D4022C7CC"
+  },
+  {
+    "id": "e13-p1-s049",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      49
+    ],
+    "title": "Parte 1, slide 49",
+    "assetPath": "/images/presentations/e13/e13-p1-s049.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 49,
+    "sourceFigure": "slide 49",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 49",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 49 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 49 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "9D38C3F0D9B1AA0E6DC03C1701C28C634B6E07500D39377710E5F91898BE8B56"
+  },
+  {
+    "id": "e13-p1-s050",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      50
+    ],
+    "title": "Parte 1, slide 50",
+    "assetPath": "/images/presentations/e13/e13-p1-s050.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 50,
+    "sourceFigure": "slide 50",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 50",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 50 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 50 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "72DB6FD0B38271DE22B2782A514CFB30951777953C4E7E423C36AD1F51DE68DD"
+  },
+  {
+    "id": "e13-p1-s051",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      51
+    ],
+    "title": "Parte 1, slide 51",
+    "assetPath": "/images/presentations/e13/e13-p1-s051.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 51,
+    "sourceFigure": "slide 51",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 51",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 51 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 51 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "008E547AB42B0C2CAF5670F79DDFB90C2090D39A8924E1D767621CDAAFB65213"
+  },
+  {
+    "id": "e13-p1-s052",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      52
+    ],
+    "title": "Parte 1, slide 52",
+    "assetPath": "/images/presentations/e13/e13-p1-s052.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 52,
+    "sourceFigure": "slide 52",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 52",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 52 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 52 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "AAA39329E770D9F299D5548FA51B87C498F1EF7D623BE58849BDEBB127E14469"
+  },
+  {
+    "id": "e13-p1-s053",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      53
+    ],
+    "title": "Parte 1, slide 53 — Modelo Digital Modelo Digital",
+    "assetPath": "/images/presentations/e13/e13-p1-s053.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 53,
+    "sourceFigure": "slide 53",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 53",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 53 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 53 da parte 1 da aula convidada: Modelo Digital Modelo Digital.",
+    "sha256": "DE17909E4187E29FF24B1A9B4C0A17E090FE6B11F4B6A85BD9DB00829787942D"
+  },
+  {
+    "id": "e13-p1-s054",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      54
+    ],
+    "title": "Parte 1, slide 54 — Modelo Digital",
+    "assetPath": "/images/presentations/e13/e13-p1-s054.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 54,
+    "sourceFigure": "slide 54",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 54",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 54 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 54 da parte 1 da aula convidada: Modelo Digital.",
+    "sha256": "8AAEB1D08E39EB077FF4F1EDF8EF92DEAC753787AB91664DBFA9BBDCA27A9061"
+  },
+  {
+    "id": "e13-p1-s055",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      55
+    ],
+    "title": "Parte 1, slide 55 — Digital Elevation",
+    "assetPath": "/images/presentations/e13/e13-p1-s055.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 55,
+    "sourceFigure": "slide 55",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 55",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 55 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 55 da parte 1 da aula convidada: Digital Elevation.",
+    "sha256": "ED5CEE2AFB2399195F4743CDD92D4ADB3220E8B75C7E200F83DC16DE51C96238"
+  },
+  {
+    "id": "e13-p1-s056",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      56
+    ],
+    "title": "Parte 1, slide 56 — DEM Perfil do terreno",
+    "assetPath": "/images/presentations/e13/e13-p1-s056.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 56,
+    "sourceFigure": "slide 56",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 56",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 56 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 56 da parte 1 da aula convidada: DEM Perfil do terreno.",
+    "sha256": "17173C99F18DA63E4495698EEBACDA0E918B3563C86931211376E0DD21DE2A44"
+  },
+  {
+    "id": "e13-p1-s057",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      57
+    ],
+    "title": "Parte 1, slide 57",
+    "assetPath": "/images/presentations/e13/e13-p1-s057.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 57,
+    "sourceFigure": "slide 57",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 57",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 57 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 57 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "E38CC226BE94BFCEEA078D84C6A77DD0CA7A4F4976CE2177888A1077ADFEBF26"
+  },
+  {
+    "id": "e13-p1-s058",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      58
+    ],
+    "title": "Parte 1, slide 58",
+    "assetPath": "/images/presentations/e13/e13-p1-s058.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 58,
+    "sourceFigure": "slide 58",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 58",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 58 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 58 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "0B211B9CECBD1FA1F1C74A42DE7FAD0DA85053AFF1697E8E8087D0063F8E3981"
+  },
+  {
+    "id": "e13-p1-s059",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      59
+    ],
+    "title": "Parte 1, slide 59",
+    "assetPath": "/images/presentations/e13/e13-p1-s059.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 59,
+    "sourceFigure": "slide 59",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 59",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 59 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 59 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "C9CBA8FE94CDE1CDBC84261B89E0E37D411813B81A6ED9D2B55917FD7979FF67"
+  },
+  {
+    "id": "e13-p1-s060",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      60
+    ],
+    "title": "Parte 1, slide 60",
+    "assetPath": "/images/presentations/e13/e13-p1-s060.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 60,
+    "sourceFigure": "slide 60",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 60",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 60 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 60 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "9500D0607758558E85C55D8D3A2187FCBD791795014539701E9D237B0B197E44"
+  },
+  {
+    "id": "e13-p1-s061",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      61
+    ],
+    "title": "Parte 1, slide 61",
+    "assetPath": "/images/presentations/e13/e13-p1-s061.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 61,
+    "sourceFigure": "slide 61",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 61",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 61 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 61 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "ABA45133BA9437652C8FFB6A44346504893E18BAF78C88DA7B6262191209014D"
+  },
+  {
+    "id": "e13-p1-s062",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      62
+    ],
+    "title": "Parte 1, slide 62",
+    "assetPath": "/images/presentations/e13/e13-p1-s062.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 62,
+    "sourceFigure": "slide 62",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 62",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 62 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 62 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "3D15DFF89C7FAE7EBEF35ED971365A0C663F43A96AB2D5087FEE0B2E8EED0B83"
+  },
+  {
+    "id": "e13-p1-s063",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      63
+    ],
+    "title": "Parte 1, slide 63 — Resultados – Mavic 2",
+    "assetPath": "/images/presentations/e13/e13-p1-s063.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 63,
+    "sourceFigure": "slide 63",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 63",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 63 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 63 da parte 1 da aula convidada: Resultados – Mavic 2.",
+    "sha256": "04A1D59FE39E4BDCF0F361EDA002F11CB391C1FBA1C9F94DCA2D08CBD836A530"
+  },
+  {
+    "id": "e13-p1-s064",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      64
+    ],
+    "title": "Parte 1, slide 64 — Resultados – Matrice 300 PPK",
+    "assetPath": "/images/presentations/e13/e13-p1-s064.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 64,
+    "sourceFigure": "slide 64",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 64",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 64 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 64 da parte 1 da aula convidada: Resultados – Matrice 300 PPK.",
+    "sha256": "25D00FDAC8CECD3DFBC3CE9B125BCE7EDB0BAA0F14FB14A14F9DD5CF498CD823"
+  },
+  {
+    "id": "e13-p1-s065",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      65
+    ],
+    "title": "Parte 1, slide 65",
+    "assetPath": "/images/presentations/e13/e13-p1-s065.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 65,
+    "sourceFigure": "slide 65",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 65",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 65 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 65 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "088D9E1EB2009113E971B2135AB96A399CB8464EF0F87C643B51B522EF4AFC6E"
+  },
+  {
+    "id": "e13-p1-s066",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      66
+    ],
+    "title": "Parte 1, slide 66",
+    "assetPath": "/images/presentations/e13/e13-p1-s066.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 66,
+    "sourceFigure": "slide 66",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 66",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 66 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 66 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "B3356A769775F41F0B2F640DAB84124F4BD15EA7A80FA60580A36D1254A08735"
+  },
+  {
+    "id": "e13-p1-s067",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      67
+    ],
+    "title": "Parte 1, slide 67",
+    "assetPath": "/images/presentations/e13/e13-p1-s067.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 67,
+    "sourceFigure": "slide 67",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 67",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 67 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 67 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "99A7CCDC66896775162F79072F31B44C46C6977BE387E909E8ABA76FD775D517"
+  },
+  {
+    "id": "e13-p1-s068",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      68
+    ],
+    "title": "Parte 1, slide 68",
+    "assetPath": "/images/presentations/e13/e13-p1-s068.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 68,
+    "sourceFigure": "slide 68",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 68",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 68 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 68 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "37D7B02FE20372200BB94C651943EAF69BCF18EE1F735E1D1EE654E0B1C0724B"
+  },
+  {
+    "id": "e13-p1-s069",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      69
+    ],
+    "title": "Parte 1, slide 69",
+    "assetPath": "/images/presentations/e13/e13-p1-s069.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 69,
+    "sourceFigure": "slide 69",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 69",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 69 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 69 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "8F5EFB4272A18415CEAE4B1BF6A8A091A00A9533863BE24E7193A6435E0212EA"
+  },
+  {
+    "id": "e13-p1-s070",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      70
+    ],
+    "title": "Parte 1, slide 70",
+    "assetPath": "/images/presentations/e13/e13-p1-s070.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 70,
+    "sourceFigure": "slide 70",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 70",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 70 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 70 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "97EC4F9DDF3B7F400F0B62B07D995A5E232CBC6B2E525FAE34334A6DB4E25473"
+  },
+  {
+    "id": "e13-p1-s071",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      71
+    ],
+    "title": "Parte 1, slide 71",
+    "assetPath": "/images/presentations/e13/e13-p1-s071.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 71,
+    "sourceFigure": "slide 71",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 71",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 71 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 71 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "B333EA354353E541CD363F003D0A05606076F00E3B33330C3F4D308DD9FDFE3C"
+  },
+  {
+    "id": "e13-p1-s072",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      72
+    ],
+    "title": "Parte 1, slide 72",
+    "assetPath": "/images/presentations/e13/e13-p1-s072.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 72,
+    "sourceFigure": "slide 72",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 72",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 72 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 72 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "EC9FD3DD60A133346C7F6ABE158571916C6A378989D72319685036DF9793254C"
+  },
+  {
+    "id": "e13-p1-s073",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      73
+    ],
+    "title": "Parte 1, slide 73",
+    "assetPath": "/images/presentations/e13/e13-p1-s073.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 73,
+    "sourceFigure": "slide 73",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 73",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 73 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 73 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "02390FE071265001AB1489C58B6D9DACBDC93AAE8501CAC25912AD948896CDF0"
+  },
+  {
+    "id": "e13-p1-s074",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      74
+    ],
+    "title": "Parte 1, slide 74",
+    "assetPath": "/images/presentations/e13/e13-p1-s074.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 74,
+    "sourceFigure": "slide 74",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 74",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 74 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 74 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "5F5B462284A69B21CB279D53CEC7DA791D46FE10C6CD648F20075B76ECA63511"
+  },
+  {
+    "id": "e13-p1-s075",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      75
+    ],
+    "title": "Parte 1, slide 75",
+    "assetPath": "/images/presentations/e13/e13-p1-s075.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 75,
+    "sourceFigure": "slide 75",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 75",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 75 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 75 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "CC1180D68A1DE318C0080A08BD73A472AB6B23946E9BDD113AAF29CAF8621C9E"
+  },
+  {
+    "id": "e13-p1-s076",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      76
+    ],
+    "title": "Parte 1, slide 76",
+    "assetPath": "/images/presentations/e13/e13-p1-s076.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 76,
+    "sourceFigure": "slide 76",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 76",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 76 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 76 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "AC7740D3C789BD5DEB50315A3AE475C56937C7AD5DA2A061885F2D055A040B0D"
+  },
+  {
+    "id": "e13-p1-s077",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      77
+    ],
+    "title": "Parte 1, slide 77",
+    "assetPath": "/images/presentations/e13/e13-p1-s077.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 77,
+    "sourceFigure": "slide 77",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 77",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 77 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 77 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "3A8F21FC61F43BA4CFA70986337B04488A5401395E7394098AC5170CB8BD4F3A"
+  },
+  {
+    "id": "e13-p1-s078",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      78
+    ],
+    "title": "Parte 1, slide 78",
+    "assetPath": "/images/presentations/e13/e13-p1-s078.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 78,
+    "sourceFigure": "slide 78",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 78",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 78 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 78 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "233991F862E5006B557182AC05F65CD7842C383B731301028951B357D6F3B30F"
+  },
+  {
+    "id": "e13-p1-s079",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      79
+    ],
+    "title": "Parte 1, slide 79",
+    "assetPath": "/images/presentations/e13/e13-p1-s079.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 79,
+    "sourceFigure": "slide 79",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 79",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 79 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 79 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "6596F79F9D9AD7778614D9A3D48B8EF14DBB2373030AF2E1570186F2F5626279"
+  },
+  {
+    "id": "e13-p1-s080",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      80
+    ],
+    "title": "Parte 1, slide 80",
+    "assetPath": "/images/presentations/e13/e13-p1-s080.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 80,
+    "sourceFigure": "slide 80",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 80",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 80 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 80 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "59A68FBD6DA730FC4261C0D84EF9BBBD4EFE2270F72DDE9821D400D8DD09BB8D"
+  },
+  {
+    "id": "e13-p1-s081",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      81
+    ],
+    "title": "Parte 1, slide 81",
+    "assetPath": "/images/presentations/e13/e13-p1-s081.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 81,
+    "sourceFigure": "slide 81",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 81",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 81 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 81 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "9231BFE85518008B409C3C3F35A87B94C0E6C76ABACA139F62A7D057E3F3C9B1"
+  },
+  {
+    "id": "e13-p1-s082",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      82
+    ],
+    "title": "Parte 1, slide 82",
+    "assetPath": "/images/presentations/e13/e13-p1-s082.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 82,
+    "sourceFigure": "slide 82",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 82",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 82 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 82 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "4062C5D86A12FA01CA66C0933033BE9D57F448FBB83678FB4D1100CB0C41F1EE"
+  },
+  {
+    "id": "e13-p1-s083",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      83
+    ],
+    "title": "Parte 1, slide 83",
+    "assetPath": "/images/presentations/e13/e13-p1-s083.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 83,
+    "sourceFigure": "slide 83",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 83",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 83 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 83 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "4E53246A82DA79CFD49AB4EE0FA42EC1EF32A5179C248841EDAF09C5A3B09102"
+  },
+  {
+    "id": "e13-p1-s084",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      84
+    ],
+    "title": "Parte 1, slide 84",
+    "assetPath": "/images/presentations/e13/e13-p1-s084.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 84,
+    "sourceFigure": "slide 84",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 84",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 84 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 84 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "2E87857C3C33DEF65C4AB288E07A5FE761E46277F8E5F85CCD8ED502CFA487AF"
+  },
+  {
+    "id": "e13-p1-s085",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      85
+    ],
+    "title": "Parte 1, slide 85",
+    "assetPath": "/images/presentations/e13/e13-p1-s085.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 85,
+    "sourceFigure": "slide 85",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 85",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 85 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 85 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "A8C909F4949739E3CF1B1E3A4A22E4A4B2418DE952CD8178DF55F2695BEFA422"
+  },
+  {
+    "id": "e13-p1-s086",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      86
+    ],
+    "title": "Parte 1, slide 86",
+    "assetPath": "/images/presentations/e13/e13-p1-s086.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 86,
+    "sourceFigure": "slide 86",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 86",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 86 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 86 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "B3C0F6831E7039B99C731067F4BBFC50896653B6979DE1044B4EAC5A3709CAE4"
+  },
+  {
+    "id": "e13-p1-s087",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      87
+    ],
+    "title": "Parte 1, slide 87 — Depois",
+    "assetPath": "/images/presentations/e13/e13-p1-s087.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 87,
+    "sourceFigure": "slide 87",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 87",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 87 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 87 da parte 1 da aula convidada: Depois.",
+    "sha256": "33360B8412775A31111114A34A42F065D024B2C87DF83A5E86A648E10FDF9B38"
+  },
+  {
+    "id": "e13-p1-s088",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      88
+    ],
+    "title": "Parte 1, slide 88 — Depois",
+    "assetPath": "/images/presentations/e13/e13-p1-s088.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 88,
+    "sourceFigure": "slide 88",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 88",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 88 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 88 da parte 1 da aula convidada: Depois.",
+    "sha256": "817DCF61577928FCCF20F6D0FA04D6AFAE04843B3701AE5586AE4111CB0C8C33"
+  },
+  {
+    "id": "e13-p1-s089",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      89
+    ],
+    "title": "Parte 1, slide 89",
+    "assetPath": "/images/presentations/e13/e13-p1-s089.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 89,
+    "sourceFigure": "slide 89",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 89",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 89 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 89 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "340415709ED7F5845FFB57E1B4172FCB2867240F2AD564C7E84E008079BEB3AA"
+  },
+  {
+    "id": "e13-p1-s090",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      90
+    ],
+    "title": "Parte 1, slide 90 — Depois",
+    "assetPath": "/images/presentations/e13/e13-p1-s090.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 90,
+    "sourceFigure": "slide 90",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 90",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 90 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 90 da parte 1 da aula convidada: Depois.",
+    "sha256": "07883C1DE664397E34C2D5368F586E698CA35DFD23C0C6362A4A1FF7BB1039A0"
+  },
+  {
+    "id": "e13-p1-s091",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      91
+    ],
+    "title": "Parte 1, slide 91 — Rompimento de Barragem Mariana / MG",
+    "assetPath": "/images/presentations/e13/e13-p1-s091.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 91,
+    "sourceFigure": "slide 91",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 91",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 91 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 91 da parte 1 da aula convidada: Rompimento de Barragem Mariana / MG.",
+    "sha256": "2F4E5DEFA0E9AEF217F23F50C2A46603CCB6DC95DF817C3B0DCDF1EC5786F7F9"
+  },
+  {
+    "id": "e13-p1-s092",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      92
+    ],
+    "title": "Parte 1, slide 92 — Rompimento de Barragem Mariana / MG",
+    "assetPath": "/images/presentations/e13/e13-p1-s092.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 92,
+    "sourceFigure": "slide 92",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 92",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 92 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 92 da parte 1 da aula convidada: Rompimento de Barragem Mariana / MG.",
+    "sha256": "39F407A0F4ACA2F68F568627BB7E2BFF453708783FD247DC3A43101F202E2464"
+  },
+  {
+    "id": "e13-p1-s093",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      93
+    ],
+    "title": "Parte 1, slide 93 — Rompimento de Barragem Mariana / MG",
+    "assetPath": "/images/presentations/e13/e13-p1-s093.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 93,
+    "sourceFigure": "slide 93",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 93",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 93 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 93 da parte 1 da aula convidada: Rompimento de Barragem Mariana / MG.",
+    "sha256": "FD691FFEA813593E86878A8CDA030DBC55411BD2319F649ACC0F69034CBF7B17"
+  },
+  {
+    "id": "e13-p1-s094",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      94
+    ],
+    "title": "Parte 1, slide 94 — Rompimento de Barragem Mariana / MG",
+    "assetPath": "/images/presentations/e13/e13-p1-s094.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 94,
+    "sourceFigure": "slide 94",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 94",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 94 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 94 da parte 1 da aula convidada: Rompimento de Barragem Mariana / MG.",
+    "sha256": "547C65466D00A2B79EE89FE71E85F5F96D7D06447132BE3C28299F7ED96514C2"
+  },
+  {
+    "id": "e13-p1-s095",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      95
+    ],
+    "title": "Parte 1, slide 95 — Desintrusão de terras indígenas",
+    "assetPath": "/images/presentations/e13/e13-p1-s095.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 95,
+    "sourceFigure": "slide 95",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 95",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 95 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 95 da parte 1 da aula convidada: Desintrusão de terras indígenas.",
+    "sha256": "58076F07C7DE247840C20939321037A559A38C07CD957CD71560F1805C5D808D"
+  },
+  {
+    "id": "e13-p1-s096",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      96
+    ],
+    "title": "Parte 1, slide 96 — Desintrusão de terras indígenas",
+    "assetPath": "/images/presentations/e13/e13-p1-s096.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 96,
+    "sourceFigure": "slide 96",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 96",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 96 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 96 da parte 1 da aula convidada: Desintrusão de terras indígenas.",
+    "sha256": "D69296DDA552BB3A7E1763960E86113079041B8408520F1211C9CB3CAF7A9932"
+  },
+  {
+    "id": "e13-p1-s097",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      97
+    ],
+    "title": "Parte 1, slide 97 — Desintrusão de terras indígenas",
+    "assetPath": "/images/presentations/e13/e13-p1-s097.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 97,
+    "sourceFigure": "slide 97",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 97",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 97 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 97 da parte 1 da aula convidada: Desintrusão de terras indígenas.",
+    "sha256": "AC079367366B3D722D4DDD4E2DDC4AC5358A6DF0883627C4A63817858A05C9C1"
+  },
+  {
+    "id": "e13-p1-s098",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      98
+    ],
+    "title": "Parte 1, slide 98 — Desintrusão de terras indígenas",
+    "assetPath": "/images/presentations/e13/e13-p1-s098.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 98,
+    "sourceFigure": "slide 98",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 98",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 98 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 98 da parte 1 da aula convidada: Desintrusão de terras indígenas.",
+    "sha256": "59063B43EA6402DF7AF0B35218F9D73F3AA80FB9D76B0E6DBD01977B44151F8A"
+  },
+  {
+    "id": "e13-p1-s099",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      99
+    ],
+    "title": "Parte 1, slide 99 — Desintrusão de terras indígenas",
+    "assetPath": "/images/presentations/e13/e13-p1-s099.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 99,
+    "sourceFigure": "slide 99",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 99",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 99 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 99 da parte 1 da aula convidada: Desintrusão de terras indígenas.",
+    "sha256": "14A0092037D155111331CD0D748446B86AFBE855802B2B7F02400E272A61031B"
+  },
+  {
+    "id": "e13-p1-s100",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      100
+    ],
+    "title": "Parte 1, slide 100",
+    "assetPath": "/images/presentations/e13/e13-p1-s100.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 100,
+    "sourceFigure": "slide 100",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 100",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 100 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 100 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "82CE04962552CE791A4FB32E15B514464FE8928534CE8A4C4CD0F410F06C0914"
+  },
+  {
+    "id": "e13-p1-s101",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      101
+    ],
+    "title": "Parte 1, slide 101",
+    "assetPath": "/images/presentations/e13/e13-p1-s101.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 101,
+    "sourceFigure": "slide 101",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 101",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 101 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 101 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "2F572E286764E034FDC345B0398F36B0A395EA7593FA1F5096B94FDA3B683671"
+  },
+  {
+    "id": "e13-p1-s102",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      102
+    ],
+    "title": "Parte 1, slide 102",
+    "assetPath": "/images/presentations/e13/e13-p1-s102.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte1-pdf",
+    "sourcePage": 102,
+    "sourceFigure": "slide 102",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 1, slide 102",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 102 de 102 da parte 1 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte1-pdf"
+    ],
+    "alt": "Slide 102 da parte 1 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1FF5D9EBAA946F9AC26C8462F574344E10D60E4095CC76513EE7EC350FD3723F"
+  },
+  {
+    "id": "e13-p2-s001",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      103
+    ],
+    "title": "Parte 2, slide 1 — Software para processamento simplificado",
+    "assetPath": "/images/presentations/e13/e13-p2-s001.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 1,
+    "sourceFigure": "slide 1",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 1",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 1 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 1 da parte 2 da aula convidada: Software para processamento simplificado.",
+    "sha256": "14836EA49CEC49D508A07D5300C0EA8F5087B97BF898207E3DE4917EE686E7AF"
+  },
+  {
+    "id": "e13-p2-s002",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      104
+    ],
+    "title": "Parte 2, slide 2 — Processamento de imagens de drone",
+    "assetPath": "/images/presentations/e13/e13-p2-s002.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 2,
+    "sourceFigure": "slide 2",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 2",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 2 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 2 da parte 2 da aula convidada: Processamento de imagens de drone.",
+    "sha256": "B16C5281C934B407E5DC7A0E68D6E5B1CEB08FDAA37051F567ADD63E5069817E"
+  },
+  {
+    "id": "e13-p2-s003",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      105
+    ],
+    "title": "Parte 2, slide 3 — Processamento de imagens de drone",
+    "assetPath": "/images/presentations/e13/e13-p2-s003.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 3,
+    "sourceFigure": "slide 3",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 3",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 3 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 3 da parte 2 da aula convidada: Processamento de imagens de drone.",
+    "sha256": "DC747E7B6B873A4CDCD668CEAB348408B8653504150B13FA68DEA75D1B6A22D0"
+  },
+  {
+    "id": "e13-p2-s004",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      106
+    ],
+    "title": "Parte 2, slide 4 — Processamento de imagens de drone",
+    "assetPath": "/images/presentations/e13/e13-p2-s004.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 4,
+    "sourceFigure": "slide 4",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 4",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 4 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 4 da parte 2 da aula convidada: Processamento de imagens de drone.",
+    "sha256": "067E7660A80E4721EFC59010DA8D651DA66BEA940C5461077C330734BFCE4C88"
+  },
+  {
+    "id": "e13-p2-s005",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      107
+    ],
+    "title": "Parte 2, slide 5 — Objetivo",
+    "assetPath": "/images/presentations/e13/e13-p2-s005.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 5,
+    "sourceFigure": "slide 5",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 5",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 5 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 5 da parte 2 da aula convidada: Objetivo.",
+    "sha256": "24154B272E7ADC926685DB001702AA547299AC616A4E3E9F60372D49A085F815"
+  },
+  {
+    "id": "e13-p2-s006",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      108
+    ],
+    "title": "Parte 2, slide 6 — Objetivo",
+    "assetPath": "/images/presentations/e13/e13-p2-s006.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 6,
+    "sourceFigure": "slide 6",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 6",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 6 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 6 da parte 2 da aula convidada: Objetivo.",
+    "sha256": "5596AFC9B16623EDDB78275322C14A1227A38391D71D54AA8876F74164F4F9C2"
+  },
+  {
+    "id": "e13-p2-s007",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      109
+    ],
+    "title": "Parte 2, slide 7",
+    "assetPath": "/images/presentations/e13/e13-p2-s007.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 7,
+    "sourceFigure": "slide 7",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 7",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 7 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 7 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "7FDAE060AF80EFD69E1AFCCAEB1683C12A9AFDDDC4A432F5499E4319A2354F07"
+  },
+  {
+    "id": "e13-p2-s008",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      110
+    ],
+    "title": "Parte 2, slide 8 — EXIF_FocalLength=(15)",
+    "assetPath": "/images/presentations/e13/e13-p2-s008.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 8,
+    "sourceFigure": "slide 8",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 8",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 8 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 8 da parte 2 da aula convidada: EXIF_FocalLength=(15).",
+    "sha256": "F5BCF219E37176B9DC40E6F6C9458E7CC2699CEACAF731C9FFD3E7D3554B6F4D"
+  },
+  {
+    "id": "e13-p2-s009",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      111
+    ],
+    "title": "Parte 2, slide 9",
+    "assetPath": "/images/presentations/e13/e13-p2-s009.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 9,
+    "sourceFigure": "slide 9",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 9",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 9 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 9 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "6729DC29F5EF0EA4D2EA5272FF658C2074CC098A397759FAA2CB7C06C2D1026B"
+  },
+  {
+    "id": "e13-p2-s010",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      112
+    ],
+    "title": "Parte 2, slide 10",
+    "assetPath": "/images/presentations/e13/e13-p2-s010.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 10,
+    "sourceFigure": "slide 10",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 10",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 10 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 10 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1D7A886DE138BB2620877DC38E823759B110BAB131805FABB43661E75C54C79A"
+  },
+  {
+    "id": "e13-p2-s011",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      113
+    ],
+    "title": "Parte 2, slide 11",
+    "assetPath": "/images/presentations/e13/e13-p2-s011.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 11,
+    "sourceFigure": "slide 11",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 11",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 11 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 11 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "432266CAE02C533A0FD32E9647C1757838F7FCDDE4F7B45698D56C4BD8E6CD93"
+  },
+  {
+    "id": "e13-p2-s012",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      114
+    ],
+    "title": "Parte 2, slide 12",
+    "assetPath": "/images/presentations/e13/e13-p2-s012.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 12,
+    "sourceFigure": "slide 12",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 12",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 12 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 12 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "2B79152C6BD00C5630E3B2333DEE8A8F2F63F554C10BBD5292907D49FCEA6EE6"
+  },
+  {
+    "id": "e13-p2-s013",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      115
+    ],
+    "title": "Parte 2, slide 13",
+    "assetPath": "/images/presentations/e13/e13-p2-s013.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 13,
+    "sourceFigure": "slide 13",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 13",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 13 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 13 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "4A191B85340B2256D1001BD66B65F7C40070AA942003F27658C9C418160F8B35"
+  },
+  {
+    "id": "e13-p2-s014",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      116
+    ],
+    "title": "Parte 2, slide 14",
+    "assetPath": "/images/presentations/e13/e13-p2-s014.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 14,
+    "sourceFigure": "slide 14",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 14",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 14 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 14 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "E3CB73C75E7D7A5DDD522046C157CA785483230685B5CA7E8BCB3980B610FF14"
+  },
+  {
+    "id": "e13-p2-s015",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      117
+    ],
+    "title": "Parte 2, slide 15",
+    "assetPath": "/images/presentations/e13/e13-p2-s015.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 15,
+    "sourceFigure": "slide 15",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 15",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 15 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 15 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "C676B5387FE7E98701F6BCA5D2B5F5F2FB596B44045084BCFE1B37612A8A5D11"
+  },
+  {
+    "id": "e13-p2-s016",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      118
+    ],
+    "title": "Parte 2, slide 16",
+    "assetPath": "/images/presentations/e13/e13-p2-s016.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 16,
+    "sourceFigure": "slide 16",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 16",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 16 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 16 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1694933C88514EEB0998267A2D60CBD321FD721777DD8DCE1878E43A00AE46B6"
+  },
+  {
+    "id": "e13-p2-s017",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      119
+    ],
+    "title": "Parte 2, slide 17",
+    "assetPath": "/images/presentations/e13/e13-p2-s017.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 17,
+    "sourceFigure": "slide 17",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 17",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 17 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 17 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "ADAE2AA44637F0276D29B3AAE0BA009B2B5E9D41C4129BE8658AA20640B4B606"
+  },
+  {
+    "id": "e13-p2-s018",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      120
+    ],
+    "title": "Parte 2, slide 18",
+    "assetPath": "/images/presentations/e13/e13-p2-s018.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 18,
+    "sourceFigure": "slide 18",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 18",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 18 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 18 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "63C944074A1F2EF3DCDCD2DCE35908A539E5FDF21F70910D3E1C4F4402985FBE"
+  },
+  {
+    "id": "e13-p2-s019",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      121
+    ],
+    "title": "Parte 2, slide 19",
+    "assetPath": "/images/presentations/e13/e13-p2-s019.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 19,
+    "sourceFigure": "slide 19",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 19",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 19 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 19 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "66CEA26584D5BEE348D95381DC7D38A25C0EBF4E527038E8F829E7C4BECAA0AA"
+  },
+  {
+    "id": "e13-p2-s020",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      122
+    ],
+    "title": "Parte 2, slide 20 — Pixel na imagem",
+    "assetPath": "/images/presentations/e13/e13-p2-s020.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 20,
+    "sourceFigure": "slide 20",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 20",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 20 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 20 da parte 2 da aula convidada: Pixel na imagem.",
+    "sha256": "0132CE45E5987DC0ED1BF9AF7931C565A0B0AF9FAAD151EC089632D771C67E2C"
+  },
+  {
+    "id": "e13-p2-s021",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      123
+    ],
+    "title": "Parte 2, slide 21",
+    "assetPath": "/images/presentations/e13/e13-p2-s021.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 21,
+    "sourceFigure": "slide 21",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 21",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 21 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 21 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "094FC8C8BE9593A7CA7290E49C22CF8216FA95D5FDC40B7142F5131F57E4C4C5"
+  },
+  {
+    "id": "e13-p2-s022",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      124
+    ],
+    "title": "Parte 2, slide 22 — Criação do Mosaico",
+    "assetPath": "/images/presentations/e13/e13-p2-s022.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 22,
+    "sourceFigure": "slide 22",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 22",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 22 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 22 da parte 2 da aula convidada: Criação do Mosaico.",
+    "sha256": "2C67D17684F8B9BD7B39BC4718FA12E76C4298137D9FE534FAC7957DB713165E"
+  },
+  {
+    "id": "e13-p2-s023",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      125
+    ],
+    "title": "Parte 2, slide 23 — Janela Principal",
+    "assetPath": "/images/presentations/e13/e13-p2-s023.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 23,
+    "sourceFigure": "slide 23",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 23",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 23 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 23 da parte 2 da aula convidada: Janela Principal.",
+    "sha256": "85627284DC007DBE7163AAA3344FE71092676E3D3AC6CE83E371A42D4C1FD737"
+  },
+  {
+    "id": "e13-p2-s024",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      126
+    ],
+    "title": "Parte 2, slide 24 — Localização das imagens",
+    "assetPath": "/images/presentations/e13/e13-p2-s024.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 24,
+    "sourceFigure": "slide 24",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 24",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 24 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 24 da parte 2 da aula convidada: Localização das imagens.",
+    "sha256": "F7AA9BEDD8009CCA541D286B989AC21EDE37F72D78FE2119355031C6549CB404"
+  },
+  {
+    "id": "e13-p2-s025",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      127
+    ],
+    "title": "Parte 2, slide 25 — Localização das imagens",
+    "assetPath": "/images/presentations/e13/e13-p2-s025.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 25,
+    "sourceFigure": "slide 25",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 25",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 25 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 25 da parte 2 da aula convidada: Localização das imagens.",
+    "sha256": "F5AB91E69D81736A9EFB3C6ECADFAD8E81B6B83D5234B69F2C7AAD6B3F89D959"
+  },
+  {
+    "id": "e13-p2-s026",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      128
+    ],
+    "title": "Parte 2, slide 26 — Localização das imagens",
+    "assetPath": "/images/presentations/e13/e13-p2-s026.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 26,
+    "sourceFigure": "slide 26",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 26",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 26 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 26 da parte 2 da aula convidada: Localização das imagens.",
+    "sha256": "14B48A5165B557704E4DEBFC499879641046943DD077483A144970785D8695B5"
+  },
+  {
+    "id": "e13-p2-s027",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      129
+    ],
+    "title": "Parte 2, slide 27 — It is not the purpose of this software to implement the processing seen previously",
+    "assetPath": "/images/presentations/e13/e13-p2-s027.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 27,
+    "sourceFigure": "slide 27",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 27",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 27 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 27 da parte 2 da aula convidada: It is not the purpose of this software to implement the processing seen previously.",
+    "sha256": "03DFF7E0213466B62568A7E25E3E76672936EFEFB7BCB881367507288BCBB64E"
+  },
+  {
+    "id": "e13-p2-s028",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      130
+    ],
+    "title": "Parte 2, slide 28 — It is not the purpose of this software to implement the processing seen previously",
+    "assetPath": "/images/presentations/e13/e13-p2-s028.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 28,
+    "sourceFigure": "slide 28",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 28",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 28 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 28 da parte 2 da aula convidada: It is not the purpose of this software to implement the processing seen previously.",
+    "sha256": "BFDBF88F4653C657B9E1CB6AE807BFE1F13917FA03EAA89E885B464DDB2A2803"
+  },
+  {
+    "id": "e13-p2-s029",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      131
+    ],
+    "title": "Parte 2, slide 29 — Satelite",
+    "assetPath": "/images/presentations/e13/e13-p2-s029.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 29,
+    "sourceFigure": "slide 29",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 29",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 29 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 29 da parte 2 da aula convidada: Satelite.",
+    "sha256": "8DDE3B6E49368CB5F83079F41757A8CB0357F7952D722096E6E0E7FAC34CB5CC"
+  },
+  {
+    "id": "e13-p2-s030",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      132
+    ],
+    "title": "Parte 2, slide 30 — Ort0mosaico",
+    "assetPath": "/images/presentations/e13/e13-p2-s030.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 30,
+    "sourceFigure": "slide 30",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 30",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 30 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 30 da parte 2 da aula convidada: Ort0mosaico.",
+    "sha256": "9D971A6C0EDC588DA21B6DE3563A43236FF7E0E33AEDB88E5B32E4E327244A27"
+  },
+  {
+    "id": "e13-p2-s031",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      133
+    ],
+    "title": "Parte 2, slide 31 — Mosaico",
+    "assetPath": "/images/presentations/e13/e13-p2-s031.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 31,
+    "sourceFigure": "slide 31",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 31",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 31 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 31 da parte 2 da aula convidada: Mosaico.",
+    "sha256": "B115A23DDFE6035A67945B34DEE3A6F5FF3434F814B6B4424C50B09AECB8D29D"
+  },
+  {
+    "id": "e13-p2-s032",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      134
+    ],
+    "title": "Parte 2, slide 32 — Ortofoto",
+    "assetPath": "/images/presentations/e13/e13-p2-s032.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 32,
+    "sourceFigure": "slide 32",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 32",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 32 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 32 da parte 2 da aula convidada: Ortofoto.",
+    "sha256": "F4B0AE31E667DE26F0446BFD6AAB76ADE6B899854D0DE93E4C77843BCCB14E4B"
+  },
+  {
+    "id": "e13-p2-s033",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      135
+    ],
+    "title": "Parte 2, slide 33 — Mosaico",
+    "assetPath": "/images/presentations/e13/e13-p2-s033.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 33,
+    "sourceFigure": "slide 33",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 33",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 33 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 33 da parte 2 da aula convidada: Mosaico.",
+    "sha256": "0131007A0CC0719C9E6499FACDDB96A8AA555858DDC91492955CD0E511C2246E"
+  },
+  {
+    "id": "e13-p2-s034",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      136
+    ],
+    "title": "Parte 2, slide 34 — Utilitários",
+    "assetPath": "/images/presentations/e13/e13-p2-s034.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 34,
+    "sourceFigure": "slide 34",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 34",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 34 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 34 da parte 2 da aula convidada: Utilitários.",
+    "sha256": "65E1DEFA55A954A2A547674B5279B0E9F49B94F98C9053A6F20BCD6D1AB5FFF4"
+  },
+  {
+    "id": "e13-p2-s035",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      137
+    ],
+    "title": "Parte 2, slide 35 — Utilitários",
+    "assetPath": "/images/presentations/e13/e13-p2-s035.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 35,
+    "sourceFigure": "slide 35",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 35",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 35 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 35 da parte 2 da aula convidada: Utilitários.",
+    "sha256": "AD34AEBA1908E6552BA450B2DBFF692EC7E87D9AF2E6D68D785818DF851A9CC0"
+  },
+  {
+    "id": "e13-p2-s036",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      138
+    ],
+    "title": "Parte 2, slide 36 — Utilitários",
+    "assetPath": "/images/presentations/e13/e13-p2-s036.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 36,
+    "sourceFigure": "slide 36",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 36",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 36 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 36 da parte 2 da aula convidada: Utilitários.",
+    "sha256": "3E77664AD4B9F44C4DF996FB76FD2CC5C5E0E24A002BEFCDD721C714D6AD1B7F"
+  },
+  {
+    "id": "e13-p2-s037",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      139
+    ],
+    "title": "Parte 2, slide 37 — Mapeamento com novos drones DJI",
+    "assetPath": "/images/presentations/e13/e13-p2-s037.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 37,
+    "sourceFigure": "slide 37",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 37",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 37 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 37 da parte 2 da aula convidada: Mapeamento com novos drones DJI.",
+    "sha256": "AB83D98ED6E265BC1BC9544BDB5CAA2A5B74D7A91749C2F73401639C70F90214"
+  },
+  {
+    "id": "e13-p2-s038",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      140
+    ],
+    "title": "Parte 2, slide 38",
+    "assetPath": "/images/presentations/e13/e13-p2-s038.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 38,
+    "sourceFigure": "slide 38",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 38",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 38 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 38 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "A43BE5AC04202437DDA58F9ED1A749204E489B5EFC177A66A41BBAB30AA35F40"
+  },
+  {
+    "id": "e13-p2-s039",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      141
+    ],
+    "title": "Parte 2, slide 39",
+    "assetPath": "/images/presentations/e13/e13-p2-s039.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 39,
+    "sourceFigure": "slide 39",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 39",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 39 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 39 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1F86451EE710D3A796DBDE08E36E28877C43BD4EF10BDC18761C4664BB9ECB9D"
+  },
+  {
+    "id": "e13-p2-s040",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      142
+    ],
+    "title": "Parte 2, slide 40 — Manual",
+    "assetPath": "/images/presentations/e13/e13-p2-s040.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 40,
+    "sourceFigure": "slide 40",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 40",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 40 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 40 da parte 2 da aula convidada: Manual.",
+    "sha256": "E32D82887C5B3E945980C95A6099CF16CE7EF4398BE32B3BD57521899AC55B7F"
+  },
+  {
+    "id": "e13-p2-s041",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      143
+    ],
+    "title": "Parte 2, slide 41",
+    "assetPath": "/images/presentations/e13/e13-p2-s041.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 41,
+    "sourceFigure": "slide 41",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 41",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 41 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 41 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "EC346926928CDACEAC43802095C7824F29BC7E6D2974E087DA47B8234A37D123"
+  },
+  {
+    "id": "e13-p2-s042",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      144
+    ],
+    "title": "Parte 2, slide 42",
+    "assetPath": "/images/presentations/e13/e13-p2-s042.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 42,
+    "sourceFigure": "slide 42",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 42",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 42 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 42 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "FB7E5ABFA01FD9ADCFD596E970DEE1EB4FCBE7643FBBE8C3130F463A4AC2002E"
+  },
+  {
+    "id": "e13-p2-s043",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      145
+    ],
+    "title": "Parte 2, slide 43",
+    "assetPath": "/images/presentations/e13/e13-p2-s043.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 43,
+    "sourceFigure": "slide 43",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 43",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 43 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 43 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "B541C34A56D911B8119774DAE2D280CD891B93D3B14D708379034A7B57E3EC11"
+  },
+  {
+    "id": "e13-p2-s044",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      146
+    ],
+    "title": "Parte 2, slide 44",
+    "assetPath": "/images/presentations/e13/e13-p2-s044.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 44,
+    "sourceFigure": "slide 44",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 44",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 44 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 44 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "1CA3B4890985DF1342C206AC14036A4A94A33317888CAEBBDDB95921A1D5485D"
+  },
+  {
+    "id": "e13-p2-s045",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      147
+    ],
+    "title": "Parte 2, slide 45",
+    "assetPath": "/images/presentations/e13/e13-p2-s045.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 45,
+    "sourceFigure": "slide 45",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 45",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 45 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 45 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "CAFCF00D713483E1C707C077BFDDA0824E843B75CFAE36E379AAC9EE9F86FE5F"
+  },
+  {
+    "id": "e13-p2-s046",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      148
+    ],
+    "title": "Parte 2, slide 46",
+    "assetPath": "/images/presentations/e13/e13-p2-s046.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 46,
+    "sourceFigure": "slide 46",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 46",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 46 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 46 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "A453C7648C40287D32C5B5C61F7302B7164FF6FDC1048FFA49B5CCFF4AC42C56"
+  },
+  {
+    "id": "e13-p2-s047",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      149
+    ],
+    "title": "Parte 2, slide 47",
+    "assetPath": "/images/presentations/e13/e13-p2-s047.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 47,
+    "sourceFigure": "slide 47",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 47",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 47 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 47 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "A963ACDCB19292FC570C520526BBE629057FCB489F146B3BA7718C51A32CD39F"
+  },
+  {
+    "id": "e13-p2-s048",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      150
+    ],
+    "title": "Parte 2, slide 48",
+    "assetPath": "/images/presentations/e13/e13-p2-s048.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 48,
+    "sourceFigure": "slide 48",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 48",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 48 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 48 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "69CBBF2685DBC574151DF25EDC2696095F742222A25D8A898DEF960583CA7374"
+  },
+  {
+    "id": "e13-p2-s049",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      151
+    ],
+    "title": "Parte 2, slide 49",
+    "assetPath": "/images/presentations/e13/e13-p2-s049.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 49,
+    "sourceFigure": "slide 49",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 49",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 49 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 49 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "E38CC226BE94BFCEEA078D84C6A77DD0CA7A4F4976CE2177888A1077ADFEBF26"
+  },
+  {
+    "id": "e13-p2-s050",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      152
+    ],
+    "title": "Parte 2, slide 50",
+    "assetPath": "/images/presentations/e13/e13-p2-s050.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 50,
+    "sourceFigure": "slide 50",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 50",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 50 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 50 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "7BEE674C438CAB514C8A5D05D85B8DBF8B2CFBE7CEFDCC87A24D39F6AF144DD1"
+  },
+  {
+    "id": "e13-p2-s051",
+    "presentationSlug": "e13-drones-fotogrametria",
+    "slideNumbers": [
+      153
+    ],
+    "title": "Parte 2, slide 51",
+    "assetPath": "/images/presentations/e13/e13-p2-s051.jpg",
+    "kind": "document-page",
+    "audience": "public",
+    "creator": "Harley Angelo de Moraes",
+    "sourceDocumentId": "moraes-2026-parte2-pdf",
+    "sourcePage": 51,
+    "sourceFigure": "slide 51",
+    "creditLine": "H. A. de Moraes (PF/CENSIPAM), aula de 03/11/2026 · parte 2, slide 51",
+    "usageBasis": "Slide original do palestrante, sem alteração, a partir do PDF que ele forneceu à disciplina; publicação solicitada pela equipe docente.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Slide 51 de 51 da parte 2 da aula convidada.",
+    "relations": [
+      "activity:E13",
+      "source:moraes-2026-parte2-pdf"
+    ],
+    "alt": "Slide 51 da parte 2 da aula convidada, só com imagens e diagramas.",
+    "sha256": "206471FAC36234DB6C9809D507030DCAA1F9E2E8DE045DDAA17B23CAD2631A84"
   }
 ]

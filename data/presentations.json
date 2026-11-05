@@ -1456,5 +1456,76 @@
         "distribution": "Documento público na Biblioteca da disciplina."
       }
     ]
+  },
+  {
+    "slug": "e13-drones-fotogrametria",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. São os slides originais do palestrante, um por página e sem alteração de formatação, a partir dos PDFs que ele forneceu à disciplina; publicação no portal solicitada pela equipe docente. Os e-mails e o telefone dos slides finais foram cobertos.",
+    "activityId": "E13",
+    "title": "Drones e fotogrametria forense",
+    "subtitle": "Aula convidada do Eng. Harley Angelo de Moraes (Polícia Federal e CENSIPAM): fotogrametria forense com drones e um software para mosaicos georreferenciados",
+    "date": "2026-11-03",
+    "durationMinutes": 180,
+    "slideCount": 154,
+    "objectives": [
+      "Conhecer a regulação de drones no Brasil e os limites de operação em missões de segurança pública.",
+      "Entender o planejamento de voo e a fotogrametria por Structure from Motion: GSD, sobreposição, georreferenciamento e produtos.",
+      "Ver aplicações periciais da fotogrametria em crimes ambientais, mineração, desmatamento e desastres.",
+      "Conhecer um software para montar mosaicos georreferenciados em campo e seus limites diante da fotogrametria rigorosa."
+    ],
+    "sections": [
+      "Parte 1: fotogrametria forense",
+      "Parte 2: software de mosaico"
+    ],
+    "resourceIds": [
+      "moraes-2026-fotogrametria-forense-parte1",
+      "moraes-2026-processamento-imagens-drone-parte2"
+    ],
+    "references": [
+      {
+        "resourceId": "moraes-2026-fotogrametria-forense-parte1",
+        "shortTitle": "Moraes (2026a)",
+        "citation": "Moraes, H. A. Drones e a evolução da fotogrametria forense: captura, processamento e análise de dados no teatro de operações da Polícia Federal. Aula convidada da IT-214, ITA, 03/11/2026. Parte 1.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Slides da parte 1 da aula."
+      },
+      {
+        "resourceId": "moraes-2026-processamento-imagens-drone-parte2",
+        "shortTitle": "Moraes (2026b)",
+        "citation": "Moraes, H. A. Software para processamento simplificado de imagens captadas por drone. Aula convidada da IT-214, ITA, 03/11/2026. Parte 2.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Slides da parte 2 da aula."
+      }
+    ],
+    "authors": [
+      "Harley Angelo de Moraes"
+    ],
+    "license": "Slides do palestrante, com uso didático autorizado.",
+    "sourceDocuments": [
+      {
+        "id": "moraes-2026-parte1-pdf",
+        "title": "Drones e a evolução da fotogrametria forense — parte 1 da aula",
+        "authors": [
+          "Harley Angelo de Moraes"
+        ],
+        "source": "PDF fornecido pelo palestrante à disciplina e publicado na Biblioteca (pf-censipam-fotogrametria-forense-drones-parte-1-2026.pdf)",
+        "versionDate": "2026-10-31",
+        "publication": "Polícia Federal e CENSIPAM — aula convidada da IT-214",
+        "sha256": "6B5770D79DCB6C4B721F05FD7C343D3AFDA9640FAE4A758EB6F59F7E4FD84CE8",
+        "distribution": "Documento público na Biblioteca da disciplina; e-mails e telefone do slide final cobertos."
+      },
+      {
+        "id": "moraes-2026-parte2-pdf",
+        "title": "Software para processamento simplificado de imagens captadas por drone — parte 2 da aula",
+        "authors": [
+          "Harley Angelo de Moraes"
+        ],
+        "source": "PDF fornecido pelo palestrante à disciplina e publicado na Biblioteca (pf-censipam-processamento-imagens-drone-parte-2-2026.pdf)",
+        "versionDate": "2026-10-31",
+        "publication": "Polícia Federal e CENSIPAM — aula convidada da IT-214",
+        "sha256": "63C17F1B7C8BE93880C33280BD8CE4A94DBEFE6B00411A564E7F229A455DA3A5",
+        "distribution": "Documento público na Biblioteca da disciplina; e-mails e telefone do slide final cobertos."
+      }
+    ]
   }
 ]
