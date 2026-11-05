@@ -2609,5 +2609,455 @@
     ],
     "alt": "Dois gráficos por hora local: em cima, a temperatura cai até o ponto de orvalho à noite; embaixo, barras de visibilidade que caem quase a zero de madrugada, com uma faixa sombreada marcando o nevoeiro.",
     "sha256": "E14742D31D73CFC0BF1028519CB26A2F4AA2419F8FC53501C501883885771F61"
+  },
+  {
+    "id": "e14-g-sdmt-oppav",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      1
+    ],
+    "title": "Campo de LAeq de um eVTOL no heliponto elevado da Av. Paulista",
+    "assetPath": "/images/presentations/e14/e14-g-sdmt-oppav.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 197,
+    "sourceFigure": "6.14",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 6.14",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Campo de LAeq do OPPAV pairando 10 m acima da FATO do SDMT, sobre solo, lajes e fachadas.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Perspectiva 3D de quarteirões da Av. Paulista com prédios cinza e manchas verdes, amarelas e vermelhas de nível sonoro concentradas no prédio do heliponto.",
+    "sha256": "2162E9CD4CEA0FDD788FDB965AE0EA7078CBC77B1E526BCE7B3CBA32B9D52BF1"
+  },
+  {
+    "id": "e14-d-rede",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      2
+    ],
+    "title": "Rede de rotas UAM proposta para São Paulo",
+    "assetPath": "/images/presentations/e14/e14-d-rede.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 41,
+    "sourceFigure": "3.2",
+    "creditLine": "Vieira (2026), fig. 3.2, adaptada de Carvalho et al. (2026)",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Vertiportos, aeroportos, helipontos e rotas ligadas às Rotas Especiais de Helicópteros sobre as zonas da pesquisa origem-destino.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Mapa de São Paulo com linhas laranja de rotas ligando marcadores rosa e vermelhos, sobre zonas em tons de roxo e pontos amarelos de helipontos.",
+    "sha256": "9C94E1C17A2561D511BC1E429E2974F0EE0266EA41CB77D691F6138B9E037597"
+  },
+  {
+    "id": "e14-s-rvlt",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      10
+    ],
+    "title": "Veículo conceitual NASA RVLT Lift+Cruise",
+    "assetPath": "/images/presentations/e14/e14-s-rvlt.png",
+    "kind": "illustration",
+    "audience": "public",
+    "creator": "NASA — Revolutionary Vertical Lift Technology (Silva et al., 2018)",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 355,
+    "sourceFigure": "10.2",
+    "creditLine": "NASA (Silva et al., 2018), reproduzido no Sandbox SBSJ, vol. III, fig. 10.2 · domínio público",
+    "usageBasis": "Ilustração de veículo conceitual da NASA, obra do governo dos EUA, reproduzida no relatório do Sandbox; reprodução com atribuição.",
+    "license": "Domínio público (obra do governo federal dos EUA, 17 U.S.C. § 105).",
+    "summary": "eVTOL conceitual da NASA com oito rotores de sustentação, propulsor de cruzeiro na cauda e asa fixa.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Ilustração de uma aeronave azul de asa alta com oito rotores em braços sobre as asas e uma hélice na cauda.",
+    "sha256": "96F9EC92660823C3F8420306399153DDF7576E76358CB5D56F4296D6167724A9"
+  },
+  {
+    "id": "e14-d-diretividade",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      11
+    ],
+    "title": "Diretividade do eVTOL em pairado por banda de oitava",
+    "assetPath": "/images/presentations/e14/e14-d-diretividade.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 50,
+    "sourceFigure": "3.3",
+    "creditLine": "Vieira (2026), fig. 3.3",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Correção de diretividade no horizonte, por banda de oitava, do NASA RVLT Lift+Cruise em pairado.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Gráfico polar com curvas coloridas por banda: as dos graves formam lóbulos pronunciados e as dos agudos ficam quase circulares.",
+    "sha256": "EF0F4273DB3757A965B67A656EBC5251D2F1AF68A5E44674A3914A98A019EE04"
+  },
+  {
+    "id": "e14-s-isofonas-pairado",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      12
+    ],
+    "title": "Isófonas do pairado na área-piloto do SBSJ",
+    "assetPath": "/images/presentations/e14/e14-s-isofonas-pairado.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 365,
+    "sourceFigure": "10.6a",
+    "creditLine": "Sandbox SBSJ • relatório da Fase I, vol. III • fig. 10.6a",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Isófonas de LAeq do NASA RVLT em pairado, com a fonte a 60 m, sobre o relevo e as edificações do SBSJ.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Mapa com uma mancha azul e verde em forma de gota em volta da fonte, ao lado de edificações cinza.",
+    "sha256": "C6A6FE5D12AFD51C80A69EC2F931DC91226C4F42B40E7FA23CEFD07945DF5A6C"
+  },
+  {
+    "id": "e14-s-isofonas-subida",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      12
+    ],
+    "title": "Isófonas da subida na área-piloto do SBSJ",
+    "assetPath": "/images/presentations/e14/e14-s-isofonas-subida.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 365,
+    "sourceFigure": "10.6b",
+    "creditLine": "Sandbox SBSJ • relatório da Fase I, vol. III • fig. 10.6b",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Isófonas de LAeq do NASA RVLT em subida, com a fonte a 60 m, mais extensas que as do pairado.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Mapa com uma mancha azul maior e alongada em volta da fonte, com o centro amarelo e laranja.",
+    "sha256": "C6E02B23EDB2307DF4746640F3CEE6B1C3FA51FFB61DEC04F89765FCE2E23F23"
+  },
+  {
+    "id": "e14-d-fluxo",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      15
+    ],
+    "title": "Fluxo da cadeia de cálculo do ruído",
+    "assetPath": "/images/presentations/e14/e14-d-fluxo.png",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 40,
+    "sourceFigure": "3.1",
+    "creditLine": "Vieira (2026), fig. 3.1",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Das entradas (laser, trajetórias, hemisférios) à propagação no NoiseModelling, à composição e aos indicadores.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Fluxograma em quatro faixas, entradas, preparação, propagação, composição e indicadores, com caixas ligadas por setas.",
+    "sha256": "303E6551749709666131A6018DEB6147935F702ED488278DB9FBE968507BF3E1"
+  },
+  {
+    "id": "e14-s-malha",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      16
+    ],
+    "title": "Malha de receptores sobre o terreno e as edificações do SBSJ",
+    "assetPath": "/images/presentations/e14/e14-s-malha.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 364,
+    "sourceFigure": "10.5",
+    "creditLine": "Sandbox SBSJ • relatório da Fase I, vol. III • fig. 10.5",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "Malha triangulada de receptores que contorna as edificações e acompanha o relevo da área-piloto.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Mapa coberto por pontos vermelhos densos de receptores em malha triangular, com edificações cinza sem pontos.",
+    "sha256": "20E4EF4FDB980E45BDFCEBFF2225FE2EA5FA2E884B12670BA699B88E7BD1F89B"
+  },
+  {
+    "id": "e14-g-malha3d",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      17
+    ],
+    "title": "Malha tridimensional de receptores sobre a superfície construída",
+    "assetPath": "/images/presentations/e14/e14-g-malha3d.jpg",
+    "kind": "diagram",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 151,
+    "sourceFigure": "5.9",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 5.9",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Receptores de solo, telhado e fachada subindo pelos prédios do entorno de um vertiporto elevado.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Vista 3D de torres azuis cobertas de pontos, com pontos vermelhos no solo e verdes nos telhados.",
+    "sha256": "0287D1F22A22D487F6CCD1F619496FB59ACD913DC313B47E8F65B27C8D7510C6"
+  },
+  {
+    "id": "e14-g-sdvr-2d",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Planta 2D de solo do campo de LAeq",
+    "assetPath": "/images/presentations/e14/e14-g-sdvr-2d.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 153,
+    "sourceFigure": "5.10a",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 5.10a",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Isófonas de solo do OPPAV no vertiporto de FATO elevada do SDVR, recortadas pelas quadras.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Planta com edificações cinza e manchas verdes e amarelas entre elas, com os círculos de 100 e 300 m.",
+    "sha256": "12D87FBE8EDE2593A5F94F2E8E81A1D19F271527230AA043CC2A59C182DBEB9D"
+  },
+  {
+    "id": "e14-g-sdvr-topo",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Vista 3D de topo do campo de LAeq",
+    "assetPath": "/images/presentations/e14/e14-g-sdvr-topo.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 153,
+    "sourceFigure": "5.10b",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 5.10b",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Superfície completa, com solo, telhados e fachadas coloridos pelo nível, vista de cima.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Vista de cima de uma superfície urbana colorida, vermelha e laranja no prédio central e verde em volta.",
+    "sha256": "95716496F7B05400B7076C1E634205DD9D26CE94BBF278FDFE9DF270C01FC67B"
+  },
+  {
+    "id": "e14-g-sdvr-3d",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      19
+    ],
+    "title": "Perspectiva 3D do campo de LAeq",
+    "assetPath": "/images/presentations/e14/e14-g-sdvr-3d.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 153,
+    "sourceFigure": "5.10c",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 5.10c",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Campo de LAeq drapejado sobre a superfície construída, com as lajes e fachadas vizinhas expostas.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Perspectiva de prédios com fachadas amarelas e laranja perto do vertiporto e verdes mais longe.",
+    "sha256": "3A0E9803CA5D72839A053276194CA1E57A2D1A10BCE2EDB96A26B1815EEFF3C2"
+  },
+  {
+    "id": "e14-g-sdvr-r44",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      20
+    ],
+    "title": "Campo de LAeq do helicóptero R44 no vertiporto elevado",
+    "assetPath": "/images/presentations/e14/e14-g-sdvr-r44.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe SIGMA-City — ITA",
+    "sourceDocumentId": "sigmacity-produto3",
+    "sourcePage": 188,
+    "sourceFigure": "6.7",
+    "creditLine": "SIGMA-City • Produto 3 • fig. 6.7",
+    "usageBasis": "Figura do Produto 3 do SIGMA-City, documento da Biblioteca da disciplina, em arquivo original do acervo de modelagem da equipe.",
+    "license": "Uso didático autorizado; licença aberta não declarada.",
+    "summary": "Campo de LAeq do Robinson R44 no SDVR, com níveis altos em grande parte das lajes e fachadas.",
+    "relations": [
+      "activity:E14",
+      "source:sigmacity-produto3"
+    ],
+    "alt": "Perspectiva de prédios quase todos vermelhos e laranja em volta do vertiporto, com verde só nas bordas.",
+    "sha256": "383FD3650AD19D0DBC6AFFCFDD5DDFD81103F3613B7805AF2618D835C21D98C8"
+  },
+  {
+    "id": "e14-s-footprint",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      22
+    ],
+    "title": "Footprint de evento no vertiporto do SBSJ",
+    "assetPath": "/images/presentations/e14/e14-s-footprint.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 368,
+    "sourceFigure": "10.8",
+    "creditLine": "Sandbox SBSJ • relatório da Fase I, vol. III • fig. 10.8",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "LAeq de evento em pairado e em descida, com a fonte a 30 m, e os círculos de 100 e 300 m do RBAC 161.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Dois mapas com manchas laranja e vermelhas em volta de um ícone de aeronave, dentro de círculos de 100 e 300 m.",
+    "sha256": "12AE46C8BFBC2415DA8D3B44074CCB5A4EB6116691ACD7C4168A04D9167F1FD1"
+  },
+  {
+    "id": "e14-s-dnl",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      23
+    ],
+    "title": "Campo de DNL no entorno do vertiporto do SBSJ",
+    "assetPath": "/images/presentations/e14/e14-s-dnl.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA",
+    "sourceDocumentId": "sandbox-sbsj-vol3",
+    "sourcePage": 373,
+    "sourceFigure": "10.9",
+    "creditLine": "Sandbox SBSJ • relatório da Fase I, vol. III • fig. 10.9",
+    "usageBasis": "Figura produzida pela equipe do projeto, fornecida pelo usuário. Publicação didática autorizada explicitamente pela equipe autora.",
+    "license": "Uso didático autorizado pela equipe autora; licença aberta não declarada.",
+    "summary": "DNL para 60 movimentos por dia, com a curva de 65 dB DNL e os círculos de 100 e 300 m.",
+    "relations": [
+      "activity:E14",
+      "source:sandbox-sbsj-vol3"
+    ],
+    "alt": "Mapa com faixas concêntricas de verde a laranja em volta do vertiporto e um pequeno contorno azul no centro.",
+    "sha256": "C9250D4D5EE67C498C93FC3A39268796AD9E2A3C15D0246FB62DCD8B24DD729E"
+  },
+  {
+    "id": "e14-d-lden-frotas",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      24
+    ],
+    "title": "Lden no cenário C1 com as quatro frotas",
+    "assetPath": "/images/presentations/e14/e14-d-lden-frotas.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 86,
+    "sourceFigure": "4.1",
+    "creditLine": "Vieira (2026), fig. 4.1",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Mapas de Lden de São Paulo para as frotas convencional, mista, eVTOL e substituta.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Quatro mapas de São Paulo; nos dois de cima, faixas largas verdes e amarelas seguem as rotas; nos de baixo, só faixas estreitas.",
+    "sha256": "C7A3747AAC67CA91DF5D8D68AFE20D030A4B2247B914A026594D1737DD9FEBBA"
+  },
+  {
+    "id": "e14-d-equivalencia",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      25
+    ],
+    "title": "Moradores expostos em função do fator sobre os voos de eVTOL",
+    "assetPath": "/images/presentations/e14/e14-d-equivalencia.png",
+    "kind": "chart",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 92,
+    "sourceFigure": "4.4",
+    "creditLine": "Vieira (2026), fig. 4.4",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "Moradores com Lden de 45 dB(A) ou mais conforme os voos de eVTOL são multiplicados, nos cenários C1 e C2 e na rede otimizada.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Três gráficos com curvas crescentes que cruzam uma linha horizontal da frota convencional nos fatores 25,2, 15,5 e 28,9.",
+    "sha256": "283F340890FC098F11947497BA366810B7CE48F7B2ED587D3E801C2D49888D60"
+  },
+  {
+    "id": "e14-d-helipontos",
+    "presentationSlug": "e14-ruido-aceitacao",
+    "slideNumbers": [
+      26
+    ],
+    "title": "Nível dia-noite em torno dos helipontos do cenário C1",
+    "assetPath": "/images/presentations/e14/e14-d-helipontos.jpg",
+    "kind": "map",
+    "audience": "public",
+    "creator": "Gabriel Luiz Goulart Rufino Vieira",
+    "sourceDocumentId": "vieira-2026-dissertacao",
+    "sourcePage": 96,
+    "sourceFigure": "4.6",
+    "creditLine": "Vieira (2026), fig. 4.6",
+    "usageBasis": "Figura da dissertação de mestrado do autor (ITA, 2026), usada na aula por autorização do autor.",
+    "license": "Direitos do autor; uso didático autorizado; licença aberta não declarada.",
+    "summary": "DNL em torno do SDMT, do SIBH e do SDEL, por frota, com os círculos do plano básico do RBAC 161.",
+    "relations": [
+      "activity:E14",
+      "source:vieira-2026-dissertacao"
+    ],
+    "alt": "Grade de nove mapas, três helipontos por três frotas, com manchas amarelas e verdes em volta de círculos tracejados.",
+    "sha256": "4938611092276CAC67C7D40FFF81929F571790C4873409833D04F76A17917B64"
   }
 ]

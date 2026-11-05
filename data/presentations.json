@@ -1283,5 +1283,178 @@
         "distribution": "Apresentação da equipe docente; publicada no portal no formato das apresentações, com o mesmo conteúdo."
       }
     ]
+  },
+  {
+    "slug": "e14-ruido-aceitacao",
+    "audience": "public",
+    "rightsNote": "Apresentação pública. Usa figuras da dissertação de mestrado de Gabriel L. G. R. Vieira (ITA, 2026), por autorização do autor, do relatório do Sandbox Regulatório de Vertiportos (SBSJ), divulgadas por autorização da equipe autora, e do Produto 3 do SIGMA-City, disponível na Biblioteca. A ilustração do veículo da NASA é obra do governo dos EUA. Gráficos e tabelas são elaborações da equipe docente com os dados dessas fontes. A dissertação e os relatórios do Sandbox não são distribuídos pelo portal.",
+    "activityId": "E14",
+    "title": "Ruído aeronáutico e aceitação social",
+    "subtitle": "Efeitos do ruído nas pessoas, métricas, fonte, propagação e modelagem 3D, com resultados de São Paulo e do vertiporto experimental do SBSJ",
+    "date": "2026-11-10",
+    "durationMinutes": 180,
+    "slideCount": 32,
+    "objectives": [
+      "Explicar por que o ruído condiciona a aceitação da UAM e quais efeitos ele tem sobre incômodo, sono, saúde e aprendizagem.",
+      "Ler as métricas de ruído (dB(A), LAmax, SEL, LAeq, DNL e Lden) e o efeito do número de operações sobre o nível acumulado.",
+      "Descrever a cadeia de modelagem: hemisfério da fonte, potência sonora, propagação CNOSSOS-EU no NoiseModelling e receptores de solo, telhado e fachada.",
+      "Interpretar os resultados de São Paulo e do SBSJ frente ao RBAC 161 e identificar medidas de mitigação e os limites dos modelos."
+    ],
+    "sections": [
+      "Por que importa",
+      "Fundamentos",
+      "A fonte",
+      "Modelagem 3D",
+      "Resultados"
+    ],
+    "resourceIds": [
+      "sigmacity-produto3",
+      "garrow-2021-uam-review",
+      "it214-2026-2-plano-ensino"
+    ],
+    "references": [
+      {
+        "shortTitle": "WHO (2018)",
+        "url": "https://www.who.int/europe/publications/i/item/9789289053563",
+        "citation": "World Health Organization. Regional Office for Europe. Environmental Noise Guidelines for the European Region. Copenhagen: WHO Regional Office for Europe, 2018.",
+        "purpose": "Valores recomendados de Lden e Lnight para ruído de aeronaves."
+      },
+      {
+        "shortTitle": "União Europeia (2002)",
+        "url": "https://eur-lex.europa.eu/eli/dir/2002/49/oj",
+        "citation": "União Europeia. Diretiva 2002/49/CE, relativa à avaliação e gestão do ruído ambiente. Jornal Oficial das Comunidades Europeias, L 189, 2002.",
+        "purpose": "Lden, Lnight, receptor a 4 m e contagem de pessoas expostas."
+      },
+      {
+        "shortTitle": "União Europeia (2015)",
+        "url": "https://eur-lex.europa.eu/eli/dir/2015/996/oj",
+        "citation": "União Europeia. Diretiva (UE) 2015/996, que estabelece métodos comuns de avaliação do ruído (CNOSSOS-EU). Jornal Oficial da União Europeia, L 168, 2015.",
+        "purpose": "Método de propagação CNOSSOS-EU usado no NoiseModelling."
+      },
+      {
+        "shortTitle": "União Europeia (2020)",
+        "url": "https://eur-lex.europa.eu/eli/dir/2020/367/oj",
+        "citation": "União Europeia. Diretiva (UE) 2020/367, quanto aos métodos de avaliação dos efeitos nocivos do ruído ambiente. Jornal Oficial da União Europeia, L 67, 2020.",
+        "purpose": "Curva de incômodo para ruído de aeronaves."
+      },
+      {
+        "shortTitle": "Bocher et al. (2019)",
+        "url": "https://doi.org/10.3390/ijgi8030130",
+        "citation": "Bocher, E. et al. NoiseModelling: an open source GIS based tool to produce environmental noise maps. ISPRS International Journal of Geo-Information, v. 8, n. 3, p. 130, 2019.",
+        "purpose": "Ferramenta de propagação usada na dissertação, no Sandbox e no SIGMA-City."
+      },
+      {
+        "shortTitle": "NoiseModelling",
+        "url": "https://noisemodelling.readthedocs.io",
+        "citation": "Université Gustave Eiffel. NoiseModelling: documentação oficial, versão 6.",
+        "purpose": "Documentação e validação da ferramenta."
+      },
+      {
+        "shortTitle": "Rizzi et al. (2024)",
+        "url": "https://doi.org/10.2514/1.C037435",
+        "citation": "Rizzi, S. A. et al. Prediction of noise-power-distance data for urban air mobility vehicles. Journal of Aircraft, v. 61, n. 1, p. 166–182, 2024.",
+        "purpose": "Hemisférios de ruído do NASA RVLT Lift+Cruise."
+      },
+      {
+        "shortTitle": "Boucher et al. (2023)",
+        "url": "https://doi.org/10.4271/2023-01-1107",
+        "citation": "Boucher, M. et al. A psychoacoustic test for urban air mobility vehicle sound quality. SAE International Journal of Advances and Current Practices in Mobility, v. 6, n. 2, p. 972–985, 2023.",
+        "purpose": "Qualidade sonora e incômodo de sons de UAM."
+      },
+      {
+        "shortTitle": "Stansfeld et al. (2005)",
+        "url": "https://doi.org/10.1016/S0140-6736(05)66660-3",
+        "citation": "Stansfeld, S. A. et al. Aircraft and road traffic noise and children’s cognition and health: a cross-national study. The Lancet, v. 365, n. 9475, p. 1942–1949, 2005.",
+        "purpose": "Ruído de aeronaves e leitura de crianças em escolas."
+      },
+      {
+        "shortTitle": "Clark et al. (2021)",
+        "url": "https://doi.org/10.1016/j.jenvp.2021.101646",
+        "citation": "Clark, C. et al. A meta-analysis of the association of aircraft noise at school on children’s reading comprehension and psychological health for use in health impact assessment. Journal of Environmental Psychology, v. 76, p. 101646, 2021.",
+        "purpose": "Ruído de aeronaves na escola e compreensão de leitura."
+      },
+      {
+        "shortTitle": "Carvalho et al. (2026)",
+        "url": "https://doi.org/10.1016/j.cstp.2026.101848",
+        "citation": "Carvalho, L. O. et al. Data-driven framework for urban air mobility planning: integrating socioeconomic and operational factors for optimal network design in São Paulo, Brazil. Case Studies on Transport Policy, v. 25, p. 101848, 2026.",
+        "purpose": "Rede de rotas e helipontos de São Paulo (SIGMA-Sky)."
+      },
+      {
+        "shortTitle": "Zhao et al. (2026)",
+        "url": "https://doi.org/10.1016/j.paerosci.2026.101184",
+        "citation": "Zhao, C. et al. Recent advancements and challenges for eVTOL aircraft aerodynamic noise in urban air mobility. Progress in Aerospace Sciences, v. 161, p. 101184, 2026.",
+        "purpose": "Fontes de ruído do eVTOL e tolerância do público."
+      },
+      {
+        "shortTitle": "Yunus et al. (2023)",
+        "url": "https://doi.org/10.1016/j.ast.2023.108410",
+        "citation": "Yunus, F. et al. Efficient prediction of urban air mobility noise in a vertiport environment. Aerospace Science and Technology, v. 139, p. 108410, 2023.",
+        "purpose": "Efeito das edificações no ruído de vertiporto."
+      },
+      {
+        "resourceId": "garrow-2021-uam-review",
+        "shortTitle": "Garrow et al. (2021)",
+        "citation": "Garrow, L. A.; German, B. J.; Leonard, C. E. Urban air mobility: a comprehensive review and comparative analysis with autonomous and electric ground transportation. Transportation Research Part C, v. 132, 103377, 2021.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Ruído entre os fatores de adoção da UAM."
+      },
+      {
+        "resourceId": "sigmacity-produto3",
+        "shortTitle": "SIGMA-City (2026)",
+        "citation": "SIGMA-City. Análise de Metodologias para Vertiportos — Produto 3. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Metodologia de ruído 3D (seção 5.1) e os nove sítios de São Paulo (cap. 6)."
+      },
+      {
+        "resourceId": "it214-2026-2-plano-ensino",
+        "shortTitle": "IT-214 (2026)",
+        "citation": "Guterres, M. X. Plano de ensino IT-214 — Mobilidade Aérea Urbana, 2026/2. São José dos Campos: ITA, 2026.",
+        "source": "Documento disponível na Biblioteca da disciplina.",
+        "purpose": "Tema e objetivo do encontro."
+      }
+    ],
+    "authors": [
+      "Gabriel Luiz Goulart Rufino Vieira",
+      "Equipe docente IT-214"
+    ],
+    "license": "Texto e organização: material didático da IT-214. Imagens: licença indicada em cada crédito.",
+    "sourceDocuments": [
+      {
+        "id": "vieira-2026-dissertacao",
+        "title": "Gestão do planejamento urbano orientado pelos impactos sonoros das operações de mobilidade aérea urbana",
+        "authors": [
+          "Gabriel Luiz Goulart Rufino Vieira"
+        ],
+        "source": "Dissertação_Gabriel-Vieira.pdf, fornecida diretamente pelo autor",
+        "versionDate": "2026-11-03",
+        "publication": "Dissertação de mestrado — ITA, Programa de Pós-Graduação em Engenharia de Infraestrutura Aeronáutica",
+        "sha256": "A7A0501F696C7D7FE65C2CDE0492639BAF1580327F5B0CEC6CBD389D6FA38C98",
+        "distribution": "Figuras usadas na aula por autorização do autor; o PDF da dissertação não é distribuído pelo portal."
+      },
+      {
+        "id": "sandbox-sbsj-vol3",
+        "title": "Sandbox Regulatório de Vertiportos (SBSJ) — relatório técnico da Fase I, vol. III",
+        "authors": [
+          "Equipe do Sandbox Regulatório de Vertiportos (SBSJ) — ITA"
+        ],
+        "source": "Report_vol_03.pdf, fornecido diretamente pelo usuário",
+        "versionDate": "2026-07-31",
+        "publication": "Sandbox Regulatório de Vertiportos — Fase I — ITA/ANAC",
+        "sha256": "15ACFE6EC22A7AC05C2D464B0331CBD17B3A30D0C4C424C327783EA7EA6DA8F1",
+        "distribution": "Relatório não publicado; apenas as figuras citadas nesta aula são divulgadas, por autorização da equipe autora."
+      },
+      {
+        "id": "sigmacity-produto3",
+        "title": "Análise de Metodologias para Vertiportos — Produto 3",
+        "authors": [
+          "Equipe SIGMA-City — ITA"
+        ],
+        "source": "Documento da Biblioteca da disciplina (sigmacity-produto3.pdf); figuras originais do acervo de modelagem da equipe",
+        "versionDate": "2026-08-18",
+        "publication": "SIGMA-City — Meta 2, Etapa 8",
+        "sha256": "6FD35E31A64FE7006E97EA4CC9EEC2943072DC058B637331DD0A1DA62FB5163B",
+        "distribution": "Documento público na Biblioteca da disciplina."
+      }
+    ]
   }
 ]
