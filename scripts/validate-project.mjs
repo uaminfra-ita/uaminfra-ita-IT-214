@@ -47,6 +47,10 @@ activities.forEach((activity) => {
     const presentationResource = allResources.find((resource) => resource.id === activity.presentationResourceId);
     assert.ok(presentationResource.assetPath.endsWith('.pdf'), `Apresentação em arquivo de ${activity.code} deve ser PDF.`);
   }
+  for (const id of activity.presentationResourceIds || []) {
+    assert.ok(resourceIds.has(id) && activity.resourceIds.includes(id), `Apresentação em arquivo ${id} de ${activity.code} deve integrar seus recursos.`);
+    assert.ok(allResources.find((resource) => resource.id === id).assetPath.endsWith('.pdf'), `Apresentação em arquivo ${id} de ${activity.code} deve ser PDF.`);
+  }
   if (activity.resourceSection) assert.ok(['artigos', 'documentos', 'disciplina', 'modelos'].includes(activity.resourceSection), `Seção de biblioteca inválida em ${activity.code}.`);
   if (activity.type === 'break') assert.equal(activity.status, 'break', `Recesso ${activity.code} precisa usar status break.`);
   if (activity.submission) {
