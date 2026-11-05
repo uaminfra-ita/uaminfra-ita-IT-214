@@ -1,0 +1,17 @@
+/* E13: aula convidada. Cada slide é a imagem do slide original, sem alteração de formatação. */
+.presentation-shell.img-deck .reveal .slides section.img-slide { padding: 0 !important; background: #071426 !important; overflow: hidden !important; height: 900px; }
+.presentation-shell.img-deck .reveal .slides section.img-slide::after { display: none; }
+/* Margem no alto para a barra de ferramentas não cobrir o título do slide original. */
+.img-deck .img-frame { position: absolute; left: 80px; right: 80px; top: 64px; bottom: 26px; }
+.print-pdf .presentation-shell.img-deck .reveal .slides section.img-slide { padding: 0 !important; height: 900px !important; }
+
+/* Slide final com os PDFs */
+.img-deck .img-end > div { position: absolute; left: 120px; right: 120px; top: 150px; color: #fff; }
+.presentation-shell.img-deck .reveal .slides section.img-end .img-kicker { margin: 0; font-size: 22px !important; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #67e8f9; }
+.presentation-shell.img-deck .reveal .slides section.img-end h2 { margin: 14px 0 0 !important; font-size: 72px !important; font-weight: 900; color: #fff !important; }
+.presentation-shell.img-deck .reveal .slides section.img-end .img-lead { margin: 18px 0 0 !important; font-size: 32px !important; color: #cbd5e1 !important; }
+.img-deck .img-downloads { margin-top: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.img-deck .img-downloads a { display: flex; flex-direction: column; gap: 12px; background: #0b2942; border-top: 6px solid #22b8cf; padding: 28px 32px; color: #fff; text-decoration: none; }
+.presentation-shell.img-deck .reveal .img-downloads span { font-size: 20px !important; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #67e8f9; }
+.presentation-shell.img-deck .reveal .img-downloads strong { font-size: 32px !important; line-height: 1.3; }
+.presentation-shell.img-deck .reveal .img-downloads b { font-size: 24px !important; color: #67e8f9; }
