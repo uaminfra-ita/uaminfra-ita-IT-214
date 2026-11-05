@@ -1,0 +1,65 @@
+/* E14: complementa os estilos da E06, da E07, da E08 e da E10 (tela de 1600 × 900). */
+
+/* Gráficos */
+.rui-deck .rui-chart { max-height: 560px; }
+.rui-deck .rui-bar-neg { fill: #0e7490; }
+.rui-deck .rui-bar-pos { fill: #22b8cf; }
+.rui-deck .rui-zero { stroke: #0b3450; stroke-width: 2; }
+.rui-deck .rui-guide { stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 5 5; }
+.rui-deck .rui-dot { fill: #0e7490; stroke: #fff; stroke-width: 2; }
+
+/* Cartões em grade */
+.rui-deck .rui-cards { display: grid; gap: 20px; }
+.rui-deck .rui-cards-3 { grid-template-columns: repeat(3, 1fr); }
+.rui-deck .rui-cards-4 { grid-template-columns: repeat(4, 1fr); }
+.rui-deck .rui-cards-5 { grid-template-columns: repeat(5, 1fr); }
+.rui-deck .rui-cards-6 { grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; height: 100%; }
+.rui-deck .rui-cards article { background: #fff; border-top: 6px solid #0e7490; padding: 22px 24px; }
+.rui-deck .rui-cards h3 { margin: 0 0 12px; font-size: 29px !important; color: #0b3450; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .rui-cards p { margin: 0; font-size: 26px; line-height: 1.35; }
+.rui-deck .rui-cards-5 h3 { font-size: 27px !important; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .rui-cards-5 p { font-size: 24px; }
+
+/* Equações */
+.rui-deck .rui-eq { align-items: flex-start; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .rui-eq p { font-size: 34px; }
+.rui-deck .rui-eq span { color: #cdeef3; font-size: 20px; }
+
+/* Tabelas */
+.rui-deck .rui-table th, .rui-deck .rui-table td { padding: 14px 20px; font-size: 25px; }
+.rui-deck .rui-table td:first-child { font-weight: 750; color: #0b3450; }
+.rui-deck .rui-table-compact th, .rui-deck .rui-table-compact td { padding: 10px 16px; font-size: 23px; }
+.rui-deck .rui-split-table { grid-template-columns: 1.15fr 1fr; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .rui-note { margin: 0; font-size: 18px; color: #475569; }
+
+/* Imagens lado a lado e em trio */
+.rui-deck .vt-col > .rui-pair { flex: 1; min-height: 0; }
+.rui-deck .vt-col > .rui-trio { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1.25fr 1.25fr; gap: 22px; }
+.rui-deck .vt-col > .rui-fill { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.rui-deck .rui-fill .vt-media { flex: 1; }
+
+/* Números grandes em 2 × 2 */
+.rui-deck .rui-hero-2 { grid-auto-flow: row; grid-template-columns: 1fr 1fr; row-gap: 30px; }
+
+/* Etapas */
+.rui-deck .rui-steps { gap: 18px; }
+.rui-deck .rui-steps li { grid-template-columns: 52px 240px 1fr; font-size: 27px; padding-bottom: 14px; }
+.rui-deck .rui-steps b { font-size: 28px; }
+
+/* Fechamento */
+.rui-deck .rui-next { grid-template-rows: repeat(3, 1fr); }
+.rui-deck .rui-refs li { font-size: 17px; margin-bottom: 9px; }
+.rui-deck .rui-links { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.rui-deck .rui-link { display: flex; align-items: baseline; gap: 18px; background: #0e7490; color: #fff; padding: 18px 26px; border-radius: 10px; text-decoration: none; }
+.rui-deck .rui-link b { font-size: 24px; }
+.rui-deck .rui-link span { font-size: 17px; color: #cdeef3; }
+
+/* Texto maior e mais espaçado nesta aula */
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .vt-points p { font-size: 27px; line-height: 1.35; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .vt-points h3 { font-size: 30px; }
+.rui-deck .vt-points { gap: 30px; }
+.rui-deck .dem-hero span { font-size: 23px; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .vt-conclusion { font-size: 28px; }
+.rui-deck .rui-cards-6 article { display: flex; flex-direction: column; justify-content: center; }
+.rui-deck .rui-cards-6 h3 { font-size: 32px !important; }
+.presentation-shell.air-deck.rui-deck .reveal .air-slide .rui-cards-6 p { font-size: 28px; }

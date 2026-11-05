@@ -195,10 +195,10 @@
   },
   {
     "code": "E14", "meeting": 14, "date": "2026-11-10", "type": "class", "status": "scheduled",
-    "resourceIds": [], "presentationSlug": null,
+    "resourceIds": ["sigmacity-produto3", "garrow-2021-uam-review", "it214-2026-2-plano-ensino"], "presentationSlug": "e14-ruido-aceitacao",
     "theme": "Ruído aeronáutico e aceitação social",
     "objective": "Introduzir métricas de ruído, percepção pública, efeito NIMBY, mitigação por rota e sítio e limites da ideia de eVTOL silencioso.",
-    "deliverable": "Ficha de risco e mitigação de ruído.",
+    "deliverable": "Sem entregável nesta aula.",
     "submission": {
       "audience": "student", "visibility": "drive-restricted", "status": "scheduled", "dueAt": null,
       "maxFiles": 5, "maxFileSizeMb": 20,
