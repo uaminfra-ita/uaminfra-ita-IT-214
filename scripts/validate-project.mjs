@@ -269,7 +269,7 @@ access.users.forEach((user) => {
   assert.match(user.credential.passwordHash, /^[A-Za-z0-9_-]{43}$/, 'Hash de senha inválido.');
 });
 assert.equal(access.users.filter((user) => user.role === 'student').length, 8, 'A turma deve conter oito alunos.');
-assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3, 'A turma deve conter três instrutores.');
+assert.equal(access.users.filter((user) => user.role === 'instructor').length, 3, 'A turma deve conter três estagiários de docência sob supervisão.');
 assert.equal(access.users.filter((user) => user.role === 'admin').length, 1, 'A turma deve conter um professor responsável.');
 const studentIds = access.users.filter((user) => user.role === 'student' && user.status === 'active').map((user) => user.id).sort();
 assert.equal(driveWorkspaces.resourceId, 'it214-2026-2-drive-workspaces', 'Configuração do Drive sem identificador estável.');
@@ -289,9 +289,9 @@ assert.equal(courseContact.resourceId, 'it214-2026-2-public-contact', 'Contato p
 assert.equal(courseContact.audience, 'public', 'Contato exibido no Pages precisa declarar audience public.');
 ['author', 'source', 'license', 'summary', 'relations', 'email'].forEach((field) => assert.ok(courseContact[field], `Contato público sem ${field}.`));
 assert.equal(courseContact.email, 'uam.infra@gmail.com', 'Destinatário público divergente da autorização da equipe.');
-assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser instrutor.');
-assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser instrutor.');
-assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser instrutor.');
+assert.equal(access.users.find((user) => user.displayName === 'Rodrigo Mollo Furlan')?.role, 'instructor', 'Rodrigo deve ser estagiário de docência sob supervisão.');
+assert.equal(access.users.find((user) => user.displayName === 'Gabriel Luiz Goulart Rufino')?.role, 'instructor', 'Gabriel deve ser estagiário de docência sob supervisão.');
+assert.equal(access.users.find((user) => user.displayName === 'Marcelo Saraiva Peres')?.role, 'instructor', 'Marcelo Peres deve ser estagiário de docência sob supervisão.');
 assert.equal(access.users.find((user) => user.displayName === 'Marcelo Xavier Guterres')?.role, 'admin', 'Marcelo Guterres deve ser professor responsável.');
 const authComponent = fs.readFileSync(path.join(root, 'components', 'AuthenticatedArea.jsx'), 'utf8');
 assert.ok(authComponent.includes("name: 'PBKDF2'"), 'O login deve derivar a senha com PBKDF2.');

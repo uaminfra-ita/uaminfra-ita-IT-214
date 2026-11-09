@@ -13,7 +13,7 @@ import StudentServices from './StudentServices';
 
 const SESSION_KEY = 'it214-pilot-session';
 const staffRoles = new Set(['instructor', 'admin']);
-const roleLabels = { student: 'Aluno', instructor: 'Instrutor', admin: 'Professor' };
+const roleLabels = { student: 'Aluno', instructor: 'Estagiário de docência sob supervisão', admin: 'Professor' };
 
 function formatDate(date) {
   return new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', timeZone: 'America/Sao_Paulo' }).format(new Date(`${date}T12:00:00-03:00`));
