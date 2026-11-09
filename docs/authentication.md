@@ -29,12 +29,12 @@ npm run test:access
 - `credenciais.csv` permanece em `.private/contas-piloto/` e deve ser distribuído por canal separado.
 - `data/access.json` é versionado e contém somente dados adequados ao ambiente público.
 - `prepare:accounts` preserva a senha de contas cujo e-mail já exista no arquivo de credenciais e gera uma senha aleatória de alta entropia somente para contas novas. Depois de alterar o lote, sempre reexecute `generate:access`.
-- A turma 2026/2 possui 12 contas: oito alunos, três instrutores e um professor responsável.
+- A turma 2026/2 possui 12 contas: oito alunos, três estagiários de docência sob supervisão e um professor responsável.
 
 ## Papéis
 
 - `student`: vê seu painel, cronograma e leituras gerais.
-- `instructor`: vê o painel docente e a lista pública de participantes do piloto.
+- `instructor` (estagiário de docência sob supervisão): vê o painel docente e a lista pública de participantes do piloto.
 - `admin`: identifica o professor responsável e usa a visualização docente neste MVP.
 - `disabled`: impede o acesso normal daquela entrada.
 
@@ -42,7 +42,7 @@ A sessão visual fica em `sessionStorage` e termina ao fechar a aba ou ao usar �
 
 ## Redefinição de senha
 
-O Pages não recebe nem grava uma senha nova. O aluno usa o botão de solicitação para abrir uma mensagem destinada ao contato público da disciplina, sem informar senha atual ou nova. Um instrutor confere o pedido no e-mail e executa localmente:
+O Pages não recebe nem grava uma senha nova. O aluno usa o botão de solicitação para abrir uma mensagem destinada ao contato público da disciplina, sem informar senha atual ou nova. Um estagiário de docência sob supervisão confere o pedido no e-mail e executa localmente:
 
 ```bash
 npm run reset:password -- --user-id <identificador-opaco>
